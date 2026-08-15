@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HANTANG 한탕 — Korea Sauna &amp; Bath Guide</title>
+<meta name="description" content="Every bath in Korea, explained. Temperatures, tattoo rules, prices and etiquette for Korean saunas, jjimjilbangs and bathhouses — checked in person, written in your language.">
+<link rel="canonical" href="https://hantang.kr/">
+<!-- ⛳ 도메인 확정 전이면 위 canonical과 아래 og:url·og:image 주소를 pages.dev 주소로 바꿔도 됩니다 -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HANTANG">
+<meta property="og:title" content="HANTANG 한탕 — Korea Sauna &amp; Bath Guide">
+<meta property="og:description" content="Every bath in Korea, explained. Temperatures, tattoo rules, prices and etiquette — checked in person.">
+<meta property="og:url" content="https://hantang.kr/">
+<meta property="og:image" content="https://hantang.kr/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HANTANG 한탕 — Korea Sauna &amp; Bath Guide">
+<meta name="twitter:description" content="Every bath in Korea, explained. Checked in person, written in your language.">
+<meta name="twitter:image" content="https://hantang.kr/og.png">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@500;600;700&family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "HANTANG",
+  "alternateName": ["한탕", "韓湯", "Hantang Korea Sauna Guide"],
+  "url": "https://hantang.kr/",
+  "description": "Korea Sauna & Bath Guide. Temperatures, tattoo rules, prices and etiquette for Korean saunas, jjimjilbangs and bathhouses — checked in person.",
+  "inLanguage": ["en", "ja", "ko"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I enter a Korean sauna with tattoos?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It depends on the bathhouse. Every HANTANG listing states its policy up front: Tattoo OK, cover-up (rash guard or patch), or no. Filter by Tattoo OK to avoid being turned away at the door." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I have to be fully naked in a Korean bathhouse?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In the bath area, yes — it is gender-separated and completely normal there. In jjimjilbang lounge floors, everyone wears the cotton uniform given at entry, and those floors are mixed." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a Korean sauna or jjimjilbang cost?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Public bathhouses typically run about 8,000–12,000 won for entry, jjimjilbangs a little more with the uniform included, and a seshin scrub is usually 20,000–35,000 won on top." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is seshin?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A full-body exfoliating scrub done by a professional with the green Italy towel, after you have soaked for 15–20 minutes. It removes a visible layer of dead skin." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I sleep overnight in a jjimjilbang?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In many, yes — it is a classic budget stay. Listings marked Sleep OK have overnight hours and sleeping rooms; some close at midnight, so check the listing first." }
+    }
+  ]
+}
+</script>
+<style>
+  :root{
+    --paper:#FFFFFF;
+    --stone:#F6F5F2;
+    --ink:#1B1A18;
+    --mute:#79746D;
+    --line:#E6E3DD;
+    --blue:#1E6E9C;
+    --blue-deep:#16597F;
+    --blue-tint:#EAF2F7;
+    --red:#C13A2A;
+    --towel:#1F9D57;
+    --sans:'Pretendard Variable',Pretendard,'IBM Plex Sans KR',-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    --serif:'Hahmlet',serif;
+    --mono:'IBM Plex Mono',monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65;-webkit-font-smoothing:antialiased}
+  img,svg{display:block}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+  :focus-visible{outline:2.5px solid var(--blue);outline-offset:3px;border-radius:4px}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+
+  .rv{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+  .rv.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    .rv{opacity:1;transform:none;transition:none}
+    *{animation:none!important}
+  }
+
+  /* ---------- nav ---------- */
+  nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav-in{display:flex;align-items:center;gap:12px;height:64px;position:relative}
+  .brand{display:flex;align-items:center;gap:10px}
+  .brand .bname{font-family:var(--mono);font-weight:600;font-size:14px;letter-spacing:.18em}
+  .brand .bkr{font-size:12px;color:var(--mute);font-weight:500;margin-top:1px}
+  .nav-links{display:flex;gap:24px;margin-left:auto;font-size:13.5px;font-weight:500}
+  .nav-links a{opacity:.85;transition:opacity .15s,color .15s}
+  .nav-links a:hover{opacity:1;color:var(--blue)}
+  .lang-wrap{position:relative;margin-left:20px}
+  .lang{font-family:var(--mono);font-size:11px;letter-spacing:.08em;border:1px solid var(--line);border-radius:8px;padding:6px 11px;color:var(--mute);background:#fff}
+  .lang-pop{position:absolute;right:0;top:calc(100% + 8px);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 16px 40px -22px rgba(27,26,24,.35);min-width:168px;padding:8px;display:none}
+  .lang-pop.open{display:block}
+  .lang-pop button{display:flex;justify-content:space-between;align-items:center;width:100%;font-size:13px;padding:9px 11px;border-radius:8px;text-align:left}
+  .lang-pop button:hover{background:var(--stone)}
+  .lang-pop .on{color:var(--blue);font-weight:700}
+  .lang-pop .soon{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;color:var(--mute);background:var(--stone);border-radius:99px;padding:2px 7px}
+  .burger{display:none;margin-left:auto;width:40px;height:40px;border:1px solid var(--line);border-radius:10px;align-items:center;justify-content:center;background:#fff}
+  .burger svg{display:block}
+  @media (max-width:880px){
+    .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:8px 4px 12px}
+    .nav-links a{padding:12px 14px;font-size:15px}
+    .nav-links.open{display:flex}
+    .burger{display:flex}
+    .lang-wrap{margin-left:8px}
+  }
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:var(--paper)}
+  .tiles{position:absolute;inset:0;background-image:linear-gradient(var(--blue-tint) 1.5px,transparent 1.5px),linear-gradient(90deg,var(--blue-tint) 1.5px,transparent 1.5px);background-size:46px 46px;opacity:.6;mask-image:linear-gradient(180deg,#000 20%,transparent 100%);-webkit-mask-image:linear-gradient(180deg,#000 20%,transparent 100%);pointer-events:none}
+  .tiles.up{mask-image:linear-gradient(0deg,#000 20%,transparent 100%);-webkit-mask-image:linear-gradient(0deg,#000 20%,transparent 100%)}
+  .hero-in{position:relative;display:grid;grid-template-columns:1.25fr .9fr;gap:40px;align-items:center;padding:84px 0 76px}
+  .eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.26em;color:var(--blue);font-weight:600;display:inline-block;margin-bottom:18px}
+  h1{font-family:var(--serif);font-weight:700;font-size:clamp(34px,5.6vw,58px);line-height:1.16;letter-spacing:-.012em;max-width:600px}
+  .hero p.sub{margin-top:18px;font-size:16px;color:var(--mute);max-width:520px}
+  .search{margin-top:30px;display:flex;gap:10px;max-width:560px}
+  .search input{flex:1;border:1.5px solid var(--line);border-radius:13px;padding:15px 18px;font-size:14.5px;font-family:var(--sans);color:var(--ink);background:#fff;min-width:0}
+  .search input::placeholder{color:var(--mute)}
+  .search input:focus{outline:none;border-color:var(--blue)}
+  .search .go{background:var(--blue);color:#fff;font-weight:700;font-size:14.5px;border-radius:13px;padding:0 26px;transition:background .15s}
+  .search .go:hover{background:var(--blue-deep)}
+  .fchips{display:flex;gap:9px;margin-top:16px;flex-wrap:wrap}
+  .fchip{font-size:12.5px;font-weight:600;padding:8px 15px;border-radius:99px;background:#fff;border:1.5px solid var(--line);color:var(--ink);transition:all .15s}
+  .fchip:hover{border-color:var(--blue)}
+  .fchip.on{background:var(--blue);border-color:var(--blue);color:#fff}
+  .trust{margin-top:24px;font-size:13px;color:var(--mute);display:flex;align-items:center;gap:9px}
+  .trust .dot{width:7px;height:7px;border-radius:50%;background:var(--blue);flex:none}
+
+  .float-card{justify-self:end;width:100%;max-width:330px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 24px 60px -34px rgba(23,89,127,.45);transform:rotate(1.5deg);overflow:hidden}
+  .fc-img{height:110px;background:var(--blue-tint);display:flex;align-items:center;justify-content:center;position:relative}
+  .fc-body{padding:17px 18px 18px}
+  .fc-body h4{font-size:16px;font-weight:700}
+  .fc-body .loc{font-size:12px;color:var(--mute);margin:2px 0 12px}
+  .specline{display:flex;gap:12px;font-family:var(--mono);font-size:12px;font-weight:600;margin-bottom:12px}
+  .badges{display:flex;gap:7px;flex-wrap:wrap}
+  .bdg{font-size:11px;font-weight:700;padding:5px 11px;border-radius:99px;background:var(--blue-tint);color:var(--blue)}
+  .bdg.gray{background:var(--stone);color:var(--mute)}
+  .fc-stamp{position:absolute;top:12px;right:12px;width:44px;height:44px;border-radius:8px;border:3px solid var(--red);color:var(--red);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;font-size:13px;line-height:1.1;transform:rotate(6deg);background:rgba(255,255,255,.9)}
+  @media (max-width:900px){
+    .hero-in{grid-template-columns:1fr;padding:58px 0 54px}
+    .float-card{display:none}
+    .search{flex-direction:column}
+    .search .go{padding:14px}
+  }
+
+  @keyframes rise{0%{transform:translateY(3px);opacity:.35}55%{opacity:1}100%{transform:translateY(-4px);opacity:.15}}
+  .anim .s1{animation:rise 2.6s ease-in-out infinite}
+  .anim .s2{animation:rise 2.6s ease-in-out .5s infinite}
+  .anim .s3{animation:rise 2.6s ease-in-out 1s infinite}
+
+  /* ---------- shared ---------- */
+  section{padding:84px 0}
+  .sec-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.26em;color:var(--blue);font-weight:600;margin-bottom:14px}
+  h2{font-family:var(--serif);font-weight:700;font-size:clamp(25px,3.8vw,36px);line-height:1.3;letter-spacing:-.01em}
+  .sec-sub{margin-top:12px;color:var(--mute);font-size:15px;max-width:620px}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;border-radius:12px;padding:13px 24px;transition:all .15s}
+  .btn.pri{background:var(--blue);color:#fff}
+  .btn.pri:hover{background:var(--blue-deep)}
+  .btn.sec{background:#fff;border:1.5px solid var(--line);color:var(--ink)}
+  .btn.sec:hover{border-color:var(--blue);color:var(--blue)}
+
+  /* ---------- why ---------- */
+  .why{background:var(--stone);border-bottom:1px solid var(--line)}
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:42px}
+  .why-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 22px}
+  .why-card .ic{width:44px;height:44px;border-radius:12px;background:var(--blue-tint);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+  .why-card h3{font-size:15.5px;font-weight:700;margin-bottom:8px}
+  .why-card p{font-size:13.5px;color:var(--mute);line-height:1.6}
+  @media (max-width:900px){.why-grid{grid-template-columns:1fr 1fr}}
+  @media (max-width:560px){.why-grid{grid-template-columns:1fr}}
+
+  /* ---------- baths ---------- */
+  .bath-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .ctabs{display:flex;gap:8px;margin-top:28px}
+  .ctab{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;font-weight:600;padding:8px 16px;border-radius:99px;border:1.5px solid var(--line);color:var(--mute);transition:all .15s;background:#fff}
+  .ctab.on{background:var(--ink);border-color:var(--ink);color:#fff}
+  .bath-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+  .bath{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;transition:transform .2s,box-shadow .2s}
+  .bath:hover{transform:translateY(-3px);box-shadow:0 18px 40px -28px rgba(27,26,24,.35)}
+  .bath.hide{display:none}
+  .b-img{height:104px;background:var(--blue-tint);display:flex;align-items:center;justify-content:center;position:relative}
+  .b-city{position:absolute;top:11px;left:12px;font-family:var(--mono);font-size:10px;letter-spacing:.16em;font-weight:600;background:#fff;border-radius:99px;padding:4px 10px;color:var(--blue)}
+  .b-body{padding:16px 17px 17px}
+  .b-body h4{font-size:15.5px;font-weight:700}
+  .b-body .loc{font-size:12px;color:var(--mute);margin:2px 0 12px}
+  .b-spec{display:flex;gap:12px;font-family:var(--mono);font-size:11.5px;font-weight:600;margin-bottom:12px;flex-wrap:wrap}
+  .b-spec .price{margin-left:auto;color:var(--blue)}
+  @media (max-width:900px){.bath-grid{grid-template-columns:1fr 1fr}}
+  @media (max-width:600px){.bath-grid{grid-template-columns:1fr}}
+
+  /* ---------- guide steps ---------- */
+  .guide{background:var(--stone);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .steps{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:42px}
+  .step{background:#fff;border:1px solid var(--line);border-radius:15px;padding:20px 17px}
+  .step .num{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.1em;color:var(--blue);background:var(--blue-tint);border-radius:99px;padding:4px 10px;display:inline-block;margin-bottom:14px}
+  .step h4{font-size:14px;font-weight:700;margin-bottom:7px;line-height:1.4}
+  .step p{font-size:12.5px;color:var(--mute);line-height:1.55}
+  .guide-cta{margin-top:34px;display:flex;gap:12px;flex-wrap:wrap}
+  @media (max-width:1000px){.steps{grid-template-columns:repeat(3,1fr)}}
+  @media (max-width:620px){.steps{grid-template-columns:1fr 1fr}}
+
+  /* ---------- articles ---------- */
+  .art-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+  .art{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+  .art:hover{transform:translateY(-3px);box-shadow:0 18px 40px -28px rgba(27,26,24,.3)}
+  .art-thumb{height:88px;background-image:linear-gradient(var(--blue-tint) 1.5px,transparent 1.5px),linear-gradient(90deg,var(--blue-tint) 1.5px,transparent 1.5px);background-size:26px 26px;background-color:#fff;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--line)}
+  .art-body{padding:16px 17px 18px;display:flex;flex-direction:column;flex:1}
+  .art-tag{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--blue);font-weight:600;margin-bottom:9px}
+  .art h4{font-size:15px;font-weight:700;line-height:1.45;margin-bottom:8px}
+  .art p{font-size:12.5px;color:var(--mute);line-height:1.6;flex:1}
+  .art .rt{font-family:var(--mono);font-size:10.5px;color:var(--mute);margin-top:14px}
+  @media (max-width:900px){.art-grid{grid-template-columns:1fr 1fr}}
+  @media (max-width:560px){.art-grid{grid-template-columns:1fr}}
+
+  /* ---------- seshin ---------- */
+  .seshin-in{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .towel{width:100%;max-width:380px;justify-self:center}
+  .seshin-facts{display:flex;gap:26px;margin-top:26px;flex-wrap:wrap}
+  .sf{border-left:3px solid var(--blue);padding-left:14px}
+  .sf .v{font-family:var(--mono);font-weight:600;font-size:16px}
+  .sf .k{font-size:12px;color:var(--mute)}
+  @media (max-width:860px){.seshin-in{grid-template-columns:1fr;gap:38px}}
+
+  /* ---------- show-this ---------- */
+  .show{background:var(--blue);border-top:1px solid var(--line);color:#fff}
+  .show .sec-eyebrow{color:#BFDCEE}
+  .show .sec-sub{color:#CFE3F0}
+  .show-in{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
+  .phrase-card{background:#fff;color:var(--ink);border-radius:20px;padding:38px 34px;box-shadow:0 30px 70px -35px rgba(0,0,0,.5);min-height:230px;display:flex;flex-direction:column;justify-content:center}
+  .phrase-kr{font-family:var(--serif);font-weight:700;font-size:clamp(21px,2.8vw,27px);line-height:1.45}
+  .phrase-en{margin-top:14px;color:var(--mute);font-size:14px}
+  .phrase-tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;color:var(--blue);font-weight:600;margin-bottom:16px}
+  .show-ctrl{display:flex;gap:9px;margin-top:22px}
+  .pdot{width:38px;height:6px;border-radius:99px;background:rgba(255,255,255,.32);transition:background .2s}
+  .pdot.on{background:#fff}
+  .show-note{margin-top:26px;font-size:13px;color:#CFE3F0;display:flex;gap:9px;align-items:flex-start}
+  @media (max-width:860px){.show-in{grid-template-columns:1fr;gap:36px}}
+
+  /* ---------- stamps ---------- */
+  .stamp-sec{border-bottom:1px solid var(--line)}
+  .stamp-in{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+  .stamp-board{background:var(--stone);border:1px solid var(--line);border-radius:20px;padding:30px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .seal{width:66px;height:66px;border-radius:11px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;background:#fff}
+  .seal.fill{background:var(--red);color:#fff;transform:rotate(-4deg)}
+  .seal.line{border:3.5px solid var(--red);color:var(--red)}
+  .seal.r1{transform:rotate(3deg)}
+  .seal.r2{transform:rotate(-2deg)}
+  .seal.r3{transform:rotate(5deg)}
+  .seal.empty{border:2.5px dashed var(--line);color:var(--mute);font-family:var(--sans);font-size:22px;font-weight:400}
+  .seal .c2{font-size:19px;line-height:1.12}
+  .seal .c1{font-size:21px}
+  .stamp-count{font-family:var(--mono);font-size:12px;color:var(--mute);width:100%;margin-top:8px}
+  .stamp-copy h2 .kr{display:block;font-size:.72em;color:var(--red);margin-bottom:6px}
+  @media (max-width:860px){.stamp-in{grid-template-columns:1fr;gap:36px}}
+
+  /* ---------- pass ---------- */
+  .pass{background:var(--stone);border-bottom:1px solid var(--line)}
+  .pass-in{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:center}
+  .pass-points{margin-top:24px;display:flex;flex-direction:column;gap:13px}
+  .pp{display:flex;gap:12px;align-items:flex-start;font-size:14px}
+  .pp .tick{width:22px;height:22px;border-radius:7px;background:var(--blue-tint);color:var(--blue);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;flex:none;margin-top:2px}
+  .wait{margin-top:28px;display:flex;gap:10px;max-width:440px}
+  .wait input{flex:1;border:1.5px solid var(--line);border-radius:12px;padding:13px 16px;font-size:14px;font-family:var(--sans);background:#fff;min-width:0}
+  .wait input:focus{outline:none;border-color:var(--blue)}
+  .qr-mock{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;text-align:center;max-width:300px;justify-self:center;box-shadow:0 22px 55px -35px rgba(27,26,24,.35)}
+  .qr{width:150px;height:150px;margin:0 auto 18px;background:conic-gradient(var(--ink) 25%,transparent 0 50%,var(--ink) 0 75%,transparent 0) 0 0/28px 28px;border-radius:12px;border:10px solid var(--ink);opacity:.9}
+  .qr-mock h4{font-size:15px;font-weight:700}
+  .qr-mock p{font-size:12px;color:var(--mute);margin-top:4px}
+  .owner{margin-top:22px;font-size:13px;color:var(--mute)}
+  .owner a{color:var(--blue);font-weight:700}
+  @media (max-width:860px){.pass-in{grid-template-columns:1fr;gap:38px}.qr-mock{justify-self:start}.wait{flex-direction:column}}
+
+  /* ---------- faq ---------- */
+  .faq-list{margin-top:38px;border-top:1px solid var(--line)}
+  details{border-bottom:1px solid var(--line)}
+  summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 4px;font-size:16px;font-weight:700;cursor:pointer}
+  summary::-webkit-details-marker{display:none}
+  summary .pl{font-family:var(--mono);font-weight:500;color:var(--blue);font-size:18px;flex:none;transition:transform .2s}
+  details[open] summary .pl{transform:rotate(45deg)}
+  .faq-a{padding:0 4px 24px;font-size:14.5px;color:var(--mute);max-width:720px;line-height:1.7}
+
+  /* ---------- closing ---------- */
+  .close-band{position:relative;overflow:hidden;text-align:center;border-top:1px solid var(--line)}
+  .close-band .wrap{position:relative}
+  .close-band h2{font-size:clamp(28px,4.6vw,44px)}
+  .close-band .kr{font-family:var(--serif);color:var(--blue);font-weight:700;font-size:16px;letter-spacing:.06em;margin-top:14px}
+  .close-band .btn{margin-top:30px}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--ink);color:#B9B5AE;padding:60px 0 44px}
+  .f-in{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px}
+  .f-brand .bname{font-family:var(--mono);font-weight:600;font-size:14px;letter-spacing:.18em;color:#fff}
+  .f-brand p{font-size:13px;margin-top:14px;max-width:260px}
+  .f-col h5{font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;color:#8B877F;margin-bottom:16px;font-weight:600}
+  .f-col a{display:block;font-size:13.5px;margin-bottom:10px;opacity:.9}
+  .f-col a:hover{color:#fff}
+  .f-bottom{border-top:1px solid #33312E;margin-top:44px;padding-top:22px;display:flex;justify-content:space-between;gap:16px;font-size:12px;flex-wrap:wrap}
+  @media (max-width:860px){.f-in{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav>
+  <div class="wrap nav-in">
+    <a href="#top" class="brand" aria-label="HANTANG home">
+      <svg width="27" height="27" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+        <path d="M24 56 a26 26 0 0 0 52 0" stroke="#1B1A18" stroke-width="9" stroke-linecap="round"/>
+        <path d="M24 56 h52" stroke="#1B1A18" stroke-width="9" stroke-linecap="round"/>
+        <path d="M35 44 c-5 -7 5 -11 0 -19" stroke="#1B1A18" stroke-width="8" stroke-linecap="round"/>
+        <path d="M50 44 c-5 -7 5 -11 0 -19" stroke="#1B1A18" stroke-width="8" stroke-linecap="round"/>
+        <path d="M65 44 c-5 -7 5 -11 0 -19" stroke="#1B1A18" stroke-width="8" stroke-linecap="round"/>
+      </svg>
+      <span class="bname">HANTANG</span>
+      <span class="bkr">한탕</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#baths">Find a Bath</a>
+      <a href="#guide">First-Timer Guide</a>
+      <a href="#seshin">Seshin</a>
+      <a href="#stamps">Stamps</a>
+      <a href="#pass">PASS</a>
+    </div>
+    <div class="lang-wrap">
+      <button class="lang" id="langBtn" aria-haspopup="true" aria-expanded="false">EN ▾</button>
+      <div class="lang-pop" id="langPop" role="menu">
+        <button class="on" role="menuitem">English <span>✓</span></button>
+        <button role="menuitem">日本語 <span class="soon">SOON</span></button>
+        <button role="menuitem">한국어 <span class="soon">SOON</span></button>
+      </div>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M1 1h16M1 7h16M1 13h16" stroke="#1B1A18" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <div class="tiles" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <div>
+      <span class="eyebrow">KOREA SAUNA &amp; BATH GUIDE</span>
+      <h1>Every bath in Korea, explained.</h1>
+      <p class="sub">Temperatures, tattoo rules, prices and etiquette for saunas, jjimjilbangs and bathhouses — checked in person, written in your language.</p>
+      <form class="search" onsubmit="return false" role="search">
+        <input type="text" placeholder="City, station or bathhouse name" aria-label="Search baths">
+        <button class="go" type="submit">Search</button>
+      </form>
+      <div class="fchips" role="group" aria-label="Quick filters">
+        <button class="fchip on" data-chip>Tattoo OK</button>
+        <button class="fchip" data-chip>Open 24h</button>
+        <button class="fchip" data-chip>English OK</button>
+        <button class="fchip" data-chip>Seshin</button>
+        <button class="fchip" data-chip>Sleep OK</button>
+      </div>
+      <div class="trust"><span class="dot"></span>Every listing checked in person — thermometer in hand.</div>
+    </div>
+
+    <aside class="float-card" aria-hidden="true">
+      <div class="fc-img">
+        <svg class="anim" width="52" height="52" viewBox="0 0 100 100" fill="none">
+          <path d="M24 56 a26 26 0 0 0 52 0" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/>
+          <path d="M24 56 h52" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/>
+          <path class="s1" d="M35 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/>
+          <path class="s2" d="M50 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/>
+          <path class="s3" d="M65 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+        <div class="fc-stamp"><span>韓</span><span>湯</span></div>
+      </div>
+      <div class="fc-body">
+        <h4>Songdo Bath House</h4>
+        <div class="loc">Busan · Songdo Beach 5 min</div>
+        <div class="specline"><span>SAUNA 92°</span><span>COLD 18°</span><span style="color:var(--blue)">₩9,000</span></div>
+        <div class="badges">
+          <span class="bdg">Tattoo: cover-up</span>
+          <span class="bdg gray">Friendly 4.6</span>
+          <span class="bdg gray">Seshin ₩20k</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+</header>
+
+<!-- ================= WHY ================= -->
+<section class="why">
+  <div class="wrap">
+    <div class="rv">
+      <div class="sec-eyebrow">WHY HANTANG</div>
+      <h2>The four things that keep travelers<br>outside the door — removed.</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card rv">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v10" stroke="#1E6E9C" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="17.5" r="3.5" stroke="#1E6E9C" stroke-width="2.4"/></svg></div>
+        <h3>Checked in person</h3>
+        <p>We visit every bathhouse ourselves. The temperatures on our cards come from our own thermometer, not the sign on the wall.</p>
+      </div>
+      <div class="why-card rv">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#1E6E9C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Tattoo policy, always shown</h3>
+        <p>OK, cover-up, or no — stated on every single listing, so you never get turned away at the door.</p>
+      </div>
+      <div class="why-card rv">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 5.9L12 16.4 6.7 19.3l1.2-5.9L3.4 9.3l6-.7L12 3z" stroke="#1E6E9C" stroke-width="2.2" stroke-linejoin="round"/></svg></div>
+        <h3>A score for foreigners</h3>
+        <p>English signage, staff, overseas cards, mixed lounges — rated on every bath as the Friendly Score, from our own checklist.</p>
+      </div>
+      <div class="why-card rv">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="5" width="17" height="12" rx="2.5" stroke="#1E6E9C" stroke-width="2.2"/><path d="M7.5 20h9" stroke="#1E6E9C" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+        <h3>Say it without saying it</h3>
+        <p>Show-This Cards speak Korean for you at the counter — a scrub, an extra towel, a first-timer walkthrough. Just show your screen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BATHS ================= -->
+<section id="baths">
+  <div class="wrap">
+    <div class="bath-head rv">
+      <div>
+        <div class="sec-eyebrow">FEATURED BATHS</div>
+        <h2>Verified baths, card by card.</h2>
+        <p class="sec-sub">Every listing gets the same card: real temperatures, real prices, and the two answers everyone needs — tattoos and language.</p>
+      </div>
+    </div>
+    <div class="ctabs rv" role="group" aria-label="Filter by city">
+      <button class="ctab on" data-f="all">ALL</button>
+      <button class="ctab" data-f="seoul">SEOUL</button>
+      <button class="ctab" data-f="busan">BUSAN</button>
+    </div>
+
+    <!-- ⛳ 시설 카드 데이터: 여기부터 실제 실사 데이터로 교체 -->
+    <div class="bath-grid" id="bathGrid">
+      <article class="bath rv" data-city="busan">
+        <div class="b-img"><span class="b-city">BUSAN</span>
+          <svg width="40" height="40" viewBox="0 0 100 100" fill="none"><path d="M24 56 a26 26 0 0 0 52 0" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M24 56 h52" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M35 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M50 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M65 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/></svg>
+        </div>
+        <div class="b-body">
+          <h4>Songdo Bath House</h4>
+          <div class="loc">Songdo Beach 5 min · sea-view tang</div>
+          <div class="b-spec"><span>SAUNA 92°</span><span>COLD 18°</span><span class="price">₩9,000</span></div>
+          <div class="badges"><span class="bdg">Tattoo: cover-up</span><span class="bdg gray">Seshin ₩20k</span><span class="bdg gray">Friendly 4.6</span></div>
+        </div>
+      </article>
+
+      <article class="bath rv" data-city="seoul">
+        <div class="b-img"><span class="b-city">SEOUL</span>
+          <svg width="40" height="40" viewBox="0 0 100 100" fill="none"><path d="M24 56 a26 26 0 0 0 52 0" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M24 56 h52" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M35 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M50 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M65 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/></svg>
+        </div>
+        <div class="b-body">
+          <h4>Sinseol 24h Sauna</h4>
+          <div class="loc">Sinseol-dong Stn 2 min · open all night</div>
+          <div class="b-spec"><span>SAUNA 88°</span><span>COLD 16°</span><span class="price">₩12,000</span></div>
+          <div class="badges"><span class="bdg">Tattoo OK</span><span class="bdg gray">Sleep OK</span><span class="bdg gray">Friendly 4.2</span></div>
+        </div>
+      </article>
+
+      <article class="bath rv" data-city="seoul">
+        <div class="b-img"><span class="b-city">SEOUL</span>
+          <svg width="40" height="40" viewBox="0 0 100 100" fill="none"><path d="M24 56 a26 26 0 0 0 52 0" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M24 56 h52" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M35 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M50 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M65 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/></svg>
+        </div>
+        <div class="b-body">
+          <h4>Moran Jjimjilbang</h4>
+          <div class="loc">Hongdae 7 min · full jjimjil floors</div>
+          <div class="b-spec"><span>SAUNA 85°</span><span>COLD 17°</span><span class="price">₩15,000</span></div>
+          <div class="badges"><span class="bdg">English OK</span><span class="bdg gray">Seshin ₩25k</span><span class="bdg gray">Friendly 4.8</span></div>
+        </div>
+      </article>
+
+      <article class="bath rv" data-city="busan">
+        <div class="b-img"><span class="b-city">BUSAN</span>
+          <svg width="40" height="40" viewBox="0 0 100 100" fill="none"><path d="M24 56 a26 26 0 0 0 52 0" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M24 56 h52" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M35 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M50 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M65 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/></svg>
+        </div>
+        <div class="b-body">
+          <h4>Yeonhwa Oncheon</h4>
+          <div class="loc">Dongnae area · natural hot spring</div>
+          <div class="b-spec"><span>SAUNA 90°</span><span>COLD 15°</span><span class="price">₩10,000</span></div>
+          <div class="badges"><span class="bdg">Tattoo: ask first</span><span class="bdg gray">Hot spring</span><span class="bdg gray">Friendly 3.9</span></div>
+        </div>
+      </article>
+
+      <article class="bath rv" data-city="seoul">
+        <div class="b-img"><span class="b-city">SEOUL</span>
+          <svg width="40" height="40" viewBox="0 0 100 100" fill="none"><path d="M24 56 a26 26 0 0 0 52 0" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M24 56 h52" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M35 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M50 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M65 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/></svg>
+        </div>
+        <div class="b-body">
+          <h4>Cheongpa Sauna</h4>
+          <div class="loc">Seoul Station 6 min · quick-stop tang</div>
+          <div class="b-spec"><span>SAUNA 87°</span><span>COLD 17°</span><span class="price">₩8,000</span></div>
+          <div class="badges"><span class="bdg">Tattoo OK</span><span class="bdg gray">Luggage OK</span><span class="bdg gray">Friendly 4.1</span></div>
+        </div>
+      </article>
+
+      <article class="bath rv" data-city="busan">
+        <div class="b-img"><span class="b-city">BUSAN</span>
+          <svg width="40" height="40" viewBox="0 0 100 100" fill="none"><path d="M24 56 a26 26 0 0 0 52 0" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M24 56 h52" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M35 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M50 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M65 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/></svg>
+        </div>
+        <div class="b-body">
+          <h4>Gamcheon Hill Bath</h4>
+          <div class="loc">Gamcheon village walk · morning light</div>
+          <div class="b-spec"><span>SAUNA 84°</span><span>COLD 19°</span><span class="price">₩8,000</span></div>
+          <div class="badges"><span class="bdg">Tattoo: cover-up</span><span class="bdg gray">Cash only</span><span class="bdg gray">Friendly 3.7</span></div>
+        </div>
+      </article>
+    </div>
+    <!-- ⛳ 시설 카드 데이터: 여기까지 -->
+  </div>
+</section>
+
+<!-- ================= GUIDE ================= -->
+<section class="guide" id="guide">
+  <div class="wrap">
+    <div class="rv">
+      <div class="sec-eyebrow">FIRST-TIMER GUIDE</div>
+      <h2>Your first tang, in six steps.</h2>
+      <p class="sec-sub">The whole ritual, from the shoe locker to the sleeping mat. Nothing assumed, nothing embarrassing — everyone in that room was a first-timer once.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><span class="num">STEP 1</span><h4>Shoes off at the door</h4><p>Shoe lockers come first, always. Keep the small key — you may trade it for your main locker key.</p></div>
+      <div class="step rv"><span class="num">STEP 2</span><h4>Pay &amp; get your key</h4><p>Entry is paid up front. Your wristband key opens your locker and tracks anything you buy inside.</p></div>
+      <div class="step rv"><span class="num">STEP 3</span><h4>Undress fully</h4><p>Yes, fully. Bath floors are nude and separated by gender. Nobody looks — it is the least remarkable thing in the room.</p></div>
+      <div class="step rv"><span class="num">STEP 4</span><h4>Wash before you soak</h4><p>The one golden rule. Scrub down at the seated showers before touching any tang.</p></div>
+      <div class="step rv"><span class="num">STEP 5</span><h4>Soak, sauna, repeat</h4><p>Hot tang, cold tang, sauna, rest. Find your own rotation — locals call the feeling being &ldquo;siwonhada&rdquo;.</p></div>
+      <div class="step rv"><span class="num">STEP 6</span><h4>Jjimjilbang time</h4><p>Uniform on, into the mixed lounge: kiln rooms, sikhye, baked eggs, and — if you booked it — a place to sleep.</p></div>
+    </div>
+    <div class="guide-cta rv">
+      <a href="#articles" class="btn pri">Read the full guide</a>
+      <a href="#articles" class="btn sec">日本語で読む</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ARTICLES ================= -->
+<section id="articles">
+  <div class="wrap">
+    <div class="rv">
+      <div class="sec-eyebrow">GUIDES</div>
+      <h2>Read before you sweat.</h2>
+      <p class="sec-sub">Straight answers to the questions travelers actually search for — the same guides AI assistants and search engines will be quoting.</p>
+    </div>
+    <div class="art-grid">
+      <a class="art rv" href="#">
+        <div class="art-thumb">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#1E6E9C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="art-body">
+          <div class="art-tag">RULES</div>
+          <h4>Tattoos in Korean saunas: the real rules</h4>
+          <p>Which baths say yes, which say cover up — and what &ldquo;cover-up&rdquo; actually means in practice.</p>
+          <div class="rt">6 MIN READ</div>
+        </div>
+      </a>
+      <a class="art rv" href="#">
+        <div class="art-thumb">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M12 3v10" stroke="#1E6E9C" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="17.5" r="3.5" stroke="#1E6E9C" stroke-width="2.4"/></svg>
+        </div>
+        <div class="art-body">
+          <div class="art-tag">ETIQUETTE</div>
+          <h4>Jjimjilbang etiquette 101</h4>
+          <p>The unwritten rules, written down — from the shoe locker to the sleeping floor.</p>
+          <div class="rt">8 MIN READ</div>
+        </div>
+      </a>
+      <a class="art rv" href="#">
+        <div class="art-thumb">
+          <svg width="34" height="24" viewBox="0 0 38 24" fill="none"><rect x="2" y="2" width="34" height="20" rx="5" fill="#1F9D57"/><path d="M12 2v20" stroke="#187E46" stroke-width="1.6" opacity=".6"/></svg>
+        </div>
+        <div class="art-body">
+          <div class="art-tag">SESHIN</div>
+          <h4>Seshin, explained</h4>
+          <p>What happens on the table, what it costs, and exactly how to ask for it.</p>
+          <div class="rt">5 MIN READ</div>
+        </div>
+      </a>
+      <a class="art rv" href="#">
+        <div class="art-thumb">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M4 17V9.5L12 4l8 5.5V17" stroke="#1E6E9C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17h16" stroke="#1E6E9C" stroke-width="2.2" stroke-linecap="round"/></svg>
+        </div>
+        <div class="art-body">
+          <div class="art-tag">STAY</div>
+          <h4>Sleeping overnight in a jjimjilbang</h4>
+          <p>Korea's original budget stay — where it works, what it costs, and how not to miss checkout.</p>
+          <div class="rt">7 MIN READ</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SESHIN ================= -->
+<section id="seshin" style="background:var(--stone);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap seshin-in">
+    <div class="rv">
+      <div class="sec-eyebrow">SESHIN — 세신</div>
+      <h2>The legendary<br>green-towel scrub.</h2>
+      <p class="sec-sub">A professional scrubs off a layer of you that you didn't know you had. Thirty minutes on the table, and your skin is new. It is the single most Korean thing you can do with an afternoon.</p>
+      <div class="seshin-facts">
+        <div class="sf"><div class="v">₩20,000–35,000</div><div class="k">typical price</div></div>
+        <div class="sf"><div class="v">20–30 min</div><div class="k">on the table</div></div>
+        <div class="sf"><div class="v">After soaking</div><div class="k">when to go — skin softened first</div></div>
+      </div>
+      <div class="guide-cta">
+        <a href="#baths" class="btn pri">Find seshin near you</a>
+        <a href="#show" class="btn sec">How to ask for it</a>
+      </div>
+    </div>
+    <div class="rv">
+      <svg class="towel" viewBox="0 0 380 260" fill="none" role="img" aria-label="Italy towel illustration">
+        <rect x="40" y="60" width="300" height="140" rx="18" fill="#1F9D57"/>
+        <rect x="40" y="60" width="300" height="140" rx="18" fill="url(#wv)" opacity=".18"/>
+        <defs>
+          <pattern id="wv" width="14" height="14" patternUnits="userSpaceOnUse">
+            <path d="M0 7h14M7 0v14" stroke="#fff" stroke-width="1.4"/>
+          </pattern>
+        </defs>
+        <rect x="40" y="60" width="300" height="140" rx="18" stroke="#187E46" stroke-width="3"/>
+        <path d="M120 60v140" stroke="#187E46" stroke-width="2.5" opacity=".5"/>
+        <text x="205" y="140" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="15" letter-spacing="4" fill="#FFFFFF" font-weight="600">ITALY TOWEL</text>
+        <text x="205" y="163" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="10" letter-spacing="3" fill="#D9F2E3">EST. BUSAN, 1960s</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SHOW-THIS ================= -->
+<section class="show" id="show">
+  <div class="wrap show-in">
+    <div class="rv">
+      <div class="sec-eyebrow">SHOW-THIS CARDS</div>
+      <h2>Show your screen.<br>We'll do the talking.</h2>
+      <p class="sec-sub">Every card says it politely, in native Korean, with your meaning underneath. Counters see these and know exactly what you need — no app, no typing, no charades.</p>
+      <div class="show-note"><span>✓</span><span>Works offline once loaded — hot rooms and basements included.</span></div>
+    </div>
+    <div class="rv">
+      <div class="phrase-card" id="phraseCard" role="region" aria-live="polite">
+        <div class="phrase-tag" id="pTag">AT THE COUNTER</div>
+        <div class="phrase-kr" id="pKr">&ldquo;세신 받고 싶어요. 가격이 어떻게 되나요?&rdquo;</div>
+        <div class="phrase-en" id="pEn">I'd like a body scrub. How much is it?</div>
+      </div>
+      <div class="show-ctrl" role="tablist" aria-label="Example cards">
+        <button class="pdot on" data-p="0" aria-label="Card 1"></button>
+        <button class="pdot" data-p="1" aria-label="Card 2"></button>
+        <button class="pdot" data-p="2" aria-label="Card 3"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STAMPS ================= -->
+<section class="stamp-sec" id="stamps">
+  <div class="wrap stamp-in">
+    <div class="stamp-copy rv">
+      <div class="sec-eyebrow" style="color:var(--red)">STAMP LOG — 韓湯 인장</div>
+      <h2><span class="kr">하루 한 탕.</span>One tang a day.</h2>
+      <p class="sec-sub">Every listed bath carries its own seal. Visit, soak, and stamp your log — your bath journey across Korea, collected in red ink. Fill a row and your next seshin is on us.</p>
+      <div class="guide-cta">
+        <a href="#pass" class="btn pri" style="background:var(--red)">Start your log</a>
+      </div>
+    </div>
+    <div class="stamp-board rv" aria-label="Sample stamp log">
+      <div class="seal fill"><span class="c2">韓</span><span class="c2">湯</span></div>
+      <div class="seal line r1"><span class="c1">釜</span></div>
+      <div class="seal line r2"><span class="c1">서</span></div>
+      <div class="seal line r3"><span class="c2">松</span><span class="c2">島</span></div>
+      <div class="seal empty">+</div>
+      <div class="seal empty">+</div>
+      <div class="stamp-count">4 / 6 STAMPS — SESHIN REWARD AT 6</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PASS ================= -->
+<section class="pass" id="pass">
+  <div class="wrap pass-in">
+    <div class="rv">
+      <div class="sec-eyebrow">HANTANG PASS</div>
+      <h2>Pay from home.<br>Enter with a QR.</h2>
+      <p class="sec-sub">Korean booking sites need a Korean phone number. HANTANG PASS doesn't. Buy your bath or seshin voucher before you fly, show the QR at the counter, walk in.</p>
+      <div class="pass-points">
+        <div class="pp"><span class="tick">✓</span>Overseas cards accepted — Visa, Mastercard, JCB, Amex</div>
+        <div class="pp"><span class="tick">✓</span>No Korean phone number, no local app, no ID checks</div>
+        <div class="pp"><span class="tick">✓</span>Free cancellation until the day before</div>
+      </div>
+      <form class="wait" onsubmit="return false">
+        <input type="email" placeholder="Email for early access" aria-label="Email for early access">
+        <button class="btn pri" id="waitBtn" type="submit">Join waitlist</button>
+      </form>
+      <p class="owner">Run a bathhouse or seshin shop? <a href="mailto:hello@hantang.kr">Get listed on HANTANG →</a></p>
+    </div>
+    <div class="qr-mock rv" aria-hidden="true">
+      <div class="qr"></div>
+      <h4>1 Bath + Seshin</h4>
+      <p>Songdo Bath House · valid any day</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq">
+  <div class="wrap">
+    <div class="rv">
+      <div class="sec-eyebrow">QUESTIONS, ANSWERED STRAIGHT</div>
+      <h2>Before you ask Reddit.</h2>
+    </div>
+    <div class="faq-list rv">
+      <details open>
+        <summary>Can I enter a Korean sauna with tattoos?<span class="pl">+</span></summary>
+        <div class="faq-a">It depends on the bathhouse — and that's exactly why every HANTANG listing states its policy up front: <b>Tattoo OK</b>, <b>cover-up</b> (rash guard or patch), or <b>no</b>. Filter by Tattoo OK and you'll never have the awkward door moment.</div>
+      </details>
+      <details>
+        <summary>Do I really have to be fully naked?<span class="pl">+</span></summary>
+        <div class="faq-a">In the bath area, yes — it's gender-separated and completely normal there; nobody pays attention. In jjimjilbang lounge floors, everyone wears the cotton uniform you're given at entry, and those floors are mixed.</div>
+      </details>
+      <details>
+        <summary>How much does it cost?<span class="pl">+</span></summary>
+        <div class="faq-a">Public bathhouses typically run about ₩8,000–12,000 for entry, jjimjilbangs a little more with the uniform included, and a seshin scrub is usually ₩20,000–35,000 on top. Every listing shows its real, checked price.</div>
+      </details>
+      <details>
+        <summary>What exactly is seshin?<span class="pl">+</span></summary>
+        <div class="faq-a">A full-body exfoliating scrub done by a professional with the green &ldquo;Italy towel&rdquo;, after you've soaked for 15–20 minutes. It removes a visible layer of dead skin — strange for one minute, addictive after ten. Look for the Seshin badge on listings.</div>
+      </details>
+      <details>
+        <summary>Can I sleep overnight in a jjimjilbang?<span class="pl">+</span></summary>
+        <div class="faq-a">In many, yes — it's a classic budget stay. Listings marked <b>Sleep OK</b> have overnight hours and sleeping rooms; a few close at midnight, so check the card before you plan on it.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CLOSING ================= -->
+<section class="close-band">
+  <div class="tiles up" aria-hidden="true"></div>
+  <div class="wrap rv">
+    <svg class="anim" width="56" height="56" viewBox="0 0 100 100" fill="none" style="margin:0 auto 22px" aria-hidden="true">
+      <path d="M24 56 a26 26 0 0 0 52 0" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/>
+      <path d="M24 56 h52" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/>
+      <path class="s1" d="M35 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/>
+      <path class="s2" d="M50 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/>
+      <path class="s3" d="M65 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/>
+    </svg>
+    <h2>Your first tang is waiting.</h2>
+    <div class="kr">하루 한 탕 · One tang a day</div>
+    <a href="#baths" class="btn pri">Find a bath</a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="f-in">
+      <div class="f-brand">
+        <div style="display:flex;align-items:center;gap:10px">
+          <svg width="26" height="26" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+            <path d="M24 56 a26 26 0 0 0 52 0" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+            <path d="M24 56 h52" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+            <path d="M35 44 c-5 -7 5 -11 0 -19" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+            <path d="M50 44 c-5 -7 5 -11 0 -19" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+            <path d="M65 44 c-5 -7 5 -11 0 -19" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+          </svg>
+          <span class="bname">HANTANG</span>
+          <span style="font-size:12px;color:#8B877F">한탕 · 韓湯</span>
+        </div>
+        <p>Korea Sauna &amp; Bath Guide. Every temperature checked in person, every rule written in your language.</p>
+      </div>
+      <div class="f-col">
+        <h5>EXPLORE</h5>
+        <a href="#baths">Find a Bath</a>
+        <a href="#guide">First-Timer Guide</a>
+        <a href="#seshin">Seshin</a>
+        <a href="#stamps">Stamp Log</a>
+      </div>
+      <div class="f-col">
+        <h5>PASS</h5>
+        <a href="#pass">How PASS works</a>
+        <a href="#pass">Vouchers</a>
+        <a href="#pass">For bathhouse owners</a>
+      </div>
+      <div class="f-col">
+        <h5>LANGUAGE</h5>
+        <a href="#">English</a>
+        <a href="#">日本語 — soon</a>
+        <a href="#">한국어 — soon</a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 HANTANG. 하루 한 탕.</span>
+      <span>Made with a thermometer, in Korea.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // mobile menu
+  var burger=document.getElementById('burger'),navLinks=document.getElementById('navLinks');
+  burger.addEventListener('click',function(){
+    var open=navLinks.classList.toggle('open');
+    burger.setAttribute('aria-expanded',open);
+  });
+  navLinks.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){navLinks.classList.remove('open')})});
+
+  // language popover
+  var langBtn=document.getElementById('langBtn'),langPop=document.getElementById('langPop');
+  langBtn.addEventListener('click',function(e){
+    e.stopPropagation();
+    var open=langPop.classList.toggle('open');
+    langBtn.setAttribute('aria-expanded',open);
+  });
+  document.addEventListener('click',function(){langPop.classList.remove('open')});
+
+  // filter chips (visual toggle)
+  document.querySelectorAll('[data-chip]').forEach(function(c){
+    c.addEventListener('click',function(){c.classList.toggle('on')});
+  });
+
+  // city filter
+  document.querySelectorAll('.ctab').forEach(function(t){
+    t.addEventListener('click',function(){
+      document.querySelectorAll('.ctab').forEach(function(x){x.classList.remove('on')});
+      t.classList.add('on');
+      var f=t.dataset.f;
+      document.querySelectorAll('#bathGrid .bath').forEach(function(b){
+        b.classList.toggle('hide',f!=='all'&&b.dataset.city!==f);
+      });
+    });
+  });
+
+  // show-this card cycling
+  var phrases=[
+    {tag:'AT THE COUNTER',kr:'\u201c세신 받고 싶어요. 가격이 어떻게 되나요?\u201d',en:"I'd like a body scrub. How much is it?"},
+    {tag:'FIRST VISIT',kr:'\u201c처음 왔어요. 이용 방법 좀 알려주세요.\u201d',en:"It's my first time here. Could you show me how it works?"},
+    {tag:'INSIDE',kr:'\u201c수건 하나만 더 부탁드려요.\u201d',en:'One more towel, please.'}
+  ];
+  var dots=document.querySelectorAll('.pdot');
+  function setPhrase(i){
+    document.getElementById('pTag').textContent=phrases[i].tag;
+    document.getElementById('pKr').textContent=phrases[i].kr;
+    document.getElementById('pEn').textContent=phrases[i].en;
+    dots.forEach(function(d,j){d.classList.toggle('on',i===j)});
+    pi=i;
+  }
+  dots.forEach(function(d){d.addEventListener('click',function(){setPhrase(+d.dataset.p)})});
+  var pi=0;
+  setInterval(function(){
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    setPhrase((pi+1)%phrases.length);
+  },5000);
+
+  // waitlist feedback (demo — README의 폼 연동 안내 참고)
+  document.getElementById('waitBtn').addEventListener('click',function(){
+    this.textContent='Added ✓';
+    this.style.background='#187E46';
+  });
+
+  // scroll reveal
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+  },{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+</script>
+
+</body>
+</html>
