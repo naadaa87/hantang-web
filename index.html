@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HANTANG 한탕 — Korea Sauna &amp; Bath Guide</title>
 <meta name="description" content="Every bath in Korea, explained. Temperatures, tattoo rules, prices and etiquette for Korean saunas, jjimjilbangs and bathhouses — checked in person, written in your language.">
-<link rel="canonical" href="https://hantang.kr/">
+<link rel="canonical" href="https://hantang-web.pages.dev/">
 <!-- ⛳ 도메인 확정 전이면 위 canonical과 아래 og:url·og:image 주소를 pages.dev 주소로 바꿔도 됩니다 -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="HANTANG">
 <meta property="og:title" content="HANTANG 한탕 — Korea Sauna &amp; Bath Guide">
 <meta property="og:description" content="Every bath in Korea, explained. Temperatures, tattoo rules, prices and etiquette — checked in person.">
-<meta property="og:url" content="https://hantang.kr/">
-<meta property="og:image" content="https://hantang.kr/og.png">
+<meta property="og:url" content="https://hantang-web.pages.dev/">
+<meta property="og:image" content="https://hantang-web.pages.dev/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="HANTANG 한탕 — Korea Sauna &amp; Bath Guide">
 <meta name="twitter:description" content="Every bath in Korea, explained. Checked in person, written in your language.">
-<meta name="twitter:image" content="https://hantang.kr/og.png">
+<meta name="twitter:image" content="https://hantang-web.pages.dev/og.png">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,7 @@
   "@type": "WebSite",
   "name": "HANTANG",
   "alternateName": ["한탕", "韓湯", "Hantang Korea Sauna Guide"],
-  "url": "https://hantang.kr/",
+  "url": "https://hantang-web.pages.dev/",
   "description": "Korea Sauna & Bath Guide. Temperatures, tattoo rules, prices and etiquette for Korean saunas, jjimjilbangs and bathhouses — checked in person.",
   "inLanguage": ["en", "ja", "ko"]
 }
@@ -205,6 +205,7 @@
   .b-body .loc{font-size:12px;color:var(--mute);margin:2px 0 12px}
   .b-spec{display:flex;gap:12px;font-family:var(--mono);font-size:11.5px;font-weight:600;margin-bottom:12px;flex-wrap:wrap}
   .b-spec .price{margin-left:auto;color:var(--blue)}
+  .bath-loading,.bath-empty{grid-column:1/-1;padding:44px 20px;text-align:center;color:var(--mute);font-size:14px;border:1px dashed var(--line);border-radius:16px}
   @media (max-width:900px){.bath-grid{grid-template-columns:1fr 1fr}}
   @media (max-width:600px){.bath-grid{grid-template-columns:1fr}}
 
@@ -450,81 +451,10 @@
       <button class="ctab" data-f="busan">BUSAN</button>
     </div>
 
-    <!-- ⛳ 시설 카드 데이터: 여기부터 실제 실사 데이터로 교체 -->
-    <div class="bath-grid" id="bathGrid">
-      <article class="bath rv" data-city="busan">
-        <div class="b-img"><span class="b-city">BUSAN</span>
-          <svg width="40" height="40" viewBox="0 0 100 100" fill="none"><path d="M24 56 a26 26 0 0 0 52 0" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M24 56 h52" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M35 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M50 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M65 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/></svg>
-        </div>
-        <div class="b-body">
-          <h4>Songdo Bath House</h4>
-          <div class="loc">Songdo Beach 5 min · sea-view tang</div>
-          <div class="b-spec"><span>SAUNA 92°</span><span>COLD 18°</span><span class="price">₩9,000</span></div>
-          <div class="badges"><span class="bdg">Tattoo: cover-up</span><span class="bdg gray">Seshin ₩20k</span><span class="bdg gray">Friendly 4.6</span></div>
-        </div>
-      </article>
-
-      <article class="bath rv" data-city="seoul">
-        <div class="b-img"><span class="b-city">SEOUL</span>
-          <svg width="40" height="40" viewBox="0 0 100 100" fill="none"><path d="M24 56 a26 26 0 0 0 52 0" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M24 56 h52" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M35 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M50 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M65 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/></svg>
-        </div>
-        <div class="b-body">
-          <h4>Sinseol 24h Sauna</h4>
-          <div class="loc">Sinseol-dong Stn 2 min · open all night</div>
-          <div class="b-spec"><span>SAUNA 88°</span><span>COLD 16°</span><span class="price">₩12,000</span></div>
-          <div class="badges"><span class="bdg">Tattoo OK</span><span class="bdg gray">Sleep OK</span><span class="bdg gray">Friendly 4.2</span></div>
-        </div>
-      </article>
-
-      <article class="bath rv" data-city="seoul">
-        <div class="b-img"><span class="b-city">SEOUL</span>
-          <svg width="40" height="40" viewBox="0 0 100 100" fill="none"><path d="M24 56 a26 26 0 0 0 52 0" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M24 56 h52" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M35 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M50 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M65 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/></svg>
-        </div>
-        <div class="b-body">
-          <h4>Moran Jjimjilbang</h4>
-          <div class="loc">Hongdae 7 min · full jjimjil floors</div>
-          <div class="b-spec"><span>SAUNA 85°</span><span>COLD 17°</span><span class="price">₩15,000</span></div>
-          <div class="badges"><span class="bdg">English OK</span><span class="bdg gray">Seshin ₩25k</span><span class="bdg gray">Friendly 4.8</span></div>
-        </div>
-      </article>
-
-      <article class="bath rv" data-city="busan">
-        <div class="b-img"><span class="b-city">BUSAN</span>
-          <svg width="40" height="40" viewBox="0 0 100 100" fill="none"><path d="M24 56 a26 26 0 0 0 52 0" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M24 56 h52" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M35 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M50 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M65 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/></svg>
-        </div>
-        <div class="b-body">
-          <h4>Yeonhwa Oncheon</h4>
-          <div class="loc">Dongnae area · natural hot spring</div>
-          <div class="b-spec"><span>SAUNA 90°</span><span>COLD 15°</span><span class="price">₩10,000</span></div>
-          <div class="badges"><span class="bdg">Tattoo: ask first</span><span class="bdg gray">Hot spring</span><span class="bdg gray">Friendly 3.9</span></div>
-        </div>
-      </article>
-
-      <article class="bath rv" data-city="seoul">
-        <div class="b-img"><span class="b-city">SEOUL</span>
-          <svg width="40" height="40" viewBox="0 0 100 100" fill="none"><path d="M24 56 a26 26 0 0 0 52 0" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M24 56 h52" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M35 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M50 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M65 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/></svg>
-        </div>
-        <div class="b-body">
-          <h4>Cheongpa Sauna</h4>
-          <div class="loc">Seoul Station 6 min · quick-stop tang</div>
-          <div class="b-spec"><span>SAUNA 87°</span><span>COLD 17°</span><span class="price">₩8,000</span></div>
-          <div class="badges"><span class="bdg">Tattoo OK</span><span class="bdg gray">Luggage OK</span><span class="bdg gray">Friendly 4.1</span></div>
-        </div>
-      </article>
-
-      <article class="bath rv" data-city="busan">
-        <div class="b-img"><span class="b-city">BUSAN</span>
-          <svg width="40" height="40" viewBox="0 0 100 100" fill="none"><path d="M24 56 a26 26 0 0 0 52 0" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M24 56 h52" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M35 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M50 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/><path d="M65 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/></svg>
-        </div>
-        <div class="b-body">
-          <h4>Gamcheon Hill Bath</h4>
-          <div class="loc">Gamcheon village walk · morning light</div>
-          <div class="b-spec"><span>SAUNA 84°</span><span>COLD 19°</span><span class="price">₩8,000</span></div>
-          <div class="badges"><span class="bdg">Tattoo: cover-up</span><span class="bdg gray">Cash only</span><span class="bdg gray">Friendly 3.7</span></div>
-        </div>
-      </article>
+    <!-- 시설 카드는 data/baths.json에서 자동으로 그려집니다. HTML을 직접 고치지 마세요. -->
+    <div class="bath-grid" id="bathGrid" aria-live="polite">
+      <div class="bath-loading">Loading verified baths…</div>
     </div>
-    <!-- ⛳ 시설 카드 데이터: 여기까지 -->
   </div>
 </section>
 
@@ -811,6 +741,74 @@
 </footer>
 
 <script>
+  // ── 시설 카드 ───────────────────────────────────────
+  // data/baths.json만 갈아끼우면 카드가 바뀝니다. publish_to_web.py가 그 파일을 만듭니다.
+  var STEAM = '<svg width="40" height="40" viewBox="0 0 100 100" fill="none">'
+    + '<path d="M24 56 a26 26 0 0 0 52 0" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/>'
+    + '<path d="M24 56 h52" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/>'
+    + '<path d="M35 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/>'
+    + '<path d="M50 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/>'
+    + '<path d="M65 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/></svg>';
+
+  var BATHS = [], cityFilter = 'all';
+
+  function tattooLabel(t){
+    if (t === 'ok')    return 'Tattoo OK';
+    if (t === 'cover') return 'Tattoo: cover-up';
+    if (t === 'no')    return 'Tattoo: not allowed';
+    return 'Tattoo: ask first';
+  }
+  function esc(v){
+    return String(v == null ? '' : v).replace(/[&<>"]/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];
+    });
+  }
+
+  function renderBaths(){
+    var grid = document.getElementById('bathGrid');
+    if (!grid) return;
+
+    var rows = BATHS.filter(function(b){
+      return cityFilter === 'all' || (b.city || '').toLowerCase() === cityFilter;
+    });
+
+    if (!rows.length){
+      grid.innerHTML = '<div class="bath-empty">No baths listed here yet — we\'re still out measuring.</div>';
+      return;
+    }
+
+    grid.innerHTML = rows.map(function(b){
+      var tags = [];
+      tags.push('<span class="bdg">' + esc(tattooLabel(b.tattoo)) + '</span>');
+      if (b.seshinPrice) tags.push('<span class="bdg gray">Seshin ' + Math.round(b.seshinPrice/1000) + 'k</span>');
+      if (b.sleep)       tags.push('<span class="bdg gray">Sleep OK</span>');
+      if (b.english)     tags.push('<span class="bdg gray">English OK</span>');
+      if (b.open24)      tags.push('<span class="bdg gray">Open 24h</span>');
+
+      var spec = [];
+      if (b.sauna != null) spec.push('<span>SAUNA ' + b.sauna + '°</span>');
+      if (b.cold  != null) spec.push('<span>COLD '  + b.cold  + '°</span>');
+      if (b.entry != null) spec.push('<span class="price">₩' + b.entry.toLocaleString('en-US') + '</span>');
+
+      return '<article class="bath">'
+        + '<div class="b-img"><span class="b-city">' + esc((b.city||'').toUpperCase()) + '</span>' + STEAM + '</div>'
+        + '<div class="b-body">'
+        + '<h4>' + esc(b.name) + '</h4>'
+        + '<div class="loc">' + esc(b.area || '') + (b.note ? ' · ' + esc(b.note) : '') + '</div>'
+        + '<div class="b-spec">' + spec.join('') + '</div>'
+        + '<div class="badges">' + tags.slice(0,3).join('') + '</div>'
+        + '</div></article>';
+    }).join('');
+  }
+
+  fetch('./data/baths.json', { cache: 'no-store' })
+    .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+    .then(function(j){ BATHS = j.baths || []; renderBaths(); })
+    .catch(function(){
+      var g = document.getElementById('bathGrid');
+      if (g) g.innerHTML = '<div class="bath-empty">Bath listings are loading soon.</div>';
+    });
+
   // mobile menu
   var burger=document.getElementById('burger'),navLinks=document.getElementById('navLinks');
   burger.addEventListener('click',function(){
@@ -838,10 +836,8 @@
     t.addEventListener('click',function(){
       document.querySelectorAll('.ctab').forEach(function(x){x.classList.remove('on')});
       t.classList.add('on');
-      var f=t.dataset.f;
-      document.querySelectorAll('#bathGrid .bath').forEach(function(b){
-        b.classList.toggle('hide',f!=='all'&&b.dataset.city!==f);
-      });
+      cityFilter = t.dataset.f;
+      renderBaths();
     });
   });
 

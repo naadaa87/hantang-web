@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hantang.kr/sitemap.xml
+Sitemap: https://hantang-web.pages.dev/sitemap.xml
