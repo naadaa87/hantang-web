@@ -317,6 +317,20 @@
   .f-col a:hover{color:#fff}
   .f-bottom{border-top:1px solid #33312E;margin-top:44px;padding-top:22px;display:flex;justify-content:space-between;gap:16px;font-size:12px;flex-wrap:wrap}
   @media (max-width:860px){.f-in{grid-template-columns:1fr 1fr}}
+
+  /* HANTANG Online (play/) */
+  .nav-play{color:var(--blue)!important;font-weight:700;opacity:1!important}
+  .play{background:var(--stone);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .play-in{display:grid;grid-template-columns:1fr 1.15fr;gap:52px;align-items:center}
+  .play-in>*{min-width:0}
+  .play-shot{display:block;border:2px solid var(--ink);border-radius:6px;overflow:hidden;background:#DCE6EC;box-shadow:0 8px 0 rgba(27,26,24,.1);transition:transform .2s}
+  .play-shot:hover{transform:translateY(-3px)}
+  .play-shot img{display:block;width:100%;height:auto;image-rendering:pixelated}
+  .play-list{list-style:none;margin-top:22px;padding:0;display:grid;gap:10px}
+  .play-list li{display:grid;grid-template-columns:104px 1fr;gap:12px;font-size:15px;align-items:baseline}
+  .play-list b{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--blue);font-weight:600;white-space:nowrap}
+  .play .kr{font-family:var(--serif);color:var(--blue);font-weight:700;font-size:15px;letter-spacing:.04em;margin-top:6px}
+  @media (max-width:860px){.play-in{grid-template-columns:1fr;gap:30px}}
 </style>
 </head>
 <body>
@@ -341,6 +355,7 @@
       <a href="#seshin">Seshin</a>
       <a href="#stamps">Stamps</a>
       <a href="#pass">PASS</a>
+      <a href="play/" class="nav-play">Play the game</a>
     </div>
     <div class="lang-wrap">
       <button class="lang" id="langBtn" aria-haspopup="true" aria-expanded="false">EN ▾</button>
@@ -679,6 +694,32 @@
 </section>
 
 <!-- ================= CLOSING ================= -->
+<!-- ================= HANTANG ONLINE ================= -->
+<section class="play" id="play">
+  <div class="wrap play-in">
+    <div class="rv">
+      <div class="sec-eyebrow">HANTANG ONLINE — 한탕 온라인</div>
+      <h2>Practice the bath<br>before you go.</h2>
+      <div class="kr">하루 한 탕 · One tang a day</div>
+      <p class="sec-sub">A small pixel game that runs in your browser. Take on missions from the regulars, wash before you soak, go hot then cold, crack a baked egg on your forehead, and level up while you pick up the Korean you'll actually use at the counter.</p>
+      <ul class="play-list">
+        <li><b>6 BATHS</b><span>Neighborhood bath, 24-hour sauna, jjimjilbang, kiln, Busan seawater, hot spring village</span></li>
+        <li><b>40 MISSIONS</b><span>Main stories plus requests from the counter imo, the scrubber, grandpa and the snack-bar grandma</span></li>
+        <li><b>16 GAMES</b><span>Scrub rhythm, banana-milk chug, towel tower, Korean phrase quiz and more</span></li>
+        <li><b>23 SCENES</b><span>Pixel moments you unlock with your own look and save as postcards</span></li>
+        <li><b>40 PHRASES</b><span>From 어른 한 명이요 to 등 밀어 드릴까요?, each with romanization</span></li>
+      </ul>
+      <div class="guide-cta">
+        <a href="play/" class="btn pri">Play free</a>
+        <a href="#baths" class="btn sec">Then find a real one</a>
+      </div>
+    </div>
+    <a class="play-shot rv" href="play/" aria-label="Play HANTANG Online">
+      <img src="play/preview.png" width="960" height="540" alt="Pixel jjimjilbang hall with players in matching outfits and lamb-head towels, a mission tracker and speech bubbles in Korean and English" loading="lazy">
+    </a>
+  </div>
+</section>
+
 <section class="close-band">
   <div class="tiles up" aria-hidden="true"></div>
   <div class="wrap rv">
@@ -873,6 +914,14 @@
     es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
   },{threshold:.12});
   document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+
+  // 게임 지도에서 '실제로 가보기'로 들어오면 (#find-…) 시설 목록으로 이동
+  function goFind(){
+    if (!/^#find-/.test(location.hash)) return;
+    var bl = document.getElementById('baths');
+    if (bl) setTimeout(function(){ bl.scrollIntoView(); }, 120);
+  }
+  goFind(); window.addEventListener('hashchange', goFind);
 </script>
 
 </body>

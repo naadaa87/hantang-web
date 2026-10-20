@@ -11,7 +11,11 @@
 | `favicon.svg` | 브라우저 탭 아이콘 (탕 심볼) |
 | `og.png` | 카톡·SNS 공유 시 미리보기 이미지 (1200×630) |
 | `robots.txt` | 검색엔진 수집 허용 설정 |
-| `sitemap.xml` | 검색엔진용 사이트맵 |
+| `sitemap.xml` | 검색엔진용 사이트맵 (`/play/` 포함) |
+| `play/index.html` | 한탕 온라인 게임 본체 (단일 파일, hantang-web.pages.dev/play) |
+| `play/config.js` | 게임 온라인 설정. 비워 두면 오프라인으로 동작 |
+| `play/preview.png` | 홈페이지 게임 소개 섹션·링크 공유용 미리보기 |
+| `play/vendor/supabase.js` | 게임 온라인 기능을 켰을 때만 불러오는 라이브러리 |
 
 ## 배포 순서 (GitHub 연동 → Cloudflare Pages)
 
@@ -47,3 +51,11 @@
 2. 서울·부산 실사 데이터로 시설 카드 교체 (초기 20~30곳이면 충분)
 3. Guides 섹션의 아티클 4종을 실제 페이지로 제작 — 검색·AI 유입의 엔진
 4. Formspree 연동으로 웨이트리스트 수집 시작
+
+## 한탕 온라인 (play/)
+
+브라우저에서 바로 하는 도트 목욕탕 게임입니다. 미션을 받아 깨고, 미니게임 16종을 하며 레벨을 올리고, 명장면·사진·회원증으로 내 캐릭터 모습을 남깁니다. 홈페이지 메뉴의 **Play the game**과 아래쪽 *Practice the bath before you go.* 섹션에서 연결됩니다.
+
+- 게임 문구·미션·난이도는 원본 소스(`개발용_소스/src`, 저장소 밖에 보관)에서 고친 뒤 빌드한 `play/index.html`만 덮어쓰면 됩니다.
+- `play/config.js`에는 Supabase **공개 키(anon/publishable)만** 넣습니다. service_role·secret 키는 절대 넣지 않습니다. 온라인 설정을 해 둔 뒤에는 새 버전을 올릴 때 `config.js`를 덮어쓰지 않습니다.
+- 저장은 플레이어 브라우저(localStorage)에만 됩니다.
