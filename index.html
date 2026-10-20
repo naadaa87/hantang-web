@@ -1,17 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HANTANG 한탕 — Korea Sauna &amp; Bath Guide</title>
 <meta name="description" content="Every bath in Korea, explained. Temperatures, tattoo rules, prices and etiquette for Korean saunas, jjimjilbangs and bathhouses — checked in person, written in your language.">
 <link rel="canonical" href="https://hantang-web.pages.dev/">
+<link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/">
+<link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/">
+<link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/">
+<link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/">
+<link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/">
+<link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/">
+<link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/">
+<link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/">
 <!-- ⛳ 도메인 확정 전이면 위 canonical과 아래 og:url·og:image 주소를 pages.dev 주소로 바꿔도 됩니다 -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="HANTANG">
 <meta property="og:title" content="HANTANG 한탕 — Korea Sauna &amp; Bath Guide">
 <meta property="og:description" content="Every bath in Korea, explained. Temperatures, tattoo rules, prices and etiquette — checked in person.">
 <meta property="og:url" content="https://hantang-web.pages.dev/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="og:locale:alternate" content="ru_RU">
 <meta property="og:image" content="https://hantang-web.pages.dev/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="HANTANG 한탕 — Korea Sauna &amp; Bath Guide">
@@ -30,7 +45,7 @@
   "alternateName": ["한탕", "韓湯", "Hantang Korea Sauna Guide"],
   "url": "https://hantang-web.pages.dev/",
   "description": "Korea Sauna & Bath Guide. Temperatures, tattoo rules, prices and etiquette for Korean saunas, jjimjilbangs and bathhouses — checked in person.",
-  "inLanguage": ["en", "ja", "ko"]
+  "inLanguage": ["en", "ja", "zh-Hant", "zh-Hans", "vi", "th", "ru"]
 }
 </script>
 <script type="application/ld+json">
@@ -129,7 +144,7 @@
   .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:var(--paper)}
   .tiles{position:absolute;inset:0;background-image:linear-gradient(var(--blue-tint) 1.5px,transparent 1.5px),linear-gradient(90deg,var(--blue-tint) 1.5px,transparent 1.5px);background-size:46px 46px;opacity:.6;mask-image:linear-gradient(180deg,#000 20%,transparent 100%);-webkit-mask-image:linear-gradient(180deg,#000 20%,transparent 100%);pointer-events:none}
   .tiles.up{mask-image:linear-gradient(0deg,#000 20%,transparent 100%);-webkit-mask-image:linear-gradient(0deg,#000 20%,transparent 100%)}
-  .hero-in{position:relative;display:grid;grid-template-columns:1.25fr .9fr;gap:40px;align-items:center;padding:84px 0 76px}
+  .hero-in{position:relative;display:grid;grid-template-columns:1.25fr .9fr;gap:40px;align-items:center;padding-block:84px 76px}
   .eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.26em;color:var(--blue);font-weight:600;display:inline-block;margin-bottom:18px}
   h1{font-family:var(--serif);font-weight:700;font-size:clamp(34px,5.6vw,58px);line-height:1.16;letter-spacing:-.012em;max-width:600px}
   .hero p.sub{margin-top:18px;font-size:16px;color:var(--mute);max-width:520px}
@@ -157,7 +172,7 @@
   .bdg.gray{background:var(--stone);color:var(--mute)}
   .fc-stamp{position:absolute;top:12px;right:12px;width:44px;height:44px;border-radius:8px;border:3px solid var(--red);color:var(--red);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;font-size:13px;line-height:1.1;transform:rotate(6deg);background:rgba(255,255,255,.9)}
   @media (max-width:900px){
-    .hero-in{grid-template-columns:1fr;padding:58px 0 54px}
+    .hero-in{grid-template-columns:1fr;padding-block:58px 54px}
     .float-card{display:none}
     .search{flex-direction:column}
     .search .go{padding:14px}
@@ -331,6 +346,17 @@
   .play-list b{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--blue);font-weight:600;white-space:nowrap}
   .play .kr{font-family:var(--serif);color:var(--blue);font-weight:700;font-size:15px;letter-spacing:.04em;margin-top:6px}
   @media (max-width:860px){.play-in{grid-template-columns:1fr;gap:30px}}
+  .lang-pop a{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;font-size:13px;padding:9px 11px;border-radius:8px;text-align:left;color:inherit;text-decoration:none}
+  .lang-pop a:hover{background:var(--stone)}
+  .lang-pop a.on{color:var(--blue);font-weight:700}
+  .f-col a.on{color:#fff;opacity:1}
+  .lang-suggest{background:var(--blue-tint);border-bottom:1px solid var(--line);font-size:14px}
+  .lang-suggest .wrap{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding-block:10px}
+  .lang-suggest p{flex:1;min-width:0;margin:0}
+  .lang-suggest a{font-weight:700;color:var(--blue-deep);text-decoration:none;border:1.5px solid var(--blue);border-radius:99px;padding:5px 14px;background:#fff}
+  .lang-suggest button{font-size:18px;line-height:1;color:var(--mute);padding:4px 8px}
+  .ko-run,.phrase-kr{word-break:keep-all}
+
 </style>
 </head>
 <body>
@@ -360,9 +386,13 @@
     <div class="lang-wrap">
       <button class="lang" id="langBtn" aria-haspopup="true" aria-expanded="false">EN ▾</button>
       <div class="lang-pop" id="langPop" role="menu">
-        <button class="on" role="menuitem">English <span>✓</span></button>
-        <button role="menuitem">日本語 <span class="soon">SOON</span></button>
-        <button role="menuitem">한국어 <span class="soon">SOON</span></button>
+        <a role="menuitem" href="./" hreflang="en" lang="en" class="on" aria-current="page">English <span>✓</span></a>
+        <a role="menuitem" href="ja/" hreflang="ja" lang="ja">日本語</a>
+        <a role="menuitem" href="zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+        <a role="menuitem" href="zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+        <a role="menuitem" href="vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+        <a role="menuitem" href="th/" hreflang="th" lang="th">ภาษาไทย</a>
+        <a role="menuitem" href="ru/" hreflang="ru" lang="ru">Русский</a>
       </div>
     </div>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
@@ -491,7 +521,7 @@
     </div>
     <div class="guide-cta rv">
       <a href="#articles" class="btn pri">Read the full guide</a>
-      <a href="#articles" class="btn sec">日本語で読む</a>
+      <a href="ja/#guide" class="btn sec" hreflang="ja" lang="ja">日本語で読む</a>
     </div>
   </div>
 </section>
@@ -557,7 +587,7 @@
 <section id="seshin" style="background:var(--stone);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="wrap seshin-in">
     <div class="rv">
-      <div class="sec-eyebrow">SESHIN — 세신</div>
+      <div class="sec-eyebrow">SESHIN — <span class="ko-run" lang="ko">세신</span></div>
       <h2>The legendary<br>green-towel scrub.</h2>
       <p class="sec-sub">A professional scrubs off a layer of you that you didn't know you had. Thirty minutes on the table, and your skin is new. It is the single most Korean thing you can do with an afternoon.</p>
       <div class="seshin-facts">
@@ -616,7 +646,7 @@
 <section class="stamp-sec" id="stamps">
   <div class="wrap stamp-in">
     <div class="stamp-copy rv">
-      <div class="sec-eyebrow" style="color:var(--red)">STAMP LOG — 韓湯 인장</div>
+      <div class="sec-eyebrow" style="color:var(--red)">STAMP LOG — 韓湯 <span class="ko-run" lang="ko">인장</span></div>
       <h2><span class="kr">하루 한 탕.</span>One tang a day.</h2>
       <p class="sec-sub">Every listed bath carries its own seal. Visit, soak, and stamp your log — your bath journey across Korea, collected in red ink. Fill a row and your next seshin is on us.</p>
       <div class="guide-cta">
@@ -698,16 +728,16 @@
 <section class="play" id="play">
   <div class="wrap play-in">
     <div class="rv">
-      <div class="sec-eyebrow">HANTANG ONLINE — 한탕 온라인</div>
+      <div class="sec-eyebrow">HANTANG ONLINE — <span class="ko-run" lang="ko">한탕 온라인</span></div>
       <h2>Practice the bath<br>before you go.</h2>
-      <div class="kr">하루 한 탕 · One tang a day</div>
+      <div class="kr"><span class="ko-run" lang="ko">하루 한 탕</span> · One tang a day</div>
       <p class="sec-sub">A small pixel game that runs in your browser. Take on missions from the regulars, wash before you soak, go hot then cold, crack a baked egg on your forehead, and level up while you pick up the Korean you'll actually use at the counter.</p>
       <ul class="play-list">
         <li><b>6 BATHS</b><span>Neighborhood bath, 24-hour sauna, jjimjilbang, kiln, Busan seawater, hot spring village</span></li>
         <li><b>40 MISSIONS</b><span>Main stories plus requests from the counter imo, the scrubber, grandpa and the snack-bar grandma</span></li>
         <li><b>16 GAMES</b><span>Scrub rhythm, banana-milk chug, towel tower, Korean phrase quiz and more</span></li>
         <li><b>23 SCENES</b><span>Pixel moments you unlock with your own look and save as postcards</span></li>
-        <li><b>40 PHRASES</b><span>From 어른 한 명이요 to 등 밀어 드릴까요?, each with romanization</span></li>
+        <li><b>40 PHRASES</b><span>From <span class="ko-run" lang="ko">어른 한 명이요</span> to <span class="ko-run" lang="ko">등 밀어 드릴까요</span>?, each with romanization</span></li>
       </ul>
       <div class="guide-cta">
         <a href="play/" class="btn pri">Play free</a>
@@ -731,7 +761,7 @@
       <path class="s3" d="M65 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="7" stroke-linecap="round"/>
     </svg>
     <h2>Your first tang is waiting.</h2>
-    <div class="kr">하루 한 탕 · One tang a day</div>
+    <div class="kr"><span class="ko-run" lang="ko">하루 한 탕</span> · One tang a day</div>
     <a href="#baths" class="btn pri">Find a bath</a>
   </div>
 </section>
@@ -769,9 +799,13 @@
       </div>
       <div class="f-col">
         <h5>LANGUAGE</h5>
-        <a href="#">English</a>
-        <a href="#">日本語 — soon</a>
-        <a href="#">한국어 — soon</a>
+        <a href="./" hreflang="en" lang="en" class="on" aria-current="page">English</a>
+        <a href="ja/" hreflang="ja" lang="ja">日本語</a>
+        <a href="zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+        <a href="zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+        <a href="vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+        <a href="th/" hreflang="th" lang="th">ภาษาไทย</a>
+        <a href="ru/" hreflang="ru" lang="ru">Русский</a>
       </div>
     </div>
     <div class="f-bottom">
@@ -782,6 +816,10 @@
 </footer>
 
 <script>
+  // 화면 문구 (언어별로 생성기가 채운다)
+  var STR = {"tattoo_ok": "Tattoo OK", "tattoo_cover": "Tattoo: cover-up", "tattoo_no": "Tattoo: not allowed", "tattoo_ask": "Tattoo: ask first", "empty": "No baths listed here yet — we're still out measuring.", "seshin_k": "Seshin ₩{n}k", "sleep": "Sleep OK", "english": "English OK", "open24": "Open 24h", "sauna": "SAUNA", "cold": "COLD", "city": {"seoul": "SEOUL", "busan": "BUSAN"}, "load_fail": "Bath listings are loading soon.", "ph_tag": ["AT THE COUNTER", "FIRST VISIT", "INSIDE"], "ph_en": ["I'd like a body scrub. How much is it?", "It's my first time here. Could you show me how it works?", "One more towel, please."], "added": "Added ✓"};
+  var LANG = 'en';
+
   // ── 시설 카드 ───────────────────────────────────────
   // data/baths.json만 갈아끼우면 카드가 바뀝니다. publish_to_web.py가 그 파일을 만듭니다.
   var STEAM = '<svg width="40" height="40" viewBox="0 0 100 100" fill="none">'
@@ -794,16 +832,17 @@
   var BATHS = [], cityFilter = 'all';
 
   function tattooLabel(t){
-    if (t === 'ok')    return 'Tattoo OK';
-    if (t === 'cover') return 'Tattoo: cover-up';
-    if (t === 'no')    return 'Tattoo: not allowed';
-    return 'Tattoo: ask first';
+    if (t === 'ok')    return STR.tattoo_ok;
+    if (t === 'cover') return STR.tattoo_cover;
+    if (t === 'no')    return STR.tattoo_no;
+    return STR.tattoo_ask;
   }
   function esc(v){
     return String(v == null ? '' : v).replace(/[&<>"]/g, function(c){
       return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];
     });
   }
+  function cityName(c){ c = (c || '').toLowerCase(); return STR.city[c] || c.toUpperCase(); }
 
   function renderBaths(){
     var grid = document.getElementById('bathGrid');
@@ -814,25 +853,25 @@
     });
 
     if (!rows.length){
-      grid.innerHTML = '<div class="bath-empty">No baths listed here yet — we\'re still out measuring.</div>';
+      grid.innerHTML = '<div class="bath-empty">' + esc(STR.empty) + '</div>';
       return;
     }
 
     grid.innerHTML = rows.map(function(b){
       var tags = [];
       tags.push('<span class="bdg">' + esc(tattooLabel(b.tattoo)) + '</span>');
-      if (b.seshinPrice) tags.push('<span class="bdg gray">Seshin ' + Math.round(b.seshinPrice/1000) + 'k</span>');
-      if (b.sleep)       tags.push('<span class="bdg gray">Sleep OK</span>');
-      if (b.english)     tags.push('<span class="bdg gray">English OK</span>');
-      if (b.open24)      tags.push('<span class="bdg gray">Open 24h</span>');
+      if (b.seshinPrice) tags.push('<span class="bdg gray">' + esc(STR.seshin_k.replace('{n}', Math.round(b.seshinPrice/1000))) + '</span>');
+      if (b.sleep)       tags.push('<span class="bdg gray">' + esc(STR.sleep) + '</span>');
+      if (b.english)     tags.push('<span class="bdg gray">' + esc(STR.english) + '</span>');
+      if (b.open24)      tags.push('<span class="bdg gray">' + esc(STR.open24) + '</span>');
 
       var spec = [];
-      if (b.sauna != null) spec.push('<span>SAUNA ' + b.sauna + '°</span>');
-      if (b.cold  != null) spec.push('<span>COLD '  + b.cold  + '°</span>');
+      if (b.sauna != null) spec.push('<span>' + esc(STR.sauna) + ' ' + b.sauna + '°</span>');
+      if (b.cold  != null) spec.push('<span>' + esc(STR.cold) + ' ' + b.cold + '°</span>');
       if (b.entry != null) spec.push('<span class="price">₩' + b.entry.toLocaleString('en-US') + '</span>');
 
       return '<article class="bath">'
-        + '<div class="b-img"><span class="b-city">' + esc((b.city||'').toUpperCase()) + '</span>' + STEAM + '</div>'
+        + '<div class="b-img"><span class="b-city">' + esc(cityName(b.city)) + '</span>' + STEAM + '</div>'
         + '<div class="b-body">'
         + '<h4>' + esc(b.name) + '</h4>'
         + '<div class="loc">' + esc(b.area || '') + (b.note ? ' · ' + esc(b.note) : '') + '</div>'
@@ -842,12 +881,12 @@
     }).join('');
   }
 
-  fetch('./data/baths.json', { cache: 'no-store' })
+  fetch('data/baths.json', { cache: 'no-store' })
     .then(function(r){ if(!r.ok) throw 0; return r.json(); })
     .then(function(j){ BATHS = j.baths || []; renderBaths(); })
     .catch(function(){
       var g = document.getElementById('bathGrid');
-      if (g) g.innerHTML = '<div class="bath-empty">Bath listings are loading soon.</div>';
+      if (g) g.innerHTML = '<div class="bath-empty">' + esc(STR.load_fail) + '</div>';
     });
 
   // mobile menu
@@ -866,6 +905,10 @@
     langBtn.setAttribute('aria-expanded',open);
   });
   document.addEventListener('click',function(){langPop.classList.remove('open')});
+  // 고른 언어를 기억한다 (다음에 영어 첫 화면에 오면 그 언어를 권한다)
+  langPop.querySelectorAll('a[hreflang]').forEach(function(a){
+    a.addEventListener('click',function(){ try{ localStorage.setItem('hantang_site_lang', a.getAttribute('hreflang')); }catch(e){} });
+  });
 
   // filter chips (visual toggle)
   document.querySelectorAll('[data-chip]').forEach(function(c){
@@ -884,9 +927,9 @@
 
   // show-this card cycling
   var phrases=[
-    {tag:'AT THE COUNTER',kr:'\u201c세신 받고 싶어요. 가격이 어떻게 되나요?\u201d',en:"I'd like a body scrub. How much is it?"},
-    {tag:'FIRST VISIT',kr:'\u201c처음 왔어요. 이용 방법 좀 알려주세요.\u201d',en:"It's my first time here. Could you show me how it works?"},
-    {tag:'INSIDE',kr:'\u201c수건 하나만 더 부탁드려요.\u201d',en:'One more towel, please.'}
+    {tag:STR.ph_tag[0],kr:'“세신 받고 싶어요. 가격이 어떻게 되나요?”',en:STR.ph_en[0]},
+    {tag:STR.ph_tag[1],kr:'“처음 왔어요. 이용 방법 좀 알려주세요.”',en:STR.ph_en[1]},
+    {tag:STR.ph_tag[2],kr:'“수건 하나만 더 부탁드려요.”',en:STR.ph_en[2]}
   ];
   var dots=document.querySelectorAll('.pdot');
   function setPhrase(i){
@@ -905,7 +948,7 @@
 
   // waitlist feedback (demo — README의 폼 연동 안내 참고)
   document.getElementById('waitBtn').addEventListener('click',function(){
-    this.textContent='Added ✓';
+    this.textContent=STR.added;
     this.style.background='#187E46';
   });
 
@@ -922,6 +965,37 @@
     if (bl) setTimeout(function(){ bl.scrollIntoView(); }, 120);
   }
   goFind(); window.addEventListener('hashchange', goFind);
+
+  // 다른 언어 권하기: 브라우저 언어가 일본어·중국어·베트남어·태국어·러시아어면 맨 위에 작은 안내를 띄운다
+  (function(){
+    var SUG = {"ja": {"href": "ja/", "msg": "このページは日本語でもご覧いただけます。", "go": "日本語で見る", "close": "閉じる", "lang": "ja"}, "zh-Hant": {"href": "zh-hant/", "msg": "本頁也提供繁體中文版。", "go": "看繁體中文版", "close": "關閉", "lang": "zh-Hant"}, "zh-Hans": {"href": "zh-hans/", "msg": "本页面也有简体中文版。", "go": "查看中文版", "close": "关闭", "lang": "zh-Hans"}, "vi": {"href": "vi/", "msg": "Trang này cũng có bản tiếng Việt.", "go": "Đọc bản tiếng Việt", "close": "Đóng", "lang": "vi"}, "th": {"href": "th/", "msg": "หน้านี้มีเวอร์ชันภาษาไทยด้วย", "go": "อ่านเป็นภาษาไทย", "close": "ปิด", "lang": "th"}, "ru": {"href": "ru/", "msg": "Эта страница есть и на русском.", "go": "Читать на русском", "close": "Закрыть", "lang": "ru"}};
+    var pick = null, saved = null;
+    try { saved = localStorage.getItem('hantang_site_lang'); if (localStorage.getItem('hantang_site_suggest_off')) return; } catch(e) {}
+    if (saved === 'en') return;
+    if (saved && SUG[saved]) pick = saved;
+    else {
+      var list = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en']);
+      for (var i = 0; i < list.length && !pick; i++) {
+        var l = String(list[i]).toLowerCase();
+        if (l.indexOf('en') === 0 || l.indexOf('ko') === 0) break;
+        if (l.indexOf('ja') === 0) pick = 'ja';
+        else if (l.indexOf('zh') === 0) pick = /hant|tw|hk|mo/.test(l) ? 'zh-Hant' : 'zh-Hans';
+        else if (l.indexOf('vi') === 0) pick = 'vi';
+        else if (l.indexOf('th') === 0) pick = 'th';
+        else if (l.indexOf('ru') === 0) pick = 'ru';
+      }
+    }
+    if (!pick || !SUG[pick]) return;
+    var s = SUG[pick], bar = document.createElement('div');
+    bar.className = 'lang-suggest'; bar.setAttribute('lang', s.lang);
+    bar.innerHTML = '<div class="wrap"><p></p><a></a><button type="button">×</button></div>';
+    bar.querySelector('p').textContent = s.msg;
+    var a = bar.querySelector('a'); a.textContent = s.go; a.href = s.href; a.setAttribute('hreflang', s.lang);
+    a.addEventListener('click', function(){ try { localStorage.setItem('hantang_site_lang', pick); } catch(e) {} });
+    var b = bar.querySelector('button'); b.setAttribute('aria-label', s.close);
+    b.addEventListener('click', function(){ bar.remove(); try { localStorage.setItem('hantang_site_suggest_off', '1'); } catch(e) {} });
+    document.body.insertBefore(bar, document.body.firstChild);
+  })();
 </script>
 
 </body>
