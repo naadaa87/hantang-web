@@ -92,6 +92,1462 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://hantang-web.pages.dev/guide/first-visit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/first-visit/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ja/guide/first-visit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/first-visit/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hant/guide/first-visit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/first-visit/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hans/guide/first-visit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/first-visit/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/vi/guide/first-visit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/first-visit/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/th/guide/first-visit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/first-visit/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ru/guide/first-visit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/first-visit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/first-visit/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/guide/bath-types/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/bath-types/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ja/guide/bath-types/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/bath-types/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hant/guide/bath-types/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/bath-types/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hans/guide/bath-types/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/bath-types/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/vi/guide/bath-types/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/bath-types/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/th/guide/bath-types/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/bath-types/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ru/guide/bath-types/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/bath-types/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/bath-types/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/guide/etiquette/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/etiquette/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ja/guide/etiquette/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/etiquette/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hant/guide/etiquette/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/etiquette/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hans/guide/etiquette/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/etiquette/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/vi/guide/etiquette/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/etiquette/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/th/guide/etiquette/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/etiquette/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ru/guide/etiquette/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/etiquette/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/etiquette/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/guide/tattoos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/tattoos/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ja/guide/tattoos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/tattoos/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hant/guide/tattoos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/tattoos/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hans/guide/tattoos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/tattoos/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/vi/guide/tattoos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/tattoos/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/th/guide/tattoos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/tattoos/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ru/guide/tattoos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/tattoos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/tattoos/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/guide/seshin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/seshin/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ja/guide/seshin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/seshin/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hant/guide/seshin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/seshin/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hans/guide/seshin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/seshin/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/vi/guide/seshin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/seshin/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/th/guide/seshin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/seshin/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ru/guide/seshin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/seshin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/seshin/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/guide/rooms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/rooms/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ja/guide/rooms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/rooms/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hant/guide/rooms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/rooms/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hans/guide/rooms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/rooms/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/vi/guide/rooms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/rooms/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/th/guide/rooms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/rooms/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ru/guide/rooms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/rooms/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/guide/food/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/food/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ja/guide/food/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/food/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hant/guide/food/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/food/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hans/guide/food/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/food/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/vi/guide/food/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/food/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/th/guide/food/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/food/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ru/guide/food/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/food/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/food/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/guide/prices-hours/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/prices-hours/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ja/guide/prices-hours/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/prices-hours/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hant/guide/prices-hours/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/prices-hours/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hans/guide/prices-hours/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/prices-hours/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/vi/guide/prices-hours/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/prices-hours/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/th/guide/prices-hours/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/prices-hours/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ru/guide/prices-hours/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/prices-hours/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/prices-hours/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/guide/overnight/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/overnight/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ja/guide/overnight/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/overnight/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hant/guide/overnight/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/overnight/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hans/guide/overnight/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/overnight/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/vi/guide/overnight/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/overnight/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/th/guide/overnight/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/overnight/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ru/guide/overnight/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/overnight/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/overnight/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/guide/health-safety/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/health-safety/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ja/guide/health-safety/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/health-safety/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hant/guide/health-safety/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/health-safety/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hans/guide/health-safety/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/health-safety/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/vi/guide/health-safety/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/health-safety/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/th/guide/health-safety/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/health-safety/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ru/guide/health-safety/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/health-safety/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/health-safety/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/guide/families/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/families/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ja/guide/families/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/families/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hant/guide/families/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/families/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hans/guide/families/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/families/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/vi/guide/families/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/families/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/th/guide/families/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/families/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ru/guide/families/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/families/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/families/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/guide/phrases/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/phrases/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ja/guide/phrases/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/phrases/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hant/guide/phrases/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/phrases/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hans/guide/phrases/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/phrases/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/vi/guide/phrases/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/phrases/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/th/guide/phrases/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/phrases/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ru/guide/phrases/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/phrases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/phrases/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/guide/history/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/history/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ja/guide/history/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/history/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hant/guide/history/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/history/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hans/guide/history/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/history/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/vi/guide/history/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/history/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/th/guide/history/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/history/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ru/guide/history/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/history/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/history/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/guide/regions/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/regions/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ja/guide/regions/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/regions/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hant/guide/regions/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/regions/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hans/guide/regions/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/regions/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/vi/guide/regions/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/regions/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/th/guide/regions/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/regions/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ru/guide/regions/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/regions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/regions/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/guide/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ja/guide/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hant/guide/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hans/guide/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/vi/guide/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/th/guide/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ru/guide/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/guide/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/guide/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/guide/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/guide/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/guide/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/baths/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ja/baths/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hant/baths/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hans/baths/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/vi/baths/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/th/baths/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ru/baths/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://hantang-web.pages.dev/play/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
