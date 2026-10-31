@@ -51,6 +51,10 @@
   var logEl = document.getElementById('log');
   var result = { source: 'KorService2 (한국관광공사_국문 관광정보 서비스_GW)', fetched: null, items: {}, notes: [] };
   window.__ktoResult = result;          // 결과만 노출 (키 없음)
+  // 수집이 끝난 결과는 이 브라우저에 보관해 둔다 (창을 닫거나 새로고침해도 남도록). 키는 넣지 않는다
+  var SAVE = 'hantang.kto.result';
+  function save(){ try{ localStorage.setItem(SAVE, JSON.stringify(result)); }catch(e){ log('브라우저 보관 실패: '+e.message, 'warn'); } }
+  try{ var old = JSON.parse(localStorage.getItem(SAVE) || 'null'); if (old && old.items && Object.keys(old.items).length) { window.__ktoSaved = old; } }catch(e){}
   var calls = 0;
 
   function log(msg, cls){ var s=document.createElement('div'); if(cls) s.className=cls; s.textContent=msg; logEl.appendChild(s); logEl.scrollTop=logEl.scrollHeight; result.notes.push(msg); }
@@ -144,8 +148,8 @@
         try{ var ti = await call('detailIntro2', { contentId: id, contentTypeId: o.contenttypeid || '12' }); var t0 = ti.items[0] || {}; o.intro = {}; Object.keys(t0).forEach(function(k){ if (/time|rest|fee|parking|age|expguide|open|use/i.test(k) && t0[k]) o.intro[k] = String(t0[k]).slice(0, 400); }); }catch(e){ o.intro_err = e.message; }
         done++; if (done % 5 === 0 || done === ids.length) { setPhase('상세 조회 '+done+' / '+ids.length, .3 + .7*done/ids.length); counts(); }
       });
-      setPhase('완료 — 이 창을 그대로 두시면 제가 결과를 가져가겠습니다.', 1);
-      log('완료: 시설 '+ids.length+'곳', 'ok'); result.done = true; counts();
+      setPhase('완료 — 결과는 이 브라우저에 보관됐습니다. 창을 닫으셔도 됩니다.', 1);
+      log('완료: 시설 '+ids.length+'곳', 'ok'); result.done = true; counts(); save();
     }catch(e){
       setPhase('중단됨', null);
       if (e.auth) log('인증키 오류: '+e.message+' — 활용신청 직후라면 승인 반영까지 최대 1시간이 걸릴 수 있습니다. 잠시 뒤 새로고침하고 다시 시도해 주세요.', 'err');
@@ -154,6 +158,7 @@
       document.getElementById('key').disabled = false; document.getElementById('go').disabled = false;
     }
   });
+  if (window.__ktoSaved) log('이 브라우저에 지난 수집 결과가 보관돼 있습니다: 시설 '+Object.keys(window.__ktoSaved.items).length+'곳 ('+(window.__ktoSaved.fetched||'')+'). 다시 수집하지 않으셔도 됩니다.', 'ok');
 })();
 </script>
 </body>
