@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>우리 업장 등록하기 — HANTANG 한탕</title>
+<meta name="description" content="외국인 여행자에게 우리 목욕탕·찜질방·사우나·세신샵을 7개 언어로 소개하세요. 등록은 무료입니다.">
+<link rel="canonical" href="https://hantang-web.pages.dev/partner/">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{--paper:#fff;--stone:#F6F5F2;--ink:#1B1A18;--mute:#79746D;--line:#E6E3DD;--blue:#1E6E9C;--blue-deep:#16597F;--blue-tint:#EAF2F7;--red:#C13A2A;--ok:#0E7A5A;--gold:#E0A100;
+  --sans:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;--serif:'Hahmlet',serif;--mono:'IBM Plex Mono',monospace}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;word-break:keep-all}
+a{color:inherit}img{max-width:100%}
+.wrap{max-width:980px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.top{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:5}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;letter-spacing:.2em;font-size:15px}
+.brand small{letter-spacing:0;font-weight:600;color:var(--mute)}
+.top nav a{font-size:14px;font-weight:700;color:var(--blue);text-decoration:none}
+h1,h2,h3{line-height:1.3;margin:0;text-wrap:balance}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.22em;color:var(--blue);font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:14px;border:0;background:var(--blue);color:#fff;font:inherit;font-weight:700;font-size:16px;cursor:pointer;text-decoration:none}
+.btn:hover{background:var(--blue-deep)}.btn.ghost{background:#fff;color:var(--ink);border:1.5px solid var(--line)}.btn:disabled{opacity:.5;cursor:wait}
+
+.hero{background:linear-gradient(180deg,#fff 0%,var(--stone) 100%);border-bottom:1px solid var(--line)}
+.hero .wrap{padding-block:56px 46px}
+.hero h1{font-family:var(--serif);font-size:clamp(30px,5vw,46px);margin-top:14px}
+.hero p{font-size:17px;color:var(--mute);margin-top:16px;max-width:640px}
+.why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:30px}
+.why div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.why b{display:block;font-size:16px}.why span{font-size:14px;color:var(--mute);display:block;margin-top:6px}
+.why i{font-style:normal;display:inline-flex;width:34px;height:34px;border-radius:10px;background:var(--blue-tint);color:var(--blue);align-items:center;justify-content:center;font-weight:800;margin-bottom:10px}
+.form{padding-block:40px 80px}
+.steps{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.steps span{font-family:var(--mono);font-size:11px;letter-spacing:.1em;padding:6px 10px;border-radius:99px;background:var(--stone);color:var(--mute)}
+fieldset{border:1px solid var(--line);border-radius:20px;padding:24px 22px;margin:0 0 18px;background:#fff;min-width:0}
+legend{font-weight:800;font-size:19px;padding:0 6px}
+legend small{font-weight:600;font-size:13px;color:var(--mute);margin-left:6px}
+.hint{font-size:13.5px;color:var(--mute);margin:4px 0 0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 16px;margin-top:14px}
+.grid .full{grid-column:1/-1}
+label.f{display:grid;gap:6px;font-weight:700;font-size:14.5px;min-width:0}
+label.f em{font-style:normal;color:var(--red);margin-left:3px}
+input[type=text],input[type=tel],input[type=email],input[type=url],input[type=search],select,textarea{font:inherit;font-size:16px;font-weight:400;width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);min-width:0}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--blue);outline-offset:1px;border-color:var(--blue)}
+textarea{min-height:110px;resize:vertical}
+.row{display:flex;gap:8px}.row input{flex:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chips label{display:inline-flex;align-items:center;gap:7px;border:1.5px solid var(--line);border-radius:99px;padding:8px 13px;font-size:14px;font-weight:600;cursor:pointer;background:#fff}
+.chips input{accent-color:var(--blue);width:16px;height:16px}
+.chips label:has(input:checked){border-color:var(--blue);background:var(--blue-tint);color:var(--blue-deep)}
+.found{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:8px;max-height:320px;overflow:auto}
+.found button{width:100%;text-align:left;font:inherit;border:1.5px solid var(--line);border-radius:12px;background:#fff;padding:10px 12px;cursor:pointer}
+.found button:hover{border-color:var(--blue)}.found b{font-size:15px}.found small{display:block;color:var(--mute);font-size:12.5px}
+.picked{margin-top:12px;border:1.5px solid var(--ok);background:#EEF8F3;border-radius:12px;padding:12px 14px;font-size:14.5px;display:none}
+.picked.on{display:block}
+.photos{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.photos figure{margin:0;width:120px;position:relative}
+.photos img{width:120px;height:90px;object-fit:cover;border-radius:10px;display:block;border:1px solid var(--line)}
+.photos button{position:absolute;top:4px;right:4px;border:0;border-radius:8px;background:rgba(27,26,24,.75);color:#fff;font-size:13px;padding:2px 7px;cursor:pointer}
+.agree{border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:var(--stone);font-size:13.5px;color:#4A4741;margin-top:12px}
+.agree table{width:100%;border-collapse:collapse;margin-top:8px}.agree th,.agree td{text-align:left;padding:6px 8px;border-top:1px solid var(--line);vertical-align:top}
+.check{display:flex;gap:10px;align-items:flex-start;margin-top:12px;font-weight:700;font-size:15px}
+.check input{width:20px;height:20px;margin-top:2px;accent-color:var(--blue);flex:0 0 auto}
+.msg{margin-top:14px;border-radius:14px;padding:14px 16px;font-size:15px;display:none}
+.msg.err{display:block;background:#FBEFEC;border:1px solid #F0D2CB;color:#7A2418}
+.msg.ok{display:block;background:#EEF8F3;border:1px solid #BFE3D2;color:#0E5A43}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.done{display:none;text-align:center;padding:60px 20px;border:1px solid var(--line);border-radius:20px;background:#fff}
+.done h2{font-family:var(--serif);font-size:28px}.done p{color:var(--mute);margin-top:12px}
+.done code{font-family:var(--mono);font-size:15px;background:var(--stone);padding:4px 10px;border-radius:8px}
+.foot{border-top:1px solid var(--line);background:var(--stone);font-size:13px;color:var(--mute)}
+.foot .wrap{padding-block:24px}
+@media (max-width:760px){.why{grid-template-columns:1fr}.grid{grid-template-columns:1fr}fieldset{padding:20px 16px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="../">
+  <svg width="26" height="26" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M24 56 a26 26 0 0 0 52 0" stroke="#1B1A18" stroke-width="9" stroke-linecap="round"/><path d="M24 56 h52" stroke="#1B1A18" stroke-width="9" stroke-linecap="round"/><path d="M35 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M50 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/><path d="M65 44 c-5 -7 5 -11 0 -19" stroke="#1E6E9C" stroke-width="8" stroke-linecap="round"/></svg>
+  HANTANG <small>한탕 · 업주용</small></a><nav><a href="#form">등록 신청 ↓</a></nav></div></header>
+
+<section class="hero"><div class="wrap">
+  <div class="eyebrow">FOR OWNERS · 무료 등록</div>
+  <h1>외국인 손님에게 우리 업장을 소개하세요</h1>
+  <p>한탕은 한국 목욕탕·찜질방·사우나·세신샵을 외국인 여행자에게 7개 언어(영어·일본어·중국어 번체/간체·베트남어·태국어·러시아어)로 안내하는 가이드입니다. 아래 신청서를 보내 주시면 내용을 확인한 뒤 업장 정보와 사진을 함께 올려 드립니다. 등록비는 받지 않습니다.</p>
+  <div class="why">
+    <div><i>7</i><b>7개 언어로 노출</b><span>영업시간·요금·타투 정책·예약 방법을 외국인이 읽을 수 있게 정리해 지역 페이지에 함께 보여 드립니다.</span></div>
+    <div><i>⌖</i><b>지도·길찾기 연결</b><span>구글·네이버·카카오 지도와 택시 기사님께 보여 줄 한글 주소 카드가 함께 붙습니다.</span></div>
+    <div><i>★</i><b>한탕 인증 뱃지</b><span>평점과 후기가 많은 업장은 ‘HANTANG Top Rated’ 인증 뱃지와 인기 업장 모아보기에 들어갑니다. 비용을 받고 다는 뱃지가 아닙니다.</span></div>
+  </div>
+</div></section>
+
+<main class="wrap form" id="form">
+  <div class="steps"><span>1 업장 찾기</span><span>2 기본 정보</span><span>3 이용 안내</span><span>4 사진</span><span>5 담당자·동의</span></div>
+  <form id="pf" novalidate>
+    <fieldset>
+      <legend>1. 우리 업장 찾기 <small>선택</small></legend>
+      <p class="hint">한탕에는 행정안전부 인허가 자료의 전국 목욕장 5,600여 곳이 이미 올라가 있습니다. 목록에 있는 업장이면 골라 주세요. 같은 곳에 정보가 이어 붙습니다. 없으면 건너뛰셔도 됩니다.</p>
+      <div class="row" style="margin-top:12px"><input type="search" id="claimQ" placeholder="상호나 동네 이름 (예: 해운대, 스파랜드)" autocomplete="off"></div>
+      <ul class="found" id="claimList"></ul>
+      <div class="picked" id="claimPicked"></div>
+      <input type="hidden" name="claim" id="claim">
+    </fieldset>
+
+    <fieldset>
+      <legend>2. 기본 정보</legend>
+      <div class="grid">
+        <label class="f">상호(한글)<em>*</em><input type="text" name="name_ko" required maxlength="80" placeholder="예: 한탕사우나"></label>
+        <label class="f">영문 표기 <input type="text" name="name_en" maxlength="80" placeholder="예: Hantang Sauna (있으면)"></label>
+        <label class="f">업종<em>*</em><select name="type" required>
+          <option value="bath">목욕탕(대중탕)</option><option value="bathjjim">목욕탕 + 찜질방</option><option value="jjim">찜질방</option>
+          <option value="kiln">한증막·불가마</option><option value="sauna">사우나(남성·여성)</option><option value="seshin">세신샵</option>
+          <option value="private">1인·프라이빗 목욕/사우나</option><option value="spa">스파·온천 리조트</option><option value="hotel">호텔 사우나</option><option value="other">기타</option></select></label>
+        <label class="f">사업자등록번호 또는 영업신고번호 <input type="text" name="biz_no" maxlength="30" placeholder="확인용, 공개하지 않습니다"></label>
+        <label class="f full">도로명 주소<em>*</em><div class="row"><input type="text" name="address" id="addr" required maxlength="160" placeholder="주소 검색을 누르거나 직접 입력"><button type="button" class="btn ghost" id="addrBtn" style="min-height:46px;padding:0 14px">주소 검색</button></div></label>
+        <label class="f full">상세 위치 <input type="text" name="address2" maxlength="80" placeholder="예: 지하 1층 / 3층, 엘리베이터 이용"></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>3. 이용 안내 <small>외국인이 가장 궁금해하는 내용입니다</small></legend>
+      <div class="grid">
+        <label class="f">영업시간 <input type="text" name="hours" maxlength="120" placeholder="예: 05:00–22:00 / 24시간"></label>
+        <label class="f">휴무일 <input type="text" name="closed" maxlength="80" placeholder="예: 매월 둘째·넷째 화요일 / 연중무휴"></label>
+        <label class="f">목욕 요금(성인) <input type="text" name="price_bath" maxlength="60" placeholder="예: 10,000원"></label>
+        <label class="f">찜질·숙박 요금 <input type="text" name="price_jjim" maxlength="60" placeholder="예: 15,000원 (야간 18,000원)"></label>
+        <label class="f">세신 요금 <input type="text" name="price_seshin" maxlength="80" placeholder="예: 기본 25,000원 / 60분 70,000원"></label>
+        <label class="f">기타 요금 <input type="text" name="price_other" maxlength="160" placeholder="예: 1인실 2시간 50,000원, 수건 추가 1,000원"></label>
+        <label class="f">외국어 응대 <select name="english"><option value="">선택</option><option value="yes">영어 응대 가능</option><option value="some">간단한 영어·번역앱으로 가능</option><option value="no">어려움</option></select></label>
+        <label class="f">문신(타투) 손님 <select name="tattoo"><option value="">선택</option><option value="ok">입장 가능</option><option value="cover">가리면 가능</option><option value="no">입장 불가</option><option value="ask">문의 필요</option></select></label>
+      </div>
+      <div style="margin-top:16px;font-weight:700;font-size:14.5px">시설·서비스 <span class="hint" style="display:inline">해당하는 것을 모두 고르세요</span></div>
+      <div class="chips" id="feats">
+        <label><input type="checkbox" value="men">남탕</label><label><input type="checkbox" value="women">여탕</label><label><input type="checkbox" value="women_only">여성 전용</label>
+        <label><input type="checkbox" value="jjim">찜질방</label><label><input type="checkbox" value="sleep">수면·숙박 가능</label><label><input type="checkbox" value="h24">24시간</label>
+        <label><input type="checkbox" value="seshin">세신(때밀이)</label><label><input type="checkbox" value="private">1인실·개인탕</label><label><input type="checkbox" value="sauna_hot">건식 사우나</label>
+        <label><input type="checkbox" value="cold_pool">냉탕</label><label><input type="checkbox" value="towel">수건 제공</label><label><input type="checkbox" value="parking">주차</label>
+        <label><input type="checkbox" value="foreign_card">해외 카드 결제</label>
+      </div>
+      <div class="grid">
+        <label class="f">예약 방법 <input type="text" name="booking" maxlength="160" placeholder="예: 네이버 예약 / 카카오톡 채널 / 현장 방문"></label>
+        <label class="f">홈페이지·예약 링크 <input type="url" name="url" maxlength="300" placeholder="https://"></label>
+        <label class="f">인스타그램 <input type="text" name="instagram" maxlength="60" placeholder="@계정"></label>
+        <span></span>
+        <label class="f full">업장 소개 (한국어) <textarea name="desc_ko" maxlength="600" placeholder="물 온도, 탕 종류, 자랑거리, 외국인 손님이 알면 좋은 점 등을 적어 주세요. 한탕이 7개 언어로 옮겨 올립니다."></textarea></label>
+        <label class="f full">외국인 손님께 한마디 <input type="text" name="msg_foreign" maxlength="300" placeholder="예: 입장 시 신발장 열쇠를 카운터에 맡겨 주세요"></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>4. 사진 <small>최대 5장 · 선택</small></legend>
+      <p class="hint">업장에서 직접 찍었거나 사용할 권리가 있는 사진만 올려 주세요. 네이버·블로그·다른 사람 사진은 올리실 수 없습니다. 탈의실·탕 안은 손님이 찍히지 않은 사진만 됩니다. 큰 사진은 자동으로 줄여서 보냅니다.</p>
+      <input type="file" id="photoIn" accept="image/jpeg,image/png,image/webp" multiple style="margin-top:12px">
+      <div class="photos" id="photoList"></div>
+      <label class="check"><input type="checkbox" id="agreePhoto">올린 사진의 사용 권리가 저(업장)에게 있으며, 한탕 홈페이지와 한탕 소개 자료에 게시하는 것을 허락합니다.</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>5. 담당자·동의</legend>
+      <div class="grid">
+        <label class="f">담당자 이름<em>*</em><input type="text" name="contact_name" required maxlength="40"></label>
+        <label class="f">관계 <select name="contact_role"><option value="owner">대표</option><option value="staff">직원</option><option value="agency">대행사</option></select></label>
+        <label class="f">휴대폰 번호<em>*</em><input type="tel" name="contact_phone" required maxlength="30" placeholder="010-0000-0000"></label>
+        <label class="f">이메일 <input type="email" name="contact_email" maxlength="100"></label>
+      </div>
+      <div class="agree"><b>개인정보 수집·이용 동의 (필수)</b>
+        <table><tr><th>수집 항목</th><td>담당자 이름, 휴대폰 번호, 이메일(선택), 사업자등록번호 또는 영업신고번호(선택)</td></tr>
+        <tr><th>이용 목적</th><td>등록 신청 확인, 업장 정보 확인 연락, 게시 결과 안내</td></tr>
+        <tr><th>보관 기간</th><td>등록 처리 후 1년 또는 삭제 요청 시까지 (요청하시면 바로 지웁니다)</td></tr></table>
+        <p style="margin:8px 0 0">담당자 연락처는 홈페이지에 공개하지 않습니다. 동의하지 않으실 수 있으나, 그 경우 등록 신청을 받을 수 없습니다.</p></div>
+      <label class="check"><input type="checkbox" id="agreePriv" required>개인정보 수집·이용에 동의합니다.</label>
+    </fieldset>
+    <div class="hp" aria-hidden="true"><label>웹사이트<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="msg" id="msg" role="alert"></div>
+    <p class="hint" style="margin:14px 0">보내 주신 내용은 한탕이 확인한 뒤 올립니다. 영업시간·요금처럼 바뀌는 정보는 바뀔 때 다시 보내 주세요.</p>
+    <button type="submit" class="btn" id="sendBtn" style="width:100%;min-height:56px;font-size:17px">등록 신청 보내기</button>
+  </form>
+  <div class="done" id="done"><h2>신청을 받았습니다</h2><p>접수번호 <code id="doneId"></code></p><p>내용을 확인한 뒤 담당자 연락처로 결과를 알려 드립니다. 보통 영업일 기준 3일 안에 처리합니다.</p><p><a class="btn ghost" href="../baths/" style="margin-top:12px">한탕 시설 목록 보기</a></p></div>
+</main>
+<footer class="foot"><div class="wrap">HANTANG 한탕 · 외국인을 위한 한국 목욕 가이드 · 등록은 무료이며, 순위나 뱃지를 돈을 받고 팔지 않습니다.</div></footer>
+<script>
+(function(){
+  var f=document.getElementById('pf'), t0=Date.now(), photos=[], data=null;
+  // 1. 업장 찾기 (전국 목록에서)
+  var q=document.getElementById('claimQ'), list=document.getElementById('claimList'), picked=document.getElementById('claimPicked'), claim=document.getElementById('claim');
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function load(cb){ if(data) return cb(); fetch('../data/places.min.json').then(function(r){return r.json()}).then(function(d){data=d; cb();}).catch(function(){}); }
+  var tm; q.addEventListener('input',function(){clearTimeout(tm); tm=setTimeout(function(){ var t=q.value.replace(/\s/g,''); if(t.length<2){list.innerHTML='';return;}
+    load(function(){ var out=data.r.filter(function(x){return (x[1]+x[3]+data.p[x[2]][0]).replace(/\s/g,'').indexOf(t)>=0}).slice(0,30);
+      list.innerHTML=out.map(function(x){return '<li><button type="button" data-id="'+x[0]+'" data-n="'+esc(x[1])+'" data-a="'+esc(data.p[x[2]][0]+' '+x[3])+'"><b>'+esc(x[1])+'</b><small>'+esc(data.p[x[2]][0]+' '+x[3])+'</small></button></li>'}).join('')||'<li class="hint">찾는 업장이 없으면 그대로 아래 칸을 채워 주세요.</li>'; }); },200); });
+  list.addEventListener('click',function(e){ var b=e.target.closest('button[data-id]'); if(!b) return; claim.value=b.dataset.id;
+    picked.innerHTML='✓ <b>'+esc(b.dataset.n)+'</b> ('+esc(b.dataset.a)+') 에 정보를 이어 붙입니다. <button type="button" id="unclaim" style="margin-left:8px;border:0;background:none;color:#1E6E9C;font-weight:700;cursor:pointer">취소</button>';
+    picked.classList.add('on'); list.innerHTML=''; if(!f.name_ko.value) f.name_ko.value=b.dataset.n.replace(/\(주\)|㈜|주식회사/g,'').trim(); });
+  picked.addEventListener('click',function(e){ if(e.target.id==='unclaim'){claim.value='';picked.classList.remove('on');} });
+  // 주소 검색 (카카오 우편번호 서비스)
+  document.getElementById('addrBtn').addEventListener('click',function(){
+    function go(){ new daum.Postcode({oncomplete:function(d){ f.address.value=d.roadAddress||d.jibunAddress; f.address2.focus(); }}).open(); }
+    if(window.daum&&daum.Postcode) return go(); var s=document.createElement('script'); s.src='https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js'; s.onload=go; s.onerror=function(){alert('주소 검색을 불러오지 못했습니다. 주소를 직접 입력해 주세요.')}; document.head.appendChild(s);
+  });
+  // 4. 사진: 긴 변 1600px 로 줄여 JPEG 로
+  var pin=document.getElementById('photoIn'), plist=document.getElementById('photoList');
+  function draw(){ plist.innerHTML=photos.map(function(p,i){return '<figure><img src="'+p+'" alt=""><button type="button" data-i="'+i+'" aria-label="빼기">×</button></figure>'}).join(''); }
+  plist.addEventListener('click',function(e){var b=e.target.closest('button[data-i]'); if(b){photos.splice(+b.dataset.i,1); draw();}});
+  pin.addEventListener('change',function(){ [].slice.call(pin.files).forEach(function(file){ if(photos.length>=5) return;
+    var img=new Image(), url=URL.createObjectURL(file);
+    img.onload=function(){ var s=Math.min(1,1600/Math.max(img.width,img.height)), c=document.createElement('canvas'); c.width=Math.round(img.width*s); c.height=Math.round(img.height*s);
+      c.getContext('2d').drawImage(img,0,0,c.width,c.height); if(photos.length<5){photos.push(c.toDataURL('image/jpeg',0.82)); draw();} URL.revokeObjectURL(url); };
+    img.src=url; }); pin.value=''; });
+  // 보내기
+  var msg=document.getElementById('msg'), btn=document.getElementById('sendBtn');
+  var LABEL={name_ko:'상호',address:'주소',contact_name:'담당자 이름',contact_phone:'휴대폰 번호',contact_email:'이메일',agree_privacy:'개인정보 동의',agree_photo:'사진 사용 허락'};
+  function err(t){msg.className='msg err'; msg.textContent=t; msg.scrollIntoView({block:'center',behavior:'smooth'});}
+  f.addEventListener('submit',function(e){ e.preventDefault(); msg.className='msg';
+    var b={t0:t0, website:f.website.value, claim:claim.value, photos:photos, agree_privacy:document.getElementById('agreePriv').checked, agree_photo:document.getElementById('agreePhoto').checked,
+      features:[].slice.call(document.querySelectorAll('#feats input:checked')).map(function(x){return x.value})};
+    ['name_ko','name_en','type','biz_no','address','address2','hours','closed','price_bath','price_jjim','price_seshin','price_other','english','tattoo','booking','url','instagram','desc_ko','msg_foreign','contact_name','contact_role','contact_phone','contact_email'].forEach(function(k){b[k]=f[k].value.trim()});
+    var miss=[]; if(!b.name_ko)miss.push('name_ko'); if(!b.address)miss.push('address'); if(!b.contact_name)miss.push('contact_name'); if(!/^[0-9+\-\s()]{8,20}$/.test(b.contact_phone))miss.push('contact_phone');
+    if(!b.agree_privacy)miss.push('agree_privacy'); if(photos.length&&!b.agree_photo)miss.push('agree_photo');
+    if(miss.length) return err('다음 항목을 확인해 주세요: '+miss.map(function(k){return LABEL[k]}).join(', '));
+    if(Date.now()-t0<15000) return err('조금만 더 천천히 확인하신 뒤 보내 주세요.');
+    btn.disabled=true; btn.textContent='보내는 중…';
+    fetch('../api/partner',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(b)}).then(function(r){return r.json().catch(function(){return {ok:false,error:'server'}}).then(function(j){j.status=r.status;return j})}).then(function(j){
+      btn.disabled=false; btn.textContent='등록 신청 보내기';
+      if(j.ok){ f.style.display='none'; document.getElementById('doneId').textContent=j.id; document.getElementById('done').style.display='block'; window.scrollTo(0,document.getElementById('form').offsetTop-80); return; }
+      if(j.error==='missing') return err('다음 항목을 확인해 주세요: '+(j.fields||[]).map(function(k){return LABEL[k]||k}).join(', '));
+      if(j.error==='too_many') return err('짧은 시간에 여러 번 보내셨습니다. 한 시간 뒤에 다시 보내 주세요.');
+      if(j.error==='bad_photo') return err('사진 파일을 읽지 못했습니다. JPG·PNG 사진으로 다시 골라 주세요.');
+      if(j.error==='not_configured'||j.status===404||j.status===405) return err('등록 접수 시스템을 준비하고 있습니다. 잠시 뒤에 다시 시도해 주세요.');
+      err('보내지 못했습니다. 잠시 뒤에 다시 시도해 주세요. ('+(j.error||j.status)+')');
+    }).catch(function(){ btn.disabled=false; btn.textContent='등록 신청 보내기'; err('인터넷 연결을 확인한 뒤 다시 보내 주세요.'); });
+  });
+})();
+</script>
+</body>
+</html>

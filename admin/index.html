@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>관리자 · 업주 등록 검토 — HANTANG</title>
+<meta name="description" content="">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{--paper:#fff;--stone:#F6F5F2;--ink:#1B1A18;--mute:#79746D;--line:#E6E3DD;--blue:#1E6E9C;--blue-deep:#16597F;--blue-tint:#EAF2F7;--red:#C13A2A;--ok:#0E7A5A;--gold:#E0A100;
+  --sans:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;--serif:'Hahmlet',serif;--mono:'IBM Plex Mono',monospace}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;word-break:keep-all}
+a{color:inherit}img{max-width:100%}
+.wrap{max-width:980px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.top{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:5}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;letter-spacing:.2em;font-size:15px}
+.brand small{letter-spacing:0;font-weight:600;color:var(--mute)}
+.top nav a{font-size:14px;font-weight:700;color:var(--blue);text-decoration:none}
+h1,h2,h3{line-height:1.3;margin:0;text-wrap:balance}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.22em;color:var(--blue);font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:14px;border:0;background:var(--blue);color:#fff;font:inherit;font-weight:700;font-size:16px;cursor:pointer;text-decoration:none}
+.btn:hover{background:var(--blue-deep)}.btn.ghost{background:#fff;color:var(--ink);border:1.5px solid var(--line)}.btn:disabled{opacity:.5;cursor:wait}
+
+main.wrap{padding-block:30px 80px;max-width:1200px}
+.bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:18px 0}
+.bar button{font:inherit;font-weight:700;font-size:14px;border:1.5px solid var(--line);background:#fff;border-radius:99px;padding:8px 14px;cursor:pointer}
+.bar button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.note{font-size:14px;color:var(--mute)}
+.card{border:1px solid var(--line);border-radius:18px;padding:20px;margin-top:16px;background:#fff}
+.card h2{font-size:20px}.card .st{font-family:var(--mono);font-size:11px;letter-spacing:.12em;padding:3px 8px;border-radius:99px;background:var(--stone);margin-left:8px}
+.st.pending{background:#FFF4D6}.st.approved{background:#E3F5EC}.st.rejected{background:#FBEFEC}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:14px}
+dl{display:grid;grid-template-columns:120px 1fr;gap:6px 12px;margin:0;font-size:14px}dt{color:var(--mute)}dd{margin:0;white-space:pre-wrap;word-break:break-word}
+.ph{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.ph label{display:grid;gap:4px;font-size:12px}.ph img{width:150px;height:110px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}
+.edit{display:grid;gap:10px}.edit label{display:grid;gap:4px;font-size:13px;font-weight:700}
+.edit input,.edit textarea,.edit select{font:inherit;font-size:14px;padding:9px 11px;border:1.5px solid var(--line);border-radius:10px;width:100%}
+.edit textarea{min-height:80px}
+.acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.acts button{min-height:42px;padding:0 16px;font-size:14px}
+.red{background:var(--red)!important}.green{background:var(--ok)!important}
+.lock{border:1px solid #F0D2CB;background:#FBEFEC;border-radius:16px;padding:18px;margin-top:20px}
+@media (max-width:860px){.cols{grid-template-columns:1fr}dl{grid-template-columns:96px 1fr}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="../">HANTANG <small>관리자 · 업주 등록 검토</small></a><nav><a href="../partner/">신청 화면 ↗</a></nav></div></header>
+<main class="wrap">
+  <h1 style="font-family:var(--serif);font-size:30px">업주 등록 신청</h1>
+  <p class="note">이 화면과 /api/admin 은 Cloudflare Zero Trust Access 로 잠가 둔 관리자만 열 수 있습니다. 승인하면 해당 지역 페이지의 ‘Information from the owners’ 칸에 바로 올라갑니다. 담당자 연락처는 공개되지 않습니다.</p>
+  <div class="bar" id="bar"><button data-s="pending" class="on">검토 대기</button><button data-s="hold">보류</button><button data-s="approved">게시 중</button><button data-s="rejected">반려</button><button data-s="all">전체</button><span class="note" id="who"></span></div>
+  <div id="list"><p class="note">불러오는 중…</p></div>
+</main>
+<script>
+(function(){
+  var items=[], show='pending', listEl=document.getElementById('list');
+  var REG={seoul:'서울',busan:'부산',incheon:'인천',daegu:'대구',daejeon:'대전',ulsan:'울산',sejong:'세종',gyeonggi:'경기',gangwon:'강원',chungbuk:'충북',chungnam:'충남',jeonbuk:'전북','jeonnam-gwangju':'전남·광주',gyeongbuk:'경북',gyeongnam:'경남',jeju:'제주'};
+  var TY={bath:'목욕탕',bathjjim:'목욕탕+찜질방',jjim:'찜질방',kiln:'한증막',sauna:'사우나',seshin:'세신샵',private:'1인·프라이빗',spa:'스파·온천',hotel:'호텔 사우나',other:'기타'};
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function prices(x){return [x.price_bath&&('목욕 '+x.price_bath),x.price_jjim&&('찜질 '+x.price_jjim),x.price_seshin&&('세신 '+x.price_seshin),x.price_other].filter(Boolean).join(' · ')}
+  function load(){ fetch('../api/admin/list',{credentials:'same-origin'}).then(function(r){return r.json().then(function(j){j.status=r.status;return j})}).then(function(j){
+      if(!j.ok){ listEl.innerHTML='<div class="lock"><b>열 수 없습니다 ('+esc(j.why||j.error||j.status)+')</b><p class="note">Cloudflare Zero Trust Access 설정과 Pages 환경 변수(ACCESS_TEAM_DOMAIN, ACCESS_AUD), KV 바인딩(HANTANG_KV)을 확인해 주세요. README 의 ‘업주 등록 기능 설정’에 순서가 있습니다.</p></div>'; return; }
+      items=j.items; render(); }).catch(function(){ listEl.innerHTML='<div class="lock"><b>관리자 API 에 연결하지 못했습니다.</b></div>'; }); }
+  function render(){
+    var xs=items.filter(function(x){return show==='all'||x.status===show});
+    if(!xs.length){listEl.innerHTML='<p class="note">해당하는 신청이 없습니다.</p>';return;}
+    listEl.innerHTML=xs.map(function(x){
+      var ph=''; for(var i=0;i<(x.photos||0);i++) ph+='<label><img src="../api/admin/photo/'+x.id+'/'+i+'" alt="" loading="lazy"><span><input type="checkbox" class="pp" value="'+i+'" '+(x.agree_photo?'checked':'disabled')+'> 게시</span></label>';
+      var regs=Object.keys(REG).map(function(k){return '<option value="'+k+'"'+(k===x.region?' selected':'')+'>'+REG[k]+'</option>'}).join('');
+      return '<div class="card" data-id="'+x.id+'"><h2>'+esc(x.name_ko)+' <span class="st '+x.status+'">'+esc(x.status)+'</span></h2><p class="note">'+esc(x.id)+' · '+esc((x.created||'').slice(0,16).replace('T',' '))+(x.decided?' · 처리 '+esc(x.decided.slice(0,10))+' '+esc(x.decided_by||''):'')+'</p>'
+        +'<div class="cols"><dl><dt>업종</dt><dd>'+esc(TY[x.type]||x.type)+'</dd><dt>주소</dt><dd>'+esc(x.address+' '+(x.address2||''))+'</dd><dt>목록 연결</dt><dd>'+esc(x.claim||'(새 업장)')+'</dd>'
+        +'<dt>영업</dt><dd>'+esc([x.hours,x.closed].filter(Boolean).join(' / '))+'</dd><dt>요금</dt><dd>'+esc(prices(x))+'</dd><dt>외국어·타투</dt><dd>'+esc((x.english||'-')+' / '+(x.tattoo||'-'))+'</dd>'
+        +'<dt>시설</dt><dd>'+esc((x.features||[]).join(', '))+'</dd><dt>예약</dt><dd>'+esc(x.booking)+(x.url?'\n'+esc(x.url):'')+(x.instagram?'\n'+esc(x.instagram):'')+'</dd>'
+        +'<dt>소개</dt><dd>'+esc(x.desc_ko)+'</dd><dt>외국인께</dt><dd>'+esc(x.msg_foreign)+'</dd><dt>사업자번호</dt><dd>'+esc(x.biz_no)+'</dd>'
+        +'<dt>담당자</dt><dd>'+esc(x.contact_name+' ('+x.contact_role+')\n'+x.contact_phone+(x.contact_email?'\n'+x.contact_email:''))+'</dd><dt>사진 허락</dt><dd>'+(x.agree_photo?'예':'아니오')+'</dd></dl>'
+        +'<div class="edit"><label>게시할 영문 이름<input class="e-name_en" value="'+esc(x.name_en)+'"></label><label>지역<select class="e-region">'+regs+'</select></label>'
+        +'<label>게시 주소<input class="e-address" value="'+esc((x.address+' '+(x.address2||'')).trim())+'"></label><label>영업시간<input class="e-hours" value="'+esc(x.hours)+'"></label><label>휴무<input class="e-closed" value="'+esc(x.closed)+'"></label>'
+        +'<label>요금 (영문 표기 권장)<input class="e-prices" value="'+esc(prices(x))+'"></label><label>예약 방법<input class="e-booking" value="'+esc(x.booking)+'"></label><label>링크<input class="e-url" value="'+esc(x.url)+'"></label>'
+        +'<label>영문 소개 (외국인용, 2~3문장)<textarea class="e-desc_en" placeholder="Write the English description that will appear on the site"></textarea></label><label>한국어 소개<textarea class="e-desc_ko">'+esc(x.desc_ko)+'</textarea></label>'
+        +'<label>메모 (내부용)<input class="e-note" value="'+esc(x.note||'')+'"></label></div></div>'
+        +(ph?'<div class="ph">'+ph+'</div>':'')
+        +'<div class="acts"><button class="btn green" data-a="approve">승인·게시</button><button class="btn ghost" data-a="hold">보류</button><button class="btn ghost" data-a="unpublish">게시 중단</button><button class="btn red" data-a="reject">반려</button><button class="btn ghost" data-a="delete">완전 삭제</button></div></div>';
+    }).join('');
+  }
+  document.getElementById('bar').addEventListener('click',function(e){var b=e.target.closest('button[data-s]'); if(!b)return; [].forEach.call(this.querySelectorAll('button'),function(x){x.classList.toggle('on',x===b)}); show=b.dataset.s; render();});
+  listEl.addEventListener('click',function(e){ var b=e.target.closest('button[data-a]'); if(!b) return; var c=b.closest('.card'), id=c.dataset.id, a=b.dataset.a, x=items.find(function(i){return i.id===id});
+    if(a==='delete' && !c.dataset.confirm){ c.dataset.confirm='1'; b.textContent='정말 삭제 (다시 누르기)'; return; }
+    function v(k){var el=c.querySelector('.e-'+k);return el?el.value.trim():''}
+    var body={id:id,action:a,note:v('note'),photos:[].slice.call(c.querySelectorAll('.pp:checked')).map(function(i){return +i.value}),
+      pub:{name_ko:x.name_ko,name_en:v('name_en'),region:v('region'),address:v('address'),hours:v('hours'),closed:v('closed'),prices:v('prices'),booking:v('booking'),url:v('url'),desc_en:v('desc_en'),desc_ko:v('desc_ko'),claim:x.claim,type:x.type,english:x.english,tattoo:x.tattoo,features:x.features}};
+    b.disabled=true;
+    fetch('../api/admin/decide',{method:'POST',credentials:'same-origin',headers:{'content-type':'application/json'},body:JSON.stringify(body)}).then(function(r){return r.json()}).then(function(j){ b.disabled=false; if(!j.ok){alert('처리하지 못했습니다: '+(j.error||''));return;} load(); });
+  });
+  fetch('../api/admin/whoami',{credentials:'same-origin'}).then(function(r){return r.json()}).then(function(j){ if(j.email) document.getElementById('who').textContent='로그인: '+j.email; }).catch(function(){});
+  load();
+})();
+</script>
+</body>
+</html>

@@ -1,5 +1,7 @@
 User-agent: *
 Disallow: /tools/
+Disallow: /admin/
+Disallow: /api/
 Allow: /
 
 Sitemap: https://hantang-web.pages.dev/sitemap.xml

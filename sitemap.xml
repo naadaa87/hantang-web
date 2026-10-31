@@ -3095,6 +3095,193 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://hantang-web.pages.dev/baths/popular/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/popular/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ja/baths/popular/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/popular/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hant/baths/popular/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/popular/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hans/baths/popular/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/popular/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/vi/baths/popular/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/popular/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/th/baths/popular/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/popular/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ru/baths/popular/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/popular/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/popular/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/baths/hot-springs/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/hot-springs/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ja/baths/hot-springs/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/hot-springs/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hant/baths/hot-springs/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/hot-springs/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/zh-hans/baths/hot-springs/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/hot-springs/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/vi/baths/hot-springs/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/hot-springs/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/th/baths/hot-springs/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/hot-springs/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/ru/baths/hot-springs/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang-web.pages.dev/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang-web.pages.dev/ja/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang-web.pages.dev/zh-hant/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang-web.pages.dev/zh-hans/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang-web.pages.dev/vi/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang-web.pages.dev/th/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang-web.pages.dev/ru/baths/hot-springs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang-web.pages.dev/baths/hot-springs/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hantang-web.pages.dev/partner/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://hantang-web.pages.dev/play/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
