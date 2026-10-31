@@ -646,7 +646,11 @@
 <header class="g-head"><div class="wrap" style="max-width:1120px"><nav class="crumbs" aria-label="Đường dẫn trang"><a href="../../vi/">HANTANG</a><span>›</span><span>Danh sách nhà tắm</span></nav><div class="eyebrow">DANH SÁCH</div><h1>Những nhà tắm, khu xông hơi và jjimjilbang đáng biết.</h1><p class="lede">Seoul, Busan và các thị trấn suối nước nóng. Mỗi thẻ ghi giờ mở cửa, giá vé và quy định hình xăm theo thông tin do chính nhà tắm hoặc các trang bán vé của nhà tắm công bố, kèm ngày chúng tôi ghi nhận, và cho bạn biết chúng tôi đã đến kiểm tra tận nơi hay chưa.</p></div></header><section style="padding-top:20px"><div class="wrap" style="padding-bottom:70px"><style>
   .dfil .ctabs{flex-wrap:wrap;margin-top:0}.dfil .ctab{white-space:nowrap;flex:0 0 auto}.dfil{display:grid;gap:10px}
   .dgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
-  .dcard{border:1px solid var(--line);border-radius:16px;padding:20px 22px;background:#fff;scroll-margin-top:84px}
+  .dcard{border:1px solid var(--line);border-radius:16px;padding:0 22px 20px;background:#fff;scroll-margin-top:84px;overflow:hidden}
+  .dimg{margin:0 -22px 16px;aspect-ratio:16/7;max-width:calc(100% + 44px);background:var(--blue-tint);color:var(--blue);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .dimg img{width:100%;height:100%;object-fit:cover;display:block}.dimg svg{width:52px;height:52px;opacity:.85}
+  .dimg.ill{aspect-ratio:16/5}
+  .pcap{position:absolute;right:8px;bottom:8px;font-size:10.5px;background:rgba(255,255,255,.92);border-radius:6px;padding:2px 7px;color:var(--mute)}.pcap a{color:inherit}
   .dcard h3{font-size:19px;font-weight:700;line-height:1.35;margin-top:10px}
   .dcard .nko{font-family:var(--serif);color:var(--blue);font-weight:700;font-size:16px;margin-left:6px}
   .dfeat{font-size:14px;color:var(--mute);margin-top:8px;line-height:1.6}
@@ -659,7 +663,52 @@
   .dnote{margin-top:22px;font-size:14px;color:var(--mute);max-width:760px;line-height:1.7;border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:var(--stone)}
   .dcount{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--mute);margin-top:18px}
   @media (max-width:760px){.dgrid{grid-template-columns:1fr}.dr{grid-template-columns:1fr}}
-</style><div class="dfil" style="margin-top:34px"><div class="ctabs" role="group" aria-label="Lọc theo thành phố"><button class="ctab on" data-f="all">TẤT CẢ</button><button class="ctab" data-f="seoul">SEOUL</button><button class="ctab" data-f="busan">BUSAN</button><button class="ctab" data-f="other">KHU VỰC KHÁC</button></div><div class="ctabs" role="group" aria-label="Lọc theo loại hình"><button class="ctab on" data-t="all">TẤT CẢ</button><button class="ctab" data-t="bath">Nhà tắm công cộng</button><button class="ctab" data-t="sauna24">Xông hơi 24 giờ</button><button class="ctab" data-t="jjimjil">Jjimjilbang</button><button class="ctab" data-t="hanjeungmak">Lò hanjeungmak</button><button class="ctab" data-t="spa">Tổ hợp spa</button><button class="ctab" data-t="oncheon">Suối nước nóng</button><button class="ctab" data-t="seawater">Nhà tắm nước biển</button><button class="ctab" data-t="hotel">Xông hơi khách sạn</button></div></div><div class="dcount" id="dcount"></div><div class="dgrid" id="dgrid"><article class="dcard" data-region="seoul" data-type="sauna24" id="sparex-dongdaemun">
+</style><svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="ty-bath" viewBox="0 0 48 48"><path d="M10 26h28a14 14 0 0 1-28 0z" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><path d="M17 20c-2-3 2-5 0-8M24 20c-2-3 2-5 0-8M31 20c-2-3 2-5 0-8" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/></symbol>
+<symbol id="ty-bathjjim" viewBox="0 0 48 48"><path d="M8 30h22a11 11 0 0 1-22 0z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M28 22l8-7 8 7v14H34" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M14 24c-1.5-2.5 1.5-4 0-6.5M21 24c-1.5-2.5 1.5-4 0-6.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+<symbol id="ty-jjim" viewBox="0 0 48 48"><path d="M8 22L24 9l16 13v17H8z" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><path d="M17 33c-2-3 2-5 0-8M24 33c-2-3 2-5 0-8M31 33c-2-3 2-5 0-8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+<symbol id="ty-kiln" viewBox="0 0 48 48"><path d="M7 38a17 17 0 0 1 34 0z" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><path d="M19 38v-6a5 5 0 0 1 10 0v6" fill="none" stroke="currentColor" stroke-width="3"/><path d="M24 14c-2-3 2-5 0-8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+<symbol id="ty-other" viewBox="0 0 48 48"><rect x="9" y="12" width="30" height="26" rx="5" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M9 21h30M18 12V8h12v4" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="24" cy="30" r="3.2" fill="currentColor"/></symbol>
+</svg><style>
+  .rx-ctl{display:grid;gap:12px;margin-top:30px}
+  .rx-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .rx-row input[type=search],.rx-row select{font:inherit;font-size:15px;padding:11px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);min-width:0}
+  .rx-row input[type=search]{flex:1 1 260px}
+  .rx-row select{flex:0 1 220px}
+  .rx-near{font:inherit;font-size:14px;font-weight:700;color:var(--blue);background:var(--blue-tint);border:0;border-radius:12px;padding:11px 16px;cursor:pointer}
+  .rx-chips{display:flex;gap:8px;flex-wrap:wrap}
+  .rx-chips .ctab{white-space:nowrap;flex:0 0 auto}
+  .rx-stat{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--mute)}
+  .rx-list{margin-top:18px}
+  .rx-d{font-size:19px;font-weight:700;margin:34px 0 4px;padding-top:6px;border-top:1px solid var(--line);display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+  .rx-d small{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--mute);font-weight:500}
+  .rx-ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}
+  .pl{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;padding:16px 0;border-bottom:1px solid var(--line);scroll-margin-top:84px}
+  .pi{width:64px;height:64px;border-radius:12px;background:var(--blue-tint);color:var(--blue);display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .pi svg{width:34px;height:34px}.pi img{width:100%;height:100%;object-fit:cover;display:block}
+  .pn{font-size:16.5px;font-weight:700;line-height:1.35;word-break:keep-all}
+  .pm{font-size:13px;color:var(--mute);margin-top:2px}
+  .pt{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}.pt span{font-size:11.5px;font-weight:700;background:var(--stone);border-radius:99px;padding:3px 9px;color:var(--ink)}
+  .pa{font-size:13.5px;margin-top:6px;color:var(--ink);word-break:keep-all}
+  .pk{display:flex;gap:14px;flex-wrap:wrap;margin-top:7px;font-size:13px;font-weight:700}.pk a{color:var(--blue)}
+  .pdist{font-family:var(--mono);font-size:11px;color:var(--blue);margin-left:6px}
+  .rx-none{padding:30px 0;color:var(--mute)}
+  .rx-note{margin-top:30px;font-size:14px;color:var(--mute);max-width:820px;line-height:1.7;border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:var(--stone)}
+  .rx-regions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:14px}
+  .rx-regions a{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fff;display:flex;justify-content:space-between;gap:8px;font-weight:700;font-size:14.5px}
+  .rx-regions a span{font-family:var(--mono);font-size:11px;color:var(--mute);font-weight:500;align-self:center}
+  .rx-regions a.on{border-color:var(--blue);color:var(--blue)}
+  .rx-credits{margin-top:24px;font-size:12.5px;color:var(--mute);line-height:1.7}
+  .pc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
+  .pcard{border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden;scroll-margin-top:84px}
+  .pcard .pimg{aspect-ratio:16/9;max-width:100%;background:var(--blue-tint);color:var(--blue);display:flex;align-items:center;justify-content:center;position:relative}
+  .pcard .pimg svg{width:56px;height:56px}.pcard .pimg img{width:100%;height:100%;object-fit:cover}
+  .pcard .pimg.nop{aspect-ratio:auto;height:56px;justify-content:flex-start;padding:0 20px}.pcard .pimg.nop svg{width:28px;height:28px}
+  .pcap{position:absolute;right:8px;bottom:8px;font-size:10.5px;background:rgba(255,255,255,.9);border-radius:6px;padding:2px 7px;color:var(--mute)}
+  .pcard .pbody{padding:16px 20px 18px}
+  @media (max-width:860px){.rx-ul{grid-template-columns:1fr}.rx-regions{grid-template-columns:repeat(2,minmax(0,1fr))}.pc-grid{grid-template-columns:1fr}}
+</style><div style="margin-top:56px"><div class="sec-eyebrow">KHẮP HÀN QUỐC</div><h2 style="font-size:26px;margin-top:6px">Mọi nhà tắm được cấp phép, theo từng tỉnh thành</h2><p style="color:var(--mute);margin-top:8px;max-width:760px">Từ dữ liệu cấp phép của chính phủ Hàn Quốc: 5.634 nhà tắm, khu xông hơi và jjimjilbang được ghi nhận là đang hoạt động tại 16 tỉnh thành, nơi nào cũng có liên kết đến Naver Map để bạn xem ảnh.</p><div class="rx-regions"><a href="../../vi/baths/seoul/">Seoul<span>622</span></a><a href="../../vi/baths/busan/">Busan<span>636</span></a><a href="../../vi/baths/incheon/">Incheon<span>208</span></a><a href="../../vi/baths/daegu/">Daegu<span>223</span></a><a href="../../vi/baths/daejeon/">Daejeon<span>86</span></a><a href="../../vi/baths/ulsan/">Ulsan<span>160</span></a><a href="../../vi/baths/sejong/">Sejong<span>18</span></a><a href="../../vi/baths/gyeonggi/">Gyeonggi<span>775</span></a><a href="../../vi/baths/gangwon/">Gangwon<span>289</span></a><a href="../../vi/baths/chungbuk/">Chungcheong Bắc<span>161</span></a><a href="../../vi/baths/chungnam/">Chungcheong Nam<span>252</span></a><a href="../../vi/baths/jeonbuk/">Jeolla Bắc<span>290</span></a><a href="../../vi/baths/jeonnam-gwangju/">Jeolla Nam–Gwangju<span>558</span></a><a href="../../vi/baths/gyeongbuk/">Gyeongsang Bắc<span>450</span></a><a href="../../vi/baths/gyeongnam/">Gyeongsang Nam<span>759</span></a><a href="../../vi/baths/jeju/">Jeju<span>147</span></a><a href="../../vi/baths/private/">Phòng riêng / 1 người<span>80</span></a></div></div><h2 style="font-size:26px;margin-top:64px">Những nơi chúng tôi đã giới thiệu chi tiết</h2><div class="dfil" style="margin-top:22px"><div class="ctabs" role="group" aria-label="Lọc theo thành phố"><button class="ctab on" data-f="all">TẤT CẢ</button><button class="ctab" data-f="seoul">SEOUL</button><button class="ctab" data-f="busan">BUSAN</button><button class="ctab" data-f="other">KHU VỰC KHÁC</button></div><div class="ctabs" role="group" aria-label="Lọc theo loại hình"><button class="ctab on" data-t="all">TẤT CẢ</button><button class="ctab" data-t="bath">Nhà tắm công cộng</button><button class="ctab" data-t="sauna24">Xông hơi 24 giờ</button><button class="ctab" data-t="jjimjil">Jjimjilbang</button><button class="ctab" data-t="hanjeungmak">Lò hanjeungmak</button><button class="ctab" data-t="spa">Tổ hợp spa</button><button class="ctab" data-t="oncheon">Suối nước nóng</button><button class="ctab" data-t="seawater">Nhà tắm nước biển</button><button class="ctab" data-t="hotel">Xông hơi khách sạn</button></div></div><div class="dcount" id="dcount"></div><div class="dgrid" id="dgrid"><article class="dcard" data-region="seoul" data-type="sauna24" id="sparex-dongdaemun">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Dongdaemun · Xông hơi 24 giờ</span></div>
   <h3>Sparex Dongdaemun <span class="nko" lang="ko">스파렉스 동대문 굿모닝시티</span></h3>
   <p class="dfeat">Jjimjilbang 24 giờ nổi tiếng nhất Seoul, nằm ở tầng B3 trung tâm thương mại Goodmorning City, đối diện DDP: sảnh chính phong cách hanok, phòng xông hơi khô và xông hơi ướt, khu ngủ, phòng gym và khu ẩm thực mở 24 giờ. Vé ngày và vé đêm phân chia lúc 20:00; đã ra ngoài thì không được vào lại, trừ khi mua thêm tùy chọn gửi hành lý; mỗi khu tắm đóng khoảng một tiếng vào ban đêm để dọn dẹp.</p>
@@ -668,6 +717,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-10</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="sparex-dongmyo">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Dongmyo / Changsin-dong · Xông hơi 24 giờ</span></div>
   <h3>Sparex Dongmyo <span class="nko" lang="ko">스파렉스 동묘</span></h3>
   <p class="dfeat">Chi nhánh mới hơn của Sparex (khai trương tháng 7/2024), chiếm hai tầng trên cùng của tòa nhà CIZN: phòng đất hoàng thổ, phòng muối Himalaya và phòng băng, phòng tắm rừng gỗ hinoki, phòng xông hơi đốt củi, khu ẩm thực và phòng nghỉ nhìn ra tháp Namsan. Nhớ mang giấy tờ tùy thân bản gốc; được ra vào lại một lần trong vòng 24 giờ nếu có gửi hành lý; tối thứ Hai không có kỳ cọ cho nam.</p>
@@ -676,6 +726,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-09</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="hongdae-bulgama">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Hongdae / Sinchon · Xông hơi 24 giờ</span></div>
   <h3>Hongdae 24-hour Bulgama Sauna <span class="nko" lang="ko">홍대 24시 불가마 사우나</span></h3>
   <p class="dfeat">Khu xông hơi 24 giờ dưới tầng hầm, nằm giữa Hongdae và Sinchon, có lò nung lửa truyền thống (bulgama), phòng đất hoàng thổ, phòng xông hơi kiểu Phần Lan và phòng băng, phòng nghỉ có TV, khu ngủ riêng cho nữ và phòng đơn cho thuê (tính thêm phí, có giới hạn thời gian). Đã ra ngoài thì không được vào lại; giá vé đêm chưa được xác nhận (một thông tin cũ ghi ₩16.000 sau 21:00).</p>
@@ -684,6 +735,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-09</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="golden-sauna-myeongdong">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Myeongdong · Xông hơi 24 giờ</span></div>
   <h3>Golden Sauna Myeongdong (women only) <span class="nko" lang="ko">황금사우나 명동</span></h3>
   <p class="dfeat">Khu xông hơi lò nung 24 giờ chỉ dành cho nữ ở tầng B2, Myeongdong: lò bulgama khoảng 30 năm tuổi, phòng xông hơi ngải cứu, phòng xông hơi ướt và khô, ba bể ngâm, một bể lạnh, buồng kỳ cọ riêng và hai phòng ngủ (một phòng sáng đèn, một phòng tối). Gói vé vào kèm kỳ cọ ₩80.000; có sẵn máy sấy tóc, lược và đồ chăm sóc da cơ bản; khách say rượu sẽ bị từ chối.</p>
@@ -692,6 +744,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="spa-lei">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Sinsa / Jamwon · Xông hơi 24 giờ</span></div>
   <h3>Spa Lei (women only) <span class="nko" lang="ko">스파레이</span></h3>
   <p class="dfeat">Khu xông hơi 24 giờ chỉ dành cho nữ ở Sinsa/Jamwon, hoạt động tại cùng một chỗ khoảng 20 năm nay, có bể lộ thiên, bể nước biển, hanjeungmak (lò xông đất) đốt củi thông, phòng đất đỏ, phòng than và phòng muối, cùng một tiệm làm móng. Giá không được công bố trên mạng; các bài hướng dẫn năm 2025–2026 ghi khoảng ₩15.000–20.000 cho 12 tiếng, cộng thêm một khoản nhỏ nếu thuê giường.</p>
@@ -700,6 +753,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2025-12</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="club-k-seolleung">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Seolleung (Gangnam) · Xông hơi 24 giờ</span></div>
   <h3>Club K Seoul <span class="nko" lang="ko">클럽케이서울 선릉찜질방</span></h3>
   <p class="dfeat">Jjimjilbang 24 giờ ở Seolleung với “club zone” (hanjeungmak, phòng sưởi ondol, quán cà phê sách, phòng ngủ riêng), khu nhà tắm – xông hơi, câu lạc bộ thể hình, phòng nghỉ có nhạc jazz và nội thất mang phong cách nghệ thuật hiện đại.</p>
@@ -708,6 +762,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2025-02</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="hwanghak-golden-spa">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Hwanghak-dong (Sindang / Dongmyo) · Xông hơi 24 giờ</span></div>
   <h3>Hwanghak-dong Golden Spa Jjimjilbang <span class="nko" lang="ko">황학동 황금스파찜질방</span></h3>
   <p class="dfeat">Jjimjilbang 24 giờ của khu dân cư, nằm dưới tầng hầm một khu chung cư gần Sindang, có bể cá cảnh lớn, bể cá rỉa (₩5.000 cho 30 phút), nhà hàng, cửa hàng và bốn tiếng đỗ xe miễn phí. Không nhận đặt trước; vé ngày và vé đêm phân chia lúc 20:00; đồ jjimjil tính thêm ₩1.000.</p>
@@ -716,6 +771,7 @@
   <div class="dlinks"><a href="http://goldspa11.com/" target="_blank" rel="noopener">Trang chính thức ↗</a></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2025-04</div>
 </article><article class="dcard" data-region="seoul" data-type="hanjeungmak" id="supsok-hanbang-land">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-kiln"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Sinchon / núi Ansan (Seodaemun) · Lò hanjeungmak</span></div>
   <h3>Supsok Hanbang Land <span class="nko" lang="ko">숲속한방랜드</span></h3>
   <p class="dfeat">Khu xông hơi lò nung chỉ mở ban ngày trên sườn núi Ansan rợp cây phía sau Sinchon: lò than gỗ sồi ngoài trời, hanjeungmak đốt củi thông, các phòng ấm, vừa và nóng, phòng băng, phòng muối cho nữ, phòng ngủ tách riêng nam nữ và một lò than để nướng bánh gạo, khoai lang mua ở cửa hàng. Không ngủ qua đêm; từng là bối cảnh quay phim truyền hình Hàn Quốc.</p>
@@ -724,6 +780,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-04</div>
 </article><article class="dcard" data-region="seoul" data-type="hanjeungmak" id="hana-mud">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-kiln"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Euljiro / Myeongdong · Lò hanjeungmak</span></div>
   <h3>Hana Mud Hanjeungmak (women only) <span class="nko" lang="ko">하나머드 한증막</span></h3>
   <p class="dfeat">Spa hanjeungmak và kỳ cọ chỉ dành cho nữ, hoạt động từ năm 2015, bán theo liệu trình 90 đến 220 phút: xông lò, xông thạch anh tím, bể nhân sâm và bể germanium, kỳ cọ toàn thân, đắp mặt nạ dưa chuột hoặc rong biển và đắp bùn Boryeong. Có bảng dịch vụ tiếng Anh và tiếng Trung, nhân viên nói được tiếng Nhật; dịp Tết Seollal và Chuseok mở cửa muộn (14:00–15:00).</p>
@@ -732,6 +789,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-10</div>
 </article><article class="dcard" data-region="seoul" data-type="hanjeungmak" id="miso-sauna">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-kiln"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Chungjeongno · Lò hanjeungmak</span></div>
   <h3>Miso Sauna <span class="nko" lang="ko">미소사우나</span></h3>
   <p class="dfeat">Khu xông hơi ngải cứu chỉ mở ban ngày gần ga Chungjeongno, yên tĩnh hơn các jjimjilbang lớn. Chưa xác nhận được giá vé vào cửa: thông tin duy nhất năm 2026 ghi ₩70.000, và chính nguồn đó lưu ý đây có lẽ là giá trọn gói.</p>
@@ -740,6 +798,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="jjimjil" id="park-habio">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Munjeong (Songpa) · Jjimjilbang</span></div>
   <h3>Park Habio Water Kingdom &amp; Jjimjil Spa <span class="nko" lang="ko">파크하비오 워터킹덤 &amp; 찜질스파</span></h3>
   <p class="dfeat">Công viên nước trong nhà theo chủ đề Santorini ở Munjeong, có kèm jjimjilbang và khu xông hơi; công viên nước (₩65.000 ngày thường) có hồ tạo sóng, dòng nước xiết và cầu trượt.</p>
@@ -748,6 +807,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2025-02</div>
 </article><article class="dcard" data-region="seoul" data-type="jjimjil" id="sealala">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Mullae (Yeongdeungpo) · Jjimjilbang</span></div>
   <h3>Sealala <span class="nko" lang="ko">씨랄라</span></h3>
   <p class="dfeat">Công viên nước, khu xông hơi và jjimjilbang dưới tầng hầm ở Mullae, phía tây Seoul. Các bài hướng dẫn năm 2026 ghi ngày mở cửa không thống nhất: một nguồn ghi mở mỗi ngày, nguồn khác ghi chỉ mở cuối tuần và ngày lễ.</p>
@@ -756,6 +816,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="bath" id="siloam-junggok">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Junggok-dong (Gwangjin) · Nhà tắm công cộng</span></div>
   <h3>Junggok-dong Siloam Sauna <span class="nko" lang="ko">중곡동 실로암사우나</span></h3>
   <p class="dfeat">Nhà tắm công cộng ở quận Gwangjin, trùng tên với Siloam ở ga Seoul (đã đóng cửa) nhưng là một cơ sở riêng, nhỏ hơn nhiều. Khu tắm vẫn mở; theo các đánh giá, tầng jjimjil đã đóng từ thời đại dịch; giá không được công bố trên mạng và biển chỉ dẫn tiếng Anh còn hạn chế.</p>
@@ -764,6 +825,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="spa" id="spaland-centum">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Centum City (Haeundae-gu) · Tổ hợp spa</span></div>
   <h3>Spa Land Centum City <span class="nko" lang="ko">스파랜드 센텀시티</span></h3>
   <p class="dfeat">Spa suối nước nóng nằm trong trung tâm thương mại Shinsegae Centum City: 18 bể lấy nước từ hai mạch suối tự nhiên, 13 phòng jjimjil theo chủ đề, bể ngâm chân ngoài trời và quán mì ramen; gần một nửa lượt khách là người nước ngoài. Không nhận trẻ dưới 7 tuổi; quá 4 tiếng đầu sẽ tính thêm phí; vòng đeo tay dùng như ví điện tử, bạn thanh toán khi ra về.</p>
@@ -772,6 +834,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="hurshimchung">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Dongnae Oncheon · Suối nước nóng</span></div>
   <h3>Hurshimchung <span class="nko" lang="ko">허심청</span></h3>
   <p class="dfeat">Nhà tắm suối nước nóng biểu tượng của Dongnae, mở cửa năm 1991 bên cạnh khách sạn Nongshim, với hơn 40 bể, gồm bể trong hang, bể lộ thiên và bể thảo dược theo mùa, khu jjimjil theo chủ đề ở tầng 3 (tính thêm phí) và một quán bia kiểu Đức. Khách lưu trú tại khách sạn thường được giảm 50%; đỗ xe miễn phí 3–4 tiếng.</p>
@@ -780,6 +843,7 @@
   <div class="dlinks"><a href="https://hotelnongshim.com" target="_blank" rel="noopener">Trang chính thức ↗</a></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="haeundae-oncheon-center">
+  <div class="dimg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Haeundae_Spa_Center.JPG/800px-Haeundae_Spa_Center.JPG" alt="해운대 온천센터" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://commons.wikimedia.org/wiki/File:Haeundae_Spa_Center.JPG" target="_blank" rel="noopener">Ảnh: Abasaa, Wikimedia Commons (Public domain)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Haeundae · Suối nước nóng</span></div>
   <h3>Haeundae Oncheon Center <span class="nko" lang="ko">해운대온천센터</span></h3>
   <p class="dfeat">Nhà tắm suối nước nóng bảy tầng nằm giữa ga Haeundae và bãi biển, có nguồn gốc từ Halmae-tang năm 1935 và được xây lại tại đây năm 2006. Hãy xem đây là nhà tắm suối nước nóng hơn là jjimjilbang: theo một bài hướng dẫn năm 2026, khu jjimjil phần lớn đã chuyển sang công năng khác; nơi này cũng thỉnh thoảng đóng cửa vào những ngày bảo trì.</p>
@@ -788,6 +852,7 @@
   <div class="dlinks"><a href="https://haeundaespa.com" target="_blank" rel="noopener">Trang chính thức ↗</a></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="sauna24" id="hill-spa-dalmaji">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Đồi Dalmaji (Haeundae) · Xông hơi 24 giờ</span></div>
   <h3>Dalmaji Hill Spa <span class="nko" lang="ko">달맞이 힐스파</span></h3>
   <p class="dfeat">Khu xông hơi và jjimjilbang 24 giờ nhìn ra biển trên đồi Dalmaji (trước đây là Vesta), rộng khoảng 1.600 pyeong, có bể ngâm chân ngoài trời ở tầng 5 và phòng ngủ, được các cặp đôi và khách từ Nhật Bản, Đài Loan, Trung Quốc ưa chuộng. Các bài hướng dẫn năm 2026 ghi thời lượng vé khác nhau: một bài ghi 10 tiếng, bài khác ghi 12 tiếng.</p>
@@ -796,6 +861,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="spa" id="club-d-oasis">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Haeundae (LCT) · Tổ hợp spa</span></div>
   <h3>Club D Oasis <span class="nko" lang="ko">클럽디 오아시스</span></h3>
   <p class="dfeat">Spa suối nước nóng nước biển trong tòa tháp LCT ở Haeundae, khai trương năm 2023: công viên nước trong nhà, bể nước nóng ngoài trời nhìn ra biển (ngâm chân khi mặc đồ jjimjil, ngâm nửa người khi mặc đồ bơi), sáu phòng jjimjil theo chủ đề và phòng xông hơi kiểu Phần Lan ngoài trời. Vé Spa Pass gồm spa và jjimjil, không gồm công viên nước (Waterpark Pass ₩69.000, Combo ₩79.000).</p>
@@ -804,6 +870,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="seawater" id="aqua-palace">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Gwangalli · Nhà tắm nước biển</span></div>
   <h3>Hotel Aqua Palace Spa &amp; Sauna <span class="nko" lang="ko">호텔 아쿠아펠리스 스파&amp;사우나</span></h3>
   <p class="dfeat">Spa và khu xông hơi 24 giờ của khách sạn trên bãi biển Gwangalli, dùng nước biển tự nhiên bơm lên từ độ sâu 816 m, có cửa kính kịch trần nhìn ra vịnh và công viên nước trong nhà ở tầng 7. Visit Busan Pass bao gồm xông hơi và jjimjil nhưng không gồm công viên nước.</p>
@@ -812,6 +879,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="seawater" id="spa-haesurang">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Songdo (Seo-gu) · Nhà tắm nước biển</span></div>
   <h3>Spa Haesurang <span class="nko" lang="ko">스파해수랑</span></h3>
   <p class="dfeat">Khu xông hơi nước biển ở Songdo, gần bãi biển và cáp treo, có phòng xông hơi ướt và bể lộ thiên trên sân thượng nhìn ra cầu Namhang. Bể sân thượng dùng chung nam nữ và bắt buộc mặc đồ bơi.</p>
@@ -820,6 +888,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="taejongdae-oncheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Yeongdo (Taejongdae) · Suối nước nóng</span></div>
   <h3>Taejongdae Oncheon Jjimjilbang <span class="nko" lang="ko">태종대온천찜질방</span></h3>
   <p class="dfeat">Jjimjilbang suối nước nóng 24 giờ do thành phố vận hành (Busan Facilities Corporation) trên đảo Yeongdo, có bể kim tự tháp, bể lộ thiên và bể chăm sóc sức khỏe, sáu phòng jjimjil và phòng gym.</p>
@@ -828,6 +897,7 @@
   <div class="dlinks"><a href="https://tjdspa.co.kr" target="_blank" rel="noopener">Trang chính thức ↗</a></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="seawater" id="gwangan-haesu-world">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Gwangalli · Nhà tắm nước biển</span></div>
   <h3>Gwangan Haesu World <span class="nko" lang="ko">광안해수월드</span></h3>
   <p class="dfeat">Khu xông hơi nước biển đối diện bãi biển Gwangalli, mở cửa năm 1994 và hoạt động lại từ năm 2020 dưới dạng tổ hợp spa – thể hình. Không phải khu nào (xông hơi, hồ bơi, gym) cũng mở mỗi ngày, nên khi đến hãy hỏi xem khu nào đang hoạt động.</p>
@@ -836,6 +906,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="water-house-ananti">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Gijang (Ananti Cove) · Suối nước nóng</span></div>
   <h3>Water House <span class="nko" lang="ko">워터하우스 (아난티 코브)</span></h3>
   <p class="dfeat">Suối nước nóng cao cấp mặc đồ bơi tại Ananti Cove ở Gijang, rộng khoảng 2.000 pyeong, nguồn nước từ độ sâu 600 m, có hồ bơi vô cực hoặc bể lộ thiên tùy mùa; vé dùng được 4 tiếng và giờ mở cửa thay đổi theo mùa. Giá cao so với mặt bằng nhà tắm Hàn Quốc.</p>
@@ -844,6 +915,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="bath" id="halmae-tang">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Haeundae · Nhà tắm công cộng</span></div>
   <h3>Halmae-tang <span class="nko" lang="ko">할매탕</span></h3>
   <p class="dfeat">Nhà tắm suối nước nóng bốn tầng của khu dân cư ở Haeundae, có giếng riêng sâu 900 m, đổi tên thành Halmae-tang năm 2003 và mở cửa lại sau cải tạo vào tháng 10/2023; khu tắm nữ ở tầng 3, nam ở tầng 4, phòng tắm gia đình ở tầng 2 phải đặt trước (₩80.000). Giá vé là từ đợt mở cửa lại năm 2023, trong khi các nhà tắm lân cận đã tăng giá vào năm 2026.</p>
@@ -852,6 +924,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-07</div>
 </article><article class="dcard" data-region="busan" data-type="bath" id="world-spa-choryang">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Choryang (khu ga Busan) · Nhà tắm công cộng</span></div>
   <h3>World Spa <span class="nko" lang="ko">월드스파</span></h3>
   <p class="dfeat">Nhà tắm công cộng lớn (khoảng 1.000 pyeong) ở Choryang, gần ga Busan nhất trong danh sách này, tiện cho ai vừa xuống tàu KTX.</p>
@@ -860,6 +933,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="hotel" id="cimer-busan">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-other"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Bãi biển Haeundae · Xông hơi khách sạn</span></div>
   <h3>Paradise Hotel Busan Cimer <span class="nko" lang="ko">파라다이스호텔 부산 씨메르</span></h3>
   <p class="dfeat">Spa suối nước nóng nước biển ngoài trời của Paradise Hotel Busan, nhìn ra bãi biển Haeundae; mặc đồ bơi, mỗi ngày bốn suất theo giờ, dùng chung với hồ bơi ngoài trời hướng biển. Một bài đánh giá năm 2026 cho biết khách không lưu trú vẫn vào được, nhưng trang chính thức không nêu điều này, và tủ đồ chỉ dành cho hội viên.</p>
@@ -868,6 +942,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="spa" id="aquafield-hanam">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Hanam (Gyeonggi) · Starfield Hanam (Misa) · Tổ hợp spa</span></div>
   <h3>Aquafield Hanam <span class="nko" lang="ko">아쿠아필드 하남</span></h3>
   <p class="dfeat">Spa trong trung tâm thương mại Starfield, có hồ bơi vô cực trên sân thượng, tám phòng jjimjil theo chủ đề, công viên nước trong nhà và ngoài trời (tính thêm ₩48.000–68.000), khu ẩm thực và khu vui chơi trẻ em; vé mua ở kiosk tự động, và phải dùng tủ giày trong vòng 20 phút. Công viên nước ngoài trời hoạt động với công suất giảm từ ngày 12/10/2026.</p>
@@ -876,6 +951,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="spa" id="aquafield-goyang">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Goyang (Gyeonggi) · Starfield Goyang (Deogyang-gu) · Tổ hợp spa</span></div>
   <h3>Aquafield Goyang <span class="nko" lang="ko">아쿠아필드 고양</span></h3>
   <p class="dfeat">Chi nhánh Aquafield tại Starfield Goyang, ở tầng 4 của trung tâm thương mại: phòng jjimjil theo chủ đề, công viên nước trong nhà (₩48.000–58.000; vé multipass ₩58.000–68.000) và khu ẩm thực. Công viên nước ngoài trời đã đóng cửa vĩnh viễn từ ngày 12/10/2026; khu spa vẫn hoạt động.</p>
@@ -884,6 +960,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="termeden">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Icheon (Gyeonggi) · Moga-myeon · Suối nước nóng</span></div>
   <h3>Termeden <span class="nko" lang="ko">테르메덴</span></h3>
   <p class="dfeat">Tự giới thiệu là khu nghỉ dưỡng suối nước nóng kiểu Đức duy nhất ở Hàn Quốc, nằm ở Icheon, có dòng sông lười, bể lộ thiên, hồ bơi trong nhà và jjimjilbang cho thuê đồ; đỗ xe miễn phí. Bắt buộc mặc đồ bơi và đội mũ bơi cả trong nhà lẫn ngoài trời; giá hiển thị là giá mùa Gold.</p>
@@ -892,6 +969,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="jjimjil" id="skyland-bucheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Bucheon (Gyeonggi) · Sang-dong · Jjimjilbang</span></div>
   <h3>Skyland Sauna <span class="nko" lang="ko">스카이랜드 사우나</span></h3>
   <p class="dfeat">Khu xông hơi và jjimjilbang ở tầng 7 tòa nhà Megaplus, Sang-dong, Bucheon; giá vé đã gồm hồ bơi trong nhà. Giờ mở cửa không được công bố.</p>
@@ -900,6 +978,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-07</div>
 </article><article class="dcard" data-region="other" data-type="spa" id="cimer-paradise-city">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Incheon · Đảo Yeongjong (Paradise City) · Tổ hợp spa</span></div>
   <h3>Paradise City Cimer <span class="nko" lang="ko">파라다이스시티 씨메르</span></h3>
   <p class="dfeat">Aqua spa bốn tầng với hồ bơi vô cực trên sân thượng, spa trong hang, spa trình chiếu nghệ thuật (media art) và cầu trượt, cùng khu jjimjil spa ở tầng 2–3 có phòng gỗ bách, phòng thạch anh tím, phòng xông hơi ướt và khô. Vé aqua kèm jjimjil giới hạn 6 tiếng (quá giờ +₩10.000); không nhận trẻ dưới 7 tuổi; khách lưu trú khách sạn được vào miễn phí cho hai người, khách ngoài giảm 30% khi đặt trước.</p>
@@ -908,6 +987,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="cheoksan-oncheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Sokcho (Gangwon) · Cheoksan · Suối nước nóng</span></div>
   <h3>Cheoksan Oncheon Resort <span class="nko" lang="ko">척산온천휴양촌</span></h3>
   <p class="dfeat">Suối nước nóng đầu tiên của Gangwon (mở cửa năm 1973), khu tắm nghỉ dưỡng ở Sokcho với bể lộ thiên, phòng xông hơi, hồ bơi ngoài trời mùa hè (10:00–18:00) và phòng tắm suối nước nóng gia đình thuê theo giờ (3 tiếng: ₩50.000 cho hai người, ₩70.000 cho bốn người). Gần đó có công viên ngâm chân Cheoksan miễn phí (tháng 3–11).</p>
@@ -916,6 +996,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="deokgu-oncheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Uljin (Gyeongsang Bắc) · Buk-myeon (núi Eungbongsan) · Suối nước nóng</span></div>
   <h3>Deokgu Oncheon Resort <span class="nko" lang="ko">덕구온천 리조트</span></h3>
   <p class="dfeat">Khu nghỉ dưỡng hẻo lánh ở Gyeongsang Bắc, dùng nguồn nước được quảng bá là suối nước nóng tự chảy duy nhất của Hàn Quốc: nước dẫn 4 km từ núi Eungbongsan, không bơm và không đun nóng, vào sảnh tắm lớn (không giới hạn thời gian), bể lộ thiên, bể gia đình và Spa World mặc đồ bơi (bể sục, hồ bơi trẻ em). Cao điểm: giữa tháng 12 đến đầu tháng 3, giữa tháng 7 đến hết tháng 8, dịp Chuseok.</p>
@@ -924,6 +1005,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2026-09</div>
 </article><article class="dcard" data-region="other" data-type="seawater" id="yangnam-haesu-oncheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Gyeongju (Gyeongsang Bắc) · Yangnam-myeon (bờ biển phía đông) · Nhà tắm nước biển</span></div>
   <h3>Yangnam Haesu Oncheon Land 24 <span class="nko" lang="ko">양남해수온천랜드24</span></h3>
   <p class="dfeat">Jjimjilbang suối nước nóng nước biển 24 giờ trên bờ biển phía đông Gyeongju, có các bể nhìn ra biển, bể nước có ga, phòng muối, phòng đá quý, phòng ngủ và phòng gym.</p>
@@ -932,6 +1014,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="spa-valley-daegu">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Daegu · Gachang-myeon (Dalseong-gun) · Suối nước nóng</span></div>
   <h3>Spa Valley <span class="nko" lang="ko">스파밸리</span></h3>
   <p class="dfeat">Công viên nước suối nóng ở Gachang, phía nam Daegu, có khu trong nhà và ngoài trời, vườn thú Nature Park và khách sạn ngay trong khuôn viên; bắt buộc mặc đồ bơi và đội mũ bơi. Đỗ xe miễn phí ngày thường, từ thứ Sáu đến Chủ nhật ₩3.000.</p>
@@ -940,6 +1023,7 @@
   <div class="dlinks"></div>
   <div class="verify">Theo nguồn đã công bố · chờ kiểm tra tận nơi · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="sanbangsan-oncheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Seogwipo (Jeju) · Andeok-myeon (núi Sanbangsan) · Suối nước nóng</span></div>
   <h3>Sanbangsan Carbonate Hot Spring <span class="nko" lang="ko">산방산탄산온천</span></h3>
   <p class="dfeat">Suối nước nóng công cộng đầu tiên của Jeju: suối có ga tự nhiên (được giới thiệu là có lượng khí cacbonic gấp năm lần suối thông thường ở Hàn Quốc), có các bể trong nhà, hồ ngoài trời (mua thêm; mặc đồ bơi hoặc quần short và áo thun, thuê đồ ₩2.000) và khu jjimjil lò nung (mua thêm). Cư dân Jeju được giá rẻ hơn.</p>

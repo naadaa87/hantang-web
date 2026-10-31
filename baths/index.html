@@ -643,7 +643,11 @@
 <header class="g-head"><div class="wrap" style="max-width:1120px"><nav class="crumbs" aria-label="Breadcrumb"><a href="../">HANTANG</a><span>›</span><span>Bathhouse directory</span></nav><div class="eyebrow">DIRECTORY</div><h1>Baths, saunas and jjimjilbangs worth knowing.</h1><p class="lede">Seoul, Busan and the hot-spring towns. Each card shows opening hours, prices and the tattoo policy as published by the bathhouse or by the sites that sell its tickets, with the date we saw them, and tells you whether we have already checked the place in person.</p></div></header><section style="padding-top:20px"><div class="wrap" style="padding-bottom:70px"><style>
   .dfil .ctabs{flex-wrap:wrap;margin-top:0}.dfil .ctab{white-space:nowrap;flex:0 0 auto}.dfil{display:grid;gap:10px}
   .dgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
-  .dcard{border:1px solid var(--line);border-radius:16px;padding:20px 22px;background:#fff;scroll-margin-top:84px}
+  .dcard{border:1px solid var(--line);border-radius:16px;padding:0 22px 20px;background:#fff;scroll-margin-top:84px;overflow:hidden}
+  .dimg{margin:0 -22px 16px;aspect-ratio:16/7;max-width:calc(100% + 44px);background:var(--blue-tint);color:var(--blue);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .dimg img{width:100%;height:100%;object-fit:cover;display:block}.dimg svg{width:52px;height:52px;opacity:.85}
+  .dimg.ill{aspect-ratio:16/5}
+  .pcap{position:absolute;right:8px;bottom:8px;font-size:10.5px;background:rgba(255,255,255,.92);border-radius:6px;padding:2px 7px;color:var(--mute)}.pcap a{color:inherit}
   .dcard h3{font-size:19px;font-weight:700;line-height:1.35;margin-top:10px}
   .dcard .nko{font-family:var(--serif);color:var(--blue);font-weight:700;font-size:16px;margin-left:6px}
   .dfeat{font-size:14px;color:var(--mute);margin-top:8px;line-height:1.6}
@@ -656,7 +660,52 @@
   .dnote{margin-top:22px;font-size:14px;color:var(--mute);max-width:760px;line-height:1.7;border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:var(--stone)}
   .dcount{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--mute);margin-top:18px}
   @media (max-width:760px){.dgrid{grid-template-columns:1fr}.dr{grid-template-columns:1fr}}
-</style><div class="dfil" style="margin-top:34px"><div class="ctabs" role="group" aria-label="Filter by city"><button class="ctab on" data-f="all">ALL</button><button class="ctab" data-f="seoul">SEOUL</button><button class="ctab" data-f="busan">BUSAN</button><button class="ctab" data-f="other">OTHER REGIONS</button></div><div class="ctabs" role="group" aria-label="Filter by type"><button class="ctab on" data-t="all">ALL</button><button class="ctab" data-t="bath">Neighborhood bath</button><button class="ctab" data-t="sauna24">24-hour sauna</button><button class="ctab" data-t="jjimjil">Jjimjilbang</button><button class="ctab" data-t="hanjeungmak">Hanjeungmak</button><button class="ctab" data-t="spa">Spa complex</button><button class="ctab" data-t="oncheon">Hot spring</button><button class="ctab" data-t="seawater">Seawater bath</button><button class="ctab" data-t="hotel">Hotel sauna</button></div></div><div class="dcount" id="dcount"></div><div class="dgrid" id="dgrid"><article class="dcard" data-region="seoul" data-type="sauna24" id="sparex-dongdaemun">
+</style><svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="ty-bath" viewBox="0 0 48 48"><path d="M10 26h28a14 14 0 0 1-28 0z" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><path d="M17 20c-2-3 2-5 0-8M24 20c-2-3 2-5 0-8M31 20c-2-3 2-5 0-8" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/></symbol>
+<symbol id="ty-bathjjim" viewBox="0 0 48 48"><path d="M8 30h22a11 11 0 0 1-22 0z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M28 22l8-7 8 7v14H34" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M14 24c-1.5-2.5 1.5-4 0-6.5M21 24c-1.5-2.5 1.5-4 0-6.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+<symbol id="ty-jjim" viewBox="0 0 48 48"><path d="M8 22L24 9l16 13v17H8z" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><path d="M17 33c-2-3 2-5 0-8M24 33c-2-3 2-5 0-8M31 33c-2-3 2-5 0-8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+<symbol id="ty-kiln" viewBox="0 0 48 48"><path d="M7 38a17 17 0 0 1 34 0z" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><path d="M19 38v-6a5 5 0 0 1 10 0v6" fill="none" stroke="currentColor" stroke-width="3"/><path d="M24 14c-2-3 2-5 0-8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+<symbol id="ty-other" viewBox="0 0 48 48"><rect x="9" y="12" width="30" height="26" rx="5" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M9 21h30M18 12V8h12v4" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="24" cy="30" r="3.2" fill="currentColor"/></symbol>
+</svg><style>
+  .rx-ctl{display:grid;gap:12px;margin-top:30px}
+  .rx-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .rx-row input[type=search],.rx-row select{font:inherit;font-size:15px;padding:11px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);min-width:0}
+  .rx-row input[type=search]{flex:1 1 260px}
+  .rx-row select{flex:0 1 220px}
+  .rx-near{font:inherit;font-size:14px;font-weight:700;color:var(--blue);background:var(--blue-tint);border:0;border-radius:12px;padding:11px 16px;cursor:pointer}
+  .rx-chips{display:flex;gap:8px;flex-wrap:wrap}
+  .rx-chips .ctab{white-space:nowrap;flex:0 0 auto}
+  .rx-stat{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--mute)}
+  .rx-list{margin-top:18px}
+  .rx-d{font-size:19px;font-weight:700;margin:34px 0 4px;padding-top:6px;border-top:1px solid var(--line);display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+  .rx-d small{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--mute);font-weight:500}
+  .rx-ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}
+  .pl{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;padding:16px 0;border-bottom:1px solid var(--line);scroll-margin-top:84px}
+  .pi{width:64px;height:64px;border-radius:12px;background:var(--blue-tint);color:var(--blue);display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .pi svg{width:34px;height:34px}.pi img{width:100%;height:100%;object-fit:cover;display:block}
+  .pn{font-size:16.5px;font-weight:700;line-height:1.35;word-break:keep-all}
+  .pm{font-size:13px;color:var(--mute);margin-top:2px}
+  .pt{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}.pt span{font-size:11.5px;font-weight:700;background:var(--stone);border-radius:99px;padding:3px 9px;color:var(--ink)}
+  .pa{font-size:13.5px;margin-top:6px;color:var(--ink);word-break:keep-all}
+  .pk{display:flex;gap:14px;flex-wrap:wrap;margin-top:7px;font-size:13px;font-weight:700}.pk a{color:var(--blue)}
+  .pdist{font-family:var(--mono);font-size:11px;color:var(--blue);margin-left:6px}
+  .rx-none{padding:30px 0;color:var(--mute)}
+  .rx-note{margin-top:30px;font-size:14px;color:var(--mute);max-width:820px;line-height:1.7;border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:var(--stone)}
+  .rx-regions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:14px}
+  .rx-regions a{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fff;display:flex;justify-content:space-between;gap:8px;font-weight:700;font-size:14.5px}
+  .rx-regions a span{font-family:var(--mono);font-size:11px;color:var(--mute);font-weight:500;align-self:center}
+  .rx-regions a.on{border-color:var(--blue);color:var(--blue)}
+  .rx-credits{margin-top:24px;font-size:12.5px;color:var(--mute);line-height:1.7}
+  .pc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
+  .pcard{border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden;scroll-margin-top:84px}
+  .pcard .pimg{aspect-ratio:16/9;max-width:100%;background:var(--blue-tint);color:var(--blue);display:flex;align-items:center;justify-content:center;position:relative}
+  .pcard .pimg svg{width:56px;height:56px}.pcard .pimg img{width:100%;height:100%;object-fit:cover}
+  .pcard .pimg.nop{aspect-ratio:auto;height:56px;justify-content:flex-start;padding:0 20px}.pcard .pimg.nop svg{width:28px;height:28px}
+  .pcap{position:absolute;right:8px;bottom:8px;font-size:10.5px;background:rgba(255,255,255,.9);border-radius:6px;padding:2px 7px;color:var(--mute)}
+  .pcard .pbody{padding:16px 20px 18px}
+  @media (max-width:860px){.rx-ul{grid-template-columns:1fr}.rx-regions{grid-template-columns:repeat(2,minmax(0,1fr))}.pc-grid{grid-template-columns:1fr}}
+</style><div style="margin-top:56px"><div class="sec-eyebrow">ALL OF KOREA</div><h2 style="font-size:26px;margin-top:6px">Every licensed bathhouse, region by region</h2><p style="color:var(--mute);margin-top:8px;max-width:760px">From the government’s licence data: 5,634 bathhouses, saunas and jjimjilbangs listed as operating in 16 regions, each with a link to Naver Map, where you can see photos.</p><div class="rx-regions"><a href="../baths/seoul/">Seoul<span>622</span></a><a href="../baths/busan/">Busan<span>636</span></a><a href="../baths/incheon/">Incheon<span>208</span></a><a href="../baths/daegu/">Daegu<span>223</span></a><a href="../baths/daejeon/">Daejeon<span>86</span></a><a href="../baths/ulsan/">Ulsan<span>160</span></a><a href="../baths/sejong/">Sejong<span>18</span></a><a href="../baths/gyeonggi/">Gyeonggi-do<span>775</span></a><a href="../baths/gangwon/">Gangwon<span>289</span></a><a href="../baths/chungbuk/">Chungcheongbuk-do<span>161</span></a><a href="../baths/chungnam/">Chungcheongnam-do<span>252</span></a><a href="../baths/jeonbuk/">Jeonbuk<span>290</span></a><a href="../baths/jeonnam-gwangju/">Jeonnam-Gwangju<span>558</span></a><a href="../baths/gyeongbuk/">Gyeongsangbuk-do<span>450</span></a><a href="../baths/gyeongnam/">Gyeongsangnam-do<span>759</span></a><a href="../baths/jeju/">Jeju<span>147</span></a><a href="../baths/private/">Private / 1-person<span>80</span></a></div></div><h2 style="font-size:26px;margin-top:64px">Places we have written up in detail</h2><div class="dfil" style="margin-top:22px"><div class="ctabs" role="group" aria-label="Filter by city"><button class="ctab on" data-f="all">ALL</button><button class="ctab" data-f="seoul">SEOUL</button><button class="ctab" data-f="busan">BUSAN</button><button class="ctab" data-f="other">OTHER REGIONS</button></div><div class="ctabs" role="group" aria-label="Filter by type"><button class="ctab on" data-t="all">ALL</button><button class="ctab" data-t="bath">Neighborhood bath</button><button class="ctab" data-t="sauna24">24-hour sauna</button><button class="ctab" data-t="jjimjil">Jjimjilbang</button><button class="ctab" data-t="hanjeungmak">Hanjeungmak</button><button class="ctab" data-t="spa">Spa complex</button><button class="ctab" data-t="oncheon">Hot spring</button><button class="ctab" data-t="seawater">Seawater bath</button><button class="ctab" data-t="hotel">Hotel sauna</button></div></div><div class="dcount" id="dcount"></div><div class="dgrid" id="dgrid"><article class="dcard" data-region="seoul" data-type="sauna24" id="sparex-dongdaemun">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Dongdaemun · 24-hour sauna</span></div>
   <h3>Sparex Dongdaemun <span class="nko" lang="ko">스파렉스 동대문 굿모닝시티</span></h3>
   <p class="dfeat">Seoul&#x27;s best-known 24-hour jjimjilbang, on B3 of the Goodmorning City mall opposite DDP: a hanok-style central hall, dry and steam saunas, a sleeping area, a gym and a 24-hour food court. Day and night tickets split at 20:00; no re-entry without the luggage-storage option; each bath closes for about an hour of cleaning at night.</p>
@@ -665,6 +714,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="sparex-dongmyo">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Dongmyo / Changsin-dong · 24-hour sauna</span></div>
   <h3>Sparex Dongmyo <span class="nko" lang="ko">스파렉스 동묘</span></h3>
   <p class="dfeat">The newer Sparex branch (opened July 2024) on the top two floors of the CIZN building: yellow-clay, Himalayan-salt and ice rooms, a hinoki forest bath, a wood-fired sauna, a food court and a lounge facing Namsan Tower. Bring physical ID; one re-entry within 24 hours with luggage storage; no men&#x27;s scrub on Monday nights.</p>
@@ -673,6 +723,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="hongdae-bulgama">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Hongdae / Sinchon · 24-hour sauna</span></div>
   <h3>Hongdae 24-hour Bulgama Sauna <span class="nko" lang="ko">홍대 24시 불가마 사우나</span></h3>
   <p class="dfeat">A 24-hour basement sauna at the Hongdae–Sinchon boundary with a traditional fire kiln (bulgama), yellow-soil, Finnish and ice rooms, TV lounges, a women-only sleeping area and rentable single rooms (extra, time-limited). No re-entry; the night rate is unconfirmed (an older listing said ₩16,000 after 21:00).</p>
@@ -681,6 +732,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="golden-sauna-myeongdong">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Myeongdong · 24-hour sauna</span></div>
   <h3>Golden Sauna Myeongdong (women only) <span class="nko" lang="ko">황금사우나 명동</span></h3>
   <p class="dfeat">Women-only 24-hour kiln sauna on B2 in Myeongdong: a roughly 30-year-old bulgama, mugwort steam room, wet and dry saunas, three tubs, a cold bath, private scrub booths and two sleeping rooms (one lit, one dark). Entry-plus-scrub package ₩80,000; hair dryers, brushes and basic skincare provided; drunk guests are refused.</p>
@@ -689,6 +741,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="spa-lei">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Sinsa / Jamwon · 24-hour sauna</span></div>
   <h3>Spa Lei (women only) <span class="nko" lang="ko">스파레이</span></h3>
   <p class="dfeat">Women-only 24-hour sauna in Sinsa/Jamwon, at the same site for about 20 years, with an open-air bath, a seawater bath, a pine-fired hanjeungmak, red-clay, charcoal and salt rooms and a nail salon. Prices are not published online; 2025–2026 guides quote roughly ₩15,000–20,000 for 12 hours plus a small charge for a bed.</p>
@@ -697,6 +750,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2025-12</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="club-k-seolleung">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Seolleung (Gangnam) · 24-hour sauna</span></div>
   <h3>Club K Seoul <span class="nko" lang="ko">클럽케이서울 선릉찜질방</span></h3>
   <p class="dfeat">A 24-hour jjimjilbang in Seolleung with a &#x27;club zone&#x27; (hanjeungmak, ondol rooms, book café, private sleep rooms), a public-bath sauna zone, a fitness club, a jazz lounge and a modern-art interior.</p>
@@ -705,6 +759,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2025-02</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="hwanghak-golden-spa">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Hwanghak-dong (Sindang / Dongmyo) · 24-hour sauna</span></div>
   <h3>Hwanghak-dong Golden Spa Jjimjilbang <span class="nko" lang="ko">황학동 황금스파찜질방</span></h3>
   <p class="dfeat">A 24-hour neighbourhood jjimjilbang in the basement of an apartment complex near Sindang, with a large aquarium, a doctor-fish pool (₩5,000 per 30 min), a restaurant, a shop and four hours of free parking. Walk-in only; day and night tickets split at 20:00; jjimjil clothes cost ₩1,000 extra.</p>
@@ -713,6 +768,7 @@
   <div class="dlinks"><a href="http://goldspa11.com/" target="_blank" rel="noopener">Official site ↗</a></div>
   <div class="verify">From published sources · in-person check pending · 2025-04</div>
 </article><article class="dcard" data-region="seoul" data-type="hanjeungmak" id="supsok-hanbang-land">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-kiln"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Sinchon / Ansan (Seodaemun) · Hanjeungmak</span></div>
   <h3>Supsok Hanbang Land <span class="nko" lang="ko">숲속한방랜드</span></h3>
   <p class="dfeat">A daytime kiln sauna on the wooded slopes of Ansan behind Sinchon: outdoor oak-charcoal kilns, a pine-fired hanjeungmak, mild, medium and hot rooms, an ice room, a women&#x27;s salt room, gender-separated sleep rooms and a brazier for roasting rice cakes and sweet potatoes from the shop. No overnight stays; a K-drama filming spot.</p>
@@ -721,6 +777,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-04</div>
 </article><article class="dcard" data-region="seoul" data-type="hanjeungmak" id="hana-mud">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-kiln"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Euljiro / Myeongdong · Hanjeungmak</span></div>
   <h3>Hana Mud Hanjeungmak (women only) <span class="nko" lang="ko">하나머드 한증막</span></h3>
   <p class="dfeat">A women-only hanjeungmak and scrub spa running since 2015, sold as 90- to 220-minute courses: kiln sauna, amethyst sauna, ginseng and germanium baths, a body scrub, a cucumber or seaweed pack and a Boryeong mud pack. English and Chinese menus, Japanese-speaking staff; opens late (14:00–15:00) on Seollal and Chuseok.</p>
@@ -729,6 +786,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="seoul" data-type="hanjeungmak" id="miso-sauna">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-kiln"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Chungjeongno · Hanjeungmak</span></div>
   <h3>Miso Sauna <span class="nko" lang="ko">미소사우나</span></h3>
   <p class="dfeat">A daytime mugwort steam sauna near Chungjeongno Station, quieter than the big jjimjilbangs. No confirmed entry price: the one 2026 listing shows ₩70,000, which it flags as probably a package price.</p>
@@ -737,6 +795,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="jjimjil" id="park-habio">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Munjeong (Songpa) · Jjimjilbang</span></div>
   <h3>Park Habio Water Kingdom &amp; Jjimjil Spa <span class="nko" lang="ko">파크하비오 워터킹덤 &amp; 찜질스파</span></h3>
   <p class="dfeat">A Santorini-themed indoor water park in Munjeong with a jjimjilbang and sauna attached; the water park (₩65,000 weekday) has waves, rapids and slides.</p>
@@ -745,6 +804,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2025-02</div>
 </article><article class="dcard" data-region="seoul" data-type="jjimjil" id="sealala">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Mullae (Yeongdeungpo) · Jjimjilbang</span></div>
   <h3>Sealala <span class="nko" lang="ko">씨랄라</span></h3>
   <p class="dfeat">A basement water park, sauna and jjimjilbang in Mullae, west Seoul. 2026 guides disagree on opening days: one lists daily hours, another weekends and public holidays only.</p>
@@ -753,6 +813,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="bath" id="siloam-junggok">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Junggok-dong (Gwangjin) · Neighborhood bath</span></div>
   <h3>Junggok-dong Siloam Sauna <span class="nko" lang="ko">중곡동 실로암사우나</span></h3>
   <p class="dfeat">A neighbourhood bath in Gwangjin-gu that shares a name with the closed Seoul Station Siloam but is a separate, much smaller place. The baths are open, reviews say the jjimjil floor has been closed since the pandemic, prices are not published online and English signage is limited.</p>
@@ -761,6 +822,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="spa" id="spaland-centum">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Centum City (Haeundae-gu) · Spa complex</span></div>
   <h3>Spa Land Centum City <span class="nko" lang="ko">스파랜드 센텀시티</span></h3>
   <p class="dfeat">A hot-spring spa inside the Shinsegae Centum City department store: 18 baths fed by two natural springs, 13 themed jjimjil rooms, outdoor foot baths and a ramen café; nearly half its visitors are foreign. Children under 7 are not admitted; hours beyond the first 4 are charged; the wristband is an e-wallet and you pay on exit.</p>
@@ -769,6 +831,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="hurshimchung">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Dongnae Oncheon · Hot spring</span></div>
   <h3>Hurshimchung <span class="nko" lang="ko">허심청</span></h3>
   <p class="dfeat">The landmark Dongnae hot-spring bathhouse, opened in 1991 beside Hotel Nongshim, with 40-plus baths including cave, open-air and seasonal herbal baths, a themed jjimjil zone on 3F (extra fee) and a German beer hall. Hotel guests usually get 50% off; parking is free for 3–4 hours.</p>
@@ -777,6 +840,7 @@
   <div class="dlinks"><a href="https://hotelnongshim.com" target="_blank" rel="noopener">Official site ↗</a></div>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="haeundae-oncheon-center">
+  <div class="dimg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Haeundae_Spa_Center.JPG/800px-Haeundae_Spa_Center.JPG" alt="해운대 온천센터" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://commons.wikimedia.org/wiki/File:Haeundae_Spa_Center.JPG" target="_blank" rel="noopener">Photo: Abasaa, Wikimedia Commons (Public domain)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Haeundae · Hot spring</span></div>
   <h3>Haeundae Oncheon Center <span class="nko" lang="ko">해운대온천센터</span></h3>
   <p class="dfeat">A seven-floor hot-spring bath between Haeundae Station and the beach whose lineage goes back to the 1935 Halmae-tang, rebuilt here in 2006. Treat it as a hot-spring bath rather than a jjimjilbang: a 2026 guide says the jjimjil zone is mostly converted; it also closes on occasional maintenance days.</p>
@@ -785,6 +849,7 @@
   <div class="dlinks"><a href="https://haeundaespa.com" target="_blank" rel="noopener">Official site ↗</a></div>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="sauna24" id="hill-spa-dalmaji">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Dalmaji Hill (Haeundae) · 24-hour sauna</span></div>
   <h3>Dalmaji Hill Spa <span class="nko" lang="ko">달맞이 힐스파</span></h3>
   <p class="dfeat">A 24-hour sea-view sauna and jjimjilbang on Dalmaji Hill (formerly Vesta), about 1,600 pyeong with a 5F outdoor foot bath and sleeping rooms, popular with couples and with visitors from Japan, Taiwan and China. Ticket length differs between 2026 guides: 10 hours in one, 12 in another.</p>
@@ -793,6 +858,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="spa" id="club-d-oasis">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Haeundae (LCT) · Spa complex</span></div>
   <h3>Club D Oasis <span class="nko" lang="ko">클럽디 오아시스</span></h3>
   <p class="dfeat">A seawater hot-spring spa in Haeundae&#x27;s LCT tower, opened in 2023: an indoor water park, an outdoor sea-view hot bath (foot bath in jjimjil wear, half-body soak in swimwear), six themed jjimjil rooms and an outdoor Finnish sauna. The Spa Pass covers spa and jjimjil, not the water park (Waterpark Pass ₩69,000, Combo ₩79,000).</p>
@@ -801,6 +867,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="seawater" id="aqua-palace">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Gwangalli · Seawater bath</span></div>
   <h3>Hotel Aqua Palace Spa &amp; Sauna <span class="nko" lang="ko">호텔 아쿠아펠리스 스파&amp;사우나</span></h3>
   <p class="dfeat">A 24-hour hotel spa and sauna on Gwangalli Beach using natural seawater pumped from 816 m, with floor-to-ceiling windows onto the bay and an indoor water park on 7F. The Visit Busan Pass covers the sauna and jjimjil but not the water park.</p>
@@ -809,6 +876,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="seawater" id="spa-haesurang">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Songdo (Seo-gu) · Seawater bath</span></div>
   <h3>Spa Haesurang <span class="nko" lang="ko">스파해수랑</span></h3>
   <p class="dfeat">A seawater sauna in Songdo near the beach and cable car, with steam rooms and a rooftop open-air bath looking at Namhang Bridge. The rooftop bath is mixed-gender and swimwear is required.</p>
@@ -817,6 +885,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="taejongdae-oncheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Yeongdo (Taejongdae) · Hot spring</span></div>
   <h3>Taejongdae Oncheon Jjimjilbang <span class="nko" lang="ko">태종대온천찜질방</span></h3>
   <p class="dfeat">A city-run (Busan Facilities Corporation) 24-hour hot-spring jjimjilbang on Yeongdo with pyramid, open-air and health baths, six jjimjil rooms and a gym.</p>
@@ -825,6 +894,7 @@
   <div class="dlinks"><a href="https://tjdspa.co.kr" target="_blank" rel="noopener">Official site ↗</a></div>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="seawater" id="gwangan-haesu-world">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Gwangalli · Seawater bath</span></div>
   <h3>Gwangan Haesu World <span class="nko" lang="ko">광안해수월드</span></h3>
   <p class="dfeat">A seawater sauna facing Gwangalli Beach, opened in 1994 and reopened in 2020 as a spa-fitness complex. Not every zone (sauna, pool, gym) runs every day, so ask which are open when you arrive.</p>
@@ -833,6 +903,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="water-house-ananti">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Gijang (Ananti Cove) · Hot spring</span></div>
   <h3>Water House <span class="nko" lang="ko">워터하우스 (아난티 코브)</span></h3>
   <p class="dfeat">An upmarket swimwear hot spring at Ananti Cove in Gijang, about 2,000 pyeong, with a 600 m spring and an infinity pool or open-air bath depending on season; tickets cover 4 hours and hours shift by season. Expensive by Korean bath standards.</p>
@@ -841,6 +912,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="bath" id="halmae-tang">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Haeundae · Neighborhood bath</span></div>
   <h3>Halmae-tang <span class="nko" lang="ko">할매탕</span></h3>
   <p class="dfeat">A four-floor neighbourhood hot-spring bath in Haeundae with its own 900 m well, renamed Halmae-tang in 2003 and reopened after renovation in October 2023; women&#x27;s bath on 3F, men&#x27;s on 4F, and a family bath on 2F by reservation (₩80,000). Prices date from the 2023 reopening and nearby baths raised fees in 2026.</p>
@@ -849,6 +921,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-07</div>
 </article><article class="dcard" data-region="busan" data-type="bath" id="world-spa-choryang">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Choryang (Busan Station area) · Neighborhood bath</span></div>
   <h3>World Spa <span class="nko" lang="ko">월드스파</span></h3>
   <p class="dfeat">A large neighbourhood bath (about 1,000 pyeong) in Choryang and the nearest bath in this list to Busan Station, handy for KTX arrivals.</p>
@@ -857,6 +930,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="hotel" id="cimer-busan">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-other"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Haeundae Beach · Hotel sauna</span></div>
   <h3>Paradise Hotel Busan Cimer <span class="nko" lang="ko">파라다이스호텔 부산 씨메르</span></h3>
   <p class="dfeat">Paradise Hotel Busan&#x27;s outdoor seawater hot-spring spa facing Haeundae Beach, used in swimwear in four timed sessions a day and shared with the outdoor ocean pool. Non-guest access is reported by a 2026 review but not stated on an official page, and lockers are members-only.</p>
@@ -865,6 +939,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="spa" id="aquafield-hanam">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Hanam (Gyeonggi) · Starfield Hanam (Misa) · Spa complex</span></div>
   <h3>Aquafield Hanam <span class="nko" lang="ko">아쿠아필드 하남</span></h3>
   <p class="dfeat">A Starfield mall spa with a rooftop infinity pool, eight themed jjimjil rooms, indoor and outdoor water parks (₩48,000–68,000 extra), a food court and kids&#x27; area; tickets come from unmanned kiosks, and the shoe locker must be used within 20 minutes. The outdoor water park has run at reduced capacity since 12 October 2026.</p>
@@ -873,6 +948,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="spa" id="aquafield-goyang">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Goyang (Gyeonggi) · Starfield Goyang (Deogyang-gu) · Spa complex</span></div>
   <h3>Aquafield Goyang <span class="nko" lang="ko">아쿠아필드 고양</span></h3>
   <p class="dfeat">The Starfield Goyang branch of Aquafield on the mall&#x27;s 4th floor: themed jjimjil rooms, an indoor water park (₩48,000–58,000; multipass ₩58,000–68,000) and a food court. The outdoor water park closed permanently on 12 October 2026; the spa continues.</p>
@@ -881,6 +957,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="termeden">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Icheon (Gyeonggi) · Moga-myeon · Hot spring</span></div>
   <h3>Termeden <span class="nko" lang="ko">테르메덴</span></h3>
   <p class="dfeat">Billed as Korea&#x27;s only German-style hot-spring resort, in Icheon, with a lazy river, an open-air bath, an indoor pool and a jjimjilbang with rental clothes; parking is free. Swimsuit and swim cap are required indoors and outdoors; the prices shown are Gold-season rates.</p>
@@ -889,6 +966,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="jjimjil" id="skyland-bucheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Bucheon (Gyeonggi) · Sang-dong · Jjimjilbang</span></div>
   <h3>Skyland Sauna <span class="nko" lang="ko">스카이랜드 사우나</span></h3>
   <p class="dfeat">A sauna and jjimjilbang on 7F of the Megaplus building in Sang-dong, Bucheon, with an indoor pool included in the ticket. Opening hours are not published.</p>
@@ -897,6 +975,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-07</div>
 </article><article class="dcard" data-region="other" data-type="spa" id="cimer-paradise-city">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Incheon · Yeongjong Island (Paradise City) · Spa complex</span></div>
   <h3>Paradise City Cimer <span class="nko" lang="ko">파라다이스시티 씨메르</span></h3>
   <p class="dfeat">A four-floor aqua spa with a rooftop infinity pool, cave and media-art spas and slides, plus a 2–3F jjimjil spa with cypress and amethyst rooms and wet and dry saunas. Aqua plus jjimjil is capped at 6 hours (+₩10,000 over); under-7s are not admitted; two hotel guests enter free and non-guests save 30% by booking ahead.</p>
@@ -905,6 +984,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="cheoksan-oncheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Sokcho (Gangwon) · Cheoksan · Hot spring</span></div>
   <h3>Cheoksan Oncheon Resort <span class="nko" lang="ko">척산온천휴양촌</span></h3>
   <p class="dfeat">Gangwon&#x27;s first hot spring (opened 1973), a resort bath in Sokcho with an open-air bath, a sauna, a summer outdoor pool (10:00–18:00) and family hot-spring rooms by the hour (3 hours: ₩50,000 for two, ₩70,000 for four). The free Cheoksan foot-bath park (March–November) is nearby.</p>
@@ -913,6 +993,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="deokgu-oncheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Uljin (Gyeongbuk) · Buk-myeon (Eungbongsan) · Hot spring</span></div>
   <h3>Deokgu Oncheon Resort <span class="nko" lang="ko">덕구온천 리조트</span></h3>
   <p class="dfeat">A remote Gyeongbuk resort using what is billed as Korea&#x27;s only naturally flowing hot spring: water piped 4 km from Eungbongsan without pumping or heating into a big bath hall (no time limit), open-air and family baths and a swimwear Spa World (bubble baths, kids&#x27; pool). Peak: mid-Dec to early Mar, mid-Jul to Aug, Chuseok.</p>
@@ -921,6 +1002,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="other" data-type="seawater" id="yangnam-haesu-oncheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Gyeongju (Gyeongbuk) · Yangnam-myeon (east coast) · Seawater bath</span></div>
   <h3>Yangnam Haesu Oncheon Land 24 <span class="nko" lang="ko">양남해수온천랜드24</span></h3>
   <p class="dfeat">A 24-hour seawater hot-spring jjimjilbang on the east coast of Gyeongju with ocean-view pools, a carbonated pool, salt and gem rooms, a sleeping room and a gym.</p>
@@ -929,6 +1011,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="spa-valley-daegu">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Daegu · Gachang-myeon (Dalseong-gun) · Hot spring</span></div>
   <h3>Spa Valley <span class="nko" lang="ko">스파밸리</span></h3>
   <p class="dfeat">A hot-spring water park in Gachang, south of Daegu, with indoor and outdoor zones, a Nature Park zoo and a hotel on site; swimsuit and swim cap are required. Parking is free on weekdays and ₩3,000 Friday to Sunday.</p>
@@ -937,6 +1020,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="sanbangsan-oncheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Seogwipo (Jeju) · Andeok-myeon (Sanbangsan) · Hot spring</span></div>
   <h3>Sanbangsan Carbonate Hot Spring <span class="nko" lang="ko">산방산탄산온천</span></h3>
   <p class="dfeat">Jeju&#x27;s first public hot spring: a naturally carbonated spring (claimed five times the carbonation of typical Korean springs) with indoor baths, an open-air pool (add-on; swimsuit or shorts and T-shirt, rental ₩2,000) and a kiln jjimjil area (add-on). Jeju residents pay less.</p>

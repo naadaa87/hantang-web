@@ -648,7 +648,11 @@
 <header class="g-head"><div class="wrap" style="max-width:1120px"><nav class="crumbs" aria-label="麵包屑導覽"><a href="../../zh-hant/">HANTANG</a><span>›</span><span>澡堂總覽</span></nav><div class="eyebrow">總覽</div><h1>值得認識的澡堂、三溫暖與汗蒸幕。</h1><p class="lede">首爾、釜山，以及各地的溫泉鄉。每張卡片依澡堂本身或售票網站公布的資訊，列出營業時間、價格與刺青規定，附上我們查到的日期，並註明我們是否已親自走訪確認。</p></div></header><section style="padding-top:20px"><div class="wrap" style="padding-bottom:70px"><style>
   .dfil .ctabs{flex-wrap:wrap;margin-top:0}.dfil .ctab{white-space:nowrap;flex:0 0 auto}.dfil{display:grid;gap:10px}
   .dgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
-  .dcard{border:1px solid var(--line);border-radius:16px;padding:20px 22px;background:#fff;scroll-margin-top:84px}
+  .dcard{border:1px solid var(--line);border-radius:16px;padding:0 22px 20px;background:#fff;scroll-margin-top:84px;overflow:hidden}
+  .dimg{margin:0 -22px 16px;aspect-ratio:16/7;max-width:calc(100% + 44px);background:var(--blue-tint);color:var(--blue);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .dimg img{width:100%;height:100%;object-fit:cover;display:block}.dimg svg{width:52px;height:52px;opacity:.85}
+  .dimg.ill{aspect-ratio:16/5}
+  .pcap{position:absolute;right:8px;bottom:8px;font-size:10.5px;background:rgba(255,255,255,.92);border-radius:6px;padding:2px 7px;color:var(--mute)}.pcap a{color:inherit}
   .dcard h3{font-size:19px;font-weight:700;line-height:1.35;margin-top:10px}
   .dcard .nko{font-family:var(--serif);color:var(--blue);font-weight:700;font-size:16px;margin-left:6px}
   .dfeat{font-size:14px;color:var(--mute);margin-top:8px;line-height:1.6}
@@ -661,7 +665,52 @@
   .dnote{margin-top:22px;font-size:14px;color:var(--mute);max-width:760px;line-height:1.7;border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:var(--stone)}
   .dcount{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--mute);margin-top:18px}
   @media (max-width:760px){.dgrid{grid-template-columns:1fr}.dr{grid-template-columns:1fr}}
-</style><div class="dfil" style="margin-top:34px"><div class="ctabs" role="group" aria-label="依城市篩選"><button class="ctab on" data-f="all">全部</button><button class="ctab" data-f="seoul">首爾</button><button class="ctab" data-f="busan">釜山</button><button class="ctab" data-f="other">其他地區</button></div><div class="ctabs" role="group" aria-label="依類別篩選"><button class="ctab on" data-t="all">全部</button><button class="ctab" data-t="bath">巷口澡堂</button><button class="ctab" data-t="sauna24">24 小時三溫暖</button><button class="ctab" data-t="jjimjil">汗蒸幕</button><button class="ctab" data-t="hanjeungmak">汗蒸窯</button><button class="ctab" data-t="spa">大型 SPA 館</button><button class="ctab" data-t="oncheon">溫泉</button><button class="ctab" data-t="seawater">海水澡堂</button><button class="ctab" data-t="hotel">飯店三溫暖</button></div></div><div class="dcount" id="dcount"></div><div class="dgrid" id="dgrid"><article class="dcard" data-region="seoul" data-type="sauna24" id="sparex-dongdaemun">
+</style><svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="ty-bath" viewBox="0 0 48 48"><path d="M10 26h28a14 14 0 0 1-28 0z" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><path d="M17 20c-2-3 2-5 0-8M24 20c-2-3 2-5 0-8M31 20c-2-3 2-5 0-8" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/></symbol>
+<symbol id="ty-bathjjim" viewBox="0 0 48 48"><path d="M8 30h22a11 11 0 0 1-22 0z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M28 22l8-7 8 7v14H34" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M14 24c-1.5-2.5 1.5-4 0-6.5M21 24c-1.5-2.5 1.5-4 0-6.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+<symbol id="ty-jjim" viewBox="0 0 48 48"><path d="M8 22L24 9l16 13v17H8z" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><path d="M17 33c-2-3 2-5 0-8M24 33c-2-3 2-5 0-8M31 33c-2-3 2-5 0-8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+<symbol id="ty-kiln" viewBox="0 0 48 48"><path d="M7 38a17 17 0 0 1 34 0z" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><path d="M19 38v-6a5 5 0 0 1 10 0v6" fill="none" stroke="currentColor" stroke-width="3"/><path d="M24 14c-2-3 2-5 0-8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+<symbol id="ty-other" viewBox="0 0 48 48"><rect x="9" y="12" width="30" height="26" rx="5" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M9 21h30M18 12V8h12v4" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="24" cy="30" r="3.2" fill="currentColor"/></symbol>
+</svg><style>
+  .rx-ctl{display:grid;gap:12px;margin-top:30px}
+  .rx-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .rx-row input[type=search],.rx-row select{font:inherit;font-size:15px;padding:11px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);min-width:0}
+  .rx-row input[type=search]{flex:1 1 260px}
+  .rx-row select{flex:0 1 220px}
+  .rx-near{font:inherit;font-size:14px;font-weight:700;color:var(--blue);background:var(--blue-tint);border:0;border-radius:12px;padding:11px 16px;cursor:pointer}
+  .rx-chips{display:flex;gap:8px;flex-wrap:wrap}
+  .rx-chips .ctab{white-space:nowrap;flex:0 0 auto}
+  .rx-stat{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--mute)}
+  .rx-list{margin-top:18px}
+  .rx-d{font-size:19px;font-weight:700;margin:34px 0 4px;padding-top:6px;border-top:1px solid var(--line);display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+  .rx-d small{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--mute);font-weight:500}
+  .rx-ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}
+  .pl{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;padding:16px 0;border-bottom:1px solid var(--line);scroll-margin-top:84px}
+  .pi{width:64px;height:64px;border-radius:12px;background:var(--blue-tint);color:var(--blue);display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .pi svg{width:34px;height:34px}.pi img{width:100%;height:100%;object-fit:cover;display:block}
+  .pn{font-size:16.5px;font-weight:700;line-height:1.35;word-break:keep-all}
+  .pm{font-size:13px;color:var(--mute);margin-top:2px}
+  .pt{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}.pt span{font-size:11.5px;font-weight:700;background:var(--stone);border-radius:99px;padding:3px 9px;color:var(--ink)}
+  .pa{font-size:13.5px;margin-top:6px;color:var(--ink);word-break:keep-all}
+  .pk{display:flex;gap:14px;flex-wrap:wrap;margin-top:7px;font-size:13px;font-weight:700}.pk a{color:var(--blue)}
+  .pdist{font-family:var(--mono);font-size:11px;color:var(--blue);margin-left:6px}
+  .rx-none{padding:30px 0;color:var(--mute)}
+  .rx-note{margin-top:30px;font-size:14px;color:var(--mute);max-width:820px;line-height:1.7;border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:var(--stone)}
+  .rx-regions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:14px}
+  .rx-regions a{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fff;display:flex;justify-content:space-between;gap:8px;font-weight:700;font-size:14.5px}
+  .rx-regions a span{font-family:var(--mono);font-size:11px;color:var(--mute);font-weight:500;align-self:center}
+  .rx-regions a.on{border-color:var(--blue);color:var(--blue)}
+  .rx-credits{margin-top:24px;font-size:12.5px;color:var(--mute);line-height:1.7}
+  .pc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
+  .pcard{border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden;scroll-margin-top:84px}
+  .pcard .pimg{aspect-ratio:16/9;max-width:100%;background:var(--blue-tint);color:var(--blue);display:flex;align-items:center;justify-content:center;position:relative}
+  .pcard .pimg svg{width:56px;height:56px}.pcard .pimg img{width:100%;height:100%;object-fit:cover}
+  .pcard .pimg.nop{aspect-ratio:auto;height:56px;justify-content:flex-start;padding:0 20px}.pcard .pimg.nop svg{width:28px;height:28px}
+  .pcap{position:absolute;right:8px;bottom:8px;font-size:10.5px;background:rgba(255,255,255,.9);border-radius:6px;padding:2px 7px;color:var(--mute)}
+  .pcard .pbody{padding:16px 20px 18px}
+  @media (max-width:860px){.rx-ul{grid-template-columns:1fr}.rx-regions{grid-template-columns:repeat(2,minmax(0,1fr))}.pc-grid{grid-template-columns:1fr}}
+</style><div style="margin-top:56px"><div class="sec-eyebrow">全韓國</div><h2 style="font-size:26px;margin-top:6px">所有持有營業許可的澡堂，依地區列出</h2><p style="color:var(--mute);margin-top:8px;max-width:760px">資料取自韓國政府的營業許可紀錄：16 個地區共有 5,634 間澡堂、三溫暖與汗蒸幕登記為營業中，每一間都附上 Naver Map 連結，可以在那裡看照片。</p><div class="rx-regions"><a href="../../zh-hant/baths/seoul/">首爾<span>622</span></a><a href="../../zh-hant/baths/busan/">釜山<span>636</span></a><a href="../../zh-hant/baths/incheon/">仁川<span>208</span></a><a href="../../zh-hant/baths/daegu/">大邱<span>223</span></a><a href="../../zh-hant/baths/daejeon/">大田<span>86</span></a><a href="../../zh-hant/baths/ulsan/">蔚山<span>160</span></a><a href="../../zh-hant/baths/sejong/">世宗<span>18</span></a><a href="../../zh-hant/baths/gyeonggi/">京畿道<span>775</span></a><a href="../../zh-hant/baths/gangwon/">江原特別自治道<span>289</span></a><a href="../../zh-hant/baths/chungbuk/">忠清北道<span>161</span></a><a href="../../zh-hant/baths/chungnam/">忠清南道<span>252</span></a><a href="../../zh-hant/baths/jeonbuk/">全北特別自治道<span>290</span></a><a href="../../zh-hant/baths/jeonnam-gwangju/">全南光州統合特別市<span>558</span></a><a href="../../zh-hant/baths/gyeongbuk/">慶尚北道<span>450</span></a><a href="../../zh-hant/baths/gyeongnam/">慶尚南道<span>759</span></a><a href="../../zh-hant/baths/jeju/">濟州特別自治道<span>147</span></a><a href="../../zh-hant/baths/private/">包廂／單人<span>80</span></a></div></div><h2 style="font-size:26px;margin-top:64px">我們詳細介紹過的澡堂</h2><div class="dfil" style="margin-top:22px"><div class="ctabs" role="group" aria-label="依城市篩選"><button class="ctab on" data-f="all">全部</button><button class="ctab" data-f="seoul">首爾</button><button class="ctab" data-f="busan">釜山</button><button class="ctab" data-f="other">其他地區</button></div><div class="ctabs" role="group" aria-label="依類別篩選"><button class="ctab on" data-t="all">全部</button><button class="ctab" data-t="bath">巷口澡堂</button><button class="ctab" data-t="sauna24">24 小時三溫暖</button><button class="ctab" data-t="jjimjil">汗蒸幕</button><button class="ctab" data-t="hanjeungmak">汗蒸窯</button><button class="ctab" data-t="spa">大型 SPA 館</button><button class="ctab" data-t="oncheon">溫泉</button><button class="ctab" data-t="seawater">海水澡堂</button><button class="ctab" data-t="hotel">飯店三溫暖</button></div></div><div class="dcount" id="dcount"></div><div class="dgrid" id="dgrid"><article class="dcard" data-region="seoul" data-type="sauna24" id="sparex-dongdaemun">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">首爾 · 東大門 · 24 小時三溫暖</span></div>
   <h3>Sparex Dongdaemun <span class="nko" lang="ko">스파렉스 동대문 굿모닝시티</span></h3>
   <p class="dfeat">首爾最有名的 24 小時汗蒸幕，位於 DDP 對面 Goodmorning City 購物中心的 B3：韓屋風格的中央大廳、乾式與蒸氣烤箱、睡眠區、健身房，以及 24 小時營業的美食街。日間票與夜間票以 20:00 為界；沒有加購行李寄放就不能再入場；男女浴池夜間會各自關閉約一小時清潔。</p>
@@ -670,6 +719,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-10</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="sparex-dongmyo">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">首爾 · 東廟／昌信洞 · 24 小時三溫暖</span></div>
   <h3>Sparex Dongmyo <span class="nko" lang="ko">스파렉스 동묘</span></h3>
   <p class="dfeat">Sparex 較新的分店（2024 年 7 月開幕），位於 CIZN 大樓頂樓兩層：黃土房、喜馬拉雅鹽房、冰房、檜木森林浴、柴火烤箱、美食街，以及面向南山塔的休息區。記得帶實體身分證件；加購行李寄放可在 24 小時內再入場一次；週一晚上沒有男性搓澡服務。</p>
@@ -678,6 +728,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-09</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="hongdae-bulgama">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">首爾 · 弘大／新村 · 24 小時三溫暖</span></div>
   <h3>Hongdae 24-hour Bulgama Sauna <span class="nko" lang="ko">홍대 24시 불가마 사우나</span></h3>
   <p class="dfeat">位於弘大與新村交界的地下 24 小時三溫暖，有傳統火窯（bulgama）、黃土房、芬蘭式烤箱、冰房、電視休息區、女性專用睡眠區，還有可租用的單人房（另計費、有時間限制）。不可再入場；夜間價格未經確認（較舊的資料寫 21:00 後 ₩16,000）。</p>
@@ -686,6 +737,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-09</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="golden-sauna-myeongdong">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">首爾 · 明洞 · 24 小時三溫暖</span></div>
   <h3>Golden Sauna Myeongdong (women only) <span class="nko" lang="ko">황금사우나 명동</span></h3>
   <p class="dfeat">明洞的女性專用 24 小時火窯三溫暖，位於 B2：約有 30 年歷史的火窯（bulgama）、艾草蒸氣室、濕式與乾式烤箱、三個浴池、冷水池、獨立搓澡間，以及兩間睡眠室（一間開燈、一間全暗）。入場＋搓澡套票 ₩80,000；備有吹風機、梳子和基礎保養品；酒醉者謝絕入場。</p>
@@ -694,6 +746,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="spa-lei">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">首爾 · 新沙／蠶院 · 24 小時三溫暖</span></div>
   <h3>Spa Lei (women only) <span class="nko" lang="ko">스파레이</span></h3>
   <p class="dfeat">位於新沙／蠶院的女性專用 24 小時三溫暖，在同一地點經營約 20 年，有露天浴池、海水浴池、松木柴燒的汗蒸窯、紅土房、木炭房、鹽房和美甲沙龍。價格未在網路上公布；2025–2026 年的旅遊指南寫的是 12 小時約 ₩15,000–20,000，床位另收少許費用。</p>
@@ -702,6 +755,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2025-12</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="club-k-seolleung">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">首爾 · 宣陵（江南） · 24 小時三溫暖</span></div>
   <h3>Club K Seoul <span class="nko" lang="ko">클럽케이서울 선릉찜질방</span></h3>
   <p class="dfeat">位於宣陵的 24 小時汗蒸幕，設有「俱樂部區」（汗蒸窯、暖炕房、書咖、獨立睡眠室）、大眾浴池三溫暖區、健身俱樂部、爵士休息室，室內以現代藝術風格裝潢。</p>
@@ -710,6 +764,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2025-02</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="hwanghak-golden-spa">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">首爾 · 黃鶴洞（新堂／東廟） · 24 小時三溫暖</span></div>
   <h3>Hwanghak-dong Golden Spa Jjimjilbang <span class="nko" lang="ko">황학동 황금스파찜질방</span></h3>
   <p class="dfeat">位於新堂附近公寓社區地下室的在地型 24 小時汗蒸幕，有大型水族箱、親親魚池（每 30 分鐘 ₩5,000）、餐廳、商店，還可免費停車四小時。只接受現場入場；日間票與夜間票以 20:00 為界；汗蒸服另收 ₩1,000。</p>
@@ -718,6 +773,7 @@
   <div class="dlinks"><a href="http://goldspa11.com/" target="_blank" rel="noopener">官方網站 ↗</a></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2025-04</div>
 </article><article class="dcard" data-region="seoul" data-type="hanjeungmak" id="supsok-hanbang-land">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-kiln"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">首爾 · 新村／鞍山（西大門區） · 汗蒸窯</span></div>
   <h3>Supsok Hanbang Land <span class="nko" lang="ko">숲속한방랜드</span></h3>
   <p class="dfeat">位於新村後方鞍山林間山坡、只在白天營業的火窯三溫暖：戶外橡木炭窯、松木柴燒汗蒸窯、低溫／中溫／高溫房、冰房、女性專用鹽房、男女分開的睡眠室，還有炭爐可以烤販賣部買來的年糕和地瓜。不能過夜；也是韓劇拍攝地。</p>
@@ -726,6 +782,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-04</div>
 </article><article class="dcard" data-region="seoul" data-type="hanjeungmak" id="hana-mud">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-kiln"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">首爾 · 乙支路／明洞 · 汗蒸窯</span></div>
   <h3>Hana Mud Hanjeungmak (women only) <span class="nko" lang="ko">하나머드 한증막</span></h3>
   <p class="dfeat">2015 年開業的女性專用汗蒸窯與搓澡 SPA，以 90–220 分鐘的套裝療程販售：火窯、紫水晶烤箱、人參浴與鍺浴、全身搓澡、小黃瓜或海藻敷膜，以及保寧泥敷膜。有英文和中文價目表，也有會說日語的員工；春節和中秋節較晚開門（14:00–15:00）。</p>
@@ -734,6 +791,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-10</div>
 </article><article class="dcard" data-region="seoul" data-type="hanjeungmak" id="miso-sauna">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-kiln"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">首爾 · 忠正路 · 汗蒸窯</span></div>
   <h3>Miso Sauna <span class="nko" lang="ko">미소사우나</span></h3>
   <p class="dfeat">忠正路站附近只在白天營業的艾草蒸氣三溫暖，比大型汗蒸幕安靜。入場費尚未確認：唯一一筆 2026 年的資料寫 ₩70,000，但該資料也註明這可能是套票價格。</p>
@@ -742,6 +800,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="jjimjil" id="park-habio">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">首爾 · 文井（松坡區） · 汗蒸幕</span></div>
   <h3>Park Habio Water Kingdom &amp; Jjimjil Spa <span class="nko" lang="ko">파크하비오 워터킹덤 &amp; 찜질스파</span></h3>
   <p class="dfeat">文井的聖托里尼主題室內水上樂園，附設汗蒸幕和三溫暖；水上樂園（平日 ₩65,000）有造浪池、激流和滑水道。</p>
@@ -750,6 +809,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2025-02</div>
 </article><article class="dcard" data-region="seoul" data-type="jjimjil" id="sealala">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">首爾 · 文來（永登浦區） · 汗蒸幕</span></div>
   <h3>Sealala <span class="nko" lang="ko">씨랄라</span></h3>
   <p class="dfeat">首爾西部文來的地下水上樂園，兼營三溫暖和汗蒸幕。2026 年的旅遊指南對營業日說法不一：一份寫每天營業，另一份寫只在週末和國定假日營業。</p>
@@ -758,6 +818,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="bath" id="siloam-junggok">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">首爾 · 中谷洞（廣津區） · 巷口澡堂</span></div>
   <h3>Junggok-dong Siloam Sauna <span class="nko" lang="ko">중곡동 실로암사우나</span></h3>
   <p class="dfeat">廣津區的巷口澡堂，和已歇業的首爾站 Siloam 同名，但其實是另一家規模小得多的店。浴池照常營業；根據評論，汗蒸樓層自疫情以來一直關閉。價格未在網路上公布，英文標示也不多。</p>
@@ -766,6 +827,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="spa" id="spaland-centum">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · Centum City（海雲台區） · 大型 SPA 館</span></div>
   <h3>Spa Land Centum City <span class="nko" lang="ko">스파랜드 센텀시티</span></h3>
   <p class="dfeat">位於新世界百貨 Centum City 店內的溫泉 SPA：18 個浴池引自兩處天然溫泉，另有 13 間主題汗蒸室、戶外泡腳池和拉麵咖啡廳；近半數訪客是外國人。未滿 7 歲兒童不得入場；超過前 4 小時要另外計費；手環就是電子錢包，離場時結帳。</p>
@@ -774,6 +836,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="hurshimchung">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · 東萊溫泉 · 溫泉</span></div>
   <h3>Hurshimchung <span class="nko" lang="ko">허심청</span></h3>
   <p class="dfeat">東萊溫泉的地標級澡堂，1991 年在農心飯店旁開業，有 40 多個浴池，包括洞窟浴池、露天浴池和季節限定的草本浴；3 樓有主題汗蒸區（另收費），還有一間德式啤酒屋。住房旅客通常享半價（50%）優惠；可免費停車 3–4 小時。</p>
@@ -782,6 +845,7 @@
   <div class="dlinks"><a href="https://hotelnongshim.com" target="_blank" rel="noopener">官方網站 ↗</a></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="haeundae-oncheon-center">
+  <div class="dimg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Haeundae_Spa_Center.JPG/800px-Haeundae_Spa_Center.JPG" alt="해운대 온천센터" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://commons.wikimedia.org/wiki/File:Haeundae_Spa_Center.JPG" target="_blank" rel="noopener">照片：Abasaa，Wikimedia Commons（Public domain）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · 海雲台 · 溫泉</span></div>
   <h3>Haeundae Oncheon Center <span class="nko" lang="ko">해운대온천센터</span></h3>
   <p class="dfeat">位於海雲台站和海灘之間的七層樓溫泉澡堂，前身可追溯到 1935 年的 Halmae-tang，2006 年在現址重建。把它當成溫泉澡堂而不是汗蒸幕會比較準確：一份 2026 年的旅遊指南說，汗蒸區大多已改作他用；另外也會不定期休館維修。</p>
@@ -790,6 +854,7 @@
   <div class="dlinks"><a href="https://haeundaespa.com" target="_blank" rel="noopener">官方網站 ↗</a></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="sauna24" id="hill-spa-dalmaji">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · 迎月嶺（海雲台） · 24 小時三溫暖</span></div>
   <h3>Dalmaji Hill Spa <span class="nko" lang="ko">달맞이 힐스파</span></h3>
   <p class="dfeat">迎月嶺上的 24 小時海景三溫暖兼汗蒸幕（前身為 Vesta），面積約 1,600 坪，5 樓有戶外泡腳池，也有睡眠室，很受情侶以及日本、台灣和中國旅客歡迎。2026 年的旅遊指南對門票時數說法不一：一份寫 10 小時，另一份寫 12 小時。</p>
@@ -798,6 +863,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="spa" id="club-d-oasis">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · 海雲台（LCT） · 大型 SPA 館</span></div>
   <h3>Club D Oasis <span class="nko" lang="ko">클럽디 오아시스</span></h3>
   <p class="dfeat">位於海雲台 LCT 大樓、2023 年開幕的海水溫泉 SPA：室內水上樂園、戶外海景溫泉池（穿汗蒸服可泡腳，穿泳衣可泡半身浴）、六間主題汗蒸室，以及戶外芬蘭式烤箱。Spa Pass 包含 SPA 和汗蒸區，但不含水上樂園（Waterpark Pass ₩69,000，Combo ₩79,000）。</p>
@@ -806,6 +872,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="seawater" id="aqua-palace">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · 廣安里 · 海水澡堂</span></div>
   <h3>Hotel Aqua Palace Spa &amp; Sauna <span class="nko" lang="ko">호텔 아쿠아펠리스 스파&amp;사우나</span></h3>
   <p class="dfeat">廣安里海水浴場旁的 24 小時飯店 SPA 與三溫暖，使用從地下 816 公尺抽取的天然海水，落地窗正對海灣，7 樓還有室內水上樂園。Visit Busan Pass 可用於三溫暖和汗蒸區，但不含水上樂園。</p>
@@ -814,6 +881,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="seawater" id="spa-haesurang">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · 松島（西區） · 海水澡堂</span></div>
   <h3>Spa Haesurang <span class="nko" lang="ko">스파해수랑</span></h3>
   <p class="dfeat">松島的海水三溫暖，靠近海水浴場和纜車，有蒸氣室，頂樓露天浴池可眺望南港大橋。頂樓浴池男女共用，必須穿泳衣。</p>
@@ -822,6 +890,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="taejongdae-oncheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · 影島（太宗台） · 溫泉</span></div>
   <h3>Taejongdae Oncheon Jjimjilbang <span class="nko" lang="ko">태종대온천찜질방</span></h3>
   <p class="dfeat">影島上由市府經營（釜山設施公團）的 24 小時溫泉汗蒸幕，有金字塔浴池、露天浴池和保健浴池，另有六間汗蒸室和健身房。</p>
@@ -830,6 +899,7 @@
   <div class="dlinks"><a href="https://tjdspa.co.kr" target="_blank" rel="noopener">官方網站 ↗</a></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="seawater" id="gwangan-haesu-world">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · 廣安里 · 海水澡堂</span></div>
   <h3>Gwangan Haesu World <span class="nko" lang="ko">광안해수월드</span></h3>
   <p class="dfeat">面向廣安里海水浴場的海水三溫暖，1994 年開業，2020 年以 SPA 健身複合館的形式重新開幕。三溫暖、泳池、健身房並非每天都開放，到了現場先問一下哪些有開。</p>
@@ -838,6 +908,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="water-house-ananti">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · 機張（Ananti Cove） · 溫泉</span></div>
   <h3>Water House <span class="nko" lang="ko">워터하우스 (아난티 코브)</span></h3>
   <p class="dfeat">位於機張 Ananti Cove 的高級泳衣溫泉，面積約 2,000 坪，溫泉源自地下 600 公尺，依季節開放無邊際泳池或露天浴池；門票可待 4 小時，營業時間隨季節調整。以韓國澡堂的標準來說價格偏高。</p>
@@ -846,6 +917,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="bath" id="halmae-tang">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · 海雲台 · 巷口澡堂</span></div>
   <h3>Halmae-tang <span class="nko" lang="ko">할매탕</span></h3>
   <p class="dfeat">海雲台的四層樓在地溫泉澡堂，擁有自家 900 公尺深的溫泉井，2003 年改名為 Halmae-tang，2023 年 10 月整修後重新開幕；女湯在 3 樓、男湯在 4 樓，2 樓另有需預約的家庭湯（₩80,000）。價格是 2023 年重新開幕時的資料，而附近澡堂在 2026 年已經漲價。</p>
@@ -854,6 +926,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-07</div>
 </article><article class="dcard" data-region="busan" data-type="bath" id="world-spa-choryang">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · 草梁（釜山站一帶） · 巷口澡堂</span></div>
   <h3>World Spa <span class="nko" lang="ko">월드스파</span></h3>
   <p class="dfeat">草梁一間規模很大的在地澡堂（約 1,000 坪），也是本名單中離釜山站最近的澡堂，搭 KTX 抵達後很方便。</p>
@@ -862,6 +935,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="hotel" id="cimer-busan">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-other"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · 海雲台海水浴場 · 飯店三溫暖</span></div>
   <h3>Paradise Hotel Busan Cimer <span class="nko" lang="ko">파라다이스호텔 부산 씨메르</span></h3>
   <p class="dfeat">釜山天堂飯店面向海雲台海水浴場的戶外海水溫泉 SPA，須穿泳衣，每天分四個時段開放，與戶外海景泳池共用。一則 2026 年的評論提到非住客也能入場，但官方網頁並未載明；置物櫃僅限會員使用。</p>
@@ -870,6 +944,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="spa" id="aquafield-hanam">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">河南（京畿道） · Starfield 河南（渼沙） · 大型 SPA 館</span></div>
   <h3>Aquafield Hanam <span class="nko" lang="ko">아쿠아필드 하남</span></h3>
   <p class="dfeat">位於 Starfield 購物中心內的 SPA，有頂樓無邊際泳池、八間主題汗蒸室、室內與戶外水上樂園（另加 ₩48,000–68,000）、美食街和兒童區；門票在無人售票機購買，鞋櫃須在 20 分鐘內使用。戶外水上樂園自 2026 年 10 月 12 日起縮減開放規模。</p>
@@ -878,6 +953,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="spa" id="aquafield-goyang">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">高陽（京畿道） · Starfield 高陽（德陽區） · 大型 SPA 館</span></div>
   <h3>Aquafield Goyang <span class="nko" lang="ko">아쿠아필드 고양</span></h3>
   <p class="dfeat">Aquafield 的 Starfield 高陽分店，位於購物中心 4 樓：主題汗蒸室、室內水上樂園（₩48,000–58,000；套票 ₩58,000–68,000）和美食街。戶外水上樂園已於 2026 年 10 月 12 日永久關閉；SPA 照常營業。</p>
@@ -886,6 +962,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="termeden">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">利川（京畿道） · 暮伽面 · 溫泉</span></div>
   <h3>Termeden <span class="nko" lang="ko">테르메덴</span></h3>
   <p class="dfeat">標榜是韓國唯一的德式溫泉度假村，位於利川，有漂漂河、露天浴池、室內泳池，以及可租借衣物的汗蒸幕；停車免費。室內外都必須穿泳衣、戴泳帽；這裡列出的是 Gold 季的價格。</p>
@@ -894,6 +971,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="jjimjil" id="skyland-bucheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">富川（京畿道） · 上洞 · 汗蒸幕</span></div>
   <h3>Skyland Sauna <span class="nko" lang="ko">스카이랜드 사우나</span></h3>
   <p class="dfeat">位於富川上洞 Megaplus 大樓 7 樓的三溫暖兼汗蒸幕，門票含室內泳池。未公布營業時間。</p>
@@ -902,6 +980,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-07</div>
 </article><article class="dcard" data-region="other" data-type="spa" id="cimer-paradise-city">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">仁川 · 永宗島（百樂達斯城） · 大型 SPA 館</span></div>
   <h3>Paradise City Cimer <span class="nko" lang="ko">파라다이스시티 씨메르</span></h3>
   <p class="dfeat">四層樓的水療區，有頂樓無邊際泳池、洞窟 SPA、媒體藝術 SPA 和滑水道；2–3 樓另有汗蒸區，設有檜木房、紫水晶房，以及濕式與乾式烤箱。水療區加汗蒸區最多可待 6 小時（超過加收 ₩10,000）；未滿 7 歲不得入場；住房旅客兩人免費入場，非住客提前預訂可享 7 折（省 30%）。</p>
@@ -910,6 +989,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="cheoksan-oncheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">束草（江原道） · 尺山 · 溫泉</span></div>
   <h3>Cheoksan Oncheon Resort <span class="nko" lang="ko">척산온천휴양촌</span></h3>
   <p class="dfeat">江原道第一座溫泉（1973 年開業），是束草的度假型溫泉澡堂，有露天浴池、三溫暖、夏季戶外泳池（10:00–18:00），以及按時計費的家庭溫泉房（3 小時：兩人 ₩50,000、四人 ₩70,000）。附近還有免費的尺山泡腳公園（3–11 月）。</p>
@@ -918,6 +998,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="deokgu-oncheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">蔚珍（慶尚北道） · 北面（應峰山） · 溫泉</span></div>
   <h3>Deokgu Oncheon Resort <span class="nko" lang="ko">덕구온천 리조트</span></h3>
   <p class="dfeat">位於慶尚北道偏遠山區的度假村，使用號稱韓國唯一的天然自湧溫泉：溫泉水從應峰山以管線引流 4 公里，不經抽水或加熱，送進大型浴池大廳（不限時間）、露天浴池和家庭湯，以及須穿泳衣的 Spa World（氣泡浴、兒童池）。旺季：12 月中至 3 月初、7 月中至 8 月、中秋節。</p>
@@ -926,6 +1007,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2026-09</div>
 </article><article class="dcard" data-region="other" data-type="seawater" id="yangnam-haesu-oncheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">慶州（慶尚北道） · 陽南面（東海岸） · 海水澡堂</span></div>
   <h3>Yangnam Haesu Oncheon Land 24 <span class="nko" lang="ko">양남해수온천랜드24</span></h3>
   <p class="dfeat">慶州東海岸的 24 小時海水溫泉汗蒸幕，有海景浴池、碳酸泉池、鹽房、寶石房、睡眠室和健身房。</p>
@@ -934,6 +1016,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="spa-valley-daegu">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">大邱 · 嘉昌面（達城郡） · 溫泉</span></div>
   <h3>Spa Valley <span class="nko" lang="ko">스파밸리</span></h3>
   <p class="dfeat">位於大邱南邊嘉昌的溫泉水上樂園，分室內與戶外區，園區內還有 Nature Park 動物園和飯店；須穿泳衣、戴泳帽。平日停車免費，週五至週日 ₩3,000。</p>
@@ -942,6 +1025,7 @@
   <div class="dlinks"></div>
   <div class="verify">依公開資料整理 · 尚待親自走訪確認 · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="sanbangsan-oncheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">西歸浦（濟州） · 安德面（山房山） · 溫泉</span></div>
   <h3>Sanbangsan Carbonate Hot Spring <span class="nko" lang="ko">산방산탄산온천</span></h3>
   <p class="dfeat">濟州第一座公共溫泉：天然碳酸泉（號稱碳酸含量是韓國一般溫泉的五倍），有室內浴池、露天泳池（加購；須穿泳衣，或短褲加 T 恤，租借 ₩2,000）和火窯汗蒸區（加購）。濟州居民享優惠價。</p>

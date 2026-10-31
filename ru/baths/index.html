@@ -645,7 +645,11 @@
 <header class="g-head"><div class="wrap" style="max-width:1120px"><nav class="crumbs" aria-label="Навигационная цепочка"><a href="../../ru/">HANTANG</a><span>›</span><span>Каталог бань</span></nav><div class="eyebrow">КАТАЛОГ</div><h1>Бани, сауны и чимчильбаны, о которых стоит знать.</h1><p class="lede">Сеул, Пусан и городки с горячими источниками. В каждой карточке — часы работы, цены и правила для гостей с тату в том виде, в каком их публикует сама баня или сайты, продающие её билеты, с датой, когда мы их видели, — и пометка, проверили ли мы это место лично.</p></div></header><section style="padding-top:20px"><div class="wrap" style="padding-bottom:70px"><style>
   .dfil .ctabs{flex-wrap:wrap;margin-top:0}.dfil .ctab{white-space:nowrap;flex:0 0 auto}.dfil{display:grid;gap:10px}
   .dgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
-  .dcard{border:1px solid var(--line);border-radius:16px;padding:20px 22px;background:#fff;scroll-margin-top:84px}
+  .dcard{border:1px solid var(--line);border-radius:16px;padding:0 22px 20px;background:#fff;scroll-margin-top:84px;overflow:hidden}
+  .dimg{margin:0 -22px 16px;aspect-ratio:16/7;max-width:calc(100% + 44px);background:var(--blue-tint);color:var(--blue);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .dimg img{width:100%;height:100%;object-fit:cover;display:block}.dimg svg{width:52px;height:52px;opacity:.85}
+  .dimg.ill{aspect-ratio:16/5}
+  .pcap{position:absolute;right:8px;bottom:8px;font-size:10.5px;background:rgba(255,255,255,.92);border-radius:6px;padding:2px 7px;color:var(--mute)}.pcap a{color:inherit}
   .dcard h3{font-size:19px;font-weight:700;line-height:1.35;margin-top:10px}
   .dcard .nko{font-family:var(--serif);color:var(--blue);font-weight:700;font-size:16px;margin-left:6px}
   .dfeat{font-size:14px;color:var(--mute);margin-top:8px;line-height:1.6}
@@ -658,7 +662,52 @@
   .dnote{margin-top:22px;font-size:14px;color:var(--mute);max-width:760px;line-height:1.7;border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:var(--stone)}
   .dcount{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--mute);margin-top:18px}
   @media (max-width:760px){.dgrid{grid-template-columns:1fr}.dr{grid-template-columns:1fr}}
-</style><div class="dfil" style="margin-top:34px"><div class="ctabs" role="group" aria-label="Фильтр по городу"><button class="ctab on" data-f="all">ВСЕ</button><button class="ctab" data-f="seoul">СЕУЛ</button><button class="ctab" data-f="busan">ПУСАН</button><button class="ctab" data-f="other">ДРУГИЕ РЕГИОНЫ</button></div><div class="ctabs" role="group" aria-label="Фильтр по типу"><button class="ctab on" data-t="all">ВСЕ</button><button class="ctab" data-t="bath">Общественная баня</button><button class="ctab" data-t="sauna24">Круглосуточная сауна</button><button class="ctab" data-t="jjimjil">Чимчильбан</button><button class="ctab" data-t="hanjeungmak">Ханджынмак</button><button class="ctab" data-t="spa">Спа-комплекс</button><button class="ctab" data-t="oncheon">Горячий источник</button><button class="ctab" data-t="seawater">Морская баня</button><button class="ctab" data-t="hotel">Сауна в отеле</button></div></div><div class="dcount" id="dcount"></div><div class="dgrid" id="dgrid"><article class="dcard" data-region="seoul" data-type="sauna24" id="sparex-dongdaemun">
+</style><svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="ty-bath" viewBox="0 0 48 48"><path d="M10 26h28a14 14 0 0 1-28 0z" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><path d="M17 20c-2-3 2-5 0-8M24 20c-2-3 2-5 0-8M31 20c-2-3 2-5 0-8" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/></symbol>
+<symbol id="ty-bathjjim" viewBox="0 0 48 48"><path d="M8 30h22a11 11 0 0 1-22 0z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M28 22l8-7 8 7v14H34" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M14 24c-1.5-2.5 1.5-4 0-6.5M21 24c-1.5-2.5 1.5-4 0-6.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+<symbol id="ty-jjim" viewBox="0 0 48 48"><path d="M8 22L24 9l16 13v17H8z" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><path d="M17 33c-2-3 2-5 0-8M24 33c-2-3 2-5 0-8M31 33c-2-3 2-5 0-8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+<symbol id="ty-kiln" viewBox="0 0 48 48"><path d="M7 38a17 17 0 0 1 34 0z" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><path d="M19 38v-6a5 5 0 0 1 10 0v6" fill="none" stroke="currentColor" stroke-width="3"/><path d="M24 14c-2-3 2-5 0-8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+<symbol id="ty-other" viewBox="0 0 48 48"><rect x="9" y="12" width="30" height="26" rx="5" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M9 21h30M18 12V8h12v4" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="24" cy="30" r="3.2" fill="currentColor"/></symbol>
+</svg><style>
+  .rx-ctl{display:grid;gap:12px;margin-top:30px}
+  .rx-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .rx-row input[type=search],.rx-row select{font:inherit;font-size:15px;padding:11px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);min-width:0}
+  .rx-row input[type=search]{flex:1 1 260px}
+  .rx-row select{flex:0 1 220px}
+  .rx-near{font:inherit;font-size:14px;font-weight:700;color:var(--blue);background:var(--blue-tint);border:0;border-radius:12px;padding:11px 16px;cursor:pointer}
+  .rx-chips{display:flex;gap:8px;flex-wrap:wrap}
+  .rx-chips .ctab{white-space:nowrap;flex:0 0 auto}
+  .rx-stat{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--mute)}
+  .rx-list{margin-top:18px}
+  .rx-d{font-size:19px;font-weight:700;margin:34px 0 4px;padding-top:6px;border-top:1px solid var(--line);display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+  .rx-d small{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--mute);font-weight:500}
+  .rx-ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}
+  .pl{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;padding:16px 0;border-bottom:1px solid var(--line);scroll-margin-top:84px}
+  .pi{width:64px;height:64px;border-radius:12px;background:var(--blue-tint);color:var(--blue);display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .pi svg{width:34px;height:34px}.pi img{width:100%;height:100%;object-fit:cover;display:block}
+  .pn{font-size:16.5px;font-weight:700;line-height:1.35;word-break:keep-all}
+  .pm{font-size:13px;color:var(--mute);margin-top:2px}
+  .pt{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}.pt span{font-size:11.5px;font-weight:700;background:var(--stone);border-radius:99px;padding:3px 9px;color:var(--ink)}
+  .pa{font-size:13.5px;margin-top:6px;color:var(--ink);word-break:keep-all}
+  .pk{display:flex;gap:14px;flex-wrap:wrap;margin-top:7px;font-size:13px;font-weight:700}.pk a{color:var(--blue)}
+  .pdist{font-family:var(--mono);font-size:11px;color:var(--blue);margin-left:6px}
+  .rx-none{padding:30px 0;color:var(--mute)}
+  .rx-note{margin-top:30px;font-size:14px;color:var(--mute);max-width:820px;line-height:1.7;border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:var(--stone)}
+  .rx-regions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:14px}
+  .rx-regions a{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fff;display:flex;justify-content:space-between;gap:8px;font-weight:700;font-size:14.5px}
+  .rx-regions a span{font-family:var(--mono);font-size:11px;color:var(--mute);font-weight:500;align-self:center}
+  .rx-regions a.on{border-color:var(--blue);color:var(--blue)}
+  .rx-credits{margin-top:24px;font-size:12.5px;color:var(--mute);line-height:1.7}
+  .pc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
+  .pcard{border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden;scroll-margin-top:84px}
+  .pcard .pimg{aspect-ratio:16/9;max-width:100%;background:var(--blue-tint);color:var(--blue);display:flex;align-items:center;justify-content:center;position:relative}
+  .pcard .pimg svg{width:56px;height:56px}.pcard .pimg img{width:100%;height:100%;object-fit:cover}
+  .pcard .pimg.nop{aspect-ratio:auto;height:56px;justify-content:flex-start;padding:0 20px}.pcard .pimg.nop svg{width:28px;height:28px}
+  .pcap{position:absolute;right:8px;bottom:8px;font-size:10.5px;background:rgba(255,255,255,.9);border-radius:6px;padding:2px 7px;color:var(--mute)}
+  .pcard .pbody{padding:16px 20px 18px}
+  @media (max-width:860px){.rx-ul{grid-template-columns:1fr}.rx-regions{grid-template-columns:repeat(2,minmax(0,1fr))}.pc-grid{grid-template-columns:1fr}}
+</style><div style="margin-top:56px"><div class="sec-eyebrow">ВСЯ КОРЕЯ</div><h2 style="font-size:26px;margin-top:6px">Все лицензированные бани — регион за регионом</h2><p style="color:var(--mute);margin-top:8px;max-width:760px">По государственным данным о лицензиях, в 16 регионах действующими числятся бани, сауны и чимчильбаны — всего 5 634. У каждого места есть ссылка на Naver Map, где можно посмотреть фотографии.</p><div class="rx-regions"><a href="../../ru/baths/seoul/">Сеул<span>622</span></a><a href="../../ru/baths/busan/">Пусан<span>636</span></a><a href="../../ru/baths/incheon/">Инчхон<span>208</span></a><a href="../../ru/baths/daegu/">Тэгу<span>223</span></a><a href="../../ru/baths/daejeon/">Тэджон<span>86</span></a><a href="../../ru/baths/ulsan/">Ульсан<span>160</span></a><a href="../../ru/baths/sejong/">Седжон<span>18</span></a><a href="../../ru/baths/gyeonggi/">Кёнгидо<span>775</span></a><a href="../../ru/baths/gangwon/">Канвон<span>289</span></a><a href="../../ru/baths/chungbuk/">Чхунчхон-Пукто<span>161</span></a><a href="../../ru/baths/chungnam/">Чхунчхон-Намдо<span>252</span></a><a href="../../ru/baths/jeonbuk/">Чолла-Пукто<span>290</span></a><a href="../../ru/baths/jeonnam-gwangju/">Чолла-Намдо — Кванджу<span>558</span></a><a href="../../ru/baths/gyeongbuk/">Кёнсан-Пукто<span>450</span></a><a href="../../ru/baths/gyeongnam/">Кёнсан-Намдо<span>759</span></a><a href="../../ru/baths/jeju/">Чеджу<span>147</span></a><a href="../../ru/baths/private/">Приватные / на 1 чел.<span>80</span></a></div></div><h2 style="font-size:26px;margin-top:64px">Места, о которых мы написали подробно</h2><div class="dfil" style="margin-top:22px"><div class="ctabs" role="group" aria-label="Фильтр по городу"><button class="ctab on" data-f="all">ВСЕ</button><button class="ctab" data-f="seoul">СЕУЛ</button><button class="ctab" data-f="busan">ПУСАН</button><button class="ctab" data-f="other">ДРУГИЕ РЕГИОНЫ</button></div><div class="ctabs" role="group" aria-label="Фильтр по типу"><button class="ctab on" data-t="all">ВСЕ</button><button class="ctab" data-t="bath">Общественная баня</button><button class="ctab" data-t="sauna24">Круглосуточная сауна</button><button class="ctab" data-t="jjimjil">Чимчильбан</button><button class="ctab" data-t="hanjeungmak">Ханджынмак</button><button class="ctab" data-t="spa">Спа-комплекс</button><button class="ctab" data-t="oncheon">Горячий источник</button><button class="ctab" data-t="seawater">Морская баня</button><button class="ctab" data-t="hotel">Сауна в отеле</button></div></div><div class="dcount" id="dcount"></div><div class="dgrid" id="dgrid"><article class="dcard" data-region="seoul" data-type="sauna24" id="sparex-dongdaemun">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">СЕУЛ · Тондэмун · Круглосуточная сауна</span></div>
   <h3>Sparex Dongdaemun <span class="nko" lang="ko">스파렉스 동대문 굿모닝시티</span></h3>
   <p class="dfeat">Самый известный в Сеуле чимчильбан, открытый 24 часа в сутки, — на этаже B3 торгового центра Goodmorning City напротив DDP. Центральный зал в стиле ханок, сухие и паровые сауны, зона для сна, тренажёрный зал и фуд-корт, тоже работающий 24 часа. Дневной билет сменяется ночным в 20:00; повторный вход — только с опцией хранения багажа; ночью каждое отделение примерно на час закрывается на уборку.</p>
@@ -667,6 +716,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-10</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="sparex-dongmyo">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">СЕУЛ · Тонмё / Чхансин-дон · Круглосуточная сауна</span></div>
   <h3>Sparex Dongmyo <span class="nko" lang="ko">스파렉스 동묘</span></h3>
   <p class="dfeat">Новый филиал Sparex (открыт в июле 2024 года) на двух верхних этажах здания CIZN: комнаты с жёлтой глиной и гималайской солью, ледяная комната, «лесная» купель из японского кипариса хиноки, сауна на дровах, фуд-корт и лаунж с видом на башню Намсан. Возьмите с собой удостоверение личности — именно документ, а не его версию в телефоне; с хранением багажа — один повторный вход в течение 24 часов; в понедельник ночью мужчинам скраб не делают.</p>
@@ -675,6 +725,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-09</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="hongdae-bulgama">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">СЕУЛ · Хондэ / Синчхон · Круглосуточная сауна</span></div>
   <h3>Hongdae 24-hour Bulgama Sauna <span class="nko" lang="ko">홍대 24시 불가마 사우나</span></h3>
   <p class="dfeat">Круглосуточная подвальная сауна на границе Хондэ и Синчхона: традиционная печь пулькама, комнаты с жёлтой глиной, финская сауна и ледяная комната, лаунжи с телевизорами, женская зона для сна и одноместные комнаты в аренду (за доплату, на ограниченное время). Повторного входа нет; ночной тариф не подтверждён (в старом объявлении было ₩16 000 после 21:00).</p>
@@ -683,6 +734,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-09</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="golden-sauna-myeongdong">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">СЕУЛ · Мёндон · Круглосуточная сауна</span></div>
   <h3>Golden Sauna Myeongdong (women only) <span class="nko" lang="ko">황금사우나 명동</span></h3>
   <p class="dfeat">Круглосуточная женская сауна с печью на этаже B2 в Мёндоне: пулькама, которой около 30 лет, паровая комната с полынью, влажная и сухая сауны, три бассейна, холодная купель, отдельные кабинки для скраба и две комнаты для сна (светлая и тёмная). Пакет «вход + скраб» — ₩80 000; есть фены, расчёски и базовая косметика для ухода; гостей в нетрезвом виде не пускают.</p>
@@ -691,6 +743,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="spa-lei">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">СЕУЛ · Синса / Чамвон · Круглосуточная сауна</span></div>
   <h3>Spa Lei (women only) <span class="nko" lang="ko">스파레이</span></h3>
   <p class="dfeat">Круглосуточная женская сауна в районе Синса/Чамвон, работающая на одном месте около 20 лет: купель под открытым небом, бассейн с морской водой, ханджынмак на сосновых дровах, комнаты с красной глиной, древесным углём и солью, маникюрный салон. Цены в интернете не опубликованы; путеводители 2025–2026 годов называют примерно ₩15 000–20 000 за 12 часов плюс небольшую доплату за спальное место.</p>
@@ -699,6 +752,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2025-12</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="club-k-seolleung">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">СЕУЛ · Соллын (Каннам) · Круглосуточная сауна</span></div>
   <h3>Club K Seoul <span class="nko" lang="ko">클럽케이서울 선릉찜질방</span></h3>
   <p class="dfeat">Круглосуточный чимчильбан в Соллыне: «клубная зона» (ханджынмак, комнаты с тёплым полом ондоль, книжное кафе, отдельные комнаты для сна), банная зона с сауной, фитнес-клуб, джаз-лаунж и интерьер в духе современного искусства.</p>
@@ -707,6 +761,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2025-02</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="hwanghak-golden-spa">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">СЕУЛ · Хванхак-дон (Синдан / Тонмё) · Круглосуточная сауна</span></div>
   <h3>Hwanghak-dong Golden Spa Jjimjilbang <span class="nko" lang="ko">황학동 황금스파찜질방</span></h3>
   <p class="dfeat">Круглосуточный местный чимчильбан в подвале жилого комплекса рядом с Синданом: большой аквариум, бассейн с рыбками-докторами (₩5000 за 30 мин), ресторан, магазин и четыре часа бесплатной парковки. Только без предварительной записи; дневной билет сменяется ночным в 20:00; банная форма — за доплату ₩1000.</p>
@@ -715,6 +770,7 @@
   <div class="dlinks"><a href="http://goldspa11.com/" target="_blank" rel="noopener">Официальный сайт ↗</a></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2025-04</div>
 </article><article class="dcard" data-region="seoul" data-type="hanjeungmak" id="supsok-hanbang-land">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-kiln"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">СЕУЛ · Синчхон / Ансан (Содэмун) · Ханджынмак</span></div>
   <h3>Supsok Hanbang Land <span class="nko" lang="ko">숲속한방랜드</span></h3>
   <p class="dfeat">Дневная сауна с печами на лесистых склонах горы Ансан за Синчхоном: печи на дубовом угле под открытым небом, ханджынмак на сосновых дровах, комнаты слабого, среднего и сильного жара, ледяная комната, соляная комната для женщин, раздельные комнаты для сна и жаровня, где можно поджарить купленные здесь же рисовый тток и батат. Ночёвки нет; здесь снимали дорамы.</p>
@@ -723,6 +779,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-04</div>
 </article><article class="dcard" data-region="seoul" data-type="hanjeungmak" id="hana-mud">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-kiln"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">СЕУЛ · Ыльчиро / Мёндон · Ханджынмак</span></div>
   <h3>Hana Mud Hanjeungmak (women only) <span class="nko" lang="ko">하나머드 한증막</span></h3>
   <p class="dfeat">Женский ханджынмак и спа со скрабом, работает с 2015 года — по программам от 90 до 220 минут: печь-сауна, аметистовая сауна, ванны с женьшенем и германием, скраб тела, огуречная или водорослевая маска и маска из грязи Порёна. Меню на английском и китайском, персонал говорит по-японски; в Соллаль и Чхусок открывается позже (14:00–15:00).</p>
@@ -731,6 +788,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-10</div>
 </article><article class="dcard" data-region="seoul" data-type="hanjeungmak" id="miso-sauna">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-kiln"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">СЕУЛ · Чхунджонно · Ханджынмак</span></div>
   <h3>Miso Sauna <span class="nko" lang="ko">미소사우나</span></h3>
   <p class="dfeat">Дневная паровая сауна с полынью у станции Чхунджонно — спокойнее больших чимчильбанов. Подтверждённой цены входа нет: единственный источник за 2026 год указывает ₩70 000 и сам оговаривается, что это, скорее всего, цена пакета.</p>
@@ -739,6 +797,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="jjimjil" id="park-habio">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">СЕУЛ · Мунджон (Сонпха) · Чимчильбан</span></div>
   <h3>Park Habio Water Kingdom &amp; Jjimjil Spa <span class="nko" lang="ko">파크하비오 워터킹덤 &amp; 찜질스파</span></h3>
   <p class="dfeat">Крытый аквапарк в стиле Санторини в Мунджоне, при нём — чимчильбан и сауна; в аквапарке (₩65 000 в будни) есть волны, бурная река и горки.</p>
@@ -747,6 +806,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2025-02</div>
 </article><article class="dcard" data-region="seoul" data-type="jjimjil" id="sealala">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">СЕУЛ · Муллэ (Ёндынпхо) · Чимчильбан</span></div>
   <h3>Sealala <span class="nko" lang="ko">씨랄라</span></h3>
   <p class="dfeat">Подземный аквапарк, сауна и чимчильбан в Муллэ, на западе Сеула. Путеводители 2026 года расходятся в днях работы: в одном указаны ежедневные часы, в другом — только выходные и праздники.</p>
@@ -755,6 +815,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="bath" id="siloam-junggok">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">СЕУЛ · Чунгок-дон (Кванджин) · Общественная баня</span></div>
   <h3>Junggok-dong Siloam Sauna <span class="nko" lang="ko">중곡동 실로암사우나</span></h3>
   <p class="dfeat">Общественная баня в районе Кванджин-гу. Название у неё то же, что у закрывшейся Siloam у Сеульского вокзала, но это отдельное и гораздо более скромное заведение. Банная зона работает; по отзывам, этаж чимчильбана закрыт с пандемии; цены в интернете не опубликованы, вывесок на английском мало.</p>
@@ -763,6 +824,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="spa" id="spaland-centum">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">ПУСАН · Сентум-Сити (Хэундэ-гу) · Спа-комплекс</span></div>
   <h3>Spa Land Centum City <span class="nko" lang="ko">스파랜드 센텀시티</span></h3>
   <p class="dfeat">Спа на горячих источниках в универмаге Shinsegae Centum City: 18 бассейнов с водой из двух природных источников, 13 тематических комнат для прогрева, ванночки для ног под открытым небом и кафе с рамёном; почти половина гостей — иностранцы. Детей младше 7 лет не пускают; время сверх первых 4 часов оплачивается отдельно; браслет работает как электронный кошелёк, а расплачиваются на выходе.</p>
@@ -771,6 +833,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="hurshimchung">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">ПУСАН · Тоннэ-Ончхон · Горячий источник</span></div>
   <h3>Hurshimchung <span class="nko" lang="ko">허심청</span></h3>
   <p class="dfeat">Знаменитая баня на горячих источниках в Тоннэ, открытая в 1991 году рядом с отелем Hotel Nongshim: больше 40 бассейнов, в том числе пещерные, под открытым небом и сезонные травяные, тематическая зона чимчильбана на 3-м этаже (за доплату) и немецкая пивная. Гостям отеля обычно скидка 50%; парковка бесплатна 3–4 часа.</p>
@@ -779,6 +842,7 @@
   <div class="dlinks"><a href="https://hotelnongshim.com" target="_blank" rel="noopener">Официальный сайт ↗</a></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="haeundae-oncheon-center">
+  <div class="dimg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Haeundae_Spa_Center.JPG/800px-Haeundae_Spa_Center.JPG" alt="해운대 온천센터" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://commons.wikimedia.org/wiki/File:Haeundae_Spa_Center.JPG" target="_blank" rel="noopener">Фото: Abasaa, Wikimedia Commons (Public domain)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">ПУСАН · Хэундэ · Горячий источник</span></div>
   <h3>Haeundae Oncheon Center <span class="nko" lang="ko">해운대온천센터</span></h3>
   <p class="dfeat">Семиэтажная баня на горячем источнике между станцией Хэундэ и пляжем. Её история восходит к Halmae-tang 1935 года, а здесь её заново отстроили в 2006 году. Воспринимайте её скорее как баню на горячем источнике, чем как чимчильбан: по данным путеводителя 2026 года, зону чимчильбана в основном переоборудовали; кроме того, баня иногда закрывается на технические дни.</p>
@@ -787,6 +851,7 @@
   <div class="dlinks"><a href="https://haeundaespa.com" target="_blank" rel="noopener">Официальный сайт ↗</a></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="sauna24" id="hill-spa-dalmaji">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">ПУСАН · Холм Дальмаджи (Хэундэ) · Круглосуточная сауна</span></div>
   <h3>Dalmaji Hill Spa <span class="nko" lang="ko">달맞이 힐스파</span></h3>
   <p class="dfeat">Круглосуточные сауна и чимчильбан с видом на море на холме Дальмаджи (бывшая Vesta): около 1600 пхёнов, открытая ванночка для ног на 5-м этаже и комнаты для сна. Популярны у пар и у гостей из Японии, Тайваня и Китая. Продолжительность билета в путеводителях 2026 года разная: в одном — 10 часов, в другом — 12.</p>
@@ -795,6 +860,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="spa" id="club-d-oasis">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">ПУСАН · Хэундэ (LCT) · Спа-комплекс</span></div>
   <h3>Club D Oasis <span class="nko" lang="ko">클럽디 오아시스</span></h3>
   <p class="dfeat">Спа на морском горячем источнике в башне LCT в Хэундэ, открытое в 2023 году: крытый аквапарк, горячая купель под открытым небом с видом на море (ванночка для ног — в банной форме, погружение по пояс — в купальнике), шесть тематических комнат для прогрева и финская сауна на улице. Spa Pass включает спа и чимчильбан, но не аквапарк (Waterpark Pass — ₩69 000, Combo — ₩79 000).</p>
@@ -803,6 +869,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="seawater" id="aqua-palace">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">ПУСАН · Кваналли · Морская баня</span></div>
   <h3>Hotel Aqua Palace Spa &amp; Sauna <span class="nko" lang="ko">호텔 아쿠아펠리스 스파&amp;사우나</span></h3>
   <p class="dfeat">Круглосуточные спа и сауна при отеле на пляже Кваналли — с природной морской водой, которую качают с глубины 816 м. Панорамные окна от пола до потолка с видом на залив и крытый аквапарк на 7-м этаже. Visit Busan Pass покрывает сауну и чимчильбан, но не аквапарк.</p>
@@ -811,6 +878,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="seawater" id="spa-haesurang">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">ПУСАН · Сондо (Со-гу) · Морская баня</span></div>
   <h3>Spa Haesurang <span class="nko" lang="ko">스파해수랑</span></h3>
   <p class="dfeat">Сауна на морской воде в Сондо, рядом с пляжем и канатной дорогой: паровые комнаты и купель под открытым небом на крыше с видом на мост Намхан. Купель на крыше общая для мужчин и женщин, вход только в купальнике.</p>
@@ -819,6 +887,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="taejongdae-oncheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">ПУСАН · Ёндо (Тхэджондэ) · Горячий источник</span></div>
   <h3>Taejongdae Oncheon Jjimjilbang <span class="nko" lang="ko">태종대온천찜질방</span></h3>
   <p class="dfeat">Муниципальный (Busan Facilities Corporation) круглосуточный чимчильбан на горячем источнике на острове Ёндо: бассейн-«пирамида», бассейны под открытым небом и оздоровительные, шесть комнат для прогрева и тренажёрный зал.</p>
@@ -827,6 +896,7 @@
   <div class="dlinks"><a href="https://tjdspa.co.kr" target="_blank" rel="noopener">Официальный сайт ↗</a></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="seawater" id="gwangan-haesu-world">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">ПУСАН · Кваналли · Морская баня</span></div>
   <h3>Gwangan Haesu World <span class="nko" lang="ko">광안해수월드</span></h3>
   <p class="dfeat">Сауна на морской воде напротив пляжа Кваналли: открылась в 1994 году, а в 2020-м открылась заново — уже как спа-фитнес-комплекс. Не все зоны (сауна, бассейн, тренажёрный зал) работают каждый день, так что уточните на месте, что открыто.</p>
@@ -835,6 +905,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="water-house-ananti">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">ПУСАН · Киджан (Ananti Cove) · Горячий источник</span></div>
   <h3>Water House <span class="nko" lang="ko">워터하우스 (아난티 코브)</span></h3>
   <p class="dfeat">Премиальный горячий источник в Ananti Cove в Киджане, где купаются в купальниках: около 2000 пхёнов, источник с глубины 600 м, бассейн-инфинити или купель под открытым небом — в зависимости от сезона. Билет — на 4 часа, часы работы меняются по сезонам. Дорого по меркам корейских бань.</p>
@@ -843,6 +914,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="bath" id="halmae-tang">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">ПУСАН · Хэундэ · Общественная баня</span></div>
   <h3>Halmae-tang <span class="nko" lang="ko">할매탕</span></h3>
   <p class="dfeat">Четырёхэтажная общественная баня на горячем источнике в Хэундэ с собственной скважиной глубиной 900 м. В 2003 году получила название Halmae-tang, в октябре 2023 года вновь открылась после ремонта. Женское отделение — на 3-м этаже, мужское — на 4-м, семейная баня на 2-м этаже — по брони (₩80 000). Цены указаны на момент открытия в 2023 году, а соседние бани в 2026 году подняли тарифы.</p>
@@ -851,6 +923,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-07</div>
 </article><article class="dcard" data-region="busan" data-type="bath" id="world-spa-choryang">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">ПУСАН · Чхорян (район вокзала Пусан) · Общественная баня</span></div>
   <h3>World Spa <span class="nko" lang="ko">월드스파</span></h3>
   <p class="dfeat">Большая общественная баня (около 1000 пхёнов) в Чхоряне — ближайшая к вокзалу Пусан баня в этом списке, удобно для тех, кто приезжает на KTX.</p>
@@ -859,6 +932,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="hotel" id="cimer-busan">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-other"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">ПУСАН · Пляж Хэундэ · Сауна в отеле</span></div>
   <h3>Paradise Hotel Busan Cimer <span class="nko" lang="ko">파라다이스호텔 부산 씨메르</span></h3>
   <p class="dfeat">Открытое спа на морском горячем источнике отеля Paradise Hotel Busan с видом на пляж Хэундэ: купаются в купальниках, четыре сеанса в день, зона общая с открытым океанским бассейном. О том, что пускают и гостей не из отеля, сообщает отзыв 2026 года, но на официальной странице этого нет; шкафчики — только для членов клуба.</p>
@@ -867,6 +941,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="spa" id="aquafield-hanam">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Ханам (Кёнгидо) · Starfield Hanam (Миса) · Спа-комплекс</span></div>
   <h3>Aquafield Hanam <span class="nko" lang="ko">아쿠아필드 하남</span></h3>
   <p class="dfeat">Спа в торговом центре Starfield: бассейн-инфинити на крыше, восемь тематических комнат для прогрева, крытый и открытый аквапарки (доплата ₩48 000–68 000), фуд-корт и детская зона. Билеты продают автоматы без кассира, а шкафчиком для обуви нужно воспользоваться в течение 20 минут. С 12 октября 2026 года открытый аквапарк работает в сокращённом режиме.</p>
@@ -875,6 +950,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="spa" id="aquafield-goyang">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Коян (Кёнгидо) · Starfield Goyang (Тогян-гу) · Спа-комплекс</span></div>
   <h3>Aquafield Goyang <span class="nko" lang="ko">아쿠아필드 고양</span></h3>
   <p class="dfeat">Филиал Aquafield в Starfield Goyang, на 4-м этаже торгового центра: тематические комнаты для прогрева, крытый аквапарк (₩48 000–58 000; мультипасс — ₩58 000–68 000) и фуд-корт. Открытый аквапарк окончательно закрылся 12 октября 2026 года; спа продолжает работать.</p>
@@ -883,6 +959,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="termeden">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Ичхон (Кёнгидо) · Мога-мён · Горячий источник</span></div>
   <h3>Termeden <span class="nko" lang="ko">테르메덴</span></h3>
   <p class="dfeat">Курорт в Ичхоне, который называет себя единственным в Корее термальным курортом в немецком стиле: «ленивая река», купель под открытым небом, крытый бассейн и чимчильбан с одеждой напрокат; парковка бесплатная. Купальник и шапочка для плавания обязательны и в помещении, и на улице; указаны цены сезона Gold.</p>
@@ -891,6 +968,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="jjimjil" id="skyland-bucheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Пучхон (Кёнгидо) · Сан-дон · Чимчильбан</span></div>
   <h3>Skyland Sauna <span class="nko" lang="ko">스카이랜드 사우나</span></h3>
   <p class="dfeat">Сауна и чимчильбан на 7-м этаже здания Megaplus в Сан-доне (Пучхон); крытый бассейн входит в стоимость билета. Часы работы не опубликованы.</p>
@@ -899,6 +977,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-07</div>
 </article><article class="dcard" data-region="other" data-type="spa" id="cimer-paradise-city">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Инчхон · Остров Ёнджондо (Paradise City) · Спа-комплекс</span></div>
   <h3>Paradise City Cimer <span class="nko" lang="ko">파라다이스시티 씨메르</span></h3>
   <p class="dfeat">Четырёхэтажное аква-спа: бассейн-инфинити на крыше, пещерное спа и спа с медиаартом, горки, а на 2–3-м этажах — спа-чимчильбан с кипарисовой и аметистовой комнатами, влажной и сухой саунами. Аква-спа вместе с чимчильбаном — не дольше 6 часов (сверх — +₩10 000); детей младше 7 лет не пускают; двое гостей отеля проходят бесплатно, а остальные экономят 30% при бронировании заранее.</p>
@@ -907,6 +986,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="cheoksan-oncheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Сокчхо (Канвондо) · Чхоксан · Горячий источник</span></div>
   <h3>Cheoksan Oncheon Resort <span class="nko" lang="ko">척산온천휴양촌</span></h3>
   <p class="dfeat">Первый горячий источник провинции Канвондо (открыт в 1973 году) — курортная баня в Сокчхо: купель под открытым небом, сауна, летний открытый бассейн (10:00–18:00) и семейные номера с горячим источником с почасовой оплатой (3 часа: ₩50 000 на двоих, ₩70 000 на четверых). Рядом — бесплатный парк ванночек для ног Чхоксан (март — ноябрь).</p>
@@ -915,6 +995,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="deokgu-oncheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Ульчин (Кёнсан-Пукто) · Пук-мён (гора Ынбонсан) · Горячий источник</span></div>
   <h3>Deokgu Oncheon Resort <span class="nko" lang="ko">덕구온천 리조트</span></h3>
   <p class="dfeat">Удалённый курорт в провинции Кёнсан-Пукто. Его горячий источник называют единственным в Корее самоизливающимся: вода идёт по трубам 4 км с горы Ынбонсан без насосов и подогрева. Здесь большой банный зал (без ограничения по времени), купели под открытым небом и семейные бани, а также Spa World, где купаются в купальниках (гидромассажные ванны, детский бассейн). Высокий сезон: с середины декабря до начала марта, с середины июля по август и Чхусок.</p>
@@ -923,6 +1004,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-09</div>
 </article><article class="dcard" data-region="other" data-type="seawater" id="yangnam-haesu-oncheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Кёнджу (Кёнсан-Пукто) · Яннам-мён (восточное побережье) · Морская баня</span></div>
   <h3>Yangnam Haesu Oncheon Land 24 <span class="nko" lang="ko">양남해수온천랜드24</span></h3>
   <p class="dfeat">Круглосуточный чимчильбан на морском горячем источнике на восточном побережье Кёнджу: бассейны с видом на море, углекислый бассейн, соляная комната и комната с самоцветами, комната для сна и тренажёрный зал.</p>
@@ -931,6 +1013,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="spa-valley-daegu">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Тэгу · Качхан-мён (Тальсон-гун) · Горячий источник</span></div>
   <h3>Spa Valley <span class="nko" lang="ko">스파밸리</span></h3>
   <p class="dfeat">Аквапарк на горячем источнике в Качхане, к югу от Тэгу: крытая и открытая зоны, зоопарк Nature Park и отель на территории; купальник и шапочка для плавания обязательны. Парковка в будни бесплатная, с пятницы по воскресенье — ₩3000.</p>
@@ -939,6 +1022,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="sanbangsan-oncheon">
+  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
   <div class="dtop"><span class="b-city" style="position:static">Согвипхо (Чеджу) · Андок-мён (Санбансан) · Горячий источник</span></div>
   <h3>Sanbangsan Carbonate Hot Spring <span class="nko" lang="ko">산방산탄산온천</span></h3>
   <p class="dfeat">Первый общественный горячий источник Чеджу: природный углекислый источник (по заявлению владельцев, углекислого газа в нём в пять раз больше, чем в обычных корейских источниках), крытые бассейны, бассейн под открытым небом (за доплату; в купальнике или в шортах и футболке, прокат — ₩2000) и зона чимчильбана с печью (за доплату). Жители Чеджу платят меньше.</p>
