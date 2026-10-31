@@ -52,6 +52,7 @@ dl{display:grid;grid-template-columns:120px 1fr;gap:6px 12px;margin:0;font-size:
 <main class="wrap">
   <h1 style="font-family:var(--serif);font-size:30px">업주 등록 신청</h1>
   <p class="note">이 화면과 /api/admin 은 Cloudflare Zero Trust Access 로 잠가 둔 관리자만 열 수 있습니다. 승인하면 해당 지역 페이지의 ‘Information from the owners’ 칸에 바로 올라갑니다. 담당자 연락처는 공개되지 않습니다.</p>
+  <div class="lock" style="background:var(--stone);border-color:var(--line);margin:14px 0"><b>검색엔진에 새 페이지 알리기</b><p class="note" style="margin:6px 0 10px">사이트를 크게 고친 뒤 한 번 누르면 Bing·Naver·Yandex 등 IndexNow 참여 검색엔진에 사이트맵의 모든 주소를 알립니다(구글은 Search Console 사이트맵 제출로).</p><button class="btn" id="inBtn" style="min-height:42px;font-size:14px">IndexNow 보내기</button> <span class="note" id="inMsg"></span></div>
   <div class="bar" id="bar"><button data-s="pending" class="on">검토 대기</button><button data-s="hold">보류</button><button data-s="approved">게시 중</button><button data-s="rejected">반려</button><button data-s="all">전체</button><span class="note" id="who"></span></div>
   <div id="list"><p class="note">불러오는 중…</p></div>
 </main>
@@ -95,6 +96,8 @@ dl{display:grid;grid-template-columns:120px 1fr;gap:6px 12px;margin:0;font-size:
     b.disabled=true;
     fetch('../api/admin/decide',{method:'POST',credentials:'same-origin',headers:{'content-type':'application/json'},body:JSON.stringify(body)}).then(function(r){return r.json()}).then(function(j){ b.disabled=false; if(!j.ok){alert('처리하지 못했습니다: '+(j.error||''));return;} load(); });
   });
+  document.getElementById('inBtn').addEventListener('click',function(){ var b=this, m=document.getElementById('inMsg'); b.disabled=true; m.textContent='보내는 중…';
+    fetch('../api/admin/indexnow',{method:'POST',credentials:'same-origin'}).then(function(r){return r.json()}).then(function(j){ b.disabled=false; m.textContent=j.ok?('완료: '+j.sent+'개 주소 전달 (응답 '+j.status+')'):('실패: '+(j.error||j.status)); }).catch(function(){b.disabled=false; m.textContent='연결 실패';}); });
   fetch('../api/admin/whoami',{credentials:'same-origin'}).then(function(r){return r.json()}).then(function(j){ if(j.email) document.getElementById('who').textContent='로그인: '+j.email; }).catch(function(){});
   load();
 })();

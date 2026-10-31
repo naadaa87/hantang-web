@@ -1,0 +1,30 @@
+{
+ "name": "HANTANG 한탕 — Korea Bath Guide",
+ "short_name": "HANTANG",
+ "description": "Mọi nhà tắm Hàn Quốc, rõ từng chi tiết. Nhiệt độ, quy định hình xăm, giá vé và phép lịch sự — bằng tiếng Việt.",
+ "lang": "vi",
+ "id": "/vi/",
+ "start_url": "/vi/",
+ "scope": "/",
+ "display": "standalone",
+ "background_color": "#FFFFFF",
+ "theme_color": "#1E6E9C",
+ "icons": [
+  {
+   "src": "/icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "/icons/maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "name": "HANTANG 한탕 — Korea Bath Guide",
+ "short_name": "HANTANG",
+ "description": "韓國澡堂、汗蒸幕，一次看懂。溫度、刺青規定、價格與禮儀，全部用中文寫給你看。",
+ "lang": "zh-Hant",
+ "id": "/zh-hant/",
+ "start_url": "/zh-hant/",
+ "scope": "/",
+ "display": "standalone",
+ "background_color": "#FFFFFF",
+ "theme_color": "#1E6E9C",
+ "icons": [
+  {
+   "src": "/icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "/icons/maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+# Cloudflare Pages 응답 헤더 (언어 폴더별 Content-Language — Bing 은 hreflang 보다 이 값을 더 본다)
+/
+  Content-Language: en
+/guide/*
+  Content-Language: en
+/baths/*
+  Content-Language: en
+/ja/*
+  Content-Language: ja
+/zh-hant/*
+  Content-Language: zh-Hant
+/zh-hans/*
+  Content-Language: zh-Hans
+/vi/*
+  Content-Language: vi
+/th/*
+  Content-Language: th
+/ru/*
+  Content-Language: ru
+/partner/*
+  Content-Language: ko
+/sw.js
+  Cache-Control: no-cache
+/manifest.webmanifest
+  Cache-Control: no-cache
+/*/manifest.webmanifest
+  Cache-Control: no-cache
+/og/*
+  Cache-Control: public, max-age=604800
+/icons/*
+  Cache-Control: public, max-age=2592000
+/admin/*
+  X-Robots-Tag: noindex, nofollow
+/offline/*
+  X-Robots-Tag: noindex

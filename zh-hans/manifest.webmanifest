@@ -1,0 +1,30 @@
+{
+ "name": "HANTANG 한탕 — Korea Bath Guide",
+ "short_name": "HANTANG",
+ "description": "韩国澡堂，一次讲透：温度、纹身规定、价格和礼仪，全部用中文写清楚。",
+ "lang": "zh-Hans",
+ "id": "/zh-hans/",
+ "start_url": "/zh-hans/",
+ "scope": "/",
+ "display": "standalone",
+ "background_color": "#FFFFFF",
+ "theme_color": "#1E6E9C",
+ "icons": [
+  {
+   "src": "/icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "/icons/maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}

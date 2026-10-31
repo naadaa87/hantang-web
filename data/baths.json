@@ -20,7 +20,8 @@
    "english": true,
    "open24": true,
    "verified": false,
-   "asof": "2026-10"
+   "asof": "2026-10",
+   "top": false
   },
   {
    "id": "sparex-dongmyo",
@@ -37,7 +38,8 @@
    "english": false,
    "open24": true,
    "verified": false,
-   "asof": "2026-02"
+   "asof": "2026-02",
+   "top": false
   },
   {
    "id": "hongdae-bulgama",
@@ -54,7 +56,8 @@
    "english": false,
    "open24": true,
    "verified": false,
-   "asof": "2026-02"
+   "asof": "2026-02",
+   "top": false
   },
   {
    "id": "golden-sauna-myeongdong",
@@ -71,7 +74,8 @@
    "english": false,
    "open24": true,
    "verified": false,
-   "asof": "2026-02"
+   "asof": "2026-02",
+   "top": false
   },
   {
    "id": "club-k-seolleung",
@@ -88,7 +92,8 @@
    "english": false,
    "open24": true,
    "verified": false,
-   "asof": "2025-02"
+   "asof": "2025-02",
+   "top": false
   },
   {
    "id": "supsok-hanbang-land",
@@ -105,7 +110,8 @@
    "english": false,
    "open24": false,
    "verified": false,
-   "asof": "2025-02"
+   "asof": "2025-02",
+   "top": false
   },
   {
    "id": "spaland-centum",
@@ -122,7 +128,8 @@
    "english": false,
    "open24": false,
    "verified": false,
-   "asof": "2026-09"
+   "asof": "2026-09",
+   "top": true
   },
   {
    "id": "hurshimchung",
@@ -139,7 +146,8 @@
    "english": false,
    "open24": false,
    "verified": false,
-   "asof": "2026-09"
+   "asof": "2026-09",
+   "top": true
   },
   {
    "id": "haeundae-oncheon-center",
@@ -156,7 +164,8 @@
    "english": false,
    "open24": false,
    "verified": false,
-   "asof": "2026-09"
+   "asof": "2026-09",
+   "top": true
   },
   {
    "id": "hill-spa-dalmaji",
@@ -173,7 +182,8 @@
    "english": false,
    "open24": true,
    "verified": false,
-   "asof": "2026-10"
+   "asof": "2026-10",
+   "top": false
   },
   {
    "id": "club-d-oasis",
@@ -190,7 +200,8 @@
    "english": false,
    "open24": false,
    "verified": false,
-   "asof": "2026-09"
+   "asof": "2026-09",
+   "top": true
   },
   {
    "id": "aqua-palace",
@@ -207,7 +218,8 @@
    "english": false,
    "open24": true,
    "verified": false,
-   "asof": "2026-09"
+   "asof": "2026-09",
+   "top": false
   }
  ]
 }

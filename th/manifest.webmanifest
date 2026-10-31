@@ -1,0 +1,30 @@
+{
+ "name": "HANTANG 한탕 — Korea Bath Guide",
+ "short_name": "HANTANG",
+ "description": "ซาวน่า จิมจิลบัง และโรงอาบน้ำทั่วเกาหลี อธิบายครบทุกเรื่อง ทั้งอุณหภูมิ กฎเรื่องรอยสัก ราคา และมารยาท เป็นภาษาไทย",
+ "lang": "th",
+ "id": "/th/",
+ "start_url": "/th/",
+ "scope": "/",
+ "display": "standalone",
+ "background_color": "#FFFFFF",
+ "theme_color": "#1E6E9C",
+ "icons": [
+  {
+   "src": "/icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "/icons/maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}

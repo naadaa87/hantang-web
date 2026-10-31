@@ -102,6 +102,20 @@ async function verifyAccess(request, env) {
 
 const PUBLIC_FIELDS = ['name_ko', 'name_en', 'address', 'hours', 'closed', 'prices', 'booking', 'url', 'desc_ko', 'desc_en', 'region', 'claim', 'type', 'english', 'tattoo', 'features'];
 
+// 검색엔진(Bing·Naver·Yandex·Seznam 등 IndexNow 참여 엔진)에 사이트맵의 주소를 한 번에 알린다
+async function indexNow(request) {
+  const origin = new URL(request.url).origin, host = new URL(request.url).host;
+  const key = ((await (await fetch(origin + '/indexnow-key.txt')).text()) || '').trim();
+  if (!/^[0-9a-f]{32}$/.test(key)) return json({ ok: false, error: 'key' }, 500);
+  const xml = await (await fetch(origin + '/sitemap.xml')).text();
+  const urls = Array.from(xml.matchAll(/<loc>([^<]+)<\/loc>/g), (m) => m[1]).map((u) => u.replace(/^https?:\/\/[^/]+/, origin)).slice(0, 10000);
+  const r = await fetch('https://api.indexnow.org/indexnow', {
+    method: 'POST', headers: { 'content-type': 'application/json; charset=utf-8' },
+    body: JSON.stringify({ host, key, keyLocation: origin + '/indexnow-key.txt', urlList: urls }),
+  });
+  return json({ ok: r.status === 200 || r.status === 202, status: r.status, sent: urls.length });
+}
+
 async function guard(request, env) {
   const v = await verifyAccess(request, env);
   if (!v.ok) return json({ ok: false, error: 'forbidden', why: v.why }, 403);
@@ -136,6 +150,7 @@ export async function onRequestGet({ request, env, params }) {
 export async function onRequestPost({ request, env, params }) {
   const bad = await guard(request, env); if (bad) return bad;
   const p = Array.isArray(params.path) ? params.path : [];
+  if (p[0] === 'indexnow') return indexNow(request);
   if (p[0] !== 'decide') return json({ ok: false, error: 'not_found' }, 404);
   const kv = env.HANTANG_KV;
   let b; try { b = await request.json(); } catch (e) { return json({ ok: false, error: 'bad_request' }, 400); }
