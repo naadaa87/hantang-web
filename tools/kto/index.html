@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>관광공사 사진 수집 — HANTANG 내부 도구</title>
+<style>
+  :root{--ink:#1b1a18;--mute:#6b675f;--line:#e6e2da;--blue:#1e6e9c;--bg:#fbfaf7;--ok:#1f8a4c;--warn:#b5651d;--err:#b3261e}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;padding:32px max(16px,env(safe-area-inset-left))}
+  main{max-width:720px;margin:0 auto}
+  h1{font-size:24px;margin:0 0 6px} .sub{color:var(--mute);margin:0 0 24px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px}
+  label{display:block;font-weight:700;margin-bottom:8px}
+  input[type=password]{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-family:ui-monospace,Consolas,monospace}
+  button{background:var(--blue);color:#fff;border:0;border-radius:10px;padding:12px 18px;font:inherit;font-weight:700;cursor:pointer;margin-top:12px}
+  button:disabled{opacity:.45;cursor:default}
+  .hint{color:var(--mute);font-size:13px;margin-top:8px}
+  .bar{height:10px;background:#efece6;border-radius:99px;overflow:hidden;margin:12px 0 6px}.bar>i{display:block;height:100%;width:0;background:var(--blue);transition:width .2s}
+  #log{font:12.5px/1.55 ui-monospace,Consolas,monospace;white-space:pre-wrap;max-height:260px;overflow:auto;background:#f6f4ef;border-radius:10px;padding:12px;margin-top:10px}
+  .ok{color:var(--ok)}.warn{color:var(--warn)}.err{color:var(--err)}
+  .stat{display:flex;gap:18px;flex-wrap:wrap;margin-top:8px}.stat b{font-size:20px;display:block}
+</style>
+</head>
+<body>
+<main>
+  <h1>한국관광공사 사진 수집</h1>
+  <p class="sub">한탕 시설 목록에 붙일 공공누리 사진과 기본 정보를 관광공사 관광정보 서비스에서 가져옵니다. 결과에는 인증키가 들어가지 않습니다.</p>
+
+  <div class="card">
+    <label for="key">공공데이터포털 일반 인증키 (Decoding)</label>
+    <input id="key" type="password" autocomplete="off" spellcheck="false" placeholder="여기에 직접 붙여넣기">
+    <div class="hint">키는 이 화면 안에서만 쓰이고 저장되지 않습니다. 창을 닫으면 사라집니다. 채팅에는 보내지 마세요.</div>
+    <button id="go">수집 시작</button>
+  </div>
+
+  <div class="card" id="prog" hidden>
+    <div id="phase">준비 중…</div>
+    <div class="bar"><i id="pbar"></i></div>
+    <div class="stat"><div><b id="nItems">0</b>시설</div><div><b id="nImgs">0</b>사진</div><div><b id="nCalls">0</b>요청</div></div>
+    <div id="log"></div>
+  </div>
+</main>
+<script>
+(function(){
+  'use strict';
+  var BASE = 'https://apis.data.go.kr/B551011/KorService2/';
+  var KEYWORDS = ['찜질방','사우나','목욕탕','대중탕','스파','온천','해수탕','해수찜','한증막','불가마','숯가마','1인 사우나','프라이빗 사우나','세신'];
+  var NAME_RE = /찜질|사우나|목욕|대중탕|스파|spa|온천|해수|한증|불가마|숯가마|세신|탕$/i;
+  var logEl = document.getElementById('log');
+  var result = { source: 'KorService2 (한국관광공사_국문 관광정보 서비스_GW)', fetched: null, items: {}, notes: [] };
+  window.__ktoResult = result;          // 결과만 노출 (키 없음)
+  var calls = 0;
+
+  function log(msg, cls){ var s=document.createElement('div'); if(cls) s.className=cls; s.textContent=msg; logEl.appendChild(s); logEl.scrollTop=logEl.scrollHeight; result.notes.push(msg); }
+  function setPhase(t, p){ document.getElementById('phase').textContent=t; if(p!=null) document.getElementById('pbar').style.width=Math.round(p*100)+'%'; }
+  function counts(){ var ids=Object.keys(result.items); document.getElementById('nItems').textContent=ids.length; var n=0; ids.forEach(function(i){ n+=(result.items[i].images||[]).length + (result.items[i].firstimage?1:0); }); document.getElementById('nImgs').textContent=n; document.getElementById('nCalls').textContent=calls; }
+
+  function makeCaller(key){
+    if (key.indexOf('%') >= 0) { try { key = decodeURIComponent(key); } catch(e){} }
+    return async function call(op, params){
+      var q = new URLSearchParams(Object.assign({ MobileOS:'ETC', MobileApp:'HANTANG', _type:'json' }, params));
+      q.set('serviceKey', key);
+      for (var attempt=0; attempt<3; attempt++){
+        calls++; counts();
+        try{
+          var r = await fetch(BASE + op + '?' + q.toString());
+          var txt = await r.text(); var j;
+          try { j = JSON.parse(txt); } catch(e){ throw new Error('JSON 아님: ' + txt.slice(0,120)); }
+          if (j.OpenAPI_ServiceResponse){ var h=j.OpenAPI_ServiceResponse.cmmMsgHeader||{}; var e=new Error(h.returnAuthMsg||h.errMsg||'인증 오류'); e.auth=true; throw e; }
+          var hd = j.response && j.response.header; if (hd && hd.resultCode !== '0000') throw new Error(hd.resultMsg || hd.resultCode);
+          var body = j.response.body || {}; var it = body.items && body.items.item; if (!it) it = []; if (!Array.isArray(it)) it=[it];
+          return { items: it, total: +body.totalCount || it.length };
+        }catch(e){ if (e.auth || attempt===2) throw e; await new Promise(function(r){ setTimeout(r, 800*(attempt+1)); }); }
+      }
+    };
+  }
+
+  function addItem(it, via){
+    if (!it || !it.contentid) return;
+    var o = result.items[it.contentid] || (result.items[it.contentid] = { contentid: it.contentid, via: [] });
+    ['contenttypeid','title','addr1','addr2','zipcode','mapx','mapy','firstimage','firstimage2','cpyrhtDivCd','areacode','sigungucode','cat1','cat2','cat3','lclsSystm1','lclsSystm2','lclsSystm3','lDongRegnCd','lDongSignguCd','createdtime','modifiedtime'].forEach(function(k){ if (it[k] != null && it[k] !== '') o[k] = it[k]; });
+    if (o.via.indexOf(via) < 0) o.via.push(via);
+  }
+
+  async function pool(list, n, fn){ var i=0; async function w(){ while(i<list.length){ var k=i++; try{ await fn(list[k], k); }catch(e){ log('  · '+e.message,'warn'); } } } var ws=[]; for(var x=0;x<n;x++) ws.push(w()); await Promise.all(ws); }
+
+  document.getElementById('go').addEventListener('click', async function(){
+    var keyEl = document.getElementById('key'); var key = keyEl.value.trim();
+    if (!key){ keyEl.focus(); return; }
+    keyEl.value = ''; keyEl.disabled = true; this.disabled = true;
+    document.getElementById('prog').hidden = false;
+    var call = makeCaller(key); key = null;
+    result.fetched = new Date().toISOString();
+    try{
+      // 1) 연결 확인
+      setPhase('인증키 확인 중…', .02);
+      await call('areaCode2', { numOfRows: 1 });
+      log('인증키 확인 완료', 'ok');
+
+      // 2) 분류 코드: 온천/욕장/스파(A02020300), 이색찜질방(A02020400) + 새 분류체계에서 이름으로 찾기
+      setPhase('분류 목록으로 수집 중…', .05);
+      var cats = ['A02020300','A02020400'];
+      for (var c=0;c<cats.length;c++){
+        try{
+          var page=1, got=0, total=1;
+          while (got < total){ var r = await call('areaBasedList2', { numOfRows: 500, pageNo: page, arrange:'A', cat1:'A02', cat2:'A0202', cat3: cats[c] }); total=r.total; r.items.forEach(function(it){ addItem(it, 'cat:'+cats[c]); }); got += r.items.length; page++; if (!r.items.length) break; }
+          log('분류 '+cats[c]+': '+total+'곳', 'ok');
+        }catch(e){ log('분류 '+cats[c]+' 실패: '+e.message, 'warn'); }
+        counts();
+      }
+      try{
+        var ls = await call('lclsSystmCode2', { numOfRows: 1000, lclsSystmListYn: 'Y' });
+        var hit = ls.items.filter(function(x){ return /온천|스파|찜질|사우나|목욕/.test((x.lclsSystm3Nm||'')+(x.lclsSystm2Nm||'')); });
+        result.lcls = hit;
+        for (var h=0; h<hit.length; h++){
+          var code = hit[h].lclsSystm3Cd || hit[h].lclsSystm2Cd; var lvl = hit[h].lclsSystm3Cd ? 'lclsSystm3' : 'lclsSystm2';
+          var p={ numOfRows: 500, pageNo: 1, arrange:'A' }; p[lvl]=code; p.lclsSystm1 = hit[h].lclsSystm1Cd; if (lvl==='lclsSystm3') p.lclsSystm2 = hit[h].lclsSystm2Cd;
+          var page2=1, got2=0, total2=1;
+          while (got2 < total2){ p.pageNo=page2; var r2 = await call('areaBasedList2', p); total2=r2.total; r2.items.forEach(function(it){ addItem(it, 'lcls:'+code); }); got2+=r2.items.length; page2++; if(!r2.items.length) break; }
+          log('새 분류 '+(hit[h].lclsSystm3Nm||hit[h].lclsSystm2Nm)+' ('+code+'): '+total2+'곳', 'ok'); counts();
+        }
+      }catch(e){ log('새 분류체계 조회 생략: '+e.message, 'warn'); }
+
+      // 3) 키워드 검색
+      for (var k=0;k<KEYWORDS.length;k++){
+        setPhase('키워드 검색: '+KEYWORDS[k], .15 + .15*k/KEYWORDS.length);
+        try{
+          var pg=1, g=0, t=1;
+          while (g < t && pg <= 6){ var r3 = await call('searchKeyword2', { keyword: KEYWORDS[k], numOfRows: 200, pageNo: pg, arrange:'A' }); t=r3.total; r3.items.forEach(function(it){ if (NAME_RE.test(it.title||'') && ['12','28','32','14'].indexOf(String(it.contenttypeid))>=0) addItem(it, 'kw:'+KEYWORDS[k]); }); g+=r3.items.length; pg++; if(!r3.items.length) break; }
+        }catch(e){ log('키워드 '+KEYWORDS[k]+' 실패: '+e.message, 'warn'); }
+        counts();
+      }
+      var ids = Object.keys(result.items);
+      log('후보 시설 '+ids.length+'곳 — 사진·소개·이용 정보 조회 시작', 'ok');
+
+      // 4) 상세: 이미지(저작권 유형), 공통(홈페이지), 소개(이용시간·휴무)
+      var done=0;
+      await pool(ids, 6, async function(id){
+        var o = result.items[id];
+        try{ var im = await call('detailImage2', { contentId: id, imageYN: 'Y', numOfRows: 30, pageNo: 1 }); o.images = im.items.map(function(x){ return { url: x.originimgurl, small: x.smallimageurl, name: x.imgname, cpyrhtDivCd: x.cpyrhtDivCd, serial: x.serialnum }; }); }catch(e){ o.images_err = e.message; }
+        try{ var cm = await call('detailCommon2', { contentId: id }); var c0 = cm.items[0] || {}; o.homepage = c0.homepage || ''; o.overview = (c0.overview||'').slice(0, 1200); o.tel_present = !!c0.tel; }catch(e){ o.common_err = e.message; }
+        try{ var ti = await call('detailIntro2', { contentId: id, contentTypeId: o.contenttypeid || '12' }); var t0 = ti.items[0] || {}; o.intro = {}; Object.keys(t0).forEach(function(k){ if (/time|rest|fee|parking|age|expguide|open|use/i.test(k) && t0[k]) o.intro[k] = String(t0[k]).slice(0, 400); }); }catch(e){ o.intro_err = e.message; }
+        done++; if (done % 5 === 0 || done === ids.length) { setPhase('상세 조회 '+done+' / '+ids.length, .3 + .7*done/ids.length); counts(); }
+      });
+      setPhase('완료 — 이 창을 그대로 두시면 제가 결과를 가져가겠습니다.', 1);
+      log('완료: 시설 '+ids.length+'곳', 'ok'); result.done = true; counts();
+    }catch(e){
+      setPhase('중단됨', null);
+      if (e.auth) log('인증키 오류: '+e.message+' — 활용신청 직후라면 승인 반영까지 최대 1시간이 걸릴 수 있습니다. 잠시 뒤 새로고침하고 다시 시도해 주세요.', 'err');
+      else log('오류: '+e.message, 'err');
+      result.error = e.message;
+      document.getElementById('key').disabled = false; document.getElementById('go').disabled = false;
+    }
+  });
+})();
+</script>
+</body>
+</html>
