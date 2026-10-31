@@ -698,6 +698,12 @@
   .rx-regions a span{font-family:var(--mono);font-size:11px;color:var(--mute);font-weight:500;align-self:center}
   .rx-regions a.on{border-color:var(--blue);color:var(--blue)}
   .rx-credits{margin-top:24px;font-size:12.5px;color:var(--mute);line-height:1.7}
+  .rx-phs{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(190px,220px);gap:14px;overflow-x:auto;padding:4px 0 10px;scroll-snap-type:x proximity;max-width:100%}
+  .rx-ph{display:block;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;scroll-snap-align:start;color:var(--ink)}
+  .rx-ph img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--blue-tint)}
+  .rx-ph span{display:block;font-weight:700;font-size:14.5px;line-height:1.35;padding:10px 12px 0;word-break:keep-all}
+  .rx-ph small{display:block;font-size:12px;color:var(--mute);padding:2px 12px 12px}
+  .rx-ph:hover{border-color:var(--blue)}
   .pc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
   .pcard{border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden;scroll-margin-top:84px}
   .pcard .pimg{aspect-ratio:16/9;max-width:100%;background:var(--blue-tint);color:var(--blue);display:flex;align-items:center;justify-content:center;position:relative}
@@ -743,7 +749,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="spa-lei">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/72/2024972_image2_1.jpg" alt="스파레이" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Фото: Корейская организация по туризму (KOGL, тип 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">СЕУЛ · Синса / Чамвон · Круглосуточная сауна</span></div>
   <h3>Spa Lei (women only) <span class="nko" lang="ko">스파레이</span></h3>
   <p class="dfeat">Круглосуточная женская сауна в районе Синса/Чамвон, работающая на одном месте около 20 лет: купель под открытым небом, бассейн с морской водой, ханджынмак на сосновых дровах, комнаты с красной глиной, древесным углём и солью, маникюрный салон. Цены в интернете не опубликованы; путеводители 2025–2026 годов называют примерно ₩15 000–20 000 за 12 часов плюс небольшую доплату за спальное место.</p>
@@ -797,7 +803,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="jjimjil" id="park-habio">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/43/3095643_image2_1.jpg" alt="파크하비오 워터킹덤&amp;스파" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType1.do" target="_blank" rel="noopener">Фото: Корейская организация по туризму (KOGL, тип 1)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">СЕУЛ · Мунджон (Сонпха) · Чимчильбан</span></div>
   <h3>Park Habio Water Kingdom &amp; Jjimjil Spa <span class="nko" lang="ko">파크하비오 워터킹덤 &amp; 찜질스파</span></h3>
   <p class="dfeat">Крытый аквапарк в стиле Санторини в Мунджоне, при нём — чимчильбан и сауна; в аквапарке (₩65 000 в будни) есть волны, бурная река и горки.</p>
@@ -824,7 +830,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="spa" id="spaland-centum">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/02/3544802_image2_1.JPEG" alt="센텀시티 스파랜드" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Фото: Корейская организация по туризму (KOGL, тип 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">ПУСАН · Сентум-Сити (Хэундэ-гу) · Спа-комплекс</span></div>
   <h3>Spa Land Centum City <span class="nko" lang="ko">스파랜드 센텀시티</span></h3>
   <p class="dfeat">Спа на горячих источниках в универмаге Shinsegae Centum City: 18 бассейнов с водой из двух природных источников, 13 тематических комнат для прогрева, ванночки для ног под открытым небом и кафе с рамёном; почти половина гостей — иностранцы. Детей младше 7 лет не пускают; время сверх первых 4 часов оплачивается отдельно; браслет работает как электронный кошелёк, а расплачиваются на выходе.</p>
@@ -833,7 +839,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="hurshimchung">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/37/4090237_image2_1.jpg" alt="허심청" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Фото: Корейская организация по туризму (KOGL, тип 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">ПУСАН · Тоннэ-Ончхон · Горячий источник</span></div>
   <h3>Hurshimchung <span class="nko" lang="ko">허심청</span></h3>
   <p class="dfeat">Знаменитая баня на горячих источниках в Тоннэ, открытая в 1991 году рядом с отелем Hotel Nongshim: больше 40 бассейнов, в том числе пещерные, под открытым небом и сезонные травяные, тематическая зона чимчильбана на 3-м этаже (за доплату) и немецкая пивная. Гостям отеля обычно скидка 50%; парковка бесплатна 3–4 часа.</p>
@@ -887,7 +893,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="taejongdae-oncheon">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/85/3547085_image2_1.jpg" alt="태종대온천찜질방" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType1.do" target="_blank" rel="noopener">Фото: Корейская организация по туризму (KOGL, тип 1)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">ПУСАН · Ёндо (Тхэджондэ) · Горячий источник</span></div>
   <h3>Taejongdae Oncheon Jjimjilbang <span class="nko" lang="ko">태종대온천찜질방</span></h3>
   <p class="dfeat">Муниципальный (Busan Facilities Corporation) круглосуточный чимчильбан на горячем источнике на острове Ёндо: бассейн-«пирамида», бассейны под открытым небом и оздоровительные, шесть комнат для прогрева и тренажёрный зал.</p>
@@ -914,7 +920,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="bath" id="halmae-tang">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/48/3083448_image2_1.jpg" alt="할매탕" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Фото: Корейская организация по туризму (KOGL, тип 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">ПУСАН · Хэундэ · Общественная баня</span></div>
   <h3>Halmae-tang <span class="nko" lang="ko">할매탕</span></h3>
   <p class="dfeat">Четырёхэтажная общественная баня на горячем источнике в Хэундэ с собственной скважиной глубиной 900 м. В 2003 году получила название Halmae-tang, в октябре 2023 года вновь открылась после ремонта. Женское отделение — на 3-м этаже, мужское — на 4-м, семейная баня на 2-м этаже — по брони (₩80 000). Цены указаны на момент открытия в 2023 году, а соседние бани в 2026 году подняли тарифы.</p>
@@ -959,7 +965,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="termeden">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/78/3566478_image2_1.jpg" alt="테르메덴" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Фото: Корейская организация по туризму (KOGL, тип 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">Ичхон (Кёнгидо) · Мога-мён · Горячий источник</span></div>
   <h3>Termeden <span class="nko" lang="ko">테르메덴</span></h3>
   <p class="dfeat">Курорт в Ичхоне, который называет себя единственным в Корее термальным курортом в немецком стиле: «ленивая река», купель под открытым небом, крытый бассейн и чимчильбан с одеждой напрокат; парковка бесплатная. Купальник и шапочка для плавания обязательны и в помещении, и на улице; указаны цены сезона Gold.</p>
@@ -986,7 +992,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="cheoksan-oncheon">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/75/2709375_image2_1.jpg" alt="척산온천휴양촌" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Фото: Корейская организация по туризму (KOGL, тип 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">Сокчхо (Канвондо) · Чхоксан · Горячий источник</span></div>
   <h3>Cheoksan Oncheon Resort <span class="nko" lang="ko">척산온천휴양촌</span></h3>
   <p class="dfeat">Первый горячий источник провинции Канвондо (открыт в 1973 году) — курортная баня в Сокчхо: купель под открытым небом, сауна, летний открытый бассейн (10:00–18:00) и семейные номера с горячим источником с почасовой оплатой (3 часа: ₩50 000 на двоих, ₩70 000 на четверых). Рядом — бесплатный парк ванночек для ног Чхоксан (март — ноябрь).</p>
@@ -995,7 +1001,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="deokgu-oncheon">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/33/3503533_image2_1.jpg" alt="덕구온천 스파월드" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Фото: Корейская организация по туризму (KOGL, тип 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">Ульчин (Кёнсан-Пукто) · Пук-мён (гора Ынбонсан) · Горячий источник</span></div>
   <h3>Deokgu Oncheon Resort <span class="nko" lang="ko">덕구온천 리조트</span></h3>
   <p class="dfeat">Удалённый курорт в провинции Кёнсан-Пукто. Его горячий источник называют единственным в Корее самоизливающимся: вода идёт по трубам 4 км с горы Ынбонсан без насосов и подогрева. Здесь большой банный зал (без ограничения по времени), купели под открытым небом и семейные бани, а также Spa World, где купаются в купальниках (гидромассажные ванны, детский бассейн). Высокий сезон: с середины декабря до начала марта, с середины июля по август и Чхусок.</p>
@@ -1013,7 +1019,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="spa-valley-daegu">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/39/4081039_image2_1.jpg" alt="스파밸리 워터파크" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Фото: Корейская организация по туризму (KOGL, тип 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">Тэгу · Качхан-мён (Тальсон-гун) · Горячий источник</span></div>
   <h3>Spa Valley <span class="nko" lang="ko">스파밸리</span></h3>
   <p class="dfeat">Аквапарк на горячем источнике в Качхане, к югу от Тэгу: крытая и открытая зоны, зоопарк Nature Park и отель на территории; купальник и шапочка для плавания обязательны. Парковка в будни бесплатная, с пятницы по воскресенье — ₩3000.</p>
@@ -1022,7 +1028,7 @@
   <div class="dlinks"></div>
   <div class="verify">По опубликованным данным · лично ещё не проверено · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="sanbangsan-oncheon">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/24/3569424_image2_1.jpg" alt="제주 산방산탄산온천" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Фото: Корейская организация по туризму (KOGL, тип 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">Согвипхо (Чеджу) · Андок-мён (Санбансан) · Горячий источник</span></div>
   <h3>Sanbangsan Carbonate Hot Spring <span class="nko" lang="ko">산방산탄산온천</span></h3>
   <p class="dfeat">Первый общественный горячий источник Чеджу: природный углекислый источник (по заявлению владельцев, углекислого газа в нём в пять раз больше, чем в обычных корейских источниках), крытые бассейны, бассейн под открытым небом (за доплату; в купальнике или в шортах и футболке, прокат — ₩2000) и зона чимчильбана с печью (за доплату). Жители Чеджу платят меньше.</p>

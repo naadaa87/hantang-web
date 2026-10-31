@@ -696,6 +696,12 @@
   .rx-regions a span{font-family:var(--mono);font-size:11px;color:var(--mute);font-weight:500;align-self:center}
   .rx-regions a.on{border-color:var(--blue);color:var(--blue)}
   .rx-credits{margin-top:24px;font-size:12.5px;color:var(--mute);line-height:1.7}
+  .rx-phs{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(190px,220px);gap:14px;overflow-x:auto;padding:4px 0 10px;scroll-snap-type:x proximity;max-width:100%}
+  .rx-ph{display:block;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;scroll-snap-align:start;color:var(--ink)}
+  .rx-ph img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--blue-tint)}
+  .rx-ph span{display:block;font-weight:700;font-size:14.5px;line-height:1.35;padding:10px 12px 0;word-break:keep-all}
+  .rx-ph small{display:block;font-size:12px;color:var(--mute);padding:2px 12px 12px}
+  .rx-ph:hover{border-color:var(--blue)}
   .pc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
   .pcard{border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden;scroll-margin-top:84px}
   .pcard .pimg{aspect-ratio:16/9;max-width:100%;background:var(--blue-tint);color:var(--blue);display:flex;align-items:center;justify-content:center;position:relative}
@@ -741,7 +747,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="spa-lei">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/72/2024972_image2_1.jpg" alt="스파레이" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Sinsa / Jamwon · 24-hour sauna</span></div>
   <h3>Spa Lei (women only) <span class="nko" lang="ko">스파레이</span></h3>
   <p class="dfeat">Women-only 24-hour sauna in Sinsa/Jamwon, at the same site for about 20 years, with an open-air bath, a seawater bath, a pine-fired hanjeungmak, red-clay, charcoal and salt rooms and a nail salon. Prices are not published online; 2025–2026 guides quote roughly ₩15,000–20,000 for 12 hours plus a small charge for a bed.</p>
@@ -795,7 +801,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="jjimjil" id="park-habio">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/43/3095643_image2_1.jpg" alt="파크하비오 워터킹덤&amp;스파" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType1.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 1)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">SEOUL · Munjeong (Songpa) · Jjimjilbang</span></div>
   <h3>Park Habio Water Kingdom &amp; Jjimjil Spa <span class="nko" lang="ko">파크하비오 워터킹덤 &amp; 찜질스파</span></h3>
   <p class="dfeat">A Santorini-themed indoor water park in Munjeong with a jjimjilbang and sauna attached; the water park (₩65,000 weekday) has waves, rapids and slides.</p>
@@ -822,7 +828,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="spa" id="spaland-centum">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/02/3544802_image2_1.JPEG" alt="센텀시티 스파랜드" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Centum City (Haeundae-gu) · Spa complex</span></div>
   <h3>Spa Land Centum City <span class="nko" lang="ko">스파랜드 센텀시티</span></h3>
   <p class="dfeat">A hot-spring spa inside the Shinsegae Centum City department store: 18 baths fed by two natural springs, 13 themed jjimjil rooms, outdoor foot baths and a ramen café; nearly half its visitors are foreign. Children under 7 are not admitted; hours beyond the first 4 are charged; the wristband is an e-wallet and you pay on exit.</p>
@@ -831,7 +837,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="hurshimchung">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/37/4090237_image2_1.jpg" alt="허심청" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Dongnae Oncheon · Hot spring</span></div>
   <h3>Hurshimchung <span class="nko" lang="ko">허심청</span></h3>
   <p class="dfeat">The landmark Dongnae hot-spring bathhouse, opened in 1991 beside Hotel Nongshim, with 40-plus baths including cave, open-air and seasonal herbal baths, a themed jjimjil zone on 3F (extra fee) and a German beer hall. Hotel guests usually get 50% off; parking is free for 3–4 hours.</p>
@@ -885,7 +891,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="taejongdae-oncheon">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/85/3547085_image2_1.jpg" alt="태종대온천찜질방" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType1.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 1)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Yeongdo (Taejongdae) · Hot spring</span></div>
   <h3>Taejongdae Oncheon Jjimjilbang <span class="nko" lang="ko">태종대온천찜질방</span></h3>
   <p class="dfeat">A city-run (Busan Facilities Corporation) 24-hour hot-spring jjimjilbang on Yeongdo with pyramid, open-air and health baths, six jjimjil rooms and a gym.</p>
@@ -912,7 +918,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="bath" id="halmae-tang">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/48/3083448_image2_1.jpg" alt="할매탕" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">BUSAN · Haeundae · Neighborhood bath</span></div>
   <h3>Halmae-tang <span class="nko" lang="ko">할매탕</span></h3>
   <p class="dfeat">A four-floor neighbourhood hot-spring bath in Haeundae with its own 900 m well, renamed Halmae-tang in 2003 and reopened after renovation in October 2023; women&#x27;s bath on 3F, men&#x27;s on 4F, and a family bath on 2F by reservation (₩80,000). Prices date from the 2023 reopening and nearby baths raised fees in 2026.</p>
@@ -957,7 +963,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="termeden">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/78/3566478_image2_1.jpg" alt="테르메덴" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">Icheon (Gyeonggi) · Moga-myeon · Hot spring</span></div>
   <h3>Termeden <span class="nko" lang="ko">테르메덴</span></h3>
   <p class="dfeat">Billed as Korea&#x27;s only German-style hot-spring resort, in Icheon, with a lazy river, an open-air bath, an indoor pool and a jjimjilbang with rental clothes; parking is free. Swimsuit and swim cap are required indoors and outdoors; the prices shown are Gold-season rates.</p>
@@ -984,7 +990,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="cheoksan-oncheon">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/75/2709375_image2_1.jpg" alt="척산온천휴양촌" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">Sokcho (Gangwon) · Cheoksan · Hot spring</span></div>
   <h3>Cheoksan Oncheon Resort <span class="nko" lang="ko">척산온천휴양촌</span></h3>
   <p class="dfeat">Gangwon&#x27;s first hot spring (opened 1973), a resort bath in Sokcho with an open-air bath, a sauna, a summer outdoor pool (10:00–18:00) and family hot-spring rooms by the hour (3 hours: ₩50,000 for two, ₩70,000 for four). The free Cheoksan foot-bath park (March–November) is nearby.</p>
@@ -993,7 +999,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="deokgu-oncheon">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/33/3503533_image2_1.jpg" alt="덕구온천 스파월드" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">Uljin (Gyeongbuk) · Buk-myeon (Eungbongsan) · Hot spring</span></div>
   <h3>Deokgu Oncheon Resort <span class="nko" lang="ko">덕구온천 리조트</span></h3>
   <p class="dfeat">A remote Gyeongbuk resort using what is billed as Korea&#x27;s only naturally flowing hot spring: water piped 4 km from Eungbongsan without pumping or heating into a big bath hall (no time limit), open-air and family baths and a swimwear Spa World (bubble baths, kids&#x27; pool). Peak: mid-Dec to early Mar, mid-Jul to Aug, Chuseok.</p>
@@ -1011,7 +1017,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="spa-valley-daegu">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/39/4081039_image2_1.jpg" alt="스파밸리 워터파크" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">Daegu · Gachang-myeon (Dalseong-gun) · Hot spring</span></div>
   <h3>Spa Valley <span class="nko" lang="ko">스파밸리</span></h3>
   <p class="dfeat">A hot-spring water park in Gachang, south of Daegu, with indoor and outdoor zones, a Nature Park zoo and a hotel on site; swimsuit and swim cap are required. Parking is free on weekdays and ₩3,000 Friday to Sunday.</p>
@@ -1020,7 +1026,7 @@
   <div class="dlinks"></div>
   <div class="verify">From published sources · in-person check pending · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="sanbangsan-oncheon">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/24/3569424_image2_1.jpg" alt="제주 산방산탄산온천" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">Seogwipo (Jeju) · Andeok-myeon (Sanbangsan) · Hot spring</span></div>
   <h3>Sanbangsan Carbonate Hot Spring <span class="nko" lang="ko">산방산탄산온천</span></h3>
   <p class="dfeat">Jeju&#x27;s first public hot spring: a naturally carbonated spring (claimed five times the carbonation of typical Korean springs) with indoor baths, an open-air pool (add-on; swimsuit or shorts and T-shirt, rental ₩2,000) and a kiln jjimjil area (add-on). Jeju residents pay less.</p>

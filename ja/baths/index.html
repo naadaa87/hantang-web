@@ -702,6 +702,12 @@
   .rx-regions a span{font-family:var(--mono);font-size:11px;color:var(--mute);font-weight:500;align-self:center}
   .rx-regions a.on{border-color:var(--blue);color:var(--blue)}
   .rx-credits{margin-top:24px;font-size:12.5px;color:var(--mute);line-height:1.7}
+  .rx-phs{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(190px,220px);gap:14px;overflow-x:auto;padding:4px 0 10px;scroll-snap-type:x proximity;max-width:100%}
+  .rx-ph{display:block;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;scroll-snap-align:start;color:var(--ink)}
+  .rx-ph img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--blue-tint)}
+  .rx-ph span{display:block;font-weight:700;font-size:14.5px;line-height:1.35;padding:10px 12px 0;word-break:keep-all}
+  .rx-ph small{display:block;font-size:12px;color:var(--mute);padding:2px 12px 12px}
+  .rx-ph:hover{border-color:var(--blue)}
   .pc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
   .pcard{border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden;scroll-margin-top:84px}
   .pcard .pimg{aspect-ratio:16/9;max-width:100%;background:var(--blue-tint);color:var(--blue);display:flex;align-items:center;justify-content:center;position:relative}
@@ -747,7 +753,7 @@
   <div class="dlinks"></div>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="spa-lei">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/72/2024972_image2_1.jpg" alt="스파레이" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第3類型）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">ソウル · 新沙／蚕院 · 24時間サウナ</span></div>
   <h3>Spa Lei (women only) <span class="nko" lang="ko">스파레이</span></h3>
   <p class="dfeat">新沙・蚕院にある女性専用の24時間サウナで、同じ場所で20年ほど営業しています。露天風呂、海水風呂、松の薪で焚く汗蒸幕、赤土部屋、炭部屋、塩部屋、ネイルサロンがあります。料金はネット上で公表されていません。2025～2026年のガイドでは、12時間でおよそ₩15,000～20,000、ベッドの利用は少額の追加料金とされています。</p>
@@ -801,7 +807,7 @@
   <div class="dlinks"></div>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="jjimjil" id="park-habio">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/43/3095643_image2_1.jpg" alt="파크하비오 워터킹덤&amp;스파" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType1.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第1類型）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">ソウル · 文井（松坡区） · チムジルバン</span></div>
   <h3>Park Habio Water Kingdom &amp; Jjimjil Spa <span class="nko" lang="ko">파크하비오 워터킹덤 &amp; 찜질스파</span></h3>
   <p class="dfeat">文井にある、サントリーニ島をテーマにした屋内ウォーターパークで、チムジルバンとサウナを併設しています。ウォーターパーク（平日₩65,000）には、波のプール、急流、スライダーがあります。</p>
@@ -828,7 +834,7 @@
   <div class="dlinks"></div>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="spa" id="spaland-centum">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/02/3544802_image2_1.JPEG" alt="센텀시티 스파랜드" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第3類型）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · センタムシティ（海雲台区） · 大型スパ</span></div>
   <h3>Spa Land Centum City <span class="nko" lang="ko">스파랜드 센텀시티</span></h3>
   <p class="dfeat">新世界センタムシティ百貨店の中にある温泉スパ。2つの天然温泉を引いた18の浴槽、13のテーマ別チムジル室、屋外の足湯、ラーメンカフェがあり、利用客の半数近くが外国人です。7歳未満は入場不可。最初の4時間を超えると追加料金がかかります。リストバンドが電子マネー代わりになり、退館時に精算します。</p>
@@ -837,7 +843,7 @@
   <div class="dlinks"></div>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="hurshimchung">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/37/4090237_image2_1.jpg" alt="허심청" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第3類型）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · 東莱温泉 · 温泉</span></div>
   <h3>Hurshimchung <span class="nko" lang="ko">허심청</span></h3>
   <p class="dfeat">東莱温泉を代表する温泉施設で、1991年にホテル農心の隣にオープン。洞窟風呂、露天風呂、季節の薬草風呂など40以上の浴槽があり、3階にはテーマ型のチムジルゾーン（別料金）、ドイツ風のビアホールもあります。ホテルの宿泊者は通常50％割引、駐車場は3～4時間無料です。</p>
@@ -891,7 +897,7 @@
   <div class="dlinks"></div>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="taejongdae-oncheon">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/85/3547085_image2_1.jpg" alt="태종대온천찜질방" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType1.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第1類型）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · 影島（太宗台） · 温泉</span></div>
   <h3>Taejongdae Oncheon Jjimjilbang <span class="nko" lang="ko">태종대온천찜질방</span></h3>
   <p class="dfeat">影島にある市営（釜山施設公団）の24時間温泉チムジルバン。ピラミッド風呂、露天風呂、健康風呂、6つのチムジル室、ジムがあります。</p>
@@ -918,7 +924,7 @@
   <div class="dlinks"></div>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="bath" id="halmae-tang">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/48/3083448_image2_1.jpg" alt="할매탕" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第3類型）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · 海雲台 · 銭湯</span></div>
   <h3>Halmae-tang <span class="nko" lang="ko">할매탕</span></h3>
   <p class="dfeat">海雲台にある4階建ての温泉銭湯で、深さ900mの自家源泉を持っています。2003年にハルメ湯と改名し、改装を経て2023年10月にリニューアルオープン。女湯は3階、男湯は4階、2階には予約制の家族風呂（₩80,000）があります。料金は2023年のリニューアル時のもので、周辺の銭湯は2026年に値上げしています。</p>
@@ -963,7 +969,7 @@
   <div class="dlinks"></div>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="termeden">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/78/3566478_image2_1.jpg" alt="테르메덴" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第3類型）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">利川（京畿道） · モガ面 · 温泉</span></div>
   <h3>Termeden <span class="nko" lang="ko">테르메덴</span></h3>
   <p class="dfeat">利川にある、「韓国唯一のドイツ式温泉リゾート」をうたう施設。流れるプール、露天風呂、屋内プール、館内着レンタル付きのチムジルバンがあり、駐車場は無料です。屋内・屋外とも水着と水泳帽の着用が必要です。掲載料金はゴールドシーズンのものです。</p>
@@ -990,7 +996,7 @@
   <div class="dlinks"></div>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="cheoksan-oncheon">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/75/2709375_image2_1.jpg" alt="척산온천휴양촌" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第3類型）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">束草（江原道） · 尺山 · 温泉</span></div>
   <h3>Cheoksan Oncheon Resort <span class="nko" lang="ko">척산온천휴양촌</span></h3>
   <p class="dfeat">江原道で最初の温泉（1973年開業）で、束草にあるリゾート型の温泉施設。露天風呂、サウナ、夏季の屋外プール（10:00～18:00）、時間貸しの家族風呂（3時間で2人₩50,000、4人₩70,000）があります。近くには無料の尺山足湯公園（3～11月）もあります。</p>
@@ -999,7 +1005,7 @@
   <div class="dlinks"></div>
   <div class="verify">公開情報より · 現地確認はこれから · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="deokgu-oncheon">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/33/3503533_image2_1.jpg" alt="덕구온천 스파월드" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第3類型）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">蔚珍（慶尚北道） · 北面（応峰山） · 温泉</span></div>
   <h3>Deokgu Oncheon Resort <span class="nko" lang="ko">덕구온천 리조트</span></h3>
   <p class="dfeat">慶尚北道の山あいにあるリゾートで、「韓国唯一の自然湧出温泉」とされる源泉を使っています。応峰山から4kmの距離を、ポンプも加温も使わずに引いたお湯が、大浴場（時間制限なし）、露天風呂、家族風呂、水着で入るスパワールド（バブルバス、キッズプール）を満たしています。繁忙期は12月中旬～3月上旬、7月中旬～8月、秋夕。</p>
@@ -1017,7 +1023,7 @@
   <div class="dlinks"></div>
   <div class="verify">公開情報より · 現地確認はこれから · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="spa-valley-daegu">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/39/4081039_image2_1.jpg" alt="스파밸리 워터파크" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第3類型）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">大邱 · 嘉昌面（達城郡） · 温泉</span></div>
   <h3>Spa Valley <span class="nko" lang="ko">스파밸리</span></h3>
   <p class="dfeat">大邱の南、嘉昌にある温泉ウォーターパーク。屋内・屋外のゾーンに加え、動物園「ネイチャーパーク」とホテルも敷地内にあります。水着と水泳帽の着用が必要です。駐車場は平日無料、金～日曜は₩3,000。</p>
@@ -1026,7 +1032,7 @@
   <div class="dlinks"></div>
   <div class="verify">公開情報より · 現地確認はこれから · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="sanbangsan-oncheon">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/24/3569424_image2_1.jpg" alt="제주 산방산탄산온천" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第3類型）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">西帰浦（済州） · 安徳面（山房山） · 温泉</span></div>
   <h3>Sanbangsan Carbonate Hot Spring <span class="nko" lang="ko">산방산탄산온천</span></h3>
   <p class="dfeat">済州島で最初の公衆温泉。天然の炭酸泉（一般的な韓国の温泉の5倍の炭酸濃度とうたっています）で、屋内浴場、屋外プール（追加料金。水着か、短パンにTシャツで。レンタル₩2,000）、窯のチムジルエリア（追加料金）があります。済州島の住民は割引料金です。</p>

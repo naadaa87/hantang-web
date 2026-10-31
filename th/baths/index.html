@@ -701,6 +701,12 @@
   .rx-regions a span{font-family:var(--mono);font-size:11px;color:var(--mute);font-weight:500;align-self:center}
   .rx-regions a.on{border-color:var(--blue);color:var(--blue)}
   .rx-credits{margin-top:24px;font-size:12.5px;color:var(--mute);line-height:1.7}
+  .rx-phs{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(190px,220px);gap:14px;overflow-x:auto;padding:4px 0 10px;scroll-snap-type:x proximity;max-width:100%}
+  .rx-ph{display:block;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;scroll-snap-align:start;color:var(--ink)}
+  .rx-ph img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--blue-tint)}
+  .rx-ph span{display:block;font-weight:700;font-size:14.5px;line-height:1.35;padding:10px 12px 0;word-break:keep-all}
+  .rx-ph small{display:block;font-size:12px;color:var(--mute);padding:2px 12px 12px}
+  .rx-ph:hover{border-color:var(--blue)}
   .pc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
   .pcard{border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden;scroll-margin-top:84px}
   .pcard .pimg{aspect-ratio:16/9;max-width:100%;background:var(--blue-tint);color:var(--blue);display:flex;align-items:center;justify-content:center;position:relative}
@@ -746,7 +752,7 @@
   <div class="dlinks"></div>
   <div class="verify">ข้อมูลจากแหล่งที่เผยแพร่ · ยังไม่ได้ไปเช็กถึงที่ · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="spa-lei">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/72/2024972_image2_1.jpg" alt="스파레이" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">ภาพ: องค์การส่งเสริมการท่องเที่ยวเกาหลี (KOGL ประเภทที่ 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">โซล · ชินซา / จัมวอน · ซาวน่า 24 ชั่วโมง</span></div>
   <h3>Spa Lei (women only) <span class="nko" lang="ko">스파레이</span></h3>
   <p class="dfeat">ซาวน่า 24 ชั่วโมงสำหรับผู้หญิงเท่านั้น ย่านชินซา/จัมวอน เปิดอยู่ที่เดิมมาราว 20 ปี มีบ่อแช่กลางแจ้ง บ่อน้ำทะเล ฮันจึงมักเผาไม้สน ห้องดินแดง ห้องถ่าน และห้องเกลือ รวมถึงร้านทำเล็บ ไม่ได้ประกาศราคาทางออนไลน์ คู่มือปี 2025–2026 ระบุไว้ราว ₩15,000–20,000 สำหรับ 12 ชั่วโมง บวกค่าเตียงอีกเล็กน้อย</p>
@@ -800,7 +806,7 @@
   <div class="dlinks"></div>
   <div class="verify">ข้อมูลจากแหล่งที่เผยแพร่ · ยังไม่ได้ไปเช็กถึงที่ · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="jjimjil" id="park-habio">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/43/3095643_image2_1.jpg" alt="파크하비오 워터킹덤&amp;스파" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType1.do" target="_blank" rel="noopener">ภาพ: องค์การส่งเสริมการท่องเที่ยวเกาหลี (KOGL ประเภทที่ 1)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">โซล · มุนจอง (ซงพา) · จิมจิลบัง</span></div>
   <h3>Park Habio Water Kingdom &amp; Jjimjil Spa <span class="nko" lang="ko">파크하비오 워터킹덤 &amp; 찜질스파</span></h3>
   <p class="dfeat">สวนน้ำในร่มธีมซานโตรินีย่านมุนจอง มีจิมจิลบังและซาวน่าในตัว สวนน้ำ (วันธรรมดา ₩65,000) มีสระคลื่น แก่งน้ำเชี่ยว และสไลเดอร์</p>
@@ -827,7 +833,7 @@
   <div class="dlinks"></div>
   <div class="verify">ข้อมูลจากแหล่งที่เผยแพร่ · ยังไม่ได้ไปเช็กถึงที่ · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="spa" id="spaland-centum">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/02/3544802_image2_1.JPEG" alt="센텀시티 스파랜드" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">ภาพ: องค์การส่งเสริมการท่องเที่ยวเกาหลี (KOGL ประเภทที่ 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">ปูซาน · เซ็นทัมซิตี้ (เขตแฮอุนแด) · สปาขนาดใหญ่</span></div>
   <h3>Spa Land Centum City <span class="nko" lang="ko">스파랜드 센텀시티</span></h3>
   <p class="dfeat">สปาน้ำพุร้อนในห้าง Shinsegae Centum City มีบ่อแช่ 18 บ่อที่ใช้น้ำจากน้ำพุร้อนธรรมชาติสองแหล่ง ห้องอบธีมต่างๆ 13 ห้อง บ่อแช่เท้ากลางแจ้ง และคาเฟ่รามยอน ผู้มาใช้บริการเกือบครึ่งเป็นชาวต่างชาติ ไม่รับเด็กอายุต่ำกว่า 7 ปี อยู่เกิน 4 ชั่วโมงแรกต้องจ่ายเพิ่ม สายรัดข้อมือใช้เป็นกระเป๋าเงินอิเล็กทรอนิกส์ แล้วจ่ายรวมตอนออก</p>
@@ -836,7 +842,7 @@
   <div class="dlinks"></div>
   <div class="verify">ข้อมูลจากแหล่งที่เผยแพร่ · ยังไม่ได้ไปเช็กถึงที่ · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="hurshimchung">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/37/4090237_image2_1.jpg" alt="허심청" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">ภาพ: องค์การส่งเสริมการท่องเที่ยวเกาหลี (KOGL ประเภทที่ 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">ปูซาน · ย่านน้ำพุร้อนทงแน · น้ำพุร้อน</span></div>
   <h3>Hurshimchung <span class="nko" lang="ko">허심청</span></h3>
   <p class="dfeat">โรงอาบน้ำพุร้อนแลนด์มาร์กของทงแน เปิดเมื่อปี 1991 ข้างโรงแรม Nongshim มีบ่อแช่กว่า 40 บ่อ ทั้งบ่อในถ้ำ บ่อกลางแจ้ง และบ่อสมุนไพรตามฤดูกาล โซนจิมจิลบังธีมต่างๆ ที่ชั้น 3 (คิดเงินเพิ่ม) และเบียร์ฮอลล์สไตล์เยอรมัน แขกของโรงแรมมักได้ลด 50% และจอดรถฟรี 3–4 ชั่วโมง</p>
@@ -890,7 +896,7 @@
   <div class="dlinks"></div>
   <div class="verify">ข้อมูลจากแหล่งที่เผยแพร่ · ยังไม่ได้ไปเช็กถึงที่ · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="taejongdae-oncheon">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/85/3547085_image2_1.jpg" alt="태종대온천찜질방" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType1.do" target="_blank" rel="noopener">ภาพ: องค์การส่งเสริมการท่องเที่ยวเกาหลี (KOGL ประเภทที่ 1)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">ปูซาน · ยองโด (แทจงแด) · น้ำพุร้อน</span></div>
   <h3>Taejongdae Oncheon Jjimjilbang <span class="nko" lang="ko">태종대온천찜질방</span></h3>
   <p class="dfeat">จิมจิลบังน้ำพุร้อน 24 ชั่วโมงบนเกาะยองโด ดำเนินการโดยหน่วยงานของเมือง (Busan Facilities Corporation) มีบ่อทรงพีระมิด บ่อกลางแจ้ง และบ่อเพื่อสุขภาพ ห้องอบหกห้อง และฟิตเนส</p>
@@ -917,7 +923,7 @@
   <div class="dlinks"></div>
   <div class="verify">ข้อมูลจากแหล่งที่เผยแพร่ · ยังไม่ได้ไปเช็กถึงที่ · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="bath" id="halmae-tang">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/48/3083448_image2_1.jpg" alt="할매탕" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">ภาพ: องค์การส่งเสริมการท่องเที่ยวเกาหลี (KOGL ประเภทที่ 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">ปูซาน · แฮอุนแด · โรงอาบน้ำแถวบ้าน</span></div>
   <h3>Halmae-tang <span class="nko" lang="ko">할매탕</span></h3>
   <p class="dfeat">โรงอาบน้ำพุร้อนแถวบ้านสี่ชั้นในแฮอุนแด มีบ่อน้ำพุร้อนของตัวเองลึก 900 เมตร เปลี่ยนชื่อเป็น Halmae-tang เมื่อปี 2003 และกลับมาเปิดหลังรีโนเวตในเดือนตุลาคม 2023 โซนอาบน้ำหญิงอยู่ชั้น 3 ชายอยู่ชั้น 4 และมีห้องอาบน้ำครอบครัวที่ชั้น 2 ต้องจองล่วงหน้า (₩80,000) ราคาเป็นข้อมูลตั้งแต่เปิดใหม่ปี 2023 และโรงอาบน้ำใกล้เคียงขึ้นราคาไปแล้วในปี 2026</p>
@@ -962,7 +968,7 @@
   <div class="dlinks"></div>
   <div class="verify">ข้อมูลจากแหล่งที่เผยแพร่ · ยังไม่ได้ไปเช็กถึงที่ · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="termeden">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/78/3566478_image2_1.jpg" alt="테르메덴" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">ภาพ: องค์การส่งเสริมการท่องเที่ยวเกาหลี (KOGL ประเภทที่ 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">อีชอน (คยองกี) · โมกามยอน · น้ำพุร้อน</span></div>
   <h3>Termeden <span class="nko" lang="ko">테르메덴</span></h3>
   <p class="dfeat">รีสอร์ตน้ำพุร้อนที่โฆษณาว่าเป็นสไตล์เยอรมันแห่งเดียวในเกาหลี อยู่ที่อีชอน มีสระน้ำไหลแบบเลซีริเวอร์ บ่อแช่กลางแจ้ง สระในร่ม และจิมจิลบังที่มีชุดให้เช่า จอดรถฟรี ต้องใส่ชุดว่ายน้ำและหมวกว่ายน้ำทั้งในร่มและกลางแจ้ง ราคาที่แสดงเป็นราคาช่วงโกลด์ซีซัน</p>
@@ -989,7 +995,7 @@
   <div class="dlinks"></div>
   <div class="verify">ข้อมูลจากแหล่งที่เผยแพร่ · ยังไม่ได้ไปเช็กถึงที่ · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="cheoksan-oncheon">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/75/2709375_image2_1.jpg" alt="척산온천휴양촌" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">ภาพ: องค์การส่งเสริมการท่องเที่ยวเกาหลี (KOGL ประเภทที่ 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">ซกโช (คังวอน) · ชอกซาน · น้ำพุร้อน</span></div>
   <h3>Cheoksan Oncheon Resort <span class="nko" lang="ko">척산온천휴양촌</span></h3>
   <p class="dfeat">น้ำพุร้อนแห่งแรกของคังวอน (เปิดปี 1973) เป็นโรงอาบน้ำแบบรีสอร์ตในซกโช มีบ่อแช่กลางแจ้ง ซาวน่า สระกลางแจ้งช่วงฤดูร้อน (10:00–18:00) และห้องน้ำพุร้อนสำหรับครอบครัวแบบคิดรายชั่วโมง (3 ชั่วโมง: สองคน ₩50,000 สี่คน ₩70,000) ใกล้ๆ มีสวนแช่เท้าชอกซานให้ใช้ฟรี (มีนาคม–พฤศจิกายน)</p>
@@ -998,7 +1004,7 @@
   <div class="dlinks"></div>
   <div class="verify">ข้อมูลจากแหล่งที่เผยแพร่ · ยังไม่ได้ไปเช็กถึงที่ · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="deokgu-oncheon">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/33/3503533_image2_1.jpg" alt="덕구온천 스파월드" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">ภาพ: องค์การส่งเสริมการท่องเที่ยวเกาหลี (KOGL ประเภทที่ 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">อุลจิน (คยองซังเหนือ) · พุกมยอน (เขาอึงบงซาน) · น้ำพุร้อน</span></div>
   <h3>Deokgu Oncheon Resort <span class="nko" lang="ko">덕구온천 리조트</span></h3>
   <p class="dfeat">รีสอร์ตห่างไกลในคยองซังเหนือ ใช้น้ำพุร้อนที่โฆษณาว่าเป็นน้ำพุร้อนไหลเองตามธรรมชาติแห่งเดียวในเกาหลี น้ำส่งตามท่อจากเขาอึงบงซานเป็นระยะ 4 กม. โดยไม่ต้องสูบหรืออุ่น มาสู่ห้องอาบน้ำขนาดใหญ่ (ไม่จำกัดเวลา) บ่อกลางแจ้ง บ่อครอบครัว และ Spa World แบบใส่ชุดว่ายน้ำ (อ่างฟองอากาศ สระเด็ก) ช่วงพีก: กลางธันวาคมถึงต้นมีนาคม กลางกรกฎาคมถึงสิงหาคม และชูซอก</p>
@@ -1016,7 +1022,7 @@
   <div class="dlinks"></div>
   <div class="verify">ข้อมูลจากแหล่งที่เผยแพร่ · ยังไม่ได้ไปเช็กถึงที่ · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="spa-valley-daegu">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/39/4081039_image2_1.jpg" alt="스파밸리 워터파크" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">ภาพ: องค์การส่งเสริมการท่องเที่ยวเกาหลี (KOGL ประเภทที่ 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">แทกู · คาชังมยอน (ทัลซองกุน) · น้ำพุร้อน</span></div>
   <h3>Spa Valley <span class="nko" lang="ko">스파밸리</span></h3>
   <p class="dfeat">สวนน้ำน้ำพุร้อนที่คาชัง ทางใต้ของแทกู มีโซนในร่มและกลางแจ้ง สวนสัตว์ Nature Park และโรงแรมในพื้นที่ ต้องใส่ชุดว่ายน้ำและหมวกว่ายน้ำ จอดรถฟรีวันธรรมดา ส่วนวันศุกร์ถึงวันอาทิตย์ ₩3,000</p>
@@ -1025,7 +1031,7 @@
   <div class="dlinks"></div>
   <div class="verify">ข้อมูลจากแหล่งที่เผยแพร่ · ยังไม่ได้ไปเช็กถึงที่ · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="sanbangsan-oncheon">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/24/3569424_image2_1.jpg" alt="제주 산방산탄산온천" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">ภาพ: องค์การส่งเสริมการท่องเที่ยวเกาหลี (KOGL ประเภทที่ 3)</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">ซอกวิโพ (เชจู) · อันด็อกมยอน (เขาซันบังซัน) · น้ำพุร้อน</span></div>
   <h3>Sanbangsan Carbonate Hot Spring <span class="nko" lang="ko">산방산탄산온천</span></h3>
   <p class="dfeat">น้ำพุร้อนสาธารณะแห่งแรกของเชจู เป็นน้ำพุคาร์บอเนตตามธรรมชาติ (อ้างว่ามีคาร์บอเนตมากกว่าน้ำพุร้อนทั่วไปในเกาหลีห้าเท่า) มีบ่อแช่ในร่ม สระกลางแจ้ง (จ่ายเพิ่ม ใส่ชุดว่ายน้ำ หรือกางเกงขาสั้นกับเสื้อยืด มีให้เช่า ₩2,000) และโซนจิมจิลบังเตาไฟ (จ่ายเพิ่ม) ผู้พักอาศัยในเชจูจ่ายถูกกว่า</p>

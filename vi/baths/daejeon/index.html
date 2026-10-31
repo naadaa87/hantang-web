@@ -449,6 +449,12 @@
   .rx-regions a span{font-family:var(--mono);font-size:11px;color:var(--mute);font-weight:500;align-self:center}
   .rx-regions a.on{border-color:var(--blue);color:var(--blue)}
   .rx-credits{margin-top:24px;font-size:12.5px;color:var(--mute);line-height:1.7}
+  .rx-phs{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(190px,220px);gap:14px;overflow-x:auto;padding:4px 0 10px;scroll-snap-type:x proximity;max-width:100%}
+  .rx-ph{display:block;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;scroll-snap-align:start;color:var(--ink)}
+  .rx-ph img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--blue-tint)}
+  .rx-ph span{display:block;font-weight:700;font-size:14.5px;line-height:1.35;padding:10px 12px 0;word-break:keep-all}
+  .rx-ph small{display:block;font-size:12px;color:var(--mute);padding:2px 12px 12px}
+  .rx-ph:hover{border-color:var(--blue)}
   .pc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
   .pcard{border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden;scroll-margin-top:84px}
   .pcard .pimg{aspect-ratio:16/9;max-width:100%;background:var(--blue-tint);color:var(--blue);display:flex;align-items:center;justify-content:center;position:relative}
@@ -495,8 +501,13 @@
       near=true; msg.textContent=''; apply();
     }, function(){ msg.textContent=nb.dataset.fail; }, {timeout:10000, maximumAge:600000});
   });
-  if(location.hash){ var el=document.getElementById(location.hash.slice(1)); if(el){ el.style.background='var(--blue-tint)'; } }
-  apply();
+  function mark(){
+    if(!location.hash) return; var el=document.getElementById(location.hash.slice(1)); if(!el||!el.classList.contains('pl')) return;
+    if(el.hidden){ q.value=''; sel.value=''; ft='all'; tags={}; document.querySelectorAll('[data-ft]').forEach(function(x){x.classList.toggle('on',x.dataset.ft==='all')}); document.querySelectorAll('[data-tg]').forEach(function(x){x.classList.remove('on');x.setAttribute('aria-pressed','false')}); apply(); el.scrollIntoView(); }
+    items.forEach(function(li){ if(li!==el) li.style.background=''; }); el.style.background='var(--blue-tint)';
+  }
+  window.addEventListener('hashchange', mark);
+  apply(); mark();
 })();
 </script>
 <footer>

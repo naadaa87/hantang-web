@@ -701,6 +701,12 @@
   .rx-regions a span{font-family:var(--mono);font-size:11px;color:var(--mute);font-weight:500;align-self:center}
   .rx-regions a.on{border-color:var(--blue);color:var(--blue)}
   .rx-credits{margin-top:24px;font-size:12.5px;color:var(--mute);line-height:1.7}
+  .rx-phs{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(190px,220px);gap:14px;overflow-x:auto;padding:4px 0 10px;scroll-snap-type:x proximity;max-width:100%}
+  .rx-ph{display:block;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;scroll-snap-align:start;color:var(--ink)}
+  .rx-ph img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--blue-tint)}
+  .rx-ph span{display:block;font-weight:700;font-size:14.5px;line-height:1.35;padding:10px 12px 0;word-break:keep-all}
+  .rx-ph small{display:block;font-size:12px;color:var(--mute);padding:2px 12px 12px}
+  .rx-ph:hover{border-color:var(--blue)}
   .pc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
   .pcard{border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden;scroll-margin-top:84px}
   .pcard .pimg{aspect-ratio:16/9;max-width:100%;background:var(--blue-tint);color:var(--blue);display:flex;align-items:center;justify-content:center;position:relative}
@@ -746,7 +752,7 @@
   <div class="dlinks"></div>
   <div class="verify">信息来自公开资料 · 待实地核实 · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="spa-lei">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/72/2024972_image2_1.jpg" alt="스파레이" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">照片：韩国观光公社（KOGL 第3类）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">首尔 · 新沙 / 蚕院 · 24小时桑拿</span></div>
   <h3>Spa Lei (women only) <span class="nko" lang="ko">스파레이</span></h3>
   <p class="dfeat">新沙/蚕院一带的女性专用24小时桑拿，在原址经营了约20年：有露天浴池、海水浴池、烧松木的汗蒸窑，红土房、炭房和盐房，还有美甲店。网上未公布价格；2025–2026年的攻略写的是12小时约 ₩15,000–20,000，床位另收少量费用。</p>
@@ -800,7 +806,7 @@
   <div class="dlinks"></div>
   <div class="verify">信息来自公开资料 · 待实地核实 · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="jjimjil" id="park-habio">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/43/3095643_image2_1.jpg" alt="파크하비오 워터킹덤&amp;스파" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType1.do" target="_blank" rel="noopener">照片：韩国观光公社（KOGL 第1类）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">首尔 · 文井（松坡） · 汗蒸房</span></div>
   <h3>Park Habio Water Kingdom &amp; Jjimjil Spa <span class="nko" lang="ko">파크하비오 워터킹덤 &amp; 찜질스파</span></h3>
   <p class="dfeat">文井的一座圣托里尼主题室内水上乐园，附设汗蒸房和桑拿；水上乐园（工作日 ₩65,000）有造浪池、激流和滑道。</p>
@@ -827,7 +833,7 @@
   <div class="dlinks"></div>
   <div class="verify">信息来自公开资料 · 待实地核实 · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="spa" id="spaland-centum">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/02/3544802_image2_1.JPEG" alt="센텀시티 스파랜드" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">照片：韩国观光公社（KOGL 第3类）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · Centum City（海云台区） · 水疗乐园</span></div>
   <h3>Spa Land Centum City <span class="nko" lang="ko">스파랜드 센텀시티</span></h3>
   <p class="dfeat">位于新世界百货 Centum City 店内的温泉水疗：18个浴池引自两处天然温泉，另有13间主题汗蒸房、户外泡脚池和拉面咖啡馆；近一半客人是外国游客。不接待7岁以下儿童；超出前4小时的部分另行收费；手环就是电子钱包，离场时统一结账。</p>
@@ -836,7 +842,7 @@
   <div class="dlinks"></div>
   <div class="verify">信息来自公开资料 · 待实地核实 · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="hurshimchung">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/37/4090237_image2_1.jpg" alt="허심청" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">照片：韩国观光公社（KOGL 第3类）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · 东莱温泉 · 温泉</span></div>
   <h3>Hurshimchung <span class="nko" lang="ko">허심청</span></h3>
   <p class="dfeat">东莱温泉的地标澡堂，1991年在农心酒店旁开业，有40多个浴池，包括洞穴浴、露天浴和应季草本浴，3层是主题汗蒸区（另收费），还有一家德式啤酒屋。酒店住客通常立减50%；可免费停车3–4小时。</p>
@@ -890,7 +896,7 @@
   <div class="dlinks"></div>
   <div class="verify">信息来自公开资料 · 待实地核实 · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="taejongdae-oncheon">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/85/3547085_image2_1.jpg" alt="태종대온천찜질방" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType1.do" target="_blank" rel="noopener">照片：韩国观光公社（KOGL 第1类）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · 影岛（太宗台） · 温泉</span></div>
   <h3>Taejongdae Oncheon Jjimjilbang <span class="nko" lang="ko">태종대온천찜질방</span></h3>
   <p class="dfeat">影岛上一家市营（釜山设施公团）的24小时温泉汗蒸房，有金字塔浴、露天浴和保健浴，另有六间汗蒸房和健身房。</p>
@@ -917,7 +923,7 @@
   <div class="dlinks"></div>
   <div class="verify">信息来自公开资料 · 待实地核实 · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="bath" id="halmae-tang">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/48/3083448_image2_1.jpg" alt="할매탕" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">照片：韩国观光公社（KOGL 第3类）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">釜山 · 海云台 · 街坊澡堂</span></div>
   <h3>Halmae-tang <span class="nko" lang="ko">할매탕</span></h3>
   <p class="dfeat">海云台的一家四层街坊温泉澡堂，拥有自家900米深的温泉井，2003年更名为 Halmae-tang，2023年10月装修后重新开业；女浴在3层，男浴在4层，2层是需预约的家庭浴池（₩80,000）。价格是2023年重新开业时的数据，而附近的澡堂在2026年已经涨价。</p>
@@ -962,7 +968,7 @@
   <div class="dlinks"></div>
   <div class="verify">信息来自公开资料 · 待实地核实 · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="termeden">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/78/3566478_image2_1.jpg" alt="테르메덴" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">照片：韩国观光公社（KOGL 第3类）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">利川市（京畿道） · 暮伽面 · 温泉</span></div>
   <h3>Termeden <span class="nko" lang="ko">테르메덴</span></h3>
   <p class="dfeat">号称韩国唯一的德式温泉度假村，位于利川，有漂流河、露天浴池、室内泳池，以及提供租借衣物的汗蒸房；免费停车。室内外均须穿泳衣、戴泳帽；所列价格为黄金季价格。</p>
@@ -989,7 +995,7 @@
   <div class="dlinks"></div>
   <div class="verify">信息来自公开资料 · 待实地核实 · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="cheoksan-oncheon">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/75/2709375_image2_1.jpg" alt="척산온천휴양촌" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">照片：韩国观光公社（KOGL 第3类）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">束草（江原特别自治道） · 尺山 · 温泉</span></div>
   <h3>Cheoksan Oncheon Resort <span class="nko" lang="ko">척산온천휴양촌</span></h3>
   <p class="dfeat">江原地区第一处温泉（1973年开业），是束草的度假型澡堂，有露天浴池、桑拿、夏季户外泳池（10:00–18:00），以及按小时计费的家庭温泉房（3小时：两人 ₩50,000，四人 ₩70,000）。附近有免费的尺山泡脚公园（3月至11月开放）。</p>
@@ -998,7 +1004,7 @@
   <div class="dlinks"></div>
   <div class="verify">信息来自公开资料 · 待实地核实 · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="deokgu-oncheon">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/33/3503533_image2_1.jpg" alt="덕구온천 스파월드" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">照片：韩国观光公社（KOGL 第3类）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">蔚珍（庆尚北道） · 北面（应峰山） · 温泉</span></div>
   <h3>Deokgu Oncheon Resort <span class="nko" lang="ko">덕구온천 리조트</span></h3>
   <p class="dfeat">庆尚北道一处偏远的度假村，使用号称韩国唯一的天然自涌温泉：泉水从应峰山经4公里管道引来，不抽水也不加热，供应大浴场（不限时）、露天浴池、家庭浴池，以及须穿泳衣的 Spa World（气泡浴、儿童池）。旺季：12月中旬至次年3月初、7月中旬至8月、中秋节。</p>
@@ -1016,7 +1022,7 @@
   <div class="dlinks"></div>
   <div class="verify">信息来自公开资料 · 待实地核实 · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="spa-valley-daegu">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/39/4081039_image2_1.jpg" alt="스파밸리 워터파크" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">照片：韩国观光公社（KOGL 第3类）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">大邱 · 嘉昌面（达城郡） · 温泉</span></div>
   <h3>Spa Valley <span class="nko" lang="ko">스파밸리</span></h3>
   <p class="dfeat">大邱南边嘉昌的温泉水上乐园，分室内和户外区，园区内还有 Nature Park 动物园和酒店；须穿泳衣、戴泳帽。工作日免费停车，周五至周日停车费 ₩3,000。</p>
@@ -1025,7 +1031,7 @@
   <div class="dlinks"></div>
   <div class="verify">信息来自公开资料 · 待实地核实 · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="sanbangsan-oncheon">
-  <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
+  <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/24/3569424_image2_1.jpg" alt="제주 산방산탄산온천" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">照片：韩国观光公社（KOGL 第3类）</a></span></div>
   <div class="dtop"><span class="b-city" style="position:static">西归浦（济州） · 安德面（山房山） · 温泉</span></div>
   <h3>Sanbangsan Carbonate Hot Spring <span class="nko" lang="ko">산방산탄산온천</span></h3>
   <p class="dfeat">济州第一处公共温泉：天然碳酸泉（号称碳酸含量是韩国一般温泉的五倍），有室内浴池、露天泳池（需加购；穿泳衣或短裤加T恤，可租借，₩2,000）以及火窑汗蒸区（需加购）。济州居民价格更低。</p>
