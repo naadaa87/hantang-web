@@ -2,6 +2,7 @@ User-agent: *
 Disallow: /tools/
 Disallow: /admin/
 Disallow: /api/
+Disallow: /offline/
 Allow: /
 
-Sitemap: https://hantang-web.pages.dev/sitemap.xml
+Sitemap: https://hantang.kr/sitemap.xml

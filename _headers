@@ -33,3 +33,10 @@
   X-Robots-Tag: noindex, nofollow
 /offline/*
   X-Robots-Tag: noindex
+/ko/*
+  Content-Language: ko
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+# 미리보기 배포 주소(<해시>.hantang-web.pages.dev)는 검색에 나오지 않게
+https://:version.hantang-web.pages.dev/*
+  X-Robots-Tag: noindex

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>한탕 HANTANG — 외국인을 위한 찜질방·목욕탕·사우나 안내</title>
+  <link>https://hantang.kr/ko/</link>
+  <description>전국 목욕탕·찜질방·사우나 5,640곳을 지도와 함께 찾고, 외국인 친구에게 영어·일본어·중국어·베트남어·태국어·러시아어 안내를 보내세요. 업주용 외국인 손님 맞이 가이드와 외국어 안내문도 있습니다.</description>
+  <language>ko</language>
+  <atom:link href="https://hantang.kr/ko/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>외국인 손님 맞이 가이드: 목욕탕·찜질방이 미리 준비할 것 — 한탕</title>
+    <link>https://hantang.kr/ko/guide/foreign-guests/</link>
+    <guid isPermaLink="true">https://hantang.kr/ko/guide/foreign-guests/</guid>
+    <description>외국인 손님이 카운터 앞에서 망설이는 이유와, 말이 잘 통하지 않아도 편하게 이용하도록 업장에서 미리 준비해 둘 것을 순서대로 정리했습니다.</description>
+    <pubDate>Sun, 08 Nov 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>목욕탕·찜질방 외국어 안내문 모음: 영어·일본어·중국어 등 7개 언어, 인쇄용</title>
+    <link>https://hantang.kr/ko/guide/signs/</link>
+    <guid isPermaLink="true">https://hantang.kr/ko/guide/signs/</guid>
+    <description>샤워 먼저, 수건은 탕 밖에, 사진 촬영 금지, 문신 안내까지. 외국인 손님에게 꼭 필요한 안내문 23가지를 한국어와 7개 외국어로 골라 인쇄할 수 있습니다.</description>
+    <pubDate>Sun, 08 Nov 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>외국인 관광객에게 우리 목욕탕 알리는 법: 구글 지도·네이버 지도·카카오맵·한탕</title>
+    <link>https://hantang.kr/ko/guide/listing-tips/</link>
+    <guid isPermaLink="true">https://hantang.kr/ko/guide/listing-tips/</guid>
+    <description>외국인 손님은 지도 앱과 여행 사이트에서 목욕탕을 고릅니다. 업장 정보를 어디에, 어떻게 올려 두면 외국인 검색에 잘 보이는지 정리했습니다.</description>
+    <pubDate>Sun, 08 Nov 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>외국인 친구와 찜질방·목욕탕 가기: 미리 알려 줄 것 10가지 — 한탕</title>
+    <link>https://hantang.kr/ko/guide/with-friends/</link>
+    <guid isPermaLink="true">https://hantang.kr/ko/guide/with-friends/</guid>
+    <description>외국인 친구를 처음 찜질방에 데려갈 때 출발 전에 알려 주면 좋은 것들입니다. 친구 나라 말로 된 한탕 안내 링크도 함께 정리했습니다.</description>
+    <pubDate>Sun, 08 Nov 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>찜질방·목욕탕·때밀이, 영어·일본어·중국어로 뭐라고 할까 — 한탕</title>
+    <link>https://hantang.kr/ko/guide/words/</link>
+    <guid isPermaLink="true">https://hantang.kr/ko/guide/words/</guid>
+    <description>찜질방은 영어로 jjimjilbang, 때밀이는 일본어로 アカスリ, 중국어로 搓澡. 외국인에게 설명하거나 외국어로 검색할 때 쓰는 말을 7개 언어로 정리했습니다.</description>
+    <pubDate>Sun, 08 Nov 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>전국 목욕탕·찜질방 현황: 인허가 자료로 본 5,640곳 — 한탕</title>
+    <link>https://hantang.kr/ko/guide/statistics/</link>
+    <guid isPermaLink="true">https://hantang.kr/ko/guide/statistics/</guid>
+    <description>행정안전부 목욕장업 인허가 자료에서 영업 중인 목욕탕·찜질방·사우나·한증막을 지역별, 종류별, 인허가 연도별로 정리했습니다.</description>
+    <pubDate>Sun, 08 Nov 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>전국 찜질방·목욕탕·사우나 5,640곳 전체 목록 — 한탕</title>
+    <link>https://hantang.kr/ko/baths/</link>
+    <guid isPermaLink="true">https://hantang.kr/ko/baths/</guid>
+    <description>전국의 인허가 찜질방·사우나·목욕탕·세신샵 5,640곳을 이름, 지역, 거리로 찾아보세요. 지도 링크와 길찾기, 택시 기사님께 보여 줄 한글 주소 카드도 함께 있습니다.</description>
+    <pubDate>Sun, 08 Nov 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>명동·홍대·해운대 근처 찜질방·목욕탕·사우나 찾기 — 한탕</title>
+    <link>https://hantang.kr/ko/baths/near/</link>
+    <guid isPermaLink="true">https://hantang.kr/ko/baths/near/</guid>
+    <description>명동, 홍대, 강남, 동대문, 해운대, 제주시 등 관광지와 역 25곳을 기준으로 가까운 찜질방·목욕탕·사우나를 거리순으로 보여 줍니다. 구글·네이버·카카오 지도 바로가기 포함.</description>
+    <pubDate>Sun, 08 Nov 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>평점 높은 인기 찜질방·목욕탕·사우나 (2026) — 한탕</title>
+    <link>https://hantang.kr/ko/baths/popular/</link>
+    <guid isPermaLink="true">https://hantang.kr/ko/baths/popular/</guid>
+    <description>구글 지도, 카카오맵, 예약 사이트에서 많은 방문객이 높은 평점을 준 목욕탕·스파·세신샵 11곳입니다. 돈을 내고 이 목록에 오를 수는 없습니다.</description>
+    <pubDate>Sun, 08 Nov 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>전국 온천 마을과 무료 족욕장 — 온양·유성·수안보 — 한탕</title>
+    <link>https://hantang.kr/ko/baths/hot-springs/</link>
+    <guid isPermaLink="true">https://hantang.kr/ko/baths/hot-springs/</guid>
+    <description>온양, 유성, 수안보, 부곡, 백암, 덕산 등 전국의 온천 마을과 무료로 쓸 수 있는 공공 족욕장을 소개합니다. 수질, 운영 시간, 찾아가는 길을 함께 정리했습니다.</description>
+    <pubDate>Sun, 08 Nov 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>1인 사우나·프라이빗 사우나·1인 세신샵 모음 — 한탕</title>
+    <link>https://hantang.kr/ko/baths/private/</link>
+    <guid isPermaLink="true">https://hantang.kr/ko/baths/private/</guid>
+    <description>서울·부산을 비롯한 여러 지역의 프라이빗 욕실, 1인 사우나, 1인 세신샵(때밀이)을 모았습니다. 곳마다 요금, 이용 시간, 예약 방법을 함께 정리했습니다.</description>
+    <pubDate>Sun, 08 Nov 2026 09:00:00 +0900</pubDate>
+  </item>
+</channel>
+</rss>

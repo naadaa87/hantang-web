@@ -1,0 +1,55 @@
+# HANTANG 한탕
+
+> A guide to Korean bathhouses (mogyoktang), jjimjilbang, saunas, hot springs and body-scrub (seshin) shops for foreign visitors, in English, Japanese, Traditional and Simplified Chinese, Vietnamese, Thai and Russian, with a Korean edition for hosts and bathhouse owners. It lists all 5,640 licensed, operating bathhouses in South Korea from the Ministry of the Interior and Safety licence data (2026-10-31), with map links and a taxi card in Korean.
+
+Facts used across the site: list order is random on every visit and nobody pays for placement; the "HANTANG Top Rated" badge follows published rating thresholds; phone numbers from licence data are never published; prices and hours on detailed cards carry the date they were checked.
+
+## Guides (English)
+- [Your first tang, step by step](https://hantang.kr/guide/first-visit/): The whole visit in order, from the shoe locker to the checkout counter, with what to say and what to do at the three moments where first-timers freeze.
+- [Mogyoktang, sauna, jjimjilbang, hanjeungmak, oncheon: which is which](https://hantang.kr/guide/bath-types/): Six Korean words for a place to bathe or sweat, one legal category. What each kind of place has and lacks, what it costs, how to spot it, and which to pick for your plan.
+- [The unwritten rules](https://hantang.kr/guide/etiquette/): Every rule of the Korean bath, grouped by where you are standing, with the reason behind each one, what happens if you break it, and the few rules that are actually law.
+- [Tattoos in Korean saunas: the real rules](https://hantang.kr/guide/tattoos/): No Korean law bans tattoos in a bath. Refusals and cover-up rules are house policy, written down mostly by hotel pools and saunas. What is documented, what is hearsay, and what to do.
+- [Seshin, explained](https://hantang.kr/guide/seshin/): The Korean full-body scrub, from the Italy towel to the table: what happens, what it costs in 2025–26, how to ask for gentle or hard, and who should skip it.
+- [Inside: every pool and room explained](https://hantang.kr/guide/rooms/): Pool by pool and room by room: the temperatures that have been published, what each wall is claimed to do and what is actually known, how long to stay, and a rotation that works.
+- [Sikhye, eggs and banana milk](https://hantang.kr/guide/food/): What the jjimjilbang snack counter sells, how the three classic items got there, what they cost in 2026 and how to order them on your wristband.
+- [What it costs, when it opens, what to bring](https://hantang.kr/guide/prices-hours/): Admission by type of bath and city, with dates. What is included, what costs extra, hours and closing days, night rates and time limits, and a packing list.
+- [Sleeping overnight in a jjimjilbang](https://hantang.kr/guide/overnight/): A night on a heated floor for about ₩14,000–20,000 in Seoul. Which Seoul and Busan places still allow it in 2026, how the night runs, what it costs, and who should book a hotel instead.
+- [Heat, cold and your body](https://hantang.kr/guide/health-safety/): How long to stay in, when to get out, who should not go in at all, and which of the health claims on the wall have evidence behind them. From Korean officials, clinicians and the sauna research.
+- [Kids, families, women and special situations](https://hantang.kr/guide/families/): The age limit for children in the opposite-sex bath, how families split and meet, women-only venues, accessibility, modesty, LGBTQ+ visitors, periods, scars and older travelers.
+- [40 bathhouse phrases and the signs you'll see](https://hantang.kr/guide/phrases/): Every phrase from the HANTANG game, grouped by where you will use it, plus the signs on the wall, what the counter may ask you, and how the polite -yo ending works.
+- [A short history of the Korean bath](https://hantang.kr/guide/history/): From Joseon sweat houses and the first public bathhouses to the jjimjilbang boom and today's closures. How Korea came to bathe together, and why to see the neighborhood tang now.
+- [Where to go: Seoul, Busan and the hot-spring towns](https://hantang.kr/guide/regions/): Seoul's baths cluster around Dongdaemun, Myeongdong and Hongdae; Busan adds hot springs and seawater beside the beach; six old spa towns are a train or bus ride away. What is open, what has closed, and what each is worth.
+
+## Directory
+- [All bathhouses by region](https://hantang.kr/baths/): nationwide search, near me, saved list
+- [Bathhouses near popular areas](https://hantang.kr/baths/near/): 25 areas such as Myeongdong, Hongdae, Gangnam, Haeundae and Jeju City, closest first
+- [Top rated](https://hantang.kr/baths/popular/), [Hot-spring towns and foot baths](https://hantang.kr/baths/hot-springs/), [Private and one-person saunas](https://hantang.kr/baths/private/)
+- [Seoul](https://hantang.kr/baths/seoul/): 622 places
+- [Busan](https://hantang.kr/baths/busan/): 637 places
+- [Incheon](https://hantang.kr/baths/incheon/): 208 places
+- [Daegu](https://hantang.kr/baths/daegu/): 224 places
+- [Daejeon](https://hantang.kr/baths/daejeon/): 86 places
+- [Ulsan](https://hantang.kr/baths/ulsan/): 160 places
+- [Sejong](https://hantang.kr/baths/sejong/): 18 places
+- [Gyeonggi](https://hantang.kr/baths/gyeonggi/): 777 places
+- [Gangwon](https://hantang.kr/baths/gangwon/): 289 places
+- [Chungbuk](https://hantang.kr/baths/chungbuk/): 161 places
+- [Chungnam](https://hantang.kr/baths/chungnam/): 253 places
+- [Jeonbuk](https://hantang.kr/baths/jeonbuk/): 290 places
+- [Jeonnam-Gwangju](https://hantang.kr/baths/jeonnam-gwangju/): 558 places
+- [Gyeongbuk](https://hantang.kr/baths/gyeongbuk/): 450 places
+- [Gyeongnam](https://hantang.kr/baths/gyeongnam/): 760 places
+- [Jeju](https://hantang.kr/baths/jeju/): 147 places
+
+## Other languages
+- [日本語](https://hantang.kr/ja/)
+- [繁體中文](https://hantang.kr/zh-hant/)
+- [简体中文](https://hantang.kr/zh-hans/)
+- [Tiếng Việt](https://hantang.kr/vi/)
+- [ภาษาไทย](https://hantang.kr/th/)
+- [Русский](https://hantang.kr/ru/)
+- [한국어](https://hantang.kr/ko/)
+
+## For bathhouse owners (Korean)
+- [Register a bathhouse for free](https://hantang.kr/partner/)
+- [Welcoming foreign guests](https://hantang.kr/ko/guide/foreign-guests/), [Printable notices in 7 languages](https://hantang.kr/ko/guide/signs/)

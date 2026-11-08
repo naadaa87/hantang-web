@@ -27,7 +27,7 @@
 | `robots.txt` | 검색엔진 수집 허용 설정 (`/tools/`·`/admin/`·`/api/`는 제외) |
 | `tools/kto/` | 내부 도구: 한국관광공사 관광정보 API로 목욕·온천 시설 사진(공공누리)을 모으는 화면. 검색엔진에 노출되지 않음 |
 | `sitemap.xml` | 검색엔진용 사이트맵 (언어별 메인·가이드·시설 목록 페이지와 `/play/` 포함) |
-| `play/index.html` | 한탕 온라인 게임 본체 (단일 파일, hantang-web.pages.dev/play) |
+| `play/index.html` | 한탕 온라인 게임 본체 (단일 파일, hantang.kr/play) |
 | `play/config.js` | 게임 온라인 설정. 비워 두면 오프라인으로 동작 |
 | `play/preview.png` | 홈페이지 게임 소개 섹션·링크 공유용 미리보기 |
 | `play/preview-*.png` | 언어별 페이지에 들어가는 게임 미리보기 (그 언어로 찍은 화면) |
@@ -57,14 +57,16 @@
 
 ## 배포 전·후 수정 포인트
 
-- **도메인 주소**: `index.html` 상단의 `canonical`, `og:url`, `og:image` 세 곳과 `sitemap.xml`, `robots.txt`의 주소가 `https://hantang.kr/`로 되어 있습니다. 다른 도메인을 쓰면 이 다섯 곳만 바꾸면 됩니다. 도메인 연결 전에는 발급받은 `*.pages.dev` 주소로 바꿔도 됩니다.
+- **도메인 주소**: 모든 페이지의 canonical·hreflang·og:url·og:image, `sitemap.xml`, `robots.txt`, RSS, 공유 그림 속 주소가 `https://hantang.kr/` 기준입니다. 주소는 개발용 소스 `site/build_site.py`의 `BASE` 한 곳에서 정하고 다시 빌드하면 전체가 바뀝니다. 예전 주소(`hantang-web.pages.dev`)나 `www.hantang.kr`로 들어오면, hantang.kr이 실제로 응답할 때만 같은 경로의 hantang.kr로 옮겨 줍니다(각 페이지 머리의 작은 스크립트). 미리보기 배포 주소(`<해시>.hantang-web.pages.dev`)에는 검색 제외(noindex) 헤더가 붙습니다.
 - **시설 정보**: 메인 페이지 카드(`data/baths.json`)와 시설 목록(`baths/`)은 개발용 소스의 `site/data/directory.json` 한 파일에서 만들어집니다. 지금 실린 시설은 모두 시설 공식 안내·언론·여행 플랫폼 자료로 정리한 것이고, 카드마다 "공식 정보 기준 · 현장 확인 예정"과 확인 시점(연-월)이 표시됩니다. 현장 실사를 마친 시설은 `verified`를 `true`로 바꾸면 "현장 확인 완료"로 바뀝니다. 공개 파일에는 전화번호·조사자·메모·청결 점수·제휴 의향을 넣지 않습니다. 실사 대시보드의 `publish_to_web.py`로 `data/baths.json`을 내보내면 메인 카드가 실사 데이터로 바뀌지만 시설 목록 페이지(`baths/`)는 그대로이니, 실사 결과는 `directory.json`에도 같이 반영하는 편이 좋습니다. 문을 닫은 곳(드래곤힐스파, 서울역 실로암사우나, 이태원랜드 등)은 목록에서 빼고 가이드 글에만 "폐업"으로 적었습니다.
 - **전국 목욕장 목록**: 행정안전부 「생활 목욕장업」 인허가 공공데이터(data.go.kr, 이용허락 제한 없음)에서 '영업' 상태인 곳만 골라 만들었습니다. 2026-10-31 기준 5,744곳 중 헬스장 부속 샤워 시설·회원 전용 시설 108곳과 폐업이 확인된 2곳을 빼고 5,634곳, 여기에 피부미용업으로 신고한 세신샵·한증막·효소찜질 6곳을 더해 5,640곳이 실려 있습니다. 시·군·구, 유형(목욕탕·찜질방·한증막 등), 1인·온천·해수·24시간 같은 특징으로 거르고, '내 주변' 버튼으로 가까운 순서로 볼 수 있습니다. 인허가 자료라 실제로는 문을 닫았거나 이름이 바뀐 곳이 섞여 있을 수 있고, 페이지에도 그렇게 안내합니다. 전화번호는 원자료에 있어도 싣지 않습니다. 각 시설에는 네이버 지도·카카오맵 검색 링크가 붙어 있어 방문자가 그쪽에서 사진과 후기를 볼 수 있습니다. 목록은 개발용 소스의 `site/data/build_index.py`로 다시 만듭니다.
 - **시설 사진**: 저작권 문제가 없는 사진만 씁니다. 한국관광공사 관광정보의 공공누리 제1·3유형 사진과 위키미디어 공용의 자유 이용 사진(CC0·CC BY 등)이고, 사진마다 출처를 표시합니다. 네이버 플레이스·카카오맵·블로그·인스타그램 사진은 올린 사람에게 저작권이 있고 약관상 퍼 오는 것도 금지돼 있어 쓰지 않습니다. 관광공사 사진은 `tools/kto/` 화면에 공공데이터포털에서 받은 인증키를 넣고 수집을 누르면 모입니다. 키는 그 화면 안에서만 쓰이고 저장되지 않습니다. 2026년 10월 31일 수집분(관광공사 등록 시설 197곳)에서 이름과 위치(800 m 이내)가 맞는 98곳의 대표사진을 전국 목록과 시설 카드에 붙였습니다. 관광지구·족욕장·공원처럼 특정 목욕장이 아닌 항목과 이름만 비슷한 다른 시설은 뺐습니다. 사진은 관광공사 서버의 원본을 그대로 불러오며(복사·편집 없음), 지역 페이지 아래에 공공누리 유형별로 출처를 적었습니다. 시설 주인에게 직접 사진을 받아 쓰는 경우에는 사용 허락을 글로 받아 두세요.
 - **가이드 글**: 개발용 소스의 `site/guides/en/*.md`(영어 원문)와 `i18n/out/<언어>/guides/*.md`(번역)에서 만들어집니다. 글마다 끝에 출처 목록이 붙어 있고, 요금·시간은 확인 시점을 함께 적었습니다. 글을 고칠 때는 `site/guides/WRITING.md`의 작성 규칙을 따르고 생성기로 페이지를 다시 만듭니다.
 - **이메일 폼**: PASS 웨이트리스트 폼은 현재 화면 데모입니다. 실제 수집은 [Formspree](https://formspree.io) 무료 플랜으로 form 태그에 action 주소만 넣으면 5분 내 연동됩니다.
 - **문의 메일**: `hello@hantang.kr`로 적어두었습니다. 실제 사용할 주소로 교체하세요.
-- **언어**: 영어(기본), 일본어, 중국어 번체, 중국어 간체, 베트남어, 태국어, 러시아어 7개 언어입니다. 언어별 페이지는 `/ja/`, `/zh-hant/`, `/zh-hans/`, `/vi/`, `/th/`, `/ru/` 에 있고, 페이지마다 hreflang·canonical·사이트맵이 서로 연결돼 있어 검색엔진이 언어별로 알맞은 페이지를 보여 줍니다. 영어 첫 화면에서는 방문자 브라우저 언어가 위 6개 중 하나면 맨 위에 그 언어 페이지 안내가 작게 뜹니다(자동 이동은 하지 않음).
+- **언어**: 영어(기본), 일본어, 중국어 번체, 중국어 간체, 베트남어, 태국어, 러시아어 7개 외국어와 한국어판입니다. 언어별 페이지는 `/ja/`, `/zh-hant/`, `/zh-hans/`, `/vi/`, `/th/`, `/ru/`, `/ko/` 에 있고, 같은 페이지가 있는 언어끼리 hreflang·canonical·사이트맵으로 서로 연결돼 있습니다. 영어 첫 화면에서는 방문자 브라우저 언어가 위 언어 중 하나면 맨 위에 그 언어 페이지 안내가 작게 뜹니다(자동 이동은 하지 않음).
+- **한국어판 (/ko/)**: 외국어판의 번역이 아니라 한국어 독자(외국인을 데려가는 한국 사람, 외국인 손님을 받는 업주, 한국어를 읽는 외국인)를 위해 따로 만든 영역입니다. 한국어 첫 화면, 전국·지역·관광지 주변·인기·온천·1인 사우나 목록(한국어), 한국어 글 6편(외국인 손님 맞이 가이드, 7개 언어 안내문 인쇄, 지도 앱에 업장 알리기, 외국인 친구와 찜질방 가기, 찜질방·때밀이 외국어 표기, 전국 목욕탕 현황)이 있습니다. 글 원문은 개발용 소스 `site/guides/ko/*.md`, 안내문 문장은 `site/data/signs.json`입니다.
+- **관광지·역 주변 (baths/near/)**: 명동·홍대·강남역·동대문·인사동·서울역·이태원·잠실·여의도·성수, 해운대·서면·남포동·광안리·부산역, 제주시·서귀포, 인천공항·경주·전주·대구·유성·강릉·속초·여수 25곳을 기준으로 인허가 좌표에서 가까운 목욕장을 거리순으로 보여 줍니다(8개 언어). 기준점·반경·소개 글은 `site/data/hubs.json`에서 고칩니다.
 - **문구 수정 시 주의**: 언어별 페이지는 영어 페이지를 바탕으로 생성기가 만든 파일입니다. `index.html` 문구만 직접 고치면 다른 언어 페이지에는 반영되지 않으니, 문구를 바꿀 때는 개발용 소스(`한탕_다국어_개발용소스`, 저장소 밖 보관)의 생성기로 7개 페이지를 함께 다시 만드는 편이 안전합니다.
 
 - **지도·길찾기**: 모든 시설에 구글 지도·네이버 지도·카카오맵 링크와 '길찾기·택시 카드' 버튼이 붙습니다. 택시 카드는 시설 이름과 주소를 큰 한글로 보여 주고 "기사님, 이 주소로 가 주세요"를 함께 띄우며, 주소 복사와 네이버·카카오(도보·대중교통)·구글(대중교통) 길찾기로 이어집니다. 지역 페이지에는 '지도' 보기가 있어 거른 결과를 지도 위에 점으로 보여 줍니다(Leaflet + OpenStreetMap, 방문자가 지도를 열 때만 불러옴). 방문자가 많아지면 OpenStreetMap 기본 타일 대신 유료 지도 타일(예: MapTiler) 키로 바꾸는 편이 좋습니다.
@@ -78,26 +80,44 @@
 - **공유하기**: 모든 페이지 머리의 'Share' 버튼과 오른쪽 아래 'Help' 버튼에서 엽니다. 휴대폰에서는 기기 기본 공유(카카오톡·Zalo·Max·iMessage 등 설치된 앱 전부)가 먼저 나오고, 언어별로 많이 쓰는 앱 버튼이 이어집니다. 영어 WhatsApp·Facebook·Messenger·X·Reddit·Threads·Telegram / 일본어 LINE·X·Instagram(복사)·Facebook·はてな / 중국어 번체 LINE·Facebook·Threads·WhatsApp / 중국어 간체 위챗(QR 코드)·샤오홍슈(복사+QR)·웨이보 / 베트남어 Zalo(복사+QR)·Facebook·Messenger / 태국어 LINE·Facebook·Messenger·X / 러시아어 Telegram·VK·WhatsApp·OK. 시설 길찾기 카드의 '이 시설 공유'는 그 시설 위치(#주소)로 바로 열리는 링크를 보냅니다. 앱 키가 필요한 카카오톡·Zalo 공식 버튼과 위챗 JS-SDK는 쓰지 않았습니다(휴대폰 기본 공유로 대신).
 - **도움말 (Help)**: 직원에게 보여 주는 한국어 문장 19개(로마자·각 언어 뜻), 1330 관광통역안내(해외 전화는 +82-2-1330), 긴급 112·119·1339, 내 주변 찾기·찜 목록·앱 설치. 문장은 해요체로 썼고 원어민 검수를 한 번 더 받으면 좋습니다. 1330 운영 시간은 자료마다 달라(24시간 또는 07–24시) 적지 않았습니다.
 - **검색 노출(SEO)**: 언어별 검색어 조사(`research/hantang final/`, 개발용 소스)를 바탕으로 페이지 제목·설명을 그 나라 사람이 실제로 쓰는 말로 새로 썼습니다(일본어 チムジルバン·アカスリ, 중국어 汗蒸幕·搓澡, 베트남어 Jjimjilbang·xông hơi, 태국어 จิมจิลบัง, 러시아어 чимчильбан 등). 시설 목록 첫 화면에는 언어별 표기를 모은 용어 상자가 있습니다. 사이트맵은 실제로 바뀐 날짜(lastmod)만 적고 구글이 쓰지 않는 changefreq·priority는 뺐습니다. 구조화 데이터는 Breadcrumb·Article·CollectionPage·Organization과, 인기·온천·1인 목욕탕처럼 작은 목록에만 장소 정보를 넣었습니다(평점은 넣지 않음 — 구글 규정상 직접 모은 평점은 표시 불가). 글꼴은 화면 표시를 막지 않게 불러와 중국처럼 구글 글꼴이 막힌 곳에서도 바로 보입니다.
-- **검색엔진 등록 (해 주실 일)**: ① Google Search Console → URL 접두어 `https://hantang-web.pages.dev/` 추가 → 'HTML 태그' 확인 코드를 복사해 알려 주시면 `site/data/verify.json`에 넣어 다시 배포합니다 → 사이트맵 `sitemap.xml` 제출. ② Bing Webmaster Tools → 'Search Console에서 가져오기'. ③ Yandex Webmaster(러시아어 검색 70%)도 같은 방식(메타 태그). ④ Naver·Bing·Yandex에는 관리자 화면의 'IndexNow 보내기' 버튼으로 새 페이지를 한 번에 알릴 수 있습니다. 바이두는 중국 내 인가(ICP) 없는 공유 주소라 효과가 낮아 지금은 권하지 않습니다. 자체 도메인을 연결하면 Cloudflare의 Crawler Hints를 켤 수 있고, 등록을 새 주소로 다시 해야 합니다.
+- **검색엔진용 파일**: `sitemap.xml`(8개 언어, hreflang 포함), `robots.txt`, 언어별 RSS(`/feed.xml`, `/ko/feed.xml` 등 — 네이버 서치어드바이저에 RSS로도 제출 가능), AI 검색 도구용 사이트 소개 `llms.txt`. 확인 코드는 `site/data/verify.json`(구글·빙·네이버·얀덱스는 메타 태그, 다음은 robots.txt 줄)에 넣고 다시 빌드합니다.
+- **검색엔진 등록 (해 주실 일)**: 아래 '도메인 연결 후 검색엔진 등록' 참고.
+
+## hantang.kr 도메인 연결 (Cloudflare 대시보드, 처음 한 번)
+
+1. **네임서버**: 도메인 구입처에서 네임서버를 Cloudflare가 알려 준 두 개(`dahlia.ns.cloudflare.com`, `eric.ns.cloudflare.com`)로 바꿉니다. 2026-11-08 확인 결과 이미 바뀌어 있습니다.
+2. **Pages에 도메인 붙이기**: Workers & Pages → `hantang-web` → Custom domains → Set up a custom domain → `hantang.kr` 입력 → Activate. 같은 방법으로 `www.hantang.kr`도 추가합니다. DNS 레코드와 인증서는 Cloudflare가 자동으로 만듭니다(몇 분~최대 하루).
+3. **확인**: `https://hantang.kr/` 이 열리면 끝입니다. 그때부터 `hantang-web.pages.dev`와 `www.hantang.kr`로 들어온 방문자는 페이지 안의 스크립트가 hantang.kr 같은 경로로 옮겨 줍니다.
+4. **(선택) 정식 301 이동**: 검색엔진에 주소 이전을 더 확실히 알리려면 Cloudflare → 계정 홈 → Bulk Redirects → Create list(`hantang-web.pages.dev` → `https://hantang.kr`, Preserve query string·Subpath matching·Preserve path suffix 체크, 301) → Create rule. `www`는 hantang.kr 영역의 Rules → Redirect Rules → 템플릿 'Redirect from WWW to root'로 처리합니다.
+
+## 도메인 연결 후 검색엔진 등록
+
+1. **Google Search Console**: '도메인' 속성으로 `hantang.kr` 추가 → DNS 확인 화면에 Cloudflare 자동 확인이 보이면 그것으로, 보이지 않으면 안내된 TXT 값을 Cloudflare → hantang.kr → DNS → Add record(Type TXT, Name @)에 붙여 넣고 확인 → 왼쪽 Sitemaps에 `sitemap.xml` 제출.
+2. **네이버 서치어드바이저** (searchadvisor.naver.com): 사이트 등록 `https://hantang.kr` → 'HTML 태그' 방식의 content 값을 `verify.json`의 `naver-site-verification`에 넣고 배포 → 소유 확인 → 요청 → 사이트맵 제출(`https://hantang.kr/sitemap.xml`)과 RSS 제출(`https://hantang.kr/ko/feed.xml`).
+3. **다음 웹마스터도구** (webmaster.daum.net): 사이트 등록 후 받은 PIN 코드 문자열을 `verify.json`의 `daum`에 넣고 배포하면 robots.txt 맨 위에 들어갑니다.
+4. **Bing Webmaster Tools**: 'Google Search Console에서 가져오기'로 한 번에 등록.
+5. **Yandex Webmaster**(러시아어 검색): 메타 태그 값을 `yandex-verification`에 넣고 배포.
+6. **IndexNow**: 업주 등록 기능 설정을 마치면 관리자 화면의 'IndexNow 보내기'로 Bing·Naver·Yandex에 새 주소를 한 번에 알립니다.
+7. 바이두는 중국 내 인가(ICP) 없는 사이트라 효과가 낮아 지금은 권하지 않습니다. Cloudflare의 Crawler Hints(Caching → Configuration)를 켜 두면 Bing·Yandex가 바뀐 페이지를 더 빨리 가져갑니다.
 
 ## 업주 등록 기능 설정 (처음 한 번, 브라우저에서)
 
 1. **KV 저장소 만들기**: Cloudflare 대시보드 → Storage & Databases → KV → Create → 이름 `hantang-partner`.
 2. **Pages 에 연결**: Workers & Pages → `hantang-web` → Settings → Bindings → Add → KV namespace → 변수 이름 **`HANTANG_KV`**, 방금 만든 `hantang-partner` 선택 → Save. (Production 에 추가)
 3. **관리자 화면 잠그기 (Zero Trust Access)**: Cloudflare 대시보드 → Zero Trust → Access → Applications → Add an application → Self-hosted.
-   - Application domain: `hantang-web.pages.dev`, Path: `admin` 을 넣고, 같은 앱에 도메인을 하나 더 추가해 Path `api/admin` 도 넣습니다.
+   - Application domain: `hantang.kr`, Path: `admin` 을 넣고, 같은 앱에 도메인을 하나 더 추가해 Path `api/admin` 도 넣습니다.
    - Policy: Allow → Include → Emails → 관리자 이메일(예: 본인 Gmail). 로그인 방법은 One-time PIN(이메일 인증번호)이면 충분합니다.
    - 저장 후 앱 화면의 **Application Audience (AUD) Tag** 값을 복사합니다. 팀 도메인(`<팀이름>.cloudflareaccess.com`)은 Zero Trust → Settings → Custom Pages 위쪽에서 확인합니다.
 4. **환경 변수 넣기**: Workers & Pages → `hantang-web` → Settings → Variables and Secrets → Add
    - `ACCESS_TEAM_DOMAIN` = `<팀이름>.cloudflareaccess.com`
    - `ACCESS_AUD` = 3번에서 복사한 AUD 값 (Type 을 Secret 으로)
-5. **다시 배포**: Deployments → 맨 위 배포의 ⋯ → Retry deployment. 이후 `hantang-web.pages.dev/admin/` 에 들어가 이메일 인증을 거치면 신청 목록이 보입니다.
+5. **다시 배포**: Deployments → 맨 위 배포의 ⋯ → Retry deployment. 이후 `hantang.kr/admin/` 에 들어가 이메일 인증을 거치면 신청 목록이 보입니다.
 
 설정 전에는 신청서가 "접수 시스템을 준비하고 있습니다"라고 안내하고, 관리자 API 는 항상 거부합니다(인증 값이 없으면 열리지 않도록 만들어 둠).
 
 ## 다음 단계 제안
 
-1. 도메인 확보·연결 후 Google Search Console과 Bing Webmaster에 sitemap 제출
+1. 도메인 연결 후 Google Search Console·네이버 서치어드바이저·Bing·다음·Yandex 등록과 sitemap 제출 (아래 순서)
 2. 시설 목록의 서울·부산 시설부터 현장 실사 → 온도·타투 정책·영어 안내 여부를 직접 확인하고 `verified` 표시
 3. 관광공사 사진은 6개월마다 `tools/kto/`로 다시 수집해 새로 등록된 시설을 반영하고, 실사 때 찍은 사진(또는 시설에서 허락받은 사진)을 차례로 추가
 4. 전국 목록은 공공데이터가 갱신될 때(분기 1회 정도) 다시 내려받아 폐업·신규를 반영

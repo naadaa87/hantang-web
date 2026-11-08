@@ -1,0 +1,30 @@
+{
+ "name": "HANTANG 한탕 — 한국 목욕 가이드",
+ "short_name": "HANTANG",
+ "description": "전국의 목욕탕을 한 곳씩 설명합니다. 물 온도, 문신(타투) 규정, 요금, 이용 예절까지 외국어로도 볼 수 있습니다.",
+ "lang": "ko",
+ "id": "/ko/",
+ "start_url": "/ko/",
+ "scope": "/",
+ "display": "standalone",
+ "background_color": "#FFFFFF",
+ "theme_color": "#1E6E9C",
+ "icons": [
+  {
+   "src": "/icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "/icons/maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}
