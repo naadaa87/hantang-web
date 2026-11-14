@@ -314,14 +314,24 @@
   .lang-pop button:hover{background:var(--stone)}
   .lang-pop .on{color:var(--blue);font-weight:700}
   .lang-pop .soon{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;color:var(--mute);background:var(--stone);border-radius:99px;padding:2px 7px}
+  .nav-me{margin-left:10px;font-size:12.5px;font-weight:700;border:1.5px solid var(--line);border-radius:99px;padding:6px 12px;white-space:nowrap;max-width:140px;overflow:hidden;text-overflow:ellipsis;background:#fff}
+  .nav-me:hover{border-color:var(--blue);color:var(--blue)}
+  .nav-me.in{border-color:#CFE0EC;color:var(--blue);background:var(--blue-tint)}
   .burger{display:none;margin-left:auto;width:40px;height:40px;border:1px solid var(--line);border-radius:10px;align-items:center;justify-content:center;background:#fff}
   .burger svg{display:block}
   @media (max-width:880px){
     .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:8px 4px 12px}
     .nav-links a{padding:12px 14px;font-size:15px}
     .nav-links.open{display:flex}
-    .burger{display:flex}
+    .burger{display:flex;margin-left:8px}
     .lang-wrap{margin-left:8px}
+    .nav-me{margin-left:auto;max-width:120px}
+  }
+  .brand .bkr{white-space:nowrap}
+  @media (max-width:480px){
+    .nav-in{gap:8px}
+    .brand .bkr{display:none}
+    .nav-me{max-width:104px;padding:6px 10px}
   }
 
   /* ---------- hero ---------- */
@@ -518,6 +528,7 @@
   .f-col h5{font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;color:#8B877F;margin-bottom:16px;font-weight:600}
   .f-col a{display:block;font-size:13.5px;margin-bottom:10px;opacity:.9}
   .f-col a:hover{color:#fff}
+  .f-bottom a{color:inherit;text-decoration:underline;text-underline-offset:3px}
   .f-bottom{border-top:1px solid #33312E;margin-top:44px;padding-top:22px;display:flex;justify-content:space-between;gap:16px;font-size:12px;flex-wrap:wrap}
   @media (max-width:860px){.f-in{grid-template-columns:1fr 1fr}}
 
@@ -628,6 +639,7 @@
     <div class="nav-links" id="navLinks">
       <a href="../baths/">Find a Bath</a>
       <a href="../guide/">First-Timer Guide</a>
+      <a href="../board/">Community</a>
       <a href="../#seshin">Seshin</a>
       <a href="../#stamps">Stamps</a>
       <a href="../#pass">PASS</a>
@@ -646,6 +658,7 @@
         <a role="menuitem" href="../ko/baths/" hreflang="ko" lang="ko">한국어</a>
       </div>
     </div>
+    <a class="nav-me" href="../me/" data-hc-me>Log in</a>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
       <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M1 1h16M1 7h16M1 13h16" stroke="#1B1A18" stroke-width="2" stroke-linecap="round"/></svg>
     </button>
@@ -670,6 +683,7 @@
   .dlinks{margin-top:14px;display:flex;gap:16px;font-size:13.5px;font-weight:700;color:var(--blue)}
   .dnote{margin-top:22px;font-size:14px;color:var(--mute);max-width:760px;line-height:1.7;border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:var(--stone)}
   .dcount{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--mute);margin-top:18px}
+  .pl-link{display:inline-block;margin-top:14px;font-size:13.5px;font-weight:700;color:var(--blue)}
   @media (max-width:760px){.dgrid{grid-template-columns:1fr}.dr{grid-template-columns:1fr}}
 </style><svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <symbol id="ty-bath" viewBox="0 0 48 48"><path d="M10 26h28a14 14 0 0 1-28 0z" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><path d="M17 20c-2-3 2-5 0-8M24 20c-2-3 2-5 0-8M31 20c-2-3 2-5 0-8" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/></symbol>
@@ -683,6 +697,7 @@
   .hx-links a,.hx-links button{font:inherit;font-size:12.5px;font-weight:700;line-height:1;color:var(--blue);background:#fff;border:1.5px solid #CFE0EC;border-radius:99px;padding:7px 11px;cursor:pointer;text-decoration:none;white-space:nowrap}
   .hx-links a:hover,.hx-links button:hover{border-color:var(--blue)}
   .hx-links .hx-go{background:var(--blue);border-color:var(--blue);color:#fff}
+  .hx-links .hx-rev{color:#9A6B00;border-color:#EBD9A8}
   .hx-links .hx-fav[aria-pressed="true"]{background:#FDECEF;border-color:#F2B8C4;color:#B4234A}
   .hx-top{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:800;letter-spacing:.02em;color:#7A4B00;background:linear-gradient(180deg,#FFF4D6,#FFE7A8);border:1px solid #F0CF76;border-radius:99px;padding:3px 9px 3px 7px;white-space:nowrap;vertical-align:middle}
   .hx-top svg{width:13px;height:13px;fill:#E0A100}
@@ -772,7 +787,7 @@
     sv.innerHTML=ks.map(function(k){var x=s[k];return '<li><a class="hn" lang="ko" href="'+esc(x.u)+'">♥ '+esc(x.n)+'</a><div class="hm">'+esc(x.t)+'</div></li>'}).join('');
     se.hidden=ks.length>0; sc.hidden=!ks.length; }
   sc.addEventListener('click',function(){try{localStorage.removeItem('hantang.saved.v1')}catch(e){} showSaved();});
-  document.addEventListener('hx:saved',showSaved); showSaved();
+  document.addEventListener('hx:saved',showSaved); document.addEventListener('hx:synced',showSaved); showSaved();
 })();
 </script><style>
   .rx-ctl{display:grid;gap:12px;margin-top:30px}
@@ -849,6 +864,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Open 24h</span><span class="bdg gray">Sleep OK</span><span class="bdg gray">English OK</span><span class="bdg gray">Mixed lounge</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">24 hours · no closing day</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath + lounge ₩14,000 day / ₩16,000 night · Child ₩7,000 day / ₩8,000 night (2–7 yrs) · Seshin from ₩25,000 (men); entry + scrub from ₩39,000 <small>(as of 2026-10)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Dongdaemun History &amp; Culture Park Station (Lines 2, 4, 5) exit 14; Gate 1, elevator to B3</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">서울 중구 장충단로 247 굿모닝시티 지하3층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/sparex-dongdaemun/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="sparex-dongmyo" data-hx="sparex-dongmyo" data-n="스파렉스 동묘" data-addr="서울 종로구 지봉로 19 시즌빌딩 12·13층" data-sub="SEOUL · Dongmyo / Changsin-dong · 24-hour sauna">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
@@ -858,6 +874,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Open 24h</span><span class="bdg gray">Sleep OK</span><span class="bdg gray">Mixed lounge</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">24 hours · no closing day</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath + lounge ₩14,000 day · Night ₩15,000 (Feb 2025 figure) · Child ₩10,000 youth (Feb 2025 figure) <small>(as of 2026-02)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Dongmyo Station (Lines 1, 6) exit 6, in front of you; entrance on 13F of the CIZN building</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">서울 종로구 지봉로 19 시즌빌딩 12·13층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/sparex-dongmyo/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="hongdae-bulgama" data-hx="hongdae-bulgama" data-n="홍대 24시 불가마 사우나" data-addr="서울 서대문구 신촌로 1 지하2층" data-sub="SEOUL · Hongdae / Sinchon · 24-hour sauna">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
@@ -867,6 +884,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Open 24h</span><span class="bdg gray">Sleep OK</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">24 hours</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath + lounge ₩11,000 day <small>(as of 2026-02)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Hongik University Station (Line 2) exit 4, about 5 min; B2 of the shopping building</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">서울 서대문구 신촌로 1 지하2층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/hongdae-bulgama/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="golden-sauna-myeongdong" data-hx="golden-sauna-myeongdong" data-n="황금사우나 명동" data-addr="서울 중구 명동8가길 27 지하2층" data-sub="SEOUL · Myeongdong · 24-hour sauna">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
@@ -876,6 +894,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Open 24h</span><span class="bdg gray">Sleep OK</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">24 hours</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath + lounge ₩20,000 <small>(as of 2026-02)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Myeongdong Station (Line 4) exit 9, about 2 min; B2</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">서울 중구 명동8가길 27 지하2층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/golden-sauna-myeongdong/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="spa-lei" data-hx="spa-lei" data-n="스파레이" data-addr="서울 서초구 강남대로107길 5 크레신빌딩" data-sub="SEOUL · Sinsa / Jamwon · 24-hour sauna">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/72/2024972_image2_1.jpg" alt="스파레이" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 3)</a></span></div>
@@ -885,6 +904,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Sleep OK</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">24 hours (one 2025 report; not confirmed)</span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Sinsa Station (Line 3); Cresyn Building on Gangnam-daero 107-gil</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">서울 서초구 강남대로107길 5 크레신빌딩</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/spa-lei/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2025-12</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="club-k-seolleung" data-hx="club-k-seolleung" data-n="클럽케이서울 선릉찜질방" data-addr="서울 강남구 선릉로 524 117호" data-sub="SEOUL · Seolleung (Gangnam) · 24-hour sauna">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
@@ -894,6 +914,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Open 24h</span><span class="bdg gray">Sleep OK</span><span class="bdg gray">Mixed lounge</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">24 hours</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath + lounge ₩17,000 weekday / ₩19,000 weekend <small>(as of 2025-02)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Seolleung Station (Line 2, Suin–Bundang Line)</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">서울 강남구 선릉로 524 117호</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/club-k-seolleung/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2025-02</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="hwanghak-golden-spa" data-hx="hwanghak-golden-spa" data-n="황학동 황금스파찜질방" data-addr="서울 중구 청계천로 400 롯데캐슬베네치아 지하2층" data-sub="SEOUL · Hwanghak-dong (Sindang / Dongmyo) · 24-hour sauna">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
@@ -903,6 +924,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Open 24h</span><span class="bdg gray">Sleep OK</span><span class="bdg gray">Mixed lounge</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">24 hours · no closing day</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath + lounge ₩13,000 day / ₩14,000 night · Child ₩10,000 (preschool, day or night) <small>(as of 2025-04)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Between Sindang and Dongmyo stations; B2 of the Lotte Castle Venezia apartment complex</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">서울 중구 청계천로 400 롯데캐슬베네치아 지하2층</span></span></div></div>
   <div class="dlinks"><a href="http://goldspa11.com/" target="_blank" rel="noopener">Official site ↗</a></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/hwanghak-golden-spa/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2025-04</div>
 </article><article class="dcard" data-region="seoul" data-type="hanjeungmak" id="supsok-hanbang-land" data-hx="supsok-hanbang-land" data-n="숲속한방랜드" data-addr="서울 서대문구 봉원사길 75-7" data-sub="SEOUL · Sinchon / Ansan (Seodaemun) · Hanjeungmak">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-kiln"/></svg></div>
@@ -912,6 +934,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Mixed lounge</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">06:30–22:00</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath ₩10,000 · Bath + lounge ₩16,000 (charcoal kilns) · Child ₩8,000 bath / ₩10,000 kilns (elementary) <small>(as of 2025-02)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Dongnimmun Station (Line 3) exit 4, or a bus from Sinchon Station; on Ansan behind Bongwonsa</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">서울 서대문구 봉원사길 75-7</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/supsok-hanbang-land/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-04</div>
 </article><article class="dcard" data-region="seoul" data-type="hanjeungmak" id="hana-mud" data-hx="hana-mud" data-n="하나머드 한증막" data-addr="서울 중구 을지로14길 7" data-sub="SEOUL · Euljiro / Myeongdong · Hanjeungmak">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-kiln"/></svg></div>
@@ -921,6 +944,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">English OK</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">09:00–22:00 (last entry 22:00)</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath + lounge ₩80,000–340,000 courses; basic ₩72,000 online <small>(as of 2026-10)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Euljiro 3-ga Station (Lines 2, 3) exit 10, about 1 min</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">서울 중구 을지로14길 7</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/hana-mud/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="seoul" data-type="hanjeungmak" id="miso-sauna" data-hx="miso-sauna" data-n="미소사우나" data-addr="서울 서대문구 서소문로 45 지하1층" data-sub="SEOUL · Chungjeongno · Hanjeungmak">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-kiln"/></svg></div>
@@ -930,6 +954,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">08:00–20:00</span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Chungjeongno Station exit 3, about 2 min; B1</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">서울 서대문구 서소문로 45 지하1층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/miso-sauna/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="jjimjil" id="park-habio" data-hx="park-habio" data-n="파크하비오 워터킹덤 &amp; 찜질스파" data-addr="서울 송파구 송파대로 111, 202동 지하1층" data-sub="SEOUL · Munjeong (Songpa) · Jjimjilbang">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/43/3095643_image2_1.jpg" alt="파크하비오 워터킹덤&amp;스파" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType1.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 1)</a></span></div>
@@ -939,6 +964,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Mixed lounge</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">10:00–18:00 · closed Tuesday, Wednesday</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath ₩15,000 weekday (sauna) · Bath + lounge ₩18,000 weekday · Child ₩14,000 sauna / ₩15,000 jjimjil (youth, weekday) <small>(as of 2025-02)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Munjeong Station (Line 8); B1 of building 202</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">서울 송파구 송파대로 111, 202동 지하1층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/park-habio/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2025-02</div>
 </article><article class="dcard" data-region="seoul" data-type="jjimjil" id="sealala" data-hx="sealala" data-n="씨랄라" data-addr="서울 영등포구 문래로 164 지하2층" data-sub="SEOUL · Mullae (Yeongdeungpo) · Jjimjilbang">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
@@ -948,6 +974,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">07:00–21:30</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath + lounge ₩25,000 <small>(as of 2026-02)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Mullae Station (Line 2) exit 4, about 8 min; B2</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">서울 영등포구 문래로 164 지하2층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/sealala/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="bath" id="siloam-junggok" data-hx="siloam-junggok" data-n="중곡동 실로암사우나" data-addr="서울 광진구 용마산로 173" data-sub="SEOUL · Junggok-dong (Gwangjin) · Neighborhood bath">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
@@ -957,6 +984,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">05:00–22:00</span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Junggok-dong, Gwangjin-gu; no station route published</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">서울 광진구 용마산로 173</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/siloam-junggok/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="spa" id="spaland-centum" data-hx="spaland-centum" data-n="스파랜드 센텀시티" data-addr="부산 해운대구 센텀남대로 35" data-sub="BUSAN · Centum City (Haeundae-gu) · Spa complex">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/02/3544802_image2_1.JPEG" alt="센텀시티 스파랜드" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 3)</a></span></div>
@@ -966,6 +994,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Mixed lounge</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">09:00–22:00 (last entry 21:00) · no closing day</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath + lounge ₩25,000 (4 hours) · Child ₩20,000 (elementary) <small>(as of 2026-09)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; late-2024 visitor reports conflict (one refused, others admitted), so ask at the counter.</span></div><div class="dr"><span class="dk">WATER</span><span class="dv">Two natural hot springs from 1,000 m: bicarbonate and sodium chloride</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Centum City Station (Line 2) exit 12, about 3 min; inside Shinsegae Centum City</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">부산 해운대구 센텀남대로 35</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/spaland-centum/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="hurshimchung" data-hx="hurshimchung" data-n="허심청" data-addr="부산 동래구 온천장로107번길 32" data-sub="BUSAN · Dongnae Oncheon · Hot spring">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/37/4090237_image2_1.jpg" alt="허심청" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 3)</a></span></div>
@@ -975,6 +1004,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Mixed lounge</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">Bath 05:30–22:00 (last entry 21:30) · Jjimjil 06:30–21:00 · no closing day</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath ₩15,000 weekday / ₩18,000 weekend &amp; holidays · Bath + lounge +₩4,000 (jjimjil add-on) · Child ₩11,000 / ₩12,000 elementary; ₩7,000 preschool <small>(as of 2026-09)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">WATER</span><span class="dv">Dongnae natural hot spring (temperature not published)</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Oncheonjang Station (Line 1), Dongnae</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">부산 동래구 온천장로107번길 32</span></span></div></div>
   <div class="dlinks"><a href="https://hotelnongshim.com" target="_blank" rel="noopener">Official site ↗</a></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/hurshimchung/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="haeundae-oncheon-center" data-hx="haeundae-oncheon-center" data-n="해운대온천센터" data-addr="부산 해운대구 중동2로 16" data-sub="BUSAN · Haeundae · Hot spring">
   <div class="dimg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Haeundae_Spa_Center.JPG/960px-Haeundae_Spa_Center.JPG" alt="해운대 온천센터" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://commons.wikimedia.org/wiki/File:Haeundae_Spa_Center.JPG" target="_blank" rel="noopener">Photo: Abasaa, Wikimedia Commons (Public domain)</a></span></div>
@@ -984,6 +1014,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">04:00–23:59 (Thursday from 06:00) · closed Wednesday; Seollal, Chuseok</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath ₩12,000 (up from ₩10,000 on 10 Sep 2026) · Seshin about ₩30,000 <small>(as of 2026-09)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">WATER</span><span class="dv">Seaside natural hot spring, 40–62 °C sodium-chloride, very salty</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Between Haeundae Station (Line 2) and the beach; ticket desk and women&#x27;s bath 4F, men&#x27;s 5F</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">부산 해운대구 중동2로 16</span></span></div></div>
   <div class="dlinks"><a href="https://haeundaespa.com" target="_blank" rel="noopener">Official site ↗</a></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/haeundae-oncheon-center/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="sauna24" id="hill-spa-dalmaji" data-hx="hill-spa-dalmaji" data-n="달맞이 힐스파" data-addr="부산 해운대구 영월길 117-7" data-sub="BUSAN · Dalmaji Hill (Haeundae) · 24-hour sauna">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
@@ -993,6 +1024,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Open 24h</span><span class="bdg gray">Sleep OK</span><span class="bdg gray">Mixed lounge</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">24 hours · no closing day</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath ₩12,000 (up from ₩10,000 on 1 Oct 2026) · Bath + lounge about ₩15,000–18,000 by weekday, weekend or night <small>(as of 2026-10)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">On Dalmaji Hill, Haeundae; no station route published</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">부산 해운대구 영월길 117-7</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/hill-spa-dalmaji/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="spa" id="club-d-oasis" data-hx="club-d-oasis" data-n="클럽디 오아시스" data-addr="부산 해운대구 달맞이길 30 LCT 3~6층" data-sub="BUSAN · Haeundae (LCT) · Spa complex">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
@@ -1002,6 +1034,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Mixed lounge</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">10:00–22:00 · closed Tuesday</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath + lounge ₩30,000 (Spa Pass) · Child ₩24,000 (Spa Pass) <small>(as of 2026-09)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">WATER</span><span class="dv">Seawater hot spring; certified national health hot spring in 2024</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">LCT tower, Dalmaji-gil, Haeundae Beach; floors 3–6</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">부산 해운대구 달맞이길 30 LCT 3~6층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/club-d-oasis/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="seawater" id="aqua-palace" data-hx="aqua-palace" data-n="호텔 아쿠아펠리스 스파&amp;사우나" data-addr="부산 수영구 광안해변로 225" data-sub="BUSAN · Gwangalli · Seawater bath">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
@@ -1011,6 +1044,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Open 24h</span><span class="bdg gray">Sleep OK</span><span class="bdg gray">Mixed lounge</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">24 hours · no closing day</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath ₩12,000 (sauna only) · Bath + lounge ₩30,000 · Child ₩9,000 sauna / ₩20,000 with jjimjil (student) <small>(as of 2026-09)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">WATER</span><span class="dv">Natural seawater from 816 m underground</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">On the Gwangalli beachfront road, Suyeong-gu</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">부산 수영구 광안해변로 225</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/aqua-palace/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="seawater" id="spa-haesurang" data-hx="spa-haesurang" data-n="스파해수랑" data-addr="부산 서구 충무대로 134" data-sub="BUSAN · Songdo (Seo-gu) · Seawater bath">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
@@ -1020,6 +1054,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">06:00–21:00</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath + lounge ₩20,000 (5 h) / ₩30,000 with rooftop bath (8 h) · Child ₩15,000 (5 h) / ₩23,000 with rooftop bath (8 h) <small>(as of 2026-09)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">WATER</span><span class="dv">Seawater</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Near Songdo Beach and the cable car, Seo-gu</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">부산 서구 충무대로 134</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/spa-haesurang/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="taejongdae-oncheon" data-hx="taejongdae-oncheon" data-n="태종대온천찜질방" data-addr="부산 영도구 태종로 808" data-sub="BUSAN · Yeongdo (Taejongdae) · Hot spring">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/85/3547085_image2_1.jpg" alt="태종대온천찜질방" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType1.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 1)</a></span></div>
@@ -1029,6 +1064,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Open 24h</span><span class="bdg gray">Sleep OK</span><span class="bdg gray">Mixed lounge</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">24 hours · closed Tuesday</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath ₩10,000 (sauna) · Bath + lounge ₩11,000–13,000 · Night +₩1,000 weekend / overnight · Child ₩7,000 (sauna) <small>(as of 2026-09)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">WATER</span><span class="dv">Strong salt hot spring from 600 m</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">About 5 min on foot from the Taejongdae park entrance, Yeongdo</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">부산 영도구 태종로 808</span></span></div></div>
   <div class="dlinks"><a href="https://tjdspa.co.kr" target="_blank" rel="noopener">Official site ↗</a></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/taejongdae-oncheon/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="seawater" id="gwangan-haesu-world" data-hx="gwangan-haesu-world" data-n="광안해수월드" data-addr="부산 수영구 광안해변로370번길 7" data-sub="BUSAN · Gwangalli · Seawater bath">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
@@ -1038,6 +1074,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">05:00–24:00</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath ₩10,000 (sauna) · Bath + lounge ₩17,000–19,000 (sauna + gym or sauna + pool) · Child ₩7,000 (sauna) <small>(as of 2026-09)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">WATER</span><span class="dv">Seawater drawn from rock strata below 1,127 m</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Facing Gwangalli Beach, Suyeong-gu</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">부산 수영구 광안해변로370번길 7</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/gwangan-haesu-world/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="water-house-ananti" data-hx="water-house-ananti" data-n="워터하우스 (아난티 코브)" data-addr="부산 기장군 기장읍 기장해안로 268-32" data-sub="BUSAN · Gijang (Ananti Cove) · Hot spring">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
@@ -1047,6 +1084,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">09:00–20:00 · closed 3rd Tuesday of the month</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath + lounge about ₩60,000–79,000 weekday / ₩90,000–97,000 peak · Child about ₩40,000 weekday / ₩50,000 peak <small>(as of 2026-09)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">WATER</span><span class="dv">Hot spring from 600 m, about 1,000 t/day</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Ananti Cove, Gijang-eup, on the coast north-east of Haeundae; car or taxi</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">부산 기장군 기장읍 기장해안로 268-32</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/water-house-ananti/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="bath" id="halmae-tang" data-hx="halmae-tang" data-n="할매탕" data-addr="부산 해운대구 중동2로10번길 7" data-sub="BUSAN · Haeundae · Neighborhood bath">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/48/3083448_image2_1.jpg" alt="할매탕" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 3)</a></span></div>
@@ -1056,6 +1094,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">07:00–22:00 · closed Tuesday</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath ₩13,000 <small>(as of 2023-10)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">WATER</span><span class="dv">Own hot-spring well, 900 m, used directly without a holding tank</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Jung-dong, Haeundae, near Haeundae Oncheon Center (map apps may show the Center instead)</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">부산 해운대구 중동2로10번길 7</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/halmae-tang/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-07</div>
 </article><article class="dcard" data-region="busan" data-type="bath" id="world-spa-choryang" data-hx="world-spa-choryang" data-n="월드스파" data-addr="부산 동구 홍곡로 22" data-sub="BUSAN · Choryang (Busan Station area) · Neighborhood bath">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
@@ -1065,6 +1104,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">05:00–24:00 · closed Last Wednesday of the month</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath from ₩11,000 <small>(as of 2026-10)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">WATER</span><span class="dv">Natural mineral water from 600 m</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Choryang-dong, a few blocks from Busan Station (Line 1)</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">부산 동구 홍곡로 22</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/world-spa-choryang/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="hotel" id="cimer-busan" data-hx="cimer-busan" data-n="파라다이스호텔 부산 씨메르" data-addr="" data-sub="BUSAN · Haeundae Beach · Hotel sauna">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-other"/></svg></div>
@@ -1074,6 +1114,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">Four sessions: 08:00–11:10, 11:30–14:40, 15:00–18:10, 18:30–21:50</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath + lounge ₩44,000 (non-guest) · Child ₩22,000 elementary; under 49 months free <small>(as of 2026-10)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">WATER</span><span class="dv">Outdoor seawater hot spring</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Paradise Hotel Busan on Haeundae Beach; nearest station Haeundae (Line 2)</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko"></span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/cimer-busan/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="spa" id="aquafield-hanam" data-hx="aquafield-hanam" data-n="아쿠아필드 하남" data-addr="경기 하남시 미사대로 750 스타필드 하남 3층" data-sub="Hanam (Gyeonggi) · Starfield Hanam (Misa) · Spa complex">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
@@ -1083,6 +1124,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Mixed lounge</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">Spa 10:00–22:00 · Indoor water park 10:00–19:00 · no closing day</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath + lounge ₩26,000 (6 hours, then ₩5,000 per hour) · Child ₩21,000 <small>(as of 2026-10)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Starfield Hanam mall, 3F, Misa-daero</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">경기 하남시 미사대로 750 스타필드 하남 3층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/aquafield-hanam/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="spa" id="aquafield-goyang" data-hx="aquafield-goyang" data-n="아쿠아필드 고양" data-addr="경기 고양시 덕양구 고양대로 1955 스타필드 고양 4층" data-sub="Goyang (Gyeonggi) · Starfield Goyang (Deogyang-gu) · Spa complex">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
@@ -1092,6 +1134,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Mixed lounge</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">Spa 10:00–22:00 (off-peak)</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath + lounge ₩26,000 · Child ₩21,000 <small>(as of 2026-10)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Starfield Goyang mall, 4F, Goyang-daero, Deogyang-gu</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">경기 고양시 덕양구 고양대로 1955 스타필드 고양 4층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/aquafield-goyang/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="termeden" data-hx="termeden" data-n="테르메덴" data-addr="경기 이천시 모가면 사실로 984" data-sub="Icheon (Gyeonggi) · Moga-myeon · Hot spring">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/78/3566478_image2_1.jpg" alt="테르메덴" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 3)</a></span></div>
@@ -1101,6 +1144,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Mixed lounge</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">Bath 09:00–20:00 · Indoor pool 09:00–19:00 · Outdoor 09:00–18:00</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath + lounge ₩54,000 day / ₩28,000 from 14:00 / ₩22,000 from 17:00 · Child ₩44,000 all day; under 36 months free <small>(as of 2026-10)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">WATER</span><span class="dv">Hot spring rich in sodium and calcium</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Moga-myeon, Icheon; no rail access, car or bus</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">경기 이천시 모가면 사실로 984</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/termeden/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="jjimjil" id="skyland-bucheon" data-hx="skyland-bucheon" data-n="스카이랜드 사우나" data-addr="경기 부천시 상동로 90 메가플러스 7층" data-sub="Bucheon (Gyeonggi) · Sang-dong · Jjimjilbang">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
@@ -1110,6 +1154,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span></div>
   <div class="drows"><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath ₩12,000 day / ₩13,000 night · Bath + lounge ₩13,000 day / ₩14,000 night (pool included) <small>(as of 2026-07)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Sang-dong, Bucheon; 7F of the Megaplus building</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">경기 부천시 상동로 90 메가플러스 7층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/skyland-bucheon/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-07</div>
 </article><article class="dcard" data-region="other" data-type="spa" id="cimer-paradise-city" data-hx="cimer-paradise-city" data-n="파라다이스시티 씨메르" data-addr="" data-sub="Incheon · Yeongjong Island (Paradise City) · Spa complex">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
@@ -1119,6 +1164,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Mixed lounge</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">10:00–21:00</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath + lounge ₩40,000 jjimjil spa pass / ₩60,000–70,000 aqua spa · Child ₩30,000 jjimjil / ₩50,000–60,000 aqua (age 8+) <small>(as of 2026-10)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Paradise City, Yeongjong Island, about 10 min from Incheon Airport</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko"></span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/cimer-paradise-city/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="cheoksan-oncheon" data-hx="cheoksan-oncheon" data-n="척산온천휴양촌" data-addr="강원 속초시 관광로 327" data-sub="Sokcho (Gangwon) · Cheoksan · Hot spring">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/75/2709375_image2_1.jpg" alt="척산온천휴양촌" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 3)</a></span></div>
@@ -1128,6 +1174,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">05:30–20:00 (open-air bath 08:30–19:00)</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath ₩11,000 · Child ₩7,000 (to age 6) <small>(as of 2025-04)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">WATER</span><span class="dv">53 °C radium spring with fluoride from about 4,000 m, not reheated</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Bus from Seoul (Express or Dong-Seoul terminal) to Sokcho, about 2 h 30, then local bus or taxi</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">강원 속초시 관광로 327</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/cheoksan-oncheon/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="deokgu-oncheon" data-hx="deokgu-oncheon" data-n="덕구온천 리조트" data-addr="경북 울진군 북면 덕구리 575" data-sub="Uljin (Gyeongbuk) · Buk-myeon (Eungbongsan) · Hot spring">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/33/3503533_image2_1.jpg" alt="덕구온천 스파월드" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 3)</a></span></div>
@@ -1137,6 +1184,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">Bath 06:00–22:00 · Spa World 10:00–19:00 (weekends to 20:00)</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath ₩11,000 (hotel guests ₩6,500) · Bath + lounge ₩26,000–32,000 off-season / ₩38,000 peak (Spa World) · Child ₩8,000 bath / ₩17,000–30,000 Spa World <small>(as of 2026-09)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">WATER</span><span class="dv">Natural free-flowing spring, 42.4 °C, weakly alkaline bicarbonate</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Buk-myeon, Uljin; about 4 hours by car from Seoul; about 2,000 free parking spaces</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">경북 울진군 북면 덕구리 575</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/deokgu-oncheon/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-09</div>
 </article><article class="dcard" data-region="other" data-type="seawater" id="yangnam-haesu-oncheon" data-hx="yangnam-haesu-oncheon" data-n="양남해수온천랜드24" data-addr="경북 경주시 양남면 해변공원길 93" data-sub="Gyeongju (Gyeongbuk) · Yangnam-myeon (east coast) · Seawater bath">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
@@ -1146,6 +1194,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Open 24h</span><span class="bdg gray">Sleep OK</span><span class="bdg gray">Mixed lounge</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">Jjimjil 24 hours · Sauna 05:00–24:00 · closed 3rd Tuesday of the month</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath ₩8,000 (sauna) · Bath + lounge ₩12,000 · Child ₩5,000 sauna / ₩8,000 jjimjil <small>(as of 2025-04)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">WATER</span><span class="dv">Seawater hot spring</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Yangnam-myeon, on the east coast of Gyeongju; car or bus</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">경북 경주시 양남면 해변공원길 93</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/yangnam-haesu-oncheon/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="spa-valley-daegu" data-hx="spa-valley-daegu" data-n="스파밸리" data-addr="대구 달성군 가창면 가창로 891" data-sub="Daegu · Gachang-myeon (Dalseong-gun) · Hot spring">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/39/4081039_image2_1.jpg" alt="스파밸리 워터파크" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 3)</a></span></div>
@@ -1155,6 +1204,7 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">Indoor 09:00–18:00 · Outdoor 09:30–17:30</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath + lounge ₩38,000 all day / ₩24,000 afternoon · Child ₩30,000 all day / ₩19,000 afternoon <small>(as of 2025-04)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">WATER</span><span class="dv">Hot-spring water; the operator calls the water park 100% hot spring</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Gachang-myeon, Dalseong-gun, south of Daegu; car or bus</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">대구 달성군 가창면 가창로 891</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/spa-valley-daegu/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="sanbangsan-oncheon" data-hx="sanbangsan-oncheon" data-n="산방산탄산온천" data-addr="제주 서귀포시 안덕면 사계북로41번길 192" data-sub="Seogwipo (Jeju) · Andeok-myeon (Sanbangsan) · Hot spring">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/24/3569424_image2_1.jpg" alt="제주 산방산탄산온천" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">Photo: Korea Tourism Organization (KOGL Type 3)</a></span></div>
@@ -1164,8 +1214,9 @@
   <div class="badges"><span class="bdg gray">Tattoo: ask first</span><span class="bdg gray">Mixed lounge</span></div>
   <div class="drows"><div class="dr"><span class="dk">HOURS</span><span class="dv">Bath 06:00–23:00 · Open-air pool 10:00–22:00 · Jjimjil 06:00–22:00</span></div><div class="dr"><span class="dk">PRICES</span><span class="dv">Bath ₩14,000 (4 hours, then ₩1,000 per hour) · Bath + lounge +₩2,000 jjimjil / +₩5,000 open-air pool · Child ₩7,000 <small>(as of 2026-02)</small></span></div><div class="dr"><span class="dk">TATTOOS</span><span class="dv">No published policy; ask at the counter.</span></div><div class="dr"><span class="dk">WATER</span><span class="dv">Natural carbonated spring, about 31 °C; heated pools carbonated too</span></div><div class="dr"><span class="dk">GETTING THERE</span><span class="dv">Andeok-myeon, Seogwipo, at the foot of Sanbangsan; car or bus</span></div><div class="dr"><span class="dk">ADDRESS</span><span class="dv"><span lang="ko">제주 서귀포시 안덕면 사계북로41번길 192</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../baths/p/sanbangsan-oncheon/">Details &amp; reviews →</a>
   <div class="verify">From published sources · in-person check pending · 2026-02</div>
-</article></div><div class="dnote">Prices and hours change often and vary by weekday, weekend and holiday; treat them as a guide and check the official page before a long trip. Phone numbers are left out on purpose: most counters speak Korean only, and the Show-This Cards work better. <a href="../#pass" style="color:var(--blue);font-weight:700">For bathhouse owners →</a></div></div></section><script type="application/json" id="hxT">{"google": "Google Maps", "naver": "Naver Map", "kakao": "Kakao Map", "go": "Directions & taxi card", "save": "Save", "saved": "Saved", "copy": "Copy Korean address", "root": "../"}</script><dialog class="hx-sheet" id="hxSheet" aria-labelledby="hxSheetH"><div class="hx-sh">
+</article></div><div class="dnote">Prices and hours change often and vary by weekday, weekend and holiday; treat them as a guide and check the official page before a long trip. Phone numbers are left out on purpose: most counters speak Korean only, and the Show-This Cards work better. <a href="../#pass" style="color:var(--blue);font-weight:700">For bathhouse owners →</a></div></div></section><script type="application/json" id="hxT">{"google": "Google Maps", "naver": "Naver Map", "kakao": "Kakao Map", "go": "Directions & taxi card", "save": "Save", "saved": "Saved", "rev": "Reviews", "copy": "Copy Korean address", "root": "../"}</script><dialog class="hx-sheet" id="hxSheet" aria-labelledby="hxSheetH"><div class="hx-sh">
   <div class="hx-sh-top"><b id="hxSheetH">Show this to your taxi driver</b><button type="button" class="hx-x" id="hxClose" aria-label="Close">×</button></div>
   <div class="hx-card"><div class="kn" lang="ko" id="hxKn"></div><div class="ka" lang="ko" id="hxKa"></div>
     <div class="say" lang="ko">기사님, 이 주소로 가 주세요.</div><div class="gl">“Please take me to this address.”</div></div>
@@ -1193,7 +1244,8 @@
     var slot=el.querySelector('.hx-links'); if(!slot||slot.dataset.done) return; slot.dataset.done=1;
     var u=urls(el), on=!!saved()[el.dataset.hx];
     slot.innerHTML=a(u.g,T.google)+a(u.nv,T.naver)+a(u.k,T.kakao)+'<button type="button" class="hx-go">'+T.go+'</button>'
-      +'<button type="button" class="hx-fav" aria-pressed="'+on+'">'+(on?'♥ '+T.saved:'♡ '+T.save)+'</button>';
+      +'<button type="button" class="hx-fav" aria-pressed="'+on+'">'+(on?'♥ '+T.saved:'♡ '+T.save)+'</button>'
+      +'<button type="button" class="hx-rev">★ '+T.rev+'</button>';
   }
   // 무작위 순서: 열 때마다 섞는다 (돈을 받고 앞에 두는 자리는 없다)
   document.querySelectorAll('[data-shuffle]').forEach(function(c){var k=[].slice.call(c.children);for(var i=k.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=k[i];k[i]=k[j];k[j]=t;}k.forEach(function(x){c.appendChild(x)});});
@@ -1225,7 +1277,7 @@
     var el=f.closest('[data-hx]'), s=saved(), id=el.dataset.hx;
     if(s[id]) delete s[id]; else s[id]={n:el.dataset.n,u:location.pathname+'#'+id,t:el.dataset.sub||'',at:Date.now()};
     store(s); var on=!!s[id]; f.setAttribute('aria-pressed',on); f.textContent=on?'♥ '+T.saved:'♡ '+T.save;
-    document.dispatchEvent(new Event('hx:saved'));
+    document.dispatchEvent(new CustomEvent('hx:saved',{detail:{id:id,on:on,item:s[id]||null}}));
   });
 })();
 </script><script>
@@ -1285,7 +1337,7 @@
       </div>
     </div>
     <div class="f-bottom">
-      <span>© 2026 HANTANG. 하루 한 탕.</span>
+      <span>© 2026 HANTANG. 하루 한 탕. · <a href="../terms/">Terms of use</a> · <a href="../privacy/">Privacy policy</a></span>
       <span>Made with a thermometer, in Korea.</span>
     </div>
   </div>
@@ -1360,7 +1412,7 @@
   .hp-share-btn svg{width:15px;height:15px}
   @media (max-width:420px){.sh-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hp-q{grid-template-columns:1fr 1fr}}
   @media print{.hp-fab{display:none}}
-</style><span id="help" hidden></span><button type="button" class="hp-fab" id="hpFab" aria-haspopup="dialog"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="2.2"/><path d="M9.3 9.4a2.8 2.8 0 0 1 5.4 1c0 1.9-2.7 2.3-2.7 4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="17.6" r="1.3" fill="currentColor"/></svg><span>Help</span></button><dialog class="hp" id="hpDlg" aria-labelledby="hpT"><div class="hp-in"><div class="hp-top"><h2 id="hpT">Bath helper</h2><button type="button" class="hp-x" aria-label="Close">×</button></div><div class="hp-sec"><div class="hp-q"><a href="../baths/?near=1">⌖ Closest to me</a><a href="../baths/#saved">♡ Your saved places</a><button type="button" id="hpShare"><svg width=18 height=18 viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="18" cy="5.5" r="2.6" stroke="currentColor" stroke-width="2"/><circle cx="6" cy="12" r="2.6" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="18.5" r="2.6" stroke="currentColor" stroke-width="2"/><path d="M8.3 10.8l7.4-4M8.3 13.2l7.4 4" stroke="currentColor" stroke-width="2"/></svg> Share</button><button type="button" id="hpInstall" hidden>⤓ Add HANTANG to your home screen</button></div><p class="hp-ios" id="hpIos" hidden style="font-size:13px;color:var(--mute);margin:8px 0 0">On iPhone or iPad: tap the Share button in Safari, then “Add to Home Screen”. Pages you open stay readable offline.</p></div><div class="hp-sec"><h3>Show this to the staff</h3><p style="font-size:13px;color:var(--mute);margin:0 0 8px">Tap a sentence to show it in large Korean text.</p><div class="hp-ph" id="hpPh"></div><div hidden><div class="hp-big" id="hpBig"><div class="k" lang="ko"></div><div class="r"></div><div class="t"></div></div><div class="hp-nav"><button type="button" id="hpPrev" aria-label="prev">◀</button><button type="button" id="hpAll">All sentences</button><button type="button" id="hpNext" aria-label="next">▶</button></div></div></div><div class="hp-sec hp-call"><h3>Need help in your language?</h3><p>Korea Travel Hotline 1330 is run by the Korea Tourism Organization: tourist information and interpretation in English, Japanese, Chinese, Russian, Vietnamese, Thai and other languages. Hours can differ by language.</p><div class="row"><a href="tel:1330">☎ 1330<br><small style="font-weight:600">from a Korean phone</small></a><a class="alt" href="tel:+8221330">☎ +82-2-1330<br><small style="font-weight:600">from a foreign phone</small></a></div><p class="em">Emergency: police 112 (English and Chinese interpretation, 24 hours) · fire and ambulance 119 · medical advice 1339 (with an interpreter).</p></div></div></dialog><dialog class="hp" id="shDlg" aria-labelledby="shT"><div class="hp-in"><div class="hp-top"><h2 id="shT">Share</h2><button type="button" class="hp-x" aria-label="Close">×</button></div><p id="shWhat" style="margin:-6px 0 0;font-size:13.5px;color:var(--mute)"></p><button type="button" class="sh-native" id="shNative" hidden><svg width=20 height=20 viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="18" cy="5.5" r="2.6" stroke="currentColor" stroke-width="2"/><circle cx="6" cy="12" r="2.6" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="18.5" r="2.6" stroke="currentColor" stroke-width="2"/><path d="M8.3 10.8l7.4-4M8.3 13.2l7.4 4" stroke="currentColor" stroke-width="2"/></svg> Share with an app on this device</button><div class="sh-grid" id="shGrid"></div><div class="sh-url"><input type="text" id="shUrl" readonly aria-label="URL"><button type="button" id="shCopy">Copy</button></div><div class="sh-msg" id="shMsg" role="status" hidden></div><div class="sh-qr" id="shQr" hidden><div id="shQrC"></div><p>Scan with a phone camera or WeChat to open this page.</p></div></div></dialog><script type="application/json" id="hpC">{"ph": [{"id": "english", "ko": "영어 하시는 분 계세요?", "ro": "Yeong-eo hasineun bun gyeseyo?", "tr": "Does anyone here speak English?", "g": "counter"}, {"id": "one_adult", "ko": "어른 한 명이요.", "ro": "Eoreun han myeong-iyo.", "tr": "One adult, please.", "g": "counter"}, {"id": "jjim_too", "ko": "찜질방도 이용할게요.", "ro": "Jjimjilbang-do iyonghalgeyo.", "tr": "I'd like to use the jjimjilbang too.", "g": "counter"}, {"id": "first_time", "ko": "처음 왔어요. 어떻게 이용하면 돼요?", "ro": "Cheoeum wasseoyo. Eotteoke iyonghamyeon dwaeyo?", "tr": "It's my first time. How does it work here?", "g": "counter"}, {"id": "card", "ko": "해외 카드도 되나요?", "ro": "Haeoe kadeudo doenayo?", "tr": "Do you take foreign cards?", "g": "counter"}, {"id": "cash", "ko": "현금만 되나요?", "ro": "Hyeongeumman doenayo?", "tr": "Is it cash only?", "g": "counter"}, {"id": "tattoo", "ko": "문신이 있는데 괜찮아요?", "ro": "Munsini inneunde gwaenchanayo?", "tr": "I have a tattoo. Is that OK?", "g": "counter"}, {"id": "luggage", "ko": "짐을 맡길 수 있어요?", "ro": "Jimeul matgil su isseoyo?", "tr": "Can I leave my luggage with you?", "g": "counter"}, {"id": "scrub", "ko": "세신 받고 싶어요. 얼마예요?", "ro": "Sesin batgo sipeoyo. Eolmayeyo?", "tr": "I'd like a body scrub. How much is it?", "g": "scrub"}, {"id": "gentle", "ko": "살살 해 주세요.", "ro": "Salsal hae juseyo.", "tr": "Gently, please.", "g": "scrub"}, {"id": "harder", "ko": "조금 더 세게 해 주세요.", "ro": "Jogeum deo sege hae juseyo.", "tr": "A little harder, please.", "g": "scrub"}, {"id": "towel", "ko": "수건 하나 더 주세요.", "ro": "Sugeon hana deo juseyo.", "tr": "One more towel, please.", "g": "inside"}, {"id": "women_bath", "ko": "여탕은 어디예요?", "ro": "Yeotang-eun eodiyeyo?", "tr": "Where is the women's bath?", "g": "inside"}, {"id": "men_bath", "ko": "남탕은 어디예요?", "ro": "Namtang-eun eodiyeyo?", "tr": "Where is the men's bath?", "g": "inside"}, {"id": "locker", "ko": "사물함이 안 열려요.", "ro": "Samulhami an yeollyeoyo.", "tr": "My locker won't open.", "g": "inside"}, {"id": "overnight", "ko": "여기서 자고 가도 돼요?", "ro": "Yeogiseo jago gado dwaeyo?", "tr": "Can I stay overnight here?", "g": "inside"}, {"id": "how_long", "ko": "몇 시간까지 있을 수 있어요?", "ro": "Myeot sigankkaji isseul su isseoyo?", "tr": "How many hours can I stay?", "g": "inside"}, {"id": "wake", "ko": "아침 7시에 깨워 주세요.", "ro": "Achim ilgopsie kkaewo juseyo.", "tr": "Please wake me at 7 a.m.", "g": "inside"}, {"id": "dizzy", "ko": "어지러워요. 도와주세요.", "ro": "Eojireowoyo. Dowajuseyo.", "tr": "I feel dizzy. Please help me.", "g": "safety"}], "targets": [{"k": "whatsapp", "n": "WhatsApp", "c": "#25D366", "f": "https://wa.me/?text={tu}"}, {"k": "facebook", "n": "Facebook", "c": "#1877F2", "f": "https://www.facebook.com/sharer/sharer.php?u={u}"}, {"k": "messenger", "n": "Messenger", "c": "#0084FF", "f": "fb-messenger://share/?link={u}"}, {"k": "x", "n": "X", "c": "#111111", "f": "https://x.com/intent/tweet?text={t}&url={u}"}, {"k": "reddit", "n": "Reddit", "c": "#FF4500", "f": "https://www.reddit.com/submit?url={u}&title={t}"}, {"k": "threads", "n": "Threads", "c": "#111111", "f": "https://www.threads.com/intent/post?text={t}&url={u}"}, {"k": "telegram", "n": "Telegram", "c": "#229ED9", "f": "https://t.me/share/url?url={u}&text={t}"}, {"k": "email", "n": "Email", "c": "#5F5A52", "f": "mailto:?subject={t}&body={tu}"}], "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><circle cx=\"18\" cy=\"5.5\" r=\"2.6\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"6\" cy=\"12\" r=\"2.6\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"18\" cy=\"18.5\" r=\"2.6\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M8.3 10.8l7.4-4M8.3 13.2l7.4 4\" stroke=\"currentColor\" stroke-width=\"2\"/><\/svg>", "L": {"share": "Share", "qr": "QR code", "copied": "Link copied.", "paste": "Copied — now paste it in {app}.", "place": "Share this place"}}</script><script>
+</style><span id="help" hidden></span><button type="button" class="hp-fab" id="hpFab" aria-haspopup="dialog"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="2.2"/><path d="M9.3 9.4a2.8 2.8 0 0 1 5.4 1c0 1.9-2.7 2.3-2.7 4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="17.6" r="1.3" fill="currentColor"/></svg><span>Help</span></button><dialog class="hp" id="hpDlg" aria-labelledby="hpT"><div class="hp-in"><div class="hp-top"><h2 id="hpT">Bath helper</h2><button type="button" class="hp-x" aria-label="Close">×</button></div><div class="hp-sec"><div class="hp-q"><a href="../baths/?near=1">⌖ Closest to me</a><a href="../me/">👤 My page</a><a href="../board/">💬 Community</a><a href="../baths/#saved">♡ Your saved places</a><button type="button" id="hpShare"><svg width=18 height=18 viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="18" cy="5.5" r="2.6" stroke="currentColor" stroke-width="2"/><circle cx="6" cy="12" r="2.6" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="18.5" r="2.6" stroke="currentColor" stroke-width="2"/><path d="M8.3 10.8l7.4-4M8.3 13.2l7.4 4" stroke="currentColor" stroke-width="2"/></svg> Share</button><button type="button" id="hpInstall" hidden>⤓ Add HANTANG to your home screen</button></div><p class="hp-ios" id="hpIos" hidden style="font-size:13px;color:var(--mute);margin:8px 0 0">On iPhone or iPad: tap the Share button in Safari, then “Add to Home Screen”. Pages you open stay readable offline.</p></div><div class="hp-sec"><h3>Show this to the staff</h3><p style="font-size:13px;color:var(--mute);margin:0 0 8px">Tap a sentence to show it in large Korean text.</p><div class="hp-ph" id="hpPh"></div><div hidden><div class="hp-big" id="hpBig"><div class="k" lang="ko"></div><div class="r"></div><div class="t"></div></div><div class="hp-nav"><button type="button" id="hpPrev" aria-label="prev">◀</button><button type="button" id="hpAll">All sentences</button><button type="button" id="hpNext" aria-label="next">▶</button></div></div></div><div class="hp-sec hp-call"><h3>Need help in your language?</h3><p>Korea Travel Hotline 1330 is run by the Korea Tourism Organization: tourist information and interpretation in English, Japanese, Chinese, Russian, Vietnamese, Thai and other languages. Hours can differ by language.</p><div class="row"><a href="tel:1330">☎ 1330<br><small style="font-weight:600">from a Korean phone</small></a><a class="alt" href="tel:+8221330">☎ +82-2-1330<br><small style="font-weight:600">from a foreign phone</small></a></div><p class="em">Emergency: police 112 (English and Chinese interpretation, 24 hours) · fire and ambulance 119 · medical advice 1339 (with an interpreter).</p></div></div></dialog><dialog class="hp" id="shDlg" aria-labelledby="shT"><div class="hp-in"><div class="hp-top"><h2 id="shT">Share</h2><button type="button" class="hp-x" aria-label="Close">×</button></div><p id="shWhat" style="margin:-6px 0 0;font-size:13.5px;color:var(--mute)"></p><button type="button" class="sh-native" id="shNative" hidden><svg width=20 height=20 viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="18" cy="5.5" r="2.6" stroke="currentColor" stroke-width="2"/><circle cx="6" cy="12" r="2.6" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="18.5" r="2.6" stroke="currentColor" stroke-width="2"/><path d="M8.3 10.8l7.4-4M8.3 13.2l7.4 4" stroke="currentColor" stroke-width="2"/></svg> Share with an app on this device</button><div class="sh-grid" id="shGrid"></div><div class="sh-url"><input type="text" id="shUrl" readonly aria-label="URL"><button type="button" id="shCopy">Copy</button></div><div class="sh-msg" id="shMsg" role="status" hidden></div><div class="sh-qr" id="shQr" hidden><div id="shQrC"></div><p>Scan with a phone camera or WeChat to open this page.</p></div></div></dialog><script type="application/json" id="hpC">{"ph": [{"id": "english", "ko": "영어 하시는 분 계세요?", "ro": "Yeong-eo hasineun bun gyeseyo?", "tr": "Does anyone here speak English?", "g": "counter"}, {"id": "one_adult", "ko": "어른 한 명이요.", "ro": "Eoreun han myeong-iyo.", "tr": "One adult, please.", "g": "counter"}, {"id": "jjim_too", "ko": "찜질방도 이용할게요.", "ro": "Jjimjilbang-do iyonghalgeyo.", "tr": "I'd like to use the jjimjilbang too.", "g": "counter"}, {"id": "first_time", "ko": "처음 왔어요. 어떻게 이용하면 돼요?", "ro": "Cheoeum wasseoyo. Eotteoke iyonghamyeon dwaeyo?", "tr": "It's my first time. How does it work here?", "g": "counter"}, {"id": "card", "ko": "해외 카드도 되나요?", "ro": "Haeoe kadeudo doenayo?", "tr": "Do you take foreign cards?", "g": "counter"}, {"id": "cash", "ko": "현금만 되나요?", "ro": "Hyeongeumman doenayo?", "tr": "Is it cash only?", "g": "counter"}, {"id": "tattoo", "ko": "문신이 있는데 괜찮아요?", "ro": "Munsini inneunde gwaenchanayo?", "tr": "I have a tattoo. Is that OK?", "g": "counter"}, {"id": "luggage", "ko": "짐을 맡길 수 있어요?", "ro": "Jimeul matgil su isseoyo?", "tr": "Can I leave my luggage with you?", "g": "counter"}, {"id": "scrub", "ko": "세신 받고 싶어요. 얼마예요?", "ro": "Sesin batgo sipeoyo. Eolmayeyo?", "tr": "I'd like a body scrub. How much is it?", "g": "scrub"}, {"id": "gentle", "ko": "살살 해 주세요.", "ro": "Salsal hae juseyo.", "tr": "Gently, please.", "g": "scrub"}, {"id": "harder", "ko": "조금 더 세게 해 주세요.", "ro": "Jogeum deo sege hae juseyo.", "tr": "A little harder, please.", "g": "scrub"}, {"id": "towel", "ko": "수건 하나 더 주세요.", "ro": "Sugeon hana deo juseyo.", "tr": "One more towel, please.", "g": "inside"}, {"id": "women_bath", "ko": "여탕은 어디예요?", "ro": "Yeotang-eun eodiyeyo?", "tr": "Where is the women's bath?", "g": "inside"}, {"id": "men_bath", "ko": "남탕은 어디예요?", "ro": "Namtang-eun eodiyeyo?", "tr": "Where is the men's bath?", "g": "inside"}, {"id": "locker", "ko": "사물함이 안 열려요.", "ro": "Samulhami an yeollyeoyo.", "tr": "My locker won't open.", "g": "inside"}, {"id": "overnight", "ko": "여기서 자고 가도 돼요?", "ro": "Yeogiseo jago gado dwaeyo?", "tr": "Can I stay overnight here?", "g": "inside"}, {"id": "how_long", "ko": "몇 시간까지 있을 수 있어요?", "ro": "Myeot sigankkaji isseul su isseoyo?", "tr": "How many hours can I stay?", "g": "inside"}, {"id": "wake", "ko": "아침 7시에 깨워 주세요.", "ro": "Achim ilgopsie kkaewo juseyo.", "tr": "Please wake me at 7 a.m.", "g": "inside"}, {"id": "dizzy", "ko": "어지러워요. 도와주세요.", "ro": "Eojireowoyo. Dowajuseyo.", "tr": "I feel dizzy. Please help me.", "g": "safety"}], "targets": [{"k": "whatsapp", "n": "WhatsApp", "c": "#25D366", "f": "https://wa.me/?text={tu}"}, {"k": "facebook", "n": "Facebook", "c": "#1877F2", "f": "https://www.facebook.com/sharer/sharer.php?u={u}"}, {"k": "messenger", "n": "Messenger", "c": "#0084FF", "f": "fb-messenger://share/?link={u}"}, {"k": "x", "n": "X", "c": "#111111", "f": "https://x.com/intent/tweet?text={t}&url={u}"}, {"k": "reddit", "n": "Reddit", "c": "#FF4500", "f": "https://www.reddit.com/submit?url={u}&title={t}"}, {"k": "threads", "n": "Threads", "c": "#111111", "f": "https://www.threads.com/intent/post?text={t}&url={u}"}, {"k": "telegram", "n": "Telegram", "c": "#229ED9", "f": "https://t.me/share/url?url={u}&text={t}"}, {"k": "email", "n": "Email", "c": "#5F5A52", "f": "mailto:?subject={t}&body={tu}"}], "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><circle cx=\"18\" cy=\"5.5\" r=\"2.6\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"6\" cy=\"12\" r=\"2.6\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"18\" cy=\"18.5\" r=\"2.6\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M8.3 10.8l7.4-4M8.3 13.2l7.4 4\" stroke=\"currentColor\" stroke-width=\"2\"/><\/svg>", "L": {"share": "Share", "qr": "QR code", "copied": "Link copied.", "paste": "Copied — now paste it in {app}.", "place": "Share this place"}}</script><script>
 (function(){
   var C=JSON.parse(document.getElementById('hpC').textContent), PH=C.ph;
   var hp=document.getElementById('hpDlg'), sh=document.getElementById('shDlg');
@@ -1426,7 +1478,7 @@
   if(location.hash==='#help') openD(hp);
   document.addEventListener('click',function(e){ var o=e.target.closest('[data-open-help]'); if(o){ e.preventDefault(); big.parentNode.hidden=true; list.hidden=false; openD(hp); } });
 })();
-</script>
+</script><script type="application/json" id="hcT">{"lang": "en", "root": "../", "v": "5de65c85f1", "me_url": "../me/", "board_url": "../board/", "guide_url": "../guide/", "baths_url": "../baths/", "terms_url": "../terms/", "privacy_url": "../privacy/", "folders": {"en": "", "ja": "ja/", "zh-Hant": "zh-hant/", "zh-Hans": "zh-hans/", "vi": "vi/", "th": "th/", "ru": "ru/", "ko": "ko/"}, "langs": {"en": "English", "ja": "日本語", "zh-Hant": "繁體中文", "zh-Hans": "简体中文", "vi": "Tiếng Việt", "th": "ภาษาไทย", "ru": "Русский", "ko": "한국어"}}</script><script src="../assets/hc.js?v=5de65c85f1" defer></script>
 <script>if('serviceWorker' in navigator&&location.protocol==='https:'){addEventListener('load',function(){navigator.serviceWorker.register('/sw.js',{updateViaCache:'none'}).catch(function(){})})}</script>
 </body>
 </html>

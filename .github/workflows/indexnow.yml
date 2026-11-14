@@ -1,0 +1,47 @@
+# 사이트가 바뀌면 바뀐 주소만 IndexNow 로 알린다 (Bing · 네이버 · Yandex · Seznam 등이 함께 받는다).
+# 구글은 IndexNow 를 쓰지 않으므로 Search Console 의 sitemap 제출로 따로 알린다.
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+    paths: ['sitemap.xml']
+  workflow_dispatch:
+    inputs:
+      all:
+        description: '사이트맵의 모든 주소를 보낼까요? (처음 한 번만)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Cloudflare Pages 배포가 끝날 때까지 기다리기
+        run: |
+          want=$(grep -o "const V = '[^']*'" sw.js | head -1)
+          echo "this commit: $want"
+          for i in $(seq 1 45); do
+            live=$(curl -fsS -H 'cache-control: no-cache' "https://hantang.kr/sw.js?t=$(date +%s)" 2>/dev/null | grep -o "const V = '[^']*'" | head -1 || true)
+            if [ "$live" = "$want" ]; then echo "live: $live"; exit 0; fi
+            sleep 20
+          done
+          echo "::warning::15분 안에 새 버전이 보이지 않았습니다. 그래도 알림은 보냅니다."
+
+      - name: 바뀐 주소 알리기
+        continue-on-error: true
+        env:
+          SEND_ALL: ${{ inputs.all && '1' || '0' }}
+        run: python3 .github/scripts/indexnow.py

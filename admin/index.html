@@ -56,6 +56,11 @@ dl{display:grid;grid-template-columns:120px 1fr;gap:6px 12px;margin:0;font-size:
   <div class="lock" style="background:var(--stone);border-color:var(--line);margin:14px 0"><b>검색엔진에 새 페이지 알리기</b><p class="note" style="margin:6px 0 10px">사이트를 크게 고친 뒤 한 번 누르면 Bing·Naver·Yandex 등 IndexNow 참여 검색엔진에 사이트맵의 모든 주소를 알립니다(구글은 Search Console 사이트맵 제출로).</p><button class="btn" id="inBtn" style="min-height:42px;font-size:14px">IndexNow 보내기</button> <span class="note" id="inMsg"></span></div>
   <div class="bar" id="bar"><button data-s="pending" class="on">검토 대기</button><button data-s="hold">보류</button><button data-s="approved">게시 중</button><button data-s="rejected">반려</button><button data-s="all">전체</button><span class="note" id="who"></span></div>
   <div id="list"><p class="note">불러오는 중…</p></div>
+
+  <h1 id="community" style="font-family:var(--serif);font-size:30px;margin-top:56px">회원 글·후기 관리</h1>
+  <p class="note">게시판 글, 시설 후기, 가이드·글 댓글을 살펴보는 곳입니다. 신고가 3건 쌓이면 자동으로 가려지고(‘자동 가림’), 여기서 다시 보이게 하거나 지울 수 있습니다. 회원은 닉네임과 가입일만 있고 이메일·전화번호는 받지 않습니다. 이 기능은 Cloudflare D1 연결(HANTANG_DB)이 있어야 동작합니다.</p>
+  <div class="bar" id="cbar"><button data-k="reports" class="on">신고</button><button data-k="hold">자동 가림</button><button data-k="posts">게시글</button><button data-k="comments">후기·댓글</button><button data-k="users">회원</button></div>
+  <div id="clist"><p class="note">불러오는 중…</p></div>
 </main>
 <script>
 (function(){
@@ -100,6 +105,50 @@ dl{display:grid;grid-template-columns:120px 1fr;gap:6px 12px;margin:0;font-size:
   document.getElementById('inBtn').addEventListener('click',function(){ var b=this, m=document.getElementById('inMsg'); b.disabled=true; m.textContent='보내는 중…';
     fetch('../api/admin/indexnow',{method:'POST',credentials:'same-origin'}).then(function(r){return r.json()}).then(function(j){ b.disabled=false; m.textContent=j.ok?('완료: '+j.sent+'개 주소 전달 (응답 '+j.status+')'):('실패: '+(j.error||j.status)); }).catch(function(){b.disabled=false; m.textContent='연결 실패';}); });
   fetch('../api/admin/whoami',{credentials:'same-origin'}).then(function(r){return r.json()}).then(function(j){ if(j.email) document.getElementById('who').textContent='로그인: '+j.email; }).catch(function(){});
+  load();
+})();
+(function(){
+  var view='reports', box=document.getElementById('clist');
+  var CAT={free:'자유',qna:'질문',tips:'팁·경험담'};
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function when(s){return s?new Date(s*1000).toISOString().slice(0,16).replace('T',' '):''}
+  function get(kind,status){return fetch('../api/admin/community?kind='+kind+(status?'&status='+status:''),{credentials:'same-origin'}).then(function(r){return r.json().then(function(j){j.code=r.status;return j})})}
+  function where(c){
+    if(c.target.indexOf('post:')===0) return '<a href="../board/p/'+esc(c.target.slice(5))+'#c'+c.id+'" target="_blank">게시글 #'+esc(c.target.slice(5))+(c.tname?' · '+esc(c.tname):'')+'</a>';
+    var label=(c.target.indexOf('place:')===0?'시설 후기':'가이드 댓글')+' · '+esc(c.tname||c.target);
+    return c.turl?'<a href="..'+esc(c.turl)+'" target="_blank">'+label+'</a>':label;
+  }
+  function who(x){return (x.anon?'익명 (실제: '+esc(x.nick||'-')+')':esc(x.nick||'-'))}
+  function acts(kind,x){
+    return '<div class="acts">'+(x.status!=='ok'?'<button class="btn green" data-k="'+kind+'" data-id="'+x.id+'" data-op="show">다시 보이기</button>':'<button class="btn ghost" data-k="'+kind+'" data-id="'+x.id+'" data-op="hide">가리기</button>')
+      +'<button class="btn red" data-k="'+kind+'" data-id="'+x.id+'" data-op="delete">삭제</button>'
+      +(x.uid?'<button class="btn ghost" data-k="user" data-id="'+x.uid+'" data-op="ban">작성자 이용 정지</button>':'')+'</div>';
+  }
+  function postCard(x){return '<div class="card"><h2 style="font-size:17px">'+esc(x.title)+' <span class="st">'+esc(x.status)+'</span></h2><p class="note">게시글 #'+x.id+' · '+(CAT[x.cat]||x.cat)+' · '+esc(x.lang)+' · '+who(x)+' · '+when(x.created)+' · 신고 '+x.reports+' · 댓글 '+x.ncomments+' · <a href="../board/p/'+x.id+'" target="_blank">열기 ↗</a></p><p style="white-space:pre-wrap;margin-top:8px">'+esc(x.body)+'</p>'+acts('post',x)+'</div>'}
+  function cmCard(x){return '<div class="card"><p class="note">'+where(x)+' · '+(x.rating?'★'+x.rating+' · ':'')+esc(x.lang)+' · '+who(x)+' · '+when(x.created)+' · 신고 '+x.reports+' <span class="st">'+esc(x.status)+'</span></p><p style="white-space:pre-wrap;margin-top:8px">'+esc(x.body)+'</p>'+acts('comment',x)+'</div>'}
+  function fail(j){box.innerHTML='<div class="lock"><b>열 수 없습니다 ('+esc(j.why||j.what||j.error||j.code)+')</b><p class="note">Zero Trust Access 설정과 D1 연결(HANTANG_DB)을 확인해 주세요. README 의 ‘회원·후기·게시판 기능 켜기’에 순서가 있습니다.</p></div>'}
+  function load(){
+    box.innerHTML='<p class="note">불러오는 중…</p>';
+    if(view==='posts') return get('posts').then(function(j){ if(!j.ok) return fail(j); box.innerHTML=j.items.length?j.items.map(postCard).join(''):'<p class="note">글이 없습니다.</p>'; });
+    if(view==='comments') return get('comments').then(function(j){ if(!j.ok) return fail(j); box.innerHTML=j.items.length?j.items.map(cmCard).join(''):'<p class="note">후기·댓글이 없습니다.</p>'; });
+    if(view==='hold') return Promise.all([get('posts','hold'),get('comments','hold')]).then(function(r){ if(!r[0].ok) return fail(r[0]); var h=r[0].items.map(postCard).join('')+r[1].items.map(cmCard).join(''); box.innerHTML=h||'<p class="note">자동으로 가려진 글이 없습니다.</p>'; });
+    if(view==='users') return get('users').then(function(j){ if(!j.ok) return fail(j);
+      box.innerHTML='<p class="note">전체 회원 '+j.total+'명 (최근 300명 표시)</p>'+j.items.map(function(u){return '<div class="card"><p><b>'+esc(u.nick)+'</b> <span class="st">'+esc(u.status)+'</span></p><p class="note">#'+u.id+' · '+esc(u.lang||'')+' · 가입 '+when(u.created)+' · 글 '+u.posts+' · 후기·댓글 '+u.comments+'</p><div class="acts">'
+        +(u.status==='banned'?'<button class="btn green" data-k="user" data-id="'+u.id+'" data-op="unban">정지 풀기</button>':u.status==='ok'?'<button class="btn ghost" data-k="user" data-id="'+u.id+'" data-op="ban">이용 정지</button>':'')
+        +'<button class="btn ghost" data-k="user" data-id="'+u.id+'" data-op="hide_all">이 회원 글 모두 가리기</button></div></div>'}).join(''); });
+    return Promise.all([get('reports'),get('posts'),get('comments')]).then(function(r){ if(!r[0].ok) return fail(r[0]);
+      var P={},C={}; (r[1].items||[]).forEach(function(x){P[x.id]=x}); (r[2].items||[]).forEach(function(x){C[x.id]=x});
+      box.innerHTML=r[0].items.length?r[0].items.map(function(t){ var x=t.kind==='post'?P[t.item_id]:C[t.item_id];
+        var head='<p class="note" style="margin-top:20px"><b>신고 '+t.n+'건</b> · 마지막 '+when(t.last)+(t.reasons?' · 사유: '+esc(t.reasons):'')+'</p>';
+        return head+(x?(t.kind==='post'?postCard(x):cmCard(x)):'<div class="card"><p class="note">'+(t.kind==='post'?'게시글':'댓글')+' #'+t.item_id+' (이미 삭제됨)</p></div>'); }).join(''):'<p class="note">들어온 신고가 없습니다.</p>'; });
+  }
+  document.getElementById('cbar').addEventListener('click',function(e){var b=e.target.closest('button[data-k]'); if(!b)return; [].forEach.call(this.querySelectorAll('button'),function(x){x.classList.toggle('on',x===b)}); view=b.dataset.k; load();});
+  box.addEventListener('click',function(e){ var b=e.target.closest('button[data-op]'); if(!b) return;
+    var op=b.dataset.op, msg={delete:'이 항목을 삭제할까요? 되돌릴 수 없습니다.',ban:'이 회원의 이용을 정지할까요? 바로 로그아웃되고 새 글을 쓸 수 없습니다.',hide_all:'이 회원이 쓴 글과 댓글을 모두 가릴까요?'}[op];
+    if(msg && !confirm(msg)) return;
+    b.disabled=true;
+    fetch('../api/admin/community',{method:'POST',credentials:'same-origin',headers:{'content-type':'application/json'},body:JSON.stringify({kind:b.dataset.k,id:+b.dataset.id,op:op})}).then(function(r){return r.json()}).then(function(j){ b.disabled=false; if(!j.ok){alert('처리하지 못했습니다: '+(j.error||''));return;} load(); });
+  });
   load();
 })();
 </script>

@@ -14,13 +14,19 @@
 | `baths/hot-springs/` | 온천마을·무료 족욕장 14곳 (관광공사 자료·사진) |
 | `data/baths.json` | 메인 페이지 시설 카드용 공개 데이터 (서울·부산 대표 시설). 시설 목록에서 자동 생성 |
 | `data/places.min.json` | 전국 검색·내 주변·업주 등록 화면이 쓰는 가벼운 전국 목록 (이름·지역·유형·좌표만, 주소·전화 없음) |
+| `board/` | 커뮤니티 게시판(자유·질문·팁). 글 한 편은 `board/p/<번호>` 주소로 열리며, 서버가 제목·본문·댓글을 페이지 안에 넣어 보내 검색엔진이 읽을 수 있습니다. 언어별은 `ja/board/` … |
+| `me/` | 로그인·회원가입·마이페이지(찜 목록, 내가 쓴 글, 비밀번호 변경, 탈퇴). 검색 제외 |
+| `baths/p/<시설>/` | 대표 시설 84곳(직접 정리한 36곳 + 1인·프라이빗 48곳)의 상세 페이지와 후기. 언어별은 `ja/baths/p/…` |
+| `terms/` `privacy/` | 이용약관·개인정보처리방침 (한국어 `ko/terms/`, 영어 `terms/`) |
+| `assets/hc.js` `assets/hc.css` `assets/hc.*.json` | 회원·찜·후기·게시판 화면. 로그인한 적이 없는 방문자는 서버를 부르지 않습니다 |
+| `.github/workflows/indexnow.yml` | 사이트가 바뀌면 바뀐 주소만 IndexNow 로 자동 알림 (아래 '검색엔진 등록' 참고) |
 | `partner/` | 업주용 한국어 페이지 「우리 업장 등록하기」 (모든 페이지 바닥글에서 연결) |
 | `admin/` | 업주 신청 검토·승인 화면 (Cloudflare Zero Trust Access 로 잠가야 함, 검색엔진 제외) |
 | `og/` | 페이지별·언어별 공유 미리보기 그림(1200×630). 메신저에 링크를 붙이면 그 언어 제목 그림이 뜸 |
 | `icons/` `sw.js` `*/manifest.webmanifest` `offline/` | 앱처럼 홈 화면에 설치·오프라인 보기(PWA). 한 번 연 페이지와 찜 목록은 인터넷이 끊겨도 보임 |
 | `_headers` | Cloudflare 응답 헤더: 언어 폴더별 Content-Language, 서비스 워커·매니페스트 캐시 끄기, 관리자 noindex |
 | `indexnow-key.txt` | IndexNow 키 (Bing·Naver·Yandex 등에 새 페이지 알림용, 관리자 화면 버튼으로 전송) |
-| `functions/` | Cloudflare Pages Functions: `/api/partner`(신청 접수), `/api/listings`(승인된 업주 정보), `/api/photo/…`(승인된 사진), `/api/admin/…`(검토, Access 인증 필수) |
+| `functions/` | Cloudflare Pages Functions: `/api/partner`(신청 접수), `/api/listings`(승인된 업주 정보), `/api/photo/…`(승인된 사진), `/api/auth/…`(가입·로그인), `/api/saved`(찜 동기화), `/api/comments`(후기·댓글), `/api/board`(게시판), `board/p/…`(게시글 페이지), `/api/admin/…`(검토·관리, Access 인증 필수) |
 | `404.html` | 없는 주소 접속 시 페이지 (Cloudflare Pages가 자동 인식) |
 | `favicon.svg` | 브라우저 탭 아이콘 (탕 심볼) |
 | `og.png` | 카톡·SNS 공유 시 미리보기 이미지 (1200×630) |
@@ -72,7 +78,8 @@
 - **지도·길찾기**: 모든 시설에 구글 지도·네이버 지도·카카오맵 링크와 '길찾기·택시 카드' 버튼이 붙습니다. 택시 카드는 시설 이름과 주소를 큰 한글로 보여 주고 "기사님, 이 주소로 가 주세요"를 함께 띄우며, 주소 복사와 네이버·카카오(도보·대중교통)·구글(대중교통) 길찾기로 이어집니다. 지역 페이지에는 '지도' 보기가 있어 거른 결과를 지도 위에 점으로 보여 줍니다(Leaflet + OpenStreetMap, 방문자가 지도를 열 때만 불러옴). 방문자가 많아지면 OpenStreetMap 기본 타일 대신 유료 지도 타일(예: MapTiler) 키로 바꾸는 편이 좋습니다.
 - **구글 지도 자료**: 구글 지도는 링크로만 씁니다. 구글 지도 플랫폼 약관은 장소 정보·평점을 긁어 오거나 저장하는 것을 금지하고(장소 ID만 보관 가능), 장소 API는 유료 키가 필요합니다. 한국에서는 2026년 2월 정부가 구글의 지도 데이터 반출을 조건부로 허가했지만, 2026년 8월 기준 도보·자동차 길안내는 아직 열리지 않았고 대중교통 길찾기만 됩니다. 그래서 길찾기 버튼은 네이버·카카오를 먼저 보여 줍니다.
 - **무작위 순서**: 지역 목록, 사진 줄, 대표 시설 카드, 1인 목욕탕 카드, 인기 업장 카드는 페이지를 열 때마다 순서가 바뀝니다. 돈을 받고 위에 올리는 자리는 없고, 페이지에도 그렇게 적었습니다.
-- **찜하기**: 시설마다 '♡ Save' 버튼이 있고, 찜한 곳은 시설 목록 첫 화면(`baths/#saved`)에 모입니다. 방문자 기기 안(브라우저 저장소)에만 남고 서버로 보내지 않습니다.
+- **찜하기**: 시설마다 '♡ Save' 버튼이 있고, 찜한 곳은 시설 목록 첫 화면(`baths/#saved`)과 마이페이지에 모입니다. 로그인하지 않으면 방문자 기기 안(브라우저 저장소)에만 남고, 로그인하면 계정에 저장돼 휴대폰·노트북 어디서나 같은 목록이 보입니다(로그인 전에 찜한 것도 합쳐짐).
+- **회원·후기·게시판**: 해외 여행자가 주 대상이라 가입에 이메일·전화번호를 받지 않습니다. 닉네임(어느 언어 글자든 가능)과 비밀번호만으로 가입하고, 가입 직후 한 번만 보여 주는 16자리 복구 코드로 비밀번호를 다시 정합니다. 비밀번호는 브라우저에서 한 번 더 늘린 값만 서버로 가고, 서버에는 그 값의 해시만 남습니다. 후기는 시설 목록의 '★ 후기' 단추, 시설 상세 페이지, 가이드 글 끝 댓글 칸에서 쓰고, 별점은 한 사람이 한 시설에 하나(다시 쓰면 바뀜)입니다. 게시판은 자유·질문·팁 세 갈래이고 글과 댓글 모두 닉네임 또는 '익명'으로 쓸 수 있습니다(익명은 글마다 익명1·익명2로 구분, 글쓴이 표시). 다른 언어로 쓴 글에는 '번역' 링크(구글 번역)가 붙어 어느 나라 사람이든 읽을 수 있습니다. 광고 글을 막으려고 가입 직후 하루는 링크를 1개까지만, 글·댓글은 시간당 횟수 제한, 신고 3건이면 자동 가림이 걸려 있습니다. 작성자가 단 별점은 검색 결과에 별로 표시되지 않도록 구조화 데이터에 넣지 않았습니다(구글 규정).
 - **한탕 인증 뱃지 (HANTANG Top Rated)**: ① 구글 지도·카카오맵 평점 4.2 이상이면서 후기 500개 이상, 또는 ② 외국인이 쓰는 예약 사이트(Klook·Creatrip·Trazy·KKday·Tripadvisor) 평점 4.5 이상이면서 후기 100개 이상, 또는 ③ 네이버 방문자 리뷰 2,000개 이상이면서 다른 곳 평점 4.0 이상인 곳에 붙입니다. 영업 중이어야 하고, 돈을 받고 다는 뱃지가 아닙니다. 2026-10-31 조사에서 11곳이 기준을 넘었습니다(스파랜드 센텀시티, 클럽디 오아시스, 허심청, 아쿠아필드 하남·고양, 해운대온천센터, 산방산탄산온천, 세이안 연남, 더 설하, 세신샵 담다, 비단). 근거는 개발용 소스 `research/popularity/`와 `site/data/popular.json`에 있습니다. 후보 230곳 가운데 이번에 확인하지 못한 곳이 많아, 다음 조사 때 더 늘어날 수 있습니다. 네이버·카카오 페이지는 자동 수집이 막혀 있어 숫자를 가져오지 않았습니다.
 - **세신샵**: 상호로 분명한 세신샵 40곳을 '기타 목욕장'에서 'Scrub shop' 유형으로 따로 묶었습니다(목욕장업 인허가 34곳 + 피부미용업 인허가 6곳). 미용업 인허가 자료(영업 중 19만여 곳)에는 '세신'이 들어간 상호가 몇 곳뿐이라, 상호로 분명한 곳만 넣었습니다. 1인 세신샵 조사 카드는 48곳입니다.
 - **업주 등록 (partner/)**: 업주가 상호·주소·영업시간·요금·외국어 응대·타투 정책·시설·예약 방법·소개·사진(최대 5장, 사용 허락 동의)·담당자 연락처를 보내면 `/api/partner`가 Cloudflare KV에 저장합니다. 관리자가 `admin/`에서 내용을 고치고(영문 소개 추가 등) 승인하면, 해당 지역 페이지 위쪽 'Information from the owners' 칸과 인허가 목록의 같은 업장 옆에 바로 나타납니다(다시 빌드할 필요 없음). 담당자 이름·연락처·사업자번호는 공개되지 않습니다. 같은 곳에서 한 시간에 5번까지만 보낼 수 있고, 자동 등록 방지용 빈칸과 최소 작성 시간 확인이 들어 있습니다. 아래 '업주 등록 기능 설정'을 마쳐야 접수가 시작됩니다.
@@ -93,11 +100,11 @@
 ## 도메인 연결 후 검색엔진 등록
 
 1. **Google Search Console**: '도메인' 속성으로 `hantang.kr` 추가 → DNS 확인 화면에 Cloudflare 자동 확인이 보이면 그것으로, 보이지 않으면 안내된 TXT 값을 Cloudflare → hantang.kr → DNS → Add record(Type TXT, Name @)에 붙여 넣고 확인 → 왼쪽 Sitemaps에 `sitemap.xml` 제출.
-2. **네이버 서치어드바이저** (searchadvisor.naver.com): 사이트 등록 `https://hantang.kr` → 'HTML 태그' 방식의 content 값을 `verify.json`의 `naver-site-verification`에 넣고 배포 → 소유 확인 → 요청 → 사이트맵 제출(`https://hantang.kr/sitemap.xml`)과 RSS 제출(`https://hantang.kr/ko/feed.xml`).
+2. **네이버 서치어드바이저** (searchadvisor.naver.com): 소유 확인용 HTML 태그(`naver-site-verification`)와 HTML 파일(`naver939cce5e5b43ea1aad82ea6e836c3627.html`)이 모두 올라가 있습니다. 어느 방식으로든 '소유확인'을 누르면 됩니다. 확인 뒤 요청 → 사이트맵 제출에 `https://hantang.kr/sitemap.xml`, RSS 제출에 `https://hantang.kr/ko/feed.xml`을 넣고, 검증 → 웹 페이지 최적화에서 `https://hantang.kr/`를 한 번 점검해 두면 좋습니다.
 3. **다음 웹마스터도구** (webmaster.daum.net): 사이트 등록 후 받은 PIN 코드 문자열을 `verify.json`의 `daum`에 넣고 배포하면 robots.txt 맨 위에 들어갑니다.
 4. **Bing Webmaster Tools**: 'Google Search Console에서 가져오기'로 한 번에 등록.
 5. **Yandex Webmaster**(러시아어 검색): 메타 태그 값을 `yandex-verification`에 넣고 배포.
-6. **IndexNow**: 업주 등록 기능 설정을 마치면 관리자 화면의 'IndexNow 보내기'로 Bing·Naver·Yandex에 새 주소를 한 번에 알립니다.
+6. **IndexNow (자동)**: 저장소에 새 버전이 올라가면 GitHub Actions(`.github/workflows/indexnow.yml`)가 Cloudflare 배포가 끝나기를 기다렸다가, 사이트맵에서 날짜가 바뀐 주소만 골라 IndexNow 와 네이버 서치어드바이저에 보냅니다(Bing·Yandex·Seznam 등은 IndexNow 로 함께 받음). 따로 할 일은 없고, 처음 한 번은 GitHub 저장소 → Actions → IndexNow → Run workflow 에서 'all'을 체크해 전체 주소를 보내 주세요. 관리자 화면의 'IndexNow 보내기' 단추도 그대로 쓸 수 있습니다.
 7. 바이두는 중국 내 인가(ICP) 없는 사이트라 효과가 낮아 지금은 권하지 않습니다. Cloudflare의 Crawler Hints(Caching → Configuration)를 켜 두면 Bing·Yandex가 바뀐 페이지를 더 빨리 가져갑니다.
 
 ## 업주 등록 기능 설정 (처음 한 번, 브라우저에서)
@@ -115,9 +122,22 @@
 
 설정 전에는 신청서가 "접수 시스템을 준비하고 있습니다"라고 안내하고, 관리자 API 는 항상 거부합니다(인증 값이 없으면 열리지 않도록 만들어 둠).
 
+## 회원·후기·게시판 기능 켜기 (처음 한 번, 브라우저에서)
+
+D1 데이터베이스를 연결하기 전에는 로그인·후기·게시판 칸에 "준비 중"이라고만 나오고, 찜은 지금처럼 기기 안에만 저장됩니다. 무료 플랜 안에서 동작합니다.
+
+1. **D1 만들기**: Cloudflare 대시보드 → Storage & Databases → D1 SQL Database → Create → 이름 `hantang` → Create. 표(테이블)는 첫 접속 때 사이트가 알아서 만듭니다.
+2. **Pages 에 연결**: Workers & Pages → `hantang-web` → Settings → Bindings → Add → D1 database → 변수 이름 **`HANTANG_DB`**, 데이터베이스 `hantang` 선택 → Save. (Production 에 추가)
+3. **다시 배포**: Deployments → 맨 위 배포의 ⋯ → Retry deployment. 이후 `hantang.kr/me/`에서 가입이 되면 끝입니다.
+4. **관리 화면**: 위 '업주 등록 기능 설정'의 Zero Trust Access(`admin`, `api/admin` 경로)를 마쳤다면 `hantang.kr/admin/` 아래쪽 '회원 글·후기 관리'에서 신고된 글, 자동으로 가려진 글, 전체 글·후기·회원을 보고 가리기·삭제·이용 정지를 할 수 있습니다. Access 설정이 없으면 관리 API 는 항상 거부합니다.
+5. **(선택) 가입 로봇 막기 — Turnstile**: 가입 스팸이 생기면 Cloudflare 대시보드 → Turnstile → Add widget(도메인 `hantang.kr`, Managed) → 받은 Site Key 와 Secret Key 를 Pages → Settings → Variables and Secrets 에 `TURNSTILE_SITEKEY`(Text), `TURNSTILE_SECRET`(Secret)으로 넣고 다시 배포합니다. 넣으면 가입 화면에 확인 상자가 붙습니다.
+6. **문의 메일 받기 — Email Routing**: 약관·개인정보처리방침에 적은 `hello@hantang.kr`로 오는 메일을 받으려면 Cloudflare → hantang.kr → Email → Email Routing → Get started → Custom address `hello` → 받을 메일 주소(예: 본인 Gmail) 입력 → 그 메일함에 온 확인 메일에서 승인. 필요한 DNS 레코드는 Cloudflare가 자동으로 추가합니다.
+
+이용약관·개인정보처리방침(`terms/`, `privacy/`, `ko/terms/`, `ko/privacy/`)은 일반적인 내용으로 쓴 초안입니다. 정식 서비스 전에 법률 검토를 한 번 받아 두는 편이 좋습니다. 문장 원본은 개발용 소스 `site/data/legal.json`입니다.
+
 ## 다음 단계 제안
 
-1. 도메인 연결 후 Google Search Console·네이버 서치어드바이저·Bing·다음·Yandex 등록과 sitemap 제출 (아래 순서)
+1. 도메인 연결 후 Google Search Console·네이버 서치어드바이저·Bing·다음·Yandex 등록과 sitemap 제출 (위 순서), 그리고 D1 연결로 회원·후기·게시판 켜기
 2. 시설 목록의 서울·부산 시설부터 현장 실사 → 온도·타투 정책·영어 안내 여부를 직접 확인하고 `verified` 표시
 3. 관광공사 사진은 6개월마다 `tools/kto/`로 다시 수집해 새로 등록된 시설을 반영하고, 실사 때 찍은 사진(또는 시설에서 허락받은 사진)을 차례로 추가
 4. 전국 목록은 공공데이터가 갱신될 때(분기 1회 정도) 다시 내려받아 폐업·신규를 반영

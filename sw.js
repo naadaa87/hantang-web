@@ -1,8 +1,8 @@
-// HANTANG service worker — 202611141541
+// HANTANG service worker — 202611141614
 // 페이지: 인터넷 먼저, 실패하면 저장본 → 그래도 없으면 /offline/
 // 같은 사이트의 그림·데이터: 저장본을 먼저 보여 주고 뒤에서 새로 받아 둔다
 // 다른 사이트(글꼴·지도·관광공사 사진)와 /api/ /admin/ /tools/ /play/ 는 손대지 않는다
-const V = 'hantang-202611141541';
+const V = 'hantang-202611141614';
 const SKIP = /^\/(api|admin|tools|play|partner)\/|^\/(sitemap\.xml|robots\.txt|indexnow-key\.txt|sw\.js)$/;
 self.addEventListener('install', (e) => {
   self.skipWaiting();

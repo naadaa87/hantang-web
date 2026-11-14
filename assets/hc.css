@@ -1,0 +1,95 @@
+/* HANTANG 회원·후기·게시판 화면 (hc.js 가 필요할 때만 불러온다) */
+.hc{font-size:15px;line-height:1.6;color:var(--ink)}
+.hc button{font:inherit;cursor:pointer}
+.hc [hidden],.hc[hidden]{display:none!important}
+.hc-btn{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:14.5px;border-radius:12px;padding:10px 16px;border:1.5px solid var(--line);background:#fff;color:var(--ink);text-decoration:none}
+.hc-btn:hover{border-color:var(--blue);color:var(--blue)}
+.hc-btn.pri{background:var(--blue);border-color:var(--blue);color:#fff}
+.hc-btn.pri:hover{background:var(--blue-deep);color:#fff}
+.hc-btn[disabled]{opacity:.55;cursor:wait}
+.hc-link{background:none;border:0;padding:0;color:var(--mute);font-size:13px;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.hc-link:hover{color:var(--blue)}
+.hc-err{color:#B3261E;font-size:13.5px;margin-top:8px;min-height:1px}
+.hc-ok{color:#1E6E4A;font-size:13.5px;margin-top:8px}
+.hc-note{font-size:12.5px;color:var(--mute);margin-top:10px}
+.hc-f{display:block;margin-top:12px}
+.hc-f>span{display:block;font-size:13px;font-weight:700;margin-bottom:5px}
+.hc-f input[type=text],.hc-f input[type=password],.hc-f input[type=search],.hc-f textarea,.hc-f select,.hc-in{width:100%;box-sizing:border-box;font:inherit;font-size:15.5px;border:1.5px solid var(--line);border-radius:12px;padding:11px 13px;background:#fff;color:var(--ink)}
+.hc-f textarea,.hc-ta{min-height:110px;resize:vertical;width:100%;box-sizing:border-box;font:inherit;font-size:15.5px;border:1.5px solid var(--line);border-radius:12px;padding:11px 13px}
+.hc-f input:focus,.hc-f textarea:focus,.hc-ta:focus,.hc-in:focus{outline:none;border-color:var(--blue)}
+.hc-f small{display:block;font-size:12px;color:var(--mute);margin-top:4px}
+.hc-chk{display:flex;gap:9px;align-items:flex-start;font-size:13.5px;margin-top:12px;line-height:1.5}
+.hc-chk input{width:18px;height:18px;margin-top:2px;accent-color:var(--blue);flex:0 0 auto}
+.hc-chk a{color:var(--blue);text-decoration:underline}
+.hc-hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+/* 대화상자 */
+dialog.hc-dlg{border:0;border-radius:20px;padding:0;width:min(440px,calc(100vw - 24px));max-height:calc(100dvh - 32px);box-shadow:0 30px 80px -30px rgba(27,26,24,.5);margin:auto}
+dialog.hc-dlg.wide{width:min(640px,calc(100vw - 24px))}
+dialog.hc-dlg::backdrop{background:rgba(27,26,24,.45)}
+.hc-dlg .hc-in{padding:22px 22px 24px;overflow:auto;max-height:calc(100dvh - 32px);box-sizing:border-box}
+.hc-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.hc-top h2{font-size:20px;margin:0;line-height:1.35;word-break:keep-all;overflow-wrap:anywhere;min-width:0}
+:lang(ja) .hc-top h2,:lang(zh) .hc-top h2{word-break:normal}
+.hc-x{border:0;background:var(--stone);width:34px;height:34px;border-radius:50%;font-size:20px;line-height:1;flex:0 0 auto}
+.hc-tabs{display:flex;gap:6px;margin-top:14px;border-bottom:1px solid var(--line)}
+.hc-tabs button{border:0;background:none;padding:9px 12px;font-weight:700;color:var(--mute);border-bottom:2.5px solid transparent;margin-bottom:-1px}
+.hc-tabs button.on{color:var(--blue);border-color:var(--blue)}
+.hc-why{font-size:13px;color:var(--mute);background:var(--stone);border-radius:12px;padding:10px 12px;margin-top:14px}
+.hc-code{font-family:var(--mono);font-size:clamp(17px,5.2vw,22px);letter-spacing:.08em;text-align:center;background:var(--blue-tint);border:1.5px dashed #9EC3DA;border-radius:14px;padding:16px 10px;margin:14px 0;user-select:all;word-break:break-all}
+/* 후기·댓글 */
+.hc-thread{margin-top:6px}
+.hc-sum{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-weight:700}
+.hc-sum .stars{color:#E3A008;letter-spacing:1px}
+.hc-list{list-style:none;margin:14px 0 0;padding:0}
+.hc-item{border-top:1px solid var(--line);padding:14px 0}
+.hc-item:first-child{border-top:0}
+.hc-who{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13px;color:var(--mute)}
+.hc-who b{color:var(--ink);font-size:14px}
+.hc-tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;border-radius:99px;padding:2px 7px;background:var(--stone);color:var(--mute)}
+.hc-tag.op{background:var(--blue-tint);color:var(--blue)}
+.hc-tag.lang{background:#fff;border:1px solid var(--line)}
+.hc-text{margin-top:6px;white-space:pre-wrap;word-break:break-word;overflow-wrap:anywhere}
+.hc-text a{color:var(--blue);text-decoration:underline}
+.hc-acts{display:flex;gap:14px;margin-top:6px}
+.hc-hidden{color:var(--mute);font-style:italic;font-size:13.5px}
+.hc-form{border:1.5px solid var(--line);border-radius:16px;padding:14px;background:#fff;margin-top:14px}
+.hc-form .row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px}
+.hc-stars{display:flex;gap:2px}
+.hc-stars button{border:0;background:none;font-size:28px;line-height:1;color:#D9D4CC;padding:2px}
+.hc-stars button.on{color:#E3A008}
+.hc-more{margin-top:12px}
+/* 게시판 */
+.hc-bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:18px}
+.hc-cats{display:flex;gap:6px;flex-wrap:wrap}
+.hc-cats button{border:1.5px solid var(--line);background:#fff;border-radius:99px;padding:7px 14px;font-weight:700;font-size:13.5px}
+.hc-cats button.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.hc-bar .grow{flex:1 1 200px;min-width:0}
+.hc-bar select{font:inherit;font-size:14px;border:1.5px solid var(--line);border-radius:12px;padding:9px 10px;background:#fff}
+.hc-posts{list-style:none;margin:16px 0 0;padding:0;border-top:1px solid var(--line)}
+.hc-posts li{border-bottom:1px solid var(--line)}
+.hc-posts a.p{display:block;padding:14px 4px;color:var(--ink);text-decoration:none}
+.hc-posts a.p:hover h3{color:var(--blue)}
+.hc-posts h3{font-size:16.5px;margin:4px 0 0;line-height:1.4;word-break:break-word}
+.hc-posts p{margin:4px 0 0;color:var(--mute);font-size:14px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-break:break-word}
+.hc-cat{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;color:var(--blue);text-transform:uppercase}
+.hc-pager{display:flex;justify-content:space-between;margin-top:16px}
+.hc-empty{padding:30px 0;color:var(--mute);text-align:center}
+.hc-write{border:1.5px solid var(--blue);border-radius:18px;padding:16px;margin-top:16px;background:#fff}
+.hc-post h1{font-size:clamp(24px,3.4vw,32px);line-height:1.3;margin:6px 0 0;word-break:break-word}
+.hc-post .hc-meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;color:var(--mute);font-size:13.5px;margin-top:10px}
+.hc-post .hc-body{margin-top:18px;font-size:16.5px;line-height:1.8;white-space:pre-wrap;word-break:break-word;overflow-wrap:anywhere}
+.hc-post .hc-body a{color:var(--blue);text-decoration:underline}
+.hc-post .hc-acts{margin-top:18px;gap:10px;flex-wrap:wrap}
+.hc-like.on{border-color:#E06A6A;color:#C74545}
+.hc-rules{font-size:13px;color:var(--mute);border:1px solid var(--line);border-radius:14px;padding:12px 14px;background:var(--stone);margin-top:22px}
+.hc-rules b{color:var(--ink)}
+.hc-me-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.hc-box{border:1px solid var(--line);border-radius:18px;padding:18px;background:#fff;margin-top:16px}
+.hc-box h2{font-size:18px;margin:0 0 6px}
+.hc-saved{list-style:none;margin:8px 0 0;padding:0}
+.hc-saved li{border-top:1px solid var(--line);padding:10px 0;display:flex;justify-content:space-between;gap:10px}
+.hc-saved li:first-child{border-top:0}
+.hc-saved a{font-weight:700;color:var(--ink)}
+.hc-saved small{color:var(--mute);display:block;font-weight:400}
+.hc-ssr-comments{display:none}
+@media (max-width:600px){.hc-dlg .hc-in{padding:18px 16px 20px}.hc-post .hc-body{font-size:16px}}

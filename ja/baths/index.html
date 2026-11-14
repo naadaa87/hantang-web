@@ -315,14 +315,24 @@
   .lang-pop button:hover{background:var(--stone)}
   .lang-pop .on{color:var(--blue);font-weight:700}
   .lang-pop .soon{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;color:var(--mute);background:var(--stone);border-radius:99px;padding:2px 7px}
+  .nav-me{margin-left:10px;font-size:12.5px;font-weight:700;border:1.5px solid var(--line);border-radius:99px;padding:6px 12px;white-space:nowrap;max-width:140px;overflow:hidden;text-overflow:ellipsis;background:#fff}
+  .nav-me:hover{border-color:var(--blue);color:var(--blue)}
+  .nav-me.in{border-color:#CFE0EC;color:var(--blue);background:var(--blue-tint)}
   .burger{display:none;margin-left:auto;width:40px;height:40px;border:1px solid var(--line);border-radius:10px;align-items:center;justify-content:center;background:#fff}
   .burger svg{display:block}
   @media (max-width:880px){
     .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:8px 4px 12px}
     .nav-links a{padding:12px 14px;font-size:15px}
     .nav-links.open{display:flex}
-    .burger{display:flex}
+    .burger{display:flex;margin-left:8px}
     .lang-wrap{margin-left:8px}
+    .nav-me{margin-left:auto;max-width:120px}
+  }
+  .brand .bkr{white-space:nowrap}
+  @media (max-width:480px){
+    .nav-in{gap:8px}
+    .brand .bkr{display:none}
+    .nav-me{max-width:104px;padding:6px 10px}
   }
 
   /* ---------- hero ---------- */
@@ -519,6 +529,7 @@
   .f-col h5{font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;color:#8B877F;margin-bottom:16px;font-weight:600}
   .f-col a{display:block;font-size:13.5px;margin-bottom:10px;opacity:.9}
   .f-col a:hover{color:#fff}
+  .f-bottom a{color:inherit;text-decoration:underline;text-underline-offset:3px}
   .f-bottom{border-top:1px solid #33312E;margin-top:44px;padding-top:22px;display:flex;justify-content:space-between;gap:16px;font-size:12px;flex-wrap:wrap}
   @media (max-width:860px){.f-in{grid-template-columns:1fr 1fr}}
 
@@ -634,6 +645,7 @@
     <div class="nav-links" id="navLinks">
       <a href="../../ja/baths/">お風呂を探す</a>
       <a href="../../ja/guide/">はじめてガイド</a>
+      <a href="../../ja/board/">コミュニティ</a>
       <a href="../../ja/#seshin">アカスリ</a>
       <a href="../../ja/#stamps">スタンプ</a>
       <a href="../../ja/#pass">PASS</a>
@@ -652,6 +664,7 @@
         <a role="menuitem" href="../../ko/baths/" hreflang="ko" lang="ko">한국어</a>
       </div>
     </div>
+    <a class="nav-me" href="../../ja/me/" data-hc-me>ログイン</a>
     <button class="burger" id="burger" aria-label="メニューを開く" aria-expanded="false">
       <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M1 1h16M1 7h16M1 13h16" stroke="#1B1A18" stroke-width="2" stroke-linecap="round"/></svg>
     </button>
@@ -676,6 +689,7 @@
   .dlinks{margin-top:14px;display:flex;gap:16px;font-size:13.5px;font-weight:700;color:var(--blue)}
   .dnote{margin-top:22px;font-size:14px;color:var(--mute);max-width:760px;line-height:1.7;border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:var(--stone)}
   .dcount{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--mute);margin-top:18px}
+  .pl-link{display:inline-block;margin-top:14px;font-size:13.5px;font-weight:700;color:var(--blue)}
   @media (max-width:760px){.dgrid{grid-template-columns:1fr}.dr{grid-template-columns:1fr}}
 </style><svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <symbol id="ty-bath" viewBox="0 0 48 48"><path d="M10 26h28a14 14 0 0 1-28 0z" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><path d="M17 20c-2-3 2-5 0-8M24 20c-2-3 2-5 0-8M31 20c-2-3 2-5 0-8" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/></symbol>
@@ -689,6 +703,7 @@
   .hx-links a,.hx-links button{font:inherit;font-size:12.5px;font-weight:700;line-height:1;color:var(--blue);background:#fff;border:1.5px solid #CFE0EC;border-radius:99px;padding:7px 11px;cursor:pointer;text-decoration:none;white-space:nowrap}
   .hx-links a:hover,.hx-links button:hover{border-color:var(--blue)}
   .hx-links .hx-go{background:var(--blue);border-color:var(--blue);color:#fff}
+  .hx-links .hx-rev{color:#9A6B00;border-color:#EBD9A8}
   .hx-links .hx-fav[aria-pressed="true"]{background:#FDECEF;border-color:#F2B8C4;color:#B4234A}
   .hx-top{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:800;letter-spacing:.02em;color:#7A4B00;background:linear-gradient(180deg,#FFF4D6,#FFE7A8);border:1px solid #F0CF76;border-radius:99px;padding:3px 9px 3px 7px;white-space:nowrap;vertical-align:middle}
   .hx-top svg{width:13px;height:13px;fill:#E0A100}
@@ -778,7 +793,7 @@
     sv.innerHTML=ks.map(function(k){var x=s[k];return '<li><a class="hn" lang="ko" href="'+esc(x.u)+'">♥ '+esc(x.n)+'</a><div class="hm">'+esc(x.t)+'</div></li>'}).join('');
     se.hidden=ks.length>0; sc.hidden=!ks.length; }
   sc.addEventListener('click',function(){try{localStorage.removeItem('hantang.saved.v1')}catch(e){} showSaved();});
-  document.addEventListener('hx:saved',showSaved); showSaved();
+  document.addEventListener('hx:saved',showSaved); document.addEventListener('hx:synced',showSaved); showSaved();
 })();
 </script><style>
   .rx-ctl{display:grid;gap:12px;margin-top:30px}
@@ -855,6 +870,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">24時間営業</span><span class="bdg gray">宿泊OK</span><span class="bdg gray">英語OK</span><span class="bdg gray">男女共用ラウンジ</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">24時間 · 定休日なし</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴＋チムジルバン 昼₩14,000／夜₩16,000 · 子ども 昼₩7,000／夜₩8,000（2–7歳） · アカスリ ₩25,000～（男性）、入場＋アカスリ₩39,000～ <small>(確認時点 2026-10)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">東大門歴史文化公園駅（2・4・5号線）14番出口。1番ゲートからエレベーターで地下3階へ</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">서울 중구 장충단로 247 굿모닝시티 지하3층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/sparex-dongdaemun/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-10</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="sparex-dongmyo" data-hx="sparex-dongmyo" data-n="스파렉스 동묘" data-addr="서울 종로구 지봉로 19 시즌빌딩 12·13층" data-sub="ソウル · 東廟／昌信洞 · 24時間サウナ">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
@@ -864,6 +880,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">24時間営業</span><span class="bdg gray">宿泊OK</span><span class="bdg gray">男女共用ラウンジ</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">24時間 · 定休日なし</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴＋チムジルバン 昼₩14,000 · 夜間 ₩15,000（2025年2月時点） · 子ども 青少年₩10,000（2025年2月時点） <small>(確認時点 2026-02)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">東廟駅（1・6号線）6番出口を出てすぐ。入口はCIZNビルの13階</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">서울 종로구 지봉로 19 시즌빌딩 12·13층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/sparex-dongmyo/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-09</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="hongdae-bulgama" data-hx="hongdae-bulgama" data-n="홍대 24시 불가마 사우나" data-addr="서울 서대문구 신촌로 1 지하2층" data-sub="ソウル · 弘大／新村 · 24時間サウナ">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
@@ -873,6 +890,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">24時間営業</span><span class="bdg gray">宿泊OK</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">24時間</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴＋チムジルバン 昼₩11,000 <small>(確認時点 2026-02)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">弘大入口駅（2号線）4番出口から徒歩約5分。商業ビルの地下2階</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">서울 서대문구 신촌로 1 지하2층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/hongdae-bulgama/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-09</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="golden-sauna-myeongdong" data-hx="golden-sauna-myeongdong" data-n="황금사우나 명동" data-addr="서울 중구 명동8가길 27 지하2층" data-sub="ソウル · 明洞 · 24時間サウナ">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
@@ -882,6 +900,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">24時間営業</span><span class="bdg gray">宿泊OK</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">24時間</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴＋チムジルバン ₩20,000 <small>(確認時点 2026-02)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">明洞駅（4号線）9番出口から徒歩約2分。地下2階</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">서울 중구 명동8가길 27 지하2층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/golden-sauna-myeongdong/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="spa-lei" data-hx="spa-lei" data-n="스파레이" data-addr="서울 서초구 강남대로107길 5 크레신빌딩" data-sub="ソウル · 新沙／蚕院 · 24時間サウナ">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/72/2024972_image2_1.jpg" alt="스파레이" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第3類型）</a></span></div>
@@ -891,6 +910,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">宿泊OK</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">24時間（2025年の報告1件による。未確認）</span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">新沙駅（3号線）。江南大路107キル沿いのクレシンビル</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">서울 서초구 강남대로107길 5 크레신빌딩</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/spa-lei/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2025-12</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="club-k-seolleung" data-hx="club-k-seolleung" data-n="클럽케이서울 선릉찜질방" data-addr="서울 강남구 선릉로 524 117호" data-sub="ソウル · 宣陵（江南） · 24時間サウナ">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
@@ -900,6 +920,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">24時間営業</span><span class="bdg gray">宿泊OK</span><span class="bdg gray">男女共用ラウンジ</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">24時間</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴＋チムジルバン 平日₩17,000／週末₩19,000 <small>(確認時点 2025-02)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">宣陵駅（2号線、水仁・盆唐線）</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">서울 강남구 선릉로 524 117호</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/club-k-seolleung/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2025-02</div>
 </article><article class="dcard" data-region="seoul" data-type="sauna24" id="hwanghak-golden-spa" data-hx="hwanghak-golden-spa" data-n="황학동 황금스파찜질방" data-addr="서울 중구 청계천로 400 롯데캐슬베네치아 지하2층" data-sub="ソウル · 黄鶴洞（新堂／東廟） · 24時間サウナ">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
@@ -909,6 +930,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">24時間営業</span><span class="bdg gray">宿泊OK</span><span class="bdg gray">男女共用ラウンジ</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">24時間 · 定休日なし</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴＋チムジルバン 昼₩13,000／夜₩14,000 · 子ども ₩10,000（未就学児、昼夜共通） <small>(確認時点 2025-04)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">新堂駅と東廟駅の間。マンション団地「ロッテキャッスル・ヴェネツィア」の地下2階</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">서울 중구 청계천로 400 롯데캐슬베네치아 지하2층</span></span></div></div>
   <div class="dlinks"><a href="http://goldspa11.com/" target="_blank" rel="noopener">公式サイト ↗</a></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/hwanghak-golden-spa/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2025-04</div>
 </article><article class="dcard" data-region="seoul" data-type="hanjeungmak" id="supsok-hanbang-land" data-hx="supsok-hanbang-land" data-n="숲속한방랜드" data-addr="서울 서대문구 봉원사길 75-7" data-sub="ソウル · 新村／鞍山（西大門区） · 汗蒸幕">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-kiln"/></svg></div>
@@ -918,6 +940,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">男女共用ラウンジ</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">06:30–22:00</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴のみ ₩10,000 · 入浴＋チムジルバン ₩16,000（炭窯） · 子ども 入浴₩8,000／炭窯₩10,000（小学生） <small>(確認時点 2025-02)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">独立門駅（3号線）4番出口、または新村駅からバス。奉元寺の裏手、鞍山の中腹</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">서울 서대문구 봉원사길 75-7</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/supsok-hanbang-land/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-04</div>
 </article><article class="dcard" data-region="seoul" data-type="hanjeungmak" id="hana-mud" data-hx="hana-mud" data-n="하나머드 한증막" data-addr="서울 중구 을지로14길 7" data-sub="ソウル · 乙支路／明洞 · 汗蒸幕">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-kiln"/></svg></div>
@@ -927,6 +950,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">英語OK</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">09:00–22:00（最終入場22:00）</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴＋チムジルバン コース₩80,000–340,000、基本コースはオンライン予約で₩72,000 <small>(確認時点 2026-10)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">乙支路3街駅（2・3号線）10番出口から徒歩約1分</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">서울 중구 을지로14길 7</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/hana-mud/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-10</div>
 </article><article class="dcard" data-region="seoul" data-type="hanjeungmak" id="miso-sauna" data-hx="miso-sauna" data-n="미소사우나" data-addr="서울 서대문구 서소문로 45 지하1층" data-sub="ソウル · 忠正路 · 汗蒸幕">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-kiln"/></svg></div>
@@ -936,6 +960,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">08:00–20:00</span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">忠正路駅3番出口から徒歩約2分。地下1階</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">서울 서대문구 서소문로 45 지하1층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/miso-sauna/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="jjimjil" id="park-habio" data-hx="park-habio" data-n="파크하비오 워터킹덤 &amp; 찜질스파" data-addr="서울 송파구 송파대로 111, 202동 지하1층" data-sub="ソウル · 文井（松坡区） · チムジルバン">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/43/3095643_image2_1.jpg" alt="파크하비오 워터킹덤&amp;스파" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType1.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第1類型）</a></span></div>
@@ -945,6 +970,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">男女共用ラウンジ</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">10:00–18:00 · 定休日 火曜・水曜</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴のみ 平日₩15,000（サウナ） · 入浴＋チムジルバン 平日₩18,000 · 子ども サウナ₩14,000／チムジルバン₩15,000（青少年・平日） <small>(確認時点 2025-02)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">文井駅（8号線）。202棟の地下1階</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">서울 송파구 송파대로 111, 202동 지하1층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/park-habio/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2025-02</div>
 </article><article class="dcard" data-region="seoul" data-type="jjimjil" id="sealala" data-hx="sealala" data-n="씨랄라" data-addr="서울 영등포구 문래로 164 지하2층" data-sub="ソウル · 文来（永登浦区） · チムジルバン">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
@@ -954,6 +980,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">07:00–21:30</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴＋チムジルバン ₩25,000 <small>(確認時点 2026-02)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">文来駅（2号線）4番出口から徒歩約8分。地下2階</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">서울 영등포구 문래로 164 지하2층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/sealala/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-02</div>
 </article><article class="dcard" data-region="seoul" data-type="bath" id="siloam-junggok" data-hx="siloam-junggok" data-n="중곡동 실로암사우나" data-addr="서울 광진구 용마산로 173" data-sub="ソウル · 中谷洞（広津区） · 銭湯">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
@@ -963,6 +990,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">05:00–22:00</span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">広津区中谷洞。駅からの道順は公表されていません</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">서울 광진구 용마산로 173</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/siloam-junggok/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="spa" id="spaland-centum" data-hx="spaland-centum" data-n="스파랜드 센텀시티" data-addr="부산 해운대구 센텀남대로 35" data-sub="釜山 · センタムシティ（海雲台区） · 大型スパ">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/02/3544802_image2_1.JPEG" alt="센텀시티 스파랜드" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第3類型）</a></span></div>
@@ -972,6 +1000,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">男女共用ラウンジ</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">09:00–22:00（最終入場21:00） · 定休日なし</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴＋チムジルバン ₩25,000（4時間） · 子ども ₩20,000（小学生） <small>(確認時点 2026-09)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。2024年後半の利用者の報告は食い違っている（断られたという報告が1件、入れたという報告が複数）ため、受付で確認してください。</span></div><div class="dr"><span class="dk">泉質</span><span class="dv">地下1,000mから湧く2つの天然温泉：炭酸水素塩泉と塩化物泉</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">センタムシティ駅（2号線）12番出口から徒歩約3分。新世界センタムシティ内</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">부산 해운대구 센텀남대로 35</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/spaland-centum/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="hurshimchung" data-hx="hurshimchung" data-n="허심청" data-addr="부산 동래구 온천장로107번길 32" data-sub="釜山 · 東莱温泉 · 温泉">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/37/4090237_image2_1.jpg" alt="허심청" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第3類型）</a></span></div>
@@ -981,6 +1010,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">男女共用ラウンジ</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">浴場 05:30–22:00（最終入場21:30）／チムジルゾーン 06:30–21:00 · 定休日なし</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴のみ 平日₩15,000／週末・祝日₩18,000 · 入浴＋チムジルバン ＋₩4,000（チムジルゾーン追加） · 子ども 小学生₩11,000／₩12,000、未就学児₩7,000 <small>(確認時点 2026-09)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">泉質</span><span class="dv">東莱の天然温泉（温度は非公表）</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">温泉場駅（1号線）、東莱</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">부산 동래구 온천장로107번길 32</span></span></div></div>
   <div class="dlinks"><a href="https://hotelnongshim.com" target="_blank" rel="noopener">公式サイト ↗</a></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/hurshimchung/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="haeundae-oncheon-center" data-hx="haeundae-oncheon-center" data-n="해운대온천센터" data-addr="부산 해운대구 중동2로 16" data-sub="釜山 · 海雲台 · 温泉">
   <div class="dimg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Haeundae_Spa_Center.JPG/960px-Haeundae_Spa_Center.JPG" alt="해운대 온천센터" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://commons.wikimedia.org/wiki/File:Haeundae_Spa_Center.JPG" target="_blank" rel="noopener">写真：Abasaa、Wikimedia Commons（Public domain）</a></span></div>
@@ -990,6 +1020,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">04:00–23:59（木曜は06:00から） · 定休日 水曜、旧正月・秋夕</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴のみ ₩12,000（2026年9月10日に₩10,000から値上げ） · アカスリ 約₩30,000 <small>(確認時点 2026-09)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">泉質</span><span class="dv">海辺の天然温泉。40–62°Cの塩化物泉で、塩分がとても濃い</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">海雲台駅（2号線）とビーチの間。受付と女湯は4階、男湯は5階</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">부산 해운대구 중동2로 16</span></span></div></div>
   <div class="dlinks"><a href="https://haeundaespa.com" target="_blank" rel="noopener">公式サイト ↗</a></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/haeundae-oncheon-center/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="sauna24" id="hill-spa-dalmaji" data-hx="hill-spa-dalmaji" data-n="달맞이 힐스파" data-addr="부산 해운대구 영월길 117-7" data-sub="釜山 · タルマジの丘（海雲台） · 24時間サウナ">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
@@ -999,6 +1030,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">24時間営業</span><span class="bdg gray">宿泊OK</span><span class="bdg gray">男女共用ラウンジ</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">24時間 · 定休日なし</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴のみ ₩12,000（2026年10月1日に₩10,000から値上げ） · 入浴＋チムジルバン 平日・週末・夜間により約₩15,000–18,000 <small>(確認時点 2026-10)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">海雲台、タルマジの丘。駅からの道順は公表されていません</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">부산 해운대구 영월길 117-7</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/hill-spa-dalmaji/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="spa" id="club-d-oasis" data-hx="club-d-oasis" data-n="클럽디 오아시스" data-addr="부산 해운대구 달맞이길 30 LCT 3~6층" data-sub="釜山 · 海雲台（LCT） · 大型スパ">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
@@ -1008,6 +1040,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">男女共用ラウンジ</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">10:00–22:00 · 定休日 火曜</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴＋チムジルバン ₩30,000（スパパス） · 子ども ₩24,000（スパパス） <small>(確認時点 2026-09)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">泉質</span><span class="dv">海水温泉。2024年に国民保養温泉に認定</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">海雲台ビーチ、タルマジキルのLCTタワー3–6階</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">부산 해운대구 달맞이길 30 LCT 3~6층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/club-d-oasis/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="seawater" id="aqua-palace" data-hx="aqua-palace" data-n="호텔 아쿠아펠리스 스파&amp;사우나" data-addr="부산 수영구 광안해변로 225" data-sub="釜山 · 広安里 · 海水湯">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
@@ -1017,6 +1050,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">24時間営業</span><span class="bdg gray">宿泊OK</span><span class="bdg gray">男女共用ラウンジ</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">24時間 · 定休日なし</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴のみ ₩12,000（サウナのみ） · 入浴＋チムジルバン ₩30,000 · 子ども サウナ₩9,000／チムジル込み₩20,000（学生） <small>(確認時点 2026-09)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">泉質</span><span class="dv">地下816mの天然海水</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">水営区、広安里ビーチ沿いの通り</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">부산 수영구 광안해변로 225</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/aqua-palace/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="seawater" id="spa-haesurang" data-hx="spa-haesurang" data-n="스파해수랑" data-addr="부산 서구 충무대로 134" data-sub="釜山 · ソンド（西区） · 海水湯">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
@@ -1026,6 +1060,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">06:00–21:00</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴＋チムジルバン ₩20,000（5時間）／屋上露天風呂込み₩30,000（8時間） · 子ども ₩15,000（5時間）／屋上露天風呂込み₩23,000（8時間） <small>(確認時点 2026-09)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">泉質</span><span class="dv">海水</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">西区、ソンド海水浴場とケーブルカーの近く</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">부산 서구 충무대로 134</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/spa-haesurang/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="taejongdae-oncheon" data-hx="taejongdae-oncheon" data-n="태종대온천찜질방" data-addr="부산 영도구 태종로 808" data-sub="釜山 · 影島（太宗台） · 温泉">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/85/3547085_image2_1.jpg" alt="태종대온천찜질방" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType1.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第1類型）</a></span></div>
@@ -1035,6 +1070,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">24時間営業</span><span class="bdg gray">宿泊OK</span><span class="bdg gray">男女共用ラウンジ</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">24時間 · 定休日 火曜</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴のみ ₩10,000（サウナ） · 入浴＋チムジルバン ₩11,000–13,000 · 夜間 週末・夜間は＋₩1,000 · 子ども ₩7,000（サウナ） <small>(確認時点 2026-09)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">泉質</span><span class="dv">地下600mから湧く強塩泉</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">影島、太宗台公園の入口から徒歩約5分</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">부산 영도구 태종로 808</span></span></div></div>
   <div class="dlinks"><a href="https://tjdspa.co.kr" target="_blank" rel="noopener">公式サイト ↗</a></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/taejongdae-oncheon/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="seawater" id="gwangan-haesu-world" data-hx="gwangan-haesu-world" data-n="광안해수월드" data-addr="부산 수영구 광안해변로370번길 7" data-sub="釜山 · 広安里 · 海水湯">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
@@ -1044,6 +1080,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">05:00–24:00</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴のみ ₩10,000（サウナ） · 入浴＋チムジルバン ₩17,000–19,000（サウナ＋ジム、またはサウナ＋プール） · 子ども ₩7,000（サウナ） <small>(確認時点 2026-09)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">泉質</span><span class="dv">地下1,127mより深い岩盤層からくみ上げた海水</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">水営区、広安里ビーチの目の前</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">부산 수영구 광안해변로370번길 7</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/gwangan-haesu-world/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="oncheon" id="water-house-ananti" data-hx="water-house-ananti" data-n="워터하우스 (아난티 코브)" data-addr="부산 기장군 기장읍 기장해안로 268-32" data-sub="釜山 · 機張（アナンティ・コーブ） · 温泉">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
@@ -1053,6 +1090,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">09:00–20:00 · 定休日 毎月第3火曜</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴＋チムジルバン 平日約₩60,000–79,000／繁忙期₩90,000–97,000 · 子ども 平日約₩40,000／繁忙期₩50,000 <small>(確認時点 2026-09)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">泉質</span><span class="dv">地下600mの温泉、湧出量は日量約1,000t</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">海雲台の北東の海沿い、機張邑のアナンティ・コーブ。車かタクシーで</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">부산 기장군 기장읍 기장해안로 268-32</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/water-house-ananti/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-09</div>
 </article><article class="dcard" data-region="busan" data-type="bath" id="halmae-tang" data-hx="halmae-tang" data-n="할매탕" data-addr="부산 해운대구 중동2로10번길 7" data-sub="釜山 · 海雲台 · 銭湯">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/48/3083448_image2_1.jpg" alt="할매탕" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第3類型）</a></span></div>
@@ -1062,6 +1100,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">07:00–22:00 · 定休日 火曜</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴のみ ₩13,000 <small>(確認時点 2023-10)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">泉質</span><span class="dv">自家源泉（深さ900m）。貯湯タンクを通さず、そのまま使用</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">海雲台・中洞、海雲台温泉センターの近く（地図アプリではセンターのほうが表示されることがあります）</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">부산 해운대구 중동2로10번길 7</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/halmae-tang/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-07</div>
 </article><article class="dcard" data-region="busan" data-type="bath" id="world-spa-choryang" data-hx="world-spa-choryang" data-n="월드스파" data-addr="부산 동구 홍곡로 22" data-sub="釜山 · 草梁（釜山駅周辺） · 銭湯">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
@@ -1071,6 +1110,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">05:00–24:00 · 定休日 毎月最終水曜</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴のみ ₩11,000～ <small>(確認時点 2026-10)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">泉質</span><span class="dv">地下600mからくみ上げた天然ミネラルウォーター</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">草梁洞、釜山駅（1号線）から数ブロック</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">부산 동구 홍곡로 22</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/world-spa-choryang/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-10</div>
 </article><article class="dcard" data-region="busan" data-type="hotel" id="cimer-busan" data-hx="cimer-busan" data-n="파라다이스호텔 부산 씨메르" data-addr="" data-sub="釜山 · 海雲台ビーチ · ホテルサウナ">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-other"/></svg></div>
@@ -1080,6 +1120,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">入れ替え制：08:00–11:10、11:30–14:40、15:00–18:10、18:30–21:50</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴＋チムジルバン ₩44,000（宿泊者以外） · 子ども 小学生₩22,000、49か月未満は無料 <small>(確認時点 2026-10)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">泉質</span><span class="dv">屋外の海水温泉</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">海雲台ビーチのパラダイスホテル釜山。最寄り駅は海雲台駅（2号線）</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko"></span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/cimer-busan/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="spa" id="aquafield-hanam" data-hx="aquafield-hanam" data-n="아쿠아필드 하남" data-addr="경기 하남시 미사대로 750 스타필드 하남 3층" data-sub="河南（京畿道） · スターフィールド河南（ミサ） · 大型スパ">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
@@ -1089,6 +1130,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">男女共用ラウンジ</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">スパ 10:00–22:00／屋内ウォーターパーク 10:00–19:00 · 定休日なし</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴＋チムジルバン ₩26,000（6時間、超過は毎時₩5,000） · 子ども ₩21,000 <small>(確認時点 2026-10)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">ミサ大路、スターフィールド河南3階</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">경기 하남시 미사대로 750 스타필드 하남 3층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/aquafield-hanam/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="spa" id="aquafield-goyang" data-hx="aquafield-goyang" data-n="아쿠아필드 고양" data-addr="경기 고양시 덕양구 고양대로 1955 스타필드 고양 4층" data-sub="高陽（京畿道） · スターフィールド高陽（徳陽区） · 大型スパ">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
@@ -1098,6 +1140,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">男女共用ラウンジ</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">スパ 10:00–22:00（閑散期）</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴＋チムジルバン ₩26,000 · 子ども ₩21,000 <small>(確認時点 2026-10)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">徳陽区高陽大路、スターフィールド高陽4階</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">경기 고양시 덕양구 고양대로 1955 스타필드 고양 4층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/aquafield-goyang/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="termeden" data-hx="termeden" data-n="테르메덴" data-addr="경기 이천시 모가면 사실로 984" data-sub="利川（京畿道） · モガ面 · 温泉">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/78/3566478_image2_1.jpg" alt="테르메덴" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第3類型）</a></span></div>
@@ -1107,6 +1150,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">男女共用ラウンジ</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">浴場 09:00–20:00／屋内プール 09:00–19:00／屋外 09:00–18:00</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴＋チムジルバン 終日₩54,000／14:00以降₩28,000／17:00以降₩22,000 · 子ども 終日₩44,000、36か月未満は無料 <small>(確認時点 2026-10)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">泉質</span><span class="dv">ナトリウムとカルシウムを豊富に含む温泉</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">利川市モガ面。鉄道は通っておらず、車かバスで</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">경기 이천시 모가면 사실로 984</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/termeden/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="jjimjil" id="skyland-bucheon" data-hx="skyland-bucheon" data-n="스카이랜드 사우나" data-addr="경기 부천시 상동로 90 메가플러스 7층" data-sub="富川（京畿道） · 上洞 · チムジルバン">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-jjim"/></svg></div>
@@ -1116,6 +1160,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span></div>
   <div class="drows"><div class="dr"><span class="dk">料金</span><span class="dv">入浴のみ 昼₩12,000／夜₩13,000 · 入浴＋チムジルバン 昼₩13,000／夜₩14,000（プール込み） <small>(確認時点 2026-07)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">富川市上洞、メガプラスビル7階</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">경기 부천시 상동로 90 메가플러스 7층</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/skyland-bucheon/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-07</div>
 </article><article class="dcard" data-region="other" data-type="spa" id="cimer-paradise-city" data-hx="cimer-paradise-city" data-n="파라다이스시티 씨메르" data-addr="" data-sub="仁川 · 永宗島（パラダイスシティ） · 大型スパ">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bathjjim"/></svg></div>
@@ -1125,6 +1170,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">男女共用ラウンジ</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">10:00–21:00</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴＋チムジルバン チムジルスパパス₩40,000／アクアスパ₩60,000–70,000 · 子ども チムジル₩30,000／アクア₩50,000–60,000（8歳以上） <small>(確認時点 2026-10)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">永宗島のパラダイスシティ。仁川空港から約10分</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko"></span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/cimer-paradise-city/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-10</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="cheoksan-oncheon" data-hx="cheoksan-oncheon" data-n="척산온천휴양촌" data-addr="강원 속초시 관광로 327" data-sub="束草（江原道） · 尺山 · 温泉">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/75/2709375_image2_1.jpg" alt="척산온천휴양촌" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第3類型）</a></span></div>
@@ -1134,6 +1180,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">05:30–20:00（露天風呂は08:30–19:00）</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴のみ ₩11,000 · 子ども ₩7,000（6歳まで） <small>(確認時点 2025-04)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">泉質</span><span class="dv">地下約4,000mから湧く53°Cのラジウム泉（フッ素を含む）。加温なし</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">ソウル（高速バスターミナルまたは東ソウル総合ターミナル）から束草までバスで約2時間30分。そこから路線バスかタクシーで</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">강원 속초시 관광로 327</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/cheoksan-oncheon/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="deokgu-oncheon" data-hx="deokgu-oncheon" data-n="덕구온천 리조트" data-addr="경북 울진군 북면 덕구리 575" data-sub="蔚珍（慶尚北道） · 北面（応峰山） · 温泉">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/33/3503533_image2_1.jpg" alt="덕구온천 스파월드" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第3類型）</a></span></div>
@@ -1143,6 +1190,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">浴場 06:00–22:00／スパワールド 10:00–19:00（週末は20:00まで）</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴のみ ₩11,000（ホテル宿泊者は₩6,500） · 入浴＋チムジルバン 閑散期₩26,000–32,000／繁忙期₩38,000（スパワールド） · 子ども 浴場₩8,000／スパワールド₩17,000–30,000 <small>(確認時点 2026-09)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">泉質</span><span class="dv">自然湧出の源泉、42.4°C、弱アルカリ性の炭酸水素塩泉</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">蔚珍郡北面。ソウルから車で約4時間。無料駐車場は約2,000台</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">경북 울진군 북면 덕구리 575</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/deokgu-oncheon/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-09</div>
 </article><article class="dcard" data-region="other" data-type="seawater" id="yangnam-haesu-oncheon" data-hx="yangnam-haesu-oncheon" data-n="양남해수온천랜드24" data-addr="경북 경주시 양남면 해변공원길 93" data-sub="慶州（慶尚北道） · 陽南面（東海岸） · 海水湯">
   <div class="dimg ill"><svg aria-hidden="true"><use href="#ty-bath"/></svg></div>
@@ -1152,6 +1200,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">24時間営業</span><span class="bdg gray">宿泊OK</span><span class="bdg gray">男女共用ラウンジ</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">チムジル 24時間／サウナ 05:00–24:00 · 定休日 毎月第3火曜</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴のみ ₩8,000（サウナ） · 入浴＋チムジルバン ₩12,000 · 子ども サウナ₩5,000／チムジル₩8,000 <small>(確認時点 2025-04)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">泉質</span><span class="dv">海水温泉</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">慶州の東海岸、陽南面。車かバスで</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">경북 경주시 양남면 해변공원길 93</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/yangnam-haesu-oncheon/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="spa-valley-daegu" data-hx="spa-valley-daegu" data-n="스파밸리" data-addr="대구 달성군 가창면 가창로 891" data-sub="大邱 · 嘉昌面（達城郡） · 温泉">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/39/4081039_image2_1.jpg" alt="스파밸리 워터파크" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第3類型）</a></span></div>
@@ -1161,6 +1210,7 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">屋内 09:00–18:00／屋外 09:30–17:30</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴＋チムジルバン 終日₩38,000／午後₩24,000 · 子ども 終日₩30,000／午後₩19,000 <small>(確認時点 2025-04)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">泉質</span><span class="dv">温泉水。運営会社は「ウォーターパークは100％温泉」としています</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">大邱の南、達城郡嘉昌面。車かバスで</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">대구 달성군 가창면 가창로 891</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/spa-valley-daegu/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2025-04</div>
 </article><article class="dcard" data-region="other" data-type="oncheon" id="sanbangsan-oncheon" data-hx="sanbangsan-oncheon" data-n="산방산탄산온천" data-addr="제주 서귀포시 안덕면 사계북로41번길 192" data-sub="西帰浦（済州） · 安徳面（山房山） · 温泉">
   <div class="dimg"><img src="https://tong.visitkorea.or.kr/cms/resource/24/3569424_image2_1.jpg" alt="제주 산방산탄산온천" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="pcap"><a href="https://www.kogl.or.kr/info/licenseType3.do" target="_blank" rel="noopener">写真：韓国観光公社（KOGL 第3類型）</a></span></div>
@@ -1170,8 +1220,9 @@
   <div class="badges"><span class="bdg gray">タトゥー：要確認</span><span class="bdg gray">男女共用ラウンジ</span></div>
   <div class="drows"><div class="dr"><span class="dk">営業時間</span><span class="dv">浴場 06:00–23:00／屋外プール 10:00–22:00／チムジル 06:00–22:00</span></div><div class="dr"><span class="dk">料金</span><span class="dv">入浴のみ ₩14,000（4時間、超過は毎時₩1,000） · 入浴＋チムジルバン チムジル＋₩2,000／屋外プール＋₩5,000 · 子ども ₩7,000 <small>(確認時点 2026-02)</small></span></div><div class="dr"><span class="dk">タトゥー</span><span class="dv">公表されたルールはありません。受付で確認してください。</span></div><div class="dr"><span class="dk">泉質</span><span class="dv">天然炭酸泉、約31°C。加温した浴槽も炭酸泉</span></div><div class="dr"><span class="dk">アクセス</span><span class="dv">西帰浦市安徳面、山房山のふもと。車かバスで</span></div><div class="dr"><span class="dk">住所</span><span class="dv"><span lang="ko">제주 서귀포시 안덕면 사계북로41번길 192</span></span></div></div>
   <div class="dlinks"></div><div class="hx-links"></div>
+  <a class="pl-link" href="../../ja/baths/p/sanbangsan-oncheon/">詳細・レビュー →</a>
   <div class="verify">公開情報より · 現地確認はこれから · 2026-02</div>
-</article></div><div class="dnote">料金と営業時間は変わることが多く、平日・週末・祝日でも異なります。目安としてご覧いただき、遠出の前には公式ページで確認してください。電話番号はあえて載せていません。ほとんどの受付は韓国語のみなので、「見せるだけカード」のほうが確実に伝わります。 <a href="../../ja/#pass" style="color:var(--blue);font-weight:700">施設オーナーの方へ →</a></div></div></section><script type="application/json" id="hxT">{"google": "Googleマップ", "naver": "NAVERマップ", "kakao": "カカオマップ", "go": "行き方・タクシーカード", "save": "保存", "saved": "保存済み", "copy": "韓国語の住所をコピー", "root": "../../"}</script><dialog class="hx-sheet" id="hxSheet" aria-labelledby="hxSheetH"><div class="hx-sh">
+</article></div><div class="dnote">料金と営業時間は変わることが多く、平日・週末・祝日でも異なります。目安としてご覧いただき、遠出の前には公式ページで確認してください。電話番号はあえて載せていません。ほとんどの受付は韓国語のみなので、「見せるだけカード」のほうが確実に伝わります。 <a href="../../ja/#pass" style="color:var(--blue);font-weight:700">施設オーナーの方へ →</a></div></div></section><script type="application/json" id="hxT">{"google": "Googleマップ", "naver": "NAVERマップ", "kakao": "カカオマップ", "go": "行き方・タクシーカード", "save": "保存", "saved": "保存済み", "rev": "レビュー", "copy": "韓国語の住所をコピー", "root": "../../"}</script><dialog class="hx-sheet" id="hxSheet" aria-labelledby="hxSheetH"><div class="hx-sh">
   <div class="hx-sh-top"><b id="hxSheetH">タクシーの運転手さんに見せてください</b><button type="button" class="hx-x" id="hxClose" aria-label="閉じる">×</button></div>
   <div class="hx-card"><div class="kn" lang="ko" id="hxKn"></div><div class="ka" lang="ko" id="hxKa"></div>
     <div class="say" lang="ko">기사님, 이 주소로 가 주세요.</div><div class="gl">「この住所までお願いします。」</div></div>
@@ -1199,7 +1250,8 @@
     var slot=el.querySelector('.hx-links'); if(!slot||slot.dataset.done) return; slot.dataset.done=1;
     var u=urls(el), on=!!saved()[el.dataset.hx];
     slot.innerHTML=a(u.g,T.google)+a(u.nv,T.naver)+a(u.k,T.kakao)+'<button type="button" class="hx-go">'+T.go+'</button>'
-      +'<button type="button" class="hx-fav" aria-pressed="'+on+'">'+(on?'♥ '+T.saved:'♡ '+T.save)+'</button>';
+      +'<button type="button" class="hx-fav" aria-pressed="'+on+'">'+(on?'♥ '+T.saved:'♡ '+T.save)+'</button>'
+      +'<button type="button" class="hx-rev">★ '+T.rev+'</button>';
   }
   // 무작위 순서: 열 때마다 섞는다 (돈을 받고 앞에 두는 자리는 없다)
   document.querySelectorAll('[data-shuffle]').forEach(function(c){var k=[].slice.call(c.children);for(var i=k.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=k[i];k[i]=k[j];k[j]=t;}k.forEach(function(x){c.appendChild(x)});});
@@ -1231,7 +1283,7 @@
     var el=f.closest('[data-hx]'), s=saved(), id=el.dataset.hx;
     if(s[id]) delete s[id]; else s[id]={n:el.dataset.n,u:location.pathname+'#'+id,t:el.dataset.sub||'',at:Date.now()};
     store(s); var on=!!s[id]; f.setAttribute('aria-pressed',on); f.textContent=on?'♥ '+T.saved:'♡ '+T.save;
-    document.dispatchEvent(new Event('hx:saved'));
+    document.dispatchEvent(new CustomEvent('hx:saved',{detail:{id:id,on:on,item:s[id]||null}}));
   });
 })();
 </script><script>
@@ -1291,7 +1343,7 @@
       </div>
     </div>
     <div class="f-bottom">
-      <span>© 2026 HANTANG. 하루 한 탕.</span>
+      <span>© 2026 HANTANG. 하루 한 탕. · <a href="../../terms/">利用規約</a> · <a href="../../privacy/">プライバシーポリシー</a></span>
       <span>温度計を片手に、韓国でつくっています。</span>
     </div>
   </div>
@@ -1366,7 +1418,7 @@
   .hp-share-btn svg{width:15px;height:15px}
   @media (max-width:420px){.sh-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hp-q{grid-template-columns:1fr 1fr}}
   @media print{.hp-fab{display:none}}
-</style><span id="help" hidden></span><button type="button" class="hp-fab" id="hpFab" aria-haspopup="dialog"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="2.2"/><path d="M9.3 9.4a2.8 2.8 0 0 1 5.4 1c0 1.9-2.7 2.3-2.7 4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="17.6" r="1.3" fill="currentColor"/></svg><span>ヘルプ</span></button><dialog class="hp" id="hpDlg" aria-labelledby="hpT"><div class="hp-in"><div class="hp-top"><h2 id="hpT">お風呂ヘルパー</h2><button type="button" class="hp-x" aria-label="閉じる">×</button></div><div class="hp-sec"><div class="hp-q"><a href="../../ja/baths/?near=1">⌖ 現在地から近い順</a><a href="../../ja/baths/#saved">♡ 保存した施設</a><button type="button" id="hpShare"><svg width=18 height=18 viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="18" cy="5.5" r="2.6" stroke="currentColor" stroke-width="2"/><circle cx="6" cy="12" r="2.6" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="18.5" r="2.6" stroke="currentColor" stroke-width="2"/><path d="M8.3 10.8l7.4-4M8.3 13.2l7.4 4" stroke="currentColor" stroke-width="2"/></svg> シェア</button><button type="button" id="hpInstall" hidden>⤓ HANTANGをホーム画面に追加</button></div><p class="hp-ios" id="hpIos" hidden style="font-size:13px;color:var(--mute);margin:8px 0 0">iPhone・iPadの場合：Safariで共有ボタンをタップし、「ホーム画面に追加」を選びます。開いたページはオフラインでも読めます。</p></div><div class="hp-sec"><h3>スタッフに見せてください</h3><p style="font-size:13px;color:var(--mute);margin:0 0 8px">文をタップすると、韓国語が大きく表示されます。</p><div class="hp-ph" id="hpPh"></div><div hidden><div class="hp-big" id="hpBig"><div class="k" lang="ko"></div><div class="r"></div><div class="t"></div></div><div class="hp-nav"><button type="button" id="hpPrev" aria-label="prev">◀</button><button type="button" id="hpAll">すべてのフレーズ</button><button type="button" id="hpNext" aria-label="next">▶</button></div></div></div><div class="hp-sec hp-call"><h3>日本語で助けが必要なときは？</h3><p>1330韓国旅行ホットラインは、韓国観光公社が運営しています。観光案内と通訳を、英語・日本語・中国語・ロシア語・ベトナム語・タイ語などで受けられます。対応時間は言語によって異なる場合があります。</p><div class="row"><a href="tel:1330">☎ 1330<br><small style="font-weight:600">韓国の電話から</small></a><a class="alt" href="tel:+8221330">☎ +82-2-1330<br><small style="font-weight:600">海外の電話から</small></a></div><p class="em">緊急時：警察112（英語・中国語の通訳あり、24時間）／消防・救急119／医療相談1339（通訳あり）。</p></div></div></dialog><dialog class="hp" id="shDlg" aria-labelledby="shT"><div class="hp-in"><div class="hp-top"><h2 id="shT">シェア</h2><button type="button" class="hp-x" aria-label="閉じる">×</button></div><p id="shWhat" style="margin:-6px 0 0;font-size:13.5px;color:var(--mute)"></p><button type="button" class="sh-native" id="shNative" hidden><svg width=20 height=20 viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="18" cy="5.5" r="2.6" stroke="currentColor" stroke-width="2"/><circle cx="6" cy="12" r="2.6" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="18.5" r="2.6" stroke="currentColor" stroke-width="2"/><path d="M8.3 10.8l7.4-4M8.3 13.2l7.4 4" stroke="currentColor" stroke-width="2"/></svg> この端末のアプリでシェア</button><div class="sh-grid" id="shGrid"></div><div class="sh-url"><input type="text" id="shUrl" readonly aria-label="URL"><button type="button" id="shCopy">コピー</button></div><div class="sh-msg" id="shMsg" role="status" hidden></div><div class="sh-qr" id="shQr" hidden><div id="shQrC"></div><p>スマホのカメラかWeChatで読み取ると、このページが開きます。</p></div></div></dialog><script type="application/json" id="hpC">{"ph": [{"id": "english", "ko": "영어 하시는 분 계세요?", "ro": "Yeong-eo hasineun bun gyeseyo?", "tr": "英語を話せる方はいますか？", "g": "counter"}, {"id": "one_adult", "ko": "어른 한 명이요.", "ro": "Eoreun han myeong-iyo.", "tr": "大人1人お願いします。", "g": "counter"}, {"id": "jjim_too", "ko": "찜질방도 이용할게요.", "ro": "Jjimjilbang-do iyonghalgeyo.", "tr": "チムジルバンも利用したいです。", "g": "counter"}, {"id": "first_time", "ko": "처음 왔어요. 어떻게 이용하면 돼요?", "ro": "Cheoeum wasseoyo. Eotteoke iyonghamyeon dwaeyo?", "tr": "初めて来ました。どうやって利用すればいいですか？", "g": "counter"}, {"id": "card", "ko": "해외 카드도 되나요?", "ro": "Haeoe kadeudo doenayo?", "tr": "海外のカードは使えますか？", "g": "counter"}, {"id": "cash", "ko": "현금만 되나요?", "ro": "Hyeongeumman doenayo?", "tr": "現金のみですか？", "g": "counter"}, {"id": "tattoo", "ko": "문신이 있는데 괜찮아요?", "ro": "Munsini inneunde gwaenchanayo?", "tr": "タトゥーがあるのですが、大丈夫ですか？", "g": "counter"}, {"id": "luggage", "ko": "짐을 맡길 수 있어요?", "ro": "Jimeul matgil su isseoyo?", "tr": "荷物を預けられますか？", "g": "counter"}, {"id": "scrub", "ko": "세신 받고 싶어요. 얼마예요?", "ro": "Sesin batgo sipeoyo. Eolmayeyo?", "tr": "アカスリをお願いしたいです。料金はいくらですか？", "g": "scrub"}, {"id": "gentle", "ko": "살살 해 주세요.", "ro": "Salsal hae juseyo.", "tr": "やさしくお願いします。", "g": "scrub"}, {"id": "harder", "ko": "조금 더 세게 해 주세요.", "ro": "Jogeum deo sege hae juseyo.", "tr": "もう少し強くお願いします。", "g": "scrub"}, {"id": "towel", "ko": "수건 하나 더 주세요.", "ro": "Sugeon hana deo juseyo.", "tr": "タオルをもう1枚ください。", "g": "inside"}, {"id": "women_bath", "ko": "여탕은 어디예요?", "ro": "Yeotang-eun eodiyeyo?", "tr": "女湯はどこですか？", "g": "inside"}, {"id": "men_bath", "ko": "남탕은 어디예요?", "ro": "Namtang-eun eodiyeyo?", "tr": "男湯はどこですか？", "g": "inside"}, {"id": "locker", "ko": "사물함이 안 열려요.", "ro": "Samulhami an yeollyeoyo.", "tr": "ロッカーが開きません。", "g": "inside"}, {"id": "overnight", "ko": "여기서 자고 가도 돼요?", "ro": "Yeogiseo jago gado dwaeyo?", "tr": "ここに泊まってもいいですか？", "g": "inside"}, {"id": "how_long", "ko": "몇 시간까지 있을 수 있어요?", "ro": "Myeot sigankkaji isseul su isseoyo?", "tr": "何時間までいられますか？", "g": "inside"}, {"id": "wake", "ko": "아침 7시에 깨워 주세요.", "ro": "Achim ilgopsie kkaewo juseyo.", "tr": "朝7時に起こしてください。", "g": "inside"}, {"id": "dizzy", "ko": "어지러워요. 도와주세요.", "ro": "Eojireowoyo. Dowajuseyo.", "tr": "めまいがします。助けてください。", "g": "safety"}], "targets": [{"k": "line", "n": "LINE", "c": "#06C755", "f": "https://social-plugins.line.me/lineit/share?url={u}&text={t}"}, {"k": "x", "n": "X", "c": "#111111", "f": "https://x.com/intent/tweet?text={t}&url={u}"}, {"k": "instagram_copy", "n": "Instagram", "c": "#C13584", "f": null}, {"k": "facebook", "n": "Facebook", "c": "#1877F2", "f": "https://www.facebook.com/sharer/sharer.php?u={u}"}, {"k": "hatena", "n": "はてなブックマーク", "c": "#00A4DE", "f": "https://b.hatena.ne.jp/entry/panel/?url={u}"}, {"k": "email", "n": "Email", "c": "#5F5A52", "f": "mailto:?subject={t}&body={tu}"}], "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><circle cx=\"18\" cy=\"5.5\" r=\"2.6\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"6\" cy=\"12\" r=\"2.6\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"18\" cy=\"18.5\" r=\"2.6\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M8.3 10.8l7.4-4M8.3 13.2l7.4 4\" stroke=\"currentColor\" stroke-width=\"2\"/><\/svg>", "L": {"share": "シェア", "qr": "QRコード", "copied": "リンクをコピーしました。", "paste": "コピーしました。{app}に貼り付けてください。", "place": "この施設をシェア"}}</script><script>
+</style><span id="help" hidden></span><button type="button" class="hp-fab" id="hpFab" aria-haspopup="dialog"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="2.2"/><path d="M9.3 9.4a2.8 2.8 0 0 1 5.4 1c0 1.9-2.7 2.3-2.7 4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="17.6" r="1.3" fill="currentColor"/></svg><span>ヘルプ</span></button><dialog class="hp" id="hpDlg" aria-labelledby="hpT"><div class="hp-in"><div class="hp-top"><h2 id="hpT">お風呂ヘルパー</h2><button type="button" class="hp-x" aria-label="閉じる">×</button></div><div class="hp-sec"><div class="hp-q"><a href="../../ja/baths/?near=1">⌖ 現在地から近い順</a><a href="../../ja/me/">👤 マイページ</a><a href="../../ja/board/">💬 コミュニティ</a><a href="../../ja/baths/#saved">♡ 保存した施設</a><button type="button" id="hpShare"><svg width=18 height=18 viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="18" cy="5.5" r="2.6" stroke="currentColor" stroke-width="2"/><circle cx="6" cy="12" r="2.6" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="18.5" r="2.6" stroke="currentColor" stroke-width="2"/><path d="M8.3 10.8l7.4-4M8.3 13.2l7.4 4" stroke="currentColor" stroke-width="2"/></svg> シェア</button><button type="button" id="hpInstall" hidden>⤓ HANTANGをホーム画面に追加</button></div><p class="hp-ios" id="hpIos" hidden style="font-size:13px;color:var(--mute);margin:8px 0 0">iPhone・iPadの場合：Safariで共有ボタンをタップし、「ホーム画面に追加」を選びます。開いたページはオフラインでも読めます。</p></div><div class="hp-sec"><h3>スタッフに見せてください</h3><p style="font-size:13px;color:var(--mute);margin:0 0 8px">文をタップすると、韓国語が大きく表示されます。</p><div class="hp-ph" id="hpPh"></div><div hidden><div class="hp-big" id="hpBig"><div class="k" lang="ko"></div><div class="r"></div><div class="t"></div></div><div class="hp-nav"><button type="button" id="hpPrev" aria-label="prev">◀</button><button type="button" id="hpAll">すべてのフレーズ</button><button type="button" id="hpNext" aria-label="next">▶</button></div></div></div><div class="hp-sec hp-call"><h3>日本語で助けが必要なときは？</h3><p>1330韓国旅行ホットラインは、韓国観光公社が運営しています。観光案内と通訳を、英語・日本語・中国語・ロシア語・ベトナム語・タイ語などで受けられます。対応時間は言語によって異なる場合があります。</p><div class="row"><a href="tel:1330">☎ 1330<br><small style="font-weight:600">韓国の電話から</small></a><a class="alt" href="tel:+8221330">☎ +82-2-1330<br><small style="font-weight:600">海外の電話から</small></a></div><p class="em">緊急時：警察112（英語・中国語の通訳あり、24時間）／消防・救急119／医療相談1339（通訳あり）。</p></div></div></dialog><dialog class="hp" id="shDlg" aria-labelledby="shT"><div class="hp-in"><div class="hp-top"><h2 id="shT">シェア</h2><button type="button" class="hp-x" aria-label="閉じる">×</button></div><p id="shWhat" style="margin:-6px 0 0;font-size:13.5px;color:var(--mute)"></p><button type="button" class="sh-native" id="shNative" hidden><svg width=20 height=20 viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="18" cy="5.5" r="2.6" stroke="currentColor" stroke-width="2"/><circle cx="6" cy="12" r="2.6" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="18.5" r="2.6" stroke="currentColor" stroke-width="2"/><path d="M8.3 10.8l7.4-4M8.3 13.2l7.4 4" stroke="currentColor" stroke-width="2"/></svg> この端末のアプリでシェア</button><div class="sh-grid" id="shGrid"></div><div class="sh-url"><input type="text" id="shUrl" readonly aria-label="URL"><button type="button" id="shCopy">コピー</button></div><div class="sh-msg" id="shMsg" role="status" hidden></div><div class="sh-qr" id="shQr" hidden><div id="shQrC"></div><p>スマホのカメラかWeChatで読み取ると、このページが開きます。</p></div></div></dialog><script type="application/json" id="hpC">{"ph": [{"id": "english", "ko": "영어 하시는 분 계세요?", "ro": "Yeong-eo hasineun bun gyeseyo?", "tr": "英語を話せる方はいますか？", "g": "counter"}, {"id": "one_adult", "ko": "어른 한 명이요.", "ro": "Eoreun han myeong-iyo.", "tr": "大人1人お願いします。", "g": "counter"}, {"id": "jjim_too", "ko": "찜질방도 이용할게요.", "ro": "Jjimjilbang-do iyonghalgeyo.", "tr": "チムジルバンも利用したいです。", "g": "counter"}, {"id": "first_time", "ko": "처음 왔어요. 어떻게 이용하면 돼요?", "ro": "Cheoeum wasseoyo. Eotteoke iyonghamyeon dwaeyo?", "tr": "初めて来ました。どうやって利用すればいいですか？", "g": "counter"}, {"id": "card", "ko": "해외 카드도 되나요?", "ro": "Haeoe kadeudo doenayo?", "tr": "海外のカードは使えますか？", "g": "counter"}, {"id": "cash", "ko": "현금만 되나요?", "ro": "Hyeongeumman doenayo?", "tr": "現金のみですか？", "g": "counter"}, {"id": "tattoo", "ko": "문신이 있는데 괜찮아요?", "ro": "Munsini inneunde gwaenchanayo?", "tr": "タトゥーがあるのですが、大丈夫ですか？", "g": "counter"}, {"id": "luggage", "ko": "짐을 맡길 수 있어요?", "ro": "Jimeul matgil su isseoyo?", "tr": "荷物を預けられますか？", "g": "counter"}, {"id": "scrub", "ko": "세신 받고 싶어요. 얼마예요?", "ro": "Sesin batgo sipeoyo. Eolmayeyo?", "tr": "アカスリをお願いしたいです。料金はいくらですか？", "g": "scrub"}, {"id": "gentle", "ko": "살살 해 주세요.", "ro": "Salsal hae juseyo.", "tr": "やさしくお願いします。", "g": "scrub"}, {"id": "harder", "ko": "조금 더 세게 해 주세요.", "ro": "Jogeum deo sege hae juseyo.", "tr": "もう少し強くお願いします。", "g": "scrub"}, {"id": "towel", "ko": "수건 하나 더 주세요.", "ro": "Sugeon hana deo juseyo.", "tr": "タオルをもう1枚ください。", "g": "inside"}, {"id": "women_bath", "ko": "여탕은 어디예요?", "ro": "Yeotang-eun eodiyeyo?", "tr": "女湯はどこですか？", "g": "inside"}, {"id": "men_bath", "ko": "남탕은 어디예요?", "ro": "Namtang-eun eodiyeyo?", "tr": "男湯はどこですか？", "g": "inside"}, {"id": "locker", "ko": "사물함이 안 열려요.", "ro": "Samulhami an yeollyeoyo.", "tr": "ロッカーが開きません。", "g": "inside"}, {"id": "overnight", "ko": "여기서 자고 가도 돼요?", "ro": "Yeogiseo jago gado dwaeyo?", "tr": "ここに泊まってもいいですか？", "g": "inside"}, {"id": "how_long", "ko": "몇 시간까지 있을 수 있어요?", "ro": "Myeot sigankkaji isseul su isseoyo?", "tr": "何時間までいられますか？", "g": "inside"}, {"id": "wake", "ko": "아침 7시에 깨워 주세요.", "ro": "Achim ilgopsie kkaewo juseyo.", "tr": "朝7時に起こしてください。", "g": "inside"}, {"id": "dizzy", "ko": "어지러워요. 도와주세요.", "ro": "Eojireowoyo. Dowajuseyo.", "tr": "めまいがします。助けてください。", "g": "safety"}], "targets": [{"k": "line", "n": "LINE", "c": "#06C755", "f": "https://social-plugins.line.me/lineit/share?url={u}&text={t}"}, {"k": "x", "n": "X", "c": "#111111", "f": "https://x.com/intent/tweet?text={t}&url={u}"}, {"k": "instagram_copy", "n": "Instagram", "c": "#C13584", "f": null}, {"k": "facebook", "n": "Facebook", "c": "#1877F2", "f": "https://www.facebook.com/sharer/sharer.php?u={u}"}, {"k": "hatena", "n": "はてなブックマーク", "c": "#00A4DE", "f": "https://b.hatena.ne.jp/entry/panel/?url={u}"}, {"k": "email", "n": "Email", "c": "#5F5A52", "f": "mailto:?subject={t}&body={tu}"}], "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><circle cx=\"18\" cy=\"5.5\" r=\"2.6\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"6\" cy=\"12\" r=\"2.6\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"18\" cy=\"18.5\" r=\"2.6\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M8.3 10.8l7.4-4M8.3 13.2l7.4 4\" stroke=\"currentColor\" stroke-width=\"2\"/><\/svg>", "L": {"share": "シェア", "qr": "QRコード", "copied": "リンクをコピーしました。", "paste": "コピーしました。{app}に貼り付けてください。", "place": "この施設をシェア"}}</script><script>
 (function(){
   var C=JSON.parse(document.getElementById('hpC').textContent), PH=C.ph;
   var hp=document.getElementById('hpDlg'), sh=document.getElementById('shDlg');
@@ -1432,7 +1484,7 @@
   if(location.hash==='#help') openD(hp);
   document.addEventListener('click',function(e){ var o=e.target.closest('[data-open-help]'); if(o){ e.preventDefault(); big.parentNode.hidden=true; list.hidden=false; openD(hp); } });
 })();
-</script>
+</script><script type="application/json" id="hcT">{"lang": "ja", "root": "../../", "v": "5de65c85f1", "me_url": "../../ja/me/", "board_url": "../../ja/board/", "guide_url": "../../ja/guide/", "baths_url": "../../ja/baths/", "terms_url": "../../terms/", "privacy_url": "../../privacy/", "folders": {"en": "", "ja": "ja/", "zh-Hant": "zh-hant/", "zh-Hans": "zh-hans/", "vi": "vi/", "th": "th/", "ru": "ru/", "ko": "ko/"}, "langs": {"en": "English", "ja": "日本語", "zh-Hant": "繁體中文", "zh-Hans": "简体中文", "vi": "Tiếng Việt", "th": "ภาษาไทย", "ru": "Русский", "ko": "한국어"}}</script><script src="../../assets/hc.js?v=5de65c85f1" defer></script>
 <script>if('serviceWorker' in navigator&&location.protocol==='https:'){addEventListener('load',function(){navigator.serviceWorker.register('/sw.js',{updateViaCache:'none'}).catch(function(){})})}</script>
 </body>
 </html>
