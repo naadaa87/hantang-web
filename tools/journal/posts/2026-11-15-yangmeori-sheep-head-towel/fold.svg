@@ -1,0 +1,33 @@
+<svg viewBox="0 0 720 176" role="img" aria-label="yangmeori" style="width:100%;height:auto;display:block" xmlns="http://www.w3.org/2000/svg">
+<g fill="#EAF2F7" stroke="#1E6E9C" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+<rect x="18" y="44" width="140" height="78" rx="4"/>
+<line x1="18" y1="70" x2="158" y2="70" stroke-dasharray="6 6" stroke-width="1.6"/>
+<line x1="18" y1="96" x2="158" y2="96" stroke-dasharray="6 6" stroke-width="1.6"/>
+<rect x="206" y="70" width="140" height="26" rx="4"/>
+<rect x="412" y="70" width="76" height="26" rx="3"/>
+<circle cx="404" cy="83" r="19"/>
+<circle cx="496" cy="83" r="19"/>
+<path d="M395 83a9 9 0 1 1 9 9" fill="none" stroke-width="1.8"/>
+<path d="M505 83a9 9 0 1 0-9 9" fill="none" stroke-width="1.8"/>
+<circle cx="640" cy="104" r="40" fill="#FFFFFF"/>
+<path d="M602 92q38-50 76 0v12q-38-26-76 0z"/>
+<circle cx="596" cy="96" r="17"/>
+<circle cx="684" cy="96" r="17"/>
+<path d="M589 96a7 7 0 1 1 7 7" fill="none" stroke-width="1.8"/>
+<path d="M691 96a7 7 0 1 0-7 7" fill="none" stroke-width="1.8"/>
+<circle cx="627" cy="116" r="2.6" fill="#1E6E9C" stroke="none"/>
+<circle cx="653" cy="116" r="2.6" fill="#1E6E9C" stroke="none"/>
+<path d="M630 128q10 8 20 0" fill="none" stroke-width="2"/>
+</g>
+<g fill="none" stroke="#8B877F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M170 83h22m-6-6l6 6l-6 6"/>
+<path d="M356 83h22m-6-6l6 6l-6 6"/>
+<path d="M526 83h22m-6-6l6 6l-6 6"/>
+</g>
+<g font-family="monospace" font-size="13" font-weight="700" fill="#1E6E9C" text-anchor="middle">
+<text x="88" y="24">1</text>
+<text x="276" y="24">2</text>
+<text x="450" y="24">3</text>
+<text x="640" y="24">4</text>
+</g>
+</svg>

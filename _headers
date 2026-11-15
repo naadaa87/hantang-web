@@ -3,6 +3,8 @@
   Content-Language: en
 /guide/*
   Content-Language: en
+/journal/*
+  Content-Language: en
 /baths/*
   Content-Language: en
 /ja/*

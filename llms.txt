@@ -20,6 +20,10 @@ Facts used across the site: list order is random on every visit and nobody pays 
 - [A short history of the Korean bath](https://hantang.kr/guide/history/): From Joseon sweat houses and the first public bathhouses to the jjimjilbang boom and today's closures. How Korea came to bathe together, and why to see the neighborhood tang now.
 - [Where to go: Seoul, Busan and the hot-spring towns](https://hantang.kr/guide/regions/): Seoul's baths cluster around Dongdaemun, Myeongdong and Hongdae; Busan adds hot springs and seawater beside the beach; six old spa towns are a train or bus ride away. What is open, what has closed, and what each is worth.
 
+## Journal (English)
+Short daily posts; each answers one question or explains one custom, with sources.
+- [How to fold the yangmeori, Korea's sheep-head sauna towel](https://hantang.kr/journal/yangmeori-sheep-head-towel/) (2026-11-15): Three folds turn the small jjimjilbang towel into the "sheep head" from K-dramas. How to make one that stays on, why people wear it, and where the habit started.
+
 ## Directory
 - [All bathhouses by region](https://hantang.kr/baths/): nationwide search, near me, saved list
 - [Bathhouses near popular areas](https://hantang.kr/baths/near/): 25 areas such as Myeongdong, Hongdae, Gangnam, Haeundae and Jeju City, closest first
