@@ -1,0 +1,17 @@
+{
+  "pillar": "spot",
+  "related": ["overnight", "first-visit", "prices-hours", "tattoos"],
+  "sources": [
+    {"title": "찬바람이 쌩쌩 부는 겨울, 찜질방 데이트", "url": "https://korean.visitseoul.net/editorspicks/%EC%84%9C%EC%9A%B8-%EC%B0%9C%EC%A7%88%EB%B0%A9/42914", "note": "서울관광재단 VisitSeoul, 2023-01-04 작성·2025-12-05 수정"},
+    {"title": "\"하루 숙박비 1만6000원 실화냐\"…한국 온 중국인 '바글바글' [현장+]", "url": "https://www.hankyung.com/article/2026022414127", "note": "한국경제, 2026-02-24"},
+    {"title": "\"이제 여기 안해요?ㅠㅠ\"..코로나에 무너진 찜질방 삼대장", "url": "https://v.daum.net/v/EhTVt3ON7V", "note": "땅집고 (다음 뉴스), 2022-06-20"},
+    {"title": "코로나로 문닫았던 찜질방 3대장, 지금은 어떤가 봤더니", "url": "https://v.daum.net/v/535r572XQE", "note": "캐스트픽 (다음), 2024-08-17"},
+    {"title": "Seoul Dongdaemun SPAREX Jjimjilbang Sauna Admission Ticket", "url": "https://seoultravelpass.com/en/products/1496-seoul-dongdaemun-sparex-jjimjilbang-sauna-admission-ticket", "note": "Seoul Travel Pass 예매 안내(요금·청소 시간·이용 규칙), 2026-11 확인"},
+    {"title": "서울 동대문 스파렉스 굿모닝시티점 찜질방 입장권 (WAUG Exclusive)", "url": "https://www.waug.com/ko/activities/143280", "note": "와그 예매 안내(오시는 길·주차·청소 시간), 2026-11 확인"},
+    {"title": "서울 종로 스파렉스 동묘점 찜질방 입장권 (WAUG Exclusive)", "url": "https://www.waug.com/ko/activities/143291", "note": "와그 예매 안내(동묘점 위치·짐 보관), 2026-11 확인"},
+    {"title": "SPAREX Sauna Entrance Ticket (Jjimjilbang) - Dongdaemun/Dongmyo Branch", "url": "https://www.trazy.com/experience/detail/sparex-sauna-entrance-ticket-dongdaemun-dongmyo", "note": "Trazy 예매 안내(두 지점 청소 시간·세신 제한), 2026-11 확인"},
+    {"title": "동대문의 역사가 녹아있는 DDP가 세계적 건축가의 유작이라고요?", "url": "https://mediahub.seoul.go.kr/archives/2009553", "note": "서울시 내 손안에 서울 (시민기자), 2023-11-14"},
+    {"title": "요즘 MZ세대도 즐겨 찾는 '동묘시장', 보물 찾기 데이트 즐겨보세요~", "url": "https://mediahub.seoul.go.kr/archives/2010202", "note": "서울시 내 손안에 서울 (시민기자), 2024-02-13"},
+    {"title": "Dongdaemun: An old market learns some new tricks", "url": "https://www.koreajoongangdaily.com/business/dongdaemun-an-old-market-learns-some-new-tricks/10499297", "note": "Korea JoongAng Daily, 2018-01-14"}
+  ]
+}
