@@ -19,6 +19,7 @@ Facts used across the site: list order is random on every visit and nobody pays 
 - [40 bathhouse phrases and the signs you'll see](https://hantang.kr/guide/phrases/): Every phrase from the HANTANG game, grouped by where you will use it, plus the signs on the wall, what the counter may ask you, and how the polite -yo ending works.
 - [A short history of the Korean bath](https://hantang.kr/guide/history/): From Joseon sweat houses and the first public bathhouses to the jjimjilbang boom and today's closures. How Korea came to bathe together, and why to see the neighborhood tang now.
 - [Where to go: Seoul, Busan and the hot-spring towns](https://hantang.kr/guide/regions/): Seoul's baths cluster around Dongdaemun, Myeongdong and Hongdae; Busan adds hot springs and seawater beside the beach; six old spa towns are a train or bus ride away. What is open, what has closed, and what each is worth.
+- [Korean hot springs: history, culture and where to soak](https://hantang.kr/guide/hot-springs/): What counts as an oncheon in Korea, how kings and honeymooners used the springs, how they differ from Japanese onsen, and the spring towns, resorts and free foot baths to try.
 
 ## Journal (English)
 Short daily posts; each answers one question or explains one custom, with sources.
