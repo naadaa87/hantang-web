@@ -14,7 +14,11 @@
     "스파렉스 동대문 내력: 땅집고 2022-06-20 기사는 코로나 임시 휴업 뒤 '폐업한 것으로 확인'이라고 썼고, 캐스트픽 2024-08-17 글은 다시 문을 열어 운영 중이라고 썼다. 재개장한 달과 처음 문을 연 해는 확인하지 못했다. 가이드 overnight·regions 에는 이 휴업·재개장 이야기가 없다(오류는 아님).",
     "스파렉스 동대문 청소 시간: 와그 안내는 '01:00~03:00 청소(세신 불가)'로만 적고, Seoul Travel Pass·Trazy 는 남탕 00:30~01:30·여탕 03:00~04:00, 세신 불가 01:00~03:00 으로 적는다. 저널은 가이드와 같은 뒤쪽 표기를 따랐다.",
     "스파렉스 동묘: 영업 중이라는 공식 출처(공식 SNS·관광공사·지자체·언론)는 찾지 못했다. 근거는 예매 플랫폼(와그 후기 2026-09-07까지, Pelago 2026-11-16 당일 예약 가능)과 운영사 알바몬 기업 정보(2026-10-30 수정, 설립 2024-07-24, 시즌빌딩 12·13층)뿐이라 글에서는 비교 대상으로 짧게만 다뤘다. 시설 페이지의 야간 15,000원은 2025-02 수치 그대로이고 오늘도 원화 요금은 다시 확인하지 못했다. 황토방·소금방·히노키탕·남산타워 전망 라운지·실물 신분증 요구도 오늘 출처에서는 확인되지 않아 '당사 시설 페이지 기준'으로만 적었다.",
-    "한국경제 2026-02-24 기사(가이드 overnight 첫 문단의 '1만6000원 대 10만원' 근거로 보임)는 찜질방 상호를 밝히지 않는다. 16,000원이 주간·야간 가운데 어느 요금인지도 기사에는 없다."
+    "한국경제 2026-02-24 기사(가이드 overnight 첫 문단의 '1만6000원 대 10만원' 근거로 보임)는 찜질방 상호를 밝히지 않는다. 16,000원이 주간·야간 가운데 어느 요금인지도 기사에는 없다.",
+    "2026-11-17 이태리타월 글: 발명 시기가 출처마다 다르다 — Korea Times 2008-02-17 '1962년 특허'(번호·이름 없음), 파이낸셜뉴스 2018-04-01 칼럼(KIPRIS 검색: 김필곤 명의 목욕용품 실용신안 9건 1966~1969, 평범한 사각 타월은 없음), 주간경향 2020-01-03(국립민속박물관 학예연구사: 1968년 초 등장), 영어 위키백과(이용자 편집: 1967년, 한일직물의 다른 인물 김원조). 가이드 seshin·history 의 '1960년대, 한 출처는 1967년'·김필곤 서술과 어긋나지는 않지만 가이드에는 1962·1968년 설이 없다. 특허 등록부(KIPRIS)는 직접 조회하지 않았고, 저널에도 그렇게 적었다.",
+    "가이드 seshin 의 '연 매출 100억 원 이상'은 오늘 확인한 바로는 Korea Times 2008-02-17 기사의 수치다(가이드에는 연도 표기가 없음). 가이드의 '명동 다이소 외국인 손님 70%·2025년 하반기 이태리타월 매출 30% 증가'는 오늘 출처를 다시 찾지 못해 저널에는 쓰지 않았다(코리아중앙데일리 2025-08 세신 기사의 다음 뉴스 한국어판에는 이 내용이 없었다).",
+    "가이드 seshin 은 등밀이 기계를 1981년 부산 사람(실명 표기)이 만들었다고 적었고, 주간경향 2020 은 '부산의 한 공업사'가 1981년 개발했다고만 적는다(어긋나지는 않음). 저널에는 개인 이름을 쓰지 않았다. 지금 어느 목욕탕에 기계가 남아 있는지는 확인하지 못했다.",
+    "이태리타월 색깔별 거칠기(분홍 부드러움·초록 표준·파랑 거침)는 영어 위키백과가 Vogue 2016 글을 근거로 적은 내용이다. 제조사 공통 기준은 찾지 못해 저널에 '확인하지 못했다'고 썼다. 2026년 판매 가격도 확인하지 못했다(뉴시스 2026-07-15 남대문시장 기사에 가격 없음). 부산시 누리집 자료(busan.go.kr/mmch)와 한국어 위키백과는 접속이 되지 않아 보지 못했다."
   ],
   "topics": [
     {"id": "yangmeori", "pillar": "culture", "title": "How to fold the yangmeori, Korea's sheep-head sauna towel", "status": "published", "post": "2026-11-15-yangmeori-sheep-head-towel"},
@@ -42,7 +46,7 @@
     {"id": "spot-danpoong", "pillar": "spot", "title": "DANPOONG: three one-person scrub rooms in Seoul, from a hanok to the YMCA basement", "facilities": ["danopungjeong-hanok", "danopungjeong-jongno", "danopungjeong-main-anam"], "angle": "한 브랜드의 세 지점(한옥점·종로점·본점) 비교, 예약, 근처 볼거리(성북동·종로)", "check": "브랜드 공식 안내", "links": ["baths/near/insadong", "baths/private", "guide/seshin"], "status": "planned"},
     {"id": "spot-closed-places", "pillar": "spot", "title": "Dragon Hill Spa and other famous jjimjilbangs that have closed, and where to go instead", "facilities": [], "angle": "옛 블로그·영상에 아직 나오는 폐업 시설과 확인 시점, 지역별 대안", "check": "가이드 regions·overnight 의 폐업 서술, 언론 보도", "links": ["guide/regions", "guide/overnight", "baths/seoul", "baths/popular"], "status": "planned"},
 
-    {"id": "italy-towel", "pillar": "culture", "title": "Why is Korea's scrub mitt called the Italy towel?", "angle": "이름의 유래와 발명 시기를 둘러싼 설들, 지금은 기념품이 된 이야기", "check": "가이드 seshin·history 의 서술(발명 시기 설이 갈림), 한국 언론·특허 관련 보도", "links": ["guide/seshin", "guide/history"], "status": "planned"},
+    {"id": "italy-towel", "pillar": "culture", "title": "Why is Korea's scrub mitt called the Italy towel?", "status": "published", "post": "2026-11-17-italy-towel-korean-scrub-mitt-name"},
     {"id": "hanjeungmak", "pillar": "culture", "title": "Hanjeungmak: the kiln sauna with roots in Joseon", "angle": "한증의 기록과 오늘날 불가마·한증막", "check": "한국민족문화대백과 '한증', 조선왕조실록 관련 기사 인용 보도, 가이드 history·bath-types", "links": ["guide/history", "guide/bath-types", "guide/rooms"], "status": "planned"},
     {"id": "eggs", "pillar": "culture", "title": "Why jjimjilbang eggs are brown", "angle": "맥반석 달걀이 갈색인 이유와 먹는 법", "check": "가이드 food, 식품과학 설명 자료", "links": ["guide/food", "guide/rooms"], "status": "planned"},
     {"id": "room-claims", "pillar": "culture", "title": "Salt, charcoal, jade, red clay: what the hot rooms claim and what is known", "angle": "방마다 붙은 효능 문구의 출처와 근거 수준, 그래도 즐기는 법", "check": "가이드 rooms·health-safety 와 일치, 식약처·의학계 공개 자료", "links": ["guide/rooms", "guide/health-safety"], "status": "planned"},

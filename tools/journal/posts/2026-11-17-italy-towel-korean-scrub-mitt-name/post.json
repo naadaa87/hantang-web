@@ -1,0 +1,14 @@
+{
+  "pillar": "culture",
+  "related": ["seshin", "history", "prices-hours", "health-safety"],
+  "sources": [
+    {"title": "[지식재산 스토리텔링] 이태리타올 스토리", "url": "https://www.fnnews.com/news/201804011238337112", "note": "파이낸셜뉴스 (칼럼), 2018-04-01"},
+    {"title": "`Italy Towel' Enjoys Decades of Boom", "url": "https://www.koreatimes.co.kr/business/companies/20080217/italy-towel-enjoys-decades-of-boom", "note": "The Korea Times, 2008-02-17"},
+    {"title": "No such thing as soft, fluffy 'Italy towels'", "url": "https://www.koreajoongangdaily.com/korea/no-such-thing-as-soft-fluffy-italy-towels/11243016", "note": "Korea JoongAng Daily, 2003-01-06"},
+    {"title": "남녀가 서로 몰랐던 목욕탕 벗겨보기", "url": "https://weekly.khan.co.kr/article/202001031558481", "note": "주간경향, 2020-01-03"},
+    {"title": "동네 목욕탕 “오늘도 목욕합니다” [S 스토리]", "url": "https://www.segye.com/newsView/20200117510815", "note": "세계일보, 2020-01-19"},
+    {"title": "특허청 페이스북 친구들 선정 국내 최고 발명품은 ‘훈민정음’", "url": "https://m.go.seoul.co.kr/news/2017/05/19/20170519012006", "note": "서울신문, 2017-05-18"},
+    {"title": "“이태리 타올 있어요?”…외국인 관광객 사로잡은 'K-사우나템'", "url": "https://www.newsis.com/view/NISX20260714_0003709083", "note": "뉴시스, 2026-07-15"},
+    {"title": "Italy towel", "url": "https://en.wikipedia.org/wiki/Italy_towel", "note": "Wikipedia 영어판 (이용자 편집 위키), 2026-11 확인"}
+  ]
+}
