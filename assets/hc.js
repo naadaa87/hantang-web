@@ -162,6 +162,7 @@
         busy(btn, false);
         if (!j.ok) { err.textContent = errText(j.error); return; }
         loggedIn(j.nick);
+        if (window.hxTrack && (mode === 'signup' || mode === 'login')) window.hxTrack(mode, LANG);
         if (j.recovery) { if (inDlg) { if (inDlg.close) inDlg.close(); inDlg.remove(); } showRecovery(j.recovery, done); } else done && done();
       });
     });
@@ -301,6 +302,7 @@
           busy(btn, false);
           if (j._status === 401) { store(NICK_KEY, null); paintNav(); return needLogin(drawForm); }
           if (!j.ok) { err.textContent = errText(j.error); return; }
+          if (window.hxTrack) window.hxTrack(isPlace ? 'review_post' : 'comment', target.split(':')[0]);
           ta.value = ''; oldest = 0; fetchPage(true);
         });
       });
@@ -402,6 +404,7 @@
         busy(btn, false);
         if (j._status === 401) { store(NICK_KEY, null); paintNav(); return needLogin(); }
         if (!j.ok) { err.textContent = errText(j.error); return; }
+        if (window.hxTrack && !post) window.hxTrack('post', req.cat);
         saved(j);
       });
     });

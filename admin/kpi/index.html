@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>관리자 · KPI 대시보드 — HANTANG</title>
+<meta name="description" content="">
+<script>(function(h){if(h!=='hantang-web.pages.dev'&&h!=='www.hantang.kr')return;var u='https://hantang.kr'+location.pathname+location.search+location.hash,i=new Image();i.onload=function(){location.replace(u)};i.src='https://hantang.kr/icons/icon-192.png?r='+Date.now()})(location.hostname)</script>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{--paper:#fff;--stone:#F6F5F2;--ink:#1B1A18;--mute:#79746D;--line:#E6E3DD;--blue:#1E6E9C;--blue-deep:#16597F;--blue-tint:#EAF2F7;--red:#C13A2A;--ok:#0E7A5A;--gold:#E0A100;
+  --sans:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;--serif:'Hahmlet',serif;--mono:'IBM Plex Mono',monospace}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;word-break:keep-all}
+a{color:inherit}img{max-width:100%}
+.wrap{max-width:980px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.top{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:5}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;letter-spacing:.2em;font-size:15px}
+.brand small{letter-spacing:0;font-weight:600;color:var(--mute)}
+.top nav a{font-size:14px;font-weight:700;color:var(--blue);text-decoration:none}
+h1,h2,h3{line-height:1.3;margin:0;text-wrap:balance}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.22em;color:var(--blue);font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:14px;border:0;background:var(--blue);color:#fff;font:inherit;font-weight:700;font-size:16px;cursor:pointer;text-decoration:none}
+.btn:hover{background:var(--blue-deep)}.btn.ghost{background:#fff;color:var(--ink);border:1.5px solid var(--line)}.btn:disabled{opacity:.5;cursor:wait}
+
+.top nav.anav{display:flex;gap:6px;flex-wrap:wrap}
+.top nav.anav a{font-size:14px;font-weight:700;padding:7px 12px;border-radius:99px;color:var(--ink);text-decoration:none}
+.top nav.anav a.on{background:var(--ink);color:#fff}
+.top nav.anav a:hover:not(.on){background:var(--stone)}
+@media (max-width:640px){.top{position:static}.top .wrap{flex-wrap:wrap;gap:8px;padding-block:12px 10px}.top nav.anav{flex-wrap:nowrap;overflow-x:auto;width:100%;gap:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}.top nav.anav::-webkit-scrollbar{display:none}.top nav.anav a{white-space:nowrap;font-size:13.5px;padding:7px 11px}}
+
+main.wrap{padding-block:26px 80px;max-width:1240px}
+h1.k-h{font-family:var(--serif);font-size:30px;margin:0}
+.k-sub{font-size:14px;color:var(--mute);margin-top:6px}
+.k-ctl{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:18px 0 6px}
+.k-seg{display:inline-flex;border:1.5px solid var(--line);border-radius:99px;overflow:hidden;background:#fff}
+.k-seg button{font:inherit;font-size:14px;font-weight:700;border:0;background:none;padding:8px 14px;cursor:pointer;color:var(--ink)}
+.k-seg button.on{background:var(--ink);color:#fff}
+.k-btn{font:inherit;font-size:13.5px;font-weight:700;border:1.5px solid var(--line);background:#fff;border-radius:99px;padding:8px 14px;cursor:pointer;color:var(--ink)}
+.k-btn:hover{border-color:var(--blue);color:var(--blue)}
+.k-meta{font-size:12.5px;color:var(--mute);margin-left:auto}
+.k-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:16px}
+.k-card{border:1px solid var(--line);border-radius:16px;background:#fff;padding:15px 16px 13px;min-width:0}
+.k-card .l{font-size:13px;color:var(--mute);font-weight:600;display:flex;justify-content:space-between;gap:6px}
+.k-card .v{font-family:var(--serif);font-size:29px;line-height:1.15;margin-top:6px;color:var(--ink);font-variant-numeric:tabular-nums}
+.k-card .d{font-size:12.5px;margin-top:4px;color:var(--mute)}
+.k-card .d b.up{color:var(--ok)}.k-card .d b.dn{color:var(--red)}
+.k-card.hl{background:var(--blue-tint);border-color:#CFE2EE}.k-card.hl .v{color:var(--blue)}
+.k-sec{margin-top:34px}
+.k-sec > h2{font-size:20px;margin:0 0 4px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.k-sec > h2 small{font-size:12.5px;color:var(--mute);font-weight:500}
+.k-two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.k-three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.k-box{border:1px solid var(--line);border-radius:16px;background:#fff;padding:16px 18px;min-width:0}
+.k-box h3{font-size:15px;margin:0 0 10px}
+.k-chart svg{width:100%;height:auto;display:block}
+.k-leg{display:flex;gap:14px;font-size:12.5px;color:var(--mute);margin-top:6px}
+.k-leg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.k-tw{overflow-x:auto}
+table.k-t{width:100%;border-collapse:collapse;font-size:13.5px;font-variant-numeric:tabular-nums}
+.k-t th{text-align:right;font-size:12px;color:var(--mute);font-weight:700;padding:7px 8px;border-bottom:1px solid var(--line);white-space:nowrap;cursor:default}
+.k-t th.s{cursor:pointer}.k-t th.s:hover{color:var(--blue)}.k-t th.on{color:var(--ink)}
+.k-t td{text-align:right;padding:7px 8px;border-bottom:1px solid #F0EEEA;white-space:nowrap}
+.k-t th:first-child,.k-t td:first-child,.k-t td.l,.k-t th.l{text-align:left}
+.k-t td.l{white-space:normal;min-width:150px}
+.k-t td a{color:var(--ink);text-decoration:none}.k-t td a:hover{color:var(--blue);text-decoration:underline}
+.k-t .sm{display:block;font-size:11.5px;color:var(--mute)}
+.k-bar{display:inline-block;height:7px;border-radius:99px;background:var(--blue);vertical-align:middle;margin-right:6px;opacity:.75}
+.k-pill{display:inline-block;font-size:11px;font-weight:700;border-radius:99px;padding:2px 8px;background:var(--stone);color:var(--mute)}
+.k-more{margin-top:10px}
+.k-empty{padding:18px 4px;color:var(--mute);font-size:14px}
+.k-note{font-size:13px;color:var(--mute);line-height:1.65}
+.k-note b{color:var(--ink)}
+.k-lock{border:1px solid #F0D2CB;background:#FBEFEC;border-radius:16px;padding:18px;margin-top:20px}
+.k-utm{display:grid;grid-template-columns:2fr 1fr 1fr 1fr auto;gap:8px;align-items:end}
+.k-utm label{display:grid;gap:4px;font-size:12px;font-weight:700;color:var(--mute)}
+.k-utm input{font:inherit;font-size:14px;padding:8px 10px;border:1.5px solid var(--line);border-radius:10px;width:100%;box-sizing:border-box}
+.k-utm-out{margin-top:10px;font-family:var(--mono);font-size:12.5px;background:var(--stone);border-radius:10px;padding:10px 12px;word-break:break-all}
+dl.k-def{display:grid;grid-template-columns:150px 1fr;gap:8px 14px;font-size:13px;margin:0}
+dl.k-def dt{font-weight:700}dl.k-def dd{margin:0;color:var(--mute)}
+@media (max-width:1000px){.k-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.k-three{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.k-bar{max-width:34px}.k-t td,.k-t th{padding:7px 6px}}
+@media (max-width:760px){.k-two,.k-three{grid-template-columns:1fr}.k-utm{grid-template-columns:1fr 1fr}.k-meta{margin-left:0;width:100%}dl.k-def{grid-template-columns:1fr}.k-card .v{font-size:24px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="../../">HANTANG <small>관리자</small></a><nav class="anav">
+<a href="../kpi/" class="on">KPI 대시보드</a><a href="../">업주 신청</a><a href="../#community">회원 글·후기</a><a href="../../partner/">신청 화면 ↗</a></nav></div></header>
+<main class="wrap">
+  <h1 class="k-h">KPI 대시보드</h1>
+  <p class="k-sub">한탕이 직접 모으는 방문 통계(쿠키·IP 저장 없음, 날짜별 합계)와 회원·후기·업주 신청 숫자입니다. 날짜는 한국 시간 기준입니다.</p>
+  <div class="k-ctl">
+    <div class="k-seg" id="kDays"><button data-d="1">오늘</button><button data-d="7">7일</button><button data-d="28" class="on">28일</button><button data-d="90">90일</button><button data-d="365">1년</button></div>
+    <button class="k-btn" id="kCsv">일별 CSV</button>
+    <button class="k-btn" id="kCsvP">지점 CSV</button>
+    <button class="k-btn" id="kMe"></button>
+    <span class="k-meta" id="kMeta"></span>
+  </div>
+  <div id="kOut"><p class="k-empty">불러오는 중…</p></div>
+</main>
+<script>
+(function(){
+  var API='../../api/admin/kpi?days=', days=28, J=null, pageMerge=true, placeSort='act';
+  var out=document.getElementById('kOut'), meta=document.getElementById('kMeta');
+  var LN={en:'영어',ja:'일본어','zh-Hant':'중국어(번체)','zh-Hans':'중국어(간체)',vi:'베트남어',th:'태국어',ru:'러시아어',ko:'한국어'};
+  var DEV={mobile:'휴대폰',desktop:'PC',tablet:'태블릿'};
+  var REG={seoul:'서울',busan:'부산',incheon:'인천',daegu:'대구',daejeon:'대전',ulsan:'울산',sejong:'세종',gyeonggi:'경기',gangwon:'강원',chungbuk:'충북',chungnam:'충남',jeonbuk:'전북','jeonnam-gwangju':'전남·광주',gyeongbuk:'경북',gyeongnam:'경남',jeju:'제주','hot-springs':'온천 지도',private:'1인·프라이빗',near:'관광지 주변'};
+  var SRCG={google:'검색',naver:'검색',bing:'검색',yahoo:'검색','daum·kakao':'검색',duckduckgo:'검색',yandex:'검색',baidu:'검색',chatgpt:'AI 검색',perplexity:'AI 검색','ai-other':'AI 검색',instagram:'SNS',facebook:'SNS',x:'SNS',youtube:'SNS',reddit:'SNS',tiktok:'SNS',line:'SNS',threads:'SNS',pinterest:'SNS',xiaohongshu:'SNS',weibo:'SNS',vk:'SNS',tripadvisor:'여행 사이트','(direct)':'직접 방문','(internal)':'사이트 안'};
+  var EVN={map:'지도 열기',route:'길찾기·택시 카드',save:'찜',review:'후기 창 열기',site:'시설 홈페이지',share:'공유',lang:'언어 바꾸기',out:'외부 링크',game:'게임으로 이동',partner:'업주 등록으로 이동',signup:'회원가입',login:'로그인',post:'게시글 작성',comment:'댓글 작성',review_post:'후기 작성',filter:'필터 사용'};
+  var rn, ln; try{rn=new Intl.DisplayNames(['ko'],{type:'region'}); ln=new Intl.DisplayNames(['ko'],{type:'language'});}catch(e){}
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function n(x){return (Math.round(x||0)).toLocaleString('ko-KR')}
+  function pct(a,b){return b?(a/b*100).toFixed(1)+'%':'–'}
+  function dur(sec){sec=Math.round(sec||0); if(!sec) return '0초'; var m=Math.floor(sec/60), s=sec%60; return m?(m+'분 '+(s<10?'0':'')+s+'초'):(s+'초')}
+  function flag(cc){ if(!/^[A-Z]{2}$/.test(cc)||cc==='XX') return '🌐'; return String.fromCodePoint(127397+cc.charCodeAt(0),127397+cc.charCodeAt(1)); }
+  function country(cc){ if(cc==='XX') return '알 수 없음'; try{return rn?rn.of(cc):cc}catch(e){return cc} }
+  function blang(c){ if(c==='xx') return '알 수 없음'; try{return ln?ln.of(c):c}catch(e){return c} }
+  function delta(cur,prev){ if(!prev) return cur?'<span class="k-pill">새로 생김</span>':'<span>직전 기간 없음</span>'; var d=(cur-prev)/prev*100; return '<b class="'+(d>=0?'up':'dn')+'">'+(d>=0?'▲ ':'▼ ')+Math.abs(d).toFixed(0)+'%</b> 직전 '+days+'일 대비'; }
+  function sum(rows,k){ return rows.reduce(function(a,r){return a+(+r[k]||0)},0); }
+  function strip(p){ return p.replace(/^\/(ja|zh-hant|zh-hans|vi|th|ru|ko)\//,'/'); }
+  function langOf(p){ var m=p.match(/^\/(ja|zh-hant|zh-hans|vi|th|ru|ko)\//); return m?{ja:'ja','zh-hant':'zh-Hant','zh-hans':'zh-Hans',vi:'vi',th:'th',ru:'ru',ko:'ko'}[m[1]]:'en'; }
+  function kind(p){ p=strip(p);
+    if(p==='/') return '홈'; if(/^\/guide\/$/.test(p)) return '가이드 목록'; if(/^\/guide\//.test(p)) return '가이드'; if(/^\/journal\/$/.test(p)) return '저널 목록'; if(/^\/journal\//.test(p)) return '저널';
+    if(/^\/baths\/p\//.test(p)) return '지점 상세'; if(/^\/baths\/hot-springs\//.test(p)) return '온천 지도'; if(/^\/baths\/(near|private)\//.test(p)) return '테마 목록'; if(/^\/baths\/[^/]+\//.test(p)) return '지역 목록'; if(/^\/baths\/$/.test(p)) return '목욕탕 찾기';
+    if(/^\/board\/p\//.test(p)) return '게시글'; if(/^\/board\//.test(p)) return '게시판'; if(/^\/me\//.test(p)) return '마이페이지'; if(/^\/(terms|privacy)\//.test(p)) return '약관·방침';
+    if(/^\/play\//.test(p)) return '게임'; if(/^\/partner\//.test(p)) return '업주 등록'; return '기타'; }
+  function area(a){ a=(a||'').split(' ')[0]; var M={'서울특별시':'서울','부산광역시':'부산','인천광역시':'인천','대구광역시':'대구','대전광역시':'대전','울산광역시':'울산','광주광역시':'광주','세종특별자치시':'세종','경기도':'경기','강원특별자치도':'강원','강원도':'강원','충청북도':'충북','충청남도':'충남','전북특별자치도':'전북','전라북도':'전북','전라남도':'전남','경상북도':'경북','경상남도':'경남','제주특별자치도':'제주'}; return M[a]||a||'–'; }
+
+  // 이 브라우저 제외
+  function meLabel(){ var on=false; try{on=localStorage.getItem('hantang.noan')==='1'}catch(e){} document.getElementById('kMe').textContent=on?'✓ 이 브라우저 방문은 집계 안 함':'이 브라우저 방문 빼기'; }
+  document.getElementById('kMe').addEventListener('click',function(){ try{ if(localStorage.getItem('hantang.noan')==='1') localStorage.removeItem('hantang.noan'); else localStorage.setItem('hantang.noan','1'); }catch(e){} meLabel(); });
+  meLabel();
+
+  function card(label,val,d,hint,hl){ return '<div class="k-card'+(hl?' hl':'')+'"><div class="l"><span>'+esc(label)+'</span>'+(hint?'<span title="'+esc(hint)+'">ⓘ</span>':'')+'</div><div class="v">'+val+'</div><div class="d">'+(d||'&nbsp;')+'</div></div>'; }
+  function table(cols,rows,opt){ opt=opt||{}; if(!rows.length) return '<p class="k-empty">'+(opt.empty||'아직 자료가 없습니다.')+'</p>';
+    var lim=opt.limit||rows.length, h='<div class="k-tw"><table class="k-t"><thead><tr>'+cols.map(function(c){return '<th class="'+(c.l?'l ':'')+(c.sort?'s':'')+(opt.sorted===c.sort&&c.sort?' on':'')+'"'+(c.sort?' data-sort="'+c.sort+'"':'')+'>'+c.h+(opt.sorted===c.sort&&c.sort?' ▾':'')+'</th>'}).join('')+'</tr></thead><tbody>';
+    rows.slice(0,lim).forEach(function(r){ h+='<tr>'+cols.map(function(c){return '<td'+(c.l?' class="l"':'')+'>'+c.f(r)+'</td>'}).join('')+'</tr>'; });
+    h+='</tbody></table></div>'; if(rows.length>lim) h+='<button class="k-btn k-more" data-more="'+(opt.id||'')+'">'+n(rows.length-lim)+'개 더 보기</button>'; return h; }
+  function bar(v,max){ return '<span class="k-bar" style="width:'+Math.max(2,Math.round((v/(max||1))*80))+'px"></span>'; }
+
+  function chart(cur){
+    if(!cur.length) return '<p class="k-empty">아직 자료가 없습니다.</p>';
+    var box=document.getElementById('kOut'), cw=box?box.clientWidth-38:1000, W=Math.max(320,Math.min(1000,Math.round(cw||1000))),H=W<600?220:240,P={l:40,r:10,t:12,b:28}, iw=W-P.l-P.r, ih=H-P.t-P.b, mx=Math.max.apply(null,cur.map(function(r){return +r.views||0}).concat([5]));
+    var step=iw/cur.length, bw=Math.max(2,step*0.62), s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="일별 페이지뷰와 방문자">';
+    for(var g=0;g<=4;g++){ var y=P.t+ih-ih*g/4; s+='<line x1="'+P.l+'" x2="'+(W-P.r)+'" y1="'+y+'" y2="'+y+'" stroke="#EEECE8"/><text x="'+(P.l-6)+'" y="'+(y+4)+'" text-anchor="end" font-size="11" fill="#79746D">'+n(mx*g/4)+'</text>'; }
+    var pts=[]; cur.forEach(function(r,i){ var x=P.l+step*i+step/2, h=ih*(+r.views||0)/mx, vy=P.t+ih-ih*(+r.visitors||0)/mx;
+      s+='<rect x="'+(x-bw/2)+'" y="'+(P.t+ih-h)+'" width="'+bw+'" height="'+Math.max(h,0)+'" rx="2" fill="#BCD6E6"><title>'+r.day+' · 페이지뷰 '+n(r.views)+' · 방문자 '+n(r.visitors)+' · 방문 '+n(r.visits)+'</title></rect>'; pts.push(x+','+vy);
+      var every=Math.ceil(cur.length/Math.max(4,Math.floor(W/95))); if(i%every===0||i===cur.length-1) s+='<text x="'+x+'" y="'+(H-8)+'" text-anchor="middle" font-size="11" fill="#79746D">'+r.day.slice(5).replace('-','.')+'</text>'; });
+    s+='<polyline points="'+pts.join(' ')+'" fill="none" stroke="#1E6E9C" stroke-width="2.4" stroke-linejoin="round"/>';
+    pts.forEach(function(p){ var a=p.split(','); s+='<circle cx="'+a[0]+'" cy="'+a[1]+'" r="'+(cur.length>60?1.5:3)+'" fill="#1E6E9C"/>'; });
+    return s+'</svg><div class="k-leg"><span><i style="background:#BCD6E6"></i>페이지뷰</span><span><i style="background:#1E6E9C"></i>방문자</span></div>';
+  }
+  // 기간 안의 날짜를 빠짐없이 (자료 없는 날은 0)
+  function fill(rows,start,end){ var m={}; rows.forEach(function(r){m[r.day]=r}); var o=[], d=new Date(start+'T00:00:00Z'), e=new Date(end+'T00:00:00Z');
+    while(d<=e){ var k=d.toISOString().slice(0,10); o.push(m[k]||{day:k,views:0,visits:0,visitors:0,ret:0,eng_sec:0,engaged:0,place_views:0}); d=new Date(d.getTime()+86400000); } return o; }
+
+  function render(){
+    var R=J.range, all=J.series||[], cur=fill(all.filter(function(r){return r.day>=R.start}),R.start,R.end), prev=all.filter(function(r){return r.day<R.start});
+    var T={}, P={}; ['views','visits','visitors','ret','eng_sec','engaged','place_views'].forEach(function(k){T[k]=sum(cur,k);P[k]=sum(prev,k);});
+    var cc=J.dims.cc||[], kr=cc.filter(function(r){return r.k==='KR'}), krV=sum(kr,'visitors'), allV=sum(cc,'visitors');
+    var ev={}; (J.evts||[]).forEach(function(r){ ev[r.ev]=(ev[r.ev]||0)+(+r.n||0); });
+    var C=J.community, PT=J.partner;
+    meta.textContent=R.start+' ~ '+R.end+' (한국 시간)'+(R.since?' · 통계 시작 '+R.since:'');
+    var h='';
+    if(!all.length) h+='<div class="k-lock" style="background:var(--stone);border-color:var(--line)"><b>아직 쌓인 방문 통계가 없습니다.</b><p class="k-note" style="margin-top:6px">방문 통계는 이 기능을 배포한 뒤의 방문부터 쌓입니다. 사이트를 한 번 열어 다른 페이지로 이동해 보면 몇 분 안에 숫자가 나타납니다. (이 브라우저를 ‘집계 안 함’으로 해 두었다면 그 방문은 빠집니다.)</p></div>';
+    h+='<div class="k-grid">'
+      +card('방문자',n(T.visitors),delta(T.visitors,P.visitors),'하루 기준으로 중복을 뺀 방문자를 기간 동안 더한 값',true)
+      +card('방문(세션)',n(T.visits),delta(T.visits,P.visits),'다른 사이트나 주소창에서 들어온 횟수')
+      +card('페이지뷰',n(T.views),delta(T.views,P.views),'페이지를 연 횟수')
+      +card('방문당 페이지',T.visits?(T.views/T.visits).toFixed(2):'–','','페이지뷰 ÷ 방문')
+      +card('평균 참여 시간',dur(T.views?T.eng_sec/T.views:0),delta(T.views?T.eng_sec/T.views:0,P.views?P.eng_sec/P.views:0),'페이지가 화면에 보이고 2분 안에 움직임이 있던 시간의 평균(페이지당)')
+      +card('참여율',pct(T.engaged,T.views),'10초 이상 머문 페이지뷰 비율','10초 이상 머문 페이지뷰 ÷ 페이지뷰')
+      +card('해외 방문자 비중',pct(allV-krV,allV),n(allV-krV)+'명 · 한국 '+n(krV)+'명','국가는 Cloudflare 가 접속 위치로 판단한 값',true)
+      +card('재방문 비율',pct(T.ret,T.visitors),'전날 이전에 온 적이 있는 방문자','하루 처음 온 방문자 가운데, 그 전에 온 적이 있는 비율')
+      +card('지점 상세 조회',n(T.place_views),delta(T.place_views,P.place_views),'/baths/p/… 지점 상세 페이지 조회',true)
+      +card('지도·길찾기 클릭',n((ev.map||0)+(ev.route||0)),'지도 '+n(ev.map||0)+' · 길찾기·택시 카드 '+n(ev.route||0),'실제로 가 보려는 행동')
+      +card('찜',n(ev.save||0),'로그인 여부와 관계없이 ♡ 를 누른 횟수','')
+      +card('공유',n(ev.share||0),'공유 창에서 앱·링크 복사를 고른 횟수','')
+      +(C?card('신규 회원',n(C.users.cur),delta(C.users.cur,C.users.prev)+' · 전체 '+n(C.users.total)+'명','',true):card('신규 회원','–','회원 데이터베이스(D1) 연결 필요',''))
+      +(C?card('후기·댓글·게시글',n(C.reviews.cur+C.comments.cur+C.posts.cur),'후기 '+n(C.reviews.cur)+' · 댓글 '+n(C.comments.cur)+' · 글 '+n(C.posts.cur),''):'')
+      +(C?card('찜 저장(회원)',n(C.saved.n||0),n(C.saved.users||0)+'명이 계정에 저장',''):'')
+      +(PT?card('업주 등록 신청',n(PT.cur),'검토 대기 '+n(PT.pending||0)+' · 게시 중 '+n(PT.approved||0)+' · 전체 '+n(PT.total),''):card('업주 등록 신청','–','KV 연결 필요',''))
+      +'</div>';
+    h+='<div class="k-sec"><h2>일별 추이 <small>막대 = 페이지뷰, 선 = 방문자. 막대에 마우스를 올리면 숫자가 보입니다.</small></h2><div class="k-box k-chart">'+chart(cur)+'</div></div>';
+
+    // 국가 · 유입 경로
+    var maxC=Math.max.apply(null,cc.map(function(r){return +r.visitors||0}).concat([1]));
+    var src=(J.dims.src||[]).filter(function(r){return r.k!=='(internal)'}), grp={};
+    src.forEach(function(r){ var g=/^utm:/.test(r.k)?'캠페인(UTM)':(SRCG[r.k]||'다른 사이트'); grp[g]=grp[g]||{k:g,visits:0,views:0,eng_sec:0}; grp[g].visits+=+r.visits||0; grp[g].views+=+r.views||0; grp[g].eng_sec+=+r.eng_sec||0; });
+    var grows=Object.keys(grp).map(function(k){return grp[k]}).sort(function(a,b){return b.visits-a.visits}), maxG=Math.max.apply(null,grows.map(function(r){return r.visits}).concat([1]));
+    h+='<div class="k-sec"><h2>어느 나라에서, 어디를 거쳐 왔나</h2><div class="k-two">'
+      +'<div class="k-box"><h3>국가별 방문자</h3>'+table([{h:'국가',l:1,f:function(r){return flag(r.k)+' '+esc(country(r.k))}},{h:'방문자',f:function(r){return bar(r.visitors,maxC)+n(r.visitors)}},{h:'비중',f:function(r){return pct(r.visitors,allV)}},{h:'페이지뷰',f:function(r){return n(r.views)}},{h:'평균 참여',f:function(r){return dur(r.views?r.eng_sec/r.views:0)}}],cc,{limit:15,id:'cc'})+'</div>'
+      +'<div class="k-box"><h3>유입 경로 (방문 기준)</h3>'+table([{h:'경로',l:1,f:function(r){return esc(r.k)}},{h:'방문',f:function(r){return bar(r.visits,maxG)+n(r.visits)}},{h:'비중',f:function(r){return pct(r.visits,T.visits)}},{h:'평균 참여',f:function(r){return dur(r.views?r.eng_sec/r.views:0)}}],grows)
+      +'<h3 style="margin-top:16px">자세히</h3>'+table([{h:'출처',l:1,f:function(r){return esc(r.k)+' <span class="k-pill">'+esc(/^utm:/.test(r.k)?'캠페인':(SRCG[r.k]||'다른 사이트'))+'</span>'}},{h:'방문',f:function(r){return n(r.visits)}},{h:'페이지뷰',f:function(r){return n(r.views)}}],src.sort(function(a,b){return b.visits-a.visits}),{limit:12,id:'src'})+'</div>'
+      +'</div></div>';
+
+    // 언어 · 기기
+    var site=J.dims.site||[], bl=J.dims.blang||[], dv=J.dims.dev||[];
+    h+='<div class="k-sec"><h2>언어와 기기</h2><div class="k-three">'
+      +'<div class="k-box"><h3>사이트 언어판 (페이지뷰)</h3>'+table([{h:'언어판',l:1,f:function(r){return esc(LN[r.k]||r.k)}},{h:'페이지뷰',f:function(r){return n(r.views)}},{h:'비중',f:function(r){return pct(r.views,T.views)}}],site)+'</div>'
+      +'<div class="k-box"><h3>브라우저 언어 (방문자)</h3>'+table([{h:'언어',l:1,f:function(r){return esc(blang(r.k))}},{h:'방문자',f:function(r){return n(r.visitors)}},{h:'비중',f:function(r){return pct(r.visitors,sum(bl,'visitors'))}}],bl.slice().sort(function(a,b){return b.visitors-a.visitors}),{limit:10,id:'bl'})+'</div>'
+      +'<div class="k-box"><h3>기기</h3>'+table([{h:'기기',l:1,f:function(r){return esc(DEV[r.k]||r.k)}},{h:'방문자',f:function(r){return n(r.visitors)}},{h:'페이지뷰',f:function(r){return n(r.views)}},{h:'평균 참여',f:function(r){return dur(r.views?r.eng_sec/r.views:0)}}],dv)+'</div>'
+      +'</div></div>';
+
+    // 페이지
+    var pages=J.pages||[], pm={};
+    pages.forEach(function(r){ var k=pageMerge?strip(r.path):r.path; var x=pm[k]=pm[k]||{path:k,views:0,entries:0,eng_sec:0,engaged:0,deep:0,langs:{}}; ['views','entries','eng_sec','engaged','deep'].forEach(function(f){x[f]+=+r[f]||0}); x.langs[langOf(r.path)]=1; });
+    var prows=Object.keys(pm).map(function(k){return pm[k]}).sort(function(a,b){return b.views-a.views}), maxP=prows.length?prows[0].views:1;
+    var kinds={}; pages.forEach(function(r){ var k=kind(r.path); kinds[k]=kinds[k]||{k:k,views:0,entries:0,eng_sec:0}; kinds[k].views+=+r.views||0; kinds[k].entries+=+r.entries||0; kinds[k].eng_sec+=+r.eng_sec||0; });
+    var krows=Object.keys(kinds).map(function(k){return kinds[k]}).sort(function(a,b){return b.views-a.views}), maxK=krows.length?krows[0].views:1;
+    h+='<div class="k-sec"><h2>페이지별 <small><label><input type="checkbox" id="kMerge"'+(pageMerge?' checked':'')+'> 언어판 합쳐 보기</label></small></h2><div class="k-two" style="grid-template-columns:2fr 1fr">'
+      +'<div class="k-box"><h3>인기 페이지</h3>'+table([{h:'페이지',l:1,f:function(r){return '<a href="'+esc(r.path)+'" target="_blank" rel="noopener">'+esc(r.path)+'</a><span class="sm">'+esc(kind(r.path))+(pageMerge?' · '+Object.keys(r.langs).map(function(l){return LN[l]||l}).join(', '):'')+'</span>'}},{h:'조회',f:function(r){return bar(r.views,maxP)+n(r.views)}},{h:'진입',f:function(r){return n(r.entries)}},{h:'평균 참여',f:function(r){return dur(r.views?r.eng_sec/r.views:0)}},{h:'끝까지',f:function(r){return pct(r.deep,r.views)}}],prows,{limit:25,id:'pages'})+'</div>'
+      +'<div class="k-box"><h3>콘텐츠 유형별</h3>'+table([{h:'유형',l:1,f:function(r){return esc(r.k)}},{h:'조회',f:function(r){return bar(r.views,maxK)+n(r.views)}},{h:'진입',f:function(r){return n(r.entries)}},{h:'평균 참여',f:function(r){return dur(r.views?r.eng_sec/r.views:0)}}],krows)+'</div>'
+      +'</div></div>';
+
+    // 지점
+    var prevAct={}; (J.prevPlaces||[]).forEach(function(r){prevAct[r.place]=+r.act||0});
+    var places=(J.places||[]).map(function(r){ var x={}; for(var k in r) x[k]=r[k]; ['views','maps','route','saves','reviews','sites'].forEach(function(f){x[f]=+x[f]||0}); x.act=x.maps+x.route+x.saves+x.reviews+x.sites; x.all=x.views+x.act; x.prev=prevAct[r.place]||0; return x; });
+    places.sort(function(a,b){ return (b[placeSort]-a[placeSort])||(b.all-a.all); });
+    var areas={}; places.forEach(function(p){ var a=area(p.area); areas[a]=areas[a]||{k:a,views:0,act:0,n:0}; areas[a].views+=p.views; areas[a].act+=p.act; areas[a].n++; });
+    pages.forEach(function(r){ var m=strip(r.path).match(/^\/baths\/([a-z-]+)\/$/); if(m&&REG[m[1]]&&!/^(hot-springs|private|near)$/.test(m[1])){ var a=REG[m[1]]; areas[a]=areas[a]||{k:a,views:0,act:0,n:0}; areas[a].list=(areas[a].list||0)+(+r.views||0); } });
+    var arows=Object.keys(areas).map(function(k){return areas[k]}).sort(function(a,b){return (b.act+b.views+(b.list||0))-(a.act+a.views+(a.list||0))});
+    var pc=function(h,k){return {h:h,sort:k,f:function(r){return n(r[k])}}};
+    h+='<div class="k-sec"><h2>지점별 조회와 인기 <small>제목을 누르면 그 기준으로 정렬합니다. ‘행동’ = 지도 + 길찾기 + 찜 + 후기 + 홈페이지</small></h2>'
+      +'<div class="k-box">'+table([{h:'지점',l:1,f:function(r){var nm=esc(r.name||r.place); return (r.url?'<a href="'+esc(r.url)+'" target="_blank" rel="noopener">'+nm+'</a>':nm)+'<span class="sm">'+esc(r.area||'')+' · '+esc(r.place)+'</span>'}},pc('상세 조회','views'),pc('지도','maps'),pc('길찾기','route'),pc('찜','saves'),pc('후기 창','reviews'),pc('홈페이지','sites'),{h:'행동 합계',sort:'act',f:function(r){return '<b>'+n(r.act)+'</b>'}},{h:'직전 기간',f:function(r){return r.prev?(r.all>=r.prev?'<span style="color:var(--ok)">▲</span> ':'<span style="color:var(--red)">▼</span> ')+n(r.prev):'–'}}],places,{limit:30,id:'places',sorted:placeSort,empty:'아직 지점 조회나 클릭 기록이 없습니다.'})+'</div>'
+      +'<div class="k-two" style="margin-top:16px"><div class="k-box"><h3>지역별 관심</h3>'+table([{h:'지역',l:1,f:function(r){return esc(r.k)}},{h:'지역 목록 조회',f:function(r){return n(r.list||0)}},{h:'지점 상세 조회',f:function(r){return n(r.views)}},{h:'지점 행동',f:function(r){return n(r.act)}},{h:'지점 수',f:function(r){return n(r.n)}}],arows)+'</div>'
+      +'<div class="k-box"><h3>행동별 합계</h3>'+table([{h:'행동',l:1,f:function(r){return esc(EVN[r.k]||r.k)}},{h:'횟수',f:function(r){return n(r.n)}}],Object.keys(ev).map(function(k){return {k:k,n:ev[k]}}).sort(function(a,b){return b.n-a.n}))+'</div></div></div>';
+
+    // 공유·언어·외부 링크
+    var evts=J.evts||[], by=function(e){return evts.filter(function(r){return r.ev===e}).sort(function(a,b){return b.n-a.n})};
+    h+='<div class="k-sec"><h2>공유·언어 전환·외부 링크</h2><div class="k-three">'
+      +'<div class="k-box"><h3>공유한 곳</h3>'+table([{h:'채널',l:1,f:function(r){return esc(r.v)}},{h:'횟수',f:function(r){return n(r.n)}}],by('share'))+'</div>'
+      +'<div class="k-box"><h3>바꾼 언어</h3>'+table([{h:'언어',l:1,f:function(r){return esc(r.v)}},{h:'횟수',f:function(r){return n(r.n)}}],by('lang'))+'</div>'
+      +'<div class="k-box"><h3>나간 외부 사이트</h3>'+table([{h:'사이트',l:1,f:function(r){return esc(r.v)}},{h:'횟수',f:function(r){return n(r.n)}}],by('out').concat(by('site')).sort(function(a,b){return b.n-a.n}),{limit:10,id:'out'})+'</div>'
+      +'</div></div>';
+
+    // 캠페인
+    h+='<div class="k-sec"><h2>홍보 캠페인 (UTM) <small>인스타그램·블로그·카페 등에 올리는 링크에 꼬리표를 붙이면 어느 홍보에서 몇 명이 왔는지 여기에 나옵니다.</small></h2><div class="k-two">'
+      +'<div class="k-box"><h3>캠페인별 방문</h3>'+table([{h:'출처',l:1,f:function(r){return esc(r.src)}},{h:'매체',l:1,f:function(r){return esc(r.med||'–')}},{h:'캠페인',l:1,f:function(r){return esc(r.cmp||'–')}},{h:'방문',f:function(r){return n(r.visits)}}],J.cmp||[],{empty:'아직 꼬리표가 붙은 링크로 들어온 방문이 없습니다.'})+'</div>'
+      +'<div class="k-box"><h3>홍보 링크 만들기</h3><div class="k-utm"><label>보낼 페이지<input id="uUrl" value="https://hantang.kr/"></label><label>출처(source)<input id="uSrc" placeholder="instagram"></label><label>매체(medium)<input id="uMed" placeholder="social"></label><label>캠페인<input id="uCmp" placeholder="winter2026"></label></div><div class="k-utm-out" id="uOut">https://hantang.kr/</div><button class="k-btn" id="uCopy" style="margin-top:8px">링크 복사</button><p class="k-note" style="margin-top:8px">예: 인스타그램 프로필 링크 → 출처 instagram, 매체 social, 캠페인 profile. 네이버 블로그 글 → naver_blog, blog, 글 주제.</p></div>'
+      +'</div></div>';
+
+    // 커뮤니티
+    if(C){ var rated=C.rated||[], st=C.savedTop||[];
+      h+='<div class="k-sec"><h2>커뮤니티</h2><div class="k-three">'
+        +'<div class="k-box"><h3>기간 안 활동</h3>'+table([{h:'항목',l:1,f:function(r){return r.k}},{h:'이번 기간',f:function(r){return n(r.c.cur)}},{h:'직전 기간',f:function(r){return n(r.c.prev)}},{h:'전체',f:function(r){return n(r.c.total)}}],[{k:'회원가입',c:C.users},{k:'게시글',c:C.posts},{k:'지점 후기(별점)',c:C.reviews},{k:'댓글',c:C.comments}])+(C.hold?'<p class="k-note" style="margin-top:8px">신고로 자동 가려진 글·댓글 <b>'+n(C.hold)+'건</b> — <a href="../#community">회원 글·후기 관리</a>에서 확인하세요.</p>':'')+'</div>'
+        +'<div class="k-box"><h3>후기가 많은 지점</h3>'+table([{h:'지점',l:1,f:function(r){var nm=esc(r.name||r.target.slice(6)); return r.url?'<a href="'+esc(r.url.split('#')[0])+'" target="_blank" rel="noopener">'+nm+'</a>':nm}},{h:'후기',f:function(r){return n(r.n)}},{h:'평균 별점',f:function(r){return '★ '+(+r.avg).toFixed(1)}}],rated,{empty:'아직 별점 후기가 없습니다.'})+'</div>'
+        +'<div class="k-box"><h3>회원이 많이 찜한 지점</h3>'+table([{h:'지점',l:1,f:function(r){var nm=esc(r.name||r.place); return r.url?'<a href="'+esc(r.url)+'" target="_blank" rel="noopener">'+nm+'</a>':nm}},{h:'찜한 회원',f:function(r){return n(r.n)}}],st,{empty:'아직 계정에 저장된 찜이 없습니다.'})+'</div>'
+        +'</div></div>'; }
+
+    // 용어
+    h+='<div class="k-sec"><h2>숫자 읽는 법</h2><div class="k-box"><dl class="k-def">'
+      +'<dt>방문자</dt><dd>하루 안에서 같은 브라우저를 한 번만 셉니다. 기간 숫자는 날짜별 방문자를 더한 값이라, 여러 날 온 사람은 그날마다 셉니다. 브라우저에는 날짜만 저장하고 개인을 알아볼 수 있는 값은 쓰지 않습니다.</dd>'
+      +'<dt>방문(세션)</dt><dd>다른 사이트·검색·SNS·주소창에서 한탕으로 들어온 횟수입니다. 사이트 안에서 페이지를 옮긴 것은 세지 않습니다.</dd>'
+      +'<dt>참여 시간</dt><dd>페이지가 화면에 보이고, 마지막으로 스크롤·클릭·터치한 지 2분이 안 된 동안만 셉니다(페이지당 최대 30분). 창을 띄워 두기만 한 시간은 빠집니다.</dd>'
+      +'<dt>끝까지</dt><dd>페이지의 75% 이상까지 내려 본 비율입니다.</dd>'
+      +'<dt>국가</dt><dd>Cloudflare 가 접속 위치로 판단한 나라입니다. VPN 을 쓰면 다른 나라로 잡힐 수 있습니다.</dd>'
+      +'<dt>지점 행동</dt><dd>지점 카드나 상세 페이지에서 지도(구글·네이버·카카오) 열기, 길찾기·택시 카드, 찜, 후기 창, 시설 홈페이지 링크를 누른 횟수입니다. 순위는 광고와 관계없이 이 숫자로만 정합니다.</dd>'
+      +'<dt>빠지는 방문</dt><dd>추적 거부(Do Not Track·GPC)를 켠 브라우저, 검색 로봇, 관리자 화면, ‘이 브라우저 방문 빼기’를 누른 브라우저는 세지 않습니다. 그래서 Search Console·서치어드바이저 숫자와 다를 수 있습니다. 검색어별 노출·클릭은 그쪽에서 보세요.</dd>'
+      +'</dl></div></div>';
+    out.innerHTML=h;
+    // 표 정렬·더 보기·체크박스·UTM
+    out.querySelectorAll('[data-sort]').forEach(function(th){ th.addEventListener('click',function(){ placeSort=th.dataset.sort; var y=scrollY; render(); scrollTo(0,y); }); });
+    out.querySelectorAll('[data-more]').forEach(function(b){ b.addEventListener('click',function(){ expanded[b.dataset.more]=1; var y=scrollY; render(); scrollTo(0,y); }); });
+    var mg=document.getElementById('kMerge'); if(mg) mg.addEventListener('change',function(){ pageMerge=mg.checked; render(); });
+    var U=['uUrl','uSrc','uMed','uCmp'].map(function(i){return document.getElementById(i)}), uo=document.getElementById('uOut');
+    function mk(){ try{ var u=new URL(U[0].value.trim()||'https://hantang.kr/'); [['utm_source',U[1]],['utm_medium',U[2]],['utm_campaign',U[3]]].forEach(function(p){ var v=p[1].value.trim().toLowerCase().replace(/\s+/g,'_'); if(v) u.searchParams.set(p[0],v); else u.searchParams.delete(p[0]); }); uo.textContent=u.toString(); }catch(e){ uo.textContent='주소를 확인해 주세요.'; } }
+    U.forEach(function(i){ i.addEventListener('input',mk) }); mk();
+    document.getElementById('uCopy').addEventListener('click',function(){ var b=this, t=uo.textContent; if(navigator.clipboard) navigator.clipboard.writeText(t).then(function(){b.textContent='✓ 복사했습니다'},function(){}); });
+  }
+  // "더 보기": 그 표만 전체 행으로 다시 그린다
+  var expanded={}, _table=table;
+  table=function(cols,rows,opt){ opt=opt||{}; if(opt.id&&expanded[opt.id]) opt.limit=rows.length; return _table(cols,rows,opt); };
+
+  function csv(rows,cols){ var s='﻿'+cols.join(',')+'\n'+rows.map(function(r){return cols.map(function(c){var v=r[c]==null?'':String(r[c]); return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v}).join(',')}).join('\n'); return s; }
+  function dl(name,text){ var a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([text],{type:'text/csv;charset=utf-8'})); a.download=name; document.body.appendChild(a); a.click(); setTimeout(function(){URL.revokeObjectURL(a.href); a.remove();},500); }
+  document.getElementById('kCsv').addEventListener('click',function(){ if(!J) return; var R=J.range; dl('hantang-kpi-daily-'+R.start+'_'+R.end+'.csv', csv(fill((J.series||[]).filter(function(r){return r.day>=R.start}),R.start,R.end),['day','visitors','visits','views','ret','eng_sec','engaged','place_views'])); });
+  document.getElementById('kCsvP').addEventListener('click',function(){ if(!J) return; var R=J.range; dl('hantang-kpi-places-'+R.start+'_'+R.end+'.csv', csv(J.places||[],['place','name','area','views','maps','route','saves','reviews','sites','url'])); });
+
+  function load(){
+    out.innerHTML='<p class="k-empty">불러오는 중…</p>'; expanded={};
+    fetch(API+days,{credentials:'same-origin'}).then(function(r){return r.json().then(function(j){j.code=r.status;return j},function(){return {ok:false,code:r.status}})}).then(function(j){
+      if(!j.ok){
+        if(j.code===403) out.innerHTML='<div class="k-lock"><b>관리자 인증이 필요합니다.</b><p class="k-note" style="margin-top:6px">이 화면은 Cloudflare Zero Trust Access 로 로그인한 관리자만 볼 수 있습니다. ('+esc(j.why||'forbidden')+') README 의 ‘관리자 화면 잠그기’ 순서대로 Access 를 설정해 주세요.</p></div>';
+        else if(j.code===503) out.innerHTML='<div class="k-lock"><b>통계 데이터베이스가 연결되지 않았습니다.</b><p class="k-note" style="margin-top:6px">Cloudflare → Workers &amp; Pages → hantang-web → Settings → Bindings 에서 D1 데이터베이스를 변수 이름 <b>HANTANG_DB</b> 로 연결한 뒤 다시 배포하면, 그때부터 방문 통계가 쌓입니다. (회원·후기 기능과 같은 데이터베이스입니다.)</p></div>';
+        else out.innerHTML='<div class="k-lock"><b>불러오지 못했습니다.</b> ('+esc(j.error||j.code)+')</div>';
+        meta.textContent=''; return; }
+      J=j; render();
+    }).catch(function(){ out.innerHTML='<div class="k-lock"><b>연결하지 못했습니다.</b> 잠시 뒤 다시 시도해 주세요.</div>'; });
+  }
+  document.getElementById('kDays').addEventListener('click',function(e){ var b=e.target.closest('button'); if(!b) return; [].forEach.call(this.children,function(x){x.classList.toggle('on',x===b)}); days=+b.dataset.d; load(); });
+  var lw=innerWidth, rt=0; addEventListener('resize',function(){ clearTimeout(rt); rt=setTimeout(function(){ if(J && Math.abs(innerWidth-lw)>60){ lw=innerWidth; var y=scrollY; render(); scrollTo(0,y); } },250); });
+  load();
+})();
+</script>
+</body>
+</html>

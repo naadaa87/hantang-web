@@ -2,6 +2,7 @@
 //   GET  /api/admin/list                 신청·게시 목록
 //   GET  /api/admin/photo/<id>/<n>       신청 사진
 //   GET/POST /api/admin/community     회원 글·후기·댓글·회원 관리 (D1)
+//   GET  /api/admin/kpi?days=28        방문 통계·지점 인기·커뮤니티·업주 신청 KPI (D1·KV)
 //   POST /api/admin/decide {id, action: approve|hold|reject|unpublish|delete, pub:{...}, photos:[n,...]}
 // ── 공통 도구 (개발용 소스 site/functions/_lib/common.js 에서 붙임) ──
 // 한탕 업장 등록 — Cloudflare Pages Functions 공통 도구
@@ -301,6 +302,170 @@ async function renderPost(ctx, folder) {
   return new Response(page, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-cache' } });
 }
 // ── 여기부터 이 경로의 처리 ──
+// ── 공통 도구 (개발용 소스 site/functions/_lib/analytics.js 에서 붙임) ──
+// 방문 통계 (한탕 자체 집계) — 쿠키·IP·개인 식별값을 저장하지 않고 "날짜별 합계"만 D1 에 쌓는다.
+// 다른 _lib 파일과 함께 붙여 넣어지므로 이름은 모두 an 으로 시작하고, 여기서는 다른 파일을 import 하지 않는다.
+const AN_SCHEMA = [
+  `CREATE TABLE IF NOT EXISTS an_day (day TEXT PRIMARY KEY, views INTEGER NOT NULL DEFAULT 0, visits INTEGER NOT NULL DEFAULT 0,
+     visitors INTEGER NOT NULL DEFAULT 0, ret INTEGER NOT NULL DEFAULT 0, eng_sec INTEGER NOT NULL DEFAULT 0,
+     engaged INTEGER NOT NULL DEFAULT 0, place_views INTEGER NOT NULL DEFAULT 0)`,
+  `CREATE TABLE IF NOT EXISTS an_page (day TEXT NOT NULL, path TEXT NOT NULL, views INTEGER NOT NULL DEFAULT 0, entries INTEGER NOT NULL DEFAULT 0,
+     eng_sec INTEGER NOT NULL DEFAULT 0, engaged INTEGER NOT NULL DEFAULT 0, deep INTEGER NOT NULL DEFAULT 0, PRIMARY KEY (day, path))`,
+  `CREATE TABLE IF NOT EXISTS an_seg (day TEXT NOT NULL, cc TEXT NOT NULL, dev TEXT NOT NULL, src TEXT NOT NULL, blang TEXT NOT NULL, site TEXT NOT NULL,
+     views INTEGER NOT NULL DEFAULT 0, visits INTEGER NOT NULL DEFAULT 0, visitors INTEGER NOT NULL DEFAULT 0, eng_sec INTEGER NOT NULL DEFAULT 0,
+     PRIMARY KEY (day, cc, dev, src, blang, site))`,
+  `CREATE TABLE IF NOT EXISTS an_cmp (day TEXT NOT NULL, src TEXT NOT NULL, med TEXT NOT NULL, cmp TEXT NOT NULL, visits INTEGER NOT NULL DEFAULT 0,
+     PRIMARY KEY (day, src, med, cmp))`,
+  `CREATE TABLE IF NOT EXISTS an_place (day TEXT NOT NULL, place TEXT NOT NULL, views INTEGER NOT NULL DEFAULT 0, maps INTEGER NOT NULL DEFAULT 0,
+     route INTEGER NOT NULL DEFAULT 0, saves INTEGER NOT NULL DEFAULT 0, reviews INTEGER NOT NULL DEFAULT 0, sites INTEGER NOT NULL DEFAULT 0,
+     PRIMARY KEY (day, place))`,
+  `CREATE TABLE IF NOT EXISTS an_place_meta (place TEXT PRIMARY KEY, name TEXT, area TEXT, url TEXT)`,
+  `CREATE TABLE IF NOT EXISTS an_evt (day TEXT NOT NULL, ev TEXT NOT NULL, v TEXT NOT NULL, n INTEGER NOT NULL DEFAULT 0, PRIMARY KEY (day, ev, v))`,
+];
+let anReady = false;
+async function anDb(env) {
+  const d = env.HANTANG_DB;
+  if (!d) return null;
+  if (!anReady) { await d.batch(AN_SCHEMA.map((s) => d.prepare(s))); anReady = true; }
+  return d;
+}
+
+// 한국 시간 기준 날짜 (YYYY-MM-DD)
+function anDay(ms = Date.now()) { return new Date(ms + 9 * 3600e3).toISOString().slice(0, 10); }
+function anShift(day, n) { return new Date(Date.parse(day + 'T00:00:00Z') + n * 86400e3).toISOString().slice(0, 10); }
+
+const AN_FOLDERS = { ja: 'ja', 'zh-hant': 'zh-Hant', 'zh-hans': 'zh-Hans', vi: 'vi', th: 'th', ru: 'ru', ko: 'ko' };
+const AN_BOT = /bot|crawl|spider|slurp|headless|lighthouse|pagespeed|preview|facebookexternalhit|embedly|curl|wget|python|httpclient|phantom|puppeteer|playwright/i;
+// 지점 행동 → an_place 열
+const AN_PLACE_COL = { map: 'maps', route: 'route', save: 'saves', review: 'reviews', site: 'sites' };
+const AN_EVENTS = new Set(['map', 'route', 'save', 'review', 'site', 'share', 'lang', 'out', 'game', 'partner', 'signup', 'login', 'post', 'comment', 'review_post', 'filter']);
+
+const anStr = (s, n, re) => { s = String(s == null ? '' : s).trim().slice(0, n); return re && !re.test(s) ? '' : s; };
+const anInt = (x, lo, hi) => { x = Math.round(Number(x) || 0); return Math.max(lo, Math.min(hi, x)); };
+const anText = (s, n) => String(s == null ? '' : s).replace(/[\u0000-\u001f<>]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, n);
+
+function anIsBot(ua) { return !ua || AN_BOT.test(ua); }
+function anDevice(ua) {
+  if (/iPad|Tablet|Android(?!.*Mobile)|Silk|Kindle/i.test(ua)) return 'tablet';
+  if (/Mobi|iPhone|iPod|Android|Windows Phone/i.test(ua)) return 'mobile';
+  return 'desktop';
+}
+function anPath(p) {
+  p = String(p || '').split(/[?#]/)[0].replace(/\/index\.html$/, '/');
+  if (!/^\/[A-Za-z0-9\-._~%/]{0,160}$/.test(p) || /\/\//.test(p)) return '';
+  if (/^\/(admin|api|tools|offline)(\/|$)/.test(p)) return '';
+  return p;
+}
+function anSite(path) { const f = path.split('/')[1]; return AN_FOLDERS[f] || 'en'; }
+function anPlaceFromPath(path) { const m = path.match(/^\/(?:[a-z-]+\/)?baths\/p\/([A-Za-z0-9_.-]{1,80})\/$/); return m ? m[1] : ''; }
+
+// 들어온 경로 이름 붙이기 (이전 페이지의 도메인만 받는다)
+const AN_SRC = [
+  [/(^|\.)google\./, 'google'], [/(^|\.)naver\.com$/, 'naver'], [/(^|\.)daum\.net$|(^|\.)kakao\.com$/, 'daum·kakao'], [/(^|\.)bing\.com$/, 'bing'],
+  [/(^|\.)yahoo\./, 'yahoo'], [/(^|\.)duckduckgo\.com$/, 'duckduckgo'], [/(^|\.)yandex\./, 'yandex'], [/(^|\.)baidu\.com$/, 'baidu'],
+  [/(^|\.)(chatgpt\.com|openai\.com)$/, 'chatgpt'], [/(^|\.)perplexity\.ai$/, 'perplexity'], [/(^|\.)(claude\.ai|gemini\.google\.com|copilot\.microsoft\.com)$/, 'ai-other'],
+  [/(^|\.)(instagram\.com|l\.instagram\.com)$/, 'instagram'], [/(^|\.)(facebook\.com|fb\.com|m\.facebook\.com|l\.facebook\.com)$/, 'facebook'],
+  [/(^|\.)(t\.co|x\.com|twitter\.com)$/, 'x'], [/(^|\.)(youtube\.com|youtu\.be)$/, 'youtube'], [/(^|\.)reddit\.com$/, 'reddit'],
+  [/(^|\.)tiktok\.com$/, 'tiktok'], [/(^|\.)(line\.me)$/, 'line'], [/(^|\.)(threads\.net|threads\.com)$/, 'threads'], [/(^|\.)pinterest\./, 'pinterest'],
+  [/(^|\.)tripadvisor\./, 'tripadvisor'], [/(^|\.)(xiaohongshu\.com|xhslink\.com)$/, 'xiaohongshu'], [/(^|\.)(weibo\.com|weibo\.cn)$/, 'weibo'],
+  [/(^|\.)vk\.com$/, 'vk'], [/(^|\.)(hantang-web\.pages\.dev)$/, '(internal)'],
+];
+function anSource(refHost, utmSource) {
+  const u = anStr(utmSource, 40).toLowerCase().replace(/[^a-z0-9._-]/g, '');
+  if (u) return 'utm:' + u;
+  const h = anStr(refHost, 100).toLowerCase().replace(/^www\./, '');
+  if (!h) return '(direct)';
+  for (const [re, name] of AN_SRC) if (re.test(h)) return name;
+  return /^[a-z0-9.-]+$/.test(h) ? h : '(other)';
+}
+
+// 비콘 한 번을 D1 에 반영. b = 브라우저가 보낸 값, cf = request.cf
+async function anRecord(d, b, ua, cf) {
+  const path = anPath(b.p);
+  if (!path) return;
+  const day = anDay(), kind = b.k === 'x' ? 'x' : 'v';
+  const s = anInt(b.s, 0, 1800), depth = anInt(b.dp, 0, 100);
+  const entry = kind === 'v' && b.e ? 1 : 0;
+  const src = b.e ? anSource(b.r, b.us) : '(internal)';   // 이어 보내는 비콘(x)도 같은 묶음에 시간을 더한다
+  const cc = /^[A-Z]{2}$/.test((cf && cf.country) || '') ? cf.country : 'XX';
+  const dev = anDevice(ua), blang = anStr(b.l, 3, /^[a-z]{2,3}$/) || 'xx', site = anSite(path);
+  const isNew = kind === 'v' && b.n ? 1 : 0, ret = isNew && b.rt ? 1 : 0;
+  const views = kind === 'v' ? 1 : 0, engaged = kind === 'v' && s >= 10 ? 1 : 0, deep = kind === 'v' && depth >= 75 ? 1 : 0;
+  const placeId = anPlaceFromPath(path);
+  const st = [];
+  st.push(d.prepare(`INSERT INTO an_day (day, views, visits, visitors, ret, eng_sec, engaged, place_views) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+    ON CONFLICT(day) DO UPDATE SET views = views + excluded.views, visits = visits + excluded.visits, visitors = visitors + excluded.visitors,
+    ret = ret + excluded.ret, eng_sec = eng_sec + excluded.eng_sec, engaged = engaged + excluded.engaged, place_views = place_views + excluded.place_views`)
+    .bind(day, views, entry, isNew, ret, s, engaged, placeId && views ? 1 : 0));
+  st.push(d.prepare(`INSERT INTO an_page (day, path, views, entries, eng_sec, engaged, deep) VALUES (?, ?, ?, ?, ?, ?, ?)
+    ON CONFLICT(day, path) DO UPDATE SET views = views + excluded.views, entries = entries + excluded.entries, eng_sec = eng_sec + excluded.eng_sec,
+    engaged = engaged + excluded.engaged, deep = deep + excluded.deep`).bind(day, path, views, entry, s, engaged, deep));
+  st.push(d.prepare(`INSERT INTO an_seg (day, cc, dev, src, blang, site, views, visits, visitors, eng_sec) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ON CONFLICT(day, cc, dev, src, blang, site) DO UPDATE SET views = views + excluded.views, visits = visits + excluded.visits,
+    visitors = visitors + excluded.visitors, eng_sec = eng_sec + excluded.eng_sec`).bind(day, cc, dev, src, blang, site, views, entry, isNew, s));
+  if (entry && b.us) {
+    st.push(d.prepare(`INSERT INTO an_cmp (day, src, med, cmp, visits) VALUES (?, ?, ?, ?, 1) ON CONFLICT(day, src, med, cmp) DO UPDATE SET visits = visits + 1`)
+      .bind(day, anStr(b.us, 40).toLowerCase(), anStr(b.um, 40).toLowerCase(), anStr(b.uc, 60).toLowerCase()));
+  }
+  const meta = (id, name, area, url) => {
+    if (!name) return;
+    st.push(d.prepare(`INSERT INTO an_place_meta (place, name, area, url) VALUES (?, ?, ?, ?)
+      ON CONFLICT(place) DO UPDATE SET name = excluded.name, area = COALESCE(NULLIF(excluded.area, ''), area), url = COALESCE(NULLIF(excluded.url, ''), url)
+      WHERE name IS NOT excluded.name OR (excluded.area != '' AND area IS NOT excluded.area) OR (excluded.url != '' AND url IS NOT excluded.url)`)
+      .bind(id, anText(name, 80), anText(area, 40), url || ''));
+  };
+  if (placeId && views) {
+    st.push(d.prepare(`INSERT INTO an_place (day, place, views) VALUES (?, ?, 1) ON CONFLICT(day, place) DO UPDATE SET views = views + 1`).bind(day, placeId));
+    meta(placeId, b.pn, b.pa, path);
+  }
+  // 버튼·링크 (같은 비콘 안의 같은 행동은 합쳐서 한 번에)
+  const evs = {}, places = {};
+  for (const e of (Array.isArray(b.ev) ? b.ev.slice(0, 30) : [])) {
+    const ev = anStr(e && e.e, 20);
+    if (!AN_EVENTS.has(ev)) continue;
+    const v = anStr(e.v, 40).toLowerCase().replace(/[^a-z0-9._:\-]/g, '') || '-';
+    evs[ev + '|' + v] = (evs[ev + '|' + v] || 0) + 1;
+    const pid = anStr(e.p, 80, /^[A-Za-z0-9_.:-]{1,80}$/);
+    if (pid && AN_PLACE_COL[ev]) {
+      const k = pid; places[k] = places[k] || { maps: 0, route: 0, saves: 0, reviews: 0, sites: 0 };
+      places[k][AN_PLACE_COL[ev]]++;
+      meta(pid, e.n, e.a, anPath(e.u));
+    }
+  }
+  for (const [k, n] of Object.entries(evs)) {
+    const [ev, v] = k.split('|');
+    st.push(d.prepare(`INSERT INTO an_evt (day, ev, v, n) VALUES (?, ?, ?, ?) ON CONFLICT(day, ev, v) DO UPDATE SET n = n + excluded.n`).bind(day, ev, v, n));
+  }
+  for (const [pid, c] of Object.entries(places)) {
+    st.push(d.prepare(`INSERT INTO an_place (day, place, maps, route, saves, reviews, sites) VALUES (?, ?, ?, ?, ?, ?, ?)
+      ON CONFLICT(day, place) DO UPDATE SET maps = maps + excluded.maps, route = route + excluded.route, saves = saves + excluded.saves,
+      reviews = reviews + excluded.reviews, sites = sites + excluded.sites`).bind(day, pid, c.maps, c.route, c.saves, c.reviews, c.sites));
+  }
+  await d.batch(st);
+}
+
+// 관리자 KPI: 기간(days)과 바로 앞 같은 길이 기간의 합계
+async function anReport(d, days) {
+  const end = anDay(), start = anShift(end, -(days - 1)), pStart = anShift(start, -days), pEnd = anShift(start, -1);
+  const all = async (sql, ...a) => (await d.prepare(sql).bind(...a).all()).results || [];
+  const sum = `SUM(views) AS views, SUM(visits) AS visits, SUM(visitors) AS visitors, SUM(eng_sec) AS eng_sec`;
+  const dim = (col) => all(`SELECT ${col} AS k, ${sum} FROM an_seg WHERE day BETWEEN ? AND ? GROUP BY ${col} ORDER BY views DESC LIMIT 200`, start, end);
+  const [series, pages, cc, dev, src, blang, site, cmp, places, evts, prevPlaces] = await Promise.all([
+    all('SELECT * FROM an_day WHERE day BETWEEN ? AND ? ORDER BY day', pStart, end),
+    all(`SELECT path, SUM(views) AS views, SUM(entries) AS entries, SUM(eng_sec) AS eng_sec, SUM(engaged) AS engaged, SUM(deep) AS deep
+         FROM an_page WHERE day BETWEEN ? AND ? GROUP BY path ORDER BY views DESC LIMIT 800`, start, end),
+    dim('cc'), dim('dev'), dim('src'), dim('blang'), dim('site'),
+    all('SELECT src, med, cmp, SUM(visits) AS visits FROM an_cmp WHERE day BETWEEN ? AND ? GROUP BY src, med, cmp ORDER BY visits DESC LIMIT 100', start, end),
+    all(`SELECT p.place, SUM(p.views) AS views, SUM(p.maps) AS maps, SUM(p.route) AS route, SUM(p.saves) AS saves, SUM(p.reviews) AS reviews, SUM(p.sites) AS sites,
+           m.name, m.area, m.url FROM an_place p LEFT JOIN an_place_meta m ON m.place = p.place WHERE p.day BETWEEN ? AND ?
+         GROUP BY p.place ORDER BY (SUM(p.maps) + SUM(p.route) + SUM(p.saves) + SUM(p.reviews) + SUM(p.sites)) DESC, SUM(p.views) DESC LIMIT 300`, start, end),
+    all('SELECT ev, v, SUM(n) AS n FROM an_evt WHERE day BETWEEN ? AND ? GROUP BY ev, v ORDER BY n DESC LIMIT 300', start, end),
+    all(`SELECT place, SUM(views) + SUM(maps) + SUM(route) + SUM(saves) + SUM(reviews) + SUM(sites) AS act FROM an_place WHERE day BETWEEN ? AND ? GROUP BY place`, pStart, pEnd),
+  ]);
+  const first = await d.prepare('SELECT MIN(day) AS d FROM an_day').first();
+  return { range: { start, end, pStart, pEnd, days, since: first && first.d }, series, pages, dims: { cc, dev, src, blang, site }, cmp, places, evts, prevPlaces };
+}
+// ── 여기부터 이 경로의 처리 ──
 
 // ── 회원 글·후기·댓글 관리 (GET /api/admin/community?kind=…, POST /api/admin/community {op, kind, id}) ──
 async function community(request, env, method) {
@@ -335,6 +500,58 @@ async function community(request, env, method) {
   return json({ ok: true, status: to, at: nowSec() });
 }
 
+// ── KPI (GET /api/admin/kpi?days=28) ──
+async function kpi(request, env) {
+  const v = await verifyAccess(request, env);
+  if (!v.ok) return json({ ok: false, error: 'forbidden', why: v.why }, 403);
+  const d = await anDb(env);
+  if (!d) return json({ ok: false, error: 'not_configured', what: 'HANTANG_DB' }, 503);
+  const days = Math.max(1, Math.min(365, parseInt(new URL(request.url).searchParams.get('days'), 10) || 28));
+  const r = await anReport(d, days);
+  // 커뮤니티 (회원·글·후기) — 테이블은 hcDb 가 만든다
+  const ts = (day) => Math.floor(Date.parse(day + 'T00:00:00+09:00') / 1000);
+  const from = ts(r.range.start), to = ts(anShift(r.range.end, 1)), pFrom = ts(r.range.pStart);
+  let community = null;
+  try {
+    const h = await hcDb(env);
+    const one = async (sql, ...a) => (await h.prepare(sql).bind(...a).first()) || {};
+    const cnt = async (table, extra = '') => {
+      const x = await one(`SELECT SUM(CASE WHEN created >= ? AND created < ? THEN 1 ELSE 0 END) AS cur, SUM(CASE WHEN created >= ? AND created < ? THEN 1 ELSE 0 END) AS prev, COUNT(*) AS total FROM ${table} WHERE 1 ${extra}`, from, to, pFrom, from);
+      return { cur: x.cur || 0, prev: x.prev || 0, total: x.total || 0 };
+    };
+    community = {
+      users: await cnt('users', "AND status != 'deleted'"),
+      posts: await cnt('posts', "AND status != 'deleted'"),
+      reviews: await cnt('comments', "AND status != 'deleted' AND target LIKE 'place:%' AND rating IS NOT NULL"),
+      comments: await cnt('comments', "AND status != 'deleted' AND NOT (target LIKE 'place:%' AND rating IS NOT NULL)"),
+      saved: await one('SELECT COUNT(*) AS n, COUNT(DISTINCT user_id) AS users FROM saved'),
+      hold: (await one("SELECT (SELECT COUNT(*) FROM posts WHERE status = 'hold') + (SELECT COUNT(*) FROM comments WHERE status = 'hold') AS n")).n || 0,
+      rated: (await h.prepare(`SELECT target, MAX(tname) AS name, MAX(turl) AS url, COUNT(*) AS n, ROUND(AVG(rating), 2) AS avg FROM comments
+                WHERE status = 'ok' AND target LIKE 'place:%' AND rating IS NOT NULL GROUP BY target ORDER BY n DESC, avg DESC LIMIT 20`).all()).results || [],
+      savedTop: (await h.prepare('SELECT place, MAX(name) AS name, MAX(url) AS url, COUNT(*) AS n FROM saved GROUP BY place ORDER BY n DESC LIMIT 20').all()).results || [],
+    };
+  } catch (e) { community = null; }
+  // 업주 등록 신청 (KV)
+  let partner = null;
+  if (env.HANTANG_KV) {
+    try {
+      partner = { total: 0, pending: 0, hold: 0, approved: 0, rejected: 0, cur: 0 };
+      let cursor, n = 0;
+      do {
+        const pg = await env.HANTANG_KV.list({ prefix: 'sub:', cursor });
+        for (const k of pg.keys) {
+          if (++n > 400) break;
+          const x = await env.HANTANG_KV.get(k.name, 'json'); if (!x) continue;
+          partner.total++; partner[x.status] = (partner[x.status] || 0) + 1;
+          if (x.created && Date.parse(x.created) / 1000 >= from) partner.cur++;
+        }
+        cursor = pg.list_complete || n > 400 ? null : pg.cursor;
+      } while (cursor);
+    } catch (e) { partner = null; }
+  }
+  return json({ ok: true, today: anDay(), ...r, community, partner });
+}
+
 const PUBLIC_FIELDS = ['name_ko', 'name_en', 'address', 'hours', 'closed', 'prices', 'booking', 'url', 'desc_ko', 'desc_en', 'region', 'claim', 'type', 'english', 'tattoo', 'features'];
 
 // 검색엔진(Bing·Naver·Yandex·Seznam 등 IndexNow 참여 엔진)에 사이트맵의 주소를 한 번에 알린다
@@ -361,6 +578,7 @@ async function guard(request, env) {
 export async function onRequestGet({ request, env, params }) {
   const p = Array.isArray(params.path) ? params.path : [];
   if (p[0] === 'community') return community(request, env, 'GET');
+  if (p[0] === 'kpi') return kpi(request, env);
   const bad = await guard(request, env); if (bad) return bad;
   const kv = env.HANTANG_KV;
   if (p[0] === 'list') {

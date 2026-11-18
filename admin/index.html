@@ -46,10 +46,17 @@ dl{display:grid;grid-template-columns:120px 1fr;gap:6px 12px;margin:0;font-size:
 .red{background:var(--red)!important}.green{background:var(--ok)!important}
 .lock{border:1px solid #F0D2CB;background:#FBEFEC;border-radius:16px;padding:18px;margin-top:20px}
 @media (max-width:860px){.cols{grid-template-columns:1fr}dl{grid-template-columns:96px 1fr}}
+
+.top nav.anav{display:flex;gap:6px;flex-wrap:wrap}
+.top nav.anav a{font-size:14px;font-weight:700;padding:7px 12px;border-radius:99px;color:var(--ink);text-decoration:none}
+.top nav.anav a.on{background:var(--ink);color:#fff}
+.top nav.anav a:hover:not(.on){background:var(--stone)}
+@media (max-width:640px){.top{position:static}.top .wrap{flex-wrap:wrap;gap:8px;padding-block:12px 10px}.top nav.anav{flex-wrap:nowrap;overflow-x:auto;width:100%;gap:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}.top nav.anav::-webkit-scrollbar{display:none}.top nav.anav a{white-space:nowrap;font-size:13.5px;padding:7px 11px}}
 </style>
 </head>
 <body>
-<header class="top"><div class="wrap"><a class="brand" href="../">HANTANG <small>관리자 · 업주 등록 검토</small></a><nav><a href="../partner/">신청 화면 ↗</a></nav></div></header>
+<header class="top"><div class="wrap"><a class="brand" href="../">HANTANG <small>관리자</small></a><nav class="anav">
+<a href="./kpi/">KPI 대시보드</a><a href="./" class="on">업주 신청</a><a href="./#community">회원 글·후기</a><a href="../partner/">신청 화면 ↗</a></nav></div></header>
 <main class="wrap">
   <h1 style="font-family:var(--serif);font-size:30px">업주 등록 신청</h1>
   <p class="note">이 화면과 /api/admin 은 Cloudflare Zero Trust Access 로 잠가 둔 관리자만 열 수 있습니다. 승인하면 해당 지역 페이지의 ‘Information from the owners’ 칸에 바로 올라갑니다. 담당자 연락처는 공개되지 않습니다.</p>
