@@ -4,5 +4,6 @@ Disallow: /admin/
 Disallow: /api/
 Disallow: /offline/
 Allow: /
+Disallow: /cdn-cgi/
 
 Sitemap: https://hantang.kr/sitemap.xml
