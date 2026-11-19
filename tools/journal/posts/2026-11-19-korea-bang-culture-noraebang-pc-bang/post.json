@@ -1,0 +1,20 @@
+{
+  "pillar": "korea",
+  "related": ["bath-types", "history", "overnight", "first-visit"],
+  "sources": [
+    {"title": "다방(茶房)", "url": "https://encykorea.aks.ac.kr/Article/E0013452", "note": "한국민족문화대백과사전(한국학중앙연구원), 집필 1995·최종수정 2023-07-06, 2026-11 확인"},
+    {"title": "만화방(漫畵房)", "url": "https://encykorea.aks.ac.kr/Article/E0081423", "note": "한국민족문화대백과사전(한국학중앙연구원), 집필 2024·최종수정 2026-01-07, 2026-11 확인"},
+    {"title": "[노래방 변천사] 전 국민 ‘나가수’ 만들어 준… ‘한 평 반 무대’의 놀이문화", "url": "https://www.busan.com/view/busan/view.php?code=20190528000121", "note": "부산일보, 2019-05-29"},
+    {"title": "Sing, sing a song: Noraebang turns 20", "url": "https://www.koreajoongangdaily.com/lifestyle/sing-sing-a-song-noraebang-turns-20/10858216", "note": "Korea JoongAng Daily(중앙일보 한국어 기사 함께 게재), 2011-06-22"},
+    {"title": "Koreans opt for singing all by their lonesome", "url": "https://www.koreajoongangdaily.com/korea/koreans-opt-for-singing-all-by-their-lonesome/11864085", "note": "Korea JoongAng Daily, 2018-03-18"},
+    {"title": "Tough times for both PC bang and noraebang", "url": "https://www.koreajoongangdaily.com/business/tough-times-for-both-pc-bang-and-noraebang/11806462", "note": "Korea JoongAng Daily, 2019-04-09"},
+    {"title": "“커서 프로게이머 될 거야”…PC방 휩쓴 26살 민속놀이 [뉴스속오늘]", "url": "https://www.mt.co.kr/tech/2024/04/09/2024040813320853751", "note": "머니투데이, 2024-04-09"},
+    {"title": "'PC bang' seek to hit refresh in post-COVID era", "url": "https://www.koreaherald.com/article/3201991", "note": "The Korea Herald, 2023-08-29"},
+    {"title": "'These Days, I Play Games at Home'...The Disappearing PC Bang", "url": "https://www.asiae.co.kr/en/article/2025021416103060903", "note": "아시아경제 영문판, 2025-02(주소 기준, 본문에 날짜 표기 없음)"},
+    {"title": "'방과 밤' 문화의 몰락..노래방 2600개, 주점 1만개 사라졌다", "url": "https://v.daum.net/v/20220204000243142", "note": "중앙일보(다음뉴스 게재본), 2022-02-04"},
+    {"title": "Korea, a culture of rooms", "url": "https://www.koreatimes.co.kr/opinion/20260706/korea-a-culture-of-rooms", "note": "The Korea Times 기고 칼럼, 2026-07-06"},
+    {"title": "아동·청소년유해환경", "url": "https://www.songpa.go.kr/www/contents.do?key=3027&", "note": "서울 송파구청, 2022-10-11 수정, 2026-11 확인"},
+    {"title": "유해환경 단속기준(업소)", "url": "https://www.geumcheon.go.kr/portal/contents.do?key=764", "note": "서울 금천구청, 2025-12-30 수정, 2026-11 확인"},
+    {"title": "부모님 동행 없이 청소년도 숙박시설 이용 가능할까?", "url": "https://www.korea.kr/multi/visualNewsView.do?newsId=148930496", "note": "법제처(대한민국 정책브리핑), 2024-06-25"}
+  ]
+}
