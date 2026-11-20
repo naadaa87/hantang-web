@@ -48,6 +48,8 @@
   var BASE = 'https://apis.data.go.kr/B551011/KorService2/';
   var KEYWORDS = ['찜질방','사우나','목욕탕','대중탕','스파','온천','해수탕','해수찜','한증막','불가마','숯가마','1인 사우나','프라이빗 사우나','세신'];
   var NAME_RE = /찜질|사우나|목욕|대중탕|스파|spa|온천|해수|한증|불가마|숯가마|세신|탕$/i;
+  // 한탕에 올린 지점·온천 가운데 위 낱말로는 잡히지 않는 이름 (이름이 들어간 항목만 받는다)
+  var NAMES = ['아쿠아필드','씨메르','숲속한방랜드','스파렉스','씨랄라','클럽디 오아시스','클럽디오아시스','클럽케이','워터하우스','아난티 코브','포도호텔','스카이랜드','힐스파','광안해수월드','해수랑','아쿠아펠리스','황금스파','실로암','스플라스 리솜','설악 워터피아','설악워터피아','석모도 미네랄','석모도미네랄','마금산','지리산온천','봉일스파랜드','서울온천','호텔농심','파라다이스시티','솔밭해수방','찜질방앗간','시수하우스','양남해수'];
   var logEl = document.getElementById('log');
   var result = { source: 'KorService2 (한국관광공사_국문 관광정보 서비스_GW)', fetched: null, items: {}, notes: [] };
   window.__ktoResult = result;          // 결과만 노출 (키 없음)
@@ -134,6 +136,16 @@
           var pg=1, g=0, t=1;
           while (g < t && pg <= 6){ var r3 = await call('searchKeyword2', { keyword: KEYWORDS[k], numOfRows: 200, pageNo: pg, arrange:'A' }); t=r3.total; r3.items.forEach(function(it){ if (NAME_RE.test(it.title||'') && ['12','28','32','14'].indexOf(String(it.contenttypeid))>=0) addItem(it, 'kw:'+KEYWORDS[k]); }); g+=r3.items.length; pg++; if(!r3.items.length) break; }
         }catch(e){ log('키워드 '+KEYWORDS[k]+' 실패: '+e.message, 'warn'); }
+        counts();
+      }
+      // 3-2) 이름 검색: 한탕에 올린 지점 이름으로 한 번 더 찾는다
+      for (var n=0;n<NAMES.length;n++){
+        setPhase('이름 검색: '+NAMES[n], .3);
+        try{
+          var r4 = await call('searchKeyword2', { keyword: NAMES[n], numOfRows: 50, pageNo: 1, arrange:'A' });
+          var key = NAMES[n].replace(/\s/g,'');
+          r4.items.forEach(function(it){ if (String(it.title||'').replace(/\s/g,'').indexOf(key)>=0 && ['12','28','32','14','38'].indexOf(String(it.contenttypeid))>=0) addItem(it, 'name:'+NAMES[n]); });
+        }catch(e){ log('이름 '+NAMES[n]+' 실패: '+e.message, 'warn'); }
         counts();
       }
       var ids = Object.keys(result.items);

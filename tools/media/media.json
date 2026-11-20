@@ -1721,19 +1721,6 @@
    ]
   },
   "sealala": {
-   "photos": [
-    {
-     "kind": "commons",
-     "src": "https://upload.wikimedia.org/wikipedia/commons/4/48/%EC%94%A8%EB%9E%84%EB%9D%BC.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/%EC%94%A8%EB%9E%84%EB%9D%BC.jpg/500px-%EC%94%A8%EB%9E%84%EB%9D%BC.jpg",
-     "w": 827,
-     "h": 456,
-     "lic": "CC BY-SA 2.0 KR",
-     "page": "https://commons.wikimedia.org/wiki/File:%EC%94%A8%EB%9E%84%EB%9D%BC.jpg",
-     "by": "허니브라운"
-    }
-   ],
-   "hero": true,
    "videos": [
     {
      "id": "tCi-4o0KdCs",
@@ -2086,8 +2073,7 @@
      "sec": 272,
      "pub": "2025-07-17",
      "thumb": "hq720",
-     "lang": "ko",
-     "official": true
+     "lang": "ko"
     },
     {
      "id": "1eu6QBj15Ns",
@@ -2258,8 +2244,7 @@
      "sec": 321,
      "pub": "2025-01-09",
      "thumb": "hq720",
-     "lang": "en",
-     "official": true
+     "lang": "en"
     },
     {
      "id": "Baks2AhO1RE",
@@ -2312,8 +2297,7 @@
      "sec": 1184,
      "pub": "2026-08-28",
      "thumb": "hq720",
-     "lang": "en",
-     "official": true
+     "lang": "en"
     },
     {
      "id": "48Rvt8dNb_U",
@@ -2322,8 +2306,7 @@
      "sec": 321,
      "pub": "2025-01-09",
      "thumb": "hq720",
-     "lang": "en",
-     "official": true
+     "lang": "en"
     },
     {
      "id": "aYvz18oGCvE",
@@ -2642,8 +2625,7 @@
      "sec": 31,
      "pub": "2023-07-27",
      "thumb": "mqdefault",
-     "lang": "ko",
-     "official": true
+     "lang": "ko"
     }
    ]
   },
