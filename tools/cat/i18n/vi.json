@@ -1,0 +1,310 @@
+{
+ "ui": {
+  "count_one": "1 nơi",
+  "count": "{n} nơi",
+  "all": "Tất cả",
+  "filter_aria": "Lọc địa điểm",
+  "none": "Không có nơi nào khớp với bộ lọc này.",
+  "more": "Giá, giờ mở cửa và quy định hình xăm →",
+  "site": "Trang chính thức ↗",
+  "insta": "Instagram ↗",
+  "h24": "Mở cửa 24 giờ",
+  "h24s": "24 giờ",
+  "last": "vào cửa muộn nhất {t}",
+  "closed": {
+   "none": "Mở cửa tất cả các ngày",
+   "holidays": "Phòng xông hơi chỉ nghỉ đúng ngày Tết Seollal và Chuseok",
+   "wed3": "Nghỉ thứ Tư tuần thứ 3 mỗi tháng",
+   "wed": "Nghỉ thứ Tư",
+   "tue": "Nghỉ thứ Ba",
+   "mon": "Nghỉ thứ Hai",
+   "wedthu": "Nghỉ thứ Tư và thứ Năm",
+   "thu13": "Nghỉ thứ Năm tuần thứ 1 và thứ 3",
+   "march": "Đóng cửa hai tuần vào tháng 3 hằng năm"
+  },
+  "hl": {
+   "day": "Ban ngày",
+   "night": "Ban đêm",
+   "sauna": "Xông hơi",
+   "jjim": "Jjimjilbang",
+   "seajjim": "Phòng chườm",
+   "weekday": "Ngày thường",
+   "weekend": "Cuối tuần",
+   "baths": "Nhà tắm",
+   "wp_wd": "Công viên nước mùa hè, ngày thường",
+   "wp_we": "cuối tuần",
+   "restaurant": "Nhà hàng",
+   "dayuse": "Dùng trong ngày",
+   "in_wd": "Khu trong nhà, ngày thường",
+   "in_we": "cuối tuần",
+   "out_we": "Khu ngoài trời, cuối tuần",
+   "spa": "Spa",
+   "bathsjjim": "Nhà tắm và jjimjilbang",
+   "kidspark": "Công viên nước trẻ em",
+   "indoor": "Trong nhà",
+   "outdoor": "Ngoài trời",
+   "night_we": "Tối cuối tuần",
+   "break": "Nghỉ giữa giờ"
+  },
+  "notes": {
+   "hoursvary": "Các nguồn ghi giờ khác nhau: một bài báo tháng 12/2025 nói nơi này mở 24 giờ.",
+   "age14": "Chỉ từ 14 tuổi trở lên.",
+   "bookonline": "Chỉ nhận đặt chỗ trực tuyến, không nhận qua điện thoại.",
+   "checkhours": "Chưa xác nhận được giờ mở cửa, hãy kiểm tra trước khi đi.",
+   "seasonal": "Giờ mở cửa thay đổi theo mùa.",
+   "seasonprice": "Giá thay đổi theo mùa.",
+   "age8": "Chỉ từ 8 tuổi trở lên."
+  },
+  "kinds": {
+   "haesutang": "Nhà tắm nước biển",
+   "haesujjim": "Phòng chườm nước biển",
+   "saline": "Suối khoáng muối",
+   "hanjeungmak": "Lò xông hanjeungmak",
+   "bulgama": "Jjimjilbang có lò lửa",
+   "sutgama": "Lò than",
+   "onsen": "Spa suối nước nóng",
+   "onsenpark": "Công viên nước suối nóng",
+   "waterpark": "Công viên nước",
+   "resortspa": "Spa khu nghỉ dưỡng",
+   "pool": "Hồ bơi khu nghỉ dưỡng",
+   "jjim": "Jjimjilbang"
+  },
+  "cities": {
+   "busan": "Busan",
+   "incheon": "Incheon",
+   "ganghwa": "Đảo Ganghwa, Incheon",
+   "incheon-air": "Đảo Yeongjong, Incheon",
+   "jeju": "Thành phố Jeju",
+   "boseong": "Boseong",
+   "buan": "Buan (Byeonsan)",
+   "hampyeong": "Hampyeong",
+   "yeonggwang": "Yeonggwang",
+   "hwaseong": "Hwaseong",
+   "seoul": "Seoul",
+   "paju": "Paju",
+   "yongin": "Yongin",
+   "chuncheon": "Chuncheon",
+   "sokcho": "Sokcho",
+   "yangju": "Yangju",
+   "yeoju": "Yeoju",
+   "cheongju": "Cheongju",
+   "sancheong": "Sancheong (Jirisan)",
+   "goyang": "Goyang (Ilsan)",
+   "yesan": "Yesan (Deoksan)",
+   "asan": "Asan",
+   "taean": "Taean (Anmyeondo)",
+   "jecheon": "Jecheon",
+   "gijang": "Gijang, Busan",
+   "gimhae": "Gimhae",
+   "gonjiam": "Gonjiam, Gwangju (Gyeonggi)",
+   "namyangju": "Namyangju"
+  },
+  "tags": {
+   "haesutang": "Nhà tắm nước biển",
+   "haesujjim": "Phòng chườm nước biển",
+   "seaview": "Nhìn ra biển",
+   "h24": "Mở 24 giờ",
+   "dome": "Lò xông vòm",
+   "charcoal": "Lò than",
+   "city": "Trong thành phố",
+   "onsen": "Nước suối nóng",
+   "jjimjil": "Có jjimjilbang",
+   "kiln": "Lò lửa hoặc lò vòm",
+   "water": "Suối nóng hoặc nước biển",
+   "kids": "Khu cho trẻ em",
+   "bathhouse": "Sauna và nhà tắm",
+   "scrub": "Phòng kỳ riêng"
+  },
+  "src": "Với những nơi chưa có trang riêng trên HANTANG, phần giới thiệu và giờ mở cửa lấy từ dữ liệu du lịch của Tổng cục Du lịch Hàn Quốc (ngày 31/10/2026), đối chiếu với danh sách nhà tắm được cấp phép của chính phủ. Giờ và giá có thể thay đổi, hãy kiểm tra trước khi đi.",
+  "count_fact": "địa điểm trên trang này",
+  "guide_eb": "HƯỚNG DẪN",
+  "read": "Đọc hướng dẫn →",
+  "themes_eb": "THEO CHỦ ĐỀ",
+  "themes_h": "Những cách khác để tìm nhà tắm",
+  "hub_h": "Tìm theo kiểu nhà tắm",
+  "hub_p": "Suối nước nóng, nhà tắm nước biển, lò xông và lò than, công viên nước mặc đồ bơi, jjimjilbang mở suốt đêm và những nơi chỉ dành cho nữ, kèm ảnh, giờ mở cửa và chỉ đường.",
+  "hub_q": "▦ Theo chủ đề",
+  "names": {
+   "hot-springs": "Suối nước nóng",
+   "seawater": "Nhà tắm nước biển",
+   "kiln-saunas": "Lò xông và lò than",
+   "spa-water-parks": "Công viên nước spa",
+   "24-hour": "Jjimjilbang 24 giờ",
+   "women-only": "Chỉ dành cho nữ"
+  },
+  "tiles": {
+   "hot-springs": "Thị trấn suối nóng, khu nghỉ dưỡng, bể ngâm chân miễn phí",
+   "seawater": "Haesutang và phòng chườm nước biển",
+   "kiln-saunas": "Lò vòm đốt củi và lò than",
+   "spa-water-parks": "Hồ nước ấm, vào bằng đồ bơi",
+   "24-hour": "Tắm khuya, ngủ trên sàn ấm",
+   "women-only": "Sauna và phòng kỳ chỉ cho nữ"
+  }
+ },
+ "pages": {
+  "seawater": {
+   "title": "Nhà tắm nước biển ở Hàn Quốc: Haesutang và phòng chườm nước biển",
+   "desc": "Những nơi ngâm nước biển nóng ở Hàn Quốc: nhà tắm haesutang ở Busan, Incheon, Jeju và phòng chườm haesujjim riêng ở bờ biển phía tây, kèm giờ mở cửa và ảnh.",
+   "eyebrow": "NHÀ TẮM NƯỚC BIỂN",
+   "h1": "Nhà tắm nước biển và phòng chườm nước biển",
+   "lede": "Những nhà tắm đun nóng nước biển bơm lên từ giếng sâu, và phòng haesujjim ở bờ biển phía tây, nơi bạn chườm khăn nhúng nước biển nóng. Ở Busan, Incheon, Jeju và các thị trấn ven biển nhỏ.",
+   "about_h": "Hai cách dùng nước biển",
+   "about": [
+    "Haesutang (해수탕) là nhà tắm Hàn Quốc bình thường, chỉ khác ở chỗ một phần hoặc tất cả các bồn chứa nước biển, thường được bơm từ giếng sâu vài trăm mét rồi đun nóng. Bạn tắm, ngâm và xông hơi như ở mọi nhà tắm khác, không mặc đồ và nam nữ tách riêng.",
+    "Haesujjim (해수찜) là phong tục của bờ biển phía tây. Bạn thuê một phòng nhỏ riêng, thường mặc đồ do nơi đó cung cấp, rồi đắp khăn nhúng nước biển nóng lên vai, lưng và chân. Ở Hampyeong, nước được làm nóng bằng cách thả đá nung vào, nên bồn quá nóng để ngồi vào ngâm.",
+    "Tắm nước biển ở Hàn Quốc có từ ít nhất năm 1924, khi nhà tắm jotang ở Wolmido, Incheon khai trương, đun nước ngầm mặn như nước biển. Nơi này đóng cửa năm 1949; Incheon Jotang ngày nay mượn lại cái tên đó."
+   ],
+   "tips_h": "Trước khi đi",
+   "tips": [
+    "Tắm sạch trước khi xuống bồn như ở mọi nhà tắm, và tráng lại bằng nước ngọt trước khi về.",
+    "Nước biển làm xót vết thương, chỗ vừa cạo râu và da bị trầy.",
+    "Trong phòng haesujjim, múc nước bằng gáo và để nguội bớt rồi mới nhúng khăn, đắp từng chiếc một.",
+    "Các nơi chườm nước biển ven biển đóng cửa sớm, khoảng 17:00–18:00, và đông vào cuối tuần mùa đông."
+   ],
+   "facts": {
+    "f1": ["1924", "jotang ở Wolmido, được xem là nhà tắm nước biển đầu tiên của Hàn Quốc, khai trương ở Incheon"],
+    "f2": ["816 m", "độ sâu giếng nước biển của Aqua Palace ở Busan"]
+   }
+  },
+  "kiln-saunas": {
+   "title": "Lò xông Hàn Quốc: hanjeungmak, bulgama và lò than",
+   "desc": "Những phòng xông đốt bằng lửa thật của Hàn Quốc: lò vòm hanjeungmak đốt gỗ thông trong các jjimjilbang ở thành phố, và lò than ở nông thôn, nơi bạn đổ mồ hôi trong hơi nóng còn lại sau khi làm than.",
+   "eyebrow": "LÒ XÔNG",
+   "h1": "Lò xông: hanjeungmak, bulgama và lò than",
+   "lede": "Những phòng nóng nhất trong văn hóa tắm Hàn Quốc, được đốt bằng lửa thật. Jjimjilbang ở thành phố có lò vòm đốt gỗ thông, và lò than ở nông thôn, nơi bạn ngồi trong hơi nóng còn lại sau khi lấy than ra.",
+   "about_h": "Hiểu các tên gọi",
+   "about": [
+    "Hanjeungmak (한증막) là một mái vòm thấp bằng đá và đất sét. Người ta đốt củi thông bên trong rồi cào lửa ra, và bạn vào khi tường còn nóng. Thường mặc bộ đồ jjimjil và trùm bao gai hoặc khăn lên đầu để chắn hơi nóng.",
+    "Bulgama (불가마, lò lửa) là tên jjimjilbang gọi phòng nóng nhất của mình, thường là lò đất sét đốt từ bên ngoài. Sutgama (숯가마) là lò làm than thật: gỗ sồi cháy bên trong nhiều ngày, than được lấy ra, rồi lò được mở cho người vào đổ mồ hôi trong lúc nguội dần, bên cạnh thường có bếp nướng thịt ba chỉ hoặc khoai lang.",
+    "Phòng xông có lịch sử lâu đời ở đây: một hanjeungso, tức nhà xông hơi, đã xuất hiện trong Biên niên sử vua Sejong năm 1422."
+   ],
+   "tips_h": "An toàn trong phòng nóng",
+   "tips": [
+    "Uống nước trước, bắt đầu ở phòng ít nóng nhất và ra sau khoảng năm phút.",
+    "Che da và đầu bằng khăn, tháo trang sức kim loại và kính vì chúng nóng lên rất nhanh.",
+    "Ra ngoài ngay nếu thấy chóng mặt. Tránh phòng nóng nếu bạn đang mang thai, có vấn đề về tim hoặc huyết áp, hay đã uống rượu.",
+    "Lò than ở nông thôn dễ đến nhất bằng ô tô hoặc taxi, và có nơi nghỉ một hai ngày mỗi tuần."
+   ],
+   "facts": {
+    "f1": ["1422", "hanjeungso, tức nhà xông hơi, xuất hiện trong Biên niên sử vua Sejong"],
+    "f2": ["5 ngày", "thời gian đốt gỗ sồi trong lò ở Yeoju Charcoal Village, theo nơi kinh doanh"]
+   }
+  },
+  "spa-water-parks": {
+   "title": "Công viên nước spa Hàn Quốc: suối nóng mặc đồ bơi và jjimjilbang",
+   "desc": "Các công viên nước spa ở Hàn Quốc nơi bạn mặc đồ bơi: hồ suối nước nóng, công viên nước trong nhà ở trung tâm thương mại và khu nghỉ dưỡng, cùng jjimjilbang đi kèm, có giờ mở cửa từng nơi.",
+   "eyebrow": "CÔNG VIÊN NƯỚC SPA",
+   "h1": "Công viên nước spa: hồ nước ấm mặc đồ bơi",
+   "lede": "Những hồ lớn trong nhà và ngoài trời chứa nước ấm hoặc nước suối nóng, nơi bạn mặc đồ bơi và nam nữ vào chung, thường có cả nhà tắm và jjimjilbang trong cùng tòa nhà.",
+   "about_h": "Công viên nước spa hoạt động thế nào",
+   "about": [
+    "Phần lớn có ba khu: hồ bơi (mặc đồ bơi, nam nữ chung), nhà tắm (không mặc đồ, nam nữ riêng) và jjimjilbang (mặc đồ được phát, nam nữ chung). Vé thường bán riêng từng khu hoặc thành vé gộp, nên hãy xem vé của bạn gồm những gì.",
+    "Hồ thường có bade pool (바데풀), một hồ nước ấm có tia nước massage ở nhiều độ cao. Hồ ngoài trời có thể đóng hoặc nguội đi vào mùa đông, và vài nơi chỉ mở khu ngoài trời vào mùa hè.",
+    "Loại trong thành phố nằm ở trung tâm thương mại và khách sạn; loại suối nóng chủ yếu là khu nghỉ dưỡng ở các vùng suối nóng như Asan, Deoksan và Icheon."
+   ],
+   "tips_h": "Trước khi đi",
+   "tips": [
+    "Mang đồ bơi. Nhiều nơi bắt buộc đội mũ bơi và mặc áo phao, thường có thể thuê tại quầy.",
+    "Tắm sạch không mặc đồ trong phòng thay đồ rồi mới mặc đồ bơi vào, như ở mọi nhà tắm Hàn Quốc.",
+    "Cuối tuần và kỳ nghỉ học rất đông; sáng ngày thường là vắng nhất.",
+    "Nhiều nơi không cho mang đồ ăn từ ngoài vào, nhưng hầu hết có khu ẩm thực."
+   ],
+   "facts": {
+    "f1": ["3", "khu mà nhiều nơi bán vé riêng: hồ bơi, nhà tắm và jjimjilbang"],
+    "f2": ["130 cm", "ở Spa La Spa (Gonjiam), trẻ thấp hơn mức này phải mặc áo phao"]
+   }
+  },
+  "24-hour": {
+   "title": "Jjimjilbang 24 giờ ở Hàn Quốc: nơi bạn có thể ở qua đêm",
+   "desc": "Các jjimjilbang và sauna ở Hàn Quốc mở suốt đêm, với giờ bắt đầu vé đêm, phòng ngủ và những thứ nên mang theo, ở Seoul, Busan, Incheon, Gyeonggi và nhiều nơi khác.",
+   "eyebrow": "MỞ CỬA 24 GIỜ",
+   "h1": "Jjimjilbang 24 giờ: nơi có thể ở qua đêm",
+   "lede": "Những nơi không bao giờ đóng cửa: bạn có thể tắm khuya, ngủ trên sàn sưởi ấm và rời đi vào buổi sáng. Tiện sau chuyến bay muộn hoặc một đêm đi chơi khuya, và rẻ hơn phần lớn khách sạn.",
+   "about_h": "Một đêm diễn ra thế nào",
+   "about": [
+    "Ở quầy, bạn nhận chìa khóa tủ đeo cổ tay, khăn và một bộ đồ jjimjil. Nhà tắm không mặc đồ và nam nữ riêng; sảnh và các phòng jjimjil dùng chung, bạn ngủ trên sàn hoặc trong phòng ngủ. Nhiều nơi có phòng ngủ riêng cho nữ.",
+    "Giá thường đổi vào buổi tối: có nơi chuyển sang vé đêm từ 20:00 hoặc 22:00, và nhiều vé chỉ dùng được khoảng 12 giờ, quá giờ tính thêm theo giờ. Ra ngoài rồi quay lại có thể bị tính là vào lần mới.",
+    "Jjimjilbang không phải nhà nghỉ: ồn, đèn thường để sáng, và nhà tắm đóng một lúc trong đêm để dọn dẹp."
+   ],
+   "tips_h": "Nên mang gì",
+   "tips": [
+    "Bịt mắt và nút tai. Mang thêm áo mỏng vì phòng ngủ có thể lạnh hoặc rất nóng.",
+    "Cất hộ chiếu, điện thoại và tiền mặt trong tủ, đừng để cạnh chỗ nằm.",
+    "Hỏi về việc vào lại và gửi hành lý trước khi ra ngoài ăn tối.",
+    "Rời đi trước khi hết giờ vé; tiền quá giờ trả ở quầy khi bạn ra về."
+   ],
+   "facts": {
+    "f1": ["20:00", "giờ Sparex và Hwanghak Golden Spa ở Seoul chuyển sang vé đêm"],
+    "f2": ["12 giờ", "thời gian một vé ở Kiwi Spa Land (Incheon), sau đó 2.000 won mỗi giờ"]
+   }
+  },
+  "women-only": {
+   "title": "Nhà tắm, sauna và phòng kỳ chỉ dành cho nữ ở Hàn Quốc",
+   "desc": "Sauna chỉ dành cho nữ, spa hanjeungmak và phòng kỳ một khách ở Seoul, Busan và các thành phố khác, cho phụ nữ muốn tắm hoặc kỳ lưng mà không có nam giới trong tòa nhà.",
+   "eyebrow": "CHỈ DÀNH CHO NỮ",
+   "h1": "Nhà tắm và phòng kỳ chỉ dành cho nữ",
+   "lede": "Mọi nhà tắm Hàn Quốc vốn đã có khu nữ riêng. Đây là những nơi mà cả cơ sở chỉ dành cho nữ: sauna và spa lò xông không có tầng nam, và những phòng kỳ nhỏ do phụ nữ làm cho phụ nữ.",
+   "about_h": "Hai kiểu địa điểm",
+   "about": [
+    "Sauna chỉ dành cho nữ trông giống jjimjilbang bình thường, nhưng hoàn toàn không có tầng nam, nên sảnh chung, phòng ngủ và lò xông cũng là không gian của nữ. Phần lớn nằm ở trung tâm Seoul.",
+    "Phòng kỳ một khách (1인 세신샵) là cửa hàng nhỏ, một nhân viên kỳ lưng cho bạn trong phòng riêng có vòi sen, thường kèm massage hoặc đắp mặt nạ. Bạn đặt giờ và gói dịch vụ chứ không mua vé vào cửa.",
+    "Chính sách có thể thay đổi: sauna có thể mở tầng nam, hoặc phòng kỳ có thể bắt đầu nhận khách nam. Hãy xem trang của nơi đó hoặc gọi điện trước khi đi."
+   ],
+   "tips_h": "Trước khi đi",
+   "tips": [
+    "Đặt chỗ phòng kỳ trước. Nhiều nơi chỉ nhận khách đặt trước, thường qua Naver hoặc KakaoTalk.",
+    "Báo cho nhân viên khi đặt chỗ nếu bạn đang mang thai, đang có kinh hoặc da nhạy cảm.",
+    "Trong phòng kỳ riêng, bạn thường không mặc đồ như ở nhà tắm công cộng, có khăn để che.",
+    "Giá trong menu tính theo gói và thường đã cũ, nên hãy hỏi giá hiện tại khi đặt chỗ."
+   ],
+   "facts": {
+    "@count:bathhouse": "sauna và spa chỉ dành cho nữ",
+    "@count:scrub": "phòng kỳ một khách"
+   },
+   "note": "Tìm nơi chỉ dành cho nam? {link} ở Eunpyeong là phòng kỳ riêng chỉ nhận khách nam."
+  }
+ },
+ "desc": {
+  "662756": "Nhà tắm nước biển ở trung tâm Busan (Beomil-dong) với 11 phòng jjimjil lớn, bồn massage chân và toàn thân, và phòng xông ngọc bích.",
+  "662862": "Sauna khu dân cư ở Yongho-dong, Nam-gu, dùng nước biển từ giếng sâu, có phòng tập gym đi kèm.",
+  "662637": "Sauna và jjimjilbang lớn gần cầu Choji trên đảo Ganghwa, dùng nước biển từ giếng sâu 560 m, có phòng đất sét vàng và phòng muối. Vé ngày và vé đêm riêng.",
+  "701642": "Tòa nhà giải trí ở Incheon dùng nước biển từ giếng sâu 250 m: sauna nữ ở tầng 3, sauna nam ở tầng 6, và tầng jjimjil với phòng than, đất sét và phòng băng quanh sảnh chính.",
+  "4062713": "Spa rộng 1.800 pyeong trên đảo Yeongjong gần sân bay Incheon, đặt tên theo jotang ở Wolmido những năm 1920 và dùng nước biển ngầm, có jjimjilbang, khu ghế massage, quán cà phê truyện tranh và bể ngâm chân ngoài trời.",
+  "250412": "Sauna nước biển lớn trên đường ven biển Jeju cạnh đá Yongduam, nhìn ra biển, khuôn viên trồng cọ và có lò xông hanjeungmak truyền thống trong vườn.",
+  "2604923": "Do huyện Boseong trực tiếp vận hành từ năm 1998, cạnh bãi biển Yulpo: bồn nước biển từ độ sâu 120 m và bồn ngâm trà xanh của các đồi chè địa phương.",
+  "3076330": "Phòng riêng để haesujjim: thay vì ngâm bồn, bạn đắp khăn nhúng nước biển nóng lên người. Cũng có bồn nước biển.",
+  "3576309": "Cơ sở chườm nước biển, nơi đá nung và thảo dược được thả vào nước biển, theo một phong tục địa phương được cho là có từ thế kỷ 19. Ngay sau khi thả đá, một phần bồn lên tới khoảng 80°C, nên hãy làm theo hướng dẫn an toàn của nhân viên. Sửa sang lại cuối năm 2024.",
+  "3010680": "Ba mươi sáu phòng chườm nước biển riêng bằng gỗ hinoki ở tầng 2 một tòa nhà ven biển trên đường Baeksu, dùng nước biển từ độ sâu 600 m. Cùng tòa nhà có tiệm bánh, phòng tranh và quán cà phê cho phép mang chó.",
+  "619672": "Suối khoáng muối mở cửa từ năm 2003, dùng nước biển cổ bị giữ lại dưới lòng đất. Ở sảnh có cốc để nếm thử, và bạn được mang về tối đa 10 lít. Bồn ngoài trời là bồn nước lạnh và đóng vào mùa đông.",
+  "128961": "Spa dưới tầng hầm rộng 3.000 pyeong ở Guui-dong, phía đông Seoul, có lò hanjeungmak đốt gỗ thông, lò đất sét chỉ cho nữ, và phòng than, phòng muối, phòng igloo. Vé ngày và vé đêm riêng.",
+  "4089183": "Jjimjilbang 1.000 pyeong ở Geumchon, Paju, mở 24 giờ từ năm 2004, lò hanjeungmak đốt bằng củi thông. Có phòng đất sét, phòng muối, phòng băng và khu trẻ em với bạt nhún và cầu trượt.",
+  "2732163": "Khu suối nước nóng ở Yongin với nhà tắm, jjimjilbang, lò hanjeungmak và công viên nước mở vào mùa hè. Nhà tắm trong nhà mở suốt ngày đêm.",
+  "3569888": "Một lò hanjeungmak yên tĩnh ở Chuncheon, nhóm lửa bằng củi thông mỗi sáng, có sảnh gỗ, phòng trò chuyện ấm và hiên ngoài trời. Nơi này yêu cầu giữ yên lặng; hãy đọc nội quy trước khi đi.",
+  "4013402": "Jjimjilbang 24 giờ ở Okryeon-dong, Yeonsu-gu, lò hanjeungmak được đốt bằng than gỗ sồi, có phòng muối và dịch vụ massage.",
+  "1799724": "Tự giới thiệu là jjimjilbang lớn nhất bờ biển phía đông: rộng 1.500 pyeong ở trung tâm Sokcho, có lò bulgama đốt củi, phòng muối, phòng băng, phòng đất sét và phòng chơi trẻ em.",
+  "2949823": "Lò than trên đồi ở Yangju: đổ mồ hôi trong lò, nghỉ trên sạp gỗ và tự nướng thịt trên bếp than chung miễn phí. Mùa hè có suối chảy ngay phía trước.",
+  "2789664": "Lò than gần hồ chứa Gisan, có suối chảy bên cạnh, các chòi và nhà gỗ đất sét để nghỉ, và có thể thuê bếp lò để nướng khoai lang.",
+  "128699": "Mười lò đất sét đốt gỗ sồi trong năm ngày; khi lấy than ra, bạn đổ mồ hôi trong hơi nóng còn lại. Theo nơi kinh doanh, có phòng từ ấm nhẹ đến trên 200°C. Có cả hồ bơi nước nóng và khu cắm trại.",
+  "3034650": "Jjimjilbang lò đất sét đốt than ở một làng núi phía đông Cheongju, sưởi bằng gỗ sồi, có phòng ở nhiều mức nhiệt, sạp để nghỉ và đống lửa để ngồi bên cạnh.",
+  "322850": "Sauna 24 giờ dưới chân núi Jirisan, dùng hơi nóng còn lại trong lò đất sét sau khi làm than gỗ sồi. Nơi này cũng bán than, giấm gỗ và có nhà hàng.",
+  "2774546": "Suối nước nóng 24 giờ ở Sinbuk, Chuncheon, nước kiềm (pH 9,02), có bồn ngoài trời, jjimjilbang và lò bulgama. Con đường thông ở cổng từng là nơi quay phim Bản tình ca mùa đông.",
+  "2757569": "Spa và jjimjilbang trên núi Simhaksan ở Paju, dùng nước ngầm từ độ sâu 1.300 m, có lò bulgama truyền thống, bồn ngoài trời và sân hiên.",
+  "1845544": "Công viên nước trong nhà và ngoài trời trong trung tâm thương mại One Mount ở Ilsan, cạnh công viên tuyết. Khu ngoài trời chỉ mở vào cuối tuần.",
+  "613310": "Khu spa rộng 12.000 pyeong ở Hwaseong với công viên nước, các bồn phong cách Ai Cập dùng nước suối nóng kiềm từ độ sâu 800 m, và jjimjilbang có lò hanjeungmak và hang băng.",
+  "128732": "Công viên nước và spa ở vùng suối nóng Deoksan, dùng nước 49,6°C của một suối khoáng được công nhận, có 15 bồn ngoài trời, cầu trượt và bade pool.",
+  "631934": "Khu nghỉ dưỡng suối nóng lớn ở Dogo, nơi đầu tiên ở vùng Chungcheong được công nhận là suối khoáng chữa bệnh quốc gia: bade pool, phòng tắm lớn nước lưu huỳnh và các spa ngoài trời đổi chủ đề theo mùa.",
+  "3046172": "Khu suối nóng ở Onyang dùng nước kiềm (pH 8,42): nhà tắm và jjimjilbang mở 24 giờ, ban ngày có thêm công viên nước cho trẻ em.",
+  "127767": "Công viên nước suối nóng ở Asan với bade pool trong nhà, hồ suối nóng ngoài trời, hồ tạo sóng dài 75 m và cầu trượt đua.",
+  "127958": "Spa của Island Resom trên đảo Anmyeondo, có hồ vô cực ngoài trời nhìn ra bãi biển Kkotji nổi tiếng với hoàng hôn, khu trẻ em và phòng xông hơi riêng.",
+  "2769846": "Spa giữa rừng ở Forest Resom trên vùng đồi Jecheon, có bade pool trong nhà, hồ vô cực ngoài trời và các bồn đặt dọc thung lũng. Cuối tuần mở cả buổi tối.",
+  "3015906": "Hồ suối nóng lưu huỳnh cho gia đình ở Gijang, lấy nước trực tiếp từ giếng sâu 996 m ở khoảng 36°C. Thuê một sạp để dùng hồ và vòi sen, được phép nấu ăn.",
+  "3083295": "Spa gia đình ở Jangyu, Gimhae: công viên nước nhỏ, bồn suối nóng ngoài trời, nhà tắm và phòng tắm gia đình. Rẻ hơn các công viên lớn nên được các gia đình có con nhỏ ưa chuộng.",
+  "1178650": "Hồ bơi ở Konjiam Resort: một hồ trong nhà và bốn hồ ngoài trời, mỗi hồ một nhiệt độ, khách không lưu trú cũng dùng được. Bắt buộc đội mũ bơi, trẻ dưới 130 cm phải mặc áo phao. Không có dịch vụ spa hay massage.",
+  "3522510": "Jjimjilbang 24 giờ rộng 1.380 pyeong ở Gyeyang, Incheon, có quán cà phê sách, khu vui chơi trẻ em và sân hiên ngoài trời. Một vé dùng 12 giờ, sau đó 2.000 won mỗi giờ.",
+  "3386242": "Spa jjimjil 24 giờ ở Dasan, Namyangju, có quán cà phê sách, phòng chờ và khu vận động.",
+  "4091211": "Jjimjilbang rộng 2.000 pyeong ở trung tâm Jecheon, mở tháng 1/2025: phòng băng có tuyết rơi, phòng gỗ hinoki, phòng muối Himalaya, phòng con nhộng và bồn thảo mộc ngoài trời đổi theo ngày. Cách bến xe buýt tốc hành 7 phút đi bộ."
+ },
+ "override": {
+  "golden-sauna-myeongdong": "Sauna lò lửa 24 giờ dưới tầng hầm ở Myeongdong, có lò bulgama gần 30 năm tuổi, phòng xông ngải cứu và phòng ngủ. Các nguồn không thống nhất về việc chỉ dành cho nữ: một hướng dẫn tiếng Nhật (khoảng năm 2023) mô tả có nhà tắm nam và chỉ tầng jjimjil là dành riêng cho nữ. Hãy kiểm tra trước khi đi."
+ }
+}

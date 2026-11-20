@@ -1,0 +1,1846 @@
+{
+ "662756": {
+  "ko": "조방해수탕",
+  "en": "Jobang Haesutang",
+  "region": "busan",
+  "city": "busan",
+  "kind": "haesutang",
+  "addr": "부산광역시 부산진구 자유평화로37번길 15-19",
+  "lat": 35.141812,
+  "lng": 129.062544,
+  "site": "",
+  "hours": [
+   [
+    null,
+    "05:00–23:00"
+   ]
+  ],
+  "closed": "holidays",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/29/3496929_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/12/3496912_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/13/3496913_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/14/3496914_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/15/3496915_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/16/3496916_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/17/3496917_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/18/3496918_image2_1.jpg",
+    1
+   ]
+  ],
+  "kto_mod": "20260311"
+ },
+ "662862": {
+  "ko": "중앙해수랜드",
+  "en": "Jungang Haesu Land",
+  "region": "busan",
+  "city": "busan",
+  "kind": "haesutang",
+  "addr": "부산광역시 남구 용호로 64",
+  "lat": 35.125587,
+  "lng": 129.110629,
+  "site": "http://jungangleports.itrocks.kr/",
+  "hours": [
+   [
+    null,
+    "05:00–22:00"
+   ]
+  ],
+  "closed": "wed3",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/98/3476698_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/99/3476699_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/00/3476700_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/01/3476701_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/02/3476702_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/03/3476703_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/04/3476704_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/05/3476705_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20260623"
+ },
+ "662637": {
+  "ko": "강화해수랜드",
+  "en": "Ganghwa Haesu Land",
+  "region": "incheon",
+  "city": "ganghwa",
+  "kind": "haesutang",
+  "addr": "인천광역시 강화군 길상면 해안남로 13-12",
+  "lat": 37.626015,
+  "lng": 126.533763,
+  "site": "",
+  "hours": [
+   [
+    "day",
+    "05:00–20:30"
+   ],
+   [
+    "night",
+    "20:30–05:00"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/77/3040477_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/76/3040476_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/78/3040478_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/72/3040472_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/79/3040479_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/80/3040480_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/81/3040481_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/82/3040482_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20260623"
+ },
+ "701642": {
+  "ko": "해수워터피아",
+  "en": "Haesu Waterpia",
+  "region": "incheon",
+  "city": "incheon",
+  "kind": "haesutang",
+  "addr": "인천광역시 서해구 봉수대로 257",
+  "lat": 37.498694,
+  "lng": 126.660654,
+  "site": "",
+  "hours": [
+   [
+    "sauna",
+    "06:00–22:00"
+   ],
+   [
+    "jjim",
+    "06:30–21:30"
+   ]
+  ],
+  "closed": "wed",
+  "notes": [],
+  "last": "",
+  "photos": [],
+  "kto_mod": "20260820"
+ },
+ "4062713": {
+  "ko": "인천조탕",
+  "en": "Incheon Jotang",
+  "region": "incheon",
+  "city": "incheon-air",
+  "kind": "haesutang",
+  "addr": "인천광역시 영종구 용유서로 30 (남북동)",
+  "lat": 37.444157,
+  "lng": 126.404587,
+  "site": "https://incheonjotang.com/",
+  "hours": [
+   [
+    null,
+    "07:00–23:00"
+   ]
+  ],
+  "closed": "none",
+  "notes": [
+   "hoursvary"
+  ],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/06/4062706_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/02/4062702_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/05/4062705_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/04/4062704_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/03/4062703_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20260630"
+ },
+ "250412": {
+  "ko": "용두암해수랜드",
+  "en": "Yongduam Haesu Land",
+  "region": "jeju",
+  "city": "jeju",
+  "kind": "haesutang",
+  "addr": "제주특별자치도 제주시 서해안로 630",
+  "lat": 33.515828,
+  "lng": 126.504556,
+  "site": "",
+  "hours": [
+   [
+    null,
+    "05:00–22:00"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/49/3055849_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/43/3055843_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/47/3055847_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/51/3055851_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/52/3055852_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/53/3055853_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/54/3055854_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/55/3055855_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20261023"
+ },
+ "2604923": {
+  "ko": "율포해수녹차센터",
+  "en": "Yulpo Seawater Green Tea Center",
+  "region": "jeonnam-gwangju",
+  "city": "boseong",
+  "kind": "haesutang",
+  "addr": "전남광주통합특별시 보성군 회천면 우암길 21",
+  "lat": 34.673993,
+  "lng": 127.086619,
+  "site": "",
+  "hours": [
+   [
+    null,
+    "06:00–20:00"
+   ]
+  ],
+  "closed": "",
+  "notes": [],
+  "last": "19:00",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/39/4136539_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/43/4136543_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/42/4136542_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/41/4136541_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/40/4136540_image2_1.jpg",
+    1
+   ]
+  ],
+  "kto_mod": "20261029"
+ },
+ "3076330": {
+  "ko": "변산 해수찜",
+  "en": "Byeonsan Haesujjim",
+  "region": "jeonbuk",
+  "city": "buan",
+  "kind": "haesujjim",
+  "addr": "전북특별자치도 부안군 변산면 변산로 1788",
+  "lat": 35.692699,
+  "lng": 126.548704,
+  "site": "http://www.seasauna.kr",
+  "hours": [
+   [
+    "seajjim",
+    "09:00–18:00"
+   ]
+  ],
+  "closed": "tue",
+  "notes": [],
+  "last": "16:00",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/56/3561456_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/57/3561457_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/58/3561458_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/59/3561459_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/60/3561460_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/61/3561461_image2_1.jpg",
+    1
+   ]
+  ],
+  "kto_mod": "20260409"
+ },
+ "3576309": {
+  "ko": "함평돌머리해수찜치유센터",
+  "en": "Hampyeong Dolmeori Haesujjim Center",
+  "region": "jeonnam-gwangju",
+  "city": "hampyeong",
+  "kind": "haesujjim",
+  "addr": "전남광주통합특별시 함평군 함평읍 주포로 624",
+  "lat": 35.085879,
+  "lng": 126.440932,
+  "site": "https://sea-sauna.imweb.me/",
+  "hours": [
+   [
+    "weekday",
+    "09:00–17:00"
+   ],
+   [
+    "weekend",
+    "09:00–19:00"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [],
+  "kto_mod": "20260630"
+ },
+ "3010680": {
+  "ko": "글로리비치해수찜",
+  "en": "Glory Beach Haesujjim",
+  "region": "jeonnam-gwangju",
+  "city": "yeonggwang",
+  "kind": "haesujjim",
+  "addr": "전남광주통합특별시 영광군 백수읍 해안로 950",
+  "lat": 35.3517,
+  "lng": 126.3896,
+  "site": "",
+  "hours": [
+   [
+    null,
+    "09:00–18:00"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/53/3010653_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/58/3010658_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/59/3010659_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/62/3010662_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/51/3010651_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/52/3010652_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/55/3010655_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20260813"
+ },
+ "619672": {
+  "ko": "화성식염온천",
+  "en": "Hwaseong Saline Hot Spring",
+  "region": "gyeonggi",
+  "city": "hwaseong",
+  "kind": "saline",
+  "addr": "경기도 화성시 장안면 황골길 56-1",
+  "lat": 37.093544,
+  "lng": 126.86689,
+  "site": "",
+  "hours": [
+   [
+    null,
+    "06:00–20:30"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/70/3393270_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/71/3393271_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/72/3393272_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/73/3393273_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/74/3393274_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/75/3393275_image2_1.JPG",
+    3
+   ]
+  ],
+  "kto_mod": "20261022"
+ },
+ "128961": {
+  "ko": "강변스파랜드",
+  "en": "Gangbyeon Spa Land",
+  "region": "seoul",
+  "city": "seoul",
+  "kind": "hanjeungmak",
+  "addr": "서울특별시 광진구 구의강변로 45 (구의동)",
+  "lat": 37.534885,
+  "lng": 127.091307,
+  "site": "http://ispaland.co.kr/",
+  "hours": [
+   [
+    "day",
+    "05:00–20:00"
+   ],
+   [
+    "night",
+    "20:00–05:00"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/98/3401698_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/97/3401697_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/96/3401696_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/95/3401695_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/94/3401694_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/93/3401693_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/92/3401692_image2_1.JPG",
+    3
+   ]
+  ],
+  "kto_mod": "20261023"
+ },
+ "4089183": {
+  "ko": "골드스파사우나",
+  "en": "Gold Spa Sauna",
+  "region": "gyeonggi",
+  "city": "paju",
+  "kind": "hanjeungmak",
+  "addr": "경기도 파주시 한마음1길 38 (금촌동)",
+  "lat": 37.756963,
+  "lng": 126.771187,
+  "site": "https://www.instagram.com/goldspa_paju",
+  "hours": [
+   [
+    null,
+    "@24"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/85/4089185_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/89/4089189_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/88/4089188_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/86/4089186_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/87/4089187_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20260720"
+ },
+ "2732163": {
+  "ko": "로만바스",
+  "en": "Roman Bath",
+  "region": "gyeonggi",
+  "city": "yongin",
+  "kind": "onsen",
+  "addr": "경기도 용인시 처인구 지삼로 470",
+  "lat": 37.233263,
+  "lng": 127.156936,
+  "site": "http://romanbath.co.kr",
+  "hours": [
+   [
+    "baths",
+    "@24"
+   ],
+   [
+    "wp_wd",
+    "10:00–18:00"
+   ],
+   [
+    "wp_we",
+    "10:00–20:00"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/74/4095974_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/95/4095895_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/91/4095891_image2_1.png",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/00/4095900_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/97/4095897_image2_1.png",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/99/4095899_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/98/4095898_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/96/4095896_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20260804"
+ },
+ "3569888": {
+  "ko": "나무향기 한증막",
+  "en": "Namu Hyanggi Hanjeungmak",
+  "region": "gangwon",
+  "city": "chuncheon",
+  "kind": "hanjeungmak",
+  "addr": "강원특별자치도 춘천시 스포츠타운길433번길 10 (삼천동)",
+  "lat": 37.869772,
+  "lng": 127.705811,
+  "site": "http://www.na-moo.kr",
+  "hours": [
+   [
+    null,
+    "11:00–22:00"
+   ]
+  ],
+  "closed": "wedthu",
+  "notes": [
+   "age14",
+   "bookonline"
+  ],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/74/3575674_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/75/3575675_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/76/3575676_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/77/3575677_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/78/3575678_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/79/3575679_image2_1.png",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/80/3575680_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/81/3575681_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20260406"
+ },
+ "4013402": {
+  "ko": "금강약돌",
+  "en": "Geumgang Yakdol",
+  "region": "incheon",
+  "city": "incheon",
+  "kind": "hanjeungmak",
+  "addr": "인천광역시 연수구 능허대로165번길 13 (옥련동)",
+  "lat": 37.420795,
+  "lng": 126.647455,
+  "site": "",
+  "hours": [
+   [
+    "jjim",
+    "@24"
+   ],
+   [
+    "restaurant",
+    "09:00–21:00"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/93/4009693_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/99/4009699_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/98/4009698_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/97/4009697_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/96/4009696_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/95/4009695_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/94/4009694_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20260213"
+ },
+ "1799724": {
+  "ko": "속초스파랜드",
+  "en": "Sokcho Spa Land",
+  "region": "gangwon",
+  "city": "sokcho",
+  "kind": "bulgama",
+  "addr": "강원특별자치도 속초시 미시령로3359번길 20",
+  "lat": 38.207129,
+  "lng": 128.574574,
+  "site": "",
+  "hours": [
+   [
+    null,
+    "05:00–21:00"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/16/3048516_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/21/3048521_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/05/3048505_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/26/3048526_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/19/3048519_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/18/3048518_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/17/3048517_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/15/3048515_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20261020"
+ },
+ "2949823": {
+  "ko": "장흥 참숯가마",
+  "en": "Jangheung Charcoal Kiln",
+  "region": "gyeonggi",
+  "city": "yangju",
+  "kind": "sutgama",
+  "addr": "경기도 양주시 권율로 400",
+  "lat": 37.744836,
+  "lng": 126.959752,
+  "site": "",
+  "hours": [],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/66/3546966_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/67/3546967_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/69/3546969_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/71/3546971_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/70/3546970_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/68/3546968_image2_1.jpg",
+    1
+   ]
+  ],
+  "kto_mod": "20260820"
+ },
+ "2789664": {
+  "ko": "토담참숯가마",
+  "en": "Todam Charcoal Kiln",
+  "region": "gyeonggi",
+  "city": "yangju",
+  "kind": "sutgama",
+  "addr": "경기도 양주시 백석읍 권율로847번길 7-11",
+  "lat": 37.773963,
+  "lng": 126.960542,
+  "site": "https://www.instagram.com/healing_todam/",
+  "hours": [
+   [
+    "weekday",
+    "08:00–23:00"
+   ],
+   [
+    "weekend",
+    "07:00–24:00"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/28/4124228_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/32/4124232_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/29/4124229_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/31/4124231_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/30/4124230_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/33/4124233_image2_1.jpg",
+    1
+   ]
+  ],
+  "kto_mod": "20261028"
+ },
+ "128699": {
+  "ko": "여주참숯마을",
+  "en": "Yeoju Charcoal Village",
+  "region": "gyeonggi",
+  "city": "yeoju",
+  "kind": "sutgama",
+  "addr": "경기도 여주시 강천면 걸촌동길 40",
+  "lat": 37.288736,
+  "lng": 127.699222,
+  "site": "http://www.yjcharmsoot.co.kr",
+  "hours": [
+   [
+    "dayuse",
+    "09:30–20:00"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/32/3383432_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/39/3383439_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/49/3383449_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/54/3383454_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/50/3383450_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/51/3383451_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/41/3383441_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20251119"
+ },
+ "3034650": {
+  "ko": "국화참숯불가마찜질",
+  "en": "Gukhwa Charcoal Kiln",
+  "region": "chungbuk",
+  "city": "cheongju",
+  "kind": "sutgama",
+  "addr": "충청북도 청주시 상당구 낭성면 호정전하울길 99-45",
+  "lat": 36.613124,
+  "lng": 127.605722,
+  "site": "",
+  "hours": [
+   [
+    null,
+    "09:00–21:00"
+   ]
+  ],
+  "closed": "wed",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/48/3034648_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/49/3034649_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/46/3034646_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/44/3034644_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/41/3034641_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/40/3034640_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/39/3034639_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/37/3034637_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20260414"
+ },
+ "322850": {
+  "ko": "지리산참숯굴찜질방",
+  "en": "Jirisan Charcoal Cave Sauna",
+  "region": "gyeongnam",
+  "city": "sancheong",
+  "kind": "sutgama",
+  "addr": "경상남도 산청군 단성면 지리산대로 2741-24",
+  "lat": 35.2727,
+  "lng": 127.9211,
+  "site": "",
+  "hours": [
+   [
+    "jjim",
+    "@24"
+   ],
+   [
+    "restaurant",
+    "08:30–20:30"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/57/3476257_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/56/3476256_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/58/3476258_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/59/3476259_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/60/3476260_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/61/3476261_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/62/3476262_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/63/3476263_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20261030"
+ },
+ "2774546": {
+  "ko": "월드온천24",
+  "en": "World Oncheon 24",
+  "region": "gangwon",
+  "city": "chuncheon",
+  "kind": "onsen",
+  "addr": "강원특별자치도 춘천시 신북읍 장본길 35",
+  "lat": 37.949832,
+  "lng": 127.754009,
+  "site": "",
+  "hours": [
+   [
+    null,
+    "@24"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/82/2776982_image2_1.jpeg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/83/2776983_image2_1.jpeg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/85/2776985_image2_1.jpeg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/86/2776986_image2_1.jpeg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/84/2776984_image2_1.jpeg",
+    3
+   ]
+  ],
+  "kto_mod": "20250109"
+ },
+ "2757569": {
+  "ko": "네이처스파",
+  "en": "Nature Spa",
+  "region": "gyeonggi",
+  "city": "paju",
+  "kind": "bulgama",
+  "addr": "경기도 파주시 교하로 677-20",
+  "lat": 37.708991,
+  "lng": 126.704339,
+  "site": "https://www.instagram.com/naturespa",
+  "hours": [],
+  "closed": "",
+  "notes": [
+   "checkhours"
+  ],
+  "last": "",
+  "photos": [],
+  "kto_mod": "20250826"
+ },
+ "1845544": {
+  "ko": "원마운트 워터파크",
+  "en": "One Mount Water Park",
+  "region": "gyeonggi",
+  "city": "goyang",
+  "kind": "waterpark",
+  "addr": "경기도 고양시 일산서구 한류월드로 300 고양 원마운트",
+  "lat": 37.664553,
+  "lng": 126.754527,
+  "site": "https://onemount.co.kr/ko/",
+  "hours": [
+   [
+    "in_wd",
+    "10:00–17:00"
+   ],
+   [
+    "in_we",
+    "10:00–19:00"
+   ],
+   [
+    "out_we",
+    "12:00–17:00"
+   ]
+  ],
+  "closed": "mon",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/78/3491778_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/83/3491783_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/82/3491782_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/81/3491781_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/80/3491780_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/76/3491776_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/75/3491775_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/74/3491774_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20260414"
+ },
+ "613310": {
+  "ko": "하피랜드",
+  "en": "Hapi Land",
+  "region": "gyeonggi",
+  "city": "hwaseong",
+  "kind": "onsenpark",
+  "addr": "경기도 화성시 팔탄면 시청로 888",
+  "lat": 37.168573,
+  "lng": 126.888518,
+  "site": "https://www.hapyland.co.kr",
+  "hours": [
+   [
+    null,
+    "05:00–22:00"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/85/3577785_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/83/3577783_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/84/3577784_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/86/3577786_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/87/3577787_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/88/3577788_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/90/3577790_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/91/3577791_image2_1.jpg",
+    1
+   ]
+  ],
+  "kto_mod": "20261023"
+ },
+ "128732": {
+  "ko": "스플라스 리솜",
+  "en": "Splas Resom",
+  "region": "chungnam",
+  "city": "yesan",
+  "kind": "onsenpark",
+  "addr": "충청남도 예산군 덕산면 온천단지3로 45-7",
+  "lat": 36.693803,
+  "lng": 126.655824,
+  "site": "http://www.resom.co.kr/spa",
+  "hours": [
+   [
+    "spa",
+    "09:00–20:00"
+   ],
+   [
+    "sauna",
+    "07:00–21:00"
+   ]
+  ],
+  "closed": "none",
+  "notes": [
+   "seasonprice"
+  ],
+  "last": "",
+  "photos": [],
+  "kto_mod": "20260818"
+ },
+ "631934": {
+  "ko": "파라다이스 스파 도고",
+  "en": "Paradise Spa Dogo",
+  "region": "chungnam",
+  "city": "asan",
+  "kind": "onsenpark",
+  "addr": "충청남도 아산시 도고면 도고온천로 176",
+  "lat": 36.765531,
+  "lng": 126.887933,
+  "site": "http://www.paradisespa.co.kr",
+  "hours": [],
+  "closed": "none",
+  "notes": [
+   "seasonal"
+  ],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/38/2480338_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20260514"
+ },
+ "3046172": {
+  "ko": "온양 온천 랜드",
+  "en": "Onyang Oncheon Land",
+  "region": "chungnam",
+  "city": "asan",
+  "kind": "onsen",
+  "addr": "충청남도 아산시 삼동로28번길 46 (모종동)",
+  "lat": 36.781046,
+  "lng": 127.01577,
+  "site": "http://xn--hy1b45civtirab620h.kr/",
+  "hours": [
+   [
+    "bathsjjim",
+    "@24"
+   ],
+   [
+    "kidspark",
+    "10:00–18:00"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/66/3046166_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/67/3046167_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/68/3046168_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/69/3046169_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/70/3046170_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/71/3046171_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20260408"
+ },
+ "127767": {
+  "ko": "아산 스파비스",
+  "en": "Asan Spavis",
+  "region": "chungnam",
+  "city": "asan",
+  "kind": "onsenpark",
+  "addr": "충청남도 아산시 음봉면 아산온천로157번길 67",
+  "lat": 36.855792,
+  "lng": 126.980608,
+  "site": "http://www.spavis.co.kr",
+  "hours": [
+   [
+    null,
+    "09:00–18:00"
+   ]
+  ],
+  "closed": "march",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/19/4009019_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/32/4009032_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/17/4009017_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/16/4009016_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/18/4009018_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/33/4009033_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20260318"
+ },
+ "127958": {
+  "ko": "아일랜드 리솜 오아식스 선셋스파",
+  "en": "Oasix Sunset Spa, Island Resom",
+  "region": "chungnam",
+  "city": "taean",
+  "kind": "resortspa",
+  "addr": "충청남도 태안군 안면읍 꽃지해안로 204",
+  "lat": 36.488077,
+  "lng": 126.338413,
+  "site": "http://www.resom.co.kr/island/",
+  "hours": [
+   [
+    "spa",
+    "10:00–19:00"
+   ],
+   [
+    "sauna",
+    "06:00–22:00"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/30/4073630_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/34/4073634_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/32/4073632_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/31/4073631_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/33/4073633_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20260611"
+ },
+ "2769846": {
+  "ko": "포레스트 리솜 해브나인 스파",
+  "en": "Haevnine Spa, Forest Resom",
+  "region": "chungbuk",
+  "city": "jecheon",
+  "kind": "resortspa",
+  "addr": "충청북도 제천시 백운면 금봉로 365",
+  "lat": 37.158794,
+  "lng": 128.046135,
+  "site": "https://www.resom.co.kr/forest/",
+  "hours": [
+   [
+    "indoor",
+    "09:00–18:00"
+   ],
+   [
+    "outdoor",
+    "10:00–18:00"
+   ],
+   [
+    "night_we",
+    "18:30–21:30"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/83/4090583_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/79/4090579_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/82/4090582_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/84/4090584_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/80/4090580_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/81/4090581_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/85/4090585_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/77/4090577_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20260722"
+ },
+ "3015906": {
+  "ko": "카덴96",
+  "en": "Kaden 96",
+  "region": "busan",
+  "city": "gijang",
+  "kind": "onsenpark",
+  "addr": "부산광역시 기장군 일광읍 기장대로 1075-3",
+  "lat": 35.28937,
+  "lng": 129.234549,
+  "site": "http://www.kaden96.com/",
+  "hours": [
+   [
+    null,
+    "10:00–22:00"
+   ],
+   [
+    "break",
+    "18:00–18:30"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/02/3015902_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/86/3015886_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/93/3015893_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/89/3015889_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/99/3015899_image2_1.JPG",
+    3
+   ]
+  ],
+  "kto_mod": "20260427"
+ },
+ "3083295": {
+  "ko": "장유스파랜드",
+  "en": "Jangyu Spa Land",
+  "region": "gyeongnam",
+  "city": "gimhae",
+  "kind": "onsenpark",
+  "addr": "경상남도 김해시 대청로104번길 84 (삼문동)",
+  "lat": 35.187853,
+  "lng": 128.807255,
+  "site": "",
+  "hours": [
+   [
+    "baths",
+    "05:30–22:00"
+   ]
+  ],
+  "closed": "thu13",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/87/3083287_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/88/3083288_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/89/3083289_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/90/3083290_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/91/3083291_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/92/3083292_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/93/3083293_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/94/3083294_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20260407"
+ },
+ "1178650": {
+  "ko": "스파라스파 (곤지암리조트)",
+  "en": "Spa La Spa, Konjiam Resort",
+  "region": "gyeonggi",
+  "city": "gonjiam",
+  "kind": "pool",
+  "addr": "경기도 광주시 도척면 도척윗로 278",
+  "lat": 37.336612,
+  "lng": 127.303145,
+  "site": "https://www.konjiamresort.co.kr",
+  "hours": [
+   [
+    null,
+    "11:00–20:00"
+   ]
+  ],
+  "closed": "",
+  "notes": [],
+  "last": "18:30",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/04/3077204_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/08/3077208_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/05/3077205_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/06/3077206_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/07/3077207_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20260729"
+ },
+ "3522510": {
+  "ko": "키위스파랜드",
+  "en": "Kiwi Spa Land",
+  "region": "incheon",
+  "city": "incheon",
+  "kind": "jjim",
+  "addr": "인천광역시 계양구 아나지로 306 (작전동)",
+  "lat": 37.525336,
+  "lng": 126.725851,
+  "site": "",
+  "hours": [
+   [
+    null,
+    "@24"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/58/3522358_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/99/3522499_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/59/3522359_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/61/3522361_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/62/3522362_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/63/3522363_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/64/3522364_image2_1.jpg",
+    1
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/65/3522365_image2_1.jpg",
+    1
+   ]
+  ],
+  "kto_mod": "20260311"
+ },
+ "3386242": {
+  "ko": "스파디움24",
+  "en": "Spadium 24",
+  "region": "gyeonggi",
+  "city": "namyangju",
+  "kind": "jjim",
+  "addr": "경기도 남양주시 다산순환로 20 (다산동)",
+  "lat": 37.613444,
+  "lng": 127.152812,
+  "site": "https://spadium24.co.kr/",
+  "hours": [
+   [
+    null,
+    "@24"
+   ]
+  ],
+  "closed": "none",
+  "notes": [
+   "age8"
+  ],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/05/3385805_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/17/3385817_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/19/3385819_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/20/3385820_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/32/3385832_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/33/3385833_image2_1.JPG",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/35/3385835_image2_1.JPG",
+    3
+   ]
+  ],
+  "kto_mod": "20260414"
+ },
+ "4091211": {
+  "ko": "제천킹스파찜질방",
+  "en": "Jecheon King Spa",
+  "region": "chungbuk",
+  "city": "jecheon",
+  "kind": "jjim",
+  "addr": "충청북도 제천시 풍양로9길 5 (의림동)",
+  "lat": 37.138451,
+  "lng": 128.208547,
+  "site": "https://www.instagram.com/kingspajecheon",
+  "hours": [
+   [
+    null,
+    "@24"
+   ]
+  ],
+  "closed": "none",
+  "notes": [],
+  "last": "",
+  "photos": [
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/14/4091214_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/15/4091215_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/17/4091217_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/16/4091216_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/13/4091213_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/20/4091220_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/19/4091219_image2_1.jpg",
+    3
+   ],
+   [
+    "https://tong.visitkorea.or.kr/cms/resource/12/4091212_image2_1.jpg",
+    3
+   ]
+  ],
+  "kto_mod": "20260723"
+ }
+}

@@ -1,0 +1,310 @@
+{
+ "ui": {
+  "count_one": "1 place",
+  "count": "{n} places",
+  "all": "All",
+  "filter_aria": "Filter places",
+  "none": "Nothing matches this filter.",
+  "more": "Hours, prices & tattoo rules →",
+  "site": "Official site ↗",
+  "insta": "Instagram ↗",
+  "h24": "Open 24 hours",
+  "h24s": "24 hours",
+  "last": "last entry {t}",
+  "closed": {
+   "none": "Open every day",
+   "holidays": "Sauna closed on Seollal and Chuseok days",
+   "wed3": "Closed the 3rd Wednesday of each month",
+   "wed": "Closed Wednesdays",
+   "tue": "Closed Tuesdays",
+   "mon": "Closed Mondays",
+   "wedthu": "Closed Wednesdays and Thursdays",
+   "thu13": "Closed the 1st and 3rd Thursdays",
+   "march": "Closed for two weeks every March"
+  },
+  "hl": {
+   "day": "Day",
+   "night": "Night",
+   "sauna": "Sauna",
+   "jjim": "Jjimjilbang",
+   "seajjim": "Steam rooms",
+   "weekday": "Weekdays",
+   "weekend": "Weekends",
+   "baths": "Baths",
+   "wp_wd": "Summer water park, weekdays",
+   "wp_we": "weekends",
+   "restaurant": "Restaurant",
+   "dayuse": "Day use",
+   "in_wd": "Indoor park, weekdays",
+   "in_we": "weekends",
+   "out_we": "Outdoor park, weekends",
+   "spa": "Spa",
+   "bathsjjim": "Baths & jjimjilbang",
+   "kidspark": "Kids’ water park",
+   "indoor": "Indoor",
+   "outdoor": "Outdoor",
+   "night_we": "Weekend nights",
+   "break": "Break"
+  },
+  "notes": {
+   "hoursvary": "Sources disagree on the hours: a December 2025 article says it is open 24 hours.",
+   "age14": "Ages 14 and over.",
+   "bookonline": "Online booking only, not by phone.",
+   "checkhours": "Opening hours not confirmed; check before you go.",
+   "seasonal": "Hours change by season.",
+   "seasonprice": "Prices change by season.",
+   "age8": "Ages 8 and over."
+  },
+  "kinds": {
+   "haesutang": "Seawater bath",
+   "haesujjim": "Seawater steam rooms",
+   "saline": "Saline hot spring",
+   "hanjeungmak": "Hanjeungmak sauna",
+   "bulgama": "Fire-kiln jjimjilbang",
+   "sutgama": "Charcoal kiln",
+   "onsen": "Hot-spring spa",
+   "onsenpark": "Hot-spring water park",
+   "waterpark": "Water park",
+   "resortspa": "Resort spa",
+   "pool": "Resort pools",
+   "jjim": "Jjimjilbang"
+  },
+  "cities": {
+   "busan": "Busan",
+   "incheon": "Incheon",
+   "ganghwa": "Ganghwa Island",
+   "incheon-air": "Yeongjong Island, Incheon",
+   "jeju": "Jeju City",
+   "boseong": "Boseong",
+   "buan": "Buan (Byeonsan)",
+   "hampyeong": "Hampyeong",
+   "yeonggwang": "Yeonggwang",
+   "hwaseong": "Hwaseong",
+   "seoul": "Seoul",
+   "paju": "Paju",
+   "yongin": "Yongin",
+   "chuncheon": "Chuncheon",
+   "sokcho": "Sokcho",
+   "yangju": "Yangju",
+   "yeoju": "Yeoju",
+   "cheongju": "Cheongju",
+   "sancheong": "Sancheong (Jirisan)",
+   "goyang": "Goyang (Ilsan)",
+   "yesan": "Yesan (Deoksan)",
+   "asan": "Asan",
+   "taean": "Taean (Anmyeondo)",
+   "jecheon": "Jecheon",
+   "gijang": "Gijang, Busan",
+   "gimhae": "Gimhae",
+   "gonjiam": "Gonjiam, Gwangju (Gyeonggi)",
+   "namyangju": "Namyangju"
+  },
+  "tags": {
+   "haesutang": "Seawater baths",
+   "haesujjim": "Seawater steam rooms",
+   "seaview": "Sea view",
+   "h24": "Open 24h",
+   "dome": "Fire domes",
+   "charcoal": "Charcoal kilns",
+   "city": "In the city",
+   "onsen": "Hot-spring water",
+   "jjimjil": "With a jjimjilbang",
+   "kiln": "Fire kiln or dome",
+   "water": "Hot spring or seawater",
+   "kids": "Kids’ area",
+   "bathhouse": "Saunas & bathhouses",
+   "scrub": "Scrub rooms"
+  },
+  "src": "Places without their own HANTANG page: descriptions and hours come from the Korea Tourism Organization’s tourism data (31 October 2026), checked against the government’s list of licensed bathhouses. Hours and prices change, so check before you go.",
+  "count_fact": "places on this page",
+  "guide_eb": "GUIDE",
+  "read": "Read the guide →",
+  "themes_eb": "BY THEME",
+  "themes_h": "More ways to find a bath",
+  "hub_h": "Browse by kind of bath",
+  "hub_p": "Hot springs, seawater baths, kiln saunas, swimsuit spa parks, all-night jjimjilbangs and women-only places, each with photos, opening hours and directions.",
+  "hub_q": "▦ By theme",
+  "names": {
+   "hot-springs": "Hot springs",
+   "seawater": "Seawater baths",
+   "kiln-saunas": "Kiln saunas",
+   "spa-water-parks": "Spa water parks",
+   "24-hour": "24-hour jjimjilbangs",
+   "women-only": "Women-only"
+  },
+  "tiles": {
+   "hot-springs": "Spa towns, resorts and free foot baths",
+   "seawater": "Haesutang and seawater steam rooms",
+   "kiln-saunas": "Hanjeungmak domes and charcoal kilns",
+   "spa-water-parks": "Warm pools you enter in a swimsuit",
+   "24-hour": "Bathe late, sleep on a heated floor",
+   "women-only": "Saunas and scrub rooms just for women"
+  }
+ },
+ "pages": {
+  "seawater": {
+   "title": "Seawater Baths in Korea: Haesutang & Seawater Steam Rooms",
+   "desc": "Where to soak in heated seawater in Korea: haesutang bathhouses in Busan, Incheon and Jeju and private haesujjim steam rooms on the west coast, with hours and photos.",
+   "eyebrow": "SEAWATER BATHS",
+   "h1": "Seawater baths and seawater steam rooms",
+   "lede": "Bathhouses that heat seawater pumped from deep wells, and the west coast’s haesujjim rooms, where you steam under towels soaked in hot seawater. In Busan, Incheon, Jeju and small coastal towns.",
+   "about_h": "Two ways to use the sea",
+   "about": [
+    "A haesutang (해수탕) is an ordinary Korean bathhouse with one difference: some or all of the tubs hold seawater, usually pumped from a well a few hundred metres down and then heated. You wash, soak and use the sauna as in any bathhouse, naked and with men and women apart.",
+    "Haesujjim (해수찜) is a west-coast custom. You rent a small private room, usually in clothes the house provides, and lay towels soaked in hot seawater on your shoulders, back and legs. In Hampyeong the water is heated by dropping hot stones into it, so the tub is far too hot to sit in.",
+    "Seaside bathing in Korea goes back at least to 1924, when the Wolmido jotang opened in Incheon, heating groundwater as salty as the sea. It closed in 1949; today’s Incheon Jotang borrows its name."
+   ],
+   "tips_h": "Before you go",
+   "tips": [
+    "Shower before you get in, as in any bathhouse, and rinse the salt off with fresh water at the end.",
+    "Salt water stings cuts, fresh shaving nicks and scratched skin.",
+    "In a haesujjim room, scoop the water with the bowl and let it cool before you soak a towel, then lay the towels on a little at a time.",
+    "Coastal steam houses close early, around 17:00–18:00, and fill up on winter weekends."
+   ],
+   "facts": {
+    "f1": ["1924", "Wolmido’s jotang, called Korea’s first seawater bath, opens in Incheon"],
+    "f2": ["816 m", "depth of the seawater well at Aqua Palace in Busan"]
+   }
+  },
+  "kiln-saunas": {
+   "title": "Korean Kiln Saunas: Hanjeungmak, Bulgama & Charcoal Kilns",
+   "desc": "Korea’s fire-heated sweat rooms: pine-fired hanjeungmak domes in city jjimjilbangs and countryside charcoal kilns where you sweat in the heat left after the charcoal is made.",
+   "eyebrow": "KILN SAUNAS",
+   "h1": "Kiln saunas: hanjeungmak, bulgama and charcoal kilns",
+   "lede": "The hottest rooms in Korean bathing, heated by real fire. City jjimjilbangs with a pine-fired dome, and charcoal kilns in the countryside where you sit in the heat left after the charcoal comes out.",
+   "about_h": "What the words mean",
+   "about": [
+    "A hanjeungmak (한증막) is a low dome of stone and clay. A pine-log fire is lit inside and then raked out, and you go in while the walls are hot. People usually wear the jjimjil clothes and put a hemp sack or a towel over their head against the heat.",
+    "Bulgama (불가마, fire kiln) is what jjimjilbangs call their hottest room, often a clay kiln heated from outside. A sutgama (숯가마) is a real charcoal kiln: oak burns inside for days, the charcoal is taken out, and the kiln is opened for sweating while it cools, usually with a grill for pork or sweet potatoes next door.",
+    "Sweat rooms have a long history here: a hanjeungso, a sweat house, appears in the Annals of King Sejong in 1422."
+   ],
+   "tips_h": "Staying safe in the heat",
+   "tips": [
+    "Drink water first, start in the mildest room and come out after about five minutes.",
+    "Cover your skin and head with a towel, and take off metal jewellery and glasses, which heat up fast.",
+    "Step out at once if you feel dizzy. Skip the hot rooms if you are pregnant, have heart or blood-pressure problems, or have been drinking.",
+    "Countryside charcoal kilns are easiest to reach by car or taxi, and some close one or two days a week."
+   ],
+   "facts": {
+    "f1": ["1422", "a hanjeungso, a sweat house, appears in the Annals of King Sejong"],
+    "f2": ["5 days", "how long oak burns in the kilns at Yeoju Charcoal Village, per the operator"]
+   }
+  },
+  "spa-water-parks": {
+   "title": "Korean Spa Water Parks: Swimsuit Hot Springs with Jjimjilbangs",
+   "desc": "Spa water parks in Korea where you wear a swimsuit: hot-spring pools, indoor water parks in malls and resorts, and the jjimjilbangs attached to them, with hours for each place.",
+   "eyebrow": "SPA WATER PARKS",
+   "h1": "Spa water parks: warm pools in a swimsuit",
+   "lede": "Big indoor and outdoor pools of warm or hot-spring water, where you wear a swimsuit and can go in together, usually with a bathhouse and a jjimjilbang in the same building.",
+   "about_h": "How a spa park works",
+   "about": [
+    "Most places have three parts: the pools (swimsuit, mixed), the baths (naked, men and women apart) and the jjimjilbang (clothes provided, mixed). Tickets are often sold for each part or as a combined pass, so check what yours includes.",
+    "The pools usually include a bade pool (바데풀), a warm pool with massage jets at different heights. Outdoor pools may close or cool down in winter, and some parks open their outdoor zones in summer only.",
+    "The city parks are in shopping malls and hotels; the hot-spring ones are mostly resorts in spa towns such as Asan, Deoksan and Icheon."
+   ],
+   "tips_h": "Before you go",
+   "tips": [
+    "Bring a swimsuit. Swim caps and life jackets are often required, and most counters rent them.",
+    "Shower naked in the changing room before you put your swimsuit on, as in any Korean bath.",
+    "Weekends and school holidays are crowded; weekday mornings are calmest.",
+    "Many parks do not allow outside food, but most have a food court."
+   ],
+   "facts": {
+    "f1": ["3", "parts many parks sell separately: pools, baths and jjimjilbang"],
+    "f2": ["130 cm", "at Spa La Spa in Gonjiam, children under this height wear a life jacket"]
+   }
+  },
+  "24-hour": {
+   "title": "24-Hour Jjimjilbangs in Korea: Where You Can Stay the Night",
+   "desc": "Jjimjilbangs and saunas in Korea that stay open all night, with night-ticket times, sleeping rooms and what to bring, in Seoul, Busan, Incheon, Gyeonggi and beyond.",
+   "eyebrow": "OPEN 24 HOURS",
+   "h1": "24-hour jjimjilbangs: where you can stay the night",
+   "lede": "Places that never close, where you can bathe late, sleep on a heated floor and leave in the morning. Handy after a late flight or a long night out, and cheaper than most hotel rooms.",
+   "about_h": "How a night works",
+   "about": [
+    "At the counter you get a locker key on a wristband, a towel and a set of jjimjil clothes. The baths are naked and split by sex; the jjimjil hall and rooms are shared, and you sleep on the floor or in a sleeping room. Many places keep a separate sleeping room for women.",
+    "Prices usually change in the evening: some places switch to a night ticket at 20:00 or 22:00, and many tickets cover about 12 hours, with extra time charged by the hour. Going out and coming back may count as a new entry.",
+    "A jjimjilbang is not a hostel. It is noisy, the lights often stay on, and the baths close for cleaning for part of the night."
+   ],
+   "tips_h": "What to bring",
+   "tips": [
+    "An eye mask and earplugs. A light layer helps too, since sleeping rooms can be cold or very warm.",
+    "Keep your passport, phone and cash in the locker, never on the floor next to you.",
+    "Ask about re-entry and luggage storage before you go out for dinner.",
+    "Leave before your ticket runs out; extra hours are paid at the counter on your way out."
+   ],
+   "facts": {
+    "f1": ["20:00", "when Sparex and Hwanghak Golden Spa in Seoul switch to night tickets"],
+    "f2": ["12 h", "what a ticket covers at Kiwi Spa Land in Incheon, then ₩2,000 an hour"]
+   }
+  },
+  "women-only": {
+   "title": "Women-Only Baths, Saunas and Scrub Rooms in Korea",
+   "desc": "Women-only saunas, hanjeungmak spas and one-person scrub rooms in Seoul, Busan and other cities, for women who want a bath or a scrub without men in the building.",
+   "eyebrow": "WOMEN ONLY",
+   "h1": "Women-only baths and scrub rooms",
+   "lede": "Every Korean bathhouse already has a separate women’s side. These are places where the whole business is for women: saunas and kiln spas without a men’s floor, and small scrub rooms run by women for women.",
+   "about_h": "Two kinds of place",
+   "about": [
+    "Women-only saunas look like any jjimjilbang, but there is no men’s floor at all, so the shared hall, the sleeping rooms and the kiln are for women too. Most of them are in central Seoul.",
+    "One-person scrub rooms (1인 세신샵) are small private shops where one manager gives you a body scrub, often with a massage or a pack, in a room with its own shower. You book a time and a course rather than buying an entry ticket.",
+    "Policies change: a sauna may open a men’s floor, or a scrub room may start taking men. Check the place’s page or call before you go."
+   ],
+   "tips_h": "Before you go",
+   "tips": [
+    "Book scrub rooms ahead. Many work by reservation only, often through Naver or KakaoTalk.",
+    "Tell the manager when you book if you are pregnant, on your period or have sensitive skin.",
+    "In a private scrub room you are usually naked, as in a public bath, with a towel to cover up.",
+    "Menu prices are per course and often out of date, so ask for the current price when you book."
+   ],
+   "facts": {
+    "@count:bathhouse": "women-only saunas and spas",
+    "@count:scrub": "one-person scrub rooms"
+   },
+   "note": "Looking for the opposite? {link} in Eunpyeong is a private scrub room for men only."
+  }
+ },
+ "desc": {
+  "662756": "A seawater bathhouse in central Busan (Beomil-dong) with eleven jjimjil rooms, foot and body massage tubs and a jade sauna.",
+  "662862": "A neighbourhood sauna in Yongho-dong, Nam-gu, using seawater from a deep well, run together with a gym.",
+  "662637": "A big sauna and jjimjilbang near Choji Bridge on Ganghwa Island, filled with seawater from a 560 m well, with yellow-clay and salt rooms. Day and night tickets.",
+  "701642": "A leisure building in Incheon using seawater from a 250 m well: women’s baths on 3F, men’s on 6F, and a jjimjil floor with charcoal, clay and ice rooms around a central hall.",
+  "4062713": "A 1,800-pyeong spa on Yeongjong Island near Incheon Airport, named after Wolmido’s 1920s jotang and using pumped underground seawater, with a jjimjilbang, massage chairs, a comics café and an outdoor foot bath.",
+  "250412": "A large seawater sauna on Jeju’s coastal road by Yongduam Rock, with sea views, palm-planted grounds and a traditional fire hanjeungmak in the garden.",
+  "2604923": "Run by Boseong County since 1998 beside Yulpo Beach: baths of seawater from 120 m underground and baths steeped with green tea from local plantations.",
+  "3076330": "Private rooms for haesujjim, where you lay towels soaked in heated seawater on your body instead of getting into a tub. There is a seawater bath too.",
+  "3576309": "A seawater steam centre where heated stones and herbs are dropped into seawater, a local custom said to go back to the 1800s. Right after the stones go in, parts of the tub reach about 80°C, so follow the staff’s safety rules. Renovated in late 2024.",
+  "3010680": "Thirty-six private hinoki rooms for seawater steam on the second floor of a seafront building on the Baeksu coastal road, using seawater from 600 m down. A bakery, a gallery and a dog-friendly café share the building.",
+  "619672": "A saline hot spring, open since 2003, whose water is ancient seawater trapped underground. Cups in the lobby let you taste it, and you may take up to 10 litres home. The outdoor pool is a cold bath and closes in winter.",
+  "128961": "A 3,000-pyeong basement spa in Guui-dong, east Seoul, with a pine-wood fire hanjeungmak, a women-only clay kiln and charcoal, salt and igloo rooms. Day and night tickets.",
+  "4089183": "A 1,000-pyeong jjimjilbang in Geumchon, Paju, open 24 hours since 2004, whose hanjeungmak is fired with pine logs. Clay, salt and ice rooms, and a kids’ zone with a trampoline and slide.",
+  "2732163": "A hot-spring complex in Yongin with baths, a jjimjilbang, a fire hanjeungmak and a water park that opens in summer. The indoor baths are open around the clock.",
+  "3569888": "A quiet hanjeungmak in Chuncheon, lit with pine logs every morning, with a wooden hall, a warm talking room and an outdoor veranda. The house asks for quiet; read its rules before you go.",
+  "4013402": "A 24-hour jjimjilbang in Okryeon-dong, Yeonsu-gu, whose hanjeungmak is heated by burning oak charcoal, with a salt room and massage.",
+  "1799724": "Billed as the biggest jjimjilbang on the east coast: 1,500 pyeong in central Sokcho, with a wood-fired bulgama, salt, ice and clay rooms and a kids’ room.",
+  "2949823": "A charcoal kiln in the hills of Yangju: sweat in the kiln, rest on wooden platforms and grill your own meat over the free shared charcoal fire. A stream runs past the front in summer.",
+  "2789664": "A charcoal kiln sauna by Gisan Reservoir with a stream alongside, cabins and clay bungalows to rest in, and braziers to rent for roasting sweet potatoes.",
+  "128699": "Ten clay kilns where oak burns for five days; once the charcoal is out, you sweat in the heat that is left. Rooms run from mild to over 200°C, per the operator. There is also a hot-spring pool and a campsite.",
+  "3034650": "A clay kiln jjimjilbang in a mountain village east of Cheongju, heated with oak, with rooms at different temperatures, platforms to rest on and a fire to sit by.",
+  "322850": "A 24-hour sauna at the foot of Jirisan that uses the heat left in clay kilns after making oak charcoal. It also sells charcoal and wood vinegar and has a restaurant.",
+  "2774546": "A 24-hour hot spring in Sinbuk, Chuncheon, with alkaline water (pH 9.02), an open-air bath, a jjimjilbang and a bulgama. The pine road at the gate was a filming spot for the drama Winter Sonata.",
+  "2757569": "A spa and jjimjilbang on Simhaksan in Paju using groundwater from 1,300 m down, with a traditional bulgama, an open-air bath and a terrace.",
+  "1845544": "An indoor and outdoor water park in the One Mount mall in Ilsan, next to a snow park. The outdoor zone opens on weekends only.",
+  "613310": "A 12,000-pyeong spa park in Hwaseong with a water park, Egyptian-themed baths of alkaline hot-spring water from 800 m down, and a jjimjilbang with a fire hanjeungmak and an ice cave.",
+  "128732": "A water park and spa at Deoksan hot springs using 49.6°C water from a designated health spa, with 15 outdoor baths, slides and a bade pool.",
+  "631934": "A big hot-spring resort at Dogo, the first national health spa designated in Chungcheong: a bade pool, a sulfur-water bath hall and outdoor spas with seasonal themes.",
+  "3046172": "A hot-spring complex in Onyang using alkaline spring water (pH 8.42): baths and a jjimjilbang open 24 hours, and a kids’ water park during the day.",
+  "127767": "A hot-spring water park in Asan with an indoor bade pool, outdoor hot-spring pools, a 75 m wave pool and racing slides.",
+  "127958": "The spa at Island Resom on Anmyeondo, with an outdoor infinity pool facing Kkotji Beach, known for its sunsets, a kids’ area and a separate sauna.",
+  "2769846": "A forest spa at Forest Resom in the hills of Jecheon, with an indoor bade pool, an outdoor infinity pool and baths set along a valley. Night sessions on weekends.",
+  "3015906": "A family sulfur hot-spring pool in Gijang fed straight from a 996 m well at about 36°C. You rent a platform to use the pools and showers, and cooking is allowed.",
+  "3083295": "A family spa in Jangyu, Gimhae: a small water park, an open-air hot-spring bath, baths and family rooms. Cheaper than the big parks and popular with parents of small children.",
+  "1178650": "The pools at Konjiam Resort: one indoor and four outdoor, each at a different temperature, open to non-guests. Swim caps are required and children under 130 cm wear life jackets. No spa treatments or massage.",
+  "3522510": "A 24-hour, 1,380-pyeong jjimjilbang in Gyeyang, Incheon, with a book café, a kids’ café and an outdoor terrace. A ticket covers 12 hours; after that it is ₩2,000 an hour.",
+  "3386242": "A 24-hour jjimjil spa in Dasan, Namyangju, with a book café, lounges and an active zone.",
+  "4091211": "A 2,000-pyeong jjimjilbang in central Jecheon, opened in January 2025: a snowing ice room, a hinoki room, a Himalayan salt room, capsule rooms and an outdoor herb bath that changes by the day. Seven minutes’ walk from the express bus terminal."
+ },
+ "override": {
+  "golden-sauna-myeongdong": "A 24-hour basement kiln sauna in Myeongdong with a bulgama about 30 years old, a mugwort steam room and sleeping rooms. Sources disagree on whether it is women-only: a Japanese guide (around 2023) describes a men’s bath and a jjimjil floor for women only. Check before you go."
+ }
+}
