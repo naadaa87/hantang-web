@@ -111,7 +111,7 @@ dl.k-def dt{font-weight:700}dl.k-def dd{margin:0;color:var(--mute)}
   var DEV={mobile:'휴대폰',desktop:'PC',tablet:'태블릿'};
   var REG={seoul:'서울',busan:'부산',incheon:'인천',daegu:'대구',daejeon:'대전',ulsan:'울산',sejong:'세종',gyeonggi:'경기',gangwon:'강원',chungbuk:'충북',chungnam:'충남',jeonbuk:'전북','jeonnam-gwangju':'전남·광주',gyeongbuk:'경북',gyeongnam:'경남',jeju:'제주','hot-springs':'온천 지도',private:'1인·프라이빗',near:'관광지 주변'};
   var SRCG={google:'검색',naver:'검색',bing:'검색',yahoo:'검색','daum·kakao':'검색',duckduckgo:'검색',yandex:'검색',baidu:'검색',chatgpt:'AI 검색',perplexity:'AI 검색','ai-other':'AI 검색',instagram:'SNS',facebook:'SNS',x:'SNS',youtube:'SNS',reddit:'SNS',tiktok:'SNS',line:'SNS',threads:'SNS',pinterest:'SNS',xiaohongshu:'SNS',weibo:'SNS',vk:'SNS',tripadvisor:'여행 사이트','(direct)':'직접 방문','(internal)':'사이트 안'};
-  var EVN={map:'지도 열기',route:'길찾기·택시 카드',save:'찜',review:'후기 창 열기',site:'시설 홈페이지',share:'공유',lang:'언어 바꾸기',out:'외부 링크',game:'게임으로 이동',partner:'업주 등록으로 이동',signup:'회원가입',login:'로그인',post:'게시글 작성',comment:'댓글 작성',review_post:'후기 작성',filter:'필터 사용'};
+  var EVN={map:'지도 열기',route:'길찾기·택시 카드',save:'찜',review:'후기 창 열기',site:'시설 홈페이지',share:'공유',lang:'언어 바꾸기',out:'외부 링크',game:'게임으로 이동',partner:'업주 등록으로 이동',signup:'회원가입',login:'로그인',post:'게시글 작성',comment:'댓글 작성',review_post:'후기 작성',filter:'필터 사용',video:'영상 재생',photo:'사진 크게 보기'};
   var rn, ln; try{rn=new Intl.DisplayNames(['ko'],{type:'region'}); ln=new Intl.DisplayNames(['ko'],{type:'language'});}catch(e){}
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
   function n(x){return (Math.round(x||0)).toLocaleString('ko-KR')}

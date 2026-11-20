@@ -1,0 +1,72 @@
+/* HANTANG 지점 사진·영상 — tools/media/build.py 가 페이지에 넣는 영역의 모양 */
+.mx{margin-top:44px}
+.mx-h{font-family:var(--serif);font-weight:700;font-size:24px;line-height:1.3;margin:0;padding:0;border:0;letter-spacing:-.01em;color:var(--ink)}
+.mx-sub{font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);margin:22px 0 0;padding:0;border:0}
+.mx-h + .mx-sub{margin-top:14px}
+:lang(ko) .mx-sub,:lang(ja) .mx-sub,:lang(zh) .mx-sub,:lang(th) .mx-sub{font-family:var(--sans);font-size:13.5px;font-weight:700;letter-spacing:.02em}
+.mx-note{font-size:12px;color:var(--mute);margin-top:10px;line-height:1.55;max-width:680px}
+
+/* 사진: 원본 비율 그대로(자르지 않음), 세로로 흐르는 단 */
+.mx-grid{columns:3;column-gap:10px;margin-top:12px}
+.mx-grid.mx-n1{columns:1;max-width:560px}
+.mx-grid.mx-n2{columns:2;max-width:760px}
+.mx-f{break-inside:avoid;margin:0 0 10px;background:var(--stone);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.mx-a{display:block;cursor:zoom-in}
+.mx-a img{display:block;width:100%;height:auto;background:var(--stone)}
+.mx-f figcaption{padding:7px 10px 8px;font-size:11.5px;line-height:1.45;color:var(--mute);background:#fff}
+.mx-f figcaption b{display:block;color:var(--ink);font-weight:600;font-size:12.5px;margin-bottom:2px}
+.mx-f figcaption a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:2px}
+.mx-f figcaption a:hover{color:var(--blue)}
+
+/* 영상: 누르기 전에는 미리보기 그림만 있고, 누르면 유튜브 플레이어로 바뀐다 */
+.mx-vids{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px;margin-top:12px}
+.mx-v{margin:0;min-width:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.mx-vp{position:relative;aspect-ratio:16/9;max-width:100%;background:#111}
+.mx-play{position:absolute;inset:0;width:100%;height:100%;padding:0;margin:0;border:0;background:none;cursor:pointer;display:block;font:inherit}
+.mx-play img{width:100%;height:100%;object-fit:cover;display:block}
+.mx-ic{position:absolute;left:50%;top:50%;width:62px;height:44px;margin:-22px 0 0 -31px;border-radius:12px;background:rgba(20,20,20,.82);transition:background .15s}
+.mx-ic::after{content:"";position:absolute;left:25px;top:13px;border-style:solid;border-width:9px 0 9px 15px;border-color:transparent transparent transparent #fff}
+.mx-play:hover .mx-ic,.mx-play:focus-visible .mx-ic{background:var(--red)}
+.mx-play:focus-visible{outline:3px solid var(--blue);outline-offset:-3px}
+.mx-len{position:absolute;right:8px;bottom:8px;background:rgba(0,0,0,.78);color:#fff;font-size:11.5px;font-weight:600;border-radius:5px;padding:2px 6px;font-family:var(--mono)}
+.mx-vp iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.mx-vp.mx-tall{aspect-ratio:9/16;max-height:min(72vh,560px)}
+.mx-v figcaption{padding:11px 13px 13px;display:flex;flex-direction:column;gap:5px;flex:1}
+.mx-vt{font-size:14px;font-weight:700;line-height:1.4;color:var(--ink);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere}
+.mx-vm{font-size:12px;color:var(--mute);overflow-wrap:anywhere}
+.mx-of{color:var(--blue);font-weight:700}
+.mx-v figcaption a{font-size:12.5px;font-weight:700;color:var(--blue);margin-top:auto;padding-top:3px;align-self:flex-start}
+
+/* 온천 카드 안의 사진 줄 */
+.mx-strip{display:flex;gap:6px;overflow-x:auto;margin-top:12px;padding-bottom:4px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+.mx-strip a{flex:0 0 auto;height:92px;border-radius:9px;overflow:hidden;background:var(--stone);scroll-snap-align:start;cursor:zoom-in}
+.mx-strip img{height:92px;width:auto;max-width:none;display:block}
+.mx-sc{font-size:10.5px;color:var(--mute);margin-top:4px;line-height:1.5}
+.mx-sc a{color:inherit;text-decoration:underline;text-decoration-color:var(--line)}
+
+.pimg[data-mx-hs] .pcap a,.pimg[data-mx-hero] .pcap a,.dimg[data-mx-hero] .pcap a{color:inherit}
+
+/* 크게 보기 */
+.mx-lb{border:0;padding:0;margin:0;background:transparent;width:100vw;height:100vh;max-width:100vw;max-height:100vh;color:#fff;overflow:hidden}
+.mx-lb::backdrop{background:rgba(12,12,12,.92)}
+.mx-lb-in{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:56px max(12px,env(safe-area-inset-right,0px)) 18px max(12px,env(safe-area-inset-left,0px))}
+.mx-lb-in img{max-width:100%;max-height:calc(100vh - 170px);width:auto;height:auto;object-fit:contain;border-radius:6px;background:#222}
+.mx-lb-c{margin-top:12px;text-align:center;font-size:13px;line-height:1.55;max-width:720px;color:#eee}
+.mx-lb-c b{display:block;font-weight:600;color:#fff;margin-bottom:2px}
+.mx-lb-c a{color:#cfe3ef;text-decoration:underline;text-underline-offset:2px}
+.mx-lb-n{font-family:var(--mono);font-size:11px;color:#aaa;margin-top:6px}
+.mx-lb button{position:fixed;background:rgba(255,255,255,.16);color:#fff;border:0;border-radius:99px;width:44px;height:44px;font-size:22px;line-height:1;cursor:pointer;font-family:inherit}
+.mx-lb button:hover,.mx-lb button:focus-visible{background:rgba(255,255,255,.3)}
+.mx-lb .mx-x{top:max(10px,env(safe-area-inset-top,0px));right:12px}
+.mx-lb .mx-pv{left:8px;top:50%;margin-top:-22px}
+.mx-lb .mx-nx{right:8px;top:50%;margin-top:-22px}
+.mx-lb[data-one] .mx-pv,.mx-lb[data-one] .mx-nx{display:none}
+
+@media (max-width:760px){
+  .mx-grid{columns:2;column-gap:8px}
+  .mx-grid.mx-n1{columns:1}
+  .mx-f{margin-bottom:8px;border-radius:10px}
+  .mx-h{font-size:22px}
+}
+@media (max-width:380px){.mx-vids{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.mx-ic{transition:none}}

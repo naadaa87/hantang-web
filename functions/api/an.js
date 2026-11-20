@@ -37,7 +37,7 @@ const AN_FOLDERS = { ja: 'ja', 'zh-hant': 'zh-Hant', 'zh-hans': 'zh-Hans', vi: '
 const AN_BOT = /bot|crawl|spider|slurp|headless|lighthouse|pagespeed|preview|facebookexternalhit|embedly|curl|wget|python|httpclient|phantom|puppeteer|playwright/i;
 // 지점 행동 → an_place 열
 const AN_PLACE_COL = { map: 'maps', route: 'route', save: 'saves', review: 'reviews', site: 'sites' };
-const AN_EVENTS = new Set(['map', 'route', 'save', 'review', 'site', 'share', 'lang', 'out', 'game', 'partner', 'signup', 'login', 'post', 'comment', 'review_post', 'filter']);
+const AN_EVENTS = new Set(['map', 'route', 'save', 'review', 'site', 'share', 'lang', 'out', 'game', 'partner', 'signup', 'login', 'post', 'comment', 'review_post', 'filter', 'video', 'photo']);
 
 const anStr = (s, n, re) => { s = String(s == null ? '' : s).trim().slice(0, n); return re && !re.test(s) ? '' : s; };
 const anInt = (x, lo, hi) => { x = Math.round(Number(x) || 0); return Math.max(lo, Math.min(hi, x)); };

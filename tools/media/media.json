@@ -1,0 +1,4210 @@
+{
+ "updated": "2026-11-20",
+ "note": "사진은 재사용이 허락된 것만(한국관광공사 공공누리 1·3유형, 위키미디어 공용). 영상은 유튜브 퍼가기(임베드)로만 보여 준다. 네이버·카카오·블로그·인스타그램 사진은 쓰지 않는다.",
+ "places": {
+  "a3-myeongdong": {
+   "videos": [
+    {
+     "id": "Ad1fPivVFUw",
+     "title": "Korean full body scrubs are next level!📍A3 Spa in Myeongdong #korea #koreabeauty #southkorea #seoul",
+     "channel": "LouLouexplores",
+     "sec": 109,
+     "pub": "2026-01-26",
+     "thumb": "hq720",
+     "vert": true,
+     "lang": "en"
+    }
+   ]
+  },
+  "aqua-palace": {
+   "videos": [
+    {
+     "id": "91ZJTo0KbIE",
+     "title": "호텔 아쿠아펠리스 광안리 최초 오션뷰 인피니티풀 오픈 !!!",
+     "channel": "호텔아쿠아펠리스",
+     "sec": 18,
+     "pub": "2021-08-11",
+     "thumb": "hq720",
+     "lang": "ko",
+     "official": true
+    }
+   ]
+  },
+  "aquafield-goyang": {
+   "videos": [
+    {
+     "id": "RC1f5PtDXpQ",
+     "title": "대형찜질방♨️아쿠아필드고양 제대로 즐기기! 총비용, 꿀팁",
+     "channel": "여행 다다",
+     "sec": 286,
+     "pub": "2024-11-11",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "BW2Ki5m99rs",
+     "title": "서울근교 찜질방 끝판왕ㅣ고양아쿠아필드",
+     "channel": "아구와구랜드aguwaguland",
+     "sec": 537,
+     "pub": "2026-10-09",
+     "thumb": "mqdefault",
+     "lang": "ko"
+    }
+   ]
+  },
+  "aquafield-hanam": {
+   "videos": [
+    {
+     "id": "rGY1BDERwF8",
+     "title": "Luxurious Sauna at Korean largest shopping mall nearby Seoul, Aquafield Hanam Jjimjil spa visit 🇰🇷",
+     "channel": "Solo Travel KR",
+     "sec": 756,
+     "pub": "2025-09-20",
+     "thumb": "hq720",
+     "lang": "en"
+    },
+    {
+     "id": "eI1hW1jPW-s",
+     "title": "🧖 요즘 찜질방 수준이 이렇습니다 | 하남 아쿠아필드 총정리ㅣ서울 근교 워터파크 찜질방 실내 데이트 나들이 추천",
+     "channel": "쑤트래 ssutrae",
+     "sec": 301,
+     "pub": "2026-05-02",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "Re-ifLociGM",
+     "title": "韩国最值得去的汗蒸房！Hanam Aquafield 美到舍不得离开！",
+     "channel": "假老公假老婆探世界 POSHMATES TRIP",
+     "sec": 655,
+     "pub": "2026-07-23",
+     "thumb": "hq720",
+     "lang": "zh"
+    }
+   ]
+  },
+  "bodeulatte-gijang-busan": {
+   "videos": [
+    {
+     "id": "yk9IZI6q--c",
+     "title": "부산 핫플 이색체험, 1인세신샵 '보드라떼'를 소개합니다.",
+     "channel": "보드라떼",
+     "sec": 73,
+     "pub": "2024-04-03",
+     "thumb": "hq720",
+     "lang": "ko",
+     "official": true
+    },
+    {
+     "id": "uTMMO14AZJg",
+     "title": "부산 힐링여행코스: 1인세신샵 '보드라떼'",
+     "channel": "보드라떼",
+     "sec": 92,
+     "pub": "2024-03-25",
+     "thumb": "hq720",
+     "lang": "ko",
+     "official": true
+    }
+   ]
+  },
+  "cheoksan-oncheon": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/75/2709375_image2_1.jpg",
+     "w": 699,
+     "h": 466,
+     "lic": "KOGL-3",
+     "cid": "2708691",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/75/2709375_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/31/4065131_image2_1.jpg",
+     "w": 940,
+     "h": 529,
+     "lic": "KOGL-3",
+     "cid": "2708691",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/31/4065131_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/32/4065132_image2_1.jpg",
+     "w": 940,
+     "h": 645,
+     "lic": "KOGL-3",
+     "cid": "2708691",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/32/4065132_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/27/4065127_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "2708691",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/27/4065127_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/34/4065134_image2_1.jpg",
+     "w": 940,
+     "h": 940,
+     "lic": "KOGL-3",
+     "cid": "2708691",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/34/4065134_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/25/4065125_image2_1.jpg",
+     "w": 470,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "2708691",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/25/4065125_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/28/4065128_image2_1.jpg",
+     "w": 542,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "2708691",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/28/4065128_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/30/4065130_image2_1.jpg",
+     "w": 940,
+     "h": 529,
+     "lic": "KOGL-3",
+     "cid": "2708691",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/30/4065130_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Sokcho%2C_Cheoksan_Foot_Bath_Park.jpg/960px-Sokcho%2C_Cheoksan_Foot_Bath_Park.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Sokcho%2C_Cheoksan_Foot_Bath_Park.jpg/500px-Sokcho%2C_Cheoksan_Foot_Bath_Park.jpg",
+     "w": 960,
+     "h": 640,
+     "lic": "CC BY-SA 4.0",
+     "page": "https://commons.wikimedia.org/wiki/File:Sokcho%2C_Cheoksan_Foot_Bath_Park.jpg",
+     "by": "Dr. Thomas Liptak",
+     "cap": {
+      "en": "Cheoksan Foot Bath Park, a free public foot bath in the same hot-spring district",
+      "ko": "같은 온천지구에 있는 무료 족욕장, 척산족욕공원",
+      "ja": "同じ温泉地区にある無料の足湯、Cheoksan 足湯公園（척산족욕공원）",
+      "zh-Hant": "同一溫泉區內的免費足湯：Cheoksan 足浴公園（척산족욕공원）",
+      "zh-Hans": "同一温泉区内的免费足浴场：Cheoksan 足浴公园（척산족욕공원）",
+      "vi": "Công viên ngâm chân Cheoksan, nơi ngâm chân miễn phí trong cùng khu suối nước nóng",
+      "th": "สวนแช่เท้า Cheoksan จุดแช่เท้าฟรีในย่านน้ำพุร้อนเดียวกัน",
+      "ru": "Парк ножных ванн Cheoksan — бесплатные ножные ванны в том же курортном районе"
+     }
+    }
+   ],
+   "videos": [
+    {
+     "id": "qMpRSRBvZ8A",
+     "title": "[척산온천휴양촌]속초에 이렇게 좋은 노천온천이 있었네요👍(내돈내산 후기)",
+     "channel": "동주필름 D Film",
+     "sec": 186,
+     "pub": "2023-02-22",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "FLiFuXsCgHs",
+     "title": "[속초여행] 물이 다른100% 천연 온천수! 척산온천과 숲속 황톳길 힐링 코스",
+     "channel": "최정민의 건강한 인생",
+     "sec": 281,
+     "pub": "2026-11-11",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "cheongdam-seshin-ulsan": {
+   "videos": [
+    {
+     "id": "7o6L_1lN_A8",
+     "title": "울산 프라이빗 1인세신샵, 청담",
+     "channel": "울산1인세신샵청담",
+     "sec": 28,
+     "pub": "2025-06-11",
+     "thumb": "hq720",
+     "lang": "ko",
+     "official": true
+    }
+   ]
+  },
+  "cimer-busan": {
+   "photos": [
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Paradise_Hotel_Busan.JPG/960px-Paradise_Hotel_Busan.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Paradise_Hotel_Busan.JPG/500px-Paradise_Hotel_Busan.JPG",
+     "w": 960,
+     "h": 720,
+     "lic": "Public domain",
+     "page": "https://commons.wikimedia.org/wiki/File:Paradise_Hotel_Busan.JPG",
+     "by": "Abasaa",
+     "cap": {
+      "en": "Paradise Hotel Busan, the hotel that houses Cimer",
+      "ko": "씨메르가 있는 파라다이스호텔 부산",
+      "ja": "Cimer があるパラダイスホテル釜山",
+      "zh-Hant": "Cimer 所在的 Paradise Hotel Busan",
+      "zh-Hans": "Cimer 所在的 Paradise Hotel Busan",
+      "vi": "Paradise Hotel Busan, khách sạn có khu Cimer",
+      "th": "Paradise Hotel Busan โรงแรมที่ตั้งของ Cimer",
+      "ru": "Отель Paradise Hotel Busan, где находится Cimer"
+     }
+    },
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Paradise_Hotel_Busan.jpg/960px-Paradise_Hotel_Busan.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Paradise_Hotel_Busan.jpg/500px-Paradise_Hotel_Busan.jpg",
+     "w": 960,
+     "h": 720,
+     "lic": "CC BY-SA 3.0",
+     "page": "https://commons.wikimedia.org/wiki/File:Paradise_Hotel_Busan.jpg",
+     "by": "Vanbasten 23",
+     "cap": {
+      "en": "Paradise Hotel Busan, the hotel that houses Cimer",
+      "ko": "씨메르가 있는 파라다이스호텔 부산",
+      "ja": "Cimer があるパラダイスホテル釜山",
+      "zh-Hant": "Cimer 所在的 Paradise Hotel Busan",
+      "zh-Hans": "Cimer 所在的 Paradise Hotel Busan",
+      "vi": "Paradise Hotel Busan, khách sạn có khu Cimer",
+      "th": "Paradise Hotel Busan โรงแรมที่ตั้งของ Cimer",
+      "ru": "Отель Paradise Hotel Busan, где находится Cimer"
+     }
+    }
+   ],
+   "hero": true,
+   "videos": [
+    {
+     "id": "Wq2mUyhln3g",
+     "title": "파라다이스호텔 부산 수영장 l 아웃도어 오션 스파 l 인피니티풀 l 씨메르",
+     "channel": "퇴근후 한시간",
+     "sec": 173,
+     "pub": "2023-04-12",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "r5P-rSKY7_0",
+     "title": "부산 해운대해수욕장 5성급 호텔!! 파라다이스 호텔 부산ㅣ조식ㅣ씨메르ㅣ수영장",
+     "channel": "부산언니야TV",
+     "sec": 279,
+     "pub": "2026-02-17",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "cimer-paradise-city": {
+   "videos": [
+    {
+     "id": "WZQ2Housk00",
+     "title": "Most LUXURIOUS Korean Spa located nearby Incheon Airport | Paradise City CIMER Jimjil Spa 🇰🇷",
+     "channel": "Solo Travel KR",
+     "sec": 1033,
+     "pub": "2024-01-08",
+     "thumb": "hq720",
+     "lang": "en"
+    },
+    {
+     "id": "d8QhgLK3VAw",
+     "title": "Is CIMER Korea's BEST Luxury Jjimjilbang? | Full Spa Review",
+     "channel": "The Adventures of Jono",
+     "sec": 426,
+     "pub": "2026-11-12",
+     "thumb": "hq720",
+     "lang": "en"
+    },
+    {
+     "id": "6FH8jWW-lXc",
+     "title": "추운 겨울에 가기 좋은 인천 파라다이스시티 씨메르 찜질방 & 수영장 아쿠아스파 100배 즐기기!!!",
+     "channel": "카페에 반하다",
+     "sec": 379,
+     "pub": "2026-01-22",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "club-d-oasis": {
+   "photos": [
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Haeundae_Beach_and_Haeundae_LCT_The_Sharp.jpg/960px-Haeundae_Beach_and_Haeundae_LCT_The_Sharp.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Haeundae_Beach_and_Haeundae_LCT_The_Sharp.jpg/500px-Haeundae_Beach_and_Haeundae_LCT_The_Sharp.jpg",
+     "w": 960,
+     "h": 720,
+     "lic": "CC BY 2.0",
+     "page": "https://commons.wikimedia.org/wiki/File:Haeundae_Beach_and_Haeundae_LCT_The_Sharp.jpg",
+     "by": "A Fun Couple",
+     "cap": {
+      "en": "LCT tower on Haeundae Beach; Club D Oasis is on floors 3–6",
+      "ko": "해운대 해변의 엘시티. 클럽디 오아시스는 3~6층에 있다",
+      "ja": "海雲台ビーチの LCT。Club D Oasis は3〜6階",
+      "zh-Hant": "海雲台海灘旁的 LCT 大樓，Club D Oasis 位於 3～6 樓",
+      "zh-Hans": "海云台海滩旁的 LCT 大楼，Club D Oasis 位于 3～6 层",
+      "vi": "Tòa LCT bên bãi biển Haeundae; Club D Oasis nằm ở tầng 3–6",
+      "th": "อาคาร LCT ริมหาดแฮอุนแด Club D Oasis อยู่ชั้น 3–6",
+      "ru": "Башня LCT на пляже Хэундэ; Club D Oasis занимает 3–6 этажи"
+     }
+    },
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Haeundae_Beach_May_2024.jpg/960px-Haeundae_Beach_May_2024.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Haeundae_Beach_May_2024.jpg/500px-Haeundae_Beach_May_2024.jpg",
+     "w": 960,
+     "h": 611,
+     "lic": "CC BY-SA 4.0",
+     "page": "https://commons.wikimedia.org/wiki/File:Haeundae_Beach_May_2024.jpg",
+     "by": "Brit in Seoul",
+     "cap": {
+      "en": "LCT tower on Haeundae Beach; Club D Oasis is on floors 3–6",
+      "ko": "해운대 해변의 엘시티. 클럽디 오아시스는 3~6층에 있다",
+      "ja": "海雲台ビーチの LCT。Club D Oasis は3〜6階",
+      "zh-Hant": "海雲台海灘旁的 LCT 大樓，Club D Oasis 位於 3～6 樓",
+      "zh-Hans": "海云台海滩旁的 LCT 大楼，Club D Oasis 位于 3～6 层",
+      "vi": "Tòa LCT bên bãi biển Haeundae; Club D Oasis nằm ở tầng 3–6",
+      "th": "อาคาร LCT ริมหาดแฮอุนแด Club D Oasis อยู่ชั้น 3–6",
+      "ru": "Башня LCT на пляже Хэундэ; Club D Oasis занимает 3–6 этажи"
+     }
+    }
+   ],
+   "hero": true,
+   "videos": [
+    {
+     "id": "uqUhIzdNmeQ",
+     "title": "부산에 엄청난 곳이 생겼네요 | 클럽 디 오아시스",
+     "channel": "또 떠나는 남자 ddoddunam",
+     "sec": 462,
+     "pub": "2023-07-13",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "ZgmsC29WqR8",
+     "title": "준비물부터 꿀팁까지 한 편으로 정리하는 클럽디오아시스 200% 즐기기",
+     "channel": "김희원 KIM HEEWON",
+     "sec": 842,
+     "pub": "2025-08-04",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "bNkcBEAtNao",
+     "title": "【2026 Club D Oasis攻略】Visit Busan Pass免費玩汗蒸幕！海雲台水上樂園完整開箱",
+     "channel": "Cher雪兒",
+     "sec": 922,
+     "pub": "2026-07-26",
+     "thumb": "hq720",
+     "lang": "zh"
+    }
+   ]
+  },
+  "club-k-seolleung": {
+   "videos": [
+    {
+     "id": "l-nllvs2-Lc",
+     "title": "강남구 24시 찜질방, 사우나, 마사지 선릉역 근처 클럽케이서울 미리보기",
+     "channel": "등산하는 봉구",
+     "sec": 182,
+     "pub": "2024-02-11",
+     "thumb": "mqdefault",
+     "lang": "ko"
+    },
+    {
+     "id": "--psIhq8ZR4",
+     "title": "강남에서 13,600원으로 하루 숙박 온천 노트북작업 카페 다된다 공항 가기전 잠시 여기 어때? 클럽케이 서울 서울 가볼만한곳",
+     "channel": "뚜벅뚜벅 서부남",
+     "sec": 192,
+     "pub": "2025-05-28",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "daily-and-spa-gwanak": {
+   "videos": [
+    {
+     "id": "fDXk8wqcNmc",
+     "title": "세신샵 데일리앤스파 서울대입구역",
+     "channel": "목욕관리사",
+     "sec": 44,
+     "pub": "2026-10-03",
+     "thumb": "hq720",
+     "vert": true,
+     "lang": "ko"
+    },
+    {
+     "id": "KZVA4_RLoEI",
+     "title": "데일리앤스파 세신샵 서울대입구역 5번출구 현대자동차 뒤",
+     "channel": "목욕관리사",
+     "sec": 59,
+     "pub": "2024-05-09",
+     "thumb": "hq720",
+     "vert": true,
+     "lang": "ko"
+    }
+   ]
+  },
+  "danopungjeong-hanok": {
+   "photos": [
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Hyewon-Danopungjeong.jpg/960px-Hyewon-Danopungjeong.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Hyewon-Danopungjeong.jpg/500px-Hyewon-Danopungjeong.jpg",
+     "w": 960,
+     "h": 764,
+     "lic": "Public domain",
+     "page": "https://commons.wikimedia.org/wiki/File:Hyewon-Danopungjeong.jpg",
+     "by": "Shin Yun-bok (신윤복)",
+     "cap": {
+      "en": "Dano Pungjeong (“Scenery on Dano Day”), the Shin Yun-bok painting whose name the shop shares",
+      "ko": "가게 이름과 같은 신윤복의 그림 〈단오풍정〉",
+      "ja": "店名と同じ名前の申潤福（シン・ユンボク）の風俗画「端午風情」",
+      "zh-Hant": "與店名同名的申潤福風俗畫〈端午風情〉",
+      "zh-Hans": "与店名同名的申润福风俗画《端午风情》",
+      "vi": "“Dano Pungjeong” (Phong cảnh ngày Đoan Ngọ), bức tranh của Shin Yun-bok trùng tên với tiệm",
+      "th": "“Dano Pungjeong” (ทิวทัศน์วันทาโน) ภาพวาดของชิน ยุนบก ที่มีชื่อเดียวกับร้าน",
+      "ru": "«Тано пхунджон» («Праздник Тано») — картина Син Юнбока, имя которой носит салон"
+     }
+    }
+   ],
+   "videos": [
+    {
+     "id": "19LkCAT69y0",
+     "title": "#35【50代姉妹の韓国美容旅 Day1】まずはDanpoong Spa の個室アカスリ整えてからの初日スタート、明洞で乾杯🍻！",
+     "channel": "たれまゆchannel〜ゆるっと50代夫婦",
+     "sec": 1443,
+     "pub": "2025-11-29",
+     "thumb": "hq720",
+     "lang": "ja"
+    }
+   ]
+  },
+  "danopungjeong-jongno": {
+   "photos": [
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Hyewon-Danopungjeong.jpg/960px-Hyewon-Danopungjeong.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Hyewon-Danopungjeong.jpg/500px-Hyewon-Danopungjeong.jpg",
+     "w": 960,
+     "h": 764,
+     "lic": "Public domain",
+     "page": "https://commons.wikimedia.org/wiki/File:Hyewon-Danopungjeong.jpg",
+     "by": "Shin Yun-bok (신윤복)",
+     "cap": {
+      "en": "Dano Pungjeong (“Scenery on Dano Day”), the Shin Yun-bok painting whose name the shop shares",
+      "ko": "가게 이름과 같은 신윤복의 그림 〈단오풍정〉",
+      "ja": "店名と同じ名前の申潤福（シン・ユンボク）の風俗画「端午風情」",
+      "zh-Hant": "與店名同名的申潤福風俗畫〈端午風情〉",
+      "zh-Hans": "与店名同名的申润福风俗画《端午风情》",
+      "vi": "“Dano Pungjeong” (Phong cảnh ngày Đoan Ngọ), bức tranh của Shin Yun-bok trùng tên với tiệm",
+      "th": "“Dano Pungjeong” (ทิวทัศน์วันทาโน) ภาพวาดของชิน ยุนบก ที่มีชื่อเดียวกับร้าน",
+      "ru": "«Тано пхунджон» («Праздник Тано») — картина Син Юнбока, имя которой носит салон"
+     }
+    }
+   ],
+   "videos": [
+    {
+     "id": "19LkCAT69y0",
+     "title": "#35【50代姉妹の韓国美容旅 Day1】まずはDanpoong Spa の個室アカスリ整えてからの初日スタート、明洞で乾杯🍻！",
+     "channel": "たれまゆchannel〜ゆるっと50代夫婦",
+     "sec": 1443,
+     "pub": "2025-11-29",
+     "thumb": "hq720",
+     "lang": "ja"
+    }
+   ]
+  },
+  "danopungjeong-main-anam": {
+   "photos": [
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Hyewon-Danopungjeong.jpg/960px-Hyewon-Danopungjeong.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Hyewon-Danopungjeong.jpg/500px-Hyewon-Danopungjeong.jpg",
+     "w": 960,
+     "h": 764,
+     "lic": "Public domain",
+     "page": "https://commons.wikimedia.org/wiki/File:Hyewon-Danopungjeong.jpg",
+     "by": "Shin Yun-bok (신윤복)",
+     "cap": {
+      "en": "Dano Pungjeong (“Scenery on Dano Day”), the Shin Yun-bok painting whose name the shop shares",
+      "ko": "가게 이름과 같은 신윤복의 그림 〈단오풍정〉",
+      "ja": "店名と同じ名前の申潤福（シン・ユンボク）の風俗画「端午風情」",
+      "zh-Hant": "與店名同名的申潤福風俗畫〈端午風情〉",
+      "zh-Hans": "与店名同名的申润福风俗画《端午风情》",
+      "vi": "“Dano Pungjeong” (Phong cảnh ngày Đoan Ngọ), bức tranh của Shin Yun-bok trùng tên với tiệm",
+      "th": "“Dano Pungjeong” (ทิวทัศน์วันทาโน) ภาพวาดของชิน ยุนบก ที่มีชื่อเดียวกับร้าน",
+      "ru": "«Тано пхунджон» («Праздник Тано») — картина Син Юнбока, имя которой носит салон"
+     }
+    }
+   ],
+   "videos": [
+    {
+     "id": "19LkCAT69y0",
+     "title": "#35【50代姉妹の韓国美容旅 Day1】まずはDanpoong Spa の個室アカスリ整えてからの初日スタート、明洞で乾杯🍻！",
+     "channel": "たれまゆchannel〜ゆるっと50代夫婦",
+     "sec": 1443,
+     "pub": "2025-11-29",
+     "thumb": "hq720",
+     "lang": "ja"
+    }
+   ]
+  },
+  "deokgu-oncheon": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/39/3503639_image2_1.jpg",
+     "w": 940,
+     "h": 529,
+     "lic": "KOGL-3",
+     "cid": "142962",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/39/3503639_image3_1.jpg",
+     "tw": 300,
+     "th": 169
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/03/3503803_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "142962",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/03/3503803_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/04/3503804_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "142962",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/04/3503804_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/05/3503805_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "142962",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/05/3503805_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/06/3503806_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "142962",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/06/3503806_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/07/3503807_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "142962",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/07/3503807_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/13/3503813_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "142962",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/13/3503813_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/40/3503640_image2_1.jpg",
+     "w": 940,
+     "h": 645,
+     "lic": "KOGL-3",
+     "cid": "142962",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/40/3503640_image3_1.jpg",
+     "tw": 300,
+     "th": 206
+    },
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Deok-gu_Hot_Spring.jpg/960px-Deok-gu_Hot_Spring.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Deok-gu_Hot_Spring.jpg/500px-Deok-gu_Hot_Spring.jpg",
+     "w": 960,
+     "h": 668,
+     "lic": "KOGL Type 1",
+     "page": "https://commons.wikimedia.org/wiki/File:Deok-gu_Hot_Spring.jpg",
+     "by": "울진군청 (Uljin County)",
+     "cap": {
+      "en": "Deokgu hot spring in 1988 (Uljin County archive)",
+      "ko": "1988년의 덕구온천 (울진군 기록 사진)",
+      "ja": "1988年の Deokgu 温泉（蔚珍郡の記録写真）",
+      "zh-Hant": "1988 年的 Deokgu 溫泉（蔚珍郡檔案照片）",
+      "zh-Hans": "1988 年的 Deokgu 温泉（蔚珍郡档案照片）",
+      "vi": "Suối nước nóng Deokgu năm 1988 (ảnh lưu trữ của huyện Uljin)",
+      "th": "น้ำพุร้อน Deokgu ในปี 1988 (ภาพจดหมายเหตุของอำเภออุลจิน)",
+      "ru": "Горячий источник Deokgu в 1988 году (архив уезда Ульчин)"
+     }
+    }
+   ],
+   "videos": [
+    {
+     "id": "BGh9lfI6pik",
+     "title": "여행과 온천을 위한 쉼의 시작 | 덕구온천콘도 시설",
+     "channel": "덕구온천호텔&콘도",
+     "sec": 83,
+     "pub": "2025-09-26",
+     "thumb": "hq720",
+     "lang": "ko",
+     "official": true
+    },
+    {
+     "id": "GbLLd3k3jSI",
+     "title": "덕구온천 알고가면 개꿀, 모르고 가면 호갱?",
+     "channel": "돈캣 PL․EX",
+     "sec": 772,
+     "pub": "2026-02-06",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "finland-forest-gwangju": {
+   "videos": [
+    {
+     "id": "SmqsBOhF6V8",
+     "title": "경기도 광주 가볼만한곳 핀란드숲속 경기광주점에서 아내와 함께 서울근교 데이트 핀란드 사우나 하고 왔어요.",
+     "channel": "DK 잠비 (싼타머구리)",
+     "sec": 47,
+     "pub": "2024-02-28",
+     "thumb": "hq720",
+     "vert": true,
+     "lang": "ko"
+    },
+    {
+     "id": "k7MhsamLl74",
+     "title": "경기광주 힐링 스팟! 핀란드 숲속 카페",
+     "channel": "소상공인 컨설턴트 (komaloveinjung)",
+     "sec": 43,
+     "pub": "2024-05-23",
+     "thumb": "mqdefault",
+     "vert": true,
+     "lang": "ko"
+    }
+   ]
+  },
+  "gwangan-haesu-world": {
+   "videos": [
+    {
+     "id": "NYUGQJiW6Uc",
+     "title": "부산 광안대교 뷰 1등 헬스장! 만 원대로 운동+사우나 한 번에? 광안해수월드 일일권 뽕 뽑고 온 후기 🌉♨️",
+     "channel": "쮸핏(JJUFIT)",
+     "sec": 355,
+     "pub": "2026-04-22",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "-MtK4ndzrdA",
+     "title": "광안해수월드 홍보영상",
+     "channel": "광안해수월드",
+     "sec": 110,
+     "pub": "2020-06-15",
+     "thumb": "hq720",
+     "lang": "ko",
+     "official": true
+    }
+   ]
+  },
+  "haeundae-oncheon-center": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/17/3026517_image2_1.JPG",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "126108",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/17/3026517_image3_1.JPG",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/18/3026518_image2_1.JPG",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "126108",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/18/3026518_image3_1.JPG",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/19/3026519_image2_1.JPG",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "126108",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/19/3026519_image3_1.JPG",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/20/3026520_image2_1.JPG",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "126108",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/20/3026520_image3_1.JPG",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/21/3026521_image2_1.JPG",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "126108",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/21/3026521_image3_1.JPG",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/22/3026522_image2_1.JPG",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "126108",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/22/3026522_image3_1.JPG",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/23/3026523_image2_1.JPG",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "126108",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/23/3026523_image3_1.JPG",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/24/3026524_image2_1.JPG",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "126108",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/24/3026524_image3_1.JPG",
+     "tw": 300,
+     "th": 200
+    }
+   ],
+   "videos": [
+    {
+     "id": "X_l60sH_qME",
+     "title": "#해운대온천센터#thanks#자연회복 #해운대여행",
+     "channel": "김종호의 이지피지컬",
+     "sec": 15,
+     "pub": "2025-06-10",
+     "thumb": "hq720",
+     "vert": true,
+     "lang": "ko"
+    },
+    {
+     "id": "2-tOxJyQVsk",
+     "title": "부산 해운대 온천 센터",
+     "channel": "연꽃언니",
+     "sec": 14,
+     "pub": "2023-04-21",
+     "thumb": "hq720",
+     "vert": true,
+     "lang": "ko"
+    }
+   ]
+  },
+  "halmae-tang": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/48/3083448_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "3083459",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/48/3083448_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/49/3083449_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "3083459",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/49/3083449_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/50/3083450_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "3083459",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/50/3083450_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/51/3083451_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "3083459",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/51/3083451_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/52/3083452_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "3083459",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/52/3083452_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/53/3083453_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "3083459",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/53/3083453_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/54/3083454_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "3083459",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/54/3083454_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/55/3083455_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "3083459",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/55/3083455_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ],
+   "videos": [
+    {
+     "id": "nZf1qE5E7Tw",
+     "title": "외할매랑 할매탕가기-3대모녀 부산 가족탕 추천♨️🛀",
+     "channel": "미야로그 miyalog",
+     "sec": 202,
+     "pub": "2025-04-16",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "0NF6A672gqo",
+     "title": "커플 가족탕 온천 체험기(해운대 할매탕)",
+     "channel": "보로보봉쓰잡화점",
+     "sec": 193,
+     "pub": "2019-06-01",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "hana-mud": {
+   "videos": [
+    {
+     "id": "fhOQiTezSk8",
+     "title": "明洞花マッド汗蒸幕 🌸 Myeongdong Hana Mud Sauna 🌸 明洞花MUD汗蒸幕 มยองดง ฮานา มัด ซาวน่า🌸 Spa Hana Mud Myeongdong",
+     "channel": "Myeongdong Hanamud Sauna",
+     "sec": 45,
+     "pub": "2026-06-18",
+     "thumb": "hq720",
+     "lang": "ja",
+     "official": true
+    },
+    {
+     "id": "EmXBL1lH2QI",
+     "title": "🌸 明洞の隠れ家、貴女だけの美肌再生プロムナード ✨🌸「明洞花マッド汗蒸幕」 The Secret Oasis: Your Premium K-Wellness Sanctuary ✨",
+     "channel": "Myeongdong Hanamud Sauna",
+     "sec": 40,
+     "pub": "2026-03-31",
+     "thumb": "hq720",
+     "lang": "ja",
+     "official": true
+    }
+   ]
+  },
+  "hera-spa-esthe-myeongdong": {
+   "photos": [
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/20150302%EC%84%B8%EC%A2%85%ED%98%B8%ED%85%94_%EC%95%BC%EA%B2%BD13.jpg/960px-20150302%EC%84%B8%EC%A2%85%ED%98%B8%ED%85%94_%EC%95%BC%EA%B2%BD13.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/20150302%EC%84%B8%EC%A2%85%ED%98%B8%ED%85%94_%EC%95%BC%EA%B2%BD13.jpg/500px-20150302%EC%84%B8%EC%A2%85%ED%98%B8%ED%85%94_%EC%95%BC%EA%B2%BD13.jpg",
+     "w": 960,
+     "h": 640,
+     "lic": "CC BY-SA 4.0",
+     "page": "https://commons.wikimedia.org/wiki/File:20150302%EC%84%B8%EC%A2%85%ED%98%B8%ED%85%94_%EC%95%BC%EA%B2%BD13.jpg",
+     "by": "최광모",
+     "cap": {
+      "en": "Sejong Hotel in Myeong-dong, where the spa is located (2015)",
+      "ko": "스파가 있는 명동 세종호텔 (2015년)",
+      "ja": "スパが入る明洞の世宗ホテル（2015年）",
+      "zh-Hant": "Spa 所在的明洞世宗飯店 Sejong Hotel（2015 年）",
+      "zh-Hans": "Spa 所在的明洞世宗酒店 Sejong Hotel（2015 年）",
+      "vi": "Khách sạn Sejong ở Myeong-dong, nơi có spa (2015)",
+      "th": "Sejong Hotel ย่านมยองดง ที่ตั้งของสปา (ปี 2015)",
+      "ru": "Отель Sejong в Мёндоне, где находится спа (2015)"
+     }
+    }
+   ],
+   "videos": [
+    {
+     "id": "eRFV_smdx90",
+     "title": "【50代ひとり韓国】おとな空間が最高でした！アカスリとよもぎ蒸しが同時に叶うHERA SPA エステ 日本語OKで安心！",
+     "channel": "まーこ50代 どう生きてく?",
+     "sec": 591,
+     "pub": "2026-11-01",
+     "thumb": "hq720",
+     "lang": "ja"
+    }
+   ]
+  },
+  "hill-spa-dalmaji": {
+   "videos": [
+    {
+     "id": "0R0qsSkvgnE",
+     "title": "A Day At Jjimjilbang, Hill Spa Busan, South Korea || 힐스파찜질방 부산 11.21.2024",
+     "channel": "geelaw",
+     "sec": 317,
+     "pub": "2024-11-21",
+     "thumb": "hq720",
+     "lang": "en"
+    },
+    {
+     "id": "dgIyM3x0V2s",
+     "title": "우둘산 Vlog ㅣ 해운대 달맞이 힐스파에서 그냥 놀고먹기 ㅣ",
+     "channel": "우둘산 [우리 둘이 산다]",
+     "sec": 348,
+     "pub": "2024-03-03",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "hongdae-bulgama": {
+   "videos": [
+    {
+     "id": "8JmRlCbJ7PQ",
+     "title": "홍대에서 밤새기 가능? 24시 불가마 사우나 리뷰/홍대사우나/홍대찜질방",
+     "channel": "굳세어라 세라",
+     "sec": 24,
+     "pub": "2026-01-06",
+     "thumb": "hq720",
+     "vert": true,
+     "lang": "ko"
+    },
+    {
+     "id": "eSQYXsk8e1Y",
+     "title": "홍대24시 불가마 사우나 찜질방",
+     "channel": "행복 라이프",
+     "sec": 54,
+     "pub": "2026-09-14",
+     "thumb": "hq720",
+     "vert": true,
+     "lang": "ko"
+    }
+   ]
+  },
+  "hotel-nongshim-busan": {
+   "photos": [
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Hotel_Nongshim.jpg/960px-Hotel_Nongshim.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Hotel_Nongshim.jpg/500px-Hotel_Nongshim.jpg",
+     "w": 960,
+     "h": 720,
+     "lic": "Public domain",
+     "page": "https://commons.wikimedia.org/wiki/File:Hotel_Nongshim.jpg",
+     "by": "Abasaa"
+    },
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Hurshimchung_01.JPG/960px-Hurshimchung_01.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Hurshimchung_01.JPG/500px-Hurshimchung_01.JPG",
+     "w": 960,
+     "h": 720,
+     "lic": "Public domain",
+     "page": "https://commons.wikimedia.org/wiki/File:Hurshimchung_01.JPG",
+     "by": "Abasaa",
+     "cap": {
+      "en": "Hurshimchung, the hot-spring bathhouse next to the hotel",
+      "ko": "호텔 옆 온천 목욕탕 허심청",
+      "ja": "ホテルの隣にある温泉施設 Hurshimchung（허심청）",
+      "zh-Hant": "飯店旁的溫泉浴場 Hurshimchung（허심청）",
+      "zh-Hans": "酒店旁的温泉浴场 Hurshimchung（허심청）",
+      "vi": "Hurshimchung, nhà tắm suối nước nóng ngay cạnh khách sạn",
+      "th": "Hurshimchung โรงอาบน้ำพุร้อนข้างโรงแรม",
+      "ru": "Hurshimchung — купальня на горячих источниках рядом с отелем"
+     }
+    }
+   ],
+   "hero": true,
+   "videos": [
+    {
+     "id": "-PPtotTAuDo",
+     "title": "국내 최대 온천이 있는 농심호텔은 어떻게 생겼을까?",
+     "channel": "긍정맨",
+     "sec": 1195,
+     "pub": "2025-08-10",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "Dg351RqsUtg",
+     "title": "나혼자 농심호텔 1박2일ㅣ#허심청 #농심호텔 #부산호텔 #부산호텔혼자 #부산1박2일",
+     "channel": "수효텔",
+     "sec": 378,
+     "pub": "2026-11-03",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "hurshimchung": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/37/4090237_image2_1.jpg",
+     "w": 940,
+     "h": 675,
+     "lic": "KOGL-3",
+     "cid": "127419",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/37/4090237_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/50/4090250_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "127419",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/50/4090250_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/51/4090251_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "127419",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/51/4090251_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/58/4090258_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "127419",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/58/4090258_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/59/4090259_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "127419",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/59/4090259_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/56/4090256_image2_1.JPG",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "127419",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/56/4090256_image3_1.JPG",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/46/4090246_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "127419",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/46/4090246_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/45/4090245_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "127419",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/45/4090245_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Hurshimchung_01.JPG/960px-Hurshimchung_01.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Hurshimchung_01.JPG/500px-Hurshimchung_01.JPG",
+     "w": 960,
+     "h": 720,
+     "lic": "Public domain",
+     "page": "https://commons.wikimedia.org/wiki/File:Hurshimchung_01.JPG",
+     "by": "Abasaa"
+    },
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Hurshimchung_welcome_sign.JPG/960px-Hurshimchung_welcome_sign.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Hurshimchung_welcome_sign.JPG/500px-Hurshimchung_welcome_sign.JPG",
+     "w": 960,
+     "h": 720,
+     "lic": "Public domain",
+     "page": "https://commons.wikimedia.org/wiki/File:Hurshimchung_welcome_sign.JPG",
+     "by": "Abasaa",
+     "cap": {
+      "en": "Welcome sign",
+      "ko": "환영 안내판",
+      "ja": "歓迎の看板",
+      "zh-Hant": "歡迎招牌",
+      "zh-Hans": "欢迎招牌",
+      "vi": "Biển chào mừng",
+      "th": "ป้ายต้อนรับ",
+      "ru": "Приветственная вывеска"
+     }
+    }
+   ],
+   "videos": [
+    {
+     "id": "DynyoWHlqys",
+     "title": "국내 최대의 대형 목욕탕 '허심청 🚿' | 농심",
+     "channel": "농심 nongshim",
+     "sec": 476,
+     "pub": "2023-12-29",
+     "thumb": "hq720",
+     "lang": "ko",
+     "official": true
+    },
+    {
+     "id": "xZExceB3EcA",
+     "title": "[건축시선] 온천 - 허심청 South Korean Hot Springs-Heo Simcheong",
+     "channel": "예정엔지니어링건축사사무소",
+     "sec": 346,
+     "pub": "2019-12-27",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "eBj-N2baLQU",
+     "title": "[탄뎀] 허심청 찜질방 (Hurshimchung Spa)⛲️ จิมจิลบังเกาหลี 🇰🇷 - Power Puff Girls🧚🏻‍♀️ [부산외국어대학교 BUFS]",
+     "channel": "Annabelleroom",
+     "sec": 180,
+     "pub": "2022-10-23",
+     "thumb": "hq720",
+     "lang": "th"
+    }
+   ]
+  },
+  "hwanghak-golden-spa": {
+   "videos": [
+    {
+     "id": "Ljd_YtmQceA",
+     "title": "황학동 황금스파 가마솥황토찜질방~~",
+     "channel": "임Daily 아무때나방송",
+     "sec": 30,
+     "pub": "2024-09-01",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "jeju-onshim": {
+   "videos": [
+    {
+     "id": "DDHCtC7dIm0",
+     "title": "비오는 날 제주에서 뭐하지? 온쉼부터 이끼숲소길, 양푼속닭한마리까지",
+     "channel": "물맛난쥰",
+     "sec": 1068,
+     "pub": "2026-11-17",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "jjimjil-bangatgan-gapyeong": {
+   "videos": [
+    {
+     "id": "9Pnpr45cEA4",
+     "title": "[특별한 찜질방] 가평 찜질방앗간",
+     "channel": "거북이부부의 여행일기",
+     "sec": 142,
+     "pub": "2024-01-29",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "miNNg864gK0",
+     "title": "\"서울살이 포기했어요\" 산골짜기에 귀촌해 찜질방으로 대박난 사장님의 하루 l 찜질방앗간 통합본",
+     "channel": "일터뷰",
+     "sec": 2319,
+     "pub": "2024-12-16",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "mokgan-myeongji-busan": {
+   "videos": [
+    {
+     "id": "ZA6V6zE5erk",
+     "title": "부산에서 유일한 곳! #내돈내산 #1인세신샵 #혼목 #여성전용 #프라이빗 대중탕이 불편하다면 여기 👉#목간 #친정엄마 #시엄마 #나를위한 #힐링 추천해요! #명지국제신도시",
+     "channel": "THE예쁜하영티비",
+     "sec": 11,
+     "pub": "2023-10-11",
+     "thumb": "hq720",
+     "vert": true,
+     "lang": "ko"
+    },
+    {
+     "id": "Q24Jl_nhpfY",
+     "title": "#명지1인세신샵 #명지목간 #럭셔리세신샵 #명지세신샵",
+     "channel": "러블리써니",
+     "sec": 60,
+     "pub": "2023-10-11",
+     "thumb": "mqdefault",
+     "vert": true,
+     "lang": "ko"
+    }
+   ]
+  },
+  "morak-gunsan": {
+   "videos": [
+    {
+     "id": "l-ovDvoh3Fw",
+     "title": "군산 근교 당일치기 | 걷고 먹고 씻고 풀코스 | 군산 프라이빗 목욕탕 모락 | 마이산탑사 | 베테랑칼국수 | 40대 브이로그",
+     "channel": "집오리",
+     "sec": 299,
+     "pub": "2026-02-07",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "my-breath-sauna-cheonan": {
+   "videos": [
+    {
+     "id": "rYdHarDn4XU",
+     "title": "살맛나는 프라이빗 사우나투어 | 마이브레스 사우나 | Private Sauna",
+     "channel": "오늘도 살맛나",
+     "sec": 48,
+     "pub": "2026-10-01",
+     "thumb": "hq720",
+     "vert": true,
+     "lang": "ko"
+    }
+   ]
+  },
+  "myeonyeok-gongbang-cheongdam": {
+   "videos": [
+    {
+     "id": "c9MXDYW-c9o",
+     "title": "[면역공방] 프리미엄 웰니스 센터 '면역공방 청담점'을 소개합니다",
+     "channel": "면역공방 (MYGB)",
+     "sec": 151,
+     "pub": "2023-08-09",
+     "thumb": "hq720",
+     "lang": "ko",
+     "official": true
+    },
+    {
+     "id": "6_xq065MH3E",
+     "title": "면역공방 청담점",
+     "channel": "애니의 일기",
+     "sec": 241,
+     "pub": "2023-01-04",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "nature-forest-space-incheon": {
+   "videos": [
+    {
+     "id": "XrGHqZ6Rk1A",
+     "title": "카페가서 사우나를 즐길수가 있는곳? (네이처포레스트 영종도) #인천맛집 #인천",
+     "channel": "인천맛집_경기_서울 리뷰어",
+     "sec": 23,
+     "pub": "2024-11-22",
+     "thumb": "hq720",
+     "vert": true,
+     "lang": "ko"
+    },
+    {
+     "id": "3MfKtlEXV-M",
+     "title": "영종도 24시간카페 사우나카페 네이처 포레스트 라운지카페",
+     "channel": "딤채",
+     "sec": 24,
+     "pub": "2024-12-21",
+     "thumb": "hq720",
+     "vert": true,
+     "lang": "ko"
+    }
+   ]
+  },
+  "ona-myeongdong": {
+   "videos": [
+    {
+     "id": "AADznSyDHjo",
+     "title": "the summer I turned pretty in Korea episode 5 body scrub Ona spa #bodyscrub #thesummeriturnedpretty",
+     "channel": "takeonefortheroad",
+     "sec": 49,
+     "pub": "2026-10-09",
+     "thumb": "hq720",
+     "vert": true,
+     "lang": "en"
+    }
+   ]
+  },
+  "onyeon-private-villa-deoksan": {
+   "videos": [
+    {
+     "id": "BYNBeoBUyKg",
+     "title": "[CC] 예산(Yesan), 겨울에 쉬기 가장 좋은 이유 | 온연 프라이빗 노천온천 스테이",
+     "channel": "도시리뷰어 / city reviewer",
+     "sec": 542,
+     "pub": "2025-12-06",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "NCyek10Bels",
+     "title": "230108-09 예산 온연프라이빗빌라",
+     "channel": "달봉채널",
+     "sec": 582,
+     "pub": "2023-01-11",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "park-habio": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/43/3095643_image2_1.jpg",
+     "w": 627,
+     "h": 940,
+     "lic": "KOGL-1",
+     "cid": "2606150",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/43/3095643_image3_1.jpg",
+     "tw": 100,
+     "th": 150
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/02/3096302_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "2606150",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/02/3096302_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/65/3095365_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "2606150",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/65/3095365_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/60/3095760_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "2606150",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/60/3095760_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/56/3096556_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "2606150",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/56/3096556_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/64/3095564_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "2606150",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/64/3095564_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ],
+   "videos": [
+    {
+     "id": "lJMoJvfeeBA",
+     "title": "송파 파크하비오 워터킹덤워터파크 찜질스파 리뷰 / 송파 최대규모 실내 워터파크 물놀이와 찜질방 / 사람 바글바글한 곳",
+     "channel": "직방탈",
+     "sec": 654,
+     "pub": "2025-03-04",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "dv_At0DMKrA",
+     "title": "워터킹덤 워터파크 가도 될까? - 슬라이드부터 찜질방까지 완벽풀코스",
+     "channel": "돈캣 PL․EX",
+     "sec": 747,
+     "pub": "2026-02-13",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "podo-hotel-jeju": {
+   "photos": [
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Guest_House_PODO_Hotel_02.jpg/960px-Guest_House_PODO_Hotel_02.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Guest_House_PODO_Hotel_02.jpg/500px-Guest_House_PODO_Hotel_02.jpg",
+     "w": 960,
+     "h": 677,
+     "lic": "CC BY-SA 4.0",
+     "page": "https://commons.wikimedia.org/wiki/File:Guest_House_PODO_Hotel_02.jpg",
+     "by": "Htwzzz"
+    },
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Guest_House_PODO_Hotel_01.jpg/960px-Guest_House_PODO_Hotel_01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Guest_House_PODO_Hotel_01.jpg/500px-Guest_House_PODO_Hotel_01.jpg",
+     "w": 960,
+     "h": 638,
+     "lic": "CC BY-SA 4.0",
+     "page": "https://commons.wikimedia.org/wiki/File:Guest_House_PODO_Hotel_01.jpg",
+     "by": "Htwzzz"
+    },
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Guest_House_PODO_Hotel_03.jpg/960px-Guest_House_PODO_Hotel_03.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Guest_House_PODO_Hotel_03.jpg/500px-Guest_House_PODO_Hotel_03.jpg",
+     "w": 960,
+     "h": 677,
+     "lic": "CC BY-SA 4.0",
+     "page": "https://commons.wikimedia.org/wiki/File:Guest_House_PODO_Hotel_03.jpg",
+     "by": "Htwzzz"
+    }
+   ],
+   "hero": true,
+   "videos": [
+    {
+     "id": "hh-ppJwUlBc",
+     "title": "리뷰를 하고 싶어도 예약이 어려워서 이제서야 겨우 리뷰합니다. | 핀크스 포도호텔",
+     "channel": "또 떠나는 남자 ddoddunam",
+     "sec": 475,
+     "pub": "2022-06-05",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "idTyQjbBR9E",
+     "title": "제주 포도호텔이 인기가 많은 이유",
+     "channel": "모리의 리뷰",
+     "sec": 472,
+     "pub": "2025-02-05",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "sanbangsan-oncheon": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/24/3569424_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "128555",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/24/3569424_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/22/3569422_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "128555",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/22/3569422_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/21/3569421_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "128555",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/21/3569421_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/20/3569420_image2_1.jpg",
+     "w": 940,
+     "h": 623,
+     "lic": "KOGL-3",
+     "cid": "128555",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/20/3569420_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/27/3569427_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "128555",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/27/3569427_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/23/3569423_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "128555",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/23/3569423_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/25/3569425_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "128555",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/25/3569425_image3_1.jpg",
+     "tw": 300,
+     "th": 225
+    }
+   ],
+   "videos": [
+    {
+     "id": "pSCgktBiW_w",
+     "title": "겨울 제주여행의 백미! 노천스파 | 산방산 탄산온천 활용법 (야외탕, 숙소, 치킨맛집)",
+     "channel": "컬처힐러",
+     "sec": 488,
+     "pub": "2024-01-28",
+     "thumb": "mqdefault",
+     "lang": "ko"
+    },
+    {
+     "id": "OW5kn6gZmT0",
+     "title": "제주온천III ♨️(산방산 탄산온천)",
+     "channel": "물맛난쥰",
+     "sec": 511,
+     "pub": "2026-01-24",
+     "thumb": "mqdefault",
+     "lang": "ko"
+    }
+   ]
+  },
+  "sealala": {
+   "photos": [
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/4/48/%EC%94%A8%EB%9E%84%EB%9D%BC.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/%EC%94%A8%EB%9E%84%EB%9D%BC.jpg/500px-%EC%94%A8%EB%9E%84%EB%9D%BC.jpg",
+     "w": 827,
+     "h": 456,
+     "lic": "CC BY-SA 2.0 KR",
+     "page": "https://commons.wikimedia.org/wiki/File:%EC%94%A8%EB%9E%84%EB%9D%BC.jpg",
+     "by": "허니브라운"
+    }
+   ],
+   "hero": true,
+   "videos": [
+    {
+     "id": "tCi-4o0KdCs",
+     "title": "씨랄라 워터파크&찜질방 이용후기 및 꿀팁 / 서울 실내 워터파크 ( sealala )",
+     "channel": "리하클 LIHACLE",
+     "sec": 430,
+     "pub": "2024-04-19",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "5q_dsZuWxG4",
+     "title": "[소서시가 간다] 요즘 SNS에서 핫한 서울 실내워터파크 씨랄라 워터파크+찜질방 리뷰",
+     "channel": "엉망진창 아빠의 시선",
+     "sec": 383,
+     "pub": "2025-02-08",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "sisu-house-sinsa": {
+   "videos": [
+    {
+     "id": "a08xgyefbGI",
+     "title": "신상✨ 1인 프라이빗 사우나 🧖‍♀️ 시수하우스 후기｜주렁주렁 사우나백 공개🧺｜바디제품, 헤어제품 소개",
+     "channel": "사라 SARA",
+     "sec": 660,
+     "pub": "2026-03-20",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "JIViMuex8mY",
+     "title": "가을, 트렌드가 된 사우나 팩폭 리뷰 (시수하우스)",
+     "channel": "KKONGJI 꽁지",
+     "sec": 629,
+     "pub": "2026-09-17",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "skyland-bucheon": {
+   "videos": [
+    {
+     "id": "xyiDUwMAHuA",
+     "title": "부천나들이 | 수영장 좀 다녀본 가족이 스카이랜드에 가면 생기는 일 (feat. 준비물 현금)",
+     "channel": "날길결 NALGILGYEOL",
+     "sec": 454,
+     "pub": "2023-04-10",
+     "thumb": "mqdefault",
+     "lang": "ko"
+    },
+    {
+     "id": "vDEMtn2zzME",
+     "title": "러닝에 회복까지 가능한 사우나?? | 부천스카이랜드",
+     "channel": "승토리",
+     "sec": 829,
+     "pub": "2025-12-13",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "solbat-haesubang-yeongjong": {
+   "videos": [
+    {
+     "id": "6UjL02M8Y4c",
+     "title": "수도권에 새로 생긴 해수찜! 영종도솔밭해수방",
+     "channel": "솔밭해수방",
+     "sec": 545,
+     "pub": "2021-07-18",
+     "thumb": "hq720",
+     "lang": "ko",
+     "official": true
+    },
+    {
+     "id": "SM1bEZoS8LY",
+     "title": "인천 영종도_프라이빗 훈증 해수탕 찜질_영종도 솔밭해수방",
+     "channel": "파파트래블(PAPATRAVEL)",
+     "sec": 241,
+     "pub": "2024-10-25",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "solo-sauna-lepo-gwangmyeong": {
+   "videos": [
+    {
+     "id": "MniXSl7hXj8",
+     "title": "국내 최초 핀란드식 프라이빗 사우나 다녀옴",
+     "channel": "회사원B",
+     "sec": 637,
+     "pub": "2023-10-30",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "ymS_uJimVvE",
+     "title": "서울 근교 프라이빗 핀란드식 사우나🧖‍♀️ 좋았어요..🥹🫶",
+     "channel": "윰토피아",
+     "sec": 337,
+     "pub": "2025-03-01",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "solo-sauna-lepo-noryangjin": {
+   "videos": [
+    {
+     "id": "ka9iykGe3JA",
+     "title": "오늘은 사우나♨️1인 프리미엄 핀란드 사우나 ‘솔로사우나 레포’버터빵? 버터떡 사고 파이브가이즈까지 (땀 빼고 먹기…)",
+     "channel": "오늘",
+     "sec": 241,
+     "pub": "2026-03-15",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "spa-haesurang": {
+   "videos": [
+    {
+     "id": "r8z9WO3UMEA",
+     "title": "여름방학 아이랑 여기 무조건 가세요! 🌊 부산 송도 '스파 해수랑', 노천수영장부터 찜질방·사우나까지 한 번에 즐기는 꿀팁 (주소 포함)",
+     "channel": "홍시파파",
+     "sec": 527,
+     "pub": "2026-07-22",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "nWPbUhL_3oM",
+     "title": "스파 해수랑 / 기업브랜드필름 / 복합힐링단지 홍보물 영상",
+     "channel": "부산 광고대행사 에이치피기획",
+     "sec": 20,
+     "pub": "2026-04-20",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "spa-heum-gangnam": {
+   "videos": [
+    {
+     "id": "6UX3HZgNdro",
+     "title": "1인세신샵 스파헤움 리얼후기",
+     "channel": "AD TOUR",
+     "sec": 192,
+     "pub": "2022-02-08",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "vWLqll-nNC8",
+     "title": "프라이빗 세신샵 헤움에서 즐기는 힐링타임, 묵은 걱정까지 싹! ㅣ 언니가 간다",
+     "channel": "메종레아",
+     "sec": 456,
+     "pub": "2023-01-17",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "9jue0k9ddlk",
+     "title": "【韓国vlog】初めての1人海外🇰🇷✈︎タンバリンズやHeumスパへ行ってきました🛁vlog",
+     "channel": "mameda",
+     "sec": 1086,
+     "pub": "2024-04-14",
+     "thumb": "hq720",
+     "lang": "ja"
+    }
+   ]
+  },
+  "spa-lei": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/72/2024972_image2_1.jpg",
+     "w": 700,
+     "h": 525,
+     "lic": "KOGL-3",
+     "cid": "584698",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/72/2024972_image3_1.jpg",
+     "tw": 150,
+     "th": 113
+    }
+   ],
+   "videos": [
+    {
+     "id": "7myAcSBtHPs",
+     "title": "What It's Like as a Foreigner to Visit a Korean Bathhouse (for the first time!)",
+     "channel": "Backpacking Bananas",
+     "sec": 721,
+     "pub": "2024-01-10",
+     "thumb": "hq720",
+     "lang": "en"
+    },
+    {
+     "id": "1eIK2M7lId0",
+     "title": "Spa Lei in Sinsa",
+     "channel": "Chantal Terblanche",
+     "sec": 138,
+     "pub": "2020-06-30",
+     "thumb": "hq720",
+     "lang": "en"
+    },
+    {
+     "id": "ArYMcrZ30TE",
+     "title": "🌿Spa Lei💆‍♀️江南の〈レディース専用スパ〉のハンジュンマクで滝汗を流してきた🥵🔥",
+     "channel": "圓旅びより",
+     "sec": 397,
+     "pub": "2025-04-04",
+     "thumb": "hq720",
+     "lang": "ja"
+    }
+   ]
+  },
+  "spa-slick-eunpyeong": {
+   "videos": [
+    {
+     "id": "R0qKxeAj-MA",
+     "title": "세신샵 슬릭 쉽게 찾아 오는 길 ( #남성세신 #여성세신) 국내 세신샵 1호",
+     "channel": "즐봄얼롱",
+     "sec": 198,
+     "pub": "2024-11-07",
+     "thumb": "mqdefault",
+     "lang": "ko"
+    }
+   ]
+  },
+  "spa-valley-daegu": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/39/4081039_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "127934",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/39/4081039_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/41/4081041_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "127934",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/41/4081041_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/40/4081040_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "127934",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/40/4081040_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/38/4081038_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "127934",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/38/4081038_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/37/4081037_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "127934",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/37/4081037_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/69/3374569_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "4095094",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/69/3374569_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/70/3374570_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "4095094",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/70/3374570_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/72/3374572_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "4095094",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/72/3374572_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Spa_Valley_Park_in_Daegu%2C_South_Korea_%284040%29.jpg/960px-Spa_Valley_Park_in_Daegu%2C_South_Korea_%284040%29.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Spa_Valley_Park_in_Daegu%2C_South_Korea_%284040%29.jpg/500px-Spa_Valley_Park_in_Daegu%2C_South_Korea_%284040%29.jpg",
+     "w": 960,
+     "h": 720,
+     "lic": "CC BY-SA 3.0",
+     "page": "https://commons.wikimedia.org/wiki/File:Spa_Valley_Park_in_Daegu%2C_South_Korea_%284040%29.jpg",
+     "by": "Dongchan0417",
+     "cap": {
+      "en": "The outdoor water park seen from the plaza (2018)",
+      "ko": "광장에서 본 야외 워터파크 (2018년)",
+      "ja": "広場から見た屋外ウォーターパーク（2018年）",
+      "zh-Hant": "從廣場望去的戶外水上樂園（2018 年）",
+      "zh-Hans": "从广场望去的户外水上乐园（2018 年）",
+      "vi": "Công viên nước ngoài trời nhìn từ quảng trường (2018)",
+      "th": "สวนน้ำกลางแจ้งมองจากลาน (ปี 2018)",
+      "ru": "Открытый аквапарк, вид с площади (2018)"
+     }
+    }
+   ],
+   "videos": [
+    {
+     "id": "Ck-L7NNlTUs",
+     "title": "폭염 타파! 스파밸리 완전정복 가이드! | 대구리뷰 EP.02",
+     "channel": "대구TV┃대구광역시 공식 유튜브",
+     "sec": 272,
+     "pub": "2025-07-17",
+     "thumb": "hq720",
+     "lang": "ko",
+     "official": true
+    },
+    {
+     "id": "1eu6QBj15Ns",
+     "title": "스파밸리 워터파크 꿀팁 완벽정리 - 워터슬라이드부터 온천까지 풀코스",
+     "channel": "돈캣 PL․EX",
+     "sec": 818,
+     "pub": "2026-07-03",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "spaland-centum": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/02/3544802_image2_1.JPEG",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "702551",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/02/3544802_image3_1.JPEG",
+     "tw": 300,
+     "th": 225
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/62/3572362_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "702551",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/62/3572362_image3_1.jpg",
+     "tw": 300,
+     "th": 225
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/65/3572365_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "702551",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/65/3572365_image3_1.jpg",
+     "tw": 300,
+     "th": 225
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/63/3572363_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "702551",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/63/3572363_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/66/3572366_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "702551",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/66/3572366_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/67/3572367_image2_1.jpg",
+     "w": 940,
+     "h": 641,
+     "lic": "KOGL-3",
+     "cid": "702551",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/67/3572367_image3_1.jpg",
+     "tw": 300,
+     "th": 204
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/64/3572364_image2_1.jpg",
+     "w": 940,
+     "h": 561,
+     "lic": "KOGL-3",
+     "cid": "702551",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/64/3572364_image3_1.jpg",
+     "tw": 300,
+     "th": 179
+    },
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Spaland_centunm.jpg/960px-Spaland_centunm.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Spaland_centunm.jpg/500px-Spaland_centunm.jpg",
+     "w": 960,
+     "h": 540,
+     "lic": "CC0",
+     "page": "https://commons.wikimedia.org/wiki/File:Spaland_centunm.jpg",
+     "by": "Jaewon911"
+    },
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Shinsegye_Dept_store_Centum_city.JPG/960px-Shinsegye_Dept_store_Centum_city.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Shinsegye_Dept_store_Centum_city.JPG/500px-Shinsegye_Dept_store_Centum_city.JPG",
+     "w": 960,
+     "h": 720,
+     "lic": "CC BY-SA 3.0",
+     "page": "https://commons.wikimedia.org/wiki/File:Shinsegye_Dept_store_Centum_city.JPG",
+     "by": "Modamoda",
+     "cap": {
+      "en": "Shinsegae Centum City, the department store that houses Spa Land (2010)",
+      "ko": "스파랜드가 있는 신세계 센텀시티 (2010년)",
+      "ja": "Spa Land が入る新世界センタムシティ（2010年）",
+      "zh-Hant": "Spa Land 所在的新世界 Centum City 百貨（2010 年）",
+      "zh-Hans": "Spa Land 所在的新世界 Centum City 百货（2010 年）",
+      "vi": "Shinsegae Centum City, trung tâm thương mại có Spa Land (2010)",
+      "th": "ห้าง Shinsegae Centum City ที่ตั้งของ Spa Land (ปี 2010)",
+      "ru": "Универмаг Shinsegae Centum City, где находится Spa Land (2010)"
+     }
+    }
+   ],
+   "videos": [
+    {
+     "id": "XL3at6zESzU",
+     "title": "Busan, Korea | SPA LAND CENTUM CITY★Korea's Biggest Spa in Asia's Largest Department Store★한국부산 스파랜드",
+     "channel": "Travel Whiskers",
+     "sec": 349,
+     "pub": "2026-07-01",
+     "thumb": "mqdefault",
+     "lang": "en"
+    },
+    {
+     "id": "a6anXlQQTUs",
+     "title": "Spa Land Busan Korea Jjimjilbang",
+     "channel": "Chris and Yeji",
+     "sec": 754,
+     "pub": "2024-05-17",
+     "thumb": "hq720",
+     "lang": "en"
+    },
+    {
+     "id": "dLYfcOtr-qc",
+     "title": "대기업이 만든♨️한국에서 가장 큰 대형 찜질방은 어떨까? (가격/온천 후기/부산 센텀 스파랜드)",
+     "channel": "여행 다다",
+     "sec": 291,
+     "pub": "2026-02-22",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "sparex-dongdaemun": {
+   "videos": [
+    {
+     "id": "kY0FUje5Wl0",
+     "title": "Sparex Korean Sauna in Dongdaemun Seoul - All you need to know before you go! FULL REVIEW.",
+     "channel": "Anita C. First Take. Affordable Luxury Travel.",
+     "sec": 159,
+     "pub": "2024-04-28",
+     "thumb": "hq720",
+     "lang": "en"
+    },
+    {
+     "id": "48Rvt8dNb_U",
+     "title": "How to Enjoy a Korean Sauna like a Local | 3 Special Jjimjilbangs in Seoul",
+     "channel": "VisitSeoul TV",
+     "sec": 321,
+     "pub": "2025-01-09",
+     "thumb": "hq720",
+     "lang": "en",
+     "official": true
+    },
+    {
+     "id": "Baks2AhO1RE",
+     "title": "【首爾 東大門SPAREX汗蒸幕】韓國汗蒸幕初體驗｜舒壓不踩雷｜流一身好汗｜24小時營業",
+     "channel": "高顏社",
+     "sec": 366,
+     "pub": "2024-05-10",
+     "thumb": "hq720",
+     "lang": "zh"
+    }
+   ]
+  },
+  "sparex-dongmyo": {
+   "videos": [
+    {
+     "id": "Y0fZ-2wz650",
+     "title": "[영상기록-서울] 스파렉스 동묘점 찜질방 체험",
+     "channel": "베테랑의 영상기록 TV",
+     "sec": 420,
+     "pub": "2025-03-10",
+     "thumb": "mqdefault",
+     "lang": "ko"
+    },
+    {
+     "id": "TsZW4z8IQI8",
+     "title": "요즘 핫하다는 동묘 대형 찜질방 스파렉스 메가 스퀘어 탐방기!",
+     "channel": "소개 한 동수 tv Dong-soo",
+     "sec": 437,
+     "pub": "2026-07-31",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "pMIAflIaVQ4",
+     "title": "【韓国旅行チムジルバン】SPAREX 東廟店 스파렉스동묘 韓国サウナ",
+     "channel": "sunshine channel サンシャインチャンネル",
+     "sec": 405,
+     "pub": "2025-01-10",
+     "thumb": "hq720",
+     "lang": "ja"
+    }
+   ]
+  },
+  "supsok-hanbang-land": {
+   "videos": [
+    {
+     "id": "2qfOM21kA6I",
+     "title": "What Happens When a Foreign K-Pop Idol Enters a 100°C Korean Spa | Supsok Hanbang Land ♨️",
+     "channel": "VisitSeoul TV",
+     "sec": 1184,
+     "pub": "2026-08-28",
+     "thumb": "hq720",
+     "lang": "en",
+     "official": true
+    },
+    {
+     "id": "48Rvt8dNb_U",
+     "title": "How to Enjoy a Korean Sauna like a Local | 3 Special Jjimjilbangs in Seoul",
+     "channel": "VisitSeoul TV",
+     "sec": 321,
+     "pub": "2025-01-09",
+     "thumb": "hq720",
+     "lang": "en",
+     "official": true
+    },
+    {
+     "id": "aYvz18oGCvE",
+     "title": "서울 3대 찜질방! 리얼 숯가마 사우나 신촌 숲속한방랜드 이용방법 및 꿀팁 I 이색 데이트 장소 추천, 목욕탕",
+     "channel": "앵뿌삐 ENFP",
+     "sec": 663,
+     "pub": "2025-01-17",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "taejongdae-oncheon": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/85/3547085_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-1",
+     "cid": "127752",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/85/3547085_image3_1.jpg",
+     "tw": 300,
+     "th": 225
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/86/3547086_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-1",
+     "cid": "127752",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/86/3547086_image3_1.jpg",
+     "tw": 300,
+     "th": 225
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/87/3547087_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-1",
+     "cid": "127752",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/87/3547087_image3_1.jpg",
+     "tw": 300,
+     "th": 225
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/88/3547088_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-1",
+     "cid": "127752",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/88/3547088_image3_1.jpg",
+     "tw": 300,
+     "th": 225
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/89/3547089_image2_1.jpg",
+     "w": 940,
+     "h": 704,
+     "lic": "KOGL-1",
+     "cid": "127752",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/89/3547089_image3_1.jpg",
+     "tw": 300,
+     "th": 224
+    }
+   ],
+   "videos": [
+    {
+     "id": "oqxFoTiJlNk",
+     "title": "부산에도 이런곳이 있구나 태종대온천찜질방",
+     "channel": "아빠 어디가",
+     "sec": 293,
+     "pub": "2023-01-15",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "termeden": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/78/3566478_image2_1.jpg",
+     "w": 940,
+     "h": 621,
+     "lic": "KOGL-3",
+     "cid": "128870",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/78/3566478_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/75/3566475_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "128870",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/75/3566475_image3_1.jpg",
+     "tw": 300,
+     "th": 225
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/83/3566483_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "128870",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/83/3566483_image3_1.jpg",
+     "tw": 300,
+     "th": 225
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/81/3566481_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "128870",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/81/3566481_image3_1.jpg",
+     "tw": 300,
+     "th": 225
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/79/3566479_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "128870",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/79/3566479_image3_1.jpg",
+     "tw": 300,
+     "th": 225
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/77/3566477_image2_1.jpg",
+     "w": 940,
+     "h": 543,
+     "lic": "KOGL-3",
+     "cid": "128870",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/77/3566477_image3_1.jpg",
+     "tw": 300,
+     "th": 173
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/76/3566476_image2_1.jpg",
+     "w": 516,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "128870",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/76/3566476_image3_1.jpg",
+     "tw": 164,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/80/3566480_image2_1.jpg",
+     "w": 553,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "128870",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/80/3566480_image3_1.jpg",
+     "tw": 176,
+     "th": 200
+    }
+   ],
+   "videos": [
+    {
+     "id": "yyDyhiv7WNQ",
+     "title": "We Visited a European-Style Spa in Korea | Termeden Icheon | 서울 근교 힐링 스파 이천 테르메덴",
+     "channel": "GAIA TV",
+     "sec": 332,
+     "pub": "2026-02-05",
+     "thumb": "hq720",
+     "lang": "en"
+    },
+    {
+     "id": "YW9DL1pselw",
+     "title": "힐링 ♨️온천 여행지❄️ 이천 테르메덴 [4K][워터파크, 스파, 가볼만한 곳, 데이트 명소]",
+     "channel": "모험가",
+     "sec": 249,
+     "pub": "2026-01-23",
+     "thumb": "mqdefault",
+     "lang": "ko"
+    },
+    {
+     "id": "2060sZsVZZM",
+     "title": "서울 근교 온천 끝판왕 ㅣ겨울 온천 워터파크 ‘테르메덴’ ㅣ 서울 1시간 온천 여행 추천",
+     "channel": "쑤트래 ssutrae",
+     "sec": 380,
+     "pub": "2025-12-11",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "the-seolha-hongdae": {
+   "videos": [
+    {
+     "id": "9bFpyEqtvIk",
+     "title": "Hidden Hanok Spa in Seoul – THE SEOL:HA",
+     "channel": "SEOL:HA THE",
+     "sec": 127,
+     "pub": "2025-09-09",
+     "thumb": "hq720",
+     "lang": "en",
+     "official": true
+    }
+   ]
+  },
+  "tova-bangbae": {
+   "videos": [
+    {
+     "id": "rGLjw4d3PHI",
+     "title": "토바 바스하우스 (TOVA) 1인 사우나 솔직 후기｜서울 방배 신상 프라이빗 사우나 가격·예약·셀프케어 루틴 & 아쉬웠던 점",
+     "channel": "오늘도 태나 Today Teana",
+     "sec": 210,
+     "pub": "2026-08-14",
+     "thumb": "hq720",
+     "lang": "ko"
+    },
+    {
+     "id": "454x6gefF9k",
+     "title": "1인 사우나 토바(TOVA) 바스하우스 | 서울 사우나 | 토토노우",
+     "channel": "joo76",
+     "sec": 158,
+     "pub": "2026-07-15",
+     "thumb": "mqdefault",
+     "lang": "ko"
+    }
+   ]
+  },
+  "water-house-ananti": {
+   "videos": [
+    {
+     "id": "1N7YaJXWtUY",
+     "title": "부산 기장 빌라쥬드 아난티 코브 수영장 워터하우스 락커룸 내부 시설 아이랑 이용후기",
+     "channel": "윤민부부",
+     "sec": 504,
+     "pub": "2025-06-03",
+     "thumb": "mqdefault",
+     "lang": "ko"
+    },
+    {
+     "id": "etjTv-EjLGY",
+     "title": "(+방문Tip) 부산 아난티 코브 워터하우스 다녀왔어요! 💦",
+     "channel": "투윤랜드 (2yoonland)",
+     "sec": 335,
+     "pub": "2026-08-22",
+     "thumb": "hq720",
+     "lang": "ko"
+    }
+   ]
+  },
+  "westin-josun-ongi": {
+   "photos": [
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/The_Westin_Josun_Seoul_Exterior.jpg/960px-The_Westin_Josun_Seoul_Exterior.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/The_Westin_Josun_Seoul_Exterior.jpg/500px-The_Westin_Josun_Seoul_Exterior.jpg",
+     "w": 960,
+     "h": 732,
+     "lic": "CC BY-SA 4.0",
+     "page": "https://commons.wikimedia.org/wiki/File:The_Westin_Josun_Seoul_Exterior.jpg",
+     "by": "Ourdigital",
+     "cap": {
+      "en": "The Westin Josun Seoul",
+      "ko": "웨스틴 조선 서울",
+      "ja": "ウェスティン朝鮮ソウル",
+      "zh-Hant": "The Westin Josun Seoul",
+      "zh-Hans": "The Westin Josun Seoul",
+      "vi": "The Westin Josun Seoul",
+      "th": "The Westin Josun Seoul",
+      "ru": "The Westin Josun Seoul"
+     }
+    }
+   ],
+   "hero": true
+  },
+  "world-spa-choryang": {
+   "videos": [
+    {
+     "id": "eUzL9SVnYe8",
+     "title": "부산 신상 헬스사우나 월드스파 일일권 후기 | #부산헬스장 #부산사우나 #부산헬스사우나",
+     "channel": "쮸핏(JJUFIT)",
+     "sec": 34,
+     "pub": "2026-07-21",
+     "thumb": "hq720",
+     "vert": true,
+     "lang": "ko"
+    }
+   ]
+  },
+  "yangnam-haesu-oncheon": {
+   "videos": [
+    {
+     "id": "vU0TsnpEVCE",
+     "title": "울산근교 양남 해수온천랜드 찜질방 맛집!",
+     "channel": "강선용",
+     "sec": 310,
+     "pub": "2024-03-11",
+     "thumb": "mqdefault",
+     "lang": "ko"
+    },
+    {
+     "id": "rYwizjHcVRc",
+     "title": "[TVC] 양남해수탄산온천랜드",
+     "channel": "팝콘텐츠",
+     "sec": 31,
+     "pub": "2023-07-27",
+     "thumb": "mqdefault",
+     "lang": "ko",
+     "official": true
+    }
+   ]
+  },
+  "yeonnam-scrub": {
+   "videos": [
+    {
+     "id": "xpodYCGfAXI",
+     "title": "1인 세신샵 연남 스크럽 추천 후기 2026.10.31 내돈내산",
+     "channel": "탱쟈탱쟈 놀쟈벨 Tangzabelle",
+     "sec": 21,
+     "pub": "2026-11-04",
+     "thumb": "hq720",
+     "vert": true,
+     "lang": "ko"
+    }
+   ]
+  }
+ },
+ "springs": {
+  "angseong": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/37/3061937_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "128006",
+     "title_ko": "앙성온천지구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/37/3061937_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/48/3061948_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "128006",
+     "title_ko": "앙성온천지구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/48/3061948_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/40/3061940_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "128006",
+     "title_ko": "앙성온천지구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/40/3061940_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/10/3061810_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "128020",
+     "title_ko": "앙성탄산온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/10/3061810_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "baegam": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/51/4124951_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "1957631",
+     "title_ko": "백암온천 관광특구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/51/4124951_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/50/4124950_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "1957631",
+     "title_ko": "백암온천 관광특구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/50/4124950_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/47/3049847_image2_1.JPG",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "1939439",
+     "title_ko": "울진 백암온천마을",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/47/3049847_image3_1.JPG",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/54/3049854_image2_1.JPG",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "1939439",
+     "title_ko": "울진 백암온천마을",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/54/3049854_image3_1.JPG",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "bomun": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/33/3037333_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "128811",
+     "title_ko": "더케이경주호텔 스파온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/33/3037333_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/37/3037337_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "128811",
+     "title_ko": "더케이경주호텔 스파온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/37/3037337_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/38/3037338_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "128811",
+     "title_ko": "더케이경주호텔 스파온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/38/3037338_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/34/3037334_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "128811",
+     "title_ko": "더케이경주호텔 스파온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/34/3037334_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "bugok": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/95/4046195_image2_1.jpg",
+     "w": 940,
+     "h": 529,
+     "lic": "KOGL-1",
+     "cid": "1957667",
+     "title_ko": "부곡온천 관광특구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/95/4046195_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/96/4046196_image2_1.jpg",
+     "w": 940,
+     "h": 529,
+     "lic": "KOGL-1",
+     "cid": "1957667",
+     "title_ko": "부곡온천 관광특구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/96/4046196_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/99/4046199_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "1957667",
+     "title_ko": "부곡온천 관광특구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/99/4046199_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/94/4046194_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "1957667",
+     "title_ko": "부곡온천 관광특구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/94/4046194_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "cheoksan": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/75/2709375_image2_1.jpg",
+     "w": 699,
+     "h": 466,
+     "lic": "KOGL-3",
+     "cid": "2708691",
+     "title_ko": "척산온천휴양촌",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/75/2709375_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/31/4065131_image2_1.jpg",
+     "w": 940,
+     "h": 529,
+     "lic": "KOGL-3",
+     "cid": "2708691",
+     "title_ko": "척산온천휴양촌",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/31/4065131_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/32/4065132_image2_1.jpg",
+     "w": 940,
+     "h": 645,
+     "lic": "KOGL-3",
+     "cid": "2708691",
+     "title_ko": "척산온천휴양촌",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/32/4065132_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Sokcho%2C_Cheoksan_Foot_Bath_Park.jpg/960px-Sokcho%2C_Cheoksan_Foot_Bath_Park.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Sokcho%2C_Cheoksan_Foot_Bath_Park.jpg/500px-Sokcho%2C_Cheoksan_Foot_Bath_Park.jpg",
+     "w": 960,
+     "h": 640,
+     "lic": "CC BY-SA 4.0",
+     "page": "https://commons.wikimedia.org/wiki/File:Sokcho%2C_Cheoksan_Foot_Bath_Park.jpg",
+     "by": "Dr. Thomas Liptak",
+     "cap": {
+      "en": "Cheoksan Foot Bath Park, a free public foot bath in the same hot-spring district",
+      "ko": "같은 온천지구에 있는 무료 족욕장, 척산족욕공원",
+      "ja": "同じ温泉地区にある無料の足湯、Cheoksan 足湯公園（척산족욕공원）",
+      "zh-Hant": "同一溫泉區內的免費足湯：Cheoksan 足浴公園（척산족욕공원）",
+      "zh-Hans": "同一温泉区内的免费足浴场：Cheoksan 足浴公园（척산족욕공원）",
+      "vi": "Công viên ngâm chân Cheoksan, nơi ngâm chân miễn phí trong cùng khu suối nước nóng",
+      "th": "สวนแช่เท้า Cheoksan จุดแช่เท้าฟรีในย่านน้ำพุร้อนเดียวกัน",
+      "ru": "Парк ножных ванн Cheoksan — бесплатные ножные ванны в том же курортном районе"
+     }
+    }
+   ]
+  },
+  "club-d-oasis": {
+   "photos": [
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Haeundae_Beach_and_Haeundae_LCT_The_Sharp.jpg/960px-Haeundae_Beach_and_Haeundae_LCT_The_Sharp.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Haeundae_Beach_and_Haeundae_LCT_The_Sharp.jpg/500px-Haeundae_Beach_and_Haeundae_LCT_The_Sharp.jpg",
+     "w": 960,
+     "h": 720,
+     "lic": "CC BY 2.0",
+     "page": "https://commons.wikimedia.org/wiki/File:Haeundae_Beach_and_Haeundae_LCT_The_Sharp.jpg",
+     "by": "A Fun Couple",
+     "cap": {
+      "en": "LCT tower on Haeundae Beach; Club D Oasis is on floors 3–6",
+      "ko": "해운대 해변의 엘시티. 클럽디 오아시스는 3~6층에 있다",
+      "ja": "海雲台ビーチの LCT。Club D Oasis は3〜6階",
+      "zh-Hant": "海雲台海灘旁的 LCT 大樓，Club D Oasis 位於 3～6 樓",
+      "zh-Hans": "海云台海滩旁的 LCT 大楼，Club D Oasis 位于 3～6 层",
+      "vi": "Tòa LCT bên bãi biển Haeundae; Club D Oasis nằm ở tầng 3–6",
+      "th": "อาคาร LCT ริมหาดแฮอุนแด Club D Oasis อยู่ชั้น 3–6",
+      "ru": "Башня LCT на пляже Хэундэ; Club D Oasis занимает 3–6 этажи"
+     }
+    }
+   ]
+  },
+  "deokgu": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/39/3503639_image2_1.jpg",
+     "w": 940,
+     "h": 529,
+     "lic": "KOGL-3",
+     "cid": "142962",
+     "title_ko": "덕구온천호텔&콘도",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/39/3503639_image3_1.jpg",
+     "tw": 300,
+     "th": 169
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/03/3503803_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "142962",
+     "title_ko": "덕구온천호텔&콘도",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/03/3503803_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/06/3503806_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "142962",
+     "title_ko": "덕구온천호텔&콘도",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/06/3503806_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/13/3503813_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "142962",
+     "title_ko": "덕구온천호텔&콘도",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/13/3503813_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "deoksan": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/76/3055376_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "125859",
+     "title_ko": "덕산온천지구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/76/3055376_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/78/3055378_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "125859",
+     "title_ko": "덕산온천지구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/78/3055378_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/77/3055377_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "125859",
+     "title_ko": "덕산온천지구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/77/3055377_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/80/3055380_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "125859",
+     "title_ko": "덕산온천지구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/80/3055380_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "deungeok": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/64/3084264_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "127012",
+     "title_ko": "등억온천단지",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/64/3084264_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/76/3084276_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "127012",
+     "title_ko": "등억온천단지",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/76/3084276_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/77/3084277_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "127012",
+     "title_ko": "등억온천단지",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/77/3084277_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/79/3084279_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "127012",
+     "title_ko": "등억온천단지",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/79/3084279_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "dogo": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/38/2480338_image2_1.jpg",
+     "w": 699,
+     "h": 466,
+     "lic": "KOGL-3",
+     "cid": "631934",
+     "title_ko": "파라다이스 스파 도고",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/38/2480338_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "dogok": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/44/3013444_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "3013448",
+     "title_ko": "도곡온천단지",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/44/3013444_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/42/3013442_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "3013448",
+     "title_ko": "도곡온천단지",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/42/3013442_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/47/3013447_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "3013448",
+     "title_ko": "도곡온천단지",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/47/3013447_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/79/3348379_image2_1.JPG",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "127932",
+     "title_ko": "도곡 원네스 스파·리조트",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/79/3348379_image3_1.JPG",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "donghae": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/32/4058532_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "1772807",
+     "title_ko": "동해보양온천 컨벤션호텔",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/32/4058532_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/33/4058533_image2_1.jpg",
+     "w": 940,
+     "h": 684,
+     "lic": "KOGL-3",
+     "cid": "1772807",
+     "title_ko": "동해보양온천 컨벤션호텔",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/33/4058533_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/30/4058530_image2_1.jpg",
+     "w": 940,
+     "h": 704,
+     "lic": "KOGL-3",
+     "cid": "1772807",
+     "title_ko": "동해보양온천 컨벤션호텔",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/30/4058530_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/31/4058531_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "1772807",
+     "title_ko": "동해보양온천 컨벤션호텔",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/31/4058531_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "dongnae": {
+   "photos": [
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Dongnae_Hot_Spring_01.JPG/960px-Dongnae_Hot_Spring_01.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Dongnae_Hot_Spring_01.JPG/500px-Dongnae_Hot_Spring_01.JPG",
+     "w": 960,
+     "h": 720,
+     "lic": "Public domain",
+     "page": "https://commons.wikimedia.org/wiki/File:Dongnae_Hot_Spring_01.JPG",
+     "by": "Abasaa"
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/37/4090237_image2_1.jpg",
+     "w": 940,
+     "h": 675,
+     "lic": "KOGL-3",
+     "cid": "127419",
+     "title_ko": "허심청",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/37/4090237_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/50/4090250_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "127419",
+     "title_ko": "허심청",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/50/4090250_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/0/01/Torai_Onsen_circa_1930.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/01/Torai_Onsen_circa_1930.JPG",
+     "w": 372,
+     "h": 254,
+     "lic": "Public domain",
+     "page": "https://commons.wikimedia.org/wiki/File:Torai_Onsen_circa_1930.JPG",
+     "cap": {
+      "en": "Dongnae hot spring around 1930",
+      "ko": "1930년 무렵의 동래온천",
+      "ja": "1930年ごろの東莱（トンネ）温泉",
+      "zh-Hant": "1930 年前後的東萊溫泉",
+      "zh-Hans": "1930 年前后的东莱温泉",
+      "vi": "Suối nước nóng Dongnae khoảng năm 1930",
+      "th": "น้ำพุร้อนทงแนราวปี 1930",
+      "ru": "Горячий источник Тоннэ около 1930 года"
+     }
+    }
+   ]
+  },
+  "dongnae-foot": {
+   "photos": [
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Dongnae_Hot_Spring_Outdoor_Foot_Bath.JPG/960px-Dongnae_Hot_Spring_Outdoor_Foot_Bath.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Dongnae_Hot_Spring_Outdoor_Foot_Bath.JPG/500px-Dongnae_Hot_Spring_Outdoor_Foot_Bath.JPG",
+     "w": 960,
+     "h": 720,
+     "lic": "Public domain",
+     "page": "https://commons.wikimedia.org/wiki/File:Dongnae_Hot_Spring_Outdoor_Foot_Bath.JPG",
+     "by": "Abasaa"
+    }
+   ]
+  },
+  "gajo-foot": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/85/4115385_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "4116683",
+     "title_ko": "가조온천족욕장",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/85/4115385_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/84/4115384_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "4116683",
+     "title_ko": "가조온천족욕장",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/84/4115384_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/83/4115383_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "4116683",
+     "title_ko": "가조온천족욕장",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/83/4115383_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/87/4115387_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "4116683",
+     "title_ko": "가조온천족욕장",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/87/4115387_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "geoje": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/00/3516400_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "127966",
+     "title_ko": "거제도해수보양온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/00/3516400_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/01/3516401_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "127966",
+     "title_ko": "거제도해수보양온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/01/3516401_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/02/3516402_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "127966",
+     "title_ko": "거제도해수보양온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/02/3516402_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/03/3516403_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "127966",
+     "title_ko": "거제도해수보양온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/03/3516403_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "haeundae": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/17/3026517_image2_1.JPG",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "126108",
+     "title_ko": "해운대온천센터",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/17/3026517_image3_1.JPG",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/18/3026518_image2_1.JPG",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "126108",
+     "title_ko": "해운대온천센터",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/18/3026518_image3_1.JPG",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/19/3026519_image2_1.JPG",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "126108",
+     "title_ko": "해운대온천센터",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/19/3026519_image3_1.JPG",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/20/3026520_image2_1.JPG",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "126108",
+     "title_ko": "해운대온천센터",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/20/3026520_image3_1.JPG",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "icheon-park": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/57/3541457_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "2764307",
+     "title_ko": "이천온천공원",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/57/3541457_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/58/3541458_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "2764307",
+     "title_ko": "이천온천공원",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/58/3541458_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/59/3541459_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "2764307",
+     "title_ko": "이천온천공원",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/59/3541459_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/60/3541460_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "2764307",
+     "title_ko": "이천온천공원",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/60/3541460_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "onyang": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/40/3570140_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "125856",
+     "title_ko": "온양온천지구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/40/3570140_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/39/3570139_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "125856",
+     "title_ko": "온양온천지구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/39/3570139_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/38/3570138_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "125856",
+     "title_ko": "온양온천지구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/38/3570138_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/37/3570137_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "125856",
+     "title_ko": "온양온천지구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/37/3570137_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "commons",
+     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/1912%EB%85%84_%EC%B6%A9%EB%82%A8_%EC%95%84%EC%82%B0%EC%8B%9C_%EC%98%A8%EC%96%91%EC%98%A8%EC%B2%9C.jpg/960px-1912%EB%85%84_%EC%B6%A9%EB%82%A8_%EC%95%84%EC%82%B0%EC%8B%9C_%EC%98%A8%EC%96%91%EC%98%A8%EC%B2%9C.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/1912%EB%85%84_%EC%B6%A9%EB%82%A8_%EC%95%84%EC%82%B0%EC%8B%9C_%EC%98%A8%EC%96%91%EC%98%A8%EC%B2%9C.jpg/500px-1912%EB%85%84_%EC%B6%A9%EB%82%A8_%EC%95%84%EC%82%B0%EC%8B%9C_%EC%98%A8%EC%96%91%EC%98%A8%EC%B2%9C.jpg",
+     "w": 960,
+     "h": 698,
+     "lic": "Public domain",
+     "page": "https://commons.wikimedia.org/wiki/File:1912%EB%85%84_%EC%B6%A9%EB%82%A8_%EC%95%84%EC%82%B0%EC%8B%9C_%EC%98%A8%EC%96%91%EC%98%A8%EC%B2%9C.jpg",
+     "by": "한국저작권위원회 공유마당",
+     "cap": {
+      "en": "Onyang hot spring in 1912",
+      "ko": "1912년의 온양온천",
+      "ja": "1912年の温陽（オニャン）温泉",
+      "zh-Hant": "1912 年的溫陽溫泉",
+      "zh-Hans": "1912 年的温阳温泉",
+      "vi": "Suối nước nóng Onyang năm 1912",
+      "th": "น้ำพุร้อนอนยางในปี 1912",
+      "ru": "Горячий источник Онъян в 1912 году"
+     }
+    }
+   ]
+  },
+  "oreb": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/11/3343511_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "3343597",
+     "title_ko": "오레브핫스프링앤스파",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/11/3343511_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/17/3343517_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "3343597",
+     "title_ko": "오레브핫스프링앤스파",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/17/3343517_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/16/3343516_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "3343597",
+     "title_ko": "오레브핫스프링앤스파",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/16/3343516_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/15/3343515_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "3343597",
+     "title_ko": "오레브핫스프링앤스파",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/15/3343515_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "osaek": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/07/3495307_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "127952",
+     "title_ko": "오색탄산온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/07/3495307_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/06/3495306_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "127952",
+     "title_ko": "오색탄산온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/06/3495306_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/04/3495304_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "127952",
+     "title_ko": "오색탄산온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/04/3495304_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/05/3495305_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "127952",
+     "title_ko": "오색탄산온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/05/3495305_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "sanbangsan": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/24/3569424_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "128555",
+     "title_ko": "제주 산방산탄산온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/24/3569424_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/22/3569422_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "128555",
+     "title_ko": "제주 산방산탄산온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/22/3569422_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/21/3569421_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "128555",
+     "title_ko": "제주 산방산탄산온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/21/3569421_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/20/3569420_image2_1.jpg",
+     "w": 940,
+     "h": 623,
+     "lic": "KOGL-3",
+     "cid": "128555",
+     "title_ko": "제주 산방산탄산온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/20/3569420_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "seoul-uri": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/01/4133001_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "2756589",
+     "title_ko": "우리유황온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/01/4133001_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/02/4133002_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "2756589",
+     "title_ko": "우리유황온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/02/4133002_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/99/4132999_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "2756589",
+     "title_ko": "우리유황온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/99/4132999_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/00/4133000_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "2756589",
+     "title_ko": "우리유황온천",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/00/4133000_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "spa-valley": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/39/4081039_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "127934",
+     "title_ko": "스파밸리 워터파크",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/39/4081039_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/41/4081041_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "127934",
+     "title_ko": "스파밸리 워터파크",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/41/4081041_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/40/4081040_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "127934",
+     "title_ko": "스파밸리 워터파크",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/40/4081040_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/38/4081038_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "127934",
+     "title_ko": "스파밸리 워터파크",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/38/4081038_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "spaland-centum": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/02/3544802_image2_1.JPEG",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "702551",
+     "title_ko": "센텀시티 스파랜드",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/02/3544802_image3_1.JPEG",
+     "tw": 300,
+     "th": 225
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/62/3572362_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "702551",
+     "title_ko": "센텀시티 스파랜드",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/62/3572362_image3_1.jpg",
+     "tw": 300,
+     "th": 225
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/65/3572365_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "702551",
+     "title_ko": "센텀시티 스파랜드",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/65/3572365_image3_1.jpg",
+     "tw": 300,
+     "th": 225
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/63/3572363_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "702551",
+     "title_ko": "센텀시티 스파랜드",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/63/3572363_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "suanbo": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/89/4060089_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "1958101",
+     "title_ko": "수안보온천 관광특구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/89/4060089_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/87/4060087_image2_1.jpg",
+     "w": 940,
+     "h": 529,
+     "lic": "KOGL-1",
+     "cid": "1958101",
+     "title_ko": "수안보온천 관광특구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/87/4060087_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/88/4060088_image2_1.jpg",
+     "w": 940,
+     "h": 529,
+     "lic": "KOGL-1",
+     "cid": "1958101",
+     "title_ko": "수안보온천 관광특구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/88/4060088_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/86/4060086_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "1958101",
+     "title_ko": "수안보온천 관광특구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/86/4060086_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "suanbo-foot": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/62/4077762_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-1",
+     "cid": "3343355",
+     "title_ko": "수안보온천 족욕길",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/62/4077762_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/66/4077766_image2_1.jpg",
+     "w": 470,
+     "h": 627,
+     "lic": "KOGL-1",
+     "cid": "3343355",
+     "title_ko": "수안보온천 족욕길",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/66/4077766_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/60/4077760_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-1",
+     "cid": "3343355",
+     "title_ko": "수안보온천 족욕길",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/60/4077760_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/52/3343352_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "3343355",
+     "title_ko": "수안보온천 족욕길",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/52/3343352_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "taejongdae": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/85/3547085_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-1",
+     "cid": "127752",
+     "title_ko": "태종대온천찜질방",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/85/3547085_image3_1.jpg",
+     "tw": 300,
+     "th": 225
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/86/3547086_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-1",
+     "cid": "127752",
+     "title_ko": "태종대온천찜질방",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/86/3547086_image3_1.jpg",
+     "tw": 300,
+     "th": 225
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/87/3547087_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-1",
+     "cid": "127752",
+     "title_ko": "태종대온천찜질방",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/87/3547087_image3_1.jpg",
+     "tw": 300,
+     "th": 225
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/88/3547088_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-1",
+     "cid": "127752",
+     "title_ko": "태종대온천찜질방",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/88/3547088_image3_1.jpg",
+     "tw": 300,
+     "th": 225
+    }
+   ]
+  },
+  "termeden": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/78/3566478_image2_1.jpg",
+     "w": 940,
+     "h": 621,
+     "lic": "KOGL-3",
+     "cid": "128870",
+     "title_ko": "테르메덴",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/78/3566478_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/75/3566475_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "128870",
+     "title_ko": "테르메덴",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/75/3566475_image3_1.jpg",
+     "tw": 300,
+     "th": 225
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/83/3566483_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "128870",
+     "title_ko": "테르메덴",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/83/3566483_image3_1.jpg",
+     "tw": 300,
+     "th": 225
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/81/3566481_image2_1.jpg",
+     "w": 940,
+     "h": 705,
+     "lic": "KOGL-3",
+     "cid": "128870",
+     "title_ko": "테르메덴",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/81/3566481_image3_1.jpg",
+     "tw": 300,
+     "th": 225
+    }
+   ]
+  },
+  "yuseong": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/42/3035142_image2_1.JPG",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "125858",
+     "title_ko": "유성온천지구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/42/3035142_image3_1.JPG",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/16/1585716_image2_1.jpg",
+     "w": 699,
+     "h": 468,
+     "lic": "KOGL-3",
+     "cid": "125858",
+     "title_ko": "유성온천지구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/16/1585716_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/43/3035143_image2_1.JPG",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "125858",
+     "title_ko": "유성온천지구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/43/3035143_image3_1.JPG",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/44/3035144_image2_1.JPG",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "125858",
+     "title_ko": "유성온천지구",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/44/3035144_image3_1.JPG",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  },
+  "yuseong-foot": {
+   "photos": [
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/22/3350822_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "2605899",
+     "title_ko": "유성 족욕체험장",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/22/3350822_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/23/3350823_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "2605899",
+     "title_ko": "유성 족욕체험장",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/23/3350823_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/24/3350824_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "2605899",
+     "title_ko": "유성 족욕체험장",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/24/3350824_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    },
+    {
+     "kind": "kto",
+     "src": "https://tong.visitkorea.or.kr/cms/resource/25/3350825_image2_1.jpg",
+     "w": 940,
+     "h": 627,
+     "lic": "KOGL-3",
+     "cid": "2605899",
+     "title_ko": "유성 족욕체험장",
+     "thumb": "https://tong.visitkorea.or.kr/cms/resource/25/3350825_image3_1.jpg",
+     "tw": 300,
+     "th": 200
+    }
+   ]
+  }
+ }
+}
