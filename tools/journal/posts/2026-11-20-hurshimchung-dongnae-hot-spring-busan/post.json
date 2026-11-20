@@ -1,0 +1,15 @@
+{
+  "pillar": "spot",
+  "related": ["hot-springs", "first-visit", "tattoos", "prices-hours"],
+  "sources": [
+    {"title": "전국 네 번째 '온천도시', 부산 동래온천을 가다", "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973394", "note": "대한민국 정책브리핑(정책기자단 방문기), 2026-10-14"},
+    {"title": "연 200만명 찾는 동래온천…전국 네 번째 '온천도시' 지정", "url": "https://www.dailian.co.kr/news/view/1696651", "note": "데일리안, 2026-10-01"},
+    {"title": "[Subway Stories] Busan's forgotten hot springs town", "url": "https://v.daum.net/v/20230701160116866", "note": "The Korea Herald (다음 뉴스), 2023-07-01"},
+    {"title": "Hurshimchung (허심청)", "url": "https://www.ktriptips.com/eng/tourspot/1348725", "note": "K-Trip Tips에 실린 한국관광공사 관광정보(영문), 2026-11-11 수정"},
+    {"title": "허심청", "url": "https://www.ktriptips.com/kor/tourspot/127419", "note": "K-Trip Tips에 실린 한국관광공사 관광정보, 2026-07-21 수정"},
+    {"title": "호텔 농심", "url": "https://www.ktriptips.com/kor/stay/143048", "note": "K-Trip Tips에 실린 한국관광공사 관광정보, 2026-02-09 수정"},
+    {"title": "온정개건비", "url": "https://www.ktriptips.com/kor/tourspot/1608716", "note": "K-Trip Tips에 실린 한국관광공사 관광정보, 2026-03-05 수정"},
+    {"title": "동래온천 노천족탕", "url": "https://www.ktriptips.com/kor/tourspot/128706", "note": "K-Trip Tips에 실린 한국관광공사 관광정보, 2026-11-04 수정"},
+    {"title": "호텔 농심, 서면·동래·연제·남구, 부산", "url": "https://www.yeogi.com/domestic-accommodations/6462", "note": "여기어때 예약 안내(허심청 온천권이 포함된 객실 상품·역에서 걷는 시간), 2026-11 확인"}
+  ]
+}

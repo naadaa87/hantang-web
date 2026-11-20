@@ -15677,7 +15677,7 @@
   </url>
   <url>
     <loc>https://hantang.kr/journal/</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hantang.kr/journal/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://hantang.kr/ja/journal/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang.kr/zh-hant/journal/"/>
@@ -15689,7 +15689,7 @@
   </url>
   <url>
     <loc>https://hantang.kr/ja/journal/</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hantang.kr/journal/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://hantang.kr/ja/journal/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang.kr/zh-hant/journal/"/>
@@ -15701,7 +15701,7 @@
   </url>
   <url>
     <loc>https://hantang.kr/zh-hant/journal/</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hantang.kr/journal/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://hantang.kr/ja/journal/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang.kr/zh-hant/journal/"/>
@@ -15713,7 +15713,7 @@
   </url>
   <url>
     <loc>https://hantang.kr/zh-hans/journal/</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hantang.kr/journal/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://hantang.kr/ja/journal/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang.kr/zh-hant/journal/"/>
@@ -15725,7 +15725,7 @@
   </url>
   <url>
     <loc>https://hantang.kr/vi/journal/</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hantang.kr/journal/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://hantang.kr/ja/journal/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang.kr/zh-hant/journal/"/>
@@ -15737,7 +15737,7 @@
   </url>
   <url>
     <loc>https://hantang.kr/th/journal/</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hantang.kr/journal/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://hantang.kr/ja/journal/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang.kr/zh-hant/journal/"/>
@@ -15749,7 +15749,7 @@
   </url>
   <url>
     <loc>https://hantang.kr/ru/journal/</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hantang.kr/journal/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://hantang.kr/ja/journal/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang.kr/zh-hant/journal/"/>
@@ -15758,6 +15758,90 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://hantang.kr/th/journal/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://hantang.kr/ru/journal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang.kr/journal/"/>
+  </url>
+  <url>
+    <loc>https://hantang.kr/journal/hurshimchung-dongnae-hot-spring-busan/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang.kr/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang.kr/ja/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang.kr/zh-hant/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang.kr/zh-hans/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang.kr/vi/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang.kr/th/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang.kr/ru/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang.kr/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+  </url>
+  <url>
+    <loc>https://hantang.kr/ja/journal/hurshimchung-dongnae-hot-spring-busan/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang.kr/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang.kr/ja/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang.kr/zh-hant/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang.kr/zh-hans/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang.kr/vi/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang.kr/th/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang.kr/ru/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang.kr/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+  </url>
+  <url>
+    <loc>https://hantang.kr/zh-hant/journal/hurshimchung-dongnae-hot-spring-busan/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang.kr/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang.kr/ja/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang.kr/zh-hant/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang.kr/zh-hans/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang.kr/vi/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang.kr/th/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang.kr/ru/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang.kr/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+  </url>
+  <url>
+    <loc>https://hantang.kr/zh-hans/journal/hurshimchung-dongnae-hot-spring-busan/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang.kr/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang.kr/ja/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang.kr/zh-hant/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang.kr/zh-hans/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang.kr/vi/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang.kr/th/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang.kr/ru/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang.kr/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+  </url>
+  <url>
+    <loc>https://hantang.kr/vi/journal/hurshimchung-dongnae-hot-spring-busan/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang.kr/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang.kr/ja/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang.kr/zh-hant/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang.kr/zh-hans/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang.kr/vi/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang.kr/th/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang.kr/ru/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang.kr/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+  </url>
+  <url>
+    <loc>https://hantang.kr/th/journal/hurshimchung-dongnae-hot-spring-busan/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang.kr/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang.kr/ja/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang.kr/zh-hant/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang.kr/zh-hans/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang.kr/vi/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang.kr/th/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang.kr/ru/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang.kr/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+  </url>
+  <url>
+    <loc>https://hantang.kr/ru/journal/hurshimchung-dongnae-hot-spring-busan/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hantang.kr/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hantang.kr/ja/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://hantang.kr/zh-hant/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hantang.kr/zh-hans/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hantang.kr/vi/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hantang.kr/th/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hantang.kr/ru/journal/hurshimchung-dongnae-hot-spring-busan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hantang.kr/journal/hurshimchung-dongnae-hot-spring-busan/"/>
   </url>
   <url>
     <loc>https://hantang.kr/journal/korea-bang-culture-noraebang-pc-bang/</loc>
