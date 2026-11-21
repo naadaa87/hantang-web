@@ -396,9 +396,10 @@ def main():
         T = json.load(open(os.path.join(HERE, 'i18n', lang + '.json'), encoding='utf-8'))
         hs_rel = page_rel(d, 'hot-springs'); tpl = rd(hs_rel)
         root, labels, rorder, hs_count, hs_name = template_bits(tpl)
+        tpl_page = re.sub(r'<style data-il>.*?</style>\n?', '', tpl, flags=re.S)   # 일러스트 표시 모양은 STYLE 에 따로 있다
         counts['hot-springs'] = hs_count
         for slug in SLUGS:
-            new = build_page(slug, lang, d, tpl, T, counts)
+            new = build_page(slug, lang, d, tpl_page, T, counts)
             # 이전 판과 내용이 같으면 sitemap 날짜를 그대로 둔다
             save(page_rel(d, slug), new)
         save(hs_rel, patch_hotsprings(tpl, T, counts, hs_name, root))

@@ -208,7 +208,7 @@ IL_CSS = ('<style data-il>[data-mx-il]{background:#F3EEE6}[data-mx-il] img{width
 def il_style(s):
     """일러스트가 있는 페이지에만 표시 모양을 넣는다 (테마 페이지처럼 이미 모양이 있으면 넣지 않는다)."""
     s = re.sub(r'<style data-il>.*?</style>\n?', '', s, flags=re.S)
-    if ('data-mx-il' in s or 'pi pi-il' in s) and '.ilb{' not in s:
+    if ('data-mx-il' in s or 'pi pi-il' in s or 'class="ilb"' in s) and '.ilb{' not in s:
         s = s.replace('</head>', IL_CSS + '\n</head>', 1)
     return s
 
@@ -320,7 +320,21 @@ def strip_html(hid, photos, name_ko, lang):
 
 RE_HS_HERO = re.compile(r'<div class="pimg" data-mx-hs>.*?</div><!--mx:tile (.*?) -->', re.S)
 
-def patch_springs(s, springs, lang):
+def il_spring(body, lang, root):
+    """사진이 없는 온천 카드가 한탕 지점 페이지로 이어지고 그 지점에 일러스트가 있으면, 온도 표시를 얹어 일러스트를 맨 위에 넣는다."""
+    pl = re.search(r'href="[^"]*baths/p/([^/"]+)/"', body)
+    pid = pl.group(1) if pl else None
+    top = re.match(r'(<article[^>]*>)(<div class="pimg[^"]*">.*?</div>)(?=<div class="pbody">)', body, re.S)
+    if not (pid in ILL and top and 'hs2-t' in top.group(2) and '--' not in top.group(2)): return body
+    tile = top.group(2); deg = re.search(r'<b>([\d.]+)<span>°C</span></b>', tile)
+    name = card_name(body, html.unescape((re.search(r'data-n="([^"]*)"', body) or [None, pid])[1]))
+    hero = ('<div class="pimg" data-mx-hs><img src="%s" srcset="%s 640w, %s 960w" sizes="(max-width:640px) 100vw, 400px" width="960" height="540" alt="%s" loading="lazy" decoding="async">'
+            '<span class="ilb" style="left:auto;right:8px">%s</span>%s</div><!--mx:tile %s -->'
+            % (e(il_src(pid, 960, root)), e(il_src(pid, 640, root)), e(il_src(pid, 960, root)), e(IL[lang][2].format(n=name)), e(IL[lang][0]),
+               ('<span class="hs2-deg">%s°C</span>' % deg.group(1)) if deg else '', tile))
+    return body[:top.start(2)] + hero + body[top.end(2):]
+
+def patch_springs(s, springs, lang, root=''):
     """온천 카드: 사진이 없어 온도만 보이던 카드는 맨 위에 사진을 넣고, 나머지 사진은 카드 안에 한 줄로 넣는다."""
     s = RE_STRIP.sub('', s)
     s = RE_HS_HERO.sub(lambda mo: mo.group(1), s)      # 먼저 원래 모양으로 되돌린 뒤 다시 넣는다
@@ -329,7 +343,7 @@ def patch_springs(s, springs, lang):
         nonlocal n, heroes
         hid = mo.group(1); body = mo.group(0)
         m = springs.get(hid); photos = list((m or {}).get('photos') or [])
-        if not photos: return body
+        if not photos: return il_spring(body, lang, root)
         name_ko = html.unescape((re.search(r'data-n="([^"]*)"', body) or [None, hid])[1])
         hero_src = None
         top = re.match(r'(<article[^>]*>)(<div class="pimg[^"]*">.*?</div>)(?=<div class="pbody">)', body, re.S)
@@ -408,13 +422,13 @@ def main():
                         s, _ = patch_hero(s, pid, places.get(pid, {}), lang, root_of(rel))
                 if s != old and 'data-mx-hero' in s and '.pcap' not in s: print('!! 사진 출처 표시 모양(.pcap)이 없는 페이지:', rel)
             if 'data-cur="' in s: s = patch_rows(s, lang, root_of(rel))
-            s = il_style(s)
-            if lang == 'en' and ('data-mx-il' in s or 'pi pi-il' in s): stats['il_pages'] += 1
             # 3) 온천 페이지
             if rel.replace(os.sep, '/').endswith('baths/hot-springs/index.html'):
-                s, n, hh = patch_springs(s, springs, lang)
+                s, n, hh = patch_springs(s, springs, lang, root_of(rel))
                 s = assets(s, root_of(rel), (n + hh) > 0)
                 if lang == 'en': stats['strips'] = n; stats['hs_heroes'] = hh
+            s = il_style(s)
+            if lang == 'en' and ('class="ilb"' in s or 'pi pi-il' in s): stats['il_pages'] += 1
             save(rel, s, old)
         if lang == 'en': stats['heroes'] = len(heroes)
 
