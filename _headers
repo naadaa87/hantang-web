@@ -31,6 +31,8 @@
   Cache-Control: public, max-age=604800
 /icons/*
   Cache-Control: public, max-age=2592000
+/assets/illust/*
+  Cache-Control: public, max-age=2592000
 /admin/*
   X-Robots-Tag: noindex, nofollow
 /offline/*

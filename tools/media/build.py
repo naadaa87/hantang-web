@@ -4,6 +4,8 @@
 하는 일
   1) 지점 상세 페이지(baths/p/<지점>/, 8개 언어)에 '사진·영상' 영역을 넣는다.
   2) 대표 사진이 없던 지점 카드(상세·목록 페이지)에 대표 사진을 넣는다 (media.json 에 hero 가 켜진 지점만).
+     대표 사진이 없고 일러스트(tools/media/illust.json)가 있으면 일러스트를 넣고 'Illustration' 표시를 붙인다.
+     지역 목록에서 한탕이 소개하는 지점 줄에는 일러스트 썸네일을, 지점 상세의 공유 미리보기에는 og/p-<지점>.jpg 를 쓴다.
   3) 온천 페이지(baths/hot-springs/) 카드에 사진 줄을 넣는다.
   4) 바뀐 페이지의 sitemap.xml 수정일을 오늘로 바꾼다.
 
@@ -66,6 +68,17 @@ T = {
             pnote='Нажмите на фото, чтобы увеличить его и увидеть источник и лицензию.',
             watch='Смотреть на YouTube', official='Официальный канал', play='Воспроизвести видео', close='Закрыть', prev='Назад', next='Вперёд'),
 }
+# 일러스트 표시: (카드용 짧은 표시, 지점 상세용 긴 표시, 그림 설명 alt)
+IL = {
+ 'en': ('Illustration', 'Illustration · the real place may look different', 'Illustration of {n}'),
+ 'ko': ('일러스트', '일러스트 · 실제 모습과 다를 수 있어요', '{n} 일러스트'),
+ 'ja': ('イラスト', 'イラスト・実際の様子とは異なる場合があります', '{n}のイラスト'),
+ 'zh-Hant': ('插畫', '插畫・實際樣貌可能不同', '{n}的插畫'),
+ 'zh-Hans': ('插画', '插画・实际样貌可能不同', '{n}的插画'),
+ 'vi': ('Tranh minh họa', 'Tranh minh họa · thực tế có thể khác', 'Tranh minh họa {n}'),
+ 'th': ('ภาพวาดประกอบ', 'ภาพวาดประกอบ · สถานที่จริงอาจแตกต่าง', 'ภาพวาดประกอบ {n}'),
+ 'ru': ('Иллюстрация', 'Иллюстрация · в реальности может выглядеть иначе', 'Иллюстрация: {n}'),
+}
 VLANG = {'en': 'English', 'ko': '한국어', 'ja': '日本語', 'zh': '中文', 'th': 'ไทย'}
 VLANG_ATTR = {'zh': 'zh'}
 MAX_VIDEOS = 3
@@ -77,6 +90,8 @@ def ver():
     for f in ('assets/mx.css', 'assets/mx.js'): h.update(open(os.path.join(ROOT, f), 'rb').read())
     return h.hexdigest()[:8]
 VER = ver()
+_IL_PATH = os.path.join(HERE, 'illust.json')
+ILL = json.load(open(_IL_PATH, encoding='utf-8')) if os.path.exists(_IL_PATH) else {}   # tools/media/illust.py 가 만든 목록
 
 def credit(p, lang):
     t = T[lang]
@@ -170,33 +185,96 @@ def assets(s, root, need):
         s = s.replace('</body>', '<script src="%sassets/mx.js?v=%s" defer data-mx></script>\n</body>' % (root, VER), 1)
     return s
 
+# ── 일러스트 (사진이 없는 지점의 카드 맨 위). 그림 파일은 tools/media/illust.py 가 만든다.
+def il_src(pid, w, root):
+    return '%sassets/illust/%s-%d.webp?v=%s' % (root, pid, w, ILL[pid]['v'])
+
+def il_html(cls, icon, pid, name, lang, root, place=False):
+    """일러스트 카드 머리. place=True 는 지점 상세 페이지(맨 위라 바로 불러오고, 표시도 길게)."""
+    short, long_, alt = IL[lang]
+    if place: sizes, load = '(max-width:820px) 100vw, 780px', ' fetchpriority="high"'
+    elif cls == 'dimg': sizes, load = '(max-width:760px) 100vw, 560px', ' loading="lazy"'
+    else: sizes, load = '(max-width:640px) 100vw, 400px', ' loading="lazy"'
+    return ('<div class="%s" data-mx-il="%s"><img src="%s" srcset="%s 640w, %s 960w" sizes="%s" width="960" height="540" alt="%s"%s decoding="async">'
+            '<span class="ilb">%s</span></div>'
+            % (cls, icon, e(il_src(pid, 960, root)), e(il_src(pid, 640, root)), e(il_src(pid, 960, root)), sizes,
+               e(alt.format(n=name)), load, e(long_ if place else short)))
+
+IL_CSS = ('<style data-il>[data-mx-il]{background:#F3EEE6}[data-mx-il] img{width:100%;height:100%;object-fit:cover;display:block}'
+          '.ilb{position:absolute;left:8px;bottom:8px;max-width:calc(100% - 16px);font-size:10.5px;line-height:1.5;background:rgba(27,26,24,.66);color:#fff;'
+          'border-radius:6px;padding:2px 8px;letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;pointer-events:none}'
+          '.pi.pi-il{background:#F3EEE6}.pi.pi-il img{width:100%;height:100%;object-fit:cover;display:block}</style>')
+
+def il_style(s):
+    """일러스트가 있는 페이지에만 표시 모양을 넣는다 (테마 페이지처럼 이미 모양이 있으면 넣지 않는다)."""
+    s = re.sub(r'<style data-il>.*?</style>\n?', '', s, flags=re.S)
+    if ('data-mx-il' in s or 'pi pi-il' in s) and '.ilb{' not in s:
+        s = s.replace('</head>', IL_CSS + '\n</head>', 1)
+    return s
+
+RE_ROW = re.compile(r'(<li class="pl"[^>]*\bdata-cur="([^"]+)"[^>]*>)'
+                    r'(?:<div class="pi"><svg aria-hidden="true"><use href="#(ty-[a-z]+)"/></svg></div>|<div class="pi pi-il" data-il="(ty-[a-z]+)"><img [^>]*></div>)')
+
+def patch_rows(s, lang, root):
+    """지역 목록에서 한탕이 소개하는 지점(data-cur) 줄의 작은 아이콘을 일러스트 썸네일로 바꾼다."""
+    def f(mo):
+        head, pid, icon = mo.group(1), mo.group(2), mo.group(3) or mo.group(4)
+        if pid in ILL:
+            return head + ('<div class="pi pi-il" data-il="%s"><img src="%s" alt="" title="%s" width="64" height="64" loading="lazy" decoding="async"></div>'
+                           % (icon, e(il_src(pid, 400, root)), e(IL[lang][0])))
+        return head + '<div class="pi"><svg aria-hidden="true"><use href="#%s"/></svg></div>' % icon
+    return RE_ROW.sub(f, s)
+
+OG_DEFAULT = 'https://hantang.kr/og.png'
+def set_og(s, pid):
+    """일러스트가 있는 지점은 공유 미리보기 그림을 og/p-<지점>.jpg 로 바꾼다."""
+    mine = 'https://hantang.kr/og/p-%s.jpg' % pid
+    has = pid in ILL and os.path.exists(os.path.join(ROOT, 'og', 'p-%s.jpg' % pid))
+    for attr, key in (('property', 'og:image'), ('name', 'twitter:image')):
+        mo = re.search(r'<meta %s="%s" content="([^"]*)">' % (attr, key), s)
+        if not mo: continue
+        url = mine if has else (OG_DEFAULT if mo.group(1) == mine else mo.group(1))
+        s = s[:mo.start(1)] + url + s[mo.end(1):]
+    return s
+
+def card_name(seg, fallback):
+    h = re.search(r'<h3[^>]*>(.*?)</h3>', seg, re.S)
+    if h:
+        t = html.unescape(re.sub(r'<[^>]+>', '', re.split(r'<span', h.group(1), maxsplit=1)[0])).strip()
+        if t: return t
+    return fallback
+
 # ── 대표 사진 (카드 맨 위)
 RE_PLACEHOLDER = r'<div class="(dimg ill|pimg nop)"><svg aria-hidden="true"><use href="#(ty-[a-z]+)"/></svg></div>'
 RE_HERO = r'<div class="(dimg|pimg)" data-mx-hero="(ty-[a-z]+)">.*?</span></div>'
+RE_IL = r'<div class="(dimg|pimg)" data-mx-il="(ty-[a-z]+)">.*?</span></div>'
 
 def hero_html(cls, icon, p, alt, lang):
     cr, cl = credit(p, lang)
     return ('<div class="%s" data-mx-hero="%s"><img src="%s" alt="%s" loading="lazy" decoding="async" referrerpolicy="no-referrer">'
             '<span class="pcap"><a href="%s" target="_blank" rel="noopener">%s</a></span></div>' % (cls, icon, e(p['src']), e(alt), e(cl), e(cr)))
 
-def patch_hero(s, pid, m, lang):
-    """data-hx 가 pid 인 카드들의 맨 위 그림을 media.json 에 맞춘다. (바뀐 글, 대표 사진 주소) 를 돌려준다."""
+def patch_hero(s, pid, m, lang, root='', place=False):
+    """data-hx 가 pid 인 카드들의 맨 위 그림을 맞춘다: 대표 사진(media.json hero) → 일러스트(illust.json) → 아이콘 순.
+    (바뀐 글, 대표 사진 주소) 를 돌려준다."""
     want = (m.get('photos') or [None])[0] if m.get('hero') else None
     out = []; pos = 0; hero_src = None
     for a in re.finditer(r'<article\b[^>]*\bdata-hx="%s"[^>]*>' % re.escape(pid), s):
         head_end = a.end(); alt = html.unescape((re.search(r'data-n="([^"]*)"', a.group(0)) or [None, pid])[1])
-        seg = s[head_end:head_end + 1400]
-        m1 = re.match(r'\s*' + RE_PLACEHOLDER, seg); m2 = re.match(r'\s*' + RE_HERO, seg, re.S)
-        mm = m1 or m2
+        seg = s[head_end:head_end + 2400]
+        m1 = re.match(r'\s*' + RE_PLACEHOLDER, seg); m2 = re.match(r'\s*' + RE_HERO, seg, re.S); m3 = re.match(r'\s*' + RE_IL, seg, re.S)
+        mm = m1 or m2 or m3
         if not mm:
             g = re.match(r'\s*<div class="(?:dimg|pimg)"><img src="([^"]+)"', seg)
             if g and hero_src is None: hero_src = html.unescape(g.group(1))
             continue
         lead = re.match(r'\s*', seg).group(0)
         if m1: cls = m1.group(1).split()[0]; icon = m1.group(2)
-        else: cls = m2.group(1); icon = m2.group(2)
+        else: cls = mm.group(1); icon = mm.group(2)
         if want:
             new = hero_html(cls, icon, want, alt, lang); hero_src = want['src']
+        elif pid in ILL:
+            new = il_html(cls, icon, pid, card_name(seg, alt), lang, root, place)
         else:
             new = '<div class="%s"><svg aria-hidden="true"><use href="#%s"/></svg></div>' % ('dimg ill' if cls == 'dimg' else 'pimg nop', icon)
         out.append(s[pos:head_end] + lead + new); pos = head_end + mm.end()
@@ -285,7 +363,7 @@ def patch_springs(s, springs, lang):
 def main():
     data = json.load(open(os.path.join(HERE, 'media.json'), encoding='utf-8'))
     places, springs = data.get('places', {}), data.get('springs', {})
-    changed = []; stats = dict(pages=0, photos=0, videos=0, heroes=0, strips=0, hs_heroes=0)
+    changed = []; stats = dict(pages=0, photos=0, videos=0, heroes=0, strips=0, hs_heroes=0, illust=0, il_pages=0)
     def save(rel, new, old):
         if new != old:
             changed.append(rel)
@@ -299,7 +377,9 @@ def main():
         for pid in sorted(os.listdir(pdir)):
             rel = os.path.join(base, 'p', pid, 'index.html'); old = rd(os.path.join(ROOT, rel)); s = old
             m = places.get(pid, {})
-            s, hero_src = patch_hero(s, pid, m, lang)
+            s, hero_src = patch_hero(s, pid, m, lang, root_of(rel), place=True)
+            s = il_style(set_og(s, pid))
+            if lang == 'en' and 'data-mx-il' in s: stats['illust'] += 1
             h1 = re.search(r'<h1>(.*?)</h1>', s, re.S)
             name = html.unescape(re.sub(r'<[^>]+>', ' ', re.sub(r'<span.*', '', h1.group(1), flags=re.S))).strip() if h1 else ''
             if not name: name = html.unescape((re.search(r'data-n="([^"]*)"', s) or [None, pid])[1])
@@ -321,11 +401,15 @@ def main():
             if os.sep + 'p' + os.sep in dp + os.sep or dp.endswith(os.sep + 'p'): continue
             if 'index.html' not in fn: continue
             rel = os.path.relpath(os.path.join(dp, 'index.html'), ROOT); old = rd(os.path.join(ROOT, rel)); s = old
-            if 'data-mx-hero' in s or any('data-hx="%s"' % pid in s for pid in heroes):
+            mark = 'data-mx-hero' in s or 'data-mx-il' in s
+            if mark or any('data-hx="%s"' % pid in s for pid in list(heroes) + list(ILL)):
                 for pid in sorted(set(re.findall(r'data-hx="([^"]+)"', s))):
-                    if pid in heroes or 'data-mx-hero' in s:
-                        s, _ = patch_hero(s, pid, places.get(pid, {}), lang)
-                if s != old and '.pcap' not in s: print('!! 사진 출처 표시 모양(.pcap)이 없는 페이지:', rel)
+                    if pid in heroes or pid in ILL or mark:
+                        s, _ = patch_hero(s, pid, places.get(pid, {}), lang, root_of(rel))
+                if s != old and 'data-mx-hero' in s and '.pcap' not in s: print('!! 사진 출처 표시 모양(.pcap)이 없는 페이지:', rel)
+            if 'data-cur="' in s: s = patch_rows(s, lang, root_of(rel))
+            s = il_style(s)
+            if lang == 'en' and ('data-mx-il' in s or 'pi pi-il' in s): stats['il_pages'] += 1
             # 3) 온천 페이지
             if rel.replace(os.sep, '/').endswith('baths/hot-springs/index.html'):
                 s, n, hh = patch_springs(s, springs, lang)
@@ -346,6 +430,7 @@ def main():
         print('sitemap 수정일 %d곳' % k)
     print('%s: 바뀐 파일 %d개 · 사진·영상 영역 %d곳(영어 기준 사진 %d장, 영상 %d편) · 지점 대표 사진 %d곳 · 온천 카드 대표 사진 %d곳, 사진 줄 %d곳'
           % ('확인만' if CHECK else '완료', len(changed), stats['pages'], stats['photos'], stats['videos'], stats['heroes'], stats['hs_heroes'], stats['strips']))
+    print('일러스트: 지점 상세 %d곳(영어 기준) · 일러스트가 들어간 목록 페이지 %d개(영어 기준)' % (stats['illust'], stats['il_pages']))
 
 if __name__ == '__main__':
     main()

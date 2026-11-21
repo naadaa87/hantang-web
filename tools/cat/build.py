@@ -69,11 +69,13 @@ def place(pid, lang, d):
     lede = re.search(r'<p class="lede"[^>]*>(.*?)</p>', s, re.S)
     seg = s[a.end():a.end() + 1600]
     hero = re.match(r'\s*<div class="(?:dimg|pimg)[^"]*"[^>]*>\s*(<img [^>]*>)\s*(<span class="pcap">.*?</span>)?', seg, re.S)
+    il = bool(re.match(r'\s*<div class="(?:dimg|pimg)" data-mx-il=', seg))   # 일러스트는 페이지마다 경로가 달라 카드에서 다시 만든다
+    if il: hero = None
     geo = re.search(r'"latitude":\s*"?([\d.]+)"?,\s*"longitude":\s*"?([\d.]+)', s)
     r = dict(name=latin, ko=attr('data-n'), addr=attr('data-addr'), sub=attr('data-sub'),
              lede=(lede.group(1).strip() if lede else ''), lat=geo.group(1) if geo else '', lng=geo.group(2) if geo else '',
              hero_img=(re.search(r'src="([^"]+)"', hero.group(1)).group(1) if hero else ''),
-             hero_cap=(hero.group(2) or '') if hero else '')
+             hero_cap=(hero.group(2) or '') if hero else '', il=il)
     _place_cache[key] = r
     return r
 
@@ -111,6 +113,7 @@ STYLE = '''<style data-cx>
   .cx-note{margin-top:22px;font-size:14px;color:var(--ink);border:1px solid var(--line);border-radius:14px;background:var(--stone);padding:14px 16px;max-width:820px;line-height:1.6}
   .cx-note a{color:var(--blue);font-weight:700}
   @media (max-width:560px){.hs2-facts.c3{grid-template-columns:repeat(2,minmax(0,1fr))}.cx-about{padding:18px}}
+  ''' + re.sub(r'</?style[^>]*>', '', MB.IL_CSS) + '''
 </style>'''
 
 THEME_STYLE = '''<style data-cx-th>
@@ -175,6 +178,8 @@ def card_kto(cid, tags, T, lang, root, icon, ld):
         u, n = photos[0]; cr, cl = MB.credit({'kind': 'kto', 'lic': 'KOGL-%d' % n}, lang)
         top = ('<div class="pimg"><img src="%s" alt="%s" loading="lazy" decoding="async" referrerpolicy="no-referrer">'
                '<span class="pcap"><a href="%s" target="_blank" rel="noopener">%s</a></span></div>' % (e(u), e(en['ko']), e(cl), e(cr)))
+    elif hid in MB.ILL:
+        top = MB.il_html('pimg', icon, hid, name, lang, root)
     else:
         top = tile(icon, kind)
     chips = ''.join('<span class="hs2-tag w">%s</span>' % e(U['tags'][t]) for t in tags)
@@ -199,7 +204,9 @@ def card_place(pid, tags, T, lang, d, root, icon, ld):
     p = place(pid, lang, d); U = T['ui']
     name = p['ko'] if lang == 'ko' else (p['name'] or p['ko'])
     h3 = e(name) if lang == 'ko' else '%s <span lang="ko">%s</span>' % (e(name), e(p['ko']))
-    if p['hero_img']:
+    if p['il'] and pid in MB.ILL:
+        top = MB.il_html('pimg', icon, pid, name, lang, root); img = ''
+    elif p['hero_img']:
         top = '<div class="pimg"><img src="%s" alt="%s" loading="lazy" decoding="async" referrerpolicy="no-referrer">%s</div>' % (e(p['hero_img']), e(p['ko']), p['hero_cap'])
         img = p['hero_img']
     else:
