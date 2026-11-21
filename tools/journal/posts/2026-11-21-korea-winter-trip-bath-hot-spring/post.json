@@ -1,0 +1,17 @@
+{
+  "pillar": "trip",
+  "related": ["regions", "hot-springs", "health-safety", "overnight"],
+  "sources": [
+    {"title": "기상특보 발표기준", "url": "https://www.weather.go.kr/w/forecast/guide/standard.do", "note": "기상청 날씨누리(한파주의보·한파경보 기준), 2026-11-21 확인"},
+    {"title": "월별천문현상: 2026년 12월", "url": "https://astro.kasi.re.kr/kor/life/pageView/7?mm=12&yyyy=2026", "note": "한국천문연구원 천문우주지식정보(일출·일몰 시각, 동지), 2026-11-21 확인"},
+    {"title": "'한파 피난처' 식물원·찜질방, 새해부터 문전성시", "url": "https://www.hankyung.com/article/2026010288691", "note": "한국경제, 2026-01-02"},
+    {"title": "[12.2.화.조간] 겨울철 한파 대비, 「한랭질환 응급실감시체계」 운영 시작", "url": "https://www.kdca.go.kr/bbs/kdca/42/215496/artclView.do", "note": "질병관리청 보도자료, 2025-12-01 (2026-02-11 수정)"},
+    {"title": "2027년 휴일 119일… 설 연휴 나흘·3일 이상 연휴 10번", "url": "https://www.segye.com/newsView/20260629506183", "note": "세계일보(우주항공청 2027년도 월력요항 발표), 2026-06-29"},
+    {"title": "달력자료(월력요항): 2027년", "url": "https://astro.kasi.re.kr/kor/life/post/calendarData?year=2027", "note": "한국천문연구원 천문우주지식정보, 2026-06-30 생성"},
+    {"title": "KTX 타고 와서 목욕만 하고 간다…'수안보의 고민'", "url": "https://v.daum.net/v/20260104210327079", "note": "경향신문 (다음 뉴스), 2026-01-04"},
+    {"title": "수안보온천 족욕길 (수안보온천 족욕체험장)", "url": "https://www.ktriptips.com/kor/tourspot/3343355", "note": "K-Trip Tips에 실린 한국관광공사 관광정보, 2026-06-29 수정"},
+    {"title": "Suanbo Hot Springs Foot Bath Path (수안보온천 족욕길)", "url": "https://www.ktriptips.com/eng/tourspot/4016991", "note": "K-Trip Tips에 실린 한국관광공사 관광정보(영문), 2026-08-12 수정"},
+    {"title": "유성 족욕체험장", "url": "https://www.ktriptips.com/kor/tourspot/2605899", "note": "K-Trip Tips에 실린 한국관광공사 관광정보, 2026-10-14 수정"},
+    {"title": "동래온천 노천족탕", "url": "https://www.ktriptips.com/kor/tourspot/128706", "note": "K-Trip Tips에 실린 한국관광공사 관광정보, 2026-11-04 수정"}
+  ]
+}
