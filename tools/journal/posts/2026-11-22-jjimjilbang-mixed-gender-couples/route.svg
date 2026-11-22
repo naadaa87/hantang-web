@@ -1,0 +1,49 @@
+<svg viewBox="0 0 720 190" role="img" aria-label="jjimjilbang route" style="width:100%;height:auto;display:block" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M92 96C122 96 122 66 152 66H332C362 66 362 96 392 96H472C502 96 502 66 532 66H592C612 66 612 96 632 96" stroke="#1E6E9C"/>
+<path d="M92 112C122 112 122 142 152 142H332C362 142 362 112 392 112H472C502 112 502 142 532 142H592C612 142 612 112 632 112" stroke="#C13A2A"/>
+</g>
+<g fill="#F6F5F2" stroke="#79746D" stroke-width="2" stroke-linejoin="round">
+<rect x="28" y="48" width="64" height="112" rx="10"/>
+<rect x="392" y="48" width="80" height="112" rx="10"/>
+<rect x="632" y="48" width="64" height="112" rx="10"/>
+</g>
+<g fill="#EAF2F7" stroke="#1E6E9C" stroke-width="2" stroke-linejoin="round">
+<rect x="152" y="44" width="60" height="44" rx="8"/>
+<rect x="272" y="44" width="60" height="44" rx="8"/>
+<rect x="532" y="44" width="60" height="44" rx="8"/>
+</g>
+<g fill="#FBEFEC" stroke="#C13A2A" stroke-width="2" stroke-linejoin="round">
+<rect x="152" y="120" width="60" height="44" rx="8"/>
+<rect x="272" y="120" width="60" height="44" rx="8"/>
+<rect x="532" y="120" width="60" height="44" rx="8"/>
+</g>
+<g fill="#1E6E9C">
+<circle cx="49" cy="104" r="8"/>
+<circle cx="182" cy="66" r="8"/>
+<circle cx="302" cy="61" r="8"/>
+<circle cx="420" cy="104" r="8"/>
+<circle cx="562" cy="66" r="8"/>
+<circle cx="653" cy="104" r="8"/>
+</g>
+<g fill="#C13A2A">
+<circle cx="71" cy="104" r="8"/>
+<circle cx="182" cy="142" r="8"/>
+<circle cx="302" cy="137" r="8"/>
+<circle cx="444" cy="104" r="8"/>
+<circle cx="562" cy="142" r="8"/>
+<circle cx="675" cy="104" r="8"/>
+</g>
+<g fill="none" stroke-width="1.8" stroke-linecap="round">
+<path d="M282 78q5-4 10 0t10 0t10 0t10 0" stroke="#1E6E9C"/>
+<path d="M282 154q5-4 10 0t10 0t10 0t10 0" stroke="#C13A2A"/>
+</g>
+<g font-family="monospace" font-size="13" font-weight="700" fill="#1E6E9C" text-anchor="middle">
+<text x="60" y="26">1</text>
+<text x="182" y="26">2</text>
+<text x="302" y="26">3</text>
+<text x="432" y="26">4</text>
+<text x="562" y="26">5</text>
+<text x="664" y="26">6</text>
+</g>
+</svg>
