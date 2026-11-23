@@ -1,0 +1,16 @@
+{
+  "pillar": "spot",
+  "related": ["seshin", "tattoos", "health-safety", "prices-hours"],
+  "sources": [
+    {"title": "담다 세신샵｜홍대 근처 여성전용 한국 전통 목욕 체험", "url": "https://korean.visitseoul.net/entertainment/seshinshop-damda/KOP59q6hd", "note": "서울관광재단 VisitSeoul, 2025-10-28 제작·2026-11-06 수정"},
+    {"title": "행정안전부 「생활 목욕장업」 인허가 공공데이터", "url": "https://www.data.go.kr/", "note": "행정안전부 (공공데이터포털), 당사 목록 data/places.min.json 의 2026-10-31 내려받은 자료 기준"},
+    {"title": "Mugwort, milk and moisturizer: How old Korean spa treatments are luring young tourists", "url": "https://v.daum.net/v/344XyL7vSW", "note": "Korea JoongAng Daily (다음 뉴스), 2025-08-15"},
+    {"title": "전통 세신에 빠진 외국인들… '핫플'로 부상한 한국식 목욕탕", "url": "https://v.daum.net/v/20250829080236303", "note": "코리아중앙데일리 한국어판 (다음 뉴스), 2025-08-29"},
+    {"title": "DAMDA Private Korean Bath & Body Scrub Experience | Hongdae Seoul", "url": "https://www.klook.com/activity/171690-damda-private-korean-seshin-body-scrub-experience-hongdae-seoul", "note": "Klook 예약 페이지(패키지·예약 확정 방식), 2026-11 확인"},
+    {"title": "Seian Yeonnam | Women-only Private Bath & Body Scrub", "url": "https://creatrip.com/en/spot/14744", "note": "Creatrip 예약 페이지(코스·요금·취소 조건), 2026-11 확인"},
+    {"title": "SEIAN Donggyo | Women-only Private Bath & Body Scrub", "url": "https://creatrip.com/en/spot/14814", "note": "Creatrip 예약 페이지(코스·요금), 2026-11 확인"},
+    {"title": "Your Ultimate Guide to Best Private Bath & Body Scrub Spas in Seoul | 2026 Edition", "url": "https://creatrip.com/en/blog/14716", "note": "Creatrip 안내 글(프라이빗 세신 가격대), 2026-11 확인"},
+    {"title": "Premium Private Head Spa & Traditional Korean Body Scrub in Hongdae (THE SEOL:HA)", "url": "https://www.trazy.com/experience/detail/hongdae-premium-head-spa-the-seolha", "note": "Trazy 예약 페이지(코스·영업시간·취소 조건), 2026-11 확인"},
+    {"title": "Hongdae Head Spa & Therapy (THE SEOL:HA)", "url": "https://creatrip.com/en/spot/15130", "note": "Creatrip 예약 페이지(응대 언어), 2026-11 확인"}
+  ]
+}
