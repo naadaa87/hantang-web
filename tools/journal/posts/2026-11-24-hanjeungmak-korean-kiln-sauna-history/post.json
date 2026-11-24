@@ -1,0 +1,13 @@
+{
+  "pillar": "culture",
+  "related": ["history", "rooms", "bath-types", "health-safety"],
+  "sources": [
+    {"title": "한증(汗蒸)", "url": "https://encykorea.aks.ac.kr/Article/E0061985", "note": "한국민족문화대백과사전 (한국학중앙연구원), 1995 집필·2023-02-07 최종수정"},
+    {"title": "한증소(汗蒸所)", "url": "https://dh.aks.ac.kr/sillokwiki/index.php/%ED%95%9C%EC%A6%9D%EC%86%8C(%E6%B1%97%E8%92%B8%E6%89%80)", "note": "조선왕조실록사전 (한국학중앙연구원), 2017-12-09 수정"},
+    {"title": "한증법(汗蒸法)을 통해 바라본 조선조(朝鮮朝) 불교의학(佛敎醫學)의 일면(一面)", "url": "https://koreascience.kr/article/JAKO201817767633769.page?lang=en", "note": "한국의사학회지 31권 2호 (KoreaScience), 2018-11-30"},
+    {"title": "한증막(汗蒸幕)의 시설 및 이용 실태 조사", "url": "https://koreascience.kr/article/JAKO199436561038046.page?lang=ko", "note": "대한물리치료과학회지 1권 1호 (KoreaScience, 초록만 확인), 1994-09-30"},
+    {"title": "찜질방·한증막등 이용요령", "url": "https://www.seoul.co.kr/news/2001/03/05/20010305014001", "note": "서울신문, 2001-03-05"},
+    {"title": "국내여행 | 숱한 시간의 흔적 교동도", "url": "https://www.seoul.co.kr/news/2015/09/08/20150908500200", "note": "서울신문 (트래비), 2015-09-08"},
+    {"title": "행정안전부 「생활 목욕장업」 인허가 공공데이터", "url": "https://www.data.go.kr/", "note": "행정안전부 (공공데이터포털), 당사 목록 data/places.min.json 의 2026-10-31 내려받은 자료로 2026-11-24 직접 집계"}
+  ]
+}
