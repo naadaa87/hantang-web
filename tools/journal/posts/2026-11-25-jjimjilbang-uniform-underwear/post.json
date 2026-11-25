@@ -1,0 +1,15 @@
+{
+  "pillar": "howto",
+  "related": ["first-visit", "etiquette", "prices-hours", "phrases"],
+  "sources": [
+    {"title": "영업자준수사항안내", "url": "https://www.ydp.go.kr/health/contents.do?key=3766&", "note": "서울 영등포구 보건소(수정일 표시 없음, 아동 나이는 개정 전 '만 5세' 표기), 2026-11 확인"},
+    {"title": "공중위생영업자 준수사항", "url": "https://www.geumcheon.go.kr/health/contents.do?key=1435", "note": "서울 금천구 보건소, 2019-07-23 수정, 2026-11 확인"},
+    {"title": "[유권해석] 공중위생관리법 시행규칙 [별표 4] 공중위생영업자가 준수하여야 하는 위생관리기준 등(제7조관련)", "url": "https://www.nepla.ai/wiki/복지와-건강/공중위생/-유권해석-공중위생관리법-시행규칙-별표-4-공중위생영업자가-준수하여야-하는-위생관리기준-등-제7조관련-0xr84drp28q1", "note": "네플라 법률 위키(법령 사본, 별표 4 <개정 2022. 6. 22.>본, 2025-03-26 작성), 2026-11 확인"},
+    {"title": "찜질방 대여 옷 '세균 덩어리'", "url": "https://sateconomy.co.kr/news/view/179590454236337", "note": "토요경제, 2006-07-21 (한국소비자보호원 조사 보도)"},
+    {"title": "찜질방 대여 옷 불안하다면 사복은 어떨까?", "url": "https://www.mdtoday.co.kr/news/articleView.html?idxno=98243", "note": "메디컬투데이, 2010-02-02"},
+    {"title": "헬스장서 속옷 안 입고 운동한다고?⋯ ‘노팬티 운동’ 위생 논란", "url": "https://kormedi.com/2873941/", "note": "코메디닷컴, 2026-09-28 (헬스장 운동복에 관한 기사)"},
+    {"title": "찜질방에서 찜질복(?)안에 속옷입으시나요?", "url": "https://www.clien.net/service/board/park/891716", "note": "클리앙 모두의공원(이용자 게시판 글·댓글 29개, 보조 자료), 2010-06-11"},
+    {"title": "아쿠아필드 이용안내", "url": "https://aquafield.co.kr/usage.html", "note": "아쿠아필드 공식 홈페이지(게시일 표시 없음), 2026-11 확인"},
+    {"title": "“목욕탕에서 잠까지 잔다고?”…외국인이 놀라는 한국 찜질방", "url": "https://www.wikitree.co.kr/articles/1149242", "note": "위키트리, 2026-07-29"}
+  ]
+}
