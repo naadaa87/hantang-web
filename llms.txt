@@ -4,7 +4,10 @@
 
 Facts used across the site: list order is random on every visit and nobody pays for placement; the "HANTANG Top Rated" badge follows published rating thresholds; phone numbers from licence data are never published; prices and hours on detailed cards carry the date they were checked.
 
+Place, nearby-area and region pages end with "Quick answers": short questions and answers built only from the facts on that page (price, hours, tattoo policy, directions, counts from the licence data), each with the date it was checked.
+
 ## Guides (English)
+- [Glossary of Korean bath words](https://hantang.kr/guide/glossary/): What jjimjilbang, mogyoktang, seshin, ttae, hanjeungmak, oncheon and other Korean bath words mean, in Hangul with pronunciation and a short definition.
 - [Your first tang, step by step](https://hantang.kr/guide/first-visit/): The whole visit in order, from the shoe locker to the checkout counter, with what to say and what to do at the three moments where first-timers freeze.
 - [Mogyoktang, sauna, jjimjilbang, hanjeungmak, oncheon: which is which](https://hantang.kr/guide/bath-types/): Six Korean words for a place to bathe or sweat, one legal category. What each kind of place has and lacks, what it costs, how to spot it, and which to pick for your plan.
 - [The unwritten rules](https://hantang.kr/guide/etiquette/): Every rule of the Korean bath, grouped by where you are standing, with the reason behind each one, what happens if you break it, and the few rules that are actually law.

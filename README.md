@@ -38,6 +38,7 @@
 | `tools/kto/` | 내부 도구: 한국관광공사 관광정보 API로 목욕·온천 시설 사진(공공누리)을 모으는 화면. 검색엔진에 노출되지 않음 |
 | `journal/` | 매일 23시에 한 편씩 올리는 짧은 글(저널)과 목록 페이지. 언어별은 `ja/journal/` … (아래 '저널' 참고) |
 | `tools/media/` | 지점 사진·영상 목록(`media.json`)과 페이지에 넣는 도구(`build.py`), 지점 일러스트 변환 도구(`illust.py`, `illust.json`). 검색엔진에 노출되지 않음 (아래 '지점 사진·영상' 참고) |
+| `tools/seo/` | 검색·AI 답변 노출 도구(`build.py`): 가이드 검색 제목(`titles.json`), 지점·주변·지역 페이지 '자주 묻는 질문', 용어집(`glossary.json`), sitemap 이미지·날짜 (아래 '검색·AI 답변 노출' 참고) |
 | `assets/illust/` | 지점 일러스트 WebP(가로 960·640·400). `tools/media/illust.py` 가 만듦 |
 | `assets/mx.css` `assets/mx.js` | 지점 페이지의 사진 모아보기·크게 보기, 유튜브 영상 재생 |
 | `tools/journal/` | 저널 원고(`posts/`), 생성기(`build.py`), 편집 규칙(`EDITORIAL.md`), 주제 목록(`calendar.json`). 검색엔진에 노출되지 않음 |
@@ -202,6 +203,16 @@ D1 데이터베이스를 연결하기 전에는 로그인·후기·게시판 칸
 1. PNG 를 한 폴더에 모은 뒤 `python3 tools/media/illust.py <폴더>` — `assets/illust/<id>-960/640/400.webp`, `og/p-<id>.jpg`, `tools/media/illust.json` 을 만듭니다. 같은 그림은 다시 만들지 않고, 그림이 바뀌면 주소 뒤 `?v=` 판이 바뀌어 방문자에게도 새 그림이 뜹니다.
 2. `python3 tools/media/build.py` → `python3 tools/cat/build.py` 순서로 돌립니다.
 3. 일러스트를 빼려면 `python3 tools/media/illust.py --remove <id>` 뒤에 2번을 돌립니다. 그 지점은 원래 아이콘으로 돌아갑니다.
+
+## 검색·AI 답변 노출 (tools/seo/) — 2026-11-27부터
+
+검색엔진과 AI 답변(구글 AI 개요, Bing·ChatGPT 검색, Perplexity 등)이 한탕의 글을 그대로 가져다 쓰기 쉽게 다듬는 도구입니다. 여러 번 돌려도 결과는 같습니다.
+
+- **가이드 검색 제목**: 15편 × 7개 언어의 `<title>`·공유 제목을 사람들이 실제로 찾는 말이 앞에 오도록 바꿨습니다(예: "Seshin, explained" → "Korean Body Scrub (Seshin): Price, Process & Tips", 일본어는 アカスリ·チムジルバン, 중국어는 汗蒸幕·搓澡). 본문 제목은 그대로입니다. 문구는 `tools/seo/titles.json`.
+- **자주 묻는 질문**: 지점 상세 79곳, 관광지 주변 25곳, 지역 목록 16곳(× 8개 언어) 아래에 '자주 묻는 질문'을 붙이고 FAQPage 구조화 데이터로도 넣었습니다. 답은 그 페이지에 이미 있는 사실(요금·영업시간·문신 규정·가는 길·물, 가까운 곳·거리, 종류별·구별 수)만 옮깁니다. 사실이 2개 미만인 지점 5곳은 넣지 않습니다.
+- **용어집**: `/guide/glossary/`(7개 언어). 찜질방·목욕탕·세신·때·한증막·온천 등 24개 낱말을 한글·발음·짧은 정의와 함께 정리하고, DefinedTermSet 구조화 데이터를 넣었습니다. 정의는 가이드에 이미 있는 사실만 옮겼습니다. 원고는 `tools/seo/glossary.json`. 가이드 목록에 카드, 가이드 글 옆 목차에 링크가 들어갑니다.
+- **sitemap·llms.txt**: 용어집 주소를 넣고, 바뀐 페이지의 날짜를 오늘로 바꾸고, 지점 상세에 일러스트·공유 그림을 이미지 정보로 붙입니다. 날짜가 바뀐 주소는 기존 IndexNow 작업이 Bing·네이버·Yandex에 알립니다.
+- **돌리는 순서**: 사진·일러스트나 테마 페이지를 바꾼 뒤 `python3 tools/media/build.py` → `python3 tools/cat/build.py` → `python3 tools/seo/build.py`. 지점 카드의 요금·시간을 고친 뒤에도 마지막에 한 번 돌리면 질문과 답이 따라 바뀝니다.
 
 ## 테마 페이지 (tools/cat/)
 

@@ -1,0 +1,138 @@
+{
+ "_note": "가이드 글의 검색용 <title>. 본문 제목(h1)은 그대로 두고, 검색 결과에 보이는 제목만 사람들이 실제로 찾는 말이 앞에 오도록 바꾼다. 비워 두면 원래 제목을 쓴다.",
+ "bath-types": {
+  "en": "Jjimjilbang vs Mogyoktang vs Sauna: Korean Bath Types — HANTANG",
+  "ja": "チムジルバン・銭湯・サウナ・汗蒸幕の違い｜韓国のお風呂の種類 — HANTANG",
+  "zh-hant": "汗蒸幕、澡堂、三溫暖、汗蒸窯、溫泉差在哪？韓國泡湯種類 — HANTANG",
+  "zh-hans": "韩国汗蒸幕、澡堂、桑拿、汗蒸窑、温泉有什么区别 — HANTANG",
+  "vi": "Jjimjilbang, nhà tắm công cộng, xông hơi Hàn Quốc khác nhau thế nào — HANTANG",
+  "th": "จิมจิลบัง โรงอาบน้ำ ซาวน่าเกาหลี ต่างกันยังไง — HANTANG",
+  "ru": "Чимчильбан, корейская баня и сауна: в чём разница — HANTANG"
+ },
+ "etiquette": {
+  "en": "Korean Bathhouse & Jjimjilbang Etiquette: The Rules — HANTANG",
+  "ja": "韓国の銭湯・チムジルバンのマナーと暗黙のルール — HANTANG",
+  "zh-hant": "韓國澡堂・汗蒸幕禮儀：泡湯的不成文規矩 — HANTANG",
+  "zh-hans": "韩国澡堂·汗蒸幕礼仪：那些不成文的规矩 — HANTANG",
+  "vi": "Quy tắc ứng xử ở jjimjilbang và nhà tắm Hàn Quốc — HANTANG",
+  "th": "มารยาทในจิมจิลบังและโรงอาบน้ำเกาหลี — HANTANG",
+  "ru": "Правила корейской бани и чимчильбана: этикет — HANTANG"
+ },
+ "families": {
+  "en": "Jjimjilbang with Kids & Family: Age Rules, Women-Only — HANTANG",
+  "ja": "子連れ・家族・女性のチムジルバン｜年齢ルールと女性専用 — HANTANG",
+  "zh-hant": "帶小孩去韓國汗蒸幕：年齡規定、家庭與女性須知 — HANTANG",
+  "zh-hans": "带孩子去韩国汗蒸幕：年龄规定、家庭与女性须知 — HANTANG",
+  "vi": "Đi jjimjilbang cùng trẻ em và gia đình: quy định độ tuổi — HANTANG",
+  "th": "พาเด็กไปจิมจิลบัง: กฎเรื่องอายุ ครอบครัว และผู้หญิง — HANTANG",
+  "ru": "Чимчильбан с детьми: возрастные правила, семьи, женщины — HANTANG"
+ },
+ "first-visit": {
+  "en": "How to Use a Jjimjilbang: First Visit, Step by Step — HANTANG",
+  "ja": "チムジルバンの使い方｜はじめての韓国銭湯を手順で解説 — HANTANG",
+  "zh-hant": "韓國汗蒸幕怎麼玩？第一次泡澡堂全流程 — HANTANG",
+  "zh-hans": "第一次去韩国汗蒸幕怎么玩：全流程攻略 — HANTANG",
+  "vi": "Cách đi jjimjilbang lần đầu: hướng dẫn từng bước — HANTANG",
+  "th": "วิธีใช้จิมจิลบังครั้งแรก ทีละขั้นตอน — HANTANG",
+  "ru": "Как пользоваться чимчильбаном: первый визит по шагам — HANTANG"
+ },
+ "food": {
+  "en": "Jjimjilbang Food: Sikhye, Baked Eggs & Banana Milk — HANTANG",
+  "ja": "チムジルバンの定番グルメ｜シッケ・焼き卵・バナナ牛乳 — HANTANG",
+  "zh-hant": "汗蒸幕必吃：甜米露、烤蛋、香蕉牛奶 — HANTANG",
+  "zh-hans": "汗蒸幕必吃：甜米露、烤鸡蛋和香蕉牛奶 — HANTANG",
+  "vi": "Món ăn ở jjimjilbang: sikhye, trứng nướng, sữa chuối — HANTANG",
+  "th": "ของกินในจิมจิลบัง: ชิกเฮ ไข่อบ นมกล้วย — HANTANG",
+  "ru": "Еда в чимчильбане: сикхе, печёные яйца, банановое молоко — HANTANG"
+ },
+ "health-safety": {
+  "en": "Korean Sauna Safety: How Long to Stay, Who Should Skip — HANTANG",
+  "ja": "韓国サウナの安全な入り方｜何分入る？入らないほうがいい人 — HANTANG",
+  "zh-hant": "韓國三溫暖安全須知：泡多久、誰不適合 — HANTANG",
+  "zh-hans": "韩国桑拿安全须知：泡多久、哪些人不适合 — HANTANG",
+  "vi": "Xông hơi Hàn Quốc an toàn: ngâm bao lâu, ai nên tránh — HANTANG",
+  "th": "ซาวน่าเกาหลีอย่างปลอดภัย: แช่นานแค่ไหน ใครควรเลี่ยง — HANTANG",
+  "ru": "Корейская сауна без вреда: сколько сидеть и кому нельзя — HANTANG"
+ },
+ "history": {
+  "en": "History of the Korean Bathhouse & Jjimjilbang — HANTANG",
+  "ja": "韓国の銭湯とチムジルバンの歴史 — HANTANG",
+  "zh-hant": "韓國澡堂與汗蒸幕的歷史 — HANTANG",
+  "zh-hans": "韩国澡堂和汗蒸幕的历史 — HANTANG",
+  "vi": "Lịch sử nhà tắm công cộng và jjimjilbang Hàn Quốc — HANTANG",
+  "th": "ประวัติโรงอาบน้ำและจิมจิลบังเกาหลี — HANTANG",
+  "ru": "История корейской бани и чимчильбанов — HANTANG"
+ },
+ "hot-springs": {
+  "en": "Korean Hot Springs (Oncheon): Spa Towns, History & Where to Soak",
+  "ja": "韓国の温泉ガイド｜温泉地・歴史・どこで入るか — HANTANG",
+  "zh-hant": "韓國溫泉攻略：溫泉鄉、歷史與去哪裡泡 — HANTANG",
+  "zh-hans": "韩国温泉攻略：温泉小镇、历史和去哪里泡 — HANTANG",
+  "vi": "Suối nước nóng Hàn Quốc: thị trấn, lịch sử và nên ngâm ở đâu — HANTANG",
+  "th": "น้ำพุร้อนเกาหลี (ออนเซ็นเกาหลี): เมืองน้ำพุร้อนและที่แช่ — HANTANG",
+  "ru": "Горячие источники Кореи: курорты, история, где искупаться — HANTANG"
+ },
+ "overnight": {
+  "en": "Sleeping in a Jjimjilbang Overnight: Cost, Rules & Safety — HANTANG",
+  "ja": "チムジルバンに泊まる｜料金・ルール・安全対策 — HANTANG",
+  "zh-hant": "在韓國汗蒸幕過夜：價格、規矩與安全 — HANTANG",
+  "zh-hans": "在韩国汗蒸幕过夜：价格、规矩和安全 — HANTANG",
+  "vi": "Ngủ qua đêm ở jjimjilbang: giá, quy định và an toàn — HANTANG",
+  "th": "นอนค้างที่จิมจิลบัง: ราคา กฎ และความปลอดภัย — HANTANG",
+  "ru": "Ночёвка в чимчильбане: цена, правила, безопасность — HANTANG"
+ },
+ "phrases": {
+  "en": "Korean Bathhouse Phrases: 40 Words & Signs for Jjimjilbang",
+  "ja": "韓国の銭湯・チムジルバンで使える韓国語40フレーズと表示 — HANTANG",
+  "zh-hant": "韓國澡堂・汗蒸幕實用韓語 40 句與標示 — HANTANG",
+  "zh-hans": "韩国澡堂·汗蒸幕实用韩语40句和指示牌 — HANTANG",
+  "vi": "40 câu tiếng Hàn dùng ở jjimjilbang và nhà tắm — HANTANG",
+  "th": "ภาษาเกาหลี 40 ประโยคสำหรับจิมจิลบังและโรงอาบน้ำ — HANTANG",
+  "ru": "40 корейских фраз для бани и чимчильбана — HANTANG"
+ },
+ "prices-hours": {
+  "en": "Jjimjilbang Prices & Hours in Korea (2026) + What to Bring",
+  "ja": "チムジルバンの料金と営業時間（2026年）・持ち物リスト — HANTANG",
+  "zh-hant": "韓國汗蒸幕價格與營業時間（2026）＋攜帶清單 — HANTANG",
+  "zh-hans": "韩国汗蒸幕价格和营业时间（2026）+ 携带清单 — HANTANG",
+  "vi": "Giá vé jjimjilbang, giờ mở cửa (2026) và đồ cần mang — HANTANG",
+  "th": "ราคาจิมจิลบัง เวลาเปิด (2026) และของที่ต้องเตรียม — HANTANG",
+  "ru": "Цены и часы работы чимчильбанов (2026) и что взять — HANTANG"
+ },
+ "regions": {
+  "en": "Where to Go for a Jjimjilbang in Korea: Seoul, Busan, Spa Towns",
+  "ja": "韓国チムジルバンはどこへ行く？ソウル・釜山・温泉地 — HANTANG",
+  "zh-hant": "韓國汗蒸幕去哪裡？首爾、釜山與溫泉鄉 — HANTANG",
+  "zh-hans": "韩国汗蒸幕去哪儿：首尔、釜山和温泉小镇 — HANTANG",
+  "vi": "Đi jjimjilbang ở đâu: Seoul, Busan và các thị trấn suối nước nóng — HANTANG",
+  "th": "ไปจิมจิลบังที่ไหนดี: โซล ปูซาน และเมืองน้ำพุร้อน — HANTANG",
+  "ru": "Куда пойти в чимчильбан: Сеул, Пусан, курорты — HANTANG"
+ },
+ "rooms": {
+  "en": "Jjimjilbang Rooms Explained: Pools, Saunas, Kiln & Salt Rooms",
+  "ja": "チムジルバンの館内ガイド｜湯船・サウナ・汗蒸幕・塩の部屋 — HANTANG",
+  "zh-hant": "韓國汗蒸幕館內全攻略：浴池、三溫暖、汗蒸窯、鹽屋 — HANTANG",
+  "zh-hans": "韩国汗蒸幕馆内攻略：浴池、桑拿、汗蒸窑、盐房 — HANTANG",
+  "vi": "Bên trong jjimjilbang: các bể, phòng xông hơi, lò nung, phòng muối — HANTANG",
+  "th": "ในจิมจิลบังมีอะไรบ้าง: บ่อน้ำ ซาวน่า ห้องเตาเผา ห้องเกลือ — HANTANG",
+  "ru": "Что внутри чимчильбана: бассейны, сауны, печь, соляная — HANTANG"
+ },
+ "seshin": {
+  "en": "Korean Body Scrub (Seshin): Price, Process & Tips — HANTANG",
+  "ja": "韓国アカスリ完全ガイド｜料金・流れ・強さの頼み方 — HANTANG",
+  "zh-hant": "韓式搓澡全攻略：價格、流程、力道怎麼說 — HANTANG",
+  "zh-hans": "韩式搓澡攻略：价格、流程、力度怎么说 — HANTANG",
+  "vi": "Kỳ cọ kiểu Hàn (seshin): giá, quy trình và mẹo — HANTANG",
+  "th": "ขัดตัวเกาหลี (เซชิน): ราคา ขั้นตอน และเคล็ดลับ — HANTANG",
+  "ru": "Корейский скраб (сесин): цена, как проходит, советы — HANTANG"
+ },
+ "tattoos": {
+  "en": "Tattoos in Korean Saunas & Jjimjilbang: The Real Rules — HANTANG",
+  "ja": "韓国サウナ・チムジルバンのタトゥー事情｜実際のルール — HANTANG",
+  "zh-hant": "韓國三溫暖・汗蒸幕刺青規定：實際情況 — HANTANG",
+  "zh-hans": "韩国桑拿·汗蒸幕纹身规定：真实情况 — HANTANG",
+  "vi": "Hình xăm khi đi xông hơi, jjimjilbang Hàn Quốc: quy định thực tế — HANTANG",
+  "th": "มีรอยสักเข้าซาวน่า จิมจิลบังเกาหลีได้ไหม: กฎจริง — HANTANG",
+  "ru": "Тату в корейской сауне и чимчильбане: реальные правила — HANTANG"
+ }
+}
