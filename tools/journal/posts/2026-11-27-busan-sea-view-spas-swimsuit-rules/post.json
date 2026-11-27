@@ -1,0 +1,86 @@
+{
+  "pillar": "spot",
+  "related": [
+    "regions",
+    "hot-springs",
+    "bath-types",
+    "tattoos"
+  ],
+  "sources": [
+    {
+      "title": "클럽디 오아시스 이용안내",
+      "url": "https://www.clubdoasis.com/guide/guideV2",
+      "note": "클럽디 오아시스 공식 홈페이지(층별 복장 규정·운영 시간·휴장일·문신 안내), 2026-11 확인"
+    },
+    {
+      "title": "클럽디 오아시스 이용요금",
+      "url": "https://www.clubdoasis.com/guide/charge",
+      "note": "클럽디 오아시스 공식 홈페이지(11/1~12/18 요금), 2026-11 확인"
+    },
+    {
+      "title": "클럽디 오아시스 보양온천",
+      "url": "https://www.clubdoasis.com/brand/boyang",
+      "note": "클럽디 오아시스 공식 홈페이지(수질·국민보양온천 지정), 2026-11 확인"
+    },
+    {
+      "title": "해운대 프리미엄 워터파크 '클럽디 오아시스' 문 열었다",
+      "url": "https://www.fnnews.com/news/202307051846139388",
+      "note": "파이낸셜뉴스, 2023-07-05"
+    },
+    {
+      "title": "[단독] 해운대 대형 찜질방 화재 나면 안전한가…소방시설·피난체계 점검 필요",
+      "url": "https://www.wikitree.co.kr/articles/1165646",
+      "note": "위키트리, 2026-10-12 (힐스파 영업·10월 1일 목욕 요금 인상 확인에만 사용)"
+    },
+    {
+      "title": "부산 해운대 힐스파 찜질방 입장권 (외국인 전용)",
+      "url": "https://www.waug.com/ko/activities/176011",
+      "note": "WAUG 예매 페이지(이용권 종류·사우나 청소 시간), 2026-11 확인"
+    },
+    {
+      "title": "파라다이스 호텔 부산 오션스파 씨메르",
+      "url": "https://www.busanparadisehotel.co.kr/front/facility/spaparacimer",
+      "note": "파라다이스 호텔 부산 공식 홈페이지(투숙객 전용·요금·4부제·정기휴무), 2026-11 확인"
+    },
+    {
+      "title": "호텔 아쿠아펠리스",
+      "url": "https://www.ktriptips.com/kor/stay/397655",
+      "note": "K-Trip Tips에 실린 한국관광공사 관광정보, 2026-11-11 갱신"
+    },
+    {
+      "title": "호텔 아쿠아펠리스, 광안리, 부산",
+      "url": "https://www.yeogi.com/domestic-accommodations/6326",
+      "note": "여기어때 예약 안내(워터파크 운영 중단·레인풀 수영모), 2026-11 확인"
+    },
+    {
+      "title": "스파 해수랑 이용요금",
+      "url": "https://www.spahaesurang.co.kr/guide",
+      "note": "스파 해수랑 공식 홈페이지, 2026-11 확인"
+    },
+    {
+      "title": "스파 해수랑 이용안내",
+      "url": "https://www.spahaesurang.co.kr/guide/detail",
+      "note": "스파 해수랑 공식 홈페이지(층별 운영 시간·노천탕 복장·문신 안내), 2026-11 확인"
+    },
+    {
+      "title": "SPA HAESURANG How to Get Here",
+      "url": "https://www.spahaesurang.co.kr/international/getting-here",
+      "note": "스파 해수랑 공식 홈페이지(부산역에서 가는 길), 2026-11 확인"
+    },
+    {
+      "title": "아난티 코브 워터하우스",
+      "url": "https://ananti.kr/ko/cove/CV0301",
+      "note": "아난티 공식 홈페이지(복장·운영 시간·휴장일·바우처 요금), 2026-11 확인"
+    },
+    {
+      "title": "ANANTI AT BUSAN COVE Water House",
+      "url": "https://ananti.kr/en/busan/waterhouse",
+      "note": "아난티 공식 홈페이지 영문(온천수·겨울 수온), 2026-11 확인"
+    },
+    {
+      "title": "행정안전부 「생활 목욕장업」 인허가 공공데이터",
+      "url": "https://www.data.go.kr/",
+      "note": "행정안전부 (공공데이터포털), 당사 목록 data/places.min.json 의 2026-10-31 내려받은 자료 기준"
+    }
+  ]
+}
