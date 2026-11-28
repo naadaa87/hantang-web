@@ -1,0 +1,19 @@
+{
+  "pillar": "trip",
+  "related": ["overnight", "prices-hours", "first-visit", "health-safety"],
+  "sources": [
+    {"title": "서울 심야버스", "url": "https://www.airport.kr/ap_ko/979/subview.do", "note": "인천국제공항 누리집 제1여객터미널 편(노선·정류장·출발 시각·요금), 2026-11-28 확인"},
+    {"title": "서울 심야버스", "url": "https://airport.kr/ap_ko/982/subview.do", "note": "인천국제공항 누리집 제2여객터미널 편, 2026-11-28 확인"},
+    {"title": "Seoul Late-Night Buses", "url": "https://www.airport.kr/ap_en/1507/subview.do", "note": "Incheon Airport 누리집 영문판(정류장 영문 표기), 2026-11-28 확인"},
+    {"title": "도심공항터미널 이용", "url": "https://airport.kr/ap_ko/893/subview.do", "note": "인천국제공항 누리집(서울역 탑승수속 05:20~19:00, 수속 마감 시각), 2026-11-28 확인"},
+    {"title": "공항철도, 추석 연휴 2∼4일 서울역 출발 첫차 임시운행", "url": "https://www.segye.com/newsView/20251002504296", "note": "세계일보(평소 서울역 첫차 05:20), 2025-10-02"},
+    {"title": "인천공항철도 일반열차 시간표(인천공항터미널↔서울역)", "url": "https://korearailway.com/%EC%9D%B8%EC%B2%9C%EA%B3%B5%ED%95%AD%EC%B2%A0%EB%8F%84-%EC%9D%BC%EB%B0%98%EC%97%B4%EC%B0%A8-%EC%8B%9C%EA%B0%84%ED%91%9C-%EC%9D%B8%EC%B2%9C%EA%B3%B5%ED%95%AD%ED%84%B0%EB%AF%B8%EB%84%90%E2%86%94/", "note": "비공식 시간표 정리 사이트(막차 시각), 2026-07-31 수정. 공항철도 공식 시간표는 열지 못함"},
+    {"title": "\"하루 숙박비 1만6000원 실화냐\"…한국 온 중국인 '바글바글' [현장+]", "url": "https://www.hankyung.com/article/2026022414127", "note": "한국경제, 2026-02-24"},
+    {"title": "기다림의 피로를 지우다…‘0원’으로 누리는 인천공항 숨은 오아시스 [여행+]", "url": "https://www.segye.com/newsView/20260625509794", "note": "세계일보(냅존·샤워실), 2026-06-25 (2026-08-12 수정)"},
+    {"title": "공항 캡슐호텔 가격 및 이용 꿀팁", "url": "https://kr.trip.com/guide/stay/airport-capsule-hotel.html", "note": "트립닷컴 여행 가이드(다락휴 요금대), 2026-08-19"},
+    {"title": "인천공항 2터미널 캡슐 호텔 다락휴 숙소 예약 후기", "url": "https://www.trvlogue.com/ko/darakhyu-incheon-airport-review", "note": "여행 블로그(다락휴 위치·요금), 2026-10-07 수정"},
+    {"title": "A Hidden Oasis: 2026 Guide to Spa on Air at Incheon Airport (Now Spa at Home)", "url": "https://niredonahue.com/hidden-oasis-spa-on-air-incheon-airport/", "note": "개인 여행 블로그(공식 출처 아님), 2026-08-04 수정"},
+    {"title": "Incheon Airport Guide 2026: Services, Navigation, and How It Compares to the World's Best", "url": "https://zuzukorea.travel/guides/incheon-airport-guide/", "note": "여행 안내 사이트(공식 출처 아님), 2026-04-17"},
+    {"title": "Spa On Air Incheon International Airport (2026)", "url": "https://airial.travel/attractions/south-korea/spa-on-air-incheon-international-airport-ufuF6PFV", "note": "여행 정보 수집 사이트(공식 출처 아님), 2026-11-28 확인"}
+  ]
+}
